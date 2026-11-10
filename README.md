@@ -9,6 +9,16 @@ Relatório de **Demonstração do Resultado do Exercício (DRE)** com Realizado,
 - **Detalhamento por conta contábil**: linha da DRE → grupo → conta, com sinal contábil e mesma regra de período comparável.
 - **Acessibilidade**: texto alternativo em todos os visuais, ordem de tabulação definida e segmentações sincronizadas entre páginas.
 
+## Telas
+
+| Executiva | DRE |
+| --- | --- |
+| ![Visão Executiva](docs/img/01-executiva.png) | ![DRE](docs/img/02-dre.png) |
+| **Filiais** | **Receitas** |
+| ![Filiais](docs/img/03-filiais.png) | ![Receitas](docs/img/04-receitas.png) |
+| **Despesas** | |
+| ![Despesas](docs/img/05-despesas.png) | |
+
 ## Páginas
 
 | Página | Conteúdo |
@@ -51,7 +61,7 @@ Convenções: receitas positivas e gastos negativos (sinal da DRE); desvio posit
 
 1. Power BI Desktop recente, com suporte a projetos PBIP.
 2. Abrir `DRE Moderno - Databricks2.pbip`.
-3. Para atualizar dados, apontar a fonte para o seu workspace Databricks (host e caminho HTTP do SQL Warehouse) e autenticar com as suas credenciais. O repositório não contém credenciais.
+3. Para atualizar dados: Página Inicial → Transformar dados → Editar parâmetros, preencher `DatabricksHost` (ex.: `seu-workspace.cloud.databricks.com`) e `DatabricksHttpPath` (caminho HTTP do SQL Warehouse), atualizar e autenticar com as suas credenciais (OAuth ou token pessoal). O repositório não contém credenciais.
 
 ## Estrutura
 
@@ -81,3 +91,7 @@ Controles (Realizado consolidado, período inteiro): Receita Líquida R$ 146.417
 - Base didática fictícia: Realizado até 2023-05; Orçado e Previsto até 2023-12.
 - Cultura do modelo en-US (formatos numéricos definidos nas medidas).
 - EBITDA e EBIT não vêm calculados da fonte; são medidas DAX pelo padrão de mercado (CVM): EBITDA = Margem de Contribuição + Despesas Operacionais + Outras Receitas e Despesas; EBIT = EBITDA + Depreciação e Amortização.
+
+## Licença
+
+Código e documentação sob licença [MIT](LICENSE). Dados fictícios (base didática).
