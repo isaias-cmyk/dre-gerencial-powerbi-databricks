@@ -1,0 +1,187 @@
+[
+  {
+    "path": ".gitignore",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "AGENTS.md",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "BaseDados.xlsx",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.pbip",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "PLANS.md",
+    "nowExists": true,
+    "changed": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.Report/.platform",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.Report/definition.pbir",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.Report/.pbi/localSettings.json",
+    "nowExists": true,
+    "changed": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.Report/definition/report.json",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.Report/definition/version.json",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.Report/definition/pages/pages.json",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.Report/definition/pages/18fcfac0c5446040d274/page.json",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.Report/StaticResources/SharedResources/BaseThemes/Fluent2-CY26SU08.json",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/.platform",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition.pbism",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/diagramLayout.json",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/.pbi/cache.abf",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/.pbi/editorSettings.json",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/.pbi/localSettings.json",
+    "nowExists": true,
+    "changed": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/database.tmdl",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/model.tmdl",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/relationships.tmdl",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/cultures/en-US.tmdl",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395.tmdl",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/dim_calendario.tmdl",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/dim_conta.tmdl",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/dim_dre.tmdl",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/dim_filial.tmdl",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/fato_lancamentos.tmdl",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/fato_orcamento.tmdl",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/fato_previsao.tmdl",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d.tmdl",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531.tmdl",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b.tmdl",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3.tmdl",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504.tmdl",
+    "nowExists": true,
+    "changed": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/vw_dre_comparativo.tmdl",
+    "nowExists": true,
+    "changed": false
+  }
+]

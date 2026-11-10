@@ -1,0 +1,1082 @@
+[
+  {
+    "path": ".gitignore",
+    "bytes": 45,
+    "sha256": "12A24DE62907FD6C81FFF066D7DB4D98180F6C35056461F110A03D0023D396B8",
+    "included": true
+  },
+  {
+    "path": "AGENTS.md",
+    "bytes": 4170,
+    "sha256": "DC018011F3C9C321C2976B6B6D2866FCEBC6D60894F73827000935904BB450E6",
+    "included": true
+  },
+  {
+    "path": "BaseDados.xlsx",
+    "bytes": 391975,
+    "sha256": "27E02E7148984D74ACDB5CF086A9BA637C55617152793F23509D3BAD24BCE04B",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.pbip",
+    "bytes": 303,
+    "sha256": "781349C0267DF147687C9940FF32AADB5ED7A0DF2AD4B77080CFEB240B788238",
+    "included": true
+  },
+  {
+    "path": "PLANS.md",
+    "bytes": 50813,
+    "sha256": "73698627EE1B1AB800FA406D092E8A6B7F026B3E7F71EBBE2D51D295415CFC41",
+    "included": true
+  },
+  {
+    "path": "docs/alteracoes.md",
+    "bytes": 5616,
+    "sha256": "91C80141BC78FBD978A3682550BEDBEBF88A76C39D0A9BAF3E35318CB66EE7EA",
+    "included": true
+  },
+  {
+    "path": "docs/arquitetura.md",
+    "bytes": 7235,
+    "sha256": "54FB3F0206B14E3CAE2510C172C6DD27E9A372832DDCB71EF2F71E97ED8D20AF",
+    "included": true
+  },
+  {
+    "path": "docs/auditoria-modelo-semantico.md",
+    "bytes": 54686,
+    "sha256": "9E08044B53F5B1CB312E9BF8B30986D2F69BC2E4686007F0E906297011C81E23",
+    "included": true
+  },
+  {
+    "path": "docs/execucao-testes-fase1.md",
+    "bytes": 18199,
+    "sha256": "36180048E3E462BBDF05DA53E3F8776EC818FD7672149C4AA404831B19D484B7",
+    "included": true
+  },
+  {
+    "path": "docs/validacoes.md",
+    "bytes": 11738,
+    "sha256": "BD1ECFFB301192074E7CE7DD615D10B7E1A8557E46D8EDEC0007774D70E1B9EA",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase0-executar.ps1",
+    "bytes": 10542,
+    "sha256": "3CA548CF5DFB4ACFBAB492EBD773D1EC15545F215C867CFE018B9F44D9506D7C",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-auditar.py",
+    "bytes": 8783,
+    "sha256": "D44CBCAF21A783682C4B50F9DD0320BB88ABADE650CCEC15A33B182579FE96CE",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-completar-testes.py",
+    "bytes": 17905,
+    "sha256": "E8A4684484AEFE5BBD2531A9A6AEAC8BBE74DDA0ACC1BC43C9A3207BD2188C85",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-consolidar-execucao.py",
+    "bytes": 8599,
+    "sha256": "14530F0E1DA6993B822DF06018D5DCC5ACC66A4A967D71F201C265CF4B9FA502",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-executar-local.ps1",
+    "bytes": 4565,
+    "sha256": "FC3E827CA87675C2C153479709052EDB1B9B9A9946CE98DE17942062D7A5024C",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase0-20261102-145703/ambiente.json",
+    "bytes": 204,
+    "sha256": "C83A16275B6E6D746E0350E3F6BC462638BBE0EA5856450D8E79807834BFDFDA",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase0-20261102-145703/conexoes.json",
+    "bytes": 4126,
+    "sha256": "23F39525BDA642FB67698897E4ADC14DF4CCC2155432E7C8920715D7B1528436",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase0-20261102-145703/exclusoes-backup.json",
+    "bytes": 1113,
+    "sha256": "F80BE48D3F24881DE5356500180FB7ECA62C5E9DB21743136A18ADEFB1165E4A",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase0-20261102-145703/git.json",
+    "bytes": 430,
+    "sha256": "6427852B3A9E64FEB5AD6882E1F945C6ED5E3AF7590D156A610EEE13ED6AAE31",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase0-20261102-145703/integridade-final.json",
+    "bytes": 12210,
+    "sha256": "89352E43079D33F280274AA8B8171851413103CAC0377233274A9074F6574B2C",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase0-20261102-145703/integridade-original-antes-documentacao.json",
+    "bytes": 4255,
+    "sha256": "776045CFF5C2E34BA0C139D0FA4F92AB9A4416020A2FC2AA8291CA5E47608DFF",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase0-20261102-145703/inventario-arquivos.csv",
+    "bytes": 6778,
+    "sha256": "91E5190A7F4C85EB39793D701756428AC4C821EBC4D24C0A16B2040D2B3359FC",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase0-20261102-145703/inventario-arquivos.json",
+    "bytes": 10501,
+    "sha256": "FE297BF982B28401E910A3B1CC757B36565FDE45D20C92AE33A35797391A13BA",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase0-20261102-145703/json-sintaxe.json",
+    "bytes": 3268,
+    "sha256": "3059CFAFA6D525962D291F72944F79CBA03D0E20F76CB29C528D2C596F5FA343",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase0-20261102-145703/medidas.json",
+    "bytes": 4,
+    "sha256": "A5338D955B09046EC0B16F3A9625B7955C763AAE07DC722E474E6078745F932F",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase0-20261102-145703/paginas.json",
+    "bytes": 337,
+    "sha256": "302FEF3E1BD25F6AF4E44AACFC189FCAB30228692A65D7C709D2DE46AE5EE5CE",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase0-20261102-145703/relacionamentos.json",
+    "bytes": 7974,
+    "sha256": "E8E71662959314DB19AB64CC5DFDFECEC66334D61A80B8E919AFC31648DA3297",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase0-20261102-145703/restauracao-hashes.json",
+    "bytes": 12406,
+    "sha256": "FA9CA1730A8ABB1139BF0FF2A89D5D003E25546B037073B8C16BB083084A400B",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase0-20261102-145703/resultado.json",
+    "bytes": 1030,
+    "sha256": "3624110F13CF98569C621CE9D66BEEE179C348E3DBBC85EE297D0C03A40FC55A",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase0-20261102-145703/tabelas.json",
+    "bytes": 16587,
+    "sha256": "43BC06BBFEFF968A9006BAF31035C86940D9F0926BA8105CE2B0D48DEE3E3E5E",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase0-20261102-145703/temas.json",
+    "bytes": 527,
+    "sha256": "FFEF0AED8E77775F9CB315FCD3B8B2665FCCBFB34B6AC922F8F97B97022AE356",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase0-20261102-145703/visuais.json",
+    "bytes": 4,
+    "sha256": "A5338D955B09046EC0B16F3A9625B7955C763AAE07DC722E474E6078745F932F",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1/ambiente.json",
+    "bytes": 530,
+    "sha256": "E4E6C59BAB421C44093743595BBCC35FF2C837BD4B732D3FCC79AA264F0463DC",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1/baseline-entrada.json",
+    "bytes": 7234,
+    "sha256": "376903D9E9A2E87A5724563F23D2509798F04A0329A05CCD2EAAEA158108C034",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1/caminhos-condicionais.json",
+    "bytes": 27105,
+    "sha256": "988C3D009C70848B597B5393F71AC0EE55C453AE8AAED5090E90BDDF208F5623",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1/comparacao-fase0.json",
+    "bytes": 5134,
+    "sha256": "6250F529899B8A4DFFFEF63EEC5960B4881984A29D5BF85FC839A73AD6FD99EB",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1/integridade-final.json",
+    "bytes": 12020,
+    "sha256": "3856003DF6CFD207FFBF16D5D6B735D6CD875C2F690F9FAA6C48A0BF74D8828B",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1/json-sintaxe.json",
+    "bytes": 2269,
+    "sha256": "3727FD99E3845F060ACD51C8E68566259AF418BF5EBC2222C68EB52B4B1A58A6",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1/referencias-variations.json",
+    "bytes": 624,
+    "sha256": "9B5E2D544598FDF845A5C22114369980140999EB79942F8595AC823E54F6B2D6",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1/relacionamentos.json",
+    "bytes": 11341,
+    "sha256": "866EB1AF879E06A7B42EFEDDDE7F61B82BED6FDE2C29B5845F0B355D2F5128FB",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1/resultado.json",
+    "bytes": 2025,
+    "sha256": "EFBD48CA0DEBC9F6A134F90F5059AAE4F0107CC7ED2A8A87C92EC001F5A1006E",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1/roteiro-testes-nao-executados.dax",
+    "bytes": 1426,
+    "sha256": "CA845F26E41BE389650E19BEB7F49111B32C75D9639F7462A47F05F21FBCF532",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1/roteiro-testes-nao-executados.sql",
+    "bytes": 13380,
+    "sha256": "EAACC2DB934E6F68FC024C7698714C9F6129652C4F80465B21A652304813A031",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1/tabelas-colunas.json",
+    "bytes": 52553,
+    "sha256": "0AD9787A43FBDDBAA145FC6F67BD8401E14FD6715A14D1EB66511C38750A6AB5",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1/verificacao-documentacao.json",
+    "bytes": 211,
+    "sha256": "9856A3D310A6E04B7D5024DAFA7687195A5F6F826F14DD1CD628C4B971D04694",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-aceite-tecnico/aceite.json",
+    "bytes": 1965,
+    "sha256": "630B306E83CC747B360B952360D404BED27C19C968D547FBD08AD057E1EBDE58",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-aceite-tecnico/baseline-protecao.json",
+    "bytes": 6505,
+    "sha256": "36CB521FFFA3017E0C3062631322C2F58335E924CA926A45D8BCC759CC86B6DE",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-aceite-tecnico/integridade-final.json",
+    "bytes": 12018,
+    "sha256": "7F26778C037AE7D88F8EE640A4B0E78EF20BF54DA69233E0E4C81CBE92C51846",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-aceite-tecnico/manifesto.json",
+    "bytes": 675,
+    "sha256": "956E419C588467FC3CC80A23B5312962B723ACBA9C2DCCD100C9E8A9B62B376B",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-aceite-tecnico/verificacao-documentacao.json",
+    "bytes": 350,
+    "sha256": "51C23BD4F487D5AF254DA849722C44D64C1C9CF4C16F303ED14F472AA7ED4778",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/01-descoberta.dax",
+    "bytes": 214,
+    "sha256": "349956944890FB485A5C0AF5E112E2EDCD096BC411FB48ED2E21BD1235F812E1",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/02-relacionamentos.dax",
+    "bytes": 124,
+    "sha256": "E25C37581591AABDFBACB08D6E846EC73D1C6AF2F88527F28EEBEEE805C543E9",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/02b-metadados-fallback.dmv",
+    "bytes": 307,
+    "sha256": "EBF28A726D04B36F31771D8E0FA12257CD2FF58F67FD67C08629A0AF96F8F866",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/03-colunas.dax",
+    "bytes": 118,
+    "sha256": "8369335DBEC4C8F00D40B539A8BE2ADF34C0CC2F8181C90E3FAAC6F372BAE2B2",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/04-chaves-modelo.dax",
+    "bytes": 1463,
+    "sha256": "1D61C61F2A691AD2C1A1406B5C25D5A349C48BC9529E1690E8CB35EEEA65703A",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/05-integridade-modelo.dax",
+    "bytes": 5886,
+    "sha256": "9903F4AC0BE06FC13141ADE6F95EB4002B94DDB27B85F692D8C1BB5B62B96FBB",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/06-filtros-fato_lancamentos.dax",
+    "bytes": 1692,
+    "sha256": "932BDDFA56605D90E46E9190959C41410E4A642CBCB17E5153D43687081F5D93",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/06-filtros-fato_orcamento.dax",
+    "bytes": 1680,
+    "sha256": "2C224A5A4208F04D9C36367E1FC0DAFE119A0B89F93FE58A29ADD8C585C680B7",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/06-filtros-fato_previsao.dax",
+    "bytes": 1674,
+    "sha256": "B92AC6086DF51E35E96686ED64C09490D55426E933D541CFD3ECDE6A1DC17B25",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/06-filtros-vw_dre_comparativo.dax",
+    "bytes": 1694,
+    "sha256": "1ECC6DCD106A663F081493B3663F433BEC105C62878F98EB1B65DF28B85C66B5",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/07-controle-integral.dax",
+    "bytes": 697,
+    "sha256": "0149892E996E4ACEAC49D168CCA4E87E6B828B8FF377CE0D43435C19A9614B62",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/08-linha13-filial-periodo.dax",
+    "bytes": 1570,
+    "sha256": "08C0304B753FEA65B2C7C55546C281C082E57B7C44B465B745FDFF11858C7E60",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/09-linha13-filial-ano.dax",
+    "bytes": 484,
+    "sha256": "D168ABAE38BFCDF79FFBA9902637CE561208C50D857DFD86442CB115E7063576",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/10-descobrir-conta.dax",
+    "bytes": 667,
+    "sha256": "F6BF54D991A42E14D9C0AC91EEA028737FE527FA9233352C88A1207F60B43EEF",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/11-filtro-conta.dax",
+    "bytes": 2792,
+    "sha256": "5CD6535A8BD3C32F9BDCF73D0871CCA1F206D1076A00323FAA311F9684F24DAC",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/12-filtro-dre.dax",
+    "bytes": 807,
+    "sha256": "B6F2203EB26615F1E3908420B789AFC9F78E7AD1E337AB7573C263DFDD17471D",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/13-relacao-inativa.dax",
+    "bytes": 716,
+    "sha256": "5548F90E44FBE2A4476F075C9B0AB82C5352477A185CCF0C5DF993F81C08BEBE",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/14-calendario-modelo.dax",
+    "bytes": 705,
+    "sha256": "A7389180DBD288C00B7A872EB919D467AE6E932222BE5F67432063718556A01A",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/15-cobertura-cenarios.dax",
+    "bytes": 1221,
+    "sha256": "04FAB2D7348DF2ED36D4CDD602408CE72228F462536049F67859FAE58DBD8920",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/16-grao-view.dax",
+    "bytes": 287,
+    "sha256": "7D88B2BEBD36A3B4A6C65360485565C71D92A2841446665142D3D746EA79EF10",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/17-intersecao-conta-filial-periodo.dax",
+    "bytes": 2317,
+    "sha256": "CA7FC2EB8AB50ABF2CB22971F25A55836641670F977C3206C4AF25E98DD94958",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/18-contrato-dre.dax",
+    "bytes": 2027,
+    "sha256": "2D64258420823E64829CD51B569BB1182F4EDF2AB4513F545495341FC5CD2BED",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/19-particoes-carregadas.dax",
+    "bytes": 100,
+    "sha256": "6189F7004FB9763FDDABDDF421C3042E0D138185C56053D1D7DB8C2D6DCF4AB0",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/20-mes-multisselecao.dax",
+    "bytes": 1845,
+    "sha256": "751C55AAD74B8DBEA31CAD1B708498844551F4E0C1B9B8499F5227E0FC693A85",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/ambiente.json",
+    "bytes": 458,
+    "sha256": "4EE7685D7AE3BB509D5A248F4B9755FCB4891AF00F096165852D57775DE2E557",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/baseline-protecao.json",
+    "bytes": 6505,
+    "sha256": "4685B7C1E255918CAE1B0F060FAF58B6BA3CB3E55E510FF6A4194A376987648E",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/complemento-databricks.sql",
+    "bytes": 8402,
+    "sha256": "57D06281F95D14D095C52EF0A1FB7E11C23E09099341FF99B4E75F9C926B0CE5",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/estado-execucao.json",
+    "bytes": 325,
+    "sha256": "5773B24BA6EA60AEB9E408E1CE24A779D4DF72BFBAEEBD82ECCD2012648EFDE0",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/integridade-final.json",
+    "bytes": 11537,
+    "sha256": "2F75437FBCD0A50CCF1DF01E5D997298ADEEE2400749842581BA93EE1CB961D5",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/manifesto-artefatos.json",
+    "bytes": 4752,
+    "sha256": "7BFA80195B81298E33B84DE47E6FDEFCA44C9F7C09D50478CD3652C05C52DE52",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/registro-testes.csv",
+    "bytes": 2185,
+    "sha256": "A2793B8019DF7FC1F22DD106BF6BBF382982A0B688F38C29B2B5A9AD171B02FA",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/reuso.json",
+    "bytes": 497,
+    "sha256": "D39D61553BAEC77EA9B5B6AD77A878258818ECFD1D329110043607EA3605A146",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/verificacao-local.json",
+    "bytes": 3044,
+    "sha256": "63D7932F5AB87ED446C21D4E38D36EB3CAE20455CCD6E21616D00F11DA91AF3B",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/01-descoberta.csv",
+    "bytes": 88,
+    "sha256": "D71FF64387470C5C3D147FD6835AFCE4BFEAEF663AFCA6BFCCD13EB12B885F69",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/01-descoberta.json",
+    "bytes": 205,
+    "sha256": "2DA8146F8EEE98B0F5B670CA38B19EF39F4435408A36ADD216B9CA5F0C0DD769",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/02-relacionamentos.csv",
+    "bytes": 5476,
+    "sha256": "6A90857E7D35B7EA97E2C23D60D90DD8C0161CD461A5BBB177AE3B27A9A3B12B",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/02-relacionamentos.json",
+    "bytes": 11606,
+    "sha256": "632142A4A38B07EBFA64B9E75D59D1E4BE48F9A5A40FEED677C62D942F24A526",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/03-colunas.csv",
+    "bytes": 31379,
+    "sha256": "51A40A17D5E45898EEA40B794329E5FA22BE5B2582A2DFD9FAF65439DE38E190",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/03-colunas.json",
+    "bytes": 92759,
+    "sha256": "0B8015708A4A9BF5CBD8E6211BF03DD90F8EF0C5A6E74D32AB329E887EE7141B",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/04-chaves-modelo.csv",
+    "bytes": 221,
+    "sha256": "8E8D37812C2447E573436614E45E63DA318A4A248FB842E150F1641434D6B4E2",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/04-chaves-modelo.json",
+    "bytes": 553,
+    "sha256": "C2B2B300CF11E5F7F23A6762C7D93FFA464CC9FC5B027885C55911665197067A",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/05-integridade-modelo.csv",
+    "bytes": 674,
+    "sha256": "40D15D34466A17767D422371169BFCAD9E64F8A0F9DC0D48428C9968366318CA",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/05-integridade-modelo.json",
+    "bytes": 1760,
+    "sha256": "3777EC2511B89A00AAE493C8C934F6864080BAD7B25165A36050B31FF8C9E6B9",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/06-filtros-fato_lancamentos.csv",
+    "bytes": 2003,
+    "sha256": "8084A13351E8AD0B490E6C3717A094DD78C40BED702DDD1F16F5C58024909027",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/06-filtros-fato_lancamentos.json",
+    "bytes": 6757,
+    "sha256": "8410ADF90A7C2CAAF2202BF9AC912A95EDA4A3CC08190870D7CF95BB0C87EF08",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/06-filtros-fato_orcamento.csv",
+    "bytes": 2003,
+    "sha256": "1537C2D15FBA0DED88CF6878CCC1861963F8EB88A17685D2367746A8056F619D",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/06-filtros-fato_orcamento.json",
+    "bytes": 6709,
+    "sha256": "44161233BE2AFF71555B5A8EC9C15E3D5605D5ED47ED2D7B5A433D35F80DC9D2",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/06-filtros-fato_previsao.csv",
+    "bytes": 1983,
+    "sha256": "0676510A2D0B4B26A3C48950584C634D4F83E06779B013142FFC5B2046A9C6B0",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/06-filtros-fato_previsao.json",
+    "bytes": 6689,
+    "sha256": "4A9F690C8072A1A8DDF180EA3F044F78A21609FA77258146BFF28215868C1409",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/06-filtros-vw_dre_comparativo.csv",
+    "bytes": 2061,
+    "sha256": "75665E3F1D05D9FF2ADAABD8E6EEFD4419E7792E6E40B2D09B4DFAF4A58100C1",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/06-filtros-vw_dre_comparativo.json",
+    "bytes": 6767,
+    "sha256": "89C9BFC04D0CE5D5D3BFDD1CF561E4CA4EA6F406BFB271D0EE9FA2D97CEF1671",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/07-controle-integral.csv",
+    "bytes": 203,
+    "sha256": "D39A7C01896954CC0D8A4C52DB98BF7787C1C9F28D0F7D60AB20DAFF0499CE5C",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/07-controle-integral.json",
+    "bytes": 262,
+    "sha256": "D982043DBFA78DA0F0E874F8376F1DB644E5D9946B1DC74C3A1A37E2DB3639BB",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/08-linha13-filial-periodo.csv",
+    "bytes": 2449,
+    "sha256": "A92FABD274105DE95E505A2C1626DBB8BDE544AF61FA9D8E2A8352FE34C7A333",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/08-linha13-filial-periodo.json",
+    "bytes": 6832,
+    "sha256": "E5DE6940B447D47255A046FA1089B302FBE41EECAC4C1085B697EF0D7BB3636A",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/09-linha13-filial-ano.csv",
+    "bytes": 838,
+    "sha256": "FE2D2751D8C89A855557FC9B0E994238605F3D896659F36D56F832F09F45C7EC",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/09-linha13-filial-ano.json",
+    "bytes": 2212,
+    "sha256": "CE25A47B48C88956C33B20C4AAFC15B8D63D408ACAE2631F49E2584EC0450386",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/10-descobrir-conta.csv",
+    "bytes": 9575,
+    "sha256": "9C1D63D8BCC5DA302CA8AE40A99E6B76D8450BC90CD8BFC7A00B3DE541ED6686",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/10-descobrir-conta.json",
+    "bytes": 28829,
+    "sha256": "8A91FA18C7475FD55275E1629BA030D73F1D71CBC9B5FB0705D630E67F5E428D",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/12-filtro-dre.csv",
+    "bytes": 152,
+    "sha256": "5430BB9F61DA7BBDA85315C4E8A16F6020F1391F85756079892EFDDA3FE80B53",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/12-filtro-dre.json",
+    "bytes": 207,
+    "sha256": "869FB1FD9C6ECD9E4204CA37F7B11E70BE70821257A850BAD7BA2D89BD34704A",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/13-relacao-inativa.csv",
+    "bytes": 232,
+    "sha256": "210730CAE00D3B16E9D87F83523C03981D0DD149EB8733DBA025DBCFB1C393EC",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/13-relacao-inativa.json",
+    "bytes": 634,
+    "sha256": "E21296E989A262E02E2033404FE6D3D046E17D44DBB9AD26843C874720CD74A4",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/14-calendario-modelo.csv",
+    "bytes": 145,
+    "sha256": "6C6D8FEF128E3AA1CB04A06217BAB00A469ED839F422733BBA0601A89CBF293D",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/14-calendario-modelo.json",
+    "bytes": 204,
+    "sha256": "F9FA770DADB674ABCE23F8E6F92DFFB55E975B53BC5954E8EC1A3B0427CB098A",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/15-cobertura-cenarios.csv",
+    "bytes": 706,
+    "sha256": "3363D5E19CEEDDF29AB71468B8104C950F8938DEE7B858758B9816A454E5565A",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/15-cobertura-cenarios.json",
+    "bytes": 1348,
+    "sha256": "CB0B5136BE1E53FD48C887366B38EFF84CD467ABD7CA7D41F5A894C6CE9E4412",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/16-grao-view.json",
+    "bytes": 4,
+    "sha256": "A5338D955B09046EC0B16F3A9625B7955C763AAE07DC722E474E6078745F932F",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/baseline.json",
+    "bytes": 8325,
+    "sha256": "9B877AD50F649B4A8444977AFAD936CCE4E058A2D48F73421C40DD5EB2C911CC",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/consolidacao.json",
+    "bytes": 7350,
+    "sha256": "5B02CCBF6E7B30F847F32667171C72B8DE5C9952BF1DAED8E82DB71918208680",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/execucao.json",
+    "bytes": 4418,
+    "sha256": "63D58D2BF3AFB80288EB4A2D658E85A8063EE7EC21014186809F0246C239B5AE",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/integridade-final-documentacao.json",
+    "bytes": 10876,
+    "sha256": "24902DB695CA2A6C6E9C32F0094944D0E3ABC9CB59681E8DEDE3D7185A9DD28E",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/integridade.json",
+    "bytes": 12321,
+    "sha256": "31BD7B50FF665AE4B60997088C5245CB5A36117C73C7B4224A4A36A4D24DD316",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/manifesto-evidencias.json",
+    "bytes": 11452,
+    "sha256": "37874F887E0320DE68A5AFE1188F8AC38EFA6C6E87F3103BB2E8317613EFD4F2",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/registro-testes-executados.csv",
+    "bytes": 7426,
+    "sha256": "55E358AA4A900EBF1B8DF2941F4FA9147835352EE2B3776AE87B79CCB3DA8FC9",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/sessao.json",
+    "bytes": 834,
+    "sha256": "86BBFAFF9E47B41E5CC109974BCD1C7897314DCDB6DC9B0314523406D337472F",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154704/11-filtro-conta.csv",
+    "bytes": 276,
+    "sha256": "2ECAD1965066BCF3556CB90205C0911BCA62BE717F889194C96B15C9FBCDA0C9",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154704/11-filtro-conta.json",
+    "bytes": 782,
+    "sha256": "DB5EAC0B7CB03AD282B54482DA8BFAD270D891FCE5710175DC6FBBE5F95DBB08",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154704/17-intersecao-conta-filial-periodo.csv",
+    "bytes": 1235,
+    "sha256": "0CC5D6324B8F99EE6F48E863BBFD9432264EE1E6C96B99489CDF88B39B3AF469",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154704/17-intersecao-conta-filial-periodo.json",
+    "bytes": 6817,
+    "sha256": "81364FCE22B68DF614CF0B33B53FFF5A15049A96BC9CB08CD7E5E88774ED8D20",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154704/baseline.json",
+    "bytes": 8325,
+    "sha256": "9B877AD50F649B4A8444977AFAD936CCE4E058A2D48F73421C40DD5EB2C911CC",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154704/execucao.json",
+    "bytes": 489,
+    "sha256": "AC288D6D20D4790DB1C0005366C1AFA652FAFA01D0E0280D3666348E2FD128FE",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154704/integridade.json",
+    "bytes": 12321,
+    "sha256": "31BD7B50FF665AE4B60997088C5245CB5A36117C73C7B4224A4A36A4D24DD316",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154704/sessao.json",
+    "bytes": 834,
+    "sha256": "D24683FE97D5C634B0E265E7E1351145DA92A97E1037AFF546BE54A1219C7856",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154749/18-contrato-dre.csv",
+    "bytes": 385,
+    "sha256": "11AEAB346EBF65CD2A59189F192C547387B73EA609728B29A6982DF7D3383D26",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154749/18-contrato-dre.json",
+    "bytes": 902,
+    "sha256": "B0646426087260ED106B4152B3854F119E11DDEAC66C027FEC4478CF93EF1377",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154749/19-particoes-carregadas.csv",
+    "bytes": 7176,
+    "sha256": "1905874DF6D9A1CC39F83672BCBD65B98A038A782F47A5E40CB8590521D731B7",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154749/19-particoes-carregadas.json",
+    "bytes": 15675,
+    "sha256": "105D6C514F60BB6E56419750D1DA7298197201C514D78502D2B2B8E452C1A6D2",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154749/baseline.json",
+    "bytes": 8325,
+    "sha256": "9B877AD50F649B4A8444977AFAD936CCE4E058A2D48F73421C40DD5EB2C911CC",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154749/execucao.json",
+    "bytes": 463,
+    "sha256": "BD37F6B0EB8233116D3BEB78B8EF8DA9C26610CA0614F3A44C9F6F745E7257FC",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154749/integridade.json",
+    "bytes": 12321,
+    "sha256": "31BD7B50FF665AE4B60997088C5245CB5A36117C73C7B4224A4A36A4D24DD316",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154749/sessao.json",
+    "bytes": 834,
+    "sha256": "C6EDA9C19019C1364FF06892E1DB10C146DBFA0B26B25857C18DE28FB6D4A8E3",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154841/20-mes-multisselecao.csv",
+    "bytes": 187,
+    "sha256": "2845127331DA0BEF8512799F92B986DF00A23E086C0A4F629EBB220E99712388",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154841/20-mes-multisselecao.json",
+    "bytes": 548,
+    "sha256": "3B541E14CBDF902203578FF3E4EE387AD6FE86685C52958474DDAFEB7AD9EAA6",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154841/baseline.json",
+    "bytes": 8325,
+    "sha256": "9B877AD50F649B4A8444977AFAD936CCE4E058A2D48F73421C40DD5EB2C911CC",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154841/execucao.json",
+    "bytes": 212,
+    "sha256": "25FF3D45B63FA323C290683B684420B05DF9C35A700206300D10B733D3F764BC",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154841/integridade.json",
+    "bytes": 12321,
+    "sha256": "31BD7B50FF665AE4B60997088C5245CB5A36117C73C7B4224A4A36A4D24DD316",
+    "included": true
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154841/sessao.json",
+    "bytes": 834,
+    "sha256": "B6E7377A0B199BFB475BC3C60CC3B238586B9A01FC5F9B98C526D79C7EB634DC",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.Report/.platform",
+    "bytes": 318,
+    "sha256": "E0EDA8F6C598E79FB766AB28710E7DB81AE084F04E65ED6FB86D099AAB1A9A02",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.Report/definition.pbir",
+    "bytes": 258,
+    "sha256": "2847A1FCB67216D855B1CDF3444961A289D852B8FA2BCE6C6EAEB77FF144DB93",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.Report/.pbi/localSettings.json",
+    "bytes": 672,
+    "sha256": "DA1D4C38A7060EF705B16575D054507A92DBF08F186AAF5DC0C45816DD51FE25",
+    "included": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.Report/definition/report.json",
+    "bytes": 1195,
+    "sha256": "1B1F2D76CFB9DE0901315D2F12FAFACADFB8D5C7EDDD24D17AAE9918BB48CEFE",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.Report/definition/version.json",
+    "bytes": 152,
+    "sha256": "C8BDD966A85F1EAAB4312D2096B6D7B508243E4D7BC5A4D25AF3CFCB1056A4E7",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.Report/definition/pages/pages.json",
+    "bytes": 224,
+    "sha256": "6AC06D2B3E79B466231EBB066EAD229C916FD516363503DE4AD04D03FADDBB11",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.Report/definition/pages/18fcfac0c5446040d274/page.json",
+    "bytes": 251,
+    "sha256": "EE220417602A260FEFEBAEAD969A79C2E04EE69A730C1B8B1073B2AF4E3F4A44",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.Report/StaticResources/SharedResources/BaseThemes/Fluent2-CY26SU08.json",
+    "bytes": 99561,
+    "sha256": "5095B493358F0307E2F0A690A48C78EE93886BB70B578E3BFC48186CFC0319AF",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/.platform",
+    "bytes": 325,
+    "sha256": "844775E9EF4F76AC0E6D261FAC15D0AEC6F6E48ABB682D2C2550952E0288FE7E",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition.pbism",
+    "bytes": 170,
+    "sha256": "73A1AE4C89D7488F553788ADC772A04C805D1C9E0D7333E2B2B5476AAD8E5A5F",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/diagramLayout.json",
+    "bytes": 3301,
+    "sha256": "14FF845CE12F6CB5CA088416C26B6B422D1DCB2580F0FB1BD316DC9295887E8E",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/.pbi/cache.abf",
+    "bytes": 361536,
+    "sha256": "12EFBAF294524671A7B60D396A7B3DEF026DD2AACB1FDCA2C4A64942F8BC768E",
+    "included": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/.pbi/editorSettings.json",
+    "bytes": 317,
+    "sha256": "993662478760E2BCBC0184D6260711AE0B7CDB3867354581E7FD56609CA6EC97",
+    "included": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/.pbi/localSettings.json",
+    "bytes": 573,
+    "sha256": "6334FDAC2EA2C784D59A7292E52C2E9F98E7A54AC54EEBA0E8D3D21E5193FCEA",
+    "included": false
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/database.tmdl",
+    "bytes": 39,
+    "sha256": "822C914B643BCA32BB20ABD8A762DF8204A1B9EF02ACC2BC7348727F6699CB96",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/model.tmdl",
+    "bytes": 1061,
+    "sha256": "F589829C1AEE1D7112234F11CAFF803A9F2080C895E35DEA3D8E3226D88EA1AA",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/relationships.tmdl",
+    "bytes": 2752,
+    "sha256": "1C10429B6615E4538B8AB05300E64946D2536E4F2A7DC9238D47D6A695D3BBCF",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/cultures/en-US.tmdl",
+    "bytes": 21,
+    "sha256": "1109E38EBC2A662C6AC3926717B17F040C1EE6812D0A3DE88D781CDFAC626D19",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395.tmdl",
+    "bytes": 2746,
+    "sha256": "31AA4493A4D85BBA369000F540BCCBA0E8AAFAA9F2D42E132BB666D4D865CA50",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/dim_calendario.tmdl",
+    "bytes": 2796,
+    "sha256": "F80B522519CF29FACDFE279C886CABCBA5B676D96FB3C6009AC39C68D3FE7CAF",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/dim_conta.tmdl",
+    "bytes": 2279,
+    "sha256": "4CA184AC013F2E0E0B798C500B0ECCF510A25E719531F90F8D96609A268FF3EB",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/dim_dre.tmdl",
+    "bytes": 1840,
+    "sha256": "0D944CEA3E9F33E847A849FD58423CDC06F4C999C54F75B6D2910DF6623CE049",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/dim_filial.tmdl",
+    "bytes": 1069,
+    "sha256": "D8A642C5E740C79640D78AA113F248AC96BC83EFB4F624CA6DD04C7A86775C6D",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/fato_lancamentos.tmdl",
+    "bytes": 2638,
+    "sha256": "B7684B53EB61B4E5D6B80F47010C79EEEE55492CC9B29D20B9BC756A71AA4769",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/fato_orcamento.tmdl",
+    "bytes": 2430,
+    "sha256": "66183B5FFB9DCFE6B3432FE498C1C0316853AC52E92929D019FEC47418471765",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/fato_previsao.tmdl",
+    "bytes": 2425,
+    "sha256": "378381E70ED4F1B0ED6B18E9956D42F785107F463FCB4DB7B97DC8154A8ACADF",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d.tmdl",
+    "bytes": 2781,
+    "sha256": "D3A28A5111143CFE49CADE3DC787BED5333500C66364016DDA7B5CD431132688",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531.tmdl",
+    "bytes": 2789,
+    "sha256": "8F502CFB6A2FA456CF70DBD1C0DADE75253076112B20A8C281716F74FD6CA408",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b.tmdl",
+    "bytes": 2793,
+    "sha256": "B41AE8C6029B2A89FF79EA0557BAED8BFEDD7F2EC49A411244C2BAF5127BF997",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3.tmdl",
+    "bytes": 2787,
+    "sha256": "80A3CE4F460BC4222F1D4B6B01BB365EDE3ED0CA7C05FA9F0459144FB80EB9B9",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504.tmdl",
+    "bytes": 2769,
+    "sha256": "2D8ADC18133849E035F2C7E907293081BF3DA79B4DD168BDDEFA7905C4D84AC4",
+    "included": true
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition/tables/vw_dre_comparativo.tmdl",
+    "bytes": 2901,
+    "sha256": "B307EE6D1B0A297AC559BD7287A7F22C4433A2299D66916E47365AD5ADD7EF4C",
+    "included": true
+  }
+]

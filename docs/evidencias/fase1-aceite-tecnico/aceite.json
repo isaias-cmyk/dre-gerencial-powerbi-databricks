@@ -1,0 +1,53 @@
+{
+  "recordedAt": "2026-11-02T15:58:17.511607-03:00",
+  "scope": "Aceite técnico da Fase 1; não constitui homologação contábil",
+  "phase1": "Concluída com aceite técnico",
+  "phase2": {
+    "released": true,
+    "started": false
+  },
+  "DAXEvidence": {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/consolidacao.json",
+    "sha256": "5B02CCBF6E7B30F847F32667171C72B8DE5C9952BF1DAED8E82DB71918208680",
+    "queriesExecuted": 23,
+    "branchPeriodCases": 80,
+    "failures": [],
+    "compatibilityWithUserReport": "Confirmada nos controles e indicadores registrados"
+  },
+  "SQLIndependentEvidence": {
+    "source": "Declaração explícita do usuário nesta conversa de aceite",
+    "executionReportedByUser": true,
+    "reportedResultRows": 16,
+    "executedByCodexInThisTask": false,
+    "raw16RowsAttachedInThisMessage": false,
+    "line13TotalsBRL": {
+      "Realizado": "5038227.39",
+      "Orcado": "6622493.82",
+      "Previsto": "6157931.19"
+    },
+    "consolidatedDifferencesBRL": {
+      "Realizado": "0.00",
+      "Orcado": "0.00",
+      "Previsto": "0.00"
+    },
+    "branchTotalsMatch": "Confirmado pelo usuário; não reconstruídos como linhas SQL pelo agente"
+  },
+  "approvedBy": "Usuário, mediante instrução explícita nesta conversa",
+  "DREStrategy": {
+    "approach": 1,
+    "fields": [
+      "vw_dre_comparativo.ordem_dre",
+      "vw_dre_comparativo.descricao_dre"
+    ],
+    "dimDREFiltersViewAutomatically": false,
+    "accountDetail": "dim_conta com três tabelas fato",
+    "preserveRelationships": true,
+    "sumAll13DRELines": false
+  },
+  "accountingPending": [
+    "Resultado Líquido: homologação contábil pendente; conciliação numérica da linha 13 não homologa o conceito contábil",
+    "EBITDA: sem cálculo até homologação contábil",
+    "EBIT: sem cálculo até homologação contábil"
+  ],
+  "productionChangeAuthorizedInThisTask": false
+}

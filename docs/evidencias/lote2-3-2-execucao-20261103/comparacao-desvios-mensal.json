@@ -1,0 +1,16 @@
+{
+  "esperadas": 9360,
+  "sql_linhas": 9360,
+  "dax_linhas": 9360,
+  "duplicadas_sql": 0,
+  "duplicadas_dax": 0,
+  "ausentes_no_sql": 0,
+  "extras_no_sql": 0,
+  "aprovadas": 9360,
+  "reprovadas": 0,
+  "nulos_blank_coincidentes": 2980,
+  "max_dif_brl": 1.8189894035458565e-09,
+  "max_dif_razao": 5.898059818321144e-16,
+  "primeiras_falhas": [],
+  "aceite": true
+}

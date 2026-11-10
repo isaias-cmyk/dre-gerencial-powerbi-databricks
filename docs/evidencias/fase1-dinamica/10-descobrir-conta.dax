@@ -1,0 +1,9 @@
+// FASE 1. Consulta somente leitura, NÃO EXECUTADA neste ambiente. Não cria medidas.
+EVALUATE
+ADDCOLUMNS(SELECTCOLUMNS(ALLNOBLANKROW('dim_conta'),
+ "Conta",'dim_conta'[id_conta],"DescricaoN1",'dim_conta'[descricaon1],
+ "DescricaoN2",'dim_conta'[descricaon2],"DetalharN2",'dim_conta'[detalharn2]),
+ "Lancamentos",VAR _K=[Conta] RETURN COUNTROWS(FILTER(ALL('fato_lancamentos'),'fato_lancamentos'[planocontas_id]=_K)),
+ "Orcamento",VAR _K=[Conta] RETURN COUNTROWS(FILTER(ALL('fato_orcamento'),'fato_orcamento'[planocontas_id]=_K)),
+ "Previsao",VAR _K=[Conta] RETURN COUNTROWS(FILTER(ALL('fato_previsao'),'fato_previsao'[planocontas_id]=_K)))
+ORDER BY [Conta]

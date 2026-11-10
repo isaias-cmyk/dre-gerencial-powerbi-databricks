@@ -1,0 +1,38 @@
+{
+  "data": "2026-11-03",
+  "estado": "CONCLUIDO_TECNICAMENTE",
+  "persistencia": {
+    "aprovada": true,
+    "sequencia": "Usuario confirmou salvar/fechar/reabrir o mesmo PBIP; captura comprova projeto salvo",
+    "verificacao_tecnica": "docs\\evidencias\\lote2-3-1-diagnostico-20261103-125235",
+    "config_linhas": 9,
+    "config_igual_anterior": true,
+    "medidas_validas_expressoes_preservadas": 41,
+    "tabelas": 16,
+    "particoes_ready": 16,
+    "relacionamentos_preservados": 18,
+    "config_oculta_desconectada": true,
+    "limite_comparacao_relacoes": "Ignorados somente ID numerico e ID do catalogo de sessao; nomes/colunas/cardinalidades/estados/direcoes preservados"
+  },
+  "sql": {
+    "aprovado": true,
+    "preflight": "Captura fornecida; SQL correspondente, 0 rows/No rows returned",
+    "casos": 1755,
+    "aprovados": 1755,
+    "reprovados": 0,
+    "diferenca_maxima": "1E-7",
+    "null_blank_coincidentes": 600,
+    "chaves_ausentes": 0,
+    "duplicacoes": 0,
+    "tolerancia": "0.01"
+  },
+  "proveniencia": "SQL executado pelo usuario; comparador e cinco consultas locais de leitura executados pelo agente",
+  "limites": [
+    "Versao Delta/snapshot exato e fuso da consulta SQL financeira nao constam do CSV; valores coincidem no grao testado, sem alegar identidade de commits.",
+    "Contrato didatico nao e certificacao contabil real.",
+    "Aceite restrito a configuracao e recortes testados; futuras lacunas/cortes distintos exigem validacao propria."
+  ],
+  "producao_alterada_pelo_agente": false,
+  "L231": "Concluido tecnicamente",
+  "L232": "Nao iniciado; apto somente para planejamento/autorizacao especifica"
+}

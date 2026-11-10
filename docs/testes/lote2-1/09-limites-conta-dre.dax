@@ -1,0 +1,9 @@
+// Lote 2.1: consulta de leitura. NÃO EXECUTADA nas medidas persistidas.
+// Executar após reabrir o PBIP atualizado; não criar medidas a partir destes testes.
+EVALUATE
+VAR _Antes=[DRE | Resultado Líquido Realizado]
+VAR _ComConta=CALCULATE([DRE | Resultado Líquido Realizado],TREATAS({"01.02.04"},'dim_conta'[id_conta]))
+VAR _ComDRE=CALCULATE([DRE | Resultado Líquido Realizado],TREATAS({1},'dim_dre'[ordem_dre]))
+RETURN ROW("Antes",_Antes,"ComConta",_ComConta,"ComDimDRE",_ComDRE,
+ "AprovadoLimites",NOT ISBLANK(_Antes) && _Antes=_ComConta && _Antes=_ComDRE)
+// O teste confirma limites existentes. Não apresentar estes indicadores como detalhados por conta.

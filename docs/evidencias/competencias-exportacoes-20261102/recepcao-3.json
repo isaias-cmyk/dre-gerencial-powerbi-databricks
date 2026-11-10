@@ -1,0 +1,10 @@
+{
+  "arquivo": "New_Query_2026_11_02_15_53_51 (3).csv",
+  "sha256": "9E5E2A3F191B59D8B66E7EE494899B4F97B37BC7ABB6FD52F2D463A56B7C8A99",
+  "registros": 87,
+  "pares_esperados": 108,
+  "pares_ausentes": 21,
+  "filiais": 3,
+  "linhas": 3741,
+  "sql_remoto_executado_pelo_agente": 0
+}

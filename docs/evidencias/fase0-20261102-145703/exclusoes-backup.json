@@ -1,0 +1,30 @@
+[
+  {
+    "Path": "DRE Moderno - Databricks.Report\\.pbi\\localSettings.json",
+    "Bytes": 672,
+    "LastWriteTimeUtc": "2026-11-02T17:56:04.1251575Z",
+    "SHA256": "A54C103CF279F4AE732403D397F448BA633A13A478652305D93C84D7C2D8E3E7",
+    "BackupIncluded": false
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\.pbi\\cache.abf",
+    "Bytes": 361536,
+    "LastWriteTimeUtc": "2026-11-02T17:40:47.5546589Z",
+    "SHA256": "12EFBAF294524671A7B60D396A7B3DEF026DD2AACB1FDCA2C4A64942F8BC768E",
+    "BackupIncluded": false
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\.pbi\\editorSettings.json",
+    "Bytes": 317,
+    "LastWriteTimeUtc": "2026-11-02T17:56:04.1775014Z",
+    "SHA256": "993662478760E2BCBC0184D6260711AE0B7CDB3867354581E7FD56609CA6EC97",
+    "BackupIncluded": false
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\.pbi\\localSettings.json",
+    "Bytes": 573,
+    "LastWriteTimeUtc": "2026-11-02T17:56:04.2002636Z",
+    "SHA256": "85AFDB51E73182600C4EB56AAC17DF5D39435F85C8303ECF4C46C27846787B76",
+    "BackupIncluded": false
+  }
+]

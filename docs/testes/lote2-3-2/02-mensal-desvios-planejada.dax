@@ -1,0 +1,31 @@
+-- PLANEJADO/NAO EXECUTADO. Rodar SOMENTE após implementar M40–M43.
+-- Não DEFINE MEASURE: não implementa medidas nem altera o modelo.
+-- Esperado algébrico usa comparáveis do modelo; SQL é a conciliação financeira independente.
+DEFINE VAR _Contextos = CROSSJOIN ( DATATABLE ( "Grupo", STRING, { {"01"}, {"02"}, {"03"}, {"Consolidado"}, {"01+02"} } ), DATATABLE ( "Periodo", STRING, { {"M2021-01"}, {"M2021-02"}, {"M2021-03"}, {"M2021-04"}, {"M2021-05"}, {"M2021-06"}, {"M2021-07"}, {"M2021-08"}, {"M2021-09"}, {"M2021-10"}, {"M2021-11"}, {"M2021-12"}, {"M2022-01"}, {"M2022-02"}, {"M2022-03"}, {"M2022-04"}, {"M2022-05"}, {"M2022-06"}, {"M2022-07"}, {"M2022-08"}, {"M2022-09"}, {"M2022-10"}, {"M2022-11"}, {"M2022-12"}, {"M2023-01"}, {"M2023-02"}, {"M2023-03"}, {"M2023-04"}, {"M2023-05"}, {"M2023-06"}, {"M2023-07"}, {"M2023-08"}, {"M2023-09"}, {"M2023-10"}, {"M2023-11"}, {"M2023-12"} } ), GENERATESERIES ( 1, 13 ) )
+EVALUATE ADDCOLUMNS ( GENERATE ( _Contextos,
+ VAR _Grupo=[Grupo] VAR _Periodo=[Periodo] VAR _Posicao=[Value]
+ RETURN CALCULATETABLE (
+ VAR _R=[DRE | Realizado Comparável] VAR _O=[DRE | Orçado Comparável] VAR _P=[DRE | Previsto Comparável]
+ RETURN UNION ( ROW ( "ID", "M40", "Medida", "DRE | Desvio Realizado x Orçado (R$)", "Unidade", "BRL",
+ "Valor", [DRE | Desvio Realizado x Orçado (R$)], "Esperado", IF ( ISBLANK ( _R ) || ISBLANK ( _O ), BLANK (), _R - _O ),
+ "RealizadoComparavel", _R, "ReferenciaComparavel", _O,
+ "Pares", [DRE | Pares Filial-Competência Comparáveis], "StatusCobertura", [DRE | Status Comparabilidade] ),
+ROW ( "ID", "M41", "Medida", "DRE | Desvio Realizado x Orçado (%)", "Unidade", "Razao",
+ "Valor", [DRE | Desvio Realizado x Orçado (%)], "Esperado", IF ( ISBLANK ( _R ) || ISBLANK ( _O ) || _O = 0, BLANK (), DIVIDE ( _R - _O, ABS ( _O ) ) ),
+ "RealizadoComparavel", _R, "ReferenciaComparavel", _O,
+ "Pares", [DRE | Pares Filial-Competência Comparáveis], "StatusCobertura", [DRE | Status Comparabilidade] ),
+ROW ( "ID", "M42", "Medida", "DRE | Desvio Realizado x Previsto (R$)", "Unidade", "BRL",
+ "Valor", [DRE | Desvio Realizado x Previsto (R$)], "Esperado", IF ( ISBLANK ( _R ) || ISBLANK ( _P ), BLANK (), _R - _P ),
+ "RealizadoComparavel", _R, "ReferenciaComparavel", _P,
+ "Pares", [DRE | Pares Filial-Competência Comparáveis], "StatusCobertura", [DRE | Status Comparabilidade] ),
+ROW ( "ID", "M43", "Medida", "DRE | Desvio Realizado x Previsto (%)", "Unidade", "Razao",
+ "Valor", [DRE | Desvio Realizado x Previsto (%)], "Esperado", IF ( ISBLANK ( _R ) || ISBLANK ( _P ) || _P = 0, BLANK (), DIVIDE ( _R - _P, ABS ( _P ) ) ),
+ "RealizadoComparavel", _R, "ReferenciaComparavel", _P,
+ "Pares", [DRE | Pares Filial-Competência Comparáveis], "StatusCobertura", [DRE | Status Comparabilidade] ) ),
+FILTER ( ALL ( 'dim_filial'[cod_filial] ), _Grupo = "Consolidado" || 'dim_filial'[cod_filial] = _Grupo || ( _Grupo = "01+02" && 'dim_filial'[cod_filial] IN { "01", "02" } ) ),
+FILTER ( ALL ( 'dim_calendario'[data] ), FORMAT ( 'dim_calendario'[data], "yyyy-MM" ) = RIGHT ( _Periodo, 7 ) ),
+ TREATAS ( { _Posicao }, 'vw_dre_comparativo'[ordem_dre] ) ) ),
+ "BlankDivergente", ISBLANK([Valor]) <> ISBLANK([Esperado]),
+ "Diferenca", IF ( NOT ISBLANK([Valor]) && NOT ISBLANK([Esperado]), [Valor]-[Esperado] ),
+ "Aprovado", IF ( ISBLANK([Valor]) || ISBLANK([Esperado]), ISBLANK([Valor]) && ISBLANK([Esperado]), ABS([Valor]-[Esperado]) <= IF([Unidade]="BRL",0.01,0.00000001) ) )
+ORDER BY [Grupo],[Periodo],[Value],[ID]

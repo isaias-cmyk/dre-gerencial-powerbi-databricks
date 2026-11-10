@@ -1,0 +1,6 @@
+catalog_name,schema_name
+workspace,bronze
+workspace,default
+workspace,gold
+workspace,information_schema
+workspace,silver

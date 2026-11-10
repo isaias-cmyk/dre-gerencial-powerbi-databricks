@@ -1,0 +1,282 @@
+[
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 10,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 10,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "01",
+    "Periodo": "2021",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "01",
+    "Periodo": "2022",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "01",
+    "Periodo": "2023",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "01",
+    "Periodo": "2023_JanMai",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "01",
+    "Periodo": "2023_JunDez",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 10,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "01",
+    "Periodo": "2023_Junho",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 10,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "01",
+    "Periodo": "Integral",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "02",
+    "Periodo": "2021",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "02",
+    "Periodo": "2022",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "02",
+    "Periodo": "2023",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "02",
+    "Periodo": "2023_JanMai",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "02",
+    "Periodo": "2023_JunDez",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 10,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "02",
+    "Periodo": "2023_Junho",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 10,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "02",
+    "Periodo": "Integral",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "03",
+    "Periodo": "2021",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "03",
+    "Periodo": "2022",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "03",
+    "Periodo": "2023",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "03",
+    "Periodo": "2023_JanMai",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "03",
+    "Periodo": "2023_JunDez",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 10,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "03",
+    "Periodo": "2023_Junho",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 10,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "03",
+    "Periodo": "Integral",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 10,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 10,
+    "ZeroLegitimo": 0
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Executados": 30,
+    "Aprovados": 30,
+    "Blank": 0,
+    "ZeroLegitimo": 0
+  }
+]

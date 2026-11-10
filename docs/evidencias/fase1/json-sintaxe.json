@@ -1,0 +1,57 @@
+[
+  {
+    "path": "DRE Moderno - Databricks.pbip",
+    "parse": "OK",
+    "schema": "https://developer.microsoft.com/json-schemas/fabric/pbip/pbipProperties/1.0.0/schema.json"
+  },
+  {
+    "path": "DRE Moderno - Databricks.Report/.platform",
+    "parse": "OK",
+    "schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json"
+  },
+  {
+    "path": "DRE Moderno - Databricks.Report/definition/pages/18fcfac0c5446040d274/page.json",
+    "parse": "OK",
+    "schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json"
+  },
+  {
+    "path": "DRE Moderno - Databricks.Report/definition/pages/pages.json",
+    "parse": "OK",
+    "schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/pagesMetadata/1.1.0/schema.json"
+  },
+  {
+    "path": "DRE Moderno - Databricks.Report/definition/report.json",
+    "parse": "OK",
+    "schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json"
+  },
+  {
+    "path": "DRE Moderno - Databricks.Report/definition/version.json",
+    "parse": "OK",
+    "schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/versionMetadata/1.0.0/schema.json"
+  },
+  {
+    "path": "DRE Moderno - Databricks.Report/definition.pbir",
+    "parse": "OK",
+    "schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definitionProperties/2.0.0/schema.json"
+  },
+  {
+    "path": "DRE Moderno - Databricks.Report/StaticResources/SharedResources/BaseThemes/Fluent2-CY26SU08.json",
+    "parse": "OK",
+    "schema": null
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/.platform",
+    "parse": "OK",
+    "schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json"
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/definition.pbism",
+    "parse": "OK",
+    "schema": "https://developer.microsoft.com/json-schemas/fabric/item/semanticModel/definitionProperties/1.0.0/schema.json"
+  },
+  {
+    "path": "DRE Moderno - Databricks.SemanticModel/diagramLayout.json",
+    "parse": "OK",
+    "schema": null
+  }
+]

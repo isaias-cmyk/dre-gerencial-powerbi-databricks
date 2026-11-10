@@ -1,0 +1,51 @@
+{
+  "estado": "PLANEJAMENTO_CONCLUIDO_IMPLEMENTACAO_NAO_INICIADA",
+  "medidas_existentes": 41,
+  "medidas_recomendadas": 4,
+  "novas_medidas_persistidas": 0,
+  "arquivos_protegidos_conferidos": 36,
+  "arquivos_producao_alterados": [],
+  "roteiros": [
+    {
+      "arquivo": "docs/testes/lote2-3-2/01-matriz-desvios-planejada.dax",
+      "sha256": "38ab21906fedb938208eed1dd50abd04455e4847382cc9393903e42ec0f46ef0",
+      "estado": "PLANEJADO_NAO_EXECUTADO"
+    },
+    {
+      "arquivo": "docs/testes/lote2-3-2/02-mensal-desvios-planejada.dax",
+      "sha256": "ed637efe9eff4d04f2844e3a6c538586557872e399f775ef0f24df69b1fdaf29",
+      "estado": "PLANEJADO_NAO_EXECUTADO"
+    },
+    {
+      "arquivo": "docs/testes/lote2-3-2/03-sinteticos-contrato-planejados.dax",
+      "sha256": "16344b4dc3a9f2dfc012fa431e95e3d7abd55b12c7d3c216c41cd8b396340d69",
+      "estado": "PLANEJADO_NAO_EXECUTADO"
+    },
+    {
+      "arquivo": "docs/testes/lote2-3-2/04-guardas-desvios-planejadas.dax",
+      "sha256": "692c853f877d8bd76dc5c495f73a5943c4c6f8f517aea888abad7d58df97b562",
+      "estado": "PLANEJADO_NAO_EXECUTADO"
+    },
+    {
+      "arquivo": "docs/testes/lote2-3-2/05-desvios-databricks-planejados.sql",
+      "sha256": "873c75245f3dafb114491836000739f49f131ce881ce89794b0f0531e22ae486",
+      "estado": "PLANEJADO_NAO_EXECUTADO"
+    },
+    {
+      "arquivo": "docs/testes/lote2-3-2/06-mensal-databricks-planejado.sql",
+      "sha256": "6c801a4067e5a03c58f4966226055cf2c7b72f4b624193d9c1cf66722465e261",
+      "estado": "PLANEJADO_NAO_EXECUTADO"
+    },
+    {
+      "arquivo": "docs/testes/lote2-3-2/07-sinteticos-contrato-planejados.sql",
+      "sha256": "5c921947e2c47b0dfedcd0b0c4b64541cda06559d4c18619e56aa078c0e4f3aa",
+      "estado": "PLANEJADO_NAO_EXECUTADO"
+    }
+  ],
+  "validacao": "Inspecao estatica de nomes/referencias/comandos e integridade; nao substitui parser DAX/SQL ou execucao no mecanismo",
+  "consultas_DAX_executadas": 0,
+  "consultas_SQL_executadas": 0,
+  "testes_financeiros_aprovados_nesta_etapa": 0,
+  "L232": "Em planejamento",
+  "L233": "Nao iniciado"
+}

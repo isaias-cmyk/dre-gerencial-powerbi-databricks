@@ -1,0 +1,2 @@
+// FASE 1. Consulta somente leitura, NÃO EXECUTADA neste ambiente. Não cria medidas.
+EVALUATE INFO.VIEW.RELATIONSHIPS()

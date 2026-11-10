@@ -1,0 +1,389 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "des0matriz000000000d",
+  "position": {
+    "x": 24,
+    "y": 180,
+    "z": 5,
+    "height": 640,
+    "width": 1250,
+    "tabOrder": 5
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_conta"
+                    }
+                  },
+                  "Property": "linha_dre"
+                }
+              },
+              "queryRef": "dim_conta.linha_dre",
+              "nativeQueryRef": "linha_dre",
+              "active": true,
+              "displayName": "Linha da DRE"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_conta"
+                    }
+                  },
+                  "Property": "grupo_conta"
+                }
+              },
+              "queryRef": "dim_conta.grupo_conta",
+              "nativeQueryRef": "grupo_conta",
+              "active": true,
+              "displayName": "Grupo"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_conta"
+                    }
+                  },
+                  "Property": "conta"
+                }
+              },
+              "queryRef": "dim_conta.conta",
+              "nativeQueryRef": "conta",
+              "active": true,
+              "displayName": "Conta"
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Conta | Realizado Comparável"
+                }
+              },
+              "queryRef": "_Medidas.Conta | Realizado Comparável",
+              "nativeQueryRef": "Conta | Realizado Comparável",
+              "displayName": "Realizado"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Conta | Orçado Comparável"
+                }
+              },
+              "queryRef": "_Medidas.Conta | Orçado Comparável",
+              "nativeQueryRef": "Conta | Orçado Comparável",
+              "displayName": "Orçado"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Conta | Desvio x Orçado (R$)"
+                }
+              },
+              "queryRef": "_Medidas.Conta | Desvio x Orçado (R$)",
+              "nativeQueryRef": "Conta | Desvio x Orçado (R$)",
+              "displayName": "Desvio x Orç. (R$)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Conta | Desvio x Orçado (%)"
+                }
+              },
+              "queryRef": "_Medidas.Conta | Desvio x Orçado (%)",
+              "nativeQueryRef": "Conta | Desvio x Orçado (%)",
+              "displayName": "Desvio x Orç. (%)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Conta | Previsto Comparável"
+                }
+              },
+              "queryRef": "_Medidas.Conta | Previsto Comparável",
+              "nativeQueryRef": "Conta | Previsto Comparável",
+              "displayName": "Previsto"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Conta | Desvio x Previsto (R$)"
+                }
+              },
+              "queryRef": "_Medidas.Conta | Desvio x Previsto (R$)",
+              "nativeQueryRef": "Conta | Desvio x Previsto (R$)",
+              "displayName": "Desvio x Prev. (R$)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Conta | Desvio x Previsto (%)"
+                }
+              },
+              "queryRef": "_Medidas.Conta | Desvio x Previsto (%)",
+              "nativeQueryRef": "Conta | Desvio x Previsto (%)",
+              "displayName": "Desvio x Prev. (%)"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "dim_conta"
+                  }
+                },
+                "Property": "linha_dre"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "subTotals": [
+        {
+          "properties": {
+            "rowSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "rowHeaders": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Conta | Cor x Orçado"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "_Medidas.Conta | Desvio x Orçado (R$)"
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Conta | Cor x Orçado"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "_Medidas.Conta | Desvio x Orçado (%)"
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "rowPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "4D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Realizado × Orçado × Previsto por linha, grupo e conta (expanda com +)'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Matriz: Realizado × Orçado × Previsto por linha, grupo e conta (expanda com +). Valores: Grupo, Conta, Realizado, Orçado, Desvio x Orç. (R$), Desvio x Orç. (%), Previsto, Desvio x Prev. (R$), Desvio x Prev. (%). Desvios coloridos: verde favorável,...'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

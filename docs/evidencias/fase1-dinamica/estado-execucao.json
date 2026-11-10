@@ -1,0 +1,9 @@
+{
+  "data": "2026-11-02T15:19:58.269629-03:00",
+  "dynamicSQLExecuted": 0,
+  "dynamicDAXExecuted": 0,
+  "phase1": "Bloqueada",
+  "phase2": "Não liberada; não iniciada",
+  "resultsTemplateContainsMeasurements": false,
+  "reason": "Nenhuma sessão autenticada/modelo carregado disponível na descoberta de ambiente"
+}

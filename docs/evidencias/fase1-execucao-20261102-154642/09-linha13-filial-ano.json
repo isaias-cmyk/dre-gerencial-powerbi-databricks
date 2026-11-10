@@ -1,0 +1,83 @@
+[
+  {
+    "dim_filial[cod_filial]": "03",
+    "dim_filial[filial]": "Florianópolis",
+    "dim_calendario[ano]": 2021,
+    "[Realizado]": 552761.33,
+    "[Orcado]": 633711.5099999999,
+    "[Previsto]": 540873.6300000001,
+    "[Linhas]": 12
+  },
+  {
+    "dim_filial[cod_filial]": "03",
+    "dim_filial[filial]": "Florianópolis",
+    "dim_calendario[ano]": 2022,
+    "[Realizado]": 542434.76,
+    "[Orcado]": 575271.64,
+    "[Previsto]": 537797.3,
+    "[Linhas]": 12
+  },
+  {
+    "dim_filial[cod_filial]": "03",
+    "dim_filial[filial]": "Florianópolis",
+    "dim_calendario[ano]": 2023,
+    "[Realizado]": 212625.01,
+    "[Orcado]": 597044.75,
+    "[Previsto]": 533725.7100000001,
+    "[Linhas]": 12
+  },
+  {
+    "dim_filial[cod_filial]": "02",
+    "dim_filial[filial]": "Rio de Janeiro",
+    "dim_calendario[ano]": 2021,
+    "[Realizado]": 639921.0,
+    "[Orcado]": 687763.5000000001,
+    "[Previsto]": 619321.73,
+    "[Linhas]": 12
+  },
+  {
+    "dim_filial[cod_filial]": "02",
+    "dim_filial[filial]": "Rio de Janeiro",
+    "dim_calendario[ano]": 2022,
+    "[Realizado]": 614411.5500000002,
+    "[Orcado]": 701356.21,
+    "[Previsto]": 629528.62,
+    "[Linhas]": 12
+  },
+  {
+    "dim_filial[cod_filial]": "02",
+    "dim_filial[filial]": "Rio de Janeiro",
+    "dim_calendario[ano]": 2023,
+    "[Realizado]": 352637.77,
+    "[Orcado]": 753250.1000000001,
+    "[Previsto]": 675855.6699999999,
+    "[Linhas]": 12
+  },
+  {
+    "dim_filial[cod_filial]": "01",
+    "dim_filial[filial]": "São Paulo",
+    "dim_calendario[ano]": 2021,
+    "[Realizado]": 925383.76,
+    "[Orcado]": 902718.45,
+    "[Previsto]": 916069.98,
+    "[Linhas]": 12
+  },
+  {
+    "dim_filial[cod_filial]": "01",
+    "dim_filial[filial]": "São Paulo",
+    "dim_calendario[ano]": 2022,
+    "[Realizado]": 943357.75,
+    "[Orcado]": 935094.6000000001,
+    "[Previsto]": 877195.8999999999,
+    "[Linhas]": 12
+  },
+  {
+    "dim_filial[cod_filial]": "01",
+    "dim_filial[filial]": "São Paulo",
+    "dim_calendario[ano]": 2023,
+    "[Realizado]": 254694.46000000002,
+    "[Orcado]": 836283.0599999998,
+    "[Previsto]": 827562.6500000001,
+    "[Linhas]": 12
+  }
+]

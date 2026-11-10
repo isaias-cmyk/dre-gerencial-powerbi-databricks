@@ -1,0 +1,117 @@
+table vw_dre_comparativo
+	lineageTag: 84c458c0-0806-4f14-8dcc-eb3f4fc58316
+
+	column cod_filial
+		dataType: string
+		isHidden
+		lineageTag: 800de851-6b5f-4eaf-97e1-b7ff04cbf605
+		summarizeBy: none
+		sourceColumn: cod_filial
+
+		annotation SummarizationSetBy = Automatic
+
+	column filial
+		dataType: string
+		isHidden
+		lineageTag: a780a1cd-09a2-4ea3-b0e3-442d0b341e5c
+		summarizeBy: none
+		sourceColumn: filial
+
+		annotation SummarizationSetBy = Automatic
+
+	column competencia
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: fdd7834d-1844-4b29-a035-863328ff5da8
+		summarizeBy: none
+		sourceColumn: competencia
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ano
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: bb94c9c0-6ac4-494b-a82a-8e357fb6d245
+		summarizeBy: none
+		sourceColumn: ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column ordem_dre
+		dataType: int64
+		formatString: 0
+		lineageTag: 4a21fbee-8034-42cd-9d2f-13c32f2bc90a
+		summarizeBy: none
+		sourceColumn: ordem_dre
+
+		annotation SummarizationSetBy = Automatic
+
+	column descricao_dre
+		dataType: string
+		lineageTag: 47ce282c-e004-4f24-a00e-bd1f8192087d
+		summarizeBy: none
+		sourceColumn: descricao_dre
+		sortByColumn: ordem_dre
+
+		annotation SummarizationSetBy = Automatic
+
+	column subtotal
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 83696235-a71d-49c4-aa86-c6e71d75c572
+		summarizeBy: none
+		sourceColumn: subtotal
+
+		annotation SummarizationSetBy = Automatic
+
+	column realizado
+		dataType: double
+		isHidden
+		lineageTag: 2701eb27-5e3b-498f-9974-3be84650b351
+		summarizeBy: sum
+		sourceColumn: realizado
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column orcado
+		dataType: double
+		isHidden
+		lineageTag: 6ef704a8-e5e7-4cc3-9ba9-d7b38b3d79ee
+		summarizeBy: sum
+		sourceColumn: orcado
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column previsto
+		dataType: double
+		isHidden
+		lineageTag: 059a3452-dc81-49df-8ab3-f1e40855c863
+		summarizeBy: sum
+		sourceColumn: previsto
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition vw_dre_comparativo = m
+		mode: import
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs(DatabricksHost, DatabricksHttpPath, [Catalog=null, Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null, Protocol=null]),
+				    workspace_Database = Source{[Name="workspace",Kind="Database"]}[Data],
+				    gold_Schema = workspace_Database{[Name="gold",Kind="Schema"]}[Data],
+				    vw_dre_comparativo_View = gold_Schema{[Name="vw_dre_comparativo",Kind="View"]}[Data]
+				in
+				    vw_dre_comparativo_View
+
+	annotation PBI_ResultType = Table
+

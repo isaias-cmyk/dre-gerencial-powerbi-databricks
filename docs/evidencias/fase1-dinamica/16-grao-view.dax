@@ -1,0 +1,7 @@
+// Somente leitura. NÃO EXECUTADO. Resultado esperado: zero linhas duplicadas.
+EVALUATE
+FILTER(
+ GROUPBY('vw_dre_comparativo',
+ 'vw_dre_comparativo'[cod_filial],'vw_dre_comparativo'[competencia],'vw_dre_comparativo'[ordem_dre],
+ "Quantidade",COUNTX(CURRENTGROUP(),1)),
+ [Quantidade]>1)

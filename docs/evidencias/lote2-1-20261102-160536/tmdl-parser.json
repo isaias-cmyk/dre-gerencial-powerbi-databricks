@@ -1,0 +1,58 @@
+{
+  "Tables": 15,
+  "Relationships": 18,
+  "Measures": 6,
+  "TableHidden": false,
+  "HiddenColumn": true,
+  "PartitionSourceType": "CalculatedPartitionSource",
+  "MeasuresMetadata": [
+    {
+      "Name": "DRE | Realizado",
+      "Description": "Realizado ajustado da view para uma única posição DRE. Total entre posições e indicadores EBIT/EBITDA pendentes retornam BLANK.",
+      "FormatString": "R$ #,##0.00;(R$ #,##0.00);R$ 0.00",
+      "DisplayFolder": "DRE\\Bases",
+      "LineageTag": "9afc2c72-5e4a-4be2-a6e9-6cd7ca93a820",
+      "Expression": "VAR _Descricao = SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] )\nRETURN\n\tIF (\n\t\tHASONEVALUE ( 'vw_dre_comparativo'[ordem_dre] )\n\t\t\t&& NOT ISBLANK ( _Descricao )\n\t\t\t&& NOT CONTAINSSTRING ( _Descricao, \"EBIT\" ),\n\t\tSUM ( 'vw_dre_comparativo'[realizado] ),\n\t\tBLANK ()\n\t)"
+    },
+    {
+      "Name": "DRE | Orçado",
+      "Description": "Orçado ajustado da view para uma única posição DRE. Não soma analíticas com subtotais nem calcula EBIT/EBITDA pendentes.",
+      "FormatString": "R$ #,##0.00;(R$ #,##0.00);R$ 0.00",
+      "DisplayFolder": "DRE\\Bases",
+      "LineageTag": "d32fcf20-faa2-46d9-88e9-ce965ccf4df6",
+      "Expression": "VAR _Descricao = SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] )\nRETURN\n\tIF (\n\t\tHASONEVALUE ( 'vw_dre_comparativo'[ordem_dre] )\n\t\t\t&& NOT ISBLANK ( _Descricao )\n\t\t\t&& NOT CONTAINSSTRING ( _Descricao, \"EBIT\" ),\n\t\tSUM ( 'vw_dre_comparativo'[orcado] ),\n\t\tBLANK ()\n\t)"
+    },
+    {
+      "Name": "DRE | Previsto",
+      "Description": "Previsto ajustado da view para uma única posição DRE. Não soma analíticas com subtotais nem calcula EBIT/EBITDA pendentes.",
+      "FormatString": "R$ #,##0.00;(R$ #,##0.00);R$ 0.00",
+      "DisplayFolder": "DRE\\Bases",
+      "LineageTag": "502c8d18-7f72-4f1f-869c-ae5ef47e83cb",
+      "Expression": "VAR _Descricao = SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] )\nRETURN\n\tIF (\n\t\tHASONEVALUE ( 'vw_dre_comparativo'[ordem_dre] )\n\t\t\t&& NOT ISBLANK ( _Descricao )\n\t\t\t&& NOT CONTAINSSTRING ( _Descricao, \"EBIT\" ),\n\t\tSUM ( 'vw_dre_comparativo'[previsto] ),\n\t\tBLANK ()\n\t)"
+    },
+    {
+      "Name": "DRE | Resultado Líquido Realizado",
+      "Description": "PROVISÓRIO: realizado exclusivamente da posição 13. Resultado Líquido depende de homologação contábil. Filtros de posição conflitantes retornam BLANK.",
+      "FormatString": "R$ #,##0.00;(R$ #,##0.00);R$ 0.00",
+      "DisplayFolder": "DRE\\Resultado Líquido (provisório)",
+      "LineageTag": "ae9c3c48-fc4b-47d2-ae7a-4c4921a014ca",
+      "Expression": "CALCULATE (\n\t[DRE | Realizado],\n\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 13 )\n)"
+    },
+    {
+      "Name": "DRE | Resultado Líquido Orçado",
+      "Description": "PROVISÓRIO: orçado exclusivamente da posição 13. Resultado Líquido depende de homologação contábil. Não reconstrói composição contábil.",
+      "FormatString": "R$ #,##0.00;(R$ #,##0.00);R$ 0.00",
+      "DisplayFolder": "DRE\\Resultado Líquido (provisório)",
+      "LineageTag": "09e3c983-c612-42ae-8445-52fd46b8c46d",
+      "Expression": "CALCULATE (\n\t[DRE | Orçado],\n\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 13 )\n)"
+    },
+    {
+      "Name": "DRE | Resultado Líquido Previsto",
+      "Description": "PROVISÓRIO: previsto exclusivamente da posição 13. Resultado Líquido depende de homologação contábil. Não reconstrói composição contábil.",
+      "FormatString": "R$ #,##0.00;(R$ #,##0.00);R$ 0.00",
+      "DisplayFolder": "DRE\\Resultado Líquido (provisório)",
+      "LineageTag": "dc7727c0-0985-4ba0-a03c-7ed1ec8c0d28",
+      "Expression": "CALCULATE (\n\t[DRE | Previsto],\n\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 13 )\n)"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "celulas": 6279,
+  "agregadas": 4095,
+  "mensais_2021": 2184,
+  "duplicadas": 0,
+  "aprovadas": 6279,
+  "reprovadas": 0,
+  "nulos_coincidentes": 2267,
+  "max_dif_brl": 1.4901161193847656e-07,
+  "max_dif_razao": 2.220446049250313e-15,
+  "falhas": []
+}

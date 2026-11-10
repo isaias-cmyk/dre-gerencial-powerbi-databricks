@@ -1,0 +1,299 @@
+{
+  "source": "Modelo importado carregado no Power BI Desktop, consultas ADOMD locais",
+  "DAXQueriesExecuted": 23,
+  "SQLQueriesExecuted": 0,
+  "QueryErrors": 0,
+  "KeyTests": [
+    {
+      "Teste": "Chave dim_filial.cod_filial",
+      "Linhas": 3,
+      "ChavesDistintas": 3,
+      "ChavesAusentes": null
+    },
+    {
+      "Teste": "Chave dim_conta.id_conta",
+      "Linhas": 129,
+      "ChavesDistintas": 129,
+      "ChavesAusentes": null
+    },
+    {
+      "Teste": "Chave dim_dre.id_dre",
+      "Linhas": 39,
+      "ChavesDistintas": 39,
+      "ChavesAusentes": null
+    },
+    {
+      "Teste": "Chave dim_calendario.data",
+      "Linhas": 1095,
+      "ChavesDistintas": 1095,
+      "ChavesAusentes": null
+    }
+  ],
+  "IntegrityRelationshipTests": 13,
+  "OrphansOrMissingKeysDetected": 0,
+  "ActualRelationships": {
+    "Total": 18,
+    "ActiveBusiness": 12,
+    "InactiveBusiness": 1,
+    "ActiveTechnical": 5,
+    "Cardinality": "Many:One",
+    "Direction": "OneDirection",
+    "State": "Ready",
+    "MultipleActivePaths": [],
+    "TypePairs": [
+      {
+        "ID": "dd5b6732-5fba-479d-b6f3-1936a8f1746b",
+        "Types": [
+          "Date",
+          "Date"
+        ]
+      },
+      {
+        "ID": "75b003b4-6187-4899-b2ad-e655b31b0fc9",
+        "Types": [
+          "Date",
+          "Date"
+        ]
+      },
+      {
+        "ID": "AutoDetected_b803a55e-b318-4f25-80e8-6068d5cedb12",
+        "Types": [
+          "Text",
+          "Text"
+        ]
+      },
+      {
+        "ID": "AutoDetected_d9ec7926-13de-4e3a-beaf-9d5600fb340f",
+        "Types": [
+          "Text",
+          "Text"
+        ]
+      },
+      {
+        "ID": "6c4b7869-5380-4800-881d-7b8930dd3d29",
+        "Types": [
+          "Date",
+          "Date"
+        ]
+      },
+      {
+        "ID": "AutoDetected_b9db6563-6b6a-4ed9-9873-033469b2f0ab",
+        "Types": [
+          "Text",
+          "Text"
+        ]
+      },
+      {
+        "ID": "13c78bc6-b976-df8e-f003-91414e803c01",
+        "Types": [
+          "Date",
+          "Date"
+        ]
+      },
+      {
+        "ID": "dd8569c8-c610-4c02-d15c-c2afbea55cd5",
+        "Types": [
+          "Text",
+          "Text"
+        ]
+      },
+      {
+        "ID": "f3198452-0cec-4397-9362-2a2c270304a4",
+        "Types": [
+          "Date",
+          "Date"
+        ]
+      },
+      {
+        "ID": "AutoDetected_cf6c4540-68ae-4da2-acca-5a3bf495a442",
+        "Types": [
+          "Text",
+          "Text"
+        ]
+      },
+      {
+        "ID": "ddacb715-ec23-2d3c-a337-1083a97c680d",
+        "Types": [
+          "Date",
+          "Date"
+        ]
+      },
+      {
+        "ID": "66e23276-0813-1463-b459-e591093be04e",
+        "Types": [
+          "Text",
+          "Text"
+        ]
+      },
+      {
+        "ID": "98d30182-d70a-4d7b-bde5-8ef769824638",
+        "Types": [
+          "Date",
+          "Date"
+        ]
+      },
+      {
+        "ID": "AutoDetected_2a7e773f-8348-4485-ac6c-69dd9df5dab8",
+        "Types": [
+          "Text",
+          "Text"
+        ]
+      },
+      {
+        "ID": "4f0276cf-4e80-7bc6-b833-a091883c1e68",
+        "Types": [
+          "Date",
+          "Date"
+        ]
+      },
+      {
+        "ID": "855510f8-a1e3-1f4c-4426-15e7304a95d0",
+        "Types": [
+          "Text",
+          "Text"
+        ]
+      },
+      {
+        "ID": "AutoDetected_2ce0342d-62e0-4df8-a023-363036b47efe",
+        "Types": [
+          "Text",
+          "Text"
+        ]
+      },
+      {
+        "ID": "eefc7d39-b405-b354-72e6-c555cb0036a4",
+        "Types": [
+          "Date",
+          "Date"
+        ]
+      }
+    ]
+  },
+  "BranchPeriodCases": 80,
+  "AccountBranchPeriodFactComparisons": 36,
+  "ExplicitMonthMultiBranchCases": 4,
+  "AccountSelected": {
+    "ID": "01.02.04",
+    "Name": "ICMS",
+    "FactRows": [
+      29,
+      36,
+      36
+    ],
+    "ViewRowsUnchanged": 1404
+  },
+  "Line13": {
+    "OrdemDRE": 13,
+    "Realizado": 5038227.389999997,
+    "Orcado": 6622493.819999999,
+    "Previsto": 6157931.190000001,
+    "DifRealizado": 0.0,
+    "DifOrcado": 0.0,
+    "DifPrevisto": 0.0,
+    "DadosPresentes": true
+  },
+  "Calendar": {
+    "Dias": 1095,
+    "Inicio": "2021-01-01T00:00:00",
+    "Fim": "2023-12-31T00:00:00",
+    "DiasEsperados": 1095,
+    "ComHora": null,
+    "MetadadosIncoerentes": null
+  },
+  "Failures": [],
+  "LoadedModelDynamicTests": "APROVADOS",
+  "Remaining": [
+    "Comparação independente com Databricks SQL não executada",
+    "Aceite do responsável da abordagem DRE 1 e limites de conta ainda não registrado"
+  ],
+  "Phase1": "Bloqueada para aceite global; testes locais aprovados",
+  "Phase2": "Não iniciada e não liberada",
+  "Particoes": [
+    {
+      "Name": "dim_calendario",
+      "RefreshedTimeRaw": "2026-11-02T17:15:59.64",
+      "State": 1,
+      "ErrorMessage": null
+    },
+    {
+      "Name": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "RefreshedTimeRaw": "2026-11-02T17:16:02.366667",
+      "State": 1,
+      "ErrorMessage": null
+    },
+    {
+      "Name": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "RefreshedTimeRaw": "2026-11-02T17:16:02.35",
+      "State": 1,
+      "ErrorMessage": null
+    },
+    {
+      "Name": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "RefreshedTimeRaw": "2026-11-02T17:16:02.353333",
+      "State": 1,
+      "ErrorMessage": null
+    },
+    {
+      "Name": "dim_filial",
+      "RefreshedTimeRaw": "2026-11-02T17:16:00.416667",
+      "State": 1,
+      "ErrorMessage": null
+    },
+    {
+      "Name": "dim_conta",
+      "RefreshedTimeRaw": "2026-11-02T17:16:00.27",
+      "State": 1,
+      "ErrorMessage": null
+    },
+    {
+      "Name": "dim_dre",
+      "RefreshedTimeRaw": "2026-11-02T17:16:01.216667",
+      "State": 1,
+      "ErrorMessage": null
+    },
+    {
+      "Name": "fato_lancamentos",
+      "RefreshedTimeRaw": "2026-11-02T17:16:01.69",
+      "State": 1,
+      "ErrorMessage": null
+    },
+    {
+      "Name": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "RefreshedTimeRaw": "2026-11-02T17:16:02.34",
+      "State": 1,
+      "ErrorMessage": null
+    },
+    {
+      "Name": "fato_orcamento",
+      "RefreshedTimeRaw": "2026-11-02T17:16:00.063333",
+      "State": 1,
+      "ErrorMessage": null
+    },
+    {
+      "Name": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "RefreshedTimeRaw": "2026-11-02T17:16:02.363333",
+      "State": 1,
+      "ErrorMessage": null
+    },
+    {
+      "Name": "fato_previsao",
+      "RefreshedTimeRaw": "2026-11-02T17:15:59.553333",
+      "State": 1,
+      "ErrorMessage": null
+    },
+    {
+      "Name": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "RefreshedTimeRaw": "2026-11-02T17:16:02.35",
+      "State": 1,
+      "ErrorMessage": null
+    },
+    {
+      "Name": "vw_dre_comparativo",
+      "RefreshedTimeRaw": "2026-11-02T17:16:00.78",
+      "State": 1,
+      "ErrorMessage": null
+    }
+  ],
+  "BlankInterpretation": "null em contagens COUNTROWS de conjuntos vazios interpretado como 0 técnico; valores financeiros preservados null",
+  "ProductionChangedByRunner": false
+}

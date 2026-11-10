@@ -1,0 +1,7 @@
+{
+  "OriginalBytesRecoveredRemovingOnlyInsertion": true,
+  "OriginalMeasures": 6,
+  "AddedMeasures": 30,
+  "Total": 36,
+  "Strategy": "CALCULATE + KEEPFILTERS; sem divergência do plano"
+}

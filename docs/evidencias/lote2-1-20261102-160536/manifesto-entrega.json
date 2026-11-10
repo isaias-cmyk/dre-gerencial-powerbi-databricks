@@ -1,0 +1,46 @@
+[
+  {
+    "path": "docs/evidencias/lote2-1-20261102-160536/arquivos-alterados.json",
+    "sha256": "CEB13B9F3989C2F8C3ED649316A5F3AAB76308D3139F0B9CE3ACBA3E2DE66205"
+  },
+  {
+    "path": "docs/evidencias/lote2-1-20261102-160536/baseline.json",
+    "sha256": "FCC96AC038D3C0D3B4248974BCC0C7573843E395DB3CFC1FC061FDE73AF5BF87"
+  },
+  {
+    "path": "docs/evidencias/lote2-1-20261102-160536/comparacao-entrada-anterior.json",
+    "sha256": "93028B2147FE45431BCD36FFA249C958FE27D231A99ECF547266EA8E23CCD3CE"
+  },
+  {
+    "path": "docs/evidencias/lote2-1-20261102-160536/desktop-antes-edicao.json",
+    "sha256": "BEEB379F4112F2A71ED925FAE480C025B82774BFEC9BB8036EBC62A7236E9496"
+  },
+  {
+    "path": "docs/evidencias/lote2-1-20261102-160536/estado-lote.json",
+    "sha256": "605D704317895208342DD2FBA3C824E711309D85D898BB053FF55277153F7B3B"
+  },
+  {
+    "path": "docs/evidencias/lote2-1-20261102-160536/git.json",
+    "sha256": "F09A162F247B736CA8EA2CE6D58C00521BDD3572CF906D9D7B8B97C5D3A36A44"
+  },
+  {
+    "path": "docs/evidencias/lote2-1-20261102-160536/integridade-final.json",
+    "sha256": "B03BDB7863C912370DF1FB206DCFBFA9931B53700EFFC466CD0D1678693B4B6D"
+  },
+  {
+    "path": "docs/evidencias/lote2-1-20261102-160536/preparacao.json",
+    "sha256": "6933AB171CED8F5DACAFFE2A609BA918393F6D2BE09920C09404FB398E76A9F2"
+  },
+  {
+    "path": "docs/evidencias/lote2-1-20261102-160536/tmdl-parser.json",
+    "sha256": "90205D0201226CD2A2B78A44D2B9D6D2DE8EDFA61D0B43D6A29D2126BCBE8876"
+  },
+  {
+    "path": "docs/evidencias/lote2-1-20261102-160536/validacao-tmdl.json",
+    "sha256": "686A5689AA0664BF7A2260388DEA13C319652DF20A7AEB625FAF73099F4EF3CD"
+  },
+  {
+    "path": "docs/evidencias/lote2-1-20261102-160536/verificacao-estatica.json",
+    "sha256": "09CCC37B962BBC2FF36172AE233B4F662C5C5B329E40FC018247DABEEE59082B"
+  }
+]

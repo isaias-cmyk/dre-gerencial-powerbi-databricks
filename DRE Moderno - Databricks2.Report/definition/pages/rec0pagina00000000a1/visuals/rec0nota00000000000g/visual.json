@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "rec0nota00000000000g",
+  "position": {
+    "x": 24,
+    "y": 836,
+    "z": 7,
+    "height": 90,
+    "width": 1872,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Linhas 1 (Receita Operacional Bruta) e 2 (Deduções); o total da matriz é a Receita Operacional Líquida. Sinal da DRE: receitas positivas, deduções negativas; desvio positivo = melhor que o orçado. Valores comparáveis: somente meses com Realizado em todas as filiais selecionadas (Realizado até 2023-05). Em linha = |desvio| ≤ R$ 0,01.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#605E5C"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Nota explicativa: Linhas 1 (Receita Operacional Bruta) e 2 (Deduções); o total da matriz é a Receita Operacional Líquida. Sinal da DRE: receitas positivas, deduções negativas; desvio positivo = melhor que o orçado. Valores comparáveis: somente mes...'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

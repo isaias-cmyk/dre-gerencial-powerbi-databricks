@@ -1,0 +1,14 @@
+// Somente leitura. NÃO EXECUTADO. Todas as somas financeiras do pacote restringem ordem_dre=13.
+EVALUATE
+GENERATE(SELECTCOLUMNS(ALLNOBLANKROW('dim_filial'),"Codigo",'dim_filial'[cod_filial],"Filial",'dim_filial'[filial]),
+ VAR _Cod=[Codigo]
+ VAR _V=FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[cod_filial]=_Cod && 'vw_dre_comparativo'[ordem_dre]=13)
+ VAR _R=FILTER(_V,NOT ISBLANK('vw_dre_comparativo'[realizado]))
+ VAR _O=FILTER(_V,NOT ISBLANK('vw_dre_comparativo'[orcado]))
+ VAR _P=FILTER(_V,NOT ISBLANK('vw_dre_comparativo'[previsto]))
+ RETURN ROW("InicioRealizado",MINX(_R,'vw_dre_comparativo'[competencia]),"FimRealizado",MAXX(_R,'vw_dre_comparativo'[competencia]),
+ "InicioOrcado",MINX(_O,'vw_dre_comparativo'[competencia]),"FimOrcado",MAXX(_O,'vw_dre_comparativo'[competencia]),
+ "InicioPrevisto",MINX(_P,'vw_dre_comparativo'[competencia]),"FimPrevisto",MAXX(_P,'vw_dre_comparativo'[competencia]),
+ "CompetenciasRealizado",COUNTROWS(DISTINCT(SELECTCOLUMNS(_R,"D",'vw_dre_comparativo'[competencia]))),
+ "CompetenciasOrcado",COUNTROWS(DISTINCT(SELECTCOLUMNS(_O,"D",'vw_dre_comparativo'[competencia]))),
+ "CompetenciasPrevisto",COUNTROWS(DISTINCT(SELECTCOLUMNS(_P,"D",'vw_dre_comparativo'[competencia])))))

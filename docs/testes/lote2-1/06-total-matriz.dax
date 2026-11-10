@@ -1,0 +1,11 @@
+// Lote 2.1: consulta de leitura. NÃO EXECUTADA nas medidas persistidas.
+// Executar após reabrir o PBIP atualizado; não criar medidas a partir destes testes.
+EVALUATE
+SUMMARIZECOLUMNS(
+ ROLLUPADDISSUBTOTAL('vw_dre_comparativo'[ordem_dre],"EhTotalGeral"),
+ "PosicoesVisiveis",DISTINCTCOUNT('vw_dre_comparativo'[ordem_dre]),
+ "Realizado",[DRE | Realizado],"Orcado",[DRE | Orçado],"Previsto",[DRE | Previsto],
+ "RLRealizadoProvisorio",[DRE | Resultado Líquido Realizado],
+ "RLOrcadoProvisorio",[DRE | Resultado Líquido Orçado],
+ "RLPrevistoProvisorio",[DRE | Resultado Líquido Previsto])
+ORDER BY [EhTotalGeral],'vw_dre_comparativo'[ordem_dre]

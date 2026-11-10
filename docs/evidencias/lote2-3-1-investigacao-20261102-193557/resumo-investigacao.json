@@ -1,0 +1,60 @@
+{
+  "Estado": "BLOQUEADO_CONTRATO_TEMPORAL",
+  "MedidasNovasImplementadas": 0,
+  "MedidasExistentes": 36,
+  "ConsultasDAXDiagnosticoExecutadas": 4,
+  "Erros": 0,
+  "CelulasFilialMes": 108,
+  "ComMovimento": 87,
+  "SemLinhasMovimento": 21,
+  "PosicoesViewPorMes": 13,
+  "PosicoesRealizadoPresentesNosMesesComMovimento": 11,
+  "ValoresZeroObservadosNaFato": 0,
+  "GruposRastreabilidade": 9,
+  "Filiais": [
+    {
+      "Filial": "01",
+      "MesesInspecionados": 36,
+      "MesesComMovimento": 29,
+      "PrimeiroMesComMovimento": "2021-01-01T00:00:00",
+      "UltimoMesComMovimento": "2023-05-01T00:00:00",
+      "LinhasFato": 1247,
+      "MesesSemMovimentoAposUltimo": 7,
+      "CorteHomologado": null
+    },
+    {
+      "Filial": "02",
+      "MesesInspecionados": 36,
+      "MesesComMovimento": 29,
+      "PrimeiroMesComMovimento": "2021-01-01T00:00:00",
+      "UltimoMesComMovimento": "2023-05-01T00:00:00",
+      "LinhasFato": 1247,
+      "MesesSemMovimentoAposUltimo": 7,
+      "CorteHomologado": null
+    },
+    {
+      "Filial": "03",
+      "MesesInspecionados": 36,
+      "MesesComMovimento": 29,
+      "PrimeiroMesComMovimento": "2021-01-01T00:00:00",
+      "UltimoMesComMovimento": "2023-05-01T00:00:00",
+      "LinhasFato": 1247,
+      "MesesSemMovimentoAposUltimo": 7,
+      "CorteHomologado": null
+    }
+  ],
+  "CompetenciasSemMovimentoComProcessamentoCertificado": "Não identificáveis pelos campos disponíveis; não inferir fechamento por ausência/presença",
+  "ControleNoModeloImportado": "Não encontrado",
+  "ControleDatabricksGlobal": "Não determinado: metadados remotos não consultados",
+  "SQLExecutado": 0,
+  "SQLPreparado": [
+    "05-investigar-metadados-databricks.sql",
+    "06-diagnostico-mensal-databricks.sql"
+  ],
+  "ConexaoRemota": "Sem conector Databricks disponível; tentativa de inventário de navegador falhou ao inicializar runtime (erro de caminho), sem acesso à origem",
+  "Backup": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\backups\\lote2-3-1-investigacao-20261102-193557",
+  "BackupArquivos": 372,
+  "BackupRestauradoHashesOK": true,
+  "ProducaoAlterada": false,
+  "Lote232": "NAO_INICIADO"
+}

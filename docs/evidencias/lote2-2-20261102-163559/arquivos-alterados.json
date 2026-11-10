@@ -1,0 +1,123 @@
+[
+  {
+    "Path": "PLANS.md",
+    "State": "ALTERADO",
+    "Before": "BC972D9AE8D07DE7DC368A9DF31EBFFF891B9819F5D4D8FD8FD0A6167B874AE6",
+    "After": "6A5774CCAC5DB962B9FD1E13CBC5902545FF776C6C1F193D38E867DC34740931"
+  },
+  {
+    "Path": "docs/alteracoes.md",
+    "State": "ALTERADO",
+    "Before": "07CAE9A631586E0D9F88006151791FA32AB744D69B8D1A3DAD3B6975D0E7360E",
+    "After": "439B1D7E6DF376EA014A0B5029C73715E34555C4D7C05240C77CFD6E0A0F9A95"
+  },
+  {
+    "Path": "docs/contratos-medidas-dax.md",
+    "State": "ALTERADO",
+    "Before": "2E6D91F49E59F015707B377B27A4DA6B44F70A562A90A2DF25A1E6609A69B812",
+    "After": "3E1EBB09A15F7245407CE8EC928E03B5D19126AE1FC8A8681085D498D177AD49"
+  },
+  {
+    "Path": "docs/plano-lote2-2.md",
+    "State": "ALTERADO",
+    "Before": "7088318D73A26C69A1EE8864EC63ACA51BA5407742C43B88781C19A0D1F14D19",
+    "After": "62E283573A82D7AA2A4CCB6EC5776FA211C6B9B64BC24C7FEE832302470B3A84"
+  },
+  {
+    "Path": "docs/validacoes.md",
+    "State": "ALTERADO",
+    "Before": "3E71AA1DA542B5B732B6FD91F20268131082F9829F804FC98D96ADA0F20DE820",
+    "After": "87F102E5DEE621BA172B9E282B8B1A21E8195131A271FBB5D811E775E358778C"
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/definition/tables/_Medidas.tmdl",
+    "State": "ALTERADO",
+    "Before": "412C17AB19EEE361A151805331CC099E80F69A692222AA179A24E9D76A4BA359",
+    "After": "8AB71BC20F97731C9718053DA6FA2A2FB616297EA9B0B31871B3742E1DB95A2D"
+  },
+  {
+    "Path": "docs/validacao-lote2-2.md",
+    "State": "NOVO",
+    "After": "E815ED8A2C7718FAB79B6997590E8478D248F823C86B7D015DE744C78814955C"
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-atual.json",
+    "State": "NOVO",
+    "After": "0F1718B401CEB09F7D224A8741310152ABC421FD6B740433EDFF7CE779668DE9"
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-finalizar.py",
+    "State": "NOVO",
+    "After": "0280E247609EC5AE42F82CD66BEDFF2424F022D685021D7FA125C68B0044CAB4"
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-gerar.py",
+    "State": "NOVO",
+    "After": "8BA3C6F6FC61347770A78807359F3EBC2ABB442BBA5695274ABA69EE72AA3F47"
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-validar.ps1",
+    "State": "NOVO",
+    "After": "5989A4112588FAB13E0D0A3D0C1B63996A0FFB57F1FD86ECFF343A2245EA65B5"
+  },
+  {
+    "Path": "docs/testes/lote2-2/01-metadados.dax",
+    "State": "NOVO",
+    "After": "11CEDEACCFF14FF347ACCC3379421353D3BB277D2934E4CB713538FA81682CFD"
+  },
+  {
+    "Path": "docs/testes/lote2-2/02-filiais-periodos-conciliacao.dax",
+    "State": "NOVO",
+    "After": "20C1D1F26A23B98A6FF6D45C547BFE8153B83FEF2E942F513A8E336F93CB0950"
+  },
+  {
+    "Path": "docs/testes/lote2-2/03-posicao-descricao-contextos.dax",
+    "State": "NOVO",
+    "After": "A82E5C645DEEEA57A8E0D51403F3E7A7604F6FF457982E3A8CCBBF642CB544C0"
+  },
+  {
+    "Path": "docs/testes/lote2-2/04-matriz-totais.dax",
+    "State": "NOVO",
+    "After": "C4ABAE7CD4B7EA78136F6C2193B5E1093A1FB73B0942D3396B4D86C8E844AD2F"
+  },
+  {
+    "Path": "docs/testes/lote2-2/05-aditividade-filiais.dax",
+    "State": "NOVO",
+    "After": "F2F491DA56D0A48953644CF7F54C10A5F47E2D4FADA45358271611B4688FCEFA"
+  },
+  {
+    "Path": "docs/testes/lote2-2/06-ebitda-ebit.dax",
+    "State": "NOVO",
+    "After": "1A189E7BF27C0D001A084ED1F668D6AC7DF26D662B1F9DB3E27D68065C947DD7"
+  },
+  {
+    "Path": "docs/testes/lote2-2/07-regressao-controle.dax",
+    "State": "NOVO",
+    "After": "4F1E29B805C972D8B9ECF3BD3D1EAC233ABF638DA64A308A163EADCE6F51411B"
+  },
+  {
+    "Path": "docs/testes/lote2-2/08-regressao-bases.dax",
+    "State": "NOVO",
+    "After": "48828BFD15BA0600D56898D49CF390D50453281392BA43A35FB03E47FB5E0615"
+  },
+  {
+    "Path": "docs/testes/lote2-2/09-materializacao.dax",
+    "State": "NOVO",
+    "After": "56B1078B7AEC506C0E997B134A2D9A5B3F418493EAF8CE3B3334AC1124748A6B"
+  },
+  {
+    "Path": "docs/testes/lote2-2/10-referencia-databricks.sql",
+    "State": "NOVO",
+    "After": "4E2EBBAC149FBDB4D1C6332E8FF953588101CEDFC1CB953855EBA2D865C3DD60"
+  },
+  {
+    "Path": "docs/testes/lote2-2/11-receita-liquida-margem.dax",
+    "State": "NOVO",
+    "After": "DC74A0F685F150DF4148EF5ACEAAA89307B32B5469EED9325F174C56F0CF3BA0"
+  },
+  {
+    "Path": "docs/testes/lote2-2/comparar-exportacoes.py",
+    "State": "NOVO",
+    "After": "850EB64A8F15A22CC5946CD42E65B8F3C7A43EC6F2F8FA0782FB1F8ECF3A3D7E"
+  }
+]

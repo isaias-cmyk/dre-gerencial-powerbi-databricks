@@ -1,0 +1,16 @@
+{
+  "evidence": "docs/evidencias/lote2-1-20261102-160536",
+  "backup": "backups/lote2-1-20261102-160536",
+  "included": 176,
+  "excluded": 4,
+  "excludedRule": "Todas as pastas .pbi; backups e .git fora do inventário",
+  "archiveSHA256": "B48E09E1E12CD51EF7C77A5B02448F0845EBF405C154FBCFEB94F86C9E46B78C",
+  "restoreHashes": "OK",
+  "sourceSnapshotHashes": "OK",
+  "gitRepository": false,
+  "previousChanges": [
+    "PLANS.md",
+    "DRE Moderno - Databricks.Report/.pbi/localSettings.json",
+    "DRE Moderno - Databricks.SemanticModel/.pbi/localSettings.json"
+  ]
+}

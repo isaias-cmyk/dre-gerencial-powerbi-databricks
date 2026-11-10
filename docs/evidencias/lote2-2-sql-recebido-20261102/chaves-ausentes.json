@@ -1,0 +1,932 @@
+[
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023",
+    "posicao": "10",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023",
+    "posicao": "10",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023",
+    "posicao": "10",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023",
+    "posicao": "12",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023",
+    "posicao": "12",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023",
+    "posicao": "12",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023",
+    "posicao": "13",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023",
+    "posicao": "13",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023",
+    "posicao": "13",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023",
+    "posicao": "4",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023",
+    "posicao": "4",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023",
+    "posicao": "5",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023",
+    "posicao": "5",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023",
+    "posicao": "5",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023",
+    "posicao": "6",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023",
+    "posicao": "6",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023",
+    "posicao": "6",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023",
+    "posicao": "7",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023",
+    "posicao": "7",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023",
+    "posicao": "7",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023",
+    "posicao": "9",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023",
+    "posicao": "9",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023",
+    "posicao": "9",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "1",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "1",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "1",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "10",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "10",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "10",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "12",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "12",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "12",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "13",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "13",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "13",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "2",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "2",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "2",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "3",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "3",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "3",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "4",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "4",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "4",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "5",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "5",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "5",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "6",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "6",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "6",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "7",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "7",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "7",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "9",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "9",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_janmai",
+    "posicao": "9",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "1",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "1",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "1",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "10",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "10",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "10",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "12",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "12",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "12",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "13",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "13",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "13",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "2",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "2",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "2",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "3",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "3",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "3",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "4",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "4",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "4",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "5",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "5",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "5",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "6",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "6",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "6",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "7",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "7",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "7",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "9",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "9",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_jundez",
+    "posicao": "9",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "1",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "1",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "1",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "10",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "10",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "10",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "12",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "12",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "12",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "13",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "13",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "13",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "2",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "2",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "2",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "3",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "3",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "3",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "4",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "4",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "4",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "5",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "5",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "5",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "6",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "6",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "6",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "7",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "7",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "7",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "9",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "9",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "2023_junho",
+    "posicao": "9",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "1",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "1",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "1",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "10",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "10",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "10",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "12",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "12",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "12",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "13",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "13",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "13",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "2",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "2",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "2",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "3",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "3",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "3",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "4",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "4",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "4",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "5",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "5",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "5",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "6",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "6",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "6",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "7",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "7",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "7",
+    "cenario": "realizado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "9",
+    "cenario": "orçado"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "9",
+    "cenario": "previsto"
+  },
+  {
+    "grupo_filial": "consolidado",
+    "periodo": "integral",
+    "posicao": "9",
+    "cenario": "realizado"
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-11-02T15:08:11.750116-03:00",
+  "scope": "Fase 1: somente leitura de fontes e auditoria estática",
+  "tableCount": 14,
+  "businessTableCount": 8,
+  "businessColumnCount": 56,
+  "relationshipCount": 18,
+  "businessRelationships": 13,
+  "businessActiveAssumed": 12,
+  "explicitInactive": 1,
+  "endpointErrors": [],
+  "typeMismatch": [],
+  "duplicateRelationshipPairs": [],
+  "duplicateLineageTags": [],
+  "missingTableRefs": [],
+  "tablesWithoutModelRef": [],
+  "variationReferenceErrors": [],
+  "multipleActivePathsConditional": [],
+  "pathsIfInactiveActivated": [
+    {
+      "source": "dim_filial",
+      "target": "fato_lancamentos",
+      "paths": [
+        [
+          "AutoDetected_b803a55e-b318-4f25-80e8-6068d5cedb12",
+          "dd8569c8-c610-4c02-d15c-c2afbea55cd5"
+        ],
+        [
+          "AutoDetected_b9db6563-6b6a-4ed9-9873-033469b2f0ab"
+        ]
+      ]
+    },
+    {
+      "source": "dim_filial",
+      "target": "fato_orcamento",
+      "paths": [
+        [
+          "AutoDetected_b803a55e-b318-4f25-80e8-6068d5cedb12",
+          "66e23276-0813-1463-b459-e591093be04e"
+        ],
+        [
+          "AutoDetected_cf6c4540-68ae-4da2-acca-5a3bf495a442"
+        ]
+      ]
+    },
+    {
+      "source": "dim_filial",
+      "target": "fato_previsao",
+      "paths": [
+        [
+          "AutoDetected_b803a55e-b318-4f25-80e8-6068d5cedb12",
+          "855510f8-a1e3-1f4c-4426-15e7304a95d0"
+        ],
+        [
+          "AutoDetected_2a7e773f-8348-4485-ac6c-69dd9df5dab8"
+        ]
+      ]
+    }
+  ],
+  "measureCount": 0,
+  "JSONParseCount": 11,
+  "sameAsF0": 36,
+  "comparedF0": 36,
+  "rowDataTests": "Não executados; sem sessão tabular/Databricks autenticada disponível",
+  "phase1Status": "Bloqueado: chaves/integridade/filtros não comprovados; contrato de linha DRE e de detalhe por conta pendente",
+  "phase2Status": "Não iniciada",
+  "duplicateRelationshipIds": [],
+  "finalUnchangedSourceFiles": 36
+}

@@ -1,0 +1,13 @@
+"[Codigo]","[Filial]","[Periodo]","[MesInicial]","[MesFinal]","[ParametroValido]","[LancamentosVia]","[LancamentosDireto]","[LancamentosExtras]","[LancamentosFaltantes]","[OrcamentoVia]","[OrcamentoDireto]","[OrcamentoExtras]","[OrcamentoFaltantes]","[PrevisaoVia]","[PrevisaoDireto]","[PrevisaoExtras]","[PrevisaoFaltantes]"
+"01","São Paulo","2021","202101","202201","True","12","12",,,"12","12",,,"12","12",,
+"02","Rio de Janeiro","2021","202101","202201","True",,,,,,,,,,,,
+"03","Florianópolis","2021","202101","202201","True",,,,,,,,,,,,
+"01","São Paulo","2022","202201","202301","True","12","12",,,"12","12",,,"12","12",,
+"02","Rio de Janeiro","2022","202201","202301","True",,,,,,,,,,,,
+"03","Florianópolis","2022","202201","202301","True",,,,,,,,,,,,
+"01","São Paulo","2023_JanMai","202301","202306","True","5","5",,,"5","5",,,"5","5",,
+"02","Rio de Janeiro","2023_JanMai","202301","202306","True",,,,,,,,,,,,
+"03","Florianópolis","2023_JanMai","202301","202306","True",,,,,,,,,,,,
+"01","São Paulo","2023_JunDez","202306","202401","True",,,,,"7","7",,,"7","7",,
+"02","Rio de Janeiro","2023_JunDez","202306","202401","True",,,,,,,,,,,,
+"03","Florianópolis","2023_JunDez","202306","202401","True",,,,,,,,,,,,

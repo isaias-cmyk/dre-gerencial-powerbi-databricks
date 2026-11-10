@@ -1,0 +1,77 @@
+{
+  "estado": "IMPLEMENTADO_EM_VALIDACAO_SQL_PENDENTE",
+  "backup": {
+    "tag": "lote2-3-1-implementacao-20261103-085405",
+    "backup": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\backups\\lote2-3-1-implementacao-20261103-085405",
+    "evidence": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\docs\\evidencias\\lote2-3-1-implementacao-20261103-085405",
+    "files": 412,
+    "restauracao_sha256": true,
+    "zip_sha256": "f9743c8019f62695617c4b30302267ac6fb755566df4b1fadc9c0f7d7743c117",
+    "desktop": "Fechado; verificado no host",
+    "git": "Fora de repositorio; status/rev-parse 128",
+    "exclusoes": "backups, .git e .pbi"
+  },
+  "configuracao": {
+    "linhas": 9,
+    "contrato_intervalos_hash_coincidentes": true,
+    "oculta": true,
+    "sem_relacionamentos": true
+  },
+  "modelo": {
+    "tabelas": 16,
+    "relacionamentos": 18,
+    "medidas_validas": 41,
+    "particoes_ready": 16
+  },
+  "matriz": {
+    "combinacoes": 45,
+    "posicoes": 13,
+    "cenarios": 3,
+    "casos": 1755,
+    "aprovados": 1755,
+    "falhas": 0,
+    "max_diferenca": 0,
+    "blank_preservados": 600,
+    "pares_verificados": 1755
+  },
+  "regressao": {
+    "medidas": 36,
+    "casos": 1620,
+    "aprovados": 1620,
+    "max_diferenca": 0
+  },
+  "aditividade": {
+    "comparacoes_incluindo_blank": 702,
+    "falhas": 0,
+    "limite": "Mesmas competencias comuns para filiais e consolidado; comparacoes derivadas da matriz, nao execucoes adicionais"
+  },
+  "guardas": {
+    "casos": 3,
+    "aprovados": 3
+  },
+  "sinteticos": {
+    "casos": 2,
+    "aprovados": 2,
+    "escopo": "Cinco expressoes redefinidas identicamente em consulta, bases privadas zero/blank; sem persistencia"
+  },
+  "sql_independente": {
+    "executado": false,
+    "aprovado": false,
+    "pendencia": "Exportar os dois resultados do roteiro 15 e executar comparador para o mesmo snapshot"
+  },
+  "historico_erros": {
+    "config_inicial": "DATATABLE DATE rejeitado; corrigido para literal ISO DATETIME com Desktop fechado, sem mudar intervalos",
+    "sintetico_inicial": "Override somente das bases nao afetou dependencias persistidas; resultado inicial nao serve como prova de zero/blank; corrigido com cinco expressoes em escopo de consulta"
+  },
+  "arquivos_producao_preexistentes_alterados": [
+    "DRE Moderno - Databricks.SemanticModel/definition/model.tmdl",
+    "DRE Moderno - Databricks.SemanticModel/definition/tables/_Medidas.tmdl"
+  ],
+  "medidas_antigas_identicas": 36,
+  "novo_arquivo": "definition/tables/_ConfigCobertura.tmdl",
+  "pendencias": [
+    "Conciliacao SQL independente",
+    "Save/reabertura e persistencia do cache apos materializacao ainda nao testadas",
+    "Testes de configuracao futura com lacunas/cortes diferentes: validacao sintética ampliada pendente; nao houve alteracao da configuracao homologada"
+  ]
+}

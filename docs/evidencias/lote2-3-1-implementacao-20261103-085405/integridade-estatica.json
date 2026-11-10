@@ -1,0 +1,12 @@
+{
+  "medidas_anteriores_preservadas": 36,
+  "novas": 5,
+  "alteracoes_preexistentes": [
+    "DRE Moderno - Databricks.SemanticModel/definition/model.tmdl",
+    "DRE Moderno - Databricks.SemanticModel/definition/tables/_Medidas.tmdl"
+  ],
+  "producao_alterada_somente_model_e_medidas": true,
+  "relacionamentos_preservados": true,
+  "fontes_negocio_paginas_preservadas": true,
+  "config_nova_sem_relacao": true
+}

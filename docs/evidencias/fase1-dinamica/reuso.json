@@ -1,0 +1,12 @@
+[
+  {
+    "path": "docs\\evidencias\\fase1\\roteiro-testes-nao-executados.sql",
+    "sha256": "EAACC2DB934E6F68FC024C7698714C9F6129652C4F80465B21A652304813A031",
+    "action": "Preservado; complementado sem duplicar a auditoria estática"
+  },
+  {
+    "path": "docs\\evidencias\\fase1\\roteiro-testes-nao-executados.dax",
+    "sha256": "CA845F26E41BE389650E19BEB7F49111B32C75D9639F7462A47F05F21FBCF532",
+    "action": "Preservado; complementado sem duplicar a auditoria estática"
+  }
+]

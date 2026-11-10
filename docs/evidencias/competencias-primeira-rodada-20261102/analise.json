@@ -1,0 +1,13 @@
+{
+  "schemas": 5,
+  "colunas_A03": 53,
+  "colunas_B02": 193,
+  "objetos_B02": 28,
+  "duplicacoes_colunas": 0,
+  "campos_A03_sem_correspondencia_B02": 0,
+  "A02": "Captura de tela com zero linhas; sem CSV",
+  "B04": "Conteudo HISTORY, nao SHOW TBLPROPERTIES",
+  "historico_mesma_versao_timestamp_consulta": true,
+  "status": "BLOQUEADO",
+  "sql_remoto_agente": 0
+}

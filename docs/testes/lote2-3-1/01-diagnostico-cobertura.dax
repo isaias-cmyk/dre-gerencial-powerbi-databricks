@@ -1,0 +1,25 @@
+// Somente leitura. Presença de movimento NÃO é prova de carga completa/fechamento.
+// Não calcula nem homologa corte; não filtra uma posição para inferir cobertura global.
+EVALUATE
+VAR _Meses = SUMMARIZE ( ALL ( 'dim_calendario' ), 'dim_calendario'[inicio_mes] )
+VAR _Filiais = SELECTCOLUMNS ( ALLNOBLANKROW ( 'dim_filial' ), "Codigo", 'dim_filial'[cod_filial], "Filial", 'dim_filial'[filial] )
+RETURN
+    GENERATE (
+        CROSSJOIN ( _Filiais, _Meses ),
+        VAR _Codigo = [Codigo]
+        VAR _Mes = 'dim_calendario'[inicio_mes]
+        VAR _View = FILTER ( ALL ( 'vw_dre_comparativo' ), 'vw_dre_comparativo'[cod_filial] = _Codigo && 'vw_dre_comparativo'[competencia] = _Mes )
+        VAR _Fato = FILTER ( ALL ( 'fato_lancamentos' ), 'fato_lancamentos'[cod_filial] = _Codigo && 'fato_lancamentos'[competencia_data] = _Mes )
+        RETURN
+            ROW (
+                "LinhasView", COUNTROWS ( _View ),
+                "PosicoesComRealizado", COUNTROWS ( FILTER ( _View, NOT ISBLANK ( 'vw_dre_comparativo'[realizado] ) ) ),
+                "PosicoesRealizadoZero", COUNTROWS ( FILTER ( _View, NOT ISBLANK ( 'vw_dre_comparativo'[realizado] ) && 'vw_dre_comparativo'[realizado] == 0 ) ),
+                "Lancamentos", COUNTROWS ( _Fato ),
+                "LancamentosValorPresente", COUNTROWS ( FILTER ( _Fato, NOT ISBLANK ( 'fato_lancamentos'[valor] ) ) ),
+                "LancamentosZero", COUNTROWS ( FILTER ( _Fato, NOT ISBLANK ( 'fato_lancamentos'[valor] ) && 'fato_lancamentos'[valor] == 0 ) ),
+                "LancamentosNegativos", COUNTROWS ( FILTER ( _Fato, 'fato_lancamentos'[valor] < 0 ) ),
+                "CoberturaHomologada", "NAO_INFERIDA_POR_MOVIMENTO"
+            )
+    )
+ORDER BY [Codigo], 'dim_calendario'[inicio_mes]

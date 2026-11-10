@@ -1,0 +1,31 @@
+// FASE 1. Consulta somente leitura, NÃO EXECUTADA neste ambiente. Não cria medidas.
+EVALUATE
+VAR _Conta = "__ID_CONTA_ANALITICA__"
+VAR _Valida = CONTAINS(ALLNOBLANKROW('dim_conta'),'dim_conta'[id_conta],_Conta)
+RETURN ADDCOLUMNS(UNION(
+ROW("Tabela","fato_lancamentos",
+ "Total",COUNTROWS(ALL('fato_lancamentos')),
+ "ViaConta",CALCULATE(COUNTROWS('fato_lancamentos'),TREATAS({_Conta},'dim_conta'[id_conta])),
+ "Direto",COUNTROWS(FILTER(ALL('fato_lancamentos'),'fato_lancamentos'[planocontas_id]=_Conta)),
+ "Extras",COUNTROWS(EXCEPT(CALCULATETABLE('fato_lancamentos',TREATAS({_Conta},'dim_conta'[id_conta])),FILTER(ALL('fato_lancamentos'),'fato_lancamentos'[planocontas_id]=_Conta))),
+ "Faltantes",COUNTROWS(EXCEPT(FILTER(ALL('fato_lancamentos'),'fato_lancamentos'[planocontas_id]=_Conta),CALCULATETABLE('fato_lancamentos',TREATAS({_Conta},'dim_conta'[id_conta]))))),
+ROW("Tabela","fato_orcamento",
+ "Total",COUNTROWS(ALL('fato_orcamento')),
+ "ViaConta",CALCULATE(COUNTROWS('fato_orcamento'),TREATAS({_Conta},'dim_conta'[id_conta])),
+ "Direto",COUNTROWS(FILTER(ALL('fato_orcamento'),'fato_orcamento'[planocontas_id]=_Conta)),
+ "Extras",COUNTROWS(EXCEPT(CALCULATETABLE('fato_orcamento',TREATAS({_Conta},'dim_conta'[id_conta])),FILTER(ALL('fato_orcamento'),'fato_orcamento'[planocontas_id]=_Conta))),
+ "Faltantes",COUNTROWS(EXCEPT(FILTER(ALL('fato_orcamento'),'fato_orcamento'[planocontas_id]=_Conta),CALCULATETABLE('fato_orcamento',TREATAS({_Conta},'dim_conta'[id_conta]))))),
+ROW("Tabela","fato_previsao",
+ "Total",COUNTROWS(ALL('fato_previsao')),
+ "ViaConta",CALCULATE(COUNTROWS('fato_previsao'),TREATAS({_Conta},'dim_conta'[id_conta])),
+ "Direto",COUNTROWS(FILTER(ALL('fato_previsao'),'fato_previsao'[planocontas_id]=_Conta)),
+ "Extras",COUNTROWS(EXCEPT(CALCULATETABLE('fato_previsao',TREATAS({_Conta},'dim_conta'[id_conta])),FILTER(ALL('fato_previsao'),'fato_previsao'[planocontas_id]=_Conta))),
+ "Faltantes",COUNTROWS(EXCEPT(FILTER(ALL('fato_previsao'),'fato_previsao'[planocontas_id]=_Conta),CALCULATETABLE('fato_previsao',TREATAS({_Conta},'dim_conta'[id_conta]))))),
+ROW("Tabela","vw_dre_comparativo",
+ "Total",COUNTROWS(ALL('vw_dre_comparativo')),
+ "ViaConta",CALCULATE(COUNTROWS('vw_dre_comparativo'),TREATAS({_Conta},'dim_conta'[id_conta])),
+ "Direto",COUNTROWS(ALL('vw_dre_comparativo')),
+ "Extras",COUNTROWS(EXCEPT(CALCULATETABLE('vw_dre_comparativo',TREATAS({_Conta},'dim_conta'[id_conta])),ALL('vw_dre_comparativo'))),
+ "Faltantes",COUNTROWS(EXCEPT(ALL('vw_dre_comparativo'),CALCULATETABLE('vw_dre_comparativo',TREATAS({_Conta},'dim_conta'[id_conta])))))),"ParametroValido",_Valida)
+// Substituir somente o parâmetro pela conta analítica confirmada no teste 10.
+// ParametroValido FALSE impede aceite; números vazios/zero não aprovam o teste.

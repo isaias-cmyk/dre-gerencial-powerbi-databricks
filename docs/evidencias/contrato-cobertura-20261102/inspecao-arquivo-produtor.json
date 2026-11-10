@@ -1,0 +1,369 @@
+{
+  "arquivo": "BaseDados.xlsx",
+  "sha256": "27e02e7148984d74acdb5cf086a9ba637c55617152793f23509d3bad24bce04b",
+  "propriedades_core": {},
+  "epoca_excel": "1899-12-30",
+  "abas": [
+    {
+      "aba": "dEstruturaDRE",
+      "visibilidade": "visible",
+      "cabecalho": {
+        "A": "id",
+        "B": "index",
+        "C": "contaGerencial",
+        "D": "subtotal",
+        "E": "empresa",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": "",
+        "K": "",
+        "L": "",
+        "M": "",
+        "N": "",
+        "O": "",
+        "P": "",
+        "Q": "",
+        "R": "",
+        "S": "",
+        "T": "",
+        "U": "",
+        "V": "",
+        "W": "",
+        "X": "",
+        "Y": "",
+        "Z": ""
+      },
+      "linhas_nao_vazias_sem_cabecalho": 39,
+      "competencias": {},
+      "datas_nao_interpretadas": 0
+    },
+    {
+      "aba": "dPlanoConta",
+      "visibilidade": "visible",
+      "cabecalho": {
+        "A": "id",
+        "B": "index",
+        "C": "descricaoN1",
+        "D": "descricaoN2",
+        "E": "detalharN2",
+        "F": "mascaraDRE_id",
+        "G": "tipoLancamento"
+      },
+      "linhas_nao_vazias_sem_cabecalho": 129,
+      "competencias": {},
+      "datas_nao_interpretadas": 0
+    },
+    {
+      "aba": "fOrcamento",
+      "visibilidade": "visible",
+      "cabecalho": {
+        "A": "competencia_data",
+        "B": "planoContas_id",
+        "C": "valor"
+      },
+      "linhas_nao_vazias_sem_cabecalho": 4644,
+      "competencias": {
+        "2021-01": 129,
+        "2021-02": 129,
+        "2021-03": 129,
+        "2021-04": 129,
+        "2021-05": 129,
+        "2021-06": 129,
+        "2021-07": 129,
+        "2021-08": 129,
+        "2021-09": 129,
+        "2021-10": 129,
+        "2021-11": 129,
+        "2021-12": 129,
+        "2022-01": 129,
+        "2022-02": 129,
+        "2022-03": 129,
+        "2022-04": 129,
+        "2022-05": 129,
+        "2022-06": 129,
+        "2022-07": 129,
+        "2022-08": 129,
+        "2022-09": 129,
+        "2022-10": 129,
+        "2022-11": 129,
+        "2022-12": 129,
+        "2023-01": 129,
+        "2023-02": 129,
+        "2023-03": 129,
+        "2023-04": 129,
+        "2023-05": 129,
+        "2023-06": 129,
+        "2023-07": 129,
+        "2023-08": 129,
+        "2023-09": 129,
+        "2023-10": 129,
+        "2023-11": 129,
+        "2023-12": 129
+      },
+      "datas_nao_interpretadas": 0
+    },
+    {
+      "aba": "fPrevisao",
+      "visibilidade": "visible",
+      "cabecalho": {
+        "A": "competencia_data",
+        "B": "planoContas_id",
+        "C": "valor"
+      },
+      "linhas_nao_vazias_sem_cabecalho": 4644,
+      "competencias": {
+        "2021-01": 129,
+        "2021-02": 129,
+        "2021-03": 129,
+        "2021-04": 129,
+        "2021-05": 129,
+        "2021-06": 129,
+        "2021-07": 129,
+        "2021-08": 129,
+        "2021-09": 129,
+        "2021-10": 129,
+        "2021-11": 129,
+        "2021-12": 129,
+        "2022-01": 129,
+        "2022-02": 129,
+        "2022-03": 129,
+        "2022-04": 129,
+        "2022-05": 129,
+        "2022-06": 129,
+        "2022-07": 129,
+        "2022-08": 129,
+        "2022-09": 129,
+        "2022-10": 129,
+        "2022-11": 129,
+        "2022-12": 129,
+        "2023-01": 129,
+        "2023-02": 129,
+        "2023-03": 129,
+        "2023-04": 129,
+        "2023-05": 129,
+        "2023-06": 129,
+        "2023-07": 129,
+        "2023-08": 129,
+        "2023-09": 129,
+        "2023-10": 129,
+        "2023-11": 129,
+        "2023-12": 129
+      },
+      "datas_nao_interpretadas": 0
+    },
+    {
+      "aba": "fLancamento1_ano1",
+      "visibilidade": "visible",
+      "cabecalho": {
+        "A": "competencia_data",
+        "B": "planoContas_id",
+        "C": "valor"
+      },
+      "linhas_nao_vazias_sem_cabecalho": 516,
+      "competencias": {
+        "2021-01": 43,
+        "2021-02": 43,
+        "2021-03": 43,
+        "2021-04": 43,
+        "2021-05": 43,
+        "2021-06": 43,
+        "2021-07": 43,
+        "2021-08": 43,
+        "2021-09": 43,
+        "2021-10": 43,
+        "2021-11": 43,
+        "2021-12": 43
+      },
+      "datas_nao_interpretadas": 0
+    },
+    {
+      "aba": "fLancamento2_ano1",
+      "visibilidade": "visible",
+      "cabecalho": {
+        "A": "competencia_data",
+        "B": "planoContas_id",
+        "C": "valor"
+      },
+      "linhas_nao_vazias_sem_cabecalho": 516,
+      "competencias": {
+        "2021-01": 43,
+        "2021-02": 43,
+        "2021-03": 43,
+        "2021-04": 43,
+        "2021-05": 43,
+        "2021-06": 43,
+        "2021-07": 43,
+        "2021-08": 43,
+        "2021-09": 43,
+        "2021-10": 43,
+        "2021-11": 43,
+        "2021-12": 43
+      },
+      "datas_nao_interpretadas": 0
+    },
+    {
+      "aba": "fLancamento3_ano1",
+      "visibilidade": "visible",
+      "cabecalho": {
+        "A": "competencia_data",
+        "B": "planoContas_id",
+        "C": "valor"
+      },
+      "linhas_nao_vazias_sem_cabecalho": 516,
+      "competencias": {
+        "2021-01": 43,
+        "2021-02": 43,
+        "2021-03": 43,
+        "2021-04": 43,
+        "2021-05": 43,
+        "2021-06": 43,
+        "2021-07": 43,
+        "2021-08": 43,
+        "2021-09": 43,
+        "2021-10": 43,
+        "2021-11": 43,
+        "2021-12": 43
+      },
+      "datas_nao_interpretadas": 0
+    },
+    {
+      "aba": "fLancamento1_ano2",
+      "visibilidade": "visible",
+      "cabecalho": {
+        "A": "competencia_data",
+        "B": "planoContas_id",
+        "C": "valor"
+      },
+      "linhas_nao_vazias_sem_cabecalho": 516,
+      "competencias": {
+        "2022-01": 43,
+        "2022-02": 43,
+        "2022-03": 43,
+        "2022-04": 43,
+        "2022-05": 43,
+        "2022-06": 43,
+        "2022-07": 43,
+        "2022-08": 43,
+        "2022-09": 43,
+        "2022-10": 43,
+        "2022-11": 43,
+        "2022-12": 43
+      },
+      "datas_nao_interpretadas": 0
+    },
+    {
+      "aba": "fLancamento2_ano2",
+      "visibilidade": "visible",
+      "cabecalho": {
+        "A": "competencia_data",
+        "B": "planoContas_id",
+        "C": "valor"
+      },
+      "linhas_nao_vazias_sem_cabecalho": 516,
+      "competencias": {
+        "2022-01": 43,
+        "2022-02": 43,
+        "2022-03": 43,
+        "2022-04": 43,
+        "2022-05": 43,
+        "2022-06": 43,
+        "2022-07": 43,
+        "2022-08": 43,
+        "2022-09": 43,
+        "2022-10": 43,
+        "2022-11": 43,
+        "2022-12": 43
+      },
+      "datas_nao_interpretadas": 0
+    },
+    {
+      "aba": "fLancamento3_ano2",
+      "visibilidade": "visible",
+      "cabecalho": {
+        "A": "competencia_data",
+        "B": "planoContas_id",
+        "C": "valor"
+      },
+      "linhas_nao_vazias_sem_cabecalho": 516,
+      "competencias": {
+        "2022-01": 43,
+        "2022-02": 43,
+        "2022-03": 43,
+        "2022-04": 43,
+        "2022-05": 43,
+        "2022-06": 43,
+        "2022-07": 43,
+        "2022-08": 43,
+        "2022-09": 43,
+        "2022-10": 43,
+        "2022-11": 43,
+        "2022-12": 43
+      },
+      "datas_nao_interpretadas": 0
+    },
+    {
+      "aba": "fLancamento1_ano3",
+      "visibilidade": "visible",
+      "cabecalho": {
+        "A": "competencia_data",
+        "B": "planoContas_id",
+        "C": "valor"
+      },
+      "linhas_nao_vazias_sem_cabecalho": 215,
+      "competencias": {
+        "2023-01": 43,
+        "2023-02": 43,
+        "2023-03": 43,
+        "2023-04": 43,
+        "2023-05": 43
+      },
+      "datas_nao_interpretadas": 0
+    },
+    {
+      "aba": "fLancamento2_ano3",
+      "visibilidade": "visible",
+      "cabecalho": {
+        "A": "competencia_data",
+        "B": "planoContas_id",
+        "C": "valor"
+      },
+      "linhas_nao_vazias_sem_cabecalho": 215,
+      "competencias": {
+        "2023-01": 43,
+        "2023-02": 43,
+        "2023-03": 43,
+        "2023-04": 43,
+        "2023-05": 43
+      },
+      "datas_nao_interpretadas": 0
+    },
+    {
+      "aba": "fLancamento3_ano3",
+      "visibilidade": "visible",
+      "cabecalho": {
+        "A": "competencia_data",
+        "B": "planoContas_id",
+        "C": "valor"
+      },
+      "linhas_nao_vazias_sem_cabecalho": 215,
+      "competencias": {
+        "2023-01": 43,
+        "2023-02": 43,
+        "2023-03": 43,
+        "2023-04": 43,
+        "2023-05": 43
+      },
+      "datas_nao_interpretadas": 0
+    }
+  ],
+  "ocorrencias_termos_controle": [],
+  "partes_especiais": [],
+  "metadata_binario": {
+    "arquivo": "xl/metadata",
+    "tamanho_bytes": 528,
+    "interpretado": false
+  },
+  "limites": "Copia local; identidade com arquivo ingerido nao certificada; ausencia de termos nao prova ausencia de controle externo."
+}

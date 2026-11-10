@@ -1,0 +1,182 @@
+[
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Realizado",
+    "[Consolidado]": 199326296.52000004,
+    "[SomaFiliais]": 199326296.51999998,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Orçado",
+    "[Consolidado]": 247514660.8499999,
+    "[SomaFiliais]": 247514660.85000002,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Previsto",
+    "[Consolidado]": 247322501.02999997,
+    "[SomaFiliais]": 247322501.03,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Realizado",
+    "[Consolidado]": -52908485.35,
+    "[SomaFiliais]": -52908485.35,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Orçado",
+    "[Consolidado]": -65546706.95999997,
+    "[SomaFiliais]": -65546706.96,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Previsto",
+    "[Consolidado]": -65439748.31,
+    "[SomaFiliais]": -65439748.31,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Realizado",
+    "[Consolidado]": 146417811.17,
+    "[SomaFiliais]": 146417811.17000002,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Orçado",
+    "[Consolidado]": 181967953.89000002,
+    "[SomaFiliais]": 181967953.88999996,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Previsto",
+    "[Consolidado]": 181882752.7199999,
+    "[SomaFiliais]": 181882752.72,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Realizado",
+    "[Consolidado]": -93588816.06000002,
+    "[SomaFiliais]": -93588816.06000002,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Orçado",
+    "[Consolidado]": -116424340.03000005,
+    "[SomaFiliais]": -116424340.03,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Previsto",
+    "[Consolidado]": -116720083.27999994,
+    "[SomaFiliais]": -116720083.28000002,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Realizado",
+    "[Consolidado]": 52828995.11000002,
+    "[SomaFiliais]": 52828995.11,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Orçado",
+    "[Consolidado]": 65543613.85999999,
+    "[SomaFiliais]": 65543613.86,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Previsto",
+    "[Consolidado]": 65162669.43999999,
+    "[SomaFiliais]": 65162669.44,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Realizado",
+    "[Consolidado]": -46203238.52,
+    "[SomaFiliais]": -46203238.519999996,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Orçado",
+    "[Consolidado]": -56892053.86000002,
+    "[SomaFiliais]": -56892053.85999999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Previsto",
+    "[Consolidado]": -56976331.95999997,
+    "[SomaFiliais]": -56976331.96,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Realizado",
+    "[Consolidado]": -468158.12999999983,
+    "[SomaFiliais]": -468158.13,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Orçado",
+    "[Consolidado]": -581312.93,
+    "[SomaFiliais]": -581312.9299999999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Previsto",
+    "[Consolidado]": -581918.9000000007,
+    "[SomaFiliais]": -581918.9,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Realizado",
+    "[Consolidado]": -287307.4699999999,
+    "[SomaFiliais]": -287307.47000000003,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Orçado",
+    "[Consolidado]": -360393.31000000006,
+    "[SomaFiliais]": -360393.30999999994,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Previsto",
+    "[Consolidado]": -360169.38999999984,
+    "[SomaFiliais]": -360169.39,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Realizado",
+    "[Consolidado]": -150388.21,
+    "[SomaFiliais]": -150388.21,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Orçado",
+    "[Consolidado]": -190973.55999999997,
+    "[SomaFiliais]": -190973.56,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Previsto",
+    "[Consolidado]": -191152.61000000013,
+    "[SomaFiliais]": -191152.61000000002,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Realizado",
+    "[Consolidado]": -681675.3899999994,
+    "[SomaFiliais]": -681675.3899999999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Orçado",
+    "[Consolidado]": -896386.3799999997,
+    "[SomaFiliais]": -896386.38,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Previsto",
+    "[Consolidado]": -895165.3899999999,
+    "[SomaFiliais]": -895165.39,
+    "[Aprovado]": true
+  }
+]

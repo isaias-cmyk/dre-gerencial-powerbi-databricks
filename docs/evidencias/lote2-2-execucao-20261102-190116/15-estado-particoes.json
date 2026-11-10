@@ -1,0 +1,92 @@
+[
+  {
+    "[Nome]": "dim_calendario",
+    "[Estado]": 1,
+    "[Erro]": null,
+    "[AtualizadoEm]": "2026-11-02T17:15:59.64"
+  },
+  {
+    "[Nome]": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+    "[Estado]": 1,
+    "[Erro]": null,
+    "[AtualizadoEm]": "2026-11-02T17:16:02.366667"
+  },
+  {
+    "[Nome]": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+    "[Estado]": 1,
+    "[Erro]": null,
+    "[AtualizadoEm]": "2026-11-02T17:16:02.35"
+  },
+  {
+    "[Nome]": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+    "[Estado]": 1,
+    "[Erro]": null,
+    "[AtualizadoEm]": "2026-11-02T17:16:02.353333"
+  },
+  {
+    "[Nome]": "dim_filial",
+    "[Estado]": 1,
+    "[Erro]": null,
+    "[AtualizadoEm]": "2026-11-02T17:16:00.416667"
+  },
+  {
+    "[Nome]": "dim_conta",
+    "[Estado]": 1,
+    "[Erro]": null,
+    "[AtualizadoEm]": "2026-11-02T17:16:00.27"
+  },
+  {
+    "[Nome]": "dim_dre",
+    "[Estado]": 1,
+    "[Erro]": null,
+    "[AtualizadoEm]": "2026-11-02T17:16:01.216667"
+  },
+  {
+    "[Nome]": "fato_lancamentos",
+    "[Estado]": 1,
+    "[Erro]": null,
+    "[AtualizadoEm]": "2026-11-02T17:16:01.69"
+  },
+  {
+    "[Nome]": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+    "[Estado]": 1,
+    "[Erro]": null,
+    "[AtualizadoEm]": "2026-11-02T17:16:02.34"
+  },
+  {
+    "[Nome]": "fato_orcamento",
+    "[Estado]": 1,
+    "[Erro]": null,
+    "[AtualizadoEm]": "2026-11-02T17:16:00.063333"
+  },
+  {
+    "[Nome]": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+    "[Estado]": 1,
+    "[Erro]": null,
+    "[AtualizadoEm]": "2026-11-02T17:16:02.363333"
+  },
+  {
+    "[Nome]": "fato_previsao",
+    "[Estado]": 1,
+    "[Erro]": null,
+    "[AtualizadoEm]": "2026-11-02T17:15:59.553333"
+  },
+  {
+    "[Nome]": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+    "[Estado]": 1,
+    "[Erro]": null,
+    "[AtualizadoEm]": "2026-11-02T17:16:02.35"
+  },
+  {
+    "[Nome]": "vw_dre_comparativo",
+    "[Estado]": 1,
+    "[Erro]": null,
+    "[AtualizadoEm]": "2026-11-02T17:16:00.78"
+  },
+  {
+    "[Nome]": "_Medidas",
+    "[Estado]": 1,
+    "[Erro]": null,
+    "[AtualizadoEm]": "2026-11-02T19:18:44.82"
+  }
+]

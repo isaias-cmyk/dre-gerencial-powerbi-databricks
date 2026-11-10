@@ -1,0 +1,5 @@
+"[Tabela]","[Total]","[ViaConta]","[Direto]","[Extras]","[Faltantes]","[ParametroValido]"
+"fato_lancamentos","3741","29","29",,,"True"
+"fato_orcamento","4644","36","36",,,"True"
+"fato_previsao","4644","36","36",,,"True"
+"vw_dre_comparativo","1404","1404","1404",,,"True"

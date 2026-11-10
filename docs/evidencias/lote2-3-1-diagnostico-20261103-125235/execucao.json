@@ -1,0 +1,42 @@
+[
+  {
+    "File": "10-configuracao-materializacao.dax",
+    "State": "EXECUTADO",
+    "Rows": 9,
+    "Seconds": 0.1038481,
+    "Account": "",
+    "QuerySHA256": "DF0BC10F7B8AD6AA2ABF14DC03348C641DE855C735335949D969C743BF8E6F72"
+  },
+  {
+    "File": "16-estado-tabelas.dax",
+    "State": "EXECUTADO",
+    "Rows": 16,
+    "Seconds": 0.0374042,
+    "Account": "",
+    "QuerySHA256": "E8E235E2F7FBE8925519ABD2E969EC676AD34499C11E84ADE4293AB8D9FBBE8B"
+  },
+  {
+    "File": "17-estado-medidas.dax",
+    "State": "EXECUTADO",
+    "Rows": 41,
+    "Seconds": 0.0278357,
+    "Account": "",
+    "QuerySHA256": "87526BC58E5396ABBEDEB6B8297B2E6AF6AB739F96F3901F605AEAEDECFA8745"
+  },
+  {
+    "File": "18-estado-particoes.dax",
+    "State": "EXECUTADO",
+    "Rows": 16,
+    "Seconds": 0.0126656,
+    "Account": "",
+    "QuerySHA256": "0CA891861BB561D960C45FC09FAF9EBE32DD3A8C93977FA90085FC53B17A662C"
+  },
+  {
+    "File": "19-estado-relacionamentos.dax",
+    "State": "EXECUTADO",
+    "Rows": 18,
+    "Seconds": 0.0190494,
+    "Account": "",
+    "QuerySHA256": "A7D6A5F3C4DF5743D4B60109E957CD8A4E7259AABFE0423110D9859F2978E820"
+  }
+]

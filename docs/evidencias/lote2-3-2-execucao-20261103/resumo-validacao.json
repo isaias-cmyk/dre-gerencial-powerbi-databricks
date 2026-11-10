@@ -1,0 +1,106 @@
+{
+  "sublote": "L2.3.2",
+  "data": "2026-11-03",
+  "estado": "concluido; aceite tecnico/didatico do usuario em 2026-11-04 13:16 (nao e homologacao contabil)",
+  "medidas_novas": [
+    "DRE | Desvio Realizado x Orçado (R$)",
+    "DRE | Desvio Realizado x Orçado (%)",
+    "DRE | Desvio Realizado x Previsto (R$)",
+    "DRE | Desvio Realizado x Previsto (%)"
+  ],
+  "modelo": {
+    "medidas": 45,
+    "tabelas": 16,
+    "relacionamentos": 18,
+    "particoes": 16
+  },
+  "backup": "backups/lote2-3-2-pre-20261103-2125 (34 arquivos + manifesto SHA-256; igual ao commit 512c4cc)",
+  "testes": {
+    "S01": "15/15",
+    "S02": "60/60",
+    "G01": "12/12 BLANK",
+    "D01": {
+      "celulas": 2340,
+      "aprovadas": 2340,
+      "blank_divergente": 0,
+      "max_dif": 0,
+      "blank": 800
+    },
+    "D02": {
+      "celulas": 9360,
+      "aprovadas": 9360,
+      "blank_divergente": 0,
+      "max_dif": 0
+    },
+    "G02": "aprovado (monetario aditivo; percentual razao dos agregados)",
+    "R01": {
+      "expressoes_41_identicas": true,
+      "conciliacao_medida_view": "528/528",
+      "max_dif": 3e-08
+    },
+    "R02": "45 medidas em _Medidas.tmdl salvo; 41 identicas; config e relacionamentos identicos",
+    "V01": "formatos corretos via FORMAT; cultura en-US",
+    "Q01": {
+      "esperadas": 2340,
+      "sql_linhas": 2340,
+      "dax_linhas": 2340,
+      "duplicadas_sql": 0,
+      "duplicadas_dax": 0,
+      "ausentes_no_sql": 0,
+      "extras_no_sql": 0,
+      "aprovadas": 2340,
+      "reprovadas": 0,
+      "nulos_blank_coincidentes": 800,
+      "max_dif_brl": 1.466250978410244e-07,
+      "max_dif_razao": 2.220446049250313e-15,
+      "aceite": true,
+      "statement_ids": [
+        "01f1d868-c240-19b8-82fa-a9603c09d636",
+        "01f1d868-b285-1ca9-933f-4795bb6d7bd9",
+        "01f1d868-cafe-173a-a992-f46f728d9c65"
+      ]
+    },
+    "Q02": {
+      "esperadas": 9360,
+      "sql_linhas": 9360,
+      "dax_linhas": 9360,
+      "duplicadas_sql": 0,
+      "duplicadas_dax": 0,
+      "ausentes_no_sql": 0,
+      "extras_no_sql": 0,
+      "aprovadas": 9360,
+      "reprovadas": 0,
+      "nulos_blank_coincidentes": 2980,
+      "max_dif_brl": 1.8189894035458565e-09,
+      "max_dif_razao": 5.898059818321144e-16,
+      "aceite": true,
+      "statement_ids": [
+        "01f1d868-e73f-1134-a82a-5ec06d42e563",
+        "01f1d868-f833-1f8a-b921-d39caf319893",
+        "01f1d868-ffe4-110f-9b02-89805cbbaf8b",
+        "01f1d869-0765-1725-bc9c-15e44aad6bc7",
+        "01f1d869-150f-1291-99a3-516e2d46167f",
+        "01f1d869-1ce3-19fd-963f-a0176b75972f",
+        "01f1d869-24a8-1fca-a437-b5ca319cec49",
+        "01f1d869-32a8-1922-acad-bfb4cbbc6843",
+        "01f1d869-3b31-166e-839a-e5253b239af3",
+        "01f1d869-41c6-1b4d-8b86-9a74de864779"
+      ]
+    }
+  },
+  "arquivos": {
+    "L232_DAX_desvios_agregados.csv": "11079a7dc3cd0248f3e27bcdb23aa80e114fe674126a612bc8205508be9f3ac1",
+    "L232_SQL_desvios_agregados.csv": "ed2b8f37d7b8340b7fe7505c6457fa863886f507c67b8ffdff754284d0550f8f",
+    "L232_DAX_desvios_mensais.csv": "340771ae279dcf472b441bd76c8476bf1e83b1a43a343dd661f9e59349955d8f",
+    "L232_SQL_desvios_mensais.csv": "6bd8536df212fcc9e209044b5449515c8c97f9685bed3ba5c7153227fea32f69",
+    "comparar-desvios.py": "e06bcbf647f1aa86a71673020b140964d4507a7f5ad011c382d160f2a439f24d",
+    "comparacao-desvios.json": "e84757197a6ca8b5fc7882ec2a6df3b1a5208341596aa573e46b69cc3ba0f29e",
+    "comparacao-desvios-mensal.json": "87a6d658e2c444c88168f1e4c4e942ded8b165c78d6937e2b3b93d6a778c997c"
+  },
+  "data_q01_q02": "2026-11-04",
+  "aceite": {
+    "data": "2026-11-04T13:16-03:00",
+    "tipo": "tecnico/didatico",
+    "por": "usuario"
+  }
+}

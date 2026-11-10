@@ -1,0 +1,13 @@
+{
+  "phase1": "Concluída com aceite técnico",
+  "phase2": "Liberada, ainda não iniciada",
+  "userSQLDeclarationCompatibleWithDAX": true,
+  "sqlRowsReportedByUser": 16,
+  "noSQLRerunByAgent": true,
+  "productionUnchanged": true,
+  "AGENTSUnchanged": true,
+  "documentLinks": "OK",
+  "changedPreexistingRootFiles": [
+    "PLANS.md"
+  ]
+}

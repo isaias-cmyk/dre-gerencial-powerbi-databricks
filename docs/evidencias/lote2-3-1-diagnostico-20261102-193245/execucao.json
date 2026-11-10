@@ -1,0 +1,26 @@
+[
+  {
+    "File": "01-diagnostico-cobertura.dax",
+    "State": "EXECUTADO",
+    "Rows": 108,
+    "Seconds": 0.2040366,
+    "Account": "",
+    "QuerySHA256": "C1AB3BDE89D9A7FDB229F823E0E388A92420414091C9FC8CA59C94D020DA614F"
+  },
+  {
+    "File": "02-colunas-modelo.dax",
+    "State": "EXECUTADO",
+    "Rows": 114,
+    "Seconds": 0.1883467,
+    "Account": "",
+    "QuerySHA256": "4863B2BBC127CCB878E63C2790FD10AFA1D735B345BBE1F983C8B6DFAD12BD11"
+  },
+  {
+    "File": "03-medidas-existentes.dax",
+    "State": "EXECUTADO",
+    "Rows": 36,
+    "Seconds": 0.0440879,
+    "Account": "",
+    "QuerySHA256": "4810F74F32EEF98E6B678A7D59066152D5620CC7B3F6324F1D4855F523BB3FCD"
+  }
+]

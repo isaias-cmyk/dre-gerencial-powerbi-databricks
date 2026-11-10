@@ -1,0 +1,47 @@
+[
+  {
+    "[Contexto]": "SemFiltro",
+    "[BaseR]": null,
+    "[BaseO]": null,
+    "[BaseP]": null,
+    "[RLR]": 5038227.389999997,
+    "[RLO]": 6622493.820000001,
+    "[RLP]": 6157931.189999999
+  },
+  {
+    "[Contexto]": "Multiplas1e13",
+    "[BaseR]": null,
+    "[BaseO]": null,
+    "[BaseP]": null,
+    "[RLR]": 5038227.389999997,
+    "[RLO]": 6622493.820000001,
+    "[RLP]": 6157931.189999999
+  },
+  {
+    "[Contexto]": "Unica13",
+    "[BaseR]": 5038227.389999997,
+    "[BaseO]": 6622493.820000001,
+    "[BaseP]": 6157931.189999999,
+    "[RLR]": 5038227.389999997,
+    "[RLO]": 6622493.820000001,
+    "[RLP]": 6157931.189999999
+  },
+  {
+    "[Contexto]": "Unica1",
+    "[BaseR]": 199326296.52000004,
+    "[BaseO]": 247514660.8499999,
+    "[BaseP]": 247322501.02999997,
+    "[RLR]": null,
+    "[RLO]": null,
+    "[RLP]": null
+  },
+  {
+    "[Contexto]": "SemDados",
+    "[BaseR]": null,
+    "[BaseO]": null,
+    "[BaseP]": null,
+    "[RLR]": null,
+    "[RLO]": null,
+    "[RLP]": null
+  }
+]

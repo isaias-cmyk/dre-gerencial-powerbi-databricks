@@ -1,0 +1,5 @@
+"[Teste]","[Linhas]","[ChavesDistintas]","[ChavesAusentes]"
+"Chave dim_filial.cod_filial","3","3",
+"Chave dim_conta.id_conta","129","129",
+"Chave dim_dre.id_dre","39","39",
+"Chave dim_calendario.data","1095","1095",

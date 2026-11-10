@@ -1,0 +1,258 @@
+[
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/01-descoberta.csv",
+    "sha256": "D71FF64387470C5C3D147FD6835AFCE4BFEAEF663AFCA6BFCCD13EB12B885F69"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/01-descoberta.json",
+    "sha256": "2DA8146F8EEE98B0F5B670CA38B19EF39F4435408A36ADD216B9CA5F0C0DD769"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/02-relacionamentos.csv",
+    "sha256": "6A90857E7D35B7EA97E2C23D60D90DD8C0161CD461A5BBB177AE3B27A9A3B12B"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/02-relacionamentos.json",
+    "sha256": "632142A4A38B07EBFA64B9E75D59D1E4BE48F9A5A40FEED677C62D942F24A526"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/03-colunas.csv",
+    "sha256": "51A40A17D5E45898EEA40B794329E5FA22BE5B2582A2DFD9FAF65439DE38E190"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/03-colunas.json",
+    "sha256": "0B8015708A4A9BF5CBD8E6211BF03DD90F8EF0C5A6E74D32AB329E887EE7141B"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/04-chaves-modelo.csv",
+    "sha256": "8E8D37812C2447E573436614E45E63DA318A4A248FB842E150F1641434D6B4E2"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/04-chaves-modelo.json",
+    "sha256": "C2B2B300CF11E5F7F23A6762C7D93FFA464CC9FC5B027885C55911665197067A"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/05-integridade-modelo.csv",
+    "sha256": "40D15D34466A17767D422371169BFCAD9E64F8A0F9DC0D48428C9968366318CA"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/05-integridade-modelo.json",
+    "sha256": "3777EC2511B89A00AAE493C8C934F6864080BAD7B25165A36050B31FF8C9E6B9"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/06-filtros-fato_lancamentos.csv",
+    "sha256": "8084A13351E8AD0B490E6C3717A094DD78C40BED702DDD1F16F5C58024909027"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/06-filtros-fato_lancamentos.json",
+    "sha256": "8410ADF90A7C2CAAF2202BF9AC912A95EDA4A3CC08190870D7CF95BB0C87EF08"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/06-filtros-fato_orcamento.csv",
+    "sha256": "1537C2D15FBA0DED88CF6878CCC1861963F8EB88A17685D2367746A8056F619D"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/06-filtros-fato_orcamento.json",
+    "sha256": "44161233BE2AFF71555B5A8EC9C15E3D5605D5ED47ED2D7B5A433D35F80DC9D2"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/06-filtros-fato_previsao.csv",
+    "sha256": "0676510A2D0B4B26A3C48950584C634D4F83E06779B013142FFC5B2046A9C6B0"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/06-filtros-fato_previsao.json",
+    "sha256": "4A9F690C8072A1A8DDF180EA3F044F78A21609FA77258146BFF28215868C1409"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/06-filtros-vw_dre_comparativo.csv",
+    "sha256": "75665E3F1D05D9FF2ADAABD8E6EEFD4419E7792E6E40B2D09B4DFAF4A58100C1"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/06-filtros-vw_dre_comparativo.json",
+    "sha256": "89C9BFC04D0CE5D5D3BFDD1CF561E4CA4EA6F406BFB271D0EE9FA2D97CEF1671"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/07-controle-integral.csv",
+    "sha256": "D39A7C01896954CC0D8A4C52DB98BF7787C1C9F28D0F7D60AB20DAFF0499CE5C"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/07-controle-integral.json",
+    "sha256": "D982043DBFA78DA0F0E874F8376F1DB644E5D9946B1DC74C3A1A37E2DB3639BB"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/08-linha13-filial-periodo.csv",
+    "sha256": "A92FABD274105DE95E505A2C1626DBB8BDE544AF61FA9D8E2A8352FE34C7A333"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/08-linha13-filial-periodo.json",
+    "sha256": "E5DE6940B447D47255A046FA1089B302FBE41EECAC4C1085B697EF0D7BB3636A"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/09-linha13-filial-ano.csv",
+    "sha256": "FE2D2751D8C89A855557FC9B0E994238605F3D896659F36D56F832F09F45C7EC"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/09-linha13-filial-ano.json",
+    "sha256": "CE25A47B48C88956C33B20C4AAFC15B8D63D408ACAE2631F49E2584EC0450386"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/10-descobrir-conta.csv",
+    "sha256": "9C1D63D8BCC5DA302CA8AE40A99E6B76D8450BC90CD8BFC7A00B3DE541ED6686"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/10-descobrir-conta.json",
+    "sha256": "8A91FA18C7475FD55275E1629BA030D73F1D71CBC9B5FB0705D630E67F5E428D"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/12-filtro-dre.csv",
+    "sha256": "5430BB9F61DA7BBDA85315C4E8A16F6020F1391F85756079892EFDDA3FE80B53"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/12-filtro-dre.json",
+    "sha256": "869FB1FD9C6ECD9E4204CA37F7B11E70BE70821257A850BAD7BA2D89BD34704A"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/13-relacao-inativa.csv",
+    "sha256": "210730CAE00D3B16E9D87F83523C03981D0DD149EB8733DBA025DBCFB1C393EC"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/13-relacao-inativa.json",
+    "sha256": "E21296E989A262E02E2033404FE6D3D046E17D44DBB9AD26843C874720CD74A4"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/14-calendario-modelo.csv",
+    "sha256": "6C6D8FEF128E3AA1CB04A06217BAB00A469ED839F422733BBA0601A89CBF293D"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/14-calendario-modelo.json",
+    "sha256": "F9FA770DADB674ABCE23F8E6F92DFFB55E975B53BC5954E8EC1A3B0427CB098A"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/15-cobertura-cenarios.csv",
+    "sha256": "3363D5E19CEEDDF29AB71468B8104C950F8938DEE7B858758B9816A454E5565A"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/15-cobertura-cenarios.json",
+    "sha256": "CB0B5136BE1E53FD48C887366B38EFF84CD467ABD7CA7D41F5A894C6CE9E4412"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/16-grao-view.json",
+    "sha256": "A5338D955B09046EC0B16F3A9625B7955C763AAE07DC722E474E6078745F932F"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/baseline.json",
+    "sha256": "9B877AD50F649B4A8444977AFAD936CCE4E058A2D48F73421C40DD5EB2C911CC"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/consolidacao.json",
+    "sha256": "5B02CCBF6E7B30F847F32667171C72B8DE5C9952BF1DAED8E82DB71918208680"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/execucao.json",
+    "sha256": "63D58D2BF3AFB80288EB4A2D658E85A8063EE7EC21014186809F0246C239B5AE"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/integridade-final-documentacao.json",
+    "sha256": "24902DB695CA2A6C6E9C32F0094944D0E3ABC9CB59681E8DEDE3D7185A9DD28E"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/integridade.json",
+    "sha256": "31BD7B50FF665AE4B60997088C5245CB5A36117C73C7B4224A4A36A4D24DD316"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/registro-testes-executados.csv",
+    "sha256": "55E358AA4A900EBF1B8DF2941F4FA9147835352EE2B3776AE87B79CCB3DA8FC9"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154642/sessao.json",
+    "sha256": "86BBFAFF9E47B41E5CC109974BCD1C7897314DCDB6DC9B0314523406D337472F"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154704/11-filtro-conta.csv",
+    "sha256": "2ECAD1965066BCF3556CB90205C0911BCA62BE717F889194C96B15C9FBCDA0C9"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154704/11-filtro-conta.json",
+    "sha256": "DB5EAC0B7CB03AD282B54482DA8BFAD270D891FCE5710175DC6FBBE5F95DBB08"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154704/17-intersecao-conta-filial-periodo.csv",
+    "sha256": "0CC5D6324B8F99EE6F48E863BBFD9432264EE1E6C96B99489CDF88B39B3AF469"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154704/17-intersecao-conta-filial-periodo.json",
+    "sha256": "81364FCE22B68DF614CF0B33B53FFF5A15049A96BC9CB08CD7E5E88774ED8D20"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154704/baseline.json",
+    "sha256": "9B877AD50F649B4A8444977AFAD936CCE4E058A2D48F73421C40DD5EB2C911CC"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154704/execucao.json",
+    "sha256": "AC288D6D20D4790DB1C0005366C1AFA652FAFA01D0E0280D3666348E2FD128FE"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154704/integridade.json",
+    "sha256": "31BD7B50FF665AE4B60997088C5245CB5A36117C73C7B4224A4A36A4D24DD316"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154704/sessao.json",
+    "sha256": "D24683FE97D5C634B0E265E7E1351145DA92A97E1037AFF546BE54A1219C7856"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154749/18-contrato-dre.csv",
+    "sha256": "11AEAB346EBF65CD2A59189F192C547387B73EA609728B29A6982DF7D3383D26"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154749/18-contrato-dre.json",
+    "sha256": "B0646426087260ED106B4152B3854F119E11DDEAC66C027FEC4478CF93EF1377"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154749/19-particoes-carregadas.csv",
+    "sha256": "1905874DF6D9A1CC39F83672BCBD65B98A038A782F47A5E40CB8590521D731B7"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154749/19-particoes-carregadas.json",
+    "sha256": "105D6C514F60BB6E56419750D1DA7298197201C514D78502D2B2B8E452C1A6D2"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154749/baseline.json",
+    "sha256": "9B877AD50F649B4A8444977AFAD936CCE4E058A2D48F73421C40DD5EB2C911CC"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154749/execucao.json",
+    "sha256": "BD37F6B0EB8233116D3BEB78B8EF8DA9C26610CA0614F3A44C9F6F745E7257FC"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154749/integridade.json",
+    "sha256": "31BD7B50FF665AE4B60997088C5245CB5A36117C73C7B4224A4A36A4D24DD316"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154749/sessao.json",
+    "sha256": "C6EDA9C19019C1364FF06892E1DB10C146DBFA0B26B25857C18DE28FB6D4A8E3"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154841/20-mes-multisselecao.csv",
+    "sha256": "2845127331DA0BEF8512799F92B986DF00A23E086C0A4F629EBB220E99712388"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154841/20-mes-multisselecao.json",
+    "sha256": "3B541E14CBDF902203578FF3E4EE387AD6FE86685C52958474DDAFEB7AD9EAA6"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154841/baseline.json",
+    "sha256": "9B877AD50F649B4A8444977AFAD936CCE4E058A2D48F73421C40DD5EB2C911CC"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154841/execucao.json",
+    "sha256": "25FF3D45B63FA323C290683B684420B05DF9C35A700206300D10B733D3F764BC"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154841/integridade.json",
+    "sha256": "31BD7B50FF665AE4B60997088C5245CB5A36117C73C7B4224A4A36A4D24DD316"
+  },
+  {
+    "path": "docs/evidencias/fase1-execucao-20261102-154841/sessao.json",
+    "sha256": "B6E7377A0B199BFB475BC3C60CC3B238586B9A01FC5F9B98C526D79C7EB634DC"
+  }
+]

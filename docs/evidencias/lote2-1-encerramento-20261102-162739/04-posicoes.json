@@ -1,0 +1,145 @@
+[
+  {
+    "vw_dre_comparativo[ordem_dre]": 1,
+    "vw_dre_comparativo[descricao_dre]": "RECEITA OPERACIONAL BRUTA",
+    "[LinhasFonte]": 108,
+    "[Realizado]": 199326296.52000004,
+    "[Orcado]": 247514660.8499999,
+    "[Previsto]": 247322501.02999997,
+    "[RLRealizadoProvisorio]": null,
+    "[RLOrcadoProvisorio]": null,
+    "[RLPrevistoProvisorio]": null
+  },
+  {
+    "vw_dre_comparativo[ordem_dre]": 2,
+    "vw_dre_comparativo[descricao_dre]": "(-) DEDUÇÕES DA RECEITA BRUTA",
+    "[LinhasFonte]": 108,
+    "[Realizado]": -52908485.35,
+    "[Orcado]": -65546706.95999997,
+    "[Previsto]": -65439748.31,
+    "[RLRealizadoProvisorio]": null,
+    "[RLOrcadoProvisorio]": null,
+    "[RLPrevistoProvisorio]": null
+  },
+  {
+    "vw_dre_comparativo[ordem_dre]": 3,
+    "vw_dre_comparativo[descricao_dre]": "= RECEITA OPERACIONAL LÍQUIDA",
+    "[LinhasFonte]": 108,
+    "[Realizado]": 146417811.17,
+    "[Orcado]": 181967953.89000002,
+    "[Previsto]": 181882752.7199999,
+    "[RLRealizadoProvisorio]": null,
+    "[RLOrcadoProvisorio]": null,
+    "[RLPrevistoProvisorio]": null
+  },
+  {
+    "vw_dre_comparativo[ordem_dre]": 4,
+    "vw_dre_comparativo[descricao_dre]": "(-) CUSTOS DAS MERCADORIAS E SERVIÇOS",
+    "[LinhasFonte]": 108,
+    "[Realizado]": -93588816.06000002,
+    "[Orcado]": -116424340.03000005,
+    "[Previsto]": -116720083.27999994,
+    "[RLRealizadoProvisorio]": null,
+    "[RLOrcadoProvisorio]": null,
+    "[RLPrevistoProvisorio]": null
+  },
+  {
+    "vw_dre_comparativo[ordem_dre]": 5,
+    "vw_dre_comparativo[descricao_dre]": "= MARGEM DE CONTRIBUIÇÃO",
+    "[LinhasFonte]": 108,
+    "[Realizado]": 52828995.11000002,
+    "[Orcado]": 65543613.85999999,
+    "[Previsto]": 65162669.43999999,
+    "[RLRealizadoProvisorio]": null,
+    "[RLOrcadoProvisorio]": null,
+    "[RLPrevistoProvisorio]": null
+  },
+  {
+    "vw_dre_comparativo[ordem_dre]": 6,
+    "vw_dre_comparativo[descricao_dre]": "(-) DESPESAS OPERACIONAIS",
+    "[LinhasFonte]": 108,
+    "[Realizado]": -46203238.52,
+    "[Orcado]": -56892053.86000002,
+    "[Previsto]": -56976331.95999997,
+    "[RLRealizadoProvisorio]": null,
+    "[RLOrcadoProvisorio]": null,
+    "[RLPrevistoProvisorio]": null
+  },
+  {
+    "vw_dre_comparativo[ordem_dre]": 7,
+    "vw_dre_comparativo[descricao_dre]": "RESULTADO FINANCEIRO",
+    "[LinhasFonte]": 108,
+    "[Realizado]": -468158.12999999983,
+    "[Orcado]": -581312.93,
+    "[Previsto]": -581918.9000000007,
+    "[RLRealizadoProvisorio]": null,
+    "[RLOrcadoProvisorio]": null,
+    "[RLPrevistoProvisorio]": null
+  },
+  {
+    "vw_dre_comparativo[ordem_dre]": 8,
+    "vw_dre_comparativo[descricao_dre]": "= EBITDA",
+    "[LinhasFonte]": 108,
+    "[Realizado]": null,
+    "[Orcado]": null,
+    "[Previsto]": null,
+    "[RLRealizadoProvisorio]": null,
+    "[RLOrcadoProvisorio]": null,
+    "[RLPrevistoProvisorio]": null
+  },
+  {
+    "vw_dre_comparativo[ordem_dre]": 9,
+    "vw_dre_comparativo[descricao_dre]": "(-) DEPRECIAÇÃO E AMORTIZAÇÃO",
+    "[LinhasFonte]": 108,
+    "[Realizado]": -287307.4699999999,
+    "[Orcado]": -360393.31000000006,
+    "[Previsto]": -360169.38999999984,
+    "[RLRealizadoProvisorio]": null,
+    "[RLOrcadoProvisorio]": null,
+    "[RLPrevistoProvisorio]": null
+  },
+  {
+    "vw_dre_comparativo[ordem_dre]": 10,
+    "vw_dre_comparativo[descricao_dre]": "OUTRAS RECEITAS E DESPESAS",
+    "[LinhasFonte]": 108,
+    "[Realizado]": -150388.21,
+    "[Orcado]": -190973.55999999997,
+    "[Previsto]": -191152.61000000013,
+    "[RLRealizadoProvisorio]": null,
+    "[RLOrcadoProvisorio]": null,
+    "[RLPrevistoProvisorio]": null
+  },
+  {
+    "vw_dre_comparativo[ordem_dre]": 11,
+    "vw_dre_comparativo[descricao_dre]": "= EBIT",
+    "[LinhasFonte]": 108,
+    "[Realizado]": null,
+    "[Orcado]": null,
+    "[Previsto]": null,
+    "[RLRealizadoProvisorio]": null,
+    "[RLOrcadoProvisorio]": null,
+    "[RLPrevistoProvisorio]": null
+  },
+  {
+    "vw_dre_comparativo[ordem_dre]": 12,
+    "vw_dre_comparativo[descricao_dre]": "(-) PROVISÃO PARA IR E CSLL",
+    "[LinhasFonte]": 108,
+    "[Realizado]": -681675.3899999994,
+    "[Orcado]": -896386.3799999997,
+    "[Previsto]": -895165.3899999999,
+    "[RLRealizadoProvisorio]": null,
+    "[RLOrcadoProvisorio]": null,
+    "[RLPrevistoProvisorio]": null
+  },
+  {
+    "vw_dre_comparativo[ordem_dre]": 13,
+    "vw_dre_comparativo[descricao_dre]": "= RESULTADO LÍQUIDO DO EXERCÍCIO",
+    "[LinhasFonte]": 108,
+    "[Realizado]": 5038227.389999997,
+    "[Orcado]": 6622493.820000001,
+    "[Previsto]": 6157931.189999999,
+    "[RLRealizadoProvisorio]": 5038227.389999997,
+    "[RLOrcadoProvisorio]": 6622493.820000001,
+    "[RLPrevistoProvisorio]": 6157931.189999999
+  }
+]

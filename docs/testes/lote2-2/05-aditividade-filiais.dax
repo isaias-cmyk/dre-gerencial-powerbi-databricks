@@ -1,0 +1,61 @@
+// Somente leitura; NÃO EXECUTADO neste lote. Executar nas medidas persistidas após reabrir o PBIP.
+EVALUATE UNION(VAR _C=[DRE | Receita Operacional Bruta Realizado] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Receita Operacional Bruta Realizado]))
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Realizado","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Receita Operacional Bruta Orçado] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Receita Operacional Bruta Orçado]))
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Orçado","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Receita Operacional Bruta Previsto] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Receita Operacional Bruta Previsto]))
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Previsto","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Deduções da Receita Realizado] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Deduções da Receita Realizado]))
+RETURN ROW("Medida","DRE | Deduções da Receita Realizado","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Deduções da Receita Orçado] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Deduções da Receita Orçado]))
+RETURN ROW("Medida","DRE | Deduções da Receita Orçado","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Deduções da Receita Previsto] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Deduções da Receita Previsto]))
+RETURN ROW("Medida","DRE | Deduções da Receita Previsto","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Receita Operacional Líquida Realizado] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Receita Operacional Líquida Realizado]))
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Realizado","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Receita Operacional Líquida Orçado] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Receita Operacional Líquida Orçado]))
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Orçado","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Receita Operacional Líquida Previsto] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Receita Operacional Líquida Previsto]))
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Previsto","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Custos Realizado] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Custos Realizado]))
+RETURN ROW("Medida","DRE | Custos Realizado","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Custos Orçado] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Custos Orçado]))
+RETURN ROW("Medida","DRE | Custos Orçado","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Custos Previsto] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Custos Previsto]))
+RETURN ROW("Medida","DRE | Custos Previsto","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Margem de Contribuição Realizado] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Margem de Contribuição Realizado]))
+RETURN ROW("Medida","DRE | Margem de Contribuição Realizado","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Margem de Contribuição Orçado] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Margem de Contribuição Orçado]))
+RETURN ROW("Medida","DRE | Margem de Contribuição Orçado","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Margem de Contribuição Previsto] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Margem de Contribuição Previsto]))
+RETURN ROW("Medida","DRE | Margem de Contribuição Previsto","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Despesas Operacionais Realizado] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Despesas Operacionais Realizado]))
+RETURN ROW("Medida","DRE | Despesas Operacionais Realizado","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Despesas Operacionais Orçado] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Despesas Operacionais Orçado]))
+RETURN ROW("Medida","DRE | Despesas Operacionais Orçado","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Despesas Operacionais Previsto] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Despesas Operacionais Previsto]))
+RETURN ROW("Medida","DRE | Despesas Operacionais Previsto","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Resultado Financeiro Realizado] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Resultado Financeiro Realizado]))
+RETURN ROW("Medida","DRE | Resultado Financeiro Realizado","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Resultado Financeiro Orçado] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Resultado Financeiro Orçado]))
+RETURN ROW("Medida","DRE | Resultado Financeiro Orçado","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Resultado Financeiro Previsto] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Resultado Financeiro Previsto]))
+RETURN ROW("Medida","DRE | Resultado Financeiro Previsto","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Depreciação e Amortização Realizado] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Depreciação e Amortização Realizado]))
+RETURN ROW("Medida","DRE | Depreciação e Amortização Realizado","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Depreciação e Amortização Orçado] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Depreciação e Amortização Orçado]))
+RETURN ROW("Medida","DRE | Depreciação e Amortização Orçado","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Depreciação e Amortização Previsto] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Depreciação e Amortização Previsto]))
+RETURN ROW("Medida","DRE | Depreciação e Amortização Previsto","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Outras Receitas e Despesas Realizado] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Outras Receitas e Despesas Realizado]))
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Realizado","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Outras Receitas e Despesas Orçado] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Outras Receitas e Despesas Orçado]))
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Orçado","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Outras Receitas e Despesas Previsto] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Outras Receitas e Despesas Previsto]))
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Previsto","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Provisão para IR e CSLL Realizado] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Provisão para IR e CSLL Realizado]))
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Realizado","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Provisão para IR e CSLL Orçado] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Provisão para IR e CSLL Orçado]))
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Orçado","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)),
+VAR _C=[DRE | Provisão para IR e CSLL Previsto] VAR _S=SUMX(VALUES('dim_filial'[cod_filial]),CALCULATE([DRE | Provisão para IR e CSLL Previsto]))
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Previsto","Consolidado",_C,"SomaFiliais",_S,"Aprovado",IF(ISBLANK(_C),ISBLANK(_S),NOT ISBLANK(_S) && ABS(_C-_S)<=0.01)))

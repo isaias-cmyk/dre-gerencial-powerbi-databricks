@@ -1,0 +1,2 @@
+// Metadados do modelo; não atualiza partições nem consulta a origem.
+EVALUATE INFO.PARTITIONS()

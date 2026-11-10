@@ -1,0 +1,81 @@
+{
+  "id": "DRE-TREINAMENTO-COBERTURA",
+  "versao": "DIDATICA-1.0-20261103",
+  "data_convencao": "2026-11-03",
+  "origem": "Declaracao explicita do usuario nesta conversa",
+  "natureza": "PREMISSA_DIDATICA",
+  "arquivo": "BaseDados.xlsx",
+  "versao_arquivo_local": "TREINAMENTO-20261103-HASH-27e02e714898",
+  "sha256_arquivo": "27e02e7148984d74acdb5cf086a9ba637c55617152793f23509d3bad24bce04b",
+  "certificacao_tecnica_completude": null,
+  "fechamento_contabil_real": null,
+  "universo_inicio": "2021-01-01",
+  "universo_fim": "2023-12-01",
+  "estado_realizado_fora_intervalo_no_universo": "NAO_FORNECIDO_DIDATICO",
+  "fora_universo": "NAO_DEFINIDO",
+  "intervalos": [
+    {
+      "cod_filial": "01",
+      "cenario": "Realizado",
+      "inicio_competencia": "2021-01-01",
+      "fim_competencia": "2023-05-01",
+      "estado": "FORNECIDO_DIDATICO"
+    },
+    {
+      "cod_filial": "01",
+      "cenario": "Orcado",
+      "inicio_competencia": "2021-01-01",
+      "fim_competencia": "2023-12-01",
+      "estado": "FORNECIDO_DIDATICO"
+    },
+    {
+      "cod_filial": "01",
+      "cenario": "Previsto",
+      "inicio_competencia": "2021-01-01",
+      "fim_competencia": "2023-12-01",
+      "estado": "FORNECIDO_DIDATICO"
+    },
+    {
+      "cod_filial": "02",
+      "cenario": "Realizado",
+      "inicio_competencia": "2021-01-01",
+      "fim_competencia": "2023-05-01",
+      "estado": "FORNECIDO_DIDATICO"
+    },
+    {
+      "cod_filial": "02",
+      "cenario": "Orcado",
+      "inicio_competencia": "2021-01-01",
+      "fim_competencia": "2023-12-01",
+      "estado": "FORNECIDO_DIDATICO"
+    },
+    {
+      "cod_filial": "02",
+      "cenario": "Previsto",
+      "inicio_competencia": "2021-01-01",
+      "fim_competencia": "2023-12-01",
+      "estado": "FORNECIDO_DIDATICO"
+    },
+    {
+      "cod_filial": "03",
+      "cenario": "Realizado",
+      "inicio_competencia": "2021-01-01",
+      "fim_competencia": "2023-05-01",
+      "estado": "FORNECIDO_DIDATICO"
+    },
+    {
+      "cod_filial": "03",
+      "cenario": "Orcado",
+      "inicio_competencia": "2021-01-01",
+      "fim_competencia": "2023-12-01",
+      "estado": "FORNECIDO_DIDATICO"
+    },
+    {
+      "cod_filial": "03",
+      "cenario": "Previsto",
+      "inicio_competencia": "2021-01-01",
+      "fim_competencia": "2023-12-01",
+      "estado": "FORNECIDO_DIDATICO"
+    }
+  ]
+}

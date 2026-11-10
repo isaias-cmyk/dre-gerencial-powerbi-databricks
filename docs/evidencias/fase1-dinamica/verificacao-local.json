@@ -1,0 +1,116 @@
+{
+  "DAXFiles": 20,
+  "DAX": [
+    {
+      "file": "01-descoberta.dax",
+      "delimiters": "OK",
+      "runtimeCompilation": "NAO_EXECUTADA"
+    },
+    {
+      "file": "02-relacionamentos.dax",
+      "delimiters": "OK",
+      "runtimeCompilation": "NAO_EXECUTADA"
+    },
+    {
+      "file": "03-colunas.dax",
+      "delimiters": "OK",
+      "runtimeCompilation": "NAO_EXECUTADA"
+    },
+    {
+      "file": "04-chaves-modelo.dax",
+      "delimiters": "OK",
+      "runtimeCompilation": "NAO_EXECUTADA"
+    },
+    {
+      "file": "05-integridade-modelo.dax",
+      "delimiters": "OK",
+      "runtimeCompilation": "NAO_EXECUTADA"
+    },
+    {
+      "file": "06-filtros-fato_lancamentos.dax",
+      "delimiters": "OK",
+      "runtimeCompilation": "NAO_EXECUTADA"
+    },
+    {
+      "file": "06-filtros-fato_orcamento.dax",
+      "delimiters": "OK",
+      "runtimeCompilation": "NAO_EXECUTADA"
+    },
+    {
+      "file": "06-filtros-fato_previsao.dax",
+      "delimiters": "OK",
+      "runtimeCompilation": "NAO_EXECUTADA"
+    },
+    {
+      "file": "06-filtros-vw_dre_comparativo.dax",
+      "delimiters": "OK",
+      "runtimeCompilation": "NAO_EXECUTADA"
+    },
+    {
+      "file": "07-controle-integral.dax",
+      "delimiters": "OK",
+      "runtimeCompilation": "NAO_EXECUTADA"
+    },
+    {
+      "file": "08-linha13-filial-periodo.dax",
+      "delimiters": "OK",
+      "runtimeCompilation": "NAO_EXECUTADA"
+    },
+    {
+      "file": "09-linha13-filial-ano.dax",
+      "delimiters": "OK",
+      "runtimeCompilation": "NAO_EXECUTADA"
+    },
+    {
+      "file": "10-descobrir-conta.dax",
+      "delimiters": "OK",
+      "runtimeCompilation": "NAO_EXECUTADA"
+    },
+    {
+      "file": "11-filtro-conta.dax",
+      "delimiters": "OK",
+      "runtimeCompilation": "NAO_EXECUTADA"
+    },
+    {
+      "file": "12-filtro-dre.dax",
+      "delimiters": "OK",
+      "runtimeCompilation": "NAO_EXECUTADA"
+    },
+    {
+      "file": "13-relacao-inativa.dax",
+      "delimiters": "OK",
+      "runtimeCompilation": "NAO_EXECUTADA"
+    },
+    {
+      "file": "14-calendario-modelo.dax",
+      "delimiters": "OK",
+      "runtimeCompilation": "NAO_EXECUTADA"
+    },
+    {
+      "file": "15-cobertura-cenarios.dax",
+      "delimiters": "OK",
+      "runtimeCompilation": "NAO_EXECUTADA"
+    },
+    {
+      "file": "16-grao-view.dax",
+      "delimiters": "OK",
+      "runtimeCompilation": "NAO_EXECUTADA"
+    },
+    {
+      "file": "17-intersecao-conta-filial-periodo.dax",
+      "delimiters": "OK",
+      "runtimeCompilation": "NAO_EXECUTADA"
+    }
+  ],
+  "GeneratorPythonAST": "OK",
+  "SQLDAXExecution": false,
+  "DAXColumnReferencesAgainstExistingInventory": "OK",
+  "SQLStatementsOnlySELECTorWITH": "OK",
+  "DAXNoProductionMutationStatements": "OK",
+  "OriginalScriptsPreserved": "OK",
+  "ProductionAndAGENTSUnchanged": true,
+  "TemplatesNotMeasuredResults": true,
+  "TestGroups": 13,
+  "DocumentLinks": "OK",
+  "CompileOrDataExecution": false
+}

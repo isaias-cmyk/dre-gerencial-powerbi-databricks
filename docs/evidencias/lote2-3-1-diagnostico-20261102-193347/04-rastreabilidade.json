@@ -1,0 +1,101 @@
+[
+  {
+    "fato_lancamentos[cod_filial]": "01",
+    "fato_lancamentos[_arquivo_origem]": "BaseDados.xlsx",
+    "fato_lancamentos[_aba_origem]": "fLancamento1_ano1",
+    "fato_lancamentos[_tabela_origem]": "flancamento1_ano1",
+    "fato_lancamentos[_data_ingestao]": "2026-11-02T13:26:22.656667",
+    "[PrimeiraCompetenciaComLinha]": "2021-01-01T00:00:00",
+    "[UltimaCompetenciaComLinha]": "2021-12-01T00:00:00",
+    "[CompetenciasComLinha]": 12,
+    "[Linhas]": 516
+  },
+  {
+    "fato_lancamentos[cod_filial]": "01",
+    "fato_lancamentos[_arquivo_origem]": "BaseDados.xlsx",
+    "fato_lancamentos[_aba_origem]": "fLancamento1_ano2",
+    "fato_lancamentos[_tabela_origem]": "flancamento1_ano2",
+    "fato_lancamentos[_data_ingestao]": "2026-11-02T13:26:33.196667",
+    "[PrimeiraCompetenciaComLinha]": "2022-01-01T00:00:00",
+    "[UltimaCompetenciaComLinha]": "2022-12-01T00:00:00",
+    "[CompetenciasComLinha]": 12,
+    "[Linhas]": 516
+  },
+  {
+    "fato_lancamentos[cod_filial]": "01",
+    "fato_lancamentos[_arquivo_origem]": "BaseDados.xlsx",
+    "fato_lancamentos[_aba_origem]": "fLancamento1_ano3",
+    "fato_lancamentos[_tabela_origem]": "flancamento1_ano3",
+    "fato_lancamentos[_data_ingestao]": "2026-11-02T13:26:43.926667",
+    "[PrimeiraCompetenciaComLinha]": "2023-01-01T00:00:00",
+    "[UltimaCompetenciaComLinha]": "2023-05-01T00:00:00",
+    "[CompetenciasComLinha]": 5,
+    "[Linhas]": 215
+  },
+  {
+    "fato_lancamentos[cod_filial]": "02",
+    "fato_lancamentos[_arquivo_origem]": "BaseDados.xlsx",
+    "fato_lancamentos[_aba_origem]": "fLancamento2_ano3",
+    "fato_lancamentos[_tabela_origem]": "flancamento2_ano3",
+    "fato_lancamentos[_data_ingestao]": "2026-11-02T13:26:47.203333",
+    "[PrimeiraCompetenciaComLinha]": "2023-01-01T00:00:00",
+    "[UltimaCompetenciaComLinha]": "2023-05-01T00:00:00",
+    "[CompetenciasComLinha]": 5,
+    "[Linhas]": 215
+  },
+  {
+    "fato_lancamentos[cod_filial]": "02",
+    "fato_lancamentos[_arquivo_origem]": "BaseDados.xlsx",
+    "fato_lancamentos[_aba_origem]": "fLancamento2_ano2",
+    "fato_lancamentos[_tabela_origem]": "flancamento2_ano2",
+    "fato_lancamentos[_data_ingestao]": "2026-11-02T13:26:37.21",
+    "[PrimeiraCompetenciaComLinha]": "2022-01-01T00:00:00",
+    "[UltimaCompetenciaComLinha]": "2022-12-01T00:00:00",
+    "[CompetenciasComLinha]": 12,
+    "[Linhas]": 516
+  },
+  {
+    "fato_lancamentos[cod_filial]": "02",
+    "fato_lancamentos[_arquivo_origem]": "BaseDados.xlsx",
+    "fato_lancamentos[_aba_origem]": "fLancamento2_ano1",
+    "fato_lancamentos[_tabela_origem]": "flancamento2_ano1",
+    "fato_lancamentos[_data_ingestao]": "2026-11-02T13:26:25.693333",
+    "[PrimeiraCompetenciaComLinha]": "2021-01-01T00:00:00",
+    "[UltimaCompetenciaComLinha]": "2021-12-01T00:00:00",
+    "[CompetenciasComLinha]": 12,
+    "[Linhas]": 516
+  },
+  {
+    "fato_lancamentos[cod_filial]": "03",
+    "fato_lancamentos[_arquivo_origem]": "BaseDados.xlsx",
+    "fato_lancamentos[_aba_origem]": "fLancamento3_ano1",
+    "fato_lancamentos[_tabela_origem]": "flancamento3_ano1",
+    "fato_lancamentos[_data_ingestao]": "2026-11-02T13:26:28.61",
+    "[PrimeiraCompetenciaComLinha]": "2021-01-01T00:00:00",
+    "[UltimaCompetenciaComLinha]": "2021-12-01T00:00:00",
+    "[CompetenciasComLinha]": 12,
+    "[Linhas]": 516
+  },
+  {
+    "fato_lancamentos[cod_filial]": "03",
+    "fato_lancamentos[_arquivo_origem]": "BaseDados.xlsx",
+    "fato_lancamentos[_aba_origem]": "fLancamento3_ano2",
+    "fato_lancamentos[_tabela_origem]": "flancamento3_ano2",
+    "fato_lancamentos[_data_ingestao]": "2026-11-02T13:26:41.013333",
+    "[PrimeiraCompetenciaComLinha]": "2022-01-01T00:00:00",
+    "[UltimaCompetenciaComLinha]": "2022-12-01T00:00:00",
+    "[CompetenciasComLinha]": 12,
+    "[Linhas]": 516
+  },
+  {
+    "fato_lancamentos[cod_filial]": "03",
+    "fato_lancamentos[_arquivo_origem]": "BaseDados.xlsx",
+    "fato_lancamentos[_aba_origem]": "fLancamento3_ano3",
+    "fato_lancamentos[_tabela_origem]": "flancamento3_ano3",
+    "fato_lancamentos[_data_ingestao]": "2026-11-02T13:26:50.08",
+    "[PrimeiraCompetenciaComLinha]": "2023-01-01T00:00:00",
+    "[UltimaCompetenciaComLinha]": "2023-05-01T00:00:00",
+    "[CompetenciasComLinha]": 5,
+    "[Linhas]": 215
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "documentSessions": "Consulta list_document_sessions: nenhuma sessão conectada encontrada",
+  "processes": "Get-Process PBIDesktop,msmdsrv: nenhum processo retornado",
+  "commands": "databricks, daxstudio, TabularEditor: não encontrados no PATH; dotnet encontrado",
+  "authenticatedDatabricksSession": "Não estabelecida; nenhuma credencial inspecionada ou modificada",
+  "runtimeTestsExecuted": false,
+  "scope": "Descoberta limitada aos recursos disponíveis; não prova ausência de outras instalações no computador"
+}

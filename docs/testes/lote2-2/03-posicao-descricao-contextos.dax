@@ -1,0 +1,512 @@
+// Somente leitura; NÃO EXECUTADO neste lote. Executar nas medidas persistidas após reabrir o PBIP.
+EVALUATE UNION(
+UNION(
+VAR _V=CALCULATE([DRE | Receita Operacional Bruta Realizado]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=1)
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Realizado","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Bruta Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=1)
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Realizado","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Bruta Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=2)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Realizado","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Bruta Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {1,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=1)
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Realizado","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Bruta Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Realizado","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Bruta Realizado],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=1),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=1)
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Realizado","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Bruta Realizado],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Realizado","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Bruta Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Realizado","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Receita Operacional Bruta Orçado]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=1)
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Orçado","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Bruta Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=1)
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Orçado","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Bruta Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=2)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Orçado","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Bruta Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {1,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=1)
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Orçado","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Bruta Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Orçado","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Bruta Orçado],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=1),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=1)
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Orçado","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Bruta Orçado],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Orçado","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Bruta Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Orçado","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Receita Operacional Bruta Previsto]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=1)
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Previsto","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Bruta Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=1)
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Previsto","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Bruta Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=2)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Previsto","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Bruta Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {1,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=1)
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Previsto","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Bruta Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Previsto","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Bruta Previsto],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=1),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=1)
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Previsto","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Bruta Previsto],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Previsto","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Bruta Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Receita Operacional Bruta Previsto","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Deduções da Receita Realizado]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=2)
+RETURN ROW("Medida","DRE | Deduções da Receita Realizado","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Deduções da Receita Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=2)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=2)
+RETURN ROW("Medida","DRE | Deduções da Receita Realizado","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Deduções da Receita Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Deduções da Receita Realizado","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Deduções da Receita Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {2,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=2)
+RETURN ROW("Medida","DRE | Deduções da Receita Realizado","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Deduções da Receita Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Deduções da Receita Realizado","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Deduções da Receita Realizado],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=2),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=2)
+RETURN ROW("Medida","DRE | Deduções da Receita Realizado","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Deduções da Receita Realizado],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Deduções da Receita Realizado","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Deduções da Receita Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Deduções da Receita Realizado","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Deduções da Receita Orçado]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=2)
+RETURN ROW("Medida","DRE | Deduções da Receita Orçado","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Deduções da Receita Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=2)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=2)
+RETURN ROW("Medida","DRE | Deduções da Receita Orçado","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Deduções da Receita Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Deduções da Receita Orçado","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Deduções da Receita Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {2,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=2)
+RETURN ROW("Medida","DRE | Deduções da Receita Orçado","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Deduções da Receita Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Deduções da Receita Orçado","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Deduções da Receita Orçado],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=2),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=2)
+RETURN ROW("Medida","DRE | Deduções da Receita Orçado","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Deduções da Receita Orçado],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Deduções da Receita Orçado","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Deduções da Receita Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Deduções da Receita Orçado","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Deduções da Receita Previsto]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=2)
+RETURN ROW("Medida","DRE | Deduções da Receita Previsto","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Deduções da Receita Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=2)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=2)
+RETURN ROW("Medida","DRE | Deduções da Receita Previsto","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Deduções da Receita Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Deduções da Receita Previsto","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Deduções da Receita Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {2,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=2)
+RETURN ROW("Medida","DRE | Deduções da Receita Previsto","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Deduções da Receita Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Deduções da Receita Previsto","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Deduções da Receita Previsto],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=2),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=2)
+RETURN ROW("Medida","DRE | Deduções da Receita Previsto","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Deduções da Receita Previsto],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Deduções da Receita Previsto","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Deduções da Receita Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Deduções da Receita Previsto","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Receita Operacional Líquida Realizado]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=3)
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Realizado","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Líquida Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=3)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=3)
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Realizado","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Líquida Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Realizado","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Líquida Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {3,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=3)
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Realizado","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Líquida Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Realizado","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Líquida Realizado],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=3),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=3)
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Realizado","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Líquida Realizado],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Realizado","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Líquida Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Realizado","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Receita Operacional Líquida Orçado]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=3)
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Orçado","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Líquida Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=3)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=3)
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Orçado","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Líquida Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Orçado","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Líquida Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {3,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=3)
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Orçado","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Líquida Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Orçado","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Líquida Orçado],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=3),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=3)
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Orçado","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Líquida Orçado],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Orçado","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Líquida Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Orçado","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Receita Operacional Líquida Previsto]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=3)
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Previsto","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Líquida Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=3)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=3)
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Previsto","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Líquida Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Previsto","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Líquida Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {3,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=3)
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Previsto","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Líquida Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Previsto","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Líquida Previsto],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=3),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=3)
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Previsto","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Líquida Previsto],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Previsto","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Receita Operacional Líquida Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Receita Operacional Líquida Previsto","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Custos Realizado]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=4)
+RETURN ROW("Medida","DRE | Custos Realizado","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Custos Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=4)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=4)
+RETURN ROW("Medida","DRE | Custos Realizado","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Custos Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Custos Realizado","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Custos Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {4,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=4)
+RETURN ROW("Medida","DRE | Custos Realizado","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Custos Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Custos Realizado","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Custos Realizado],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=4),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=4)
+RETURN ROW("Medida","DRE | Custos Realizado","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Custos Realizado],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Custos Realizado","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Custos Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Custos Realizado","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Custos Orçado]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=4)
+RETURN ROW("Medida","DRE | Custos Orçado","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Custos Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=4)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=4)
+RETURN ROW("Medida","DRE | Custos Orçado","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Custos Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Custos Orçado","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Custos Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {4,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=4)
+RETURN ROW("Medida","DRE | Custos Orçado","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Custos Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Custos Orçado","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Custos Orçado],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=4),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=4)
+RETURN ROW("Medida","DRE | Custos Orçado","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Custos Orçado],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Custos Orçado","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Custos Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Custos Orçado","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Custos Previsto]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=4)
+RETURN ROW("Medida","DRE | Custos Previsto","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Custos Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=4)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=4)
+RETURN ROW("Medida","DRE | Custos Previsto","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Custos Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Custos Previsto","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Custos Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {4,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=4)
+RETURN ROW("Medida","DRE | Custos Previsto","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Custos Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Custos Previsto","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Custos Previsto],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=4),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=4)
+RETURN ROW("Medida","DRE | Custos Previsto","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Custos Previsto],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Custos Previsto","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Custos Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Custos Previsto","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Margem de Contribuição Realizado]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=5)
+RETURN ROW("Medida","DRE | Margem de Contribuição Realizado","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Margem de Contribuição Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=5)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=5)
+RETURN ROW("Medida","DRE | Margem de Contribuição Realizado","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Margem de Contribuição Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Margem de Contribuição Realizado","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Margem de Contribuição Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {5,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=5)
+RETURN ROW("Medida","DRE | Margem de Contribuição Realizado","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Margem de Contribuição Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Margem de Contribuição Realizado","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Margem de Contribuição Realizado],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=5),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=5)
+RETURN ROW("Medida","DRE | Margem de Contribuição Realizado","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Margem de Contribuição Realizado],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Margem de Contribuição Realizado","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Margem de Contribuição Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Margem de Contribuição Realizado","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Margem de Contribuição Orçado]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=5)
+RETURN ROW("Medida","DRE | Margem de Contribuição Orçado","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Margem de Contribuição Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=5)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=5)
+RETURN ROW("Medida","DRE | Margem de Contribuição Orçado","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Margem de Contribuição Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Margem de Contribuição Orçado","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Margem de Contribuição Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {5,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=5)
+RETURN ROW("Medida","DRE | Margem de Contribuição Orçado","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Margem de Contribuição Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Margem de Contribuição Orçado","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Margem de Contribuição Orçado],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=5),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=5)
+RETURN ROW("Medida","DRE | Margem de Contribuição Orçado","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Margem de Contribuição Orçado],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Margem de Contribuição Orçado","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Margem de Contribuição Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Margem de Contribuição Orçado","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Margem de Contribuição Previsto]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=5)
+RETURN ROW("Medida","DRE | Margem de Contribuição Previsto","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Margem de Contribuição Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=5)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=5)
+RETURN ROW("Medida","DRE | Margem de Contribuição Previsto","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Margem de Contribuição Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Margem de Contribuição Previsto","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Margem de Contribuição Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {5,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=5)
+RETURN ROW("Medida","DRE | Margem de Contribuição Previsto","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Margem de Contribuição Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Margem de Contribuição Previsto","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Margem de Contribuição Previsto],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=5),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=5)
+RETURN ROW("Medida","DRE | Margem de Contribuição Previsto","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Margem de Contribuição Previsto],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Margem de Contribuição Previsto","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Margem de Contribuição Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Margem de Contribuição Previsto","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Despesas Operacionais Realizado]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=6)
+RETURN ROW("Medida","DRE | Despesas Operacionais Realizado","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Despesas Operacionais Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=6)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=6)
+RETURN ROW("Medida","DRE | Despesas Operacionais Realizado","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Despesas Operacionais Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Despesas Operacionais Realizado","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Despesas Operacionais Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {6,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=6)
+RETURN ROW("Medida","DRE | Despesas Operacionais Realizado","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Despesas Operacionais Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Despesas Operacionais Realizado","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Despesas Operacionais Realizado],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=6),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=6)
+RETURN ROW("Medida","DRE | Despesas Operacionais Realizado","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Despesas Operacionais Realizado],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Despesas Operacionais Realizado","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Despesas Operacionais Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Despesas Operacionais Realizado","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Despesas Operacionais Orçado]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=6)
+RETURN ROW("Medida","DRE | Despesas Operacionais Orçado","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Despesas Operacionais Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=6)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=6)
+RETURN ROW("Medida","DRE | Despesas Operacionais Orçado","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Despesas Operacionais Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Despesas Operacionais Orçado","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Despesas Operacionais Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {6,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=6)
+RETURN ROW("Medida","DRE | Despesas Operacionais Orçado","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Despesas Operacionais Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Despesas Operacionais Orçado","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Despesas Operacionais Orçado],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=6),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=6)
+RETURN ROW("Medida","DRE | Despesas Operacionais Orçado","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Despesas Operacionais Orçado],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Despesas Operacionais Orçado","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Despesas Operacionais Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Despesas Operacionais Orçado","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Despesas Operacionais Previsto]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=6)
+RETURN ROW("Medida","DRE | Despesas Operacionais Previsto","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Despesas Operacionais Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=6)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=6)
+RETURN ROW("Medida","DRE | Despesas Operacionais Previsto","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Despesas Operacionais Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Despesas Operacionais Previsto","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Despesas Operacionais Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {6,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=6)
+RETURN ROW("Medida","DRE | Despesas Operacionais Previsto","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Despesas Operacionais Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Despesas Operacionais Previsto","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Despesas Operacionais Previsto],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=6),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=6)
+RETURN ROW("Medida","DRE | Despesas Operacionais Previsto","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Despesas Operacionais Previsto],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Despesas Operacionais Previsto","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Despesas Operacionais Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Despesas Operacionais Previsto","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Resultado Financeiro Realizado]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=7)
+RETURN ROW("Medida","DRE | Resultado Financeiro Realizado","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Resultado Financeiro Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=7)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=7)
+RETURN ROW("Medida","DRE | Resultado Financeiro Realizado","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Resultado Financeiro Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Resultado Financeiro Realizado","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Resultado Financeiro Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {7,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=7)
+RETURN ROW("Medida","DRE | Resultado Financeiro Realizado","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Resultado Financeiro Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Resultado Financeiro Realizado","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Resultado Financeiro Realizado],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=7),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=7)
+RETURN ROW("Medida","DRE | Resultado Financeiro Realizado","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Resultado Financeiro Realizado],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Resultado Financeiro Realizado","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Resultado Financeiro Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Resultado Financeiro Realizado","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Resultado Financeiro Orçado]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=7)
+RETURN ROW("Medida","DRE | Resultado Financeiro Orçado","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Resultado Financeiro Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=7)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=7)
+RETURN ROW("Medida","DRE | Resultado Financeiro Orçado","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Resultado Financeiro Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Resultado Financeiro Orçado","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Resultado Financeiro Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {7,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=7)
+RETURN ROW("Medida","DRE | Resultado Financeiro Orçado","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Resultado Financeiro Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Resultado Financeiro Orçado","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Resultado Financeiro Orçado],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=7),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=7)
+RETURN ROW("Medida","DRE | Resultado Financeiro Orçado","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Resultado Financeiro Orçado],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Resultado Financeiro Orçado","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Resultado Financeiro Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Resultado Financeiro Orçado","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Resultado Financeiro Previsto]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=7)
+RETURN ROW("Medida","DRE | Resultado Financeiro Previsto","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Resultado Financeiro Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=7)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=7)
+RETURN ROW("Medida","DRE | Resultado Financeiro Previsto","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Resultado Financeiro Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Resultado Financeiro Previsto","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Resultado Financeiro Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {7,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=7)
+RETURN ROW("Medida","DRE | Resultado Financeiro Previsto","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Resultado Financeiro Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Resultado Financeiro Previsto","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Resultado Financeiro Previsto],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=7),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=7)
+RETURN ROW("Medida","DRE | Resultado Financeiro Previsto","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Resultado Financeiro Previsto],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Resultado Financeiro Previsto","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Resultado Financeiro Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Resultado Financeiro Previsto","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Depreciação e Amortização Realizado]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=9)
+RETURN ROW("Medida","DRE | Depreciação e Amortização Realizado","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Depreciação e Amortização Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=9)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=9)
+RETURN ROW("Medida","DRE | Depreciação e Amortização Realizado","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Depreciação e Amortização Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Depreciação e Amortização Realizado","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Depreciação e Amortização Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {9,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=9)
+RETURN ROW("Medida","DRE | Depreciação e Amortização Realizado","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Depreciação e Amortização Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Depreciação e Amortização Realizado","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Depreciação e Amortização Realizado],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=9),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=9)
+RETURN ROW("Medida","DRE | Depreciação e Amortização Realizado","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Depreciação e Amortização Realizado],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Depreciação e Amortização Realizado","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Depreciação e Amortização Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Depreciação e Amortização Realizado","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Depreciação e Amortização Orçado]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=9)
+RETURN ROW("Medida","DRE | Depreciação e Amortização Orçado","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Depreciação e Amortização Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=9)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=9)
+RETURN ROW("Medida","DRE | Depreciação e Amortização Orçado","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Depreciação e Amortização Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Depreciação e Amortização Orçado","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Depreciação e Amortização Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {9,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=9)
+RETURN ROW("Medida","DRE | Depreciação e Amortização Orçado","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Depreciação e Amortização Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Depreciação e Amortização Orçado","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Depreciação e Amortização Orçado],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=9),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=9)
+RETURN ROW("Medida","DRE | Depreciação e Amortização Orçado","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Depreciação e Amortização Orçado],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Depreciação e Amortização Orçado","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Depreciação e Amortização Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Depreciação e Amortização Orçado","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Depreciação e Amortização Previsto]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=9)
+RETURN ROW("Medida","DRE | Depreciação e Amortização Previsto","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Depreciação e Amortização Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=9)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=9)
+RETURN ROW("Medida","DRE | Depreciação e Amortização Previsto","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Depreciação e Amortização Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Depreciação e Amortização Previsto","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Depreciação e Amortização Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {9,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=9)
+RETURN ROW("Medida","DRE | Depreciação e Amortização Previsto","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Depreciação e Amortização Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Depreciação e Amortização Previsto","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Depreciação e Amortização Previsto],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=9),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=9)
+RETURN ROW("Medida","DRE | Depreciação e Amortização Previsto","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Depreciação e Amortização Previsto],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Depreciação e Amortização Previsto","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Depreciação e Amortização Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Depreciação e Amortização Previsto","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Outras Receitas e Despesas Realizado]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=10)
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Realizado","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Outras Receitas e Despesas Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=10)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=10)
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Realizado","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Outras Receitas e Despesas Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Realizado","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Outras Receitas e Despesas Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {10,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=10)
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Realizado","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Outras Receitas e Despesas Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Realizado","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Outras Receitas e Despesas Realizado],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=10),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=10)
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Realizado","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Outras Receitas e Despesas Realizado],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Realizado","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Outras Receitas e Despesas Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Realizado","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Outras Receitas e Despesas Orçado]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=10)
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Orçado","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Outras Receitas e Despesas Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=10)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=10)
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Orçado","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Outras Receitas e Despesas Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Orçado","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Outras Receitas e Despesas Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {10,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=10)
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Orçado","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Outras Receitas e Despesas Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Orçado","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Outras Receitas e Despesas Orçado],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=10),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=10)
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Orçado","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Outras Receitas e Despesas Orçado],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Orçado","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Outras Receitas e Despesas Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Orçado","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Outras Receitas e Despesas Previsto]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=10)
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Previsto","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Outras Receitas e Despesas Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=10)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=10)
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Previsto","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Outras Receitas e Despesas Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Previsto","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Outras Receitas e Despesas Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {10,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=10)
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Previsto","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Outras Receitas e Despesas Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Previsto","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Outras Receitas e Despesas Previsto],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=10),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=10)
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Previsto","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Outras Receitas e Despesas Previsto],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Previsto","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Outras Receitas e Despesas Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Outras Receitas e Despesas Previsto","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Provisão para IR e CSLL Realizado]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=12)
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Realizado","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Provisão para IR e CSLL Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=12)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=12)
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Realizado","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Provisão para IR e CSLL Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Realizado","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Provisão para IR e CSLL Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {12,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=12)
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Realizado","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Provisão para IR e CSLL Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Realizado","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Provisão para IR e CSLL Realizado],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=12),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[realizado] ),'vw_dre_comparativo'[ordem_dre]=12)
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Realizado","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Provisão para IR e CSLL Realizado],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Realizado","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Provisão para IR e CSLL Realizado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Realizado","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Provisão para IR e CSLL Orçado]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=12)
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Orçado","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Provisão para IR e CSLL Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=12)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=12)
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Orçado","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Provisão para IR e CSLL Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Orçado","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Provisão para IR e CSLL Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {12,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=12)
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Orçado","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Provisão para IR e CSLL Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Orçado","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Provisão para IR e CSLL Orçado],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=12),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[orcado] ),'vw_dre_comparativo'[ordem_dre]=12)
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Orçado","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Provisão para IR e CSLL Orçado],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Orçado","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Provisão para IR e CSLL Orçado],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Orçado","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))),
+UNION(
+VAR _V=CALCULATE([DRE | Provisão para IR e CSLL Previsto]) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=12)
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Previsto","Contexto","SemFiltro","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Provisão para IR e CSLL Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=12)) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=12)
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Previsto","Contexto","UnicaAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Provisão para IR e CSLL Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=1)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Previsto","Contexto","UnicaConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Provisão para IR e CSLL Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {12,13})) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=12)
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Previsto","Contexto","MultiplasInclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Provisão para IR e CSLL Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre] IN {8,11})) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Previsto","Contexto","MultiplasExclui","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Provisão para IR e CSLL Previsto],KEEPFILTERS(FILTER(ALL('vw_dre_comparativo'[descricao_dre]),'vw_dre_comparativo'[descricao_dre] IN SELECTCOLUMNS(FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[ordem_dre]=12),"Rotulo",'vw_dre_comparativo'[descricao_dre])))) VAR _E=CALCULATE(SUM('vw_dre_comparativo'[previsto] ),'vw_dre_comparativo'[ordem_dre]=12)
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Previsto","Contexto","DescricaoAlvo","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Provisão para IR e CSLL Previsto],KEEPFILTERS('vw_dre_comparativo'[descricao_dre]="= EBITDA")) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Previsto","Contexto","DescricaoConflitante","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01)),
+VAR _V=CALCULATE([DRE | Provisão para IR e CSLL Previsto],KEEPFILTERS('vw_dre_comparativo'[ordem_dre]=999999)) VAR _E=BLANK()
+RETURN ROW("Medida","DRE | Provisão para IR e CSLL Previsto","Contexto","SemDados","Obtido",_V,"Esperado",_E,"Aprovado",IF(ISBLANK(_E),ISBLANK(_V),NOT ISBLANK(_V) && ABS(_V-_E)<=0.01))))

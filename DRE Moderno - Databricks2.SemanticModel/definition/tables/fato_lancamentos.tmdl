@@ -1,0 +1,91 @@
+table fato_lancamentos
+	isHidden
+	lineageTag: bee40718-5001-4149-a588-3625582cdaaa
+
+	column competencia_data
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: e1bc0e90-962b-4274-956b-07f4430effc4
+		summarizeBy: none
+		sourceColumn: competencia_data
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column planocontas_id
+		dataType: string
+		lineageTag: 6735fbe0-abec-4f12-96b7-9ce7364c26ce
+		summarizeBy: none
+		sourceColumn: planocontas_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor
+		dataType: double
+		lineageTag: 34e426ec-03bd-451a-85d8-45314b53ce46
+		summarizeBy: sum
+		sourceColumn: valor
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column _arquivo_origem
+		dataType: string
+		isHidden
+		lineageTag: 2060cd76-76ec-4745-b1f7-b84d61ad15ea
+		summarizeBy: none
+		sourceColumn: _arquivo_origem
+
+		annotation SummarizationSetBy = Automatic
+
+	column _aba_origem
+		dataType: string
+		isHidden
+		lineageTag: 545be1ef-bc3b-44b6-b26d-ccae00582a30
+		summarizeBy: none
+		sourceColumn: _aba_origem
+
+		annotation SummarizationSetBy = Automatic
+
+	column _data_ingestao
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: 0e61ba97-0167-40a0-b3f5-ff51cf22d29f
+		summarizeBy: none
+		sourceColumn: _data_ingestao
+
+		annotation SummarizationSetBy = Automatic
+
+	column _tabela_origem
+		dataType: string
+		isHidden
+		lineageTag: 5071f7b1-80b5-4370-9145-66a88a787344
+		summarizeBy: none
+		sourceColumn: _tabela_origem
+
+		annotation SummarizationSetBy = Automatic
+
+	column cod_filial
+		dataType: string
+		lineageTag: affcfce8-0227-48d9-a469-394aff880004
+		summarizeBy: none
+		sourceColumn: cod_filial
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fato_lancamentos = m
+		mode: import
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs(DatabricksHost, DatabricksHttpPath, [Catalog=null, Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null, Protocol=null]),
+				    workspace_Database = Source{[Name="workspace",Kind="Database"]}[Data],
+				    gold_Schema = workspace_Database{[Name="gold",Kind="Schema"]}[Data],
+				    fato_lancamentos_Table = gold_Schema{[Name="fato_lancamentos",Kind="Table"]}[Data]
+				in
+				    fato_lancamentos_Table
+
+	annotation PBI_ResultType = Table
+

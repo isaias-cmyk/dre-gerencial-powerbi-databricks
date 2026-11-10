@@ -1,0 +1,11 @@
+{
+  "Date": "2026-11-02T14:57:04.7706536-03:00",
+  "Version": "git version 2.47.1.windows.2",
+  "VersionExit": 0,
+  "TopLevel": "fatal: not a git repository (or any of the parent directories): .git",
+  "TopLevelExit": 128,
+  "Status": "fatal: not a git repository (or any of the parent directories): .git",
+  "StatusExit": 128,
+  "Initialized": false,
+  "Gitignore": "**/.pbi/localSettings.json\r\n**/.pbi/cache.abf"
+}

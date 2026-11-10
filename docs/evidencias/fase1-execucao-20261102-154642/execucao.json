@@ -1,0 +1,156 @@
+[
+  {
+    "File": "01-descoberta.dax",
+    "State": "EXECUTADO",
+    "Rows": 3,
+    "Seconds": 0.1498366,
+    "Account": "",
+    "QuerySHA256": "349956944890FB485A5C0AF5E112E2EDCD096BC411FB48ED2E21BD1235F812E1"
+  },
+  {
+    "File": "02-relacionamentos.dax",
+    "State": "EXECUTADO",
+    "Rows": 18,
+    "Seconds": 0.0713684,
+    "Account": "",
+    "QuerySHA256": "E25C37581591AABDFBACB08D6E846EC73D1C6AF2F88527F28EEBEEE805C543E9"
+  },
+  {
+    "File": "03-colunas.dax",
+    "State": "EXECUTADO",
+    "Rows": 112,
+    "Seconds": 0.1228865,
+    "Account": "",
+    "QuerySHA256": "8369335DBEC4C8F00D40B539A8BE2ADF34C0CC2F8181C90E3FAAC6F372BAE2B2"
+  },
+  {
+    "File": "04-chaves-modelo.dax",
+    "State": "EXECUTADO",
+    "Rows": 4,
+    "Seconds": 0.0547371,
+    "Account": "",
+    "QuerySHA256": "1D61C61F2A691AD2C1A1406B5C25D5A349C48BC9529E1690E8CB35EEEA65703A"
+  },
+  {
+    "File": "05-integridade-modelo.dax",
+    "State": "EXECUTADO",
+    "Rows": 13,
+    "Seconds": 0.1653133,
+    "Account": "",
+    "QuerySHA256": "9903F4AC0BE06FC13141ADE6F95EB4002B94DDB27B85F692D8C1BB5B62B96FBB"
+  },
+  {
+    "File": "06-filtros-fato_lancamentos.dax",
+    "State": "EXECUTADO",
+    "Rows": 20,
+    "Seconds": 0.2085066,
+    "Account": "",
+    "QuerySHA256": "932BDDFA56605D90E46E9190959C41410E4A642CBCB17E5153D43687081F5D93"
+  },
+  {
+    "File": "06-filtros-fato_orcamento.dax",
+    "State": "EXECUTADO",
+    "Rows": 20,
+    "Seconds": 0.2120496,
+    "Account": "",
+    "QuerySHA256": "2C224A5A4208F04D9C36367E1FC0DAFE119A0B89F93FE58A29ADD8C585C680B7"
+  },
+  {
+    "File": "06-filtros-fato_previsao.dax",
+    "State": "EXECUTADO",
+    "Rows": 20,
+    "Seconds": 0.2087279,
+    "Account": "",
+    "QuerySHA256": "B92AC6086DF51E35E96686ED64C09490D55426E933D541CFD3ECDE6A1DC17B25"
+  },
+  {
+    "File": "06-filtros-vw_dre_comparativo.dax",
+    "State": "EXECUTADO",
+    "Rows": 20,
+    "Seconds": 0.0908122,
+    "Account": "",
+    "QuerySHA256": "1ECC6DCD106A663F081493B3663F433BEC105C62878F98EB1B65DF28B85C66B5"
+  },
+  {
+    "File": "07-controle-integral.dax",
+    "State": "EXECUTADO",
+    "Rows": 1,
+    "Seconds": 0.0290319,
+    "Account": "",
+    "QuerySHA256": "0149892E996E4ACEAC49D168CCA4E87E6B828B8FF377CE0D43435C19A9614B62"
+  },
+  {
+    "File": "08-linha13-filial-periodo.dax",
+    "State": "EXECUTADO",
+    "Rows": 20,
+    "Seconds": 0.0662905,
+    "Account": "",
+    "QuerySHA256": "08C0304B753FEA65B2C7C55546C281C082E57B7C44B465B745FDFF11858C7E60"
+  },
+  {
+    "File": "09-linha13-filial-ano.dax",
+    "State": "EXECUTADO",
+    "Rows": 9,
+    "Seconds": 0.0258405,
+    "Account": "",
+    "QuerySHA256": "D168ABAE38BFCDF79FFBA9902637CE561208C50D857DFD86442CB115E7063576"
+  },
+  {
+    "File": "10-descobrir-conta.dax",
+    "State": "EXECUTADO",
+    "Rows": 129,
+    "Seconds": 0.0645772,
+    "Account": "",
+    "QuerySHA256": "F6BF54D991A42E14D9C0AC91EEA028737FE527FA9233352C88A1207F60B43EEF"
+  },
+  {
+    "File": "11-filtro-conta.dax",
+    "State": "NAO_EXECUTADO",
+    "Reason": "Conta analítica ainda não selecionada"
+  },
+  {
+    "File": "12-filtro-dre.dax",
+    "State": "EXECUTADO",
+    "Rows": 1,
+    "Seconds": 0.0333425,
+    "Account": "",
+    "QuerySHA256": "B6F2203EB26615F1E3908420B789AFC9F78E7AD1E337AB7573C263DFDD17471D"
+  },
+  {
+    "File": "13-relacao-inativa.dax",
+    "State": "EXECUTADO",
+    "Rows": 3,
+    "Seconds": 0.0225055,
+    "Account": "",
+    "QuerySHA256": "5548F90E44FBE2A4476F075C9B0AB82C5352477A185CCF0C5DF993F81C08BEBE"
+  },
+  {
+    "File": "14-calendario-modelo.dax",
+    "State": "EXECUTADO",
+    "Rows": 1,
+    "Seconds": 0.0244156,
+    "Account": "",
+    "QuerySHA256": "A7389180DBD288C00B7A872EB919D467AE6E932222BE5F67432063718556A01A"
+  },
+  {
+    "File": "15-cobertura-cenarios.dax",
+    "State": "EXECUTADO",
+    "Rows": 3,
+    "Seconds": 0.0196086,
+    "Account": "",
+    "QuerySHA256": "04FAB2D7348DF2ED36D4CDD602408CE72228F462536049F67859FAE58DBD8920"
+  },
+  {
+    "File": "16-grao-view.dax",
+    "State": "EXECUTADO",
+    "Rows": 0,
+    "Seconds": 0.0120383,
+    "Account": "",
+    "QuerySHA256": "7D88B2BEBD36A3B4A6C65360485565C71D92A2841446665142D3D746EA79EF10"
+  },
+  {
+    "File": "17-intersecao-conta-filial-periodo.dax",
+    "State": "NAO_EXECUTADO",
+    "Reason": "Conta analítica ainda não selecionada"
+  }
+]

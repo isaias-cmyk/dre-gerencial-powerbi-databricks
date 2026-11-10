@@ -1,0 +1,302 @@
+[
+  {
+    "Nome": "DRE | Receita Operacional Bruta Realizado",
+    "Posicao": 1,
+    "Indicador": "Receita Operacional Bruta",
+    "Cenario": "Realizado",
+    "Coluna": "realizado",
+    "Base": "DRE | Realizado",
+    "Pasta": "DRE\\Receita Operacional Bruta",
+    "LineageTag": "1b9b6aac-0a83-4973-9dad-07c4f900b28f"
+  },
+  {
+    "Nome": "DRE | Receita Operacional Bruta Orçado",
+    "Posicao": 1,
+    "Indicador": "Receita Operacional Bruta",
+    "Cenario": "Orçado",
+    "Coluna": "orcado",
+    "Base": "DRE | Orçado",
+    "Pasta": "DRE\\Receita Operacional Bruta",
+    "LineageTag": "2f130159-8d55-4260-bd95-8e925ad93dde"
+  },
+  {
+    "Nome": "DRE | Receita Operacional Bruta Previsto",
+    "Posicao": 1,
+    "Indicador": "Receita Operacional Bruta",
+    "Cenario": "Previsto",
+    "Coluna": "previsto",
+    "Base": "DRE | Previsto",
+    "Pasta": "DRE\\Receita Operacional Bruta",
+    "LineageTag": "0942855a-406b-40be-b697-ce73a0569249"
+  },
+  {
+    "Nome": "DRE | Deduções da Receita Realizado",
+    "Posicao": 2,
+    "Indicador": "Deduções da Receita",
+    "Cenario": "Realizado",
+    "Coluna": "realizado",
+    "Base": "DRE | Realizado",
+    "Pasta": "DRE\\Deduções da Receita",
+    "LineageTag": "359d62bf-5f3f-42f4-b39f-863a5fc9d33d"
+  },
+  {
+    "Nome": "DRE | Deduções da Receita Orçado",
+    "Posicao": 2,
+    "Indicador": "Deduções da Receita",
+    "Cenario": "Orçado",
+    "Coluna": "orcado",
+    "Base": "DRE | Orçado",
+    "Pasta": "DRE\\Deduções da Receita",
+    "LineageTag": "5d0a67bc-a357-4559-84c7-54308fcc4507"
+  },
+  {
+    "Nome": "DRE | Deduções da Receita Previsto",
+    "Posicao": 2,
+    "Indicador": "Deduções da Receita",
+    "Cenario": "Previsto",
+    "Coluna": "previsto",
+    "Base": "DRE | Previsto",
+    "Pasta": "DRE\\Deduções da Receita",
+    "LineageTag": "ea7866bf-681b-4042-9c67-8d7983db178a"
+  },
+  {
+    "Nome": "DRE | Receita Operacional Líquida Realizado",
+    "Posicao": 3,
+    "Indicador": "Receita Operacional Líquida",
+    "Cenario": "Realizado",
+    "Coluna": "realizado",
+    "Base": "DRE | Realizado",
+    "Pasta": "DRE\\Receita Operacional Líquida",
+    "LineageTag": "0a03f396-fc0d-4187-9d98-bbffb44bf017"
+  },
+  {
+    "Nome": "DRE | Receita Operacional Líquida Orçado",
+    "Posicao": 3,
+    "Indicador": "Receita Operacional Líquida",
+    "Cenario": "Orçado",
+    "Coluna": "orcado",
+    "Base": "DRE | Orçado",
+    "Pasta": "DRE\\Receita Operacional Líquida",
+    "LineageTag": "f56993cd-5b30-42aa-a4f9-a7a3ab950560"
+  },
+  {
+    "Nome": "DRE | Receita Operacional Líquida Previsto",
+    "Posicao": 3,
+    "Indicador": "Receita Operacional Líquida",
+    "Cenario": "Previsto",
+    "Coluna": "previsto",
+    "Base": "DRE | Previsto",
+    "Pasta": "DRE\\Receita Operacional Líquida",
+    "LineageTag": "a2f6a279-b816-4755-9e11-f51dd1ad6455"
+  },
+  {
+    "Nome": "DRE | Custos Realizado",
+    "Posicao": 4,
+    "Indicador": "Custos",
+    "Cenario": "Realizado",
+    "Coluna": "realizado",
+    "Base": "DRE | Realizado",
+    "Pasta": "DRE\\Custos",
+    "LineageTag": "2640608a-a3c8-4ef6-addf-99b8031c5b46"
+  },
+  {
+    "Nome": "DRE | Custos Orçado",
+    "Posicao": 4,
+    "Indicador": "Custos",
+    "Cenario": "Orçado",
+    "Coluna": "orcado",
+    "Base": "DRE | Orçado",
+    "Pasta": "DRE\\Custos",
+    "LineageTag": "4df5c7ac-762e-4737-944e-a76304baf6b4"
+  },
+  {
+    "Nome": "DRE | Custos Previsto",
+    "Posicao": 4,
+    "Indicador": "Custos",
+    "Cenario": "Previsto",
+    "Coluna": "previsto",
+    "Base": "DRE | Previsto",
+    "Pasta": "DRE\\Custos",
+    "LineageTag": "6ae1e85a-ebfe-44c8-b211-38b18399bc9a"
+  },
+  {
+    "Nome": "DRE | Margem de Contribuição Realizado",
+    "Posicao": 5,
+    "Indicador": "Margem de Contribuição",
+    "Cenario": "Realizado",
+    "Coluna": "realizado",
+    "Base": "DRE | Realizado",
+    "Pasta": "DRE\\Margem de Contribuição",
+    "LineageTag": "abc6b0db-7f47-495e-9aee-ce90829dd302"
+  },
+  {
+    "Nome": "DRE | Margem de Contribuição Orçado",
+    "Posicao": 5,
+    "Indicador": "Margem de Contribuição",
+    "Cenario": "Orçado",
+    "Coluna": "orcado",
+    "Base": "DRE | Orçado",
+    "Pasta": "DRE\\Margem de Contribuição",
+    "LineageTag": "1ec65225-ac3e-4bb1-a3c4-d3e6d273c0be"
+  },
+  {
+    "Nome": "DRE | Margem de Contribuição Previsto",
+    "Posicao": 5,
+    "Indicador": "Margem de Contribuição",
+    "Cenario": "Previsto",
+    "Coluna": "previsto",
+    "Base": "DRE | Previsto",
+    "Pasta": "DRE\\Margem de Contribuição",
+    "LineageTag": "df6d4a06-767c-46da-913e-f4993b416eac"
+  },
+  {
+    "Nome": "DRE | Despesas Operacionais Realizado",
+    "Posicao": 6,
+    "Indicador": "Despesas Operacionais",
+    "Cenario": "Realizado",
+    "Coluna": "realizado",
+    "Base": "DRE | Realizado",
+    "Pasta": "DRE\\Despesas Operacionais",
+    "LineageTag": "4c3b0267-71ff-42c6-88ed-75850b671700"
+  },
+  {
+    "Nome": "DRE | Despesas Operacionais Orçado",
+    "Posicao": 6,
+    "Indicador": "Despesas Operacionais",
+    "Cenario": "Orçado",
+    "Coluna": "orcado",
+    "Base": "DRE | Orçado",
+    "Pasta": "DRE\\Despesas Operacionais",
+    "LineageTag": "5c7cfc61-0fed-47ce-87b7-a3ed144d49e2"
+  },
+  {
+    "Nome": "DRE | Despesas Operacionais Previsto",
+    "Posicao": 6,
+    "Indicador": "Despesas Operacionais",
+    "Cenario": "Previsto",
+    "Coluna": "previsto",
+    "Base": "DRE | Previsto",
+    "Pasta": "DRE\\Despesas Operacionais",
+    "LineageTag": "0af43c21-34cd-48f4-9839-9254f48c397c"
+  },
+  {
+    "Nome": "DRE | Resultado Financeiro Realizado",
+    "Posicao": 7,
+    "Indicador": "Resultado Financeiro",
+    "Cenario": "Realizado",
+    "Coluna": "realizado",
+    "Base": "DRE | Realizado",
+    "Pasta": "DRE\\Resultado Financeiro",
+    "LineageTag": "88085f8c-b62f-47ef-86ce-73b426ea10e2"
+  },
+  {
+    "Nome": "DRE | Resultado Financeiro Orçado",
+    "Posicao": 7,
+    "Indicador": "Resultado Financeiro",
+    "Cenario": "Orçado",
+    "Coluna": "orcado",
+    "Base": "DRE | Orçado",
+    "Pasta": "DRE\\Resultado Financeiro",
+    "LineageTag": "a09adc9f-16cb-4b25-9413-75989c3e9738"
+  },
+  {
+    "Nome": "DRE | Resultado Financeiro Previsto",
+    "Posicao": 7,
+    "Indicador": "Resultado Financeiro",
+    "Cenario": "Previsto",
+    "Coluna": "previsto",
+    "Base": "DRE | Previsto",
+    "Pasta": "DRE\\Resultado Financeiro",
+    "LineageTag": "8ccd7114-7651-44b2-9784-bfd18c642ff5"
+  },
+  {
+    "Nome": "DRE | Depreciação e Amortização Realizado",
+    "Posicao": 9,
+    "Indicador": "Depreciação e Amortização",
+    "Cenario": "Realizado",
+    "Coluna": "realizado",
+    "Base": "DRE | Realizado",
+    "Pasta": "DRE\\Depreciação e Amortização",
+    "LineageTag": "dcbf1153-1120-40fd-9dfb-c8b04818f292"
+  },
+  {
+    "Nome": "DRE | Depreciação e Amortização Orçado",
+    "Posicao": 9,
+    "Indicador": "Depreciação e Amortização",
+    "Cenario": "Orçado",
+    "Coluna": "orcado",
+    "Base": "DRE | Orçado",
+    "Pasta": "DRE\\Depreciação e Amortização",
+    "LineageTag": "49d95a10-e981-41f4-b2b7-387ce3a8553f"
+  },
+  {
+    "Nome": "DRE | Depreciação e Amortização Previsto",
+    "Posicao": 9,
+    "Indicador": "Depreciação e Amortização",
+    "Cenario": "Previsto",
+    "Coluna": "previsto",
+    "Base": "DRE | Previsto",
+    "Pasta": "DRE\\Depreciação e Amortização",
+    "LineageTag": "df334940-f5df-4cad-80a3-190fd8c7dea8"
+  },
+  {
+    "Nome": "DRE | Outras Receitas e Despesas Realizado",
+    "Posicao": 10,
+    "Indicador": "Outras Receitas e Despesas",
+    "Cenario": "Realizado",
+    "Coluna": "realizado",
+    "Base": "DRE | Realizado",
+    "Pasta": "DRE\\Outras Receitas e Despesas",
+    "LineageTag": "67e2ce22-4beb-4269-8b8b-7f54e2e004cc"
+  },
+  {
+    "Nome": "DRE | Outras Receitas e Despesas Orçado",
+    "Posicao": 10,
+    "Indicador": "Outras Receitas e Despesas",
+    "Cenario": "Orçado",
+    "Coluna": "orcado",
+    "Base": "DRE | Orçado",
+    "Pasta": "DRE\\Outras Receitas e Despesas",
+    "LineageTag": "5c845e08-45bf-4278-ab89-22d3f4917ee3"
+  },
+  {
+    "Nome": "DRE | Outras Receitas e Despesas Previsto",
+    "Posicao": 10,
+    "Indicador": "Outras Receitas e Despesas",
+    "Cenario": "Previsto",
+    "Coluna": "previsto",
+    "Base": "DRE | Previsto",
+    "Pasta": "DRE\\Outras Receitas e Despesas",
+    "LineageTag": "579b8c13-a750-4856-ad30-7acf4a712436"
+  },
+  {
+    "Nome": "DRE | Provisão para IR e CSLL Realizado",
+    "Posicao": 12,
+    "Indicador": "Provisão para IR e CSLL",
+    "Cenario": "Realizado",
+    "Coluna": "realizado",
+    "Base": "DRE | Realizado",
+    "Pasta": "DRE\\Provisão para IR e CSLL",
+    "LineageTag": "5862908a-4810-4c7d-8ee0-6a9d8b90e0f1"
+  },
+  {
+    "Nome": "DRE | Provisão para IR e CSLL Orçado",
+    "Posicao": 12,
+    "Indicador": "Provisão para IR e CSLL",
+    "Cenario": "Orçado",
+    "Coluna": "orcado",
+    "Base": "DRE | Orçado",
+    "Pasta": "DRE\\Provisão para IR e CSLL",
+    "LineageTag": "30f7ad39-a2bb-4062-a032-63dd77f10901"
+  },
+  {
+    "Nome": "DRE | Provisão para IR e CSLL Previsto",
+    "Posicao": 12,
+    "Indicador": "Provisão para IR e CSLL",
+    "Cenario": "Previsto",
+    "Coluna": "previsto",
+    "Base": "DRE | Previsto",
+    "Pasta": "DRE\\Provisão para IR e CSLL",
+    "LineageTag": "ba9cbc2a-90c1-4b19-ae4c-34245a191aba"
+  }
+]

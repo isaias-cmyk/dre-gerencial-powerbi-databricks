@@ -1,0 +1,96 @@
+table dim_calendario
+	lineageTag: 2f1534b9-6164-4961-b9a0-b73bb8eedf0e
+	dataCategory: Time
+
+	column data
+		dataType: dateTime
+		isUnique
+		isKey
+		formatString: Long Date
+		lineageTag: 30030f97-7195-4ddd-8da3-d6990382bd77
+		summarizeBy: none
+		sourceColumn: data
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ano
+		dataType: int64
+		formatString: 0
+		lineageTag: b533d961-76b5-4e2f-8c56-2130d1eddcf1
+		summarizeBy: none
+		sourceColumn: ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column mes
+		dataType: int64
+		formatString: 0
+		lineageTag: 121f0fa4-b09c-43e1-9432-6567b9f36428
+		summarizeBy: none
+		sourceColumn: mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column dia
+		dataType: int64
+		formatString: 0
+		lineageTag: e1cf4680-5b5a-48ea-90e3-4e2a47367334
+		summarizeBy: none
+		sourceColumn: dia
+
+		annotation SummarizationSetBy = Automatic
+
+	column trimestre
+		dataType: int64
+		formatString: 0
+		lineageTag: 09059fc8-20d7-45bf-9f6d-9d29b63038f4
+		summarizeBy: none
+		sourceColumn: trimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column ano_mes
+		dataType: string
+		lineageTag: a0c4f7ac-0d1b-472b-946d-921af38d6be1
+		summarizeBy: none
+		sourceColumn: ano_mes
+		sortByColumn: numero_ano_mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column inicio_mes
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f7f3090c-65a2-49c6-977f-a0295f4e8f7d
+		summarizeBy: none
+		sourceColumn: inicio_mes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column numero_ano_mes
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: b73c9875-48eb-4579-9296-de483a88410a
+		summarizeBy: none
+		sourceColumn: numero_ano_mes
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_calendario = m
+		mode: import
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs(DatabricksHost, DatabricksHttpPath, [Catalog=null, Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null, Protocol=null]),
+				    workspace_Database = Source{[Name="workspace",Kind="Database"]}[Data],
+				    gold_Schema = workspace_Database{[Name="gold",Kind="Schema"]}[Data],
+				    dim_calendario_Table = gold_Schema{[Name="dim_calendario",Kind="Table"]}[Data]
+				in
+				    dim_calendario_Table
+
+	annotation PBI_ResultType = Table
+

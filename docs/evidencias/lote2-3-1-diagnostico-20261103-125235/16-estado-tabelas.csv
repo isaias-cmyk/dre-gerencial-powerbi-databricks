@@ -1,0 +1,36 @@
+"[ID]","[Name]","[Model]","[DataCategory]","[Description]","[IsHidden]","[StorageMode]","[TableStorage]","[Expression]","[ShowAsVariationOnly]","[IsPrivate]","[CalculationGroupPrecedence]","[LineageTag]"
+"12","dim_calendario","8041e2c7-0db3-462f-8b3f-c21f26d586e6","Regular",,"False","Import","dim calendario (12)",,"False","False",,"2f1534b9-6164-4961-b9a0-b73bb8eedf0e"
+"15","DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395","8041e2c7-0db3-462f-8b3f-c21f26d586e6","Regular",,"True","Import","DateTableTemplate accc5392 c07a 42c1 95c8 edb7723fc395 (15)","Calendar(Date(2015,1,1), Date(2015,1,1))","False","True",,"c9e434b8-c8ff-4785-90f6-f085fe467f61"
+"18","LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504","8041e2c7-0db3-462f-8b3f-c21f26d586e6","Regular",,"True","Import","LocalDateTable e416fc4a 500e 46eb 9219 3a8485e17504 (18)","Calendar(Date(Year(MIN('dim_calendario'[data])), 1, 1), Date(Year(MAX('dim_calendario'[data])), 12, 31))","True","False",,"f9b721f3-604a-44cc-9af1-0591e91ca2d1"
+"21","LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d","8041e2c7-0db3-462f-8b3f-c21f26d586e6","Regular",,"True","Import","LocalDateTable 34e06e8e 8415 4982 a1d6 5bcb8aaf396d (21)","Calendar(Date(Year(MIN('dim_calendario'[inicio_mes])), 1, 1), Date(Year(MAX('dim_calendario'[inicio_mes])), 12, 31))","True","False",,"2194c386-5325-4851-ae58-e7d9ce28d40e"
+"24","dim_filial","8041e2c7-0db3-462f-8b3f-c21f26d586e6","Regular",,"False","Import","dim filial (24)",,"False","False",,"0c55b738-dccf-4135-80db-bcf23fa9518b"
+"27","dim_conta","8041e2c7-0db3-462f-8b3f-c21f26d586e6","Regular",,"False","Import","dim conta (27)",,"False","False",,"e844c91d-1181-40a0-8043-8737dab64670"
+"30","dim_dre","8041e2c7-0db3-462f-8b3f-c21f26d586e6","Regular",,"False","Import","dim dre (30)",,"False","False",,"49ab9dde-6ff7-466b-839c-c775272c46dd"
+"33","fato_lancamentos","8041e2c7-0db3-462f-8b3f-c21f26d586e6","Regular",,"False","Import","fato lancamentos (33)",,"False","False",,"bee40718-5001-4149-a588-3625582cdaaa"
+"39","LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b","8041e2c7-0db3-462f-8b3f-c21f26d586e6","Regular",,"True","Import","LocalDateTable 9a63cac9 7363 4efb a94e 52482a9f2a3b (39)","Calendar(Date(Year(MIN('fato_lancamentos'[_data_ingestao])), 1, 1), Date(Year(MAX('fato_lancamentos'[_data_ingestao])), 12, 31))","True","False",,"ee0b76f1-dad6-4689-9ee2-b14169c8690d"
+"42","fato_orcamento","8041e2c7-0db3-462f-8b3f-c21f26d586e6","Regular",,"False","Import","fato orcamento (42)",,"False","False",,"35750357-529c-4b55-a598-4c78ca9ab5d5"
+"48","LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531","8041e2c7-0db3-462f-8b3f-c21f26d586e6","Regular",,"True","Import","LocalDateTable 48e7e8a8 fb4a 47d3 a465 3cfdcdc24531 (48)","Calendar(Date(Year(MIN('fato_orcamento'[_data_ingestao])), 1, 1), Date(Year(MAX('fato_orcamento'[_data_ingestao])), 12, 31))","True","False",,"71921238-f246-44df-8b8a-d986d7312678"
+"51","fato_previsao","8041e2c7-0db3-462f-8b3f-c21f26d586e6","Regular",,"False","Import","fato previsao (51)",,"False","False",,"fba68418-940c-4826-8115-878d1f1b88b5"
+"57","LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3","8041e2c7-0db3-462f-8b3f-c21f26d586e6","Regular",,"True","Import","LocalDateTable c5792a6d 2512 4297 9fab d41d92d805c3 (57)","Calendar(Date(Year(MIN('fato_previsao'[_data_ingestao])), 1, 1), Date(Year(MAX('fato_previsao'[_data_ingestao])), 12, 31))","True","False",,"09fcb29d-f76d-4f87-a3d6-3f95dd05da16"
+"60","vw_dre_comparativo","8041e2c7-0db3-462f-8b3f-c21f26d586e6","Regular",,"False","Import","vw dre comparativo (60)",,"False","False",,"84c458c0-0806-4f14-8dcc-eb3f4fc58316"
+"5109","_Medidas","8041e2c7-0db3-462f-8b3f-c21f26d586e6","Regular",,"False","Import"," Medidas (5109)","DATATABLE ( ""_Organizacao"", INTEGER, { { 0 } } )","False","False",,"e6ba04e3-b25a-41b0-81e4-6aab755fd0e2"
+"5155","_ConfigCobertura","8041e2c7-0db3-462f-8b3f-c21f26d586e6","Regular",,"True","Import"," ConfigCobertura (5155)","DATATABLE (
+	""cod_filial"", STRING,
+	""cenario"", STRING,
+	""inicio_competencia"", DATETIME,
+	""fim_competencia"", DATETIME,
+	""versao_contrato"", STRING,
+	""hash_base"", STRING,
+	""estado"", STRING,
+	{
+		{ ""01"", ""Realizado"", ""2021-01-01 00:00:00"", ""2023-05-01 00:00:00"", ""DIDATICA-1.0-20261103"", ""27e02e7148984d74acdb5cf086a9ba637c55617152793f23509d3bad24bce04b"", ""FORNECIDO_DIDATICO"" },
+		{ ""01"", ""Orcado"", ""2021-01-01 00:00:00"", ""2023-12-01 00:00:00"", ""DIDATICA-1.0-20261103"", ""27e02e7148984d74acdb5cf086a9ba637c55617152793f23509d3bad24bce04b"", ""FORNECIDO_DIDATICO"" },
+		{ ""01"", ""Previsto"", ""2021-01-01 00:00:00"", ""2023-12-01 00:00:00"", ""DIDATICA-1.0-20261103"", ""27e02e7148984d74acdb5cf086a9ba637c55617152793f23509d3bad24bce04b"", ""FORNECIDO_DIDATICO"" },
+		{ ""02"", ""Realizado"", ""2021-01-01 00:00:00"", ""2023-05-01 00:00:00"", ""DIDATICA-1.0-20261103"", ""27e02e7148984d74acdb5cf086a9ba637c55617152793f23509d3bad24bce04b"", ""FORNECIDO_DIDATICO"" },
+		{ ""02"", ""Orcado"", ""2021-01-01 00:00:00"", ""2023-12-01 00:00:00"", ""DIDATICA-1.0-20261103"", ""27e02e7148984d74acdb5cf086a9ba637c55617152793f23509d3bad24bce04b"", ""FORNECIDO_DIDATICO"" },
+		{ ""02"", ""Previsto"", ""2021-01-01 00:00:00"", ""2023-12-01 00:00:00"", ""DIDATICA-1.0-20261103"", ""27e02e7148984d74acdb5cf086a9ba637c55617152793f23509d3bad24bce04b"", ""FORNECIDO_DIDATICO"" },
+		{ ""03"", ""Realizado"", ""2021-01-01 00:00:00"", ""2023-05-01 00:00:00"", ""DIDATICA-1.0-20261103"", ""27e02e7148984d74acdb5cf086a9ba637c55617152793f23509d3bad24bce04b"", ""FORNECIDO_DIDATICO"" },
+		{ ""03"", ""Orcado"", ""2021-01-01 00:00:00"", ""2023-12-01 00:00:00"", ""DIDATICA-1.0-20261103"", ""27e02e7148984d74acdb5cf086a9ba637c55617152793f23509d3bad24bce04b"", ""FORNECIDO_DIDATICO"" },
+		{ ""03"", ""Previsto"", ""2021-01-01 00:00:00"", ""2023-12-01 00:00:00"", ""DIDATICA-1.0-20261103"", ""27e02e7148984d74acdb5cf086a9ba637c55617152793f23509d3bad24bce04b"", ""FORNECIDO_DIDATICO"" }
+	}
+)","False","False",,"8f7223f7-a256-4d58-b793-7e6bf5f5a1e5"

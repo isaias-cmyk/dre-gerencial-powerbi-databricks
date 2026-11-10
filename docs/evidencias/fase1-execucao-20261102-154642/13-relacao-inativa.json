@@ -1,0 +1,29 @@
+[
+  {
+    "[Codigo]": "01",
+    "[Filial]": "São Paulo",
+    "[ContasTotal]": 129,
+    "[ContasViaFilial]": 129,
+    "[ContasDaFilialDiretas]": 43,
+    "[Extras]": null,
+    "[Faltantes]": null
+  },
+  {
+    "[Codigo]": "02",
+    "[Filial]": "Rio de Janeiro",
+    "[ContasTotal]": 129,
+    "[ContasViaFilial]": 129,
+    "[ContasDaFilialDiretas]": 43,
+    "[Extras]": null,
+    "[Faltantes]": null
+  },
+  {
+    "[Codigo]": "03",
+    "[Filial]": "Florianópolis",
+    "[ContasTotal]": 129,
+    "[ContasViaFilial]": 129,
+    "[ContasDaFilialDiretas]": 43,
+    "[Extras]": null,
+    "[Faltantes]": null
+  }
+]

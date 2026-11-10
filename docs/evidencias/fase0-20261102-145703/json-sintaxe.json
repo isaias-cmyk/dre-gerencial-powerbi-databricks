@@ -1,0 +1,79 @@
+[
+  {
+    "Path": "DRE Moderno - Databricks.pbip",
+    "Syntax": "OK",
+    "Schema": "https://developer.microsoft.com/json-schemas/fabric/pbip/pbipProperties/1.0.0/schema.json",
+    "Version": "1.0",
+    "Validation": "Somente parsing JSON; schema não validado"
+  },
+  {
+    "Path": "DRE Moderno - Databricks.Report\\.platform",
+    "Syntax": "OK",
+    "Schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+    "Version": null,
+    "Validation": "Somente parsing JSON; schema não validado"
+  },
+  {
+    "Path": "DRE Moderno - Databricks.Report\\definition.pbir",
+    "Syntax": "OK",
+    "Schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definitionProperties/2.0.0/schema.json",
+    "Version": "4.0",
+    "Validation": "Somente parsing JSON; schema não validado"
+  },
+  {
+    "Path": "DRE Moderno - Databricks.Report\\definition\\pages\\18fcfac0c5446040d274\\page.json",
+    "Syntax": "OK",
+    "Schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+    "Version": null,
+    "Validation": "Somente parsing JSON; schema não validado"
+  },
+  {
+    "Path": "DRE Moderno - Databricks.Report\\definition\\pages\\pages.json",
+    "Syntax": "OK",
+    "Schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/pagesMetadata/1.1.0/schema.json",
+    "Version": null,
+    "Validation": "Somente parsing JSON; schema não validado"
+  },
+  {
+    "Path": "DRE Moderno - Databricks.Report\\definition\\report.json",
+    "Syntax": "OK",
+    "Schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
+    "Version": null,
+    "Validation": "Somente parsing JSON; schema não validado"
+  },
+  {
+    "Path": "DRE Moderno - Databricks.Report\\definition\\version.json",
+    "Syntax": "OK",
+    "Schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/versionMetadata/1.0.0/schema.json",
+    "Version": "2.0.0",
+    "Validation": "Somente parsing JSON; schema não validado"
+  },
+  {
+    "Path": "DRE Moderno - Databricks.Report\\StaticResources\\SharedResources\\BaseThemes\\Fluent2-CY26SU08.json",
+    "Syntax": "OK",
+    "Schema": null,
+    "Version": null,
+    "Validation": "Somente parsing JSON; schema não validado"
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\.platform",
+    "Syntax": "OK",
+    "Schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+    "Version": null,
+    "Validation": "Somente parsing JSON; schema não validado"
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\definition.pbism",
+    "Syntax": "OK",
+    "Schema": "https://developer.microsoft.com/json-schemas/fabric/item/semanticModel/definitionProperties/1.0.0/schema.json",
+    "Version": "4.2",
+    "Validation": "Somente parsing JSON; schema não validado"
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\diagramLayout.json",
+    "Syntax": "OK",
+    "Schema": null,
+    "Version": "1.1.0",
+    "Validation": "Somente parsing JSON; schema não validado"
+  }
+]

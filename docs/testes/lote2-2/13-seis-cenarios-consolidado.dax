@@ -1,0 +1,546 @@
+// Reutiliza integralmente a expressão CALCULATETABLE da consulta consolidada.
+// Seis cenários confirmados pelo usuário; somente leitura, 180 linhas esperadas.
+EVALUATE
+VAR _Casos=DATATABLE("Caso",STRING,"CodigoCaso",STRING,"InicioCaso",INTEGER,"FimCaso",INTEGER,{
+{"01_integral","01",20210101,20231231},
+{"02_integral","02",20210101,20231231},
+{"03_integral","03",20210101,20231231},
+{"Consolidado_2022","",20220101,20221231},
+{"Consolidado_JanMai2023","",20230101,20230531},
+{"Consolidado_JunDez2023","",20230601,20231231}})
+RETURN GENERATE(_Casos,
+VAR _CodigoFilial=[CodigoCaso]
+VAR _I=[InicioCaso]
+VAR _F=[FimCaso]
+VAR _DataInicial=DATE(INT(_I/10000),MOD(INT(_I/100),100),MOD(_I,100))
+VAR _DataFinal=DATE(INT(_F/10000),MOD(INT(_F/100),100),MOD(_F,100))
+VAR _Tolerancia=0.01
+RETURN
+CALCULATETABLE (
+        VAR _Resultados =
+            UNION (
+                VAR _Medida = [DRE | Receita Operacional Bruta Realizado]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[realizado] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 1 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Receita Operacional Bruta",
+                        "PosicaoDRE", 1,
+                        "OrdemCenario", 1,
+                        "Cenario", "Realizado",
+                        "NomeMedida", "DRE | Receita Operacional Bruta Realizado",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Receita Operacional Bruta Orçado]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[orcado] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 1 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Receita Operacional Bruta",
+                        "PosicaoDRE", 1,
+                        "OrdemCenario", 2,
+                        "Cenario", "Orçado",
+                        "NomeMedida", "DRE | Receita Operacional Bruta Orçado",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Receita Operacional Bruta Previsto]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[previsto] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 1 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Receita Operacional Bruta",
+                        "PosicaoDRE", 1,
+                        "OrdemCenario", 3,
+                        "Cenario", "Previsto",
+                        "NomeMedida", "DRE | Receita Operacional Bruta Previsto",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Deduções da Receita Realizado]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[realizado] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 2 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Deduções da Receita",
+                        "PosicaoDRE", 2,
+                        "OrdemCenario", 1,
+                        "Cenario", "Realizado",
+                        "NomeMedida", "DRE | Deduções da Receita Realizado",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Deduções da Receita Orçado]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[orcado] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 2 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Deduções da Receita",
+                        "PosicaoDRE", 2,
+                        "OrdemCenario", 2,
+                        "Cenario", "Orçado",
+                        "NomeMedida", "DRE | Deduções da Receita Orçado",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Deduções da Receita Previsto]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[previsto] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 2 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Deduções da Receita",
+                        "PosicaoDRE", 2,
+                        "OrdemCenario", 3,
+                        "Cenario", "Previsto",
+                        "NomeMedida", "DRE | Deduções da Receita Previsto",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Receita Operacional Líquida Realizado]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[realizado] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 3 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Receita Operacional Líquida",
+                        "PosicaoDRE", 3,
+                        "OrdemCenario", 1,
+                        "Cenario", "Realizado",
+                        "NomeMedida", "DRE | Receita Operacional Líquida Realizado",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Receita Operacional Líquida Orçado]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[orcado] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 3 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Receita Operacional Líquida",
+                        "PosicaoDRE", 3,
+                        "OrdemCenario", 2,
+                        "Cenario", "Orçado",
+                        "NomeMedida", "DRE | Receita Operacional Líquida Orçado",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Receita Operacional Líquida Previsto]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[previsto] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 3 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Receita Operacional Líquida",
+                        "PosicaoDRE", 3,
+                        "OrdemCenario", 3,
+                        "Cenario", "Previsto",
+                        "NomeMedida", "DRE | Receita Operacional Líquida Previsto",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Custos Realizado]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[realizado] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 4 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Custos",
+                        "PosicaoDRE", 4,
+                        "OrdemCenario", 1,
+                        "Cenario", "Realizado",
+                        "NomeMedida", "DRE | Custos Realizado",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Custos Orçado]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[orcado] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 4 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Custos",
+                        "PosicaoDRE", 4,
+                        "OrdemCenario", 2,
+                        "Cenario", "Orçado",
+                        "NomeMedida", "DRE | Custos Orçado",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Custos Previsto]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[previsto] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 4 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Custos",
+                        "PosicaoDRE", 4,
+                        "OrdemCenario", 3,
+                        "Cenario", "Previsto",
+                        "NomeMedida", "DRE | Custos Previsto",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Margem de Contribuição Realizado]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[realizado] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 5 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Margem de Contribuição",
+                        "PosicaoDRE", 5,
+                        "OrdemCenario", 1,
+                        "Cenario", "Realizado",
+                        "NomeMedida", "DRE | Margem de Contribuição Realizado",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Margem de Contribuição Orçado]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[orcado] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 5 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Margem de Contribuição",
+                        "PosicaoDRE", 5,
+                        "OrdemCenario", 2,
+                        "Cenario", "Orçado",
+                        "NomeMedida", "DRE | Margem de Contribuição Orçado",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Margem de Contribuição Previsto]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[previsto] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 5 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Margem de Contribuição",
+                        "PosicaoDRE", 5,
+                        "OrdemCenario", 3,
+                        "Cenario", "Previsto",
+                        "NomeMedida", "DRE | Margem de Contribuição Previsto",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Despesas Operacionais Realizado]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[realizado] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 6 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Despesas Operacionais",
+                        "PosicaoDRE", 6,
+                        "OrdemCenario", 1,
+                        "Cenario", "Realizado",
+                        "NomeMedida", "DRE | Despesas Operacionais Realizado",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Despesas Operacionais Orçado]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[orcado] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 6 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Despesas Operacionais",
+                        "PosicaoDRE", 6,
+                        "OrdemCenario", 2,
+                        "Cenario", "Orçado",
+                        "NomeMedida", "DRE | Despesas Operacionais Orçado",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Despesas Operacionais Previsto]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[previsto] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 6 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Despesas Operacionais",
+                        "PosicaoDRE", 6,
+                        "OrdemCenario", 3,
+                        "Cenario", "Previsto",
+                        "NomeMedida", "DRE | Despesas Operacionais Previsto",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Resultado Financeiro Realizado]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[realizado] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 7 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Resultado Financeiro",
+                        "PosicaoDRE", 7,
+                        "OrdemCenario", 1,
+                        "Cenario", "Realizado",
+                        "NomeMedida", "DRE | Resultado Financeiro Realizado",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Resultado Financeiro Orçado]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[orcado] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 7 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Resultado Financeiro",
+                        "PosicaoDRE", 7,
+                        "OrdemCenario", 2,
+                        "Cenario", "Orçado",
+                        "NomeMedida", "DRE | Resultado Financeiro Orçado",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Resultado Financeiro Previsto]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[previsto] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 7 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Resultado Financeiro",
+                        "PosicaoDRE", 7,
+                        "OrdemCenario", 3,
+                        "Cenario", "Previsto",
+                        "NomeMedida", "DRE | Resultado Financeiro Previsto",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Depreciação e Amortização Realizado]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[realizado] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 9 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Depreciação e Amortização",
+                        "PosicaoDRE", 9,
+                        "OrdemCenario", 1,
+                        "Cenario", "Realizado",
+                        "NomeMedida", "DRE | Depreciação e Amortização Realizado",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Depreciação e Amortização Orçado]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[orcado] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 9 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Depreciação e Amortização",
+                        "PosicaoDRE", 9,
+                        "OrdemCenario", 2,
+                        "Cenario", "Orçado",
+                        "NomeMedida", "DRE | Depreciação e Amortização Orçado",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Depreciação e Amortização Previsto]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[previsto] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 9 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Depreciação e Amortização",
+                        "PosicaoDRE", 9,
+                        "OrdemCenario", 3,
+                        "Cenario", "Previsto",
+                        "NomeMedida", "DRE | Depreciação e Amortização Previsto",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Outras Receitas e Despesas Realizado]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[realizado] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 10 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Outras Receitas e Despesas",
+                        "PosicaoDRE", 10,
+                        "OrdemCenario", 1,
+                        "Cenario", "Realizado",
+                        "NomeMedida", "DRE | Outras Receitas e Despesas Realizado",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Outras Receitas e Despesas Orçado]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[orcado] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 10 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Outras Receitas e Despesas",
+                        "PosicaoDRE", 10,
+                        "OrdemCenario", 2,
+                        "Cenario", "Orçado",
+                        "NomeMedida", "DRE | Outras Receitas e Despesas Orçado",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Outras Receitas e Despesas Previsto]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[previsto] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 10 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Outras Receitas e Despesas",
+                        "PosicaoDRE", 10,
+                        "OrdemCenario", 3,
+                        "Cenario", "Previsto",
+                        "NomeMedida", "DRE | Outras Receitas e Despesas Previsto",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Provisão para IR e CSLL Realizado]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[realizado] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 12 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Provisão para IR e CSLL",
+                        "PosicaoDRE", 12,
+                        "OrdemCenario", 1,
+                        "Cenario", "Realizado",
+                        "NomeMedida", "DRE | Provisão para IR e CSLL Realizado",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Provisão para IR e CSLL Orçado]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[orcado] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 12 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Provisão para IR e CSLL",
+                        "PosicaoDRE", 12,
+                        "OrdemCenario", 2,
+                        "Cenario", "Orçado",
+                        "NomeMedida", "DRE | Provisão para IR e CSLL Orçado",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    ),
+                VAR _Medida = [DRE | Provisão para IR e CSLL Previsto]
+                VAR _Direto =
+                    CALCULATE (
+                        SUM ( 'vw_dre_comparativo'[previsto] ),
+                        KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 12 )
+                    )
+                RETURN
+                    ROW (
+                        "Indicador", "Provisão para IR e CSLL",
+                        "PosicaoDRE", 12,
+                        "OrdemCenario", 3,
+                        "Cenario", "Previsto",
+                        "NomeMedida", "DRE | Provisão para IR e CSLL Previsto",
+                        "ValorMedida", _Medida,
+                        "ValorDireto", _Direto
+                    )
+            )
+        RETURN
+            ADDCOLUMNS (
+                _Resultados,
+                "FilialConsultada", IF ( _CodigoFilial = "", "Consolidado", _CodigoFilial ),
+                "DataInicial", _DataInicial,
+                "DataFinal", _DataFinal,
+                "Diferenca",
+                    IF (
+                        NOT ISBLANK ( [ValorMedida] ) && NOT ISBLANK ( [ValorDireto] ),
+                        [ValorMedida] - [ValorDireto],
+                        BLANK ()
+                    ),
+                "MedidaBlank", ISBLANK ( [ValorMedida] ),
+                "DiretoBlank", ISBLANK ( [ValorDireto] ),
+                "Aprovado",
+                    IF (
+                        ISBLANK ( [ValorMedida] ) || ISBLANK ( [ValorDireto] ),
+                        ISBLANK ( [ValorMedida] ) && ISBLANK ( [ValorDireto] ),
+                        ABS ( [ValorMedida] - [ValorDireto] ) <= _Tolerancia
+                    ),
+                "Status",
+                    SWITCH (
+                        TRUE (),
+                        ISBLANK ( [ValorMedida] ) && ISBLANK ( [ValorDireto] ), "OK_BLANK",
+                        ISBLANK ( [ValorMedida] ) || ISBLANK ( [ValorDireto] ), "DIVERGENCIA_BLANK",
+                        ABS ( [ValorMedida] - [ValorDireto] ) <= _Tolerancia, "OK",
+                        "DIVERGENCIA_VALOR"
+                    )
+            ),
+        KEEPFILTERS (
+            FILTER (
+                ALL ( 'dim_filial'[cod_filial] ),
+                _CodigoFilial = "" || 'dim_filial'[cod_filial] = _CodigoFilial
+            )
+        ),
+        KEEPFILTERS (
+            FILTER (
+                ALL ( 'dim_calendario'[data] ),
+                'dim_calendario'[data] >= _DataInicial
+                    && 'dim_calendario'[data] <= _DataFinal
+            )
+        )
+    ))
+ORDER BY [Caso],[PosicaoDRE],[OrdemCenario]

@@ -1,0 +1,5 @@
+-- SOMENTE DAX Studio/SSMS em sessão já conectada; uma consulta por execução.
+SELECT * FROM $SYSTEM.TMSCHEMA_RELATIONSHIPS;
+SELECT * FROM $SYSTEM.TMSCHEMA_TABLES;
+SELECT * FROM $SYSTEM.TMSCHEMA_COLUMNS;
+-- Correlacionar TableID/ColumnID para ler endpoints e tipos. Não executar na DAX Query View.

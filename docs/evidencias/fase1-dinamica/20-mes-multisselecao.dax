@@ -1,0 +1,18 @@
+// Consulta de leitura: seleção explícita de ano/mês e duas filiais, sem alterar medidas.
+EVALUATE
+VAR _Filiais=TREATAS({"01","03"},'dim_filial'[cod_filial])
+VAR _Ano=TREATAS({2021},'dim_calendario'[ano])
+VAR _Mes=TREATAS({1,3},'dim_calendario'[mes])
+VAR _A=CALCULATETABLE('fato_lancamentos',_Filiais,_Ano,_Mes)
+VAR _B=FILTER(ALL('fato_lancamentos'),'fato_lancamentos'[cod_filial] IN {"01","03"} && YEAR('fato_lancamentos'[competencia_data])=2021 && MONTH('fato_lancamentos'[competencia_data]) IN {1,3})
+VAR _C=CALCULATETABLE('fato_orcamento',_Filiais,_Ano,_Mes)
+VAR _D=FILTER(ALL('fato_orcamento'),'fato_orcamento'[cod_filial] IN {"01","03"} && YEAR('fato_orcamento'[competencia_data])=2021 && MONTH('fato_orcamento'[competencia_data]) IN {1,3})
+VAR _E=CALCULATETABLE('fato_previsao',_Filiais,_Ano,_Mes)
+VAR _F=FILTER(ALL('fato_previsao'),'fato_previsao'[cod_filial] IN {"01","03"} && YEAR('fato_previsao'[competencia_data])=2021 && MONTH('fato_previsao'[competencia_data]) IN {1,3})
+VAR _G=CALCULATETABLE('vw_dre_comparativo',_Filiais,_Ano,_Mes)
+VAR _H=FILTER(ALL('vw_dre_comparativo'),'vw_dre_comparativo'[cod_filial] IN {"01","03"} && YEAR('vw_dre_comparativo'[competencia])=2021 && MONTH('vw_dre_comparativo'[competencia]) IN {1,3})
+RETURN UNION(
+ROW("Tabela","fato_lancamentos","Via",COUNTROWS(_A),"Direto",COUNTROWS(_B),"Extras",COUNTROWS(EXCEPT(_A,_B)),"Faltantes",COUNTROWS(EXCEPT(_B,_A))),
+ROW("Tabela","fato_orcamento","Via",COUNTROWS(_C),"Direto",COUNTROWS(_D),"Extras",COUNTROWS(EXCEPT(_C,_D)),"Faltantes",COUNTROWS(EXCEPT(_D,_C))),
+ROW("Tabela","fato_previsao","Via",COUNTROWS(_E),"Direto",COUNTROWS(_F),"Extras",COUNTROWS(EXCEPT(_E,_F)),"Faltantes",COUNTROWS(EXCEPT(_F,_E))),
+ROW("Tabela","vw_dre_comparativo","Via",COUNTROWS(_G),"Direto",COUNTROWS(_H),"Extras",COUNTROWS(EXCEPT(_G,_H)),"Faltantes",COUNTROWS(EXCEPT(_H,_G))))

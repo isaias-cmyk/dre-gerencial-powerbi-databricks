@@ -1,0 +1,28 @@
+﻿# Power BI Desktop
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+**/.pbi/editorSettings.json
+**/.pbi/unappliedChanges.json
+
+# Arquivos locais de MCP
+mcp.json.txt
+.mcp.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Temporarios
+*.tmp
+*.bak
+*.log
+
+# Credenciais
+.env
+.env.*
+*.pem
+*.key
+
+# Backups fisicos (historico fica no Git)
+backups/

@@ -1,0 +1,8 @@
+{
+  "Casos": 1155,
+  "Tolerancia": "0.01",
+  "Divergencias": [],
+  "Aprovado": true,
+  "DAXOrigem": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\docs\\evidencias\\lote2-2-execucao-20261102-185954\\02-filiais-periodos-conciliacao.csv",
+  "SQLOrigem": "C:\\Users\\<usuario>\\Downloads\\New_Query_2026_11_02_15_53_51.csv"
+}

@@ -1,0 +1,88 @@
+{
+  "sublote": "L2.3.3",
+  "data": "2026-11-04",
+  "estado": "concluido; aceite tecnico/didatico do usuario em 2026-11-04 17:26",
+  "decisoes": {
+    "favorabilidade": "impacto no lucro, posicoes 1-7,9,10,12,13",
+    "resultado_liquido": "classifica com sufixo (provisorio)",
+    "neutralidade": "|impacto| <= R$ 0,01",
+    "cumprimento": "posicoes 1 e 3, O>0 e R>=0"
+  },
+  "medidas_novas": [
+    "DRE | Impacto Favorável x Orçado (R$)",
+    "DRE | Impacto Favorável x Previsto (R$)",
+    "DRE | Classificação x Orçado",
+    "DRE | Classificação x Previsto",
+    "DRE | Cumprimento Orçamentário (%)"
+  ],
+  "modelo": {
+    "medidas": 50,
+    "tabelas": 16,
+    "relacionamentos": 18
+  },
+  "backup": "backups/lote2-3-3-pre-20261104-1325 (38 arquivos + manifesto SHA-256; 5 hashes relidos e conferidos)",
+  "testes": {
+    "S01": "31/31 sinteticos",
+    "Q_D": {
+      "esperadas": 14625,
+      "dax_linhas": 14625,
+      "duplicadas_dax": 0,
+      "ausentes_no_dax": 0,
+      "extras_no_dax": 0,
+      "aprovadas": 14625,
+      "reprovadas": 0,
+      "nulos_blank_coincidentes": 6345,
+      "max_dif_brl": 1.4901161193847656e-07,
+      "max_dif_razao": 8.881784197001252e-16,
+      "classificacoes_dax": {
+        "Desfavorável": 1713,
+        "Desfavorável (provisório)": 147,
+        "Em linha": 3,
+        "Favorável": 1884,
+        "Favorável (provisório)": 213
+      },
+      "aceite": true
+    },
+    "Q_D_grao": {
+      "agregado": 2925,
+      "mensal": 11700
+    },
+    "sql_statement_ids": [
+      "01f1d86c-ca4b-14c3-b964-c8aed57c6e93",
+      "01f1d86c-e216-1c24-bf4d-b30f658b22c0",
+      "01f1d86c-ea97-1c99-b301-9d509bacd452"
+    ],
+    "sanidade_operandos_vs_L232": "5850/5850",
+    "G01": "5 casos de borda BLANK (total entre posicoes, posicoes 1+3, datas parciais, posicao x descricao conflitantes, Jun-Dez/2023)",
+    "R01": {
+      "RL": [
+        5038227.39,
+        6622493.82,
+        6157931.19
+      ],
+      "comparavel_2023": [
+        819957.24,
+        813676.11,
+        15
+      ],
+      "status": "Recorte comparavel parcial; corte comum 2023-05",
+      "M40_RL_2022": -111518.39,
+      "medidas": 50
+    },
+    "R02": "50 medidas em _Medidas.tmdl salvo (04/11/2026 17:05); 45/45 antigas identicas; _ConfigCobertura, relationships e model com hash identico ao backup"
+  },
+  "arquivos": {
+    "07-operandos-databricks.sql": "ce29a3133ce34eb82ead69dbcb989b43c23a100109f38b7d22d0140c4e9ac515",
+    "L233_SQL_operandos.csv": "e0f6e8158c946df1e401e9cbe52a5b2630a653a54c8bdf74a7ac27d052e8f1ba",
+    "L233_DAX_desempenho.csv": "c1707fe830c46233f91505d7b9c38f5acef6fef65e38a3e727394b76fdda4203",
+    "comparar-desempenho.py": "50d22f0d20da8998581809d97a144d0528c7488d7d2af2050e713154f37fb683",
+    "comparacao-desempenho.json": "b2d456221512836b3792bb839aae800f88c3ac00bf58384eca4d865833da0914",
+    "sql_statement_ids_operandos.json": "dcea5b5cd29e59d01c6336ff97391fefa45b32c9d13d76ec51ccd0428d65645b"
+  },
+  "aceite": {
+    "data": "2026-11-04T17:26-03:00",
+    "tipo": "tecnico/didatico",
+    "por": "usuario"
+  },
+  "commit": "0a9fd51"
+}

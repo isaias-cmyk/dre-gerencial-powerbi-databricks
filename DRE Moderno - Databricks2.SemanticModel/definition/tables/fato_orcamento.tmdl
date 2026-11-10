@@ -1,0 +1,82 @@
+table fato_orcamento
+	isHidden
+	lineageTag: 35750357-529c-4b55-a598-4c78ca9ab5d5
+
+	column competencia_data
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 197cd14f-40b6-4632-ba3f-58044bab54ee
+		summarizeBy: none
+		sourceColumn: competencia_data
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column planocontas_id
+		dataType: string
+		lineageTag: e342b221-cbf2-4cd7-bf35-871b77c6733b
+		summarizeBy: none
+		sourceColumn: planocontas_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor
+		dataType: double
+		lineageTag: 08217943-dbe3-4e53-84f7-5fbfc1293e95
+		summarizeBy: sum
+		sourceColumn: valor
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column _arquivo_origem
+		dataType: string
+		isHidden
+		lineageTag: 31c15525-f0c7-4c7a-ac46-eded1f15c362
+		summarizeBy: none
+		sourceColumn: _arquivo_origem
+
+		annotation SummarizationSetBy = Automatic
+
+	column _aba_origem
+		dataType: string
+		isHidden
+		lineageTag: 921b274a-de7f-41cf-a46a-f0ef8395b9ee
+		summarizeBy: none
+		sourceColumn: _aba_origem
+
+		annotation SummarizationSetBy = Automatic
+
+	column _data_ingestao
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: be40dbf5-e433-4553-9123-511ebca95c60
+		summarizeBy: none
+		sourceColumn: _data_ingestao
+
+		annotation SummarizationSetBy = Automatic
+
+	column cod_filial
+		dataType: string
+		lineageTag: 023f3bc1-42fb-424c-b9ff-e89fc31f5732
+		summarizeBy: none
+		sourceColumn: cod_filial
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fato_orcamento = m
+		mode: import
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs(DatabricksHost, DatabricksHttpPath, [Catalog=null, Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null, Protocol=null]),
+				    workspace_Database = Source{[Name="workspace",Kind="Database"]}[Data],
+				    gold_Schema = workspace_Database{[Name="gold",Kind="Schema"]}[Data],
+				    fato_orcamento_Table = gold_Schema{[Name="fato_orcamento",Kind="Table"]}[Data]
+				in
+				    fato_orcamento_Table
+
+	annotation PBI_ResultType = Table
+

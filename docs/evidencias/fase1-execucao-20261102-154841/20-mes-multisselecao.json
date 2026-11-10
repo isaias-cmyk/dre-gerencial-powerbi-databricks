@@ -1,0 +1,30 @@
+[
+  {
+    "[Tabela]": "fato_lancamentos",
+    "[Via]": 172,
+    "[Direto]": 172,
+    "[Extras]": null,
+    "[Faltantes]": null
+  },
+  {
+    "[Tabela]": "fato_orcamento",
+    "[Via]": 172,
+    "[Direto]": 172,
+    "[Extras]": null,
+    "[Faltantes]": null
+  },
+  {
+    "[Tabela]": "fato_previsao",
+    "[Via]": 172,
+    "[Direto]": 172,
+    "[Extras]": null,
+    "[Faltantes]": null
+  },
+  {
+    "[Tabela]": "vw_dre_comparativo",
+    "[Via]": 52,
+    "[Direto]": 52,
+    "[Extras]": null,
+    "[Faltantes]": null
+  }
+]

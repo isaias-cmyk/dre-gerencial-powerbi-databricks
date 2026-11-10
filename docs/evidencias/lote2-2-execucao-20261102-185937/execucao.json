@@ -1,0 +1,79 @@
+[
+  {
+    "File": "01-metadados.dax",
+    "State": "EXECUTADO",
+    "Rows": 36,
+    "Seconds": 0.0803111,
+    "Account": "",
+    "QuerySHA256": "11CEDEACCFF14FF347ACCC3379421353D3BB277D2934E4CB713538FA81682CFD"
+  },
+  {
+    "File": "02-filiais-periodos-conciliacao.dax",
+    "State": "ERRO",
+    "Error": "System.Management.Automation.MethodInvocationException: Exception calling \"ExecuteReader\" with \"0\" argument(s): \"Query (13, 8) Todos os argumento de tabela de 'UNION' deve ter o mesmo número de colunas.\"\r\n ---> Microsoft.AnalysisServices.AdomdClient.AdomdErrorResponseException: Query (13, 8) Todos os argumento de tabela de 'UNION' deve ter o mesmo número de colunas.\r\n   at Microsoft.AnalysisServices.AdomdClient.XmlaClient.CheckForSoapFault(XmlReader reader, XmlaResult xmlaResult, Boolean throwIfError)\r\n   at Microsoft.AnalysisServices.AdomdClient.XmlaClient.CheckForError(XmlReader reader, XmlaResult xmlaResult, Boolean throwIfError)\r\n   at Microsoft.AnalysisServices.AdomdClient.XmlaClient.SendMessage(Boolean endReceivalIfException, Boolean readSession, Boolean readNamespaceCompatibility)\r\n   at Microsoft.AnalysisServices.AdomdClient.XmlaClient.ExecuteStatement(String statement, IDictionary connectionProperties, IDictionary commandProperties, IDataParameterCollection parameters, Boolean isMdx)\r\n   at Microsoft.AnalysisServices.AdomdClient.AdomdConnection.XmlaClientProvider.Microsoft.AnalysisServices.AdomdClient.IExecuteProvider.ExecuteTabular(CommandBehavior behavior, ICommandContentProvider contentProvider, AdomdPropertyCollection commandProperties, IDataParameterCollection parameters)\r\n   at Microsoft.AnalysisServices.AdomdClient.AdomdCommand.ExecuteReader(CommandBehavior behavior)\r\n   at CallSite.Target(Closure, CallSite, Object)\r\n   --- End of inner exception stack trace ---\r\n   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)\r\n   at System.Management.Automation.Interpreter.ActionCallInstruction`2.Run(InterpretedFrame frame)\r\n   at System.Management.Automation.Interpreter.EnterTryCatchFinallyInstruction.Run(InterpretedFrame frame)\r\n   at System.Management.Automation.Interpreter.EnterTryCatchFinallyInstruction.Run(InterpretedFrame frame)"
+  },
+  {
+    "File": "03-posicao-descricao-contextos.dax",
+    "State": "EXECUTADO",
+    "Rows": 240,
+    "Seconds": 1.9410289,
+    "Account": "",
+    "QuerySHA256": "A82E5C645DEEEA57A8E0D51403F3E7A7604F6FF457982E3A8CCBBF642CB544C0"
+  },
+  {
+    "File": "04-matriz-totais.dax",
+    "State": "EXECUTADO",
+    "Rows": 14,
+    "Seconds": 0.5467711,
+    "Account": "",
+    "QuerySHA256": "C4ABAE7CD4B7EA78136F6C2193B5E1093A1FB73B0942D3396B4D86C8E844AD2F"
+  },
+  {
+    "File": "05-aditividade-filiais.dax",
+    "State": "EXECUTADO",
+    "Rows": 30,
+    "Seconds": 0.5367444,
+    "Account": "",
+    "QuerySHA256": "F2F491DA56D0A48953644CF7F54C10A5F47E2D4FADA45358271611B4688FCEFA"
+  },
+  {
+    "File": "06-ebitda-ebit.dax",
+    "State": "EXECUTADO",
+    "Rows": 2,
+    "Seconds": 0.1729212,
+    "Account": "",
+    "QuerySHA256": "1A189E7BF27C0D001A084ED1F668D6AC7DF26D662B1F9DB3E27D68065C947DD7"
+  },
+  {
+    "File": "07-regressao-controle.dax",
+    "State": "EXECUTADO",
+    "Rows": 1,
+    "Seconds": 0.0576423,
+    "Account": "",
+    "QuerySHA256": "4F1E29B805C972D8B9ECF3BD3D1EAC233ABF638DA64A308A163EADCE6F51411B"
+  },
+  {
+    "File": "08-regressao-bases.dax",
+    "State": "EXECUTADO",
+    "Rows": 5,
+    "Seconds": 0.0974417,
+    "Account": "",
+    "QuerySHA256": "48828BFD15BA0600D56898D49CF390D50453281392BA43A35FB03E47FB5E0615"
+  },
+  {
+    "File": "09-materializacao.dax",
+    "State": "EXECUTADO",
+    "Rows": 1,
+    "Seconds": 0.0113621,
+    "Account": "",
+    "QuerySHA256": "56B1078B7AEC506C0E997B134A2D9A5B3F418493EAF8CE3B3334AC1124748A6B"
+  },
+  {
+    "File": "11-receita-liquida-margem.dax",
+    "State": "EXECUTADO",
+    "Rows": 105,
+    "Seconds": 1.2327352,
+    "Account": "",
+    "QuerySHA256": "DC74A0F685F150DF4148EF5ACEAAA89307B32B5469EED9325F174C56F0CF3BA0"
+  }
+]

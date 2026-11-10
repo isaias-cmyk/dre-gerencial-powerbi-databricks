@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "exec0nota00000000000",
+  "position": {
+    "x": 24,
+    "y": 936,
+    "z": 22,
+    "height": 70,
+    "width": 1872,
+    "tabOrder": 22
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Cartões e cascata no período comparável (meses com Realizado em todas as filiais selecionadas; base didática DIDATICA-1.0, Realizado até 2023-05). Cascata: impacto de cada linha analítica no resultado (positivo = melhora); o total é o desvio do Resultado Líquido. O gráfico mensal mostra o período inteiro: Orçado e Previsto seguem após o último mês realizado.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#605E5C"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Nota explicativa: Cartões e cascata no período comparável (meses com Realizado em todas as filiais selecionadas; base didática DIDATICA-1.0, Realizado até 2023-05). Cascata: impacto de cada linha analítica no resultado (positivo = melhora); o tota...'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

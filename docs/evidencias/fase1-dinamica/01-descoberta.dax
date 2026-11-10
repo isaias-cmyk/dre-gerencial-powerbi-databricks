@@ -1,0 +1,4 @@
+// FASE 1. Consulta somente leitura, NÃO EXECUTADA neste ambiente. Não cria medidas.
+EVALUATE
+SELECTCOLUMNS('dim_filial', "Codigo", 'dim_filial'[cod_filial], "Filial", 'dim_filial'[filial])
+ORDER BY [Filial]

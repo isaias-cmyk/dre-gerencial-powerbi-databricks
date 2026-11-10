@@ -1,0 +1,40 @@
+-- PLANEJADO/NAO EXECUTADO. Rodar SOMENTE após implementar M40–M43.
+-- Não DEFINE MEASURE: não implementa medidas nem altera o modelo.
+-- Esperado algébrico usa comparáveis do modelo; SQL é a conciliação financeira independente.
+DEFINE VAR _Contextos = CROSSJOIN ( DATATABLE ( "Grupo", STRING, { {"01"}, {"02"}, {"03"}, {"Consolidado"}, {"01+02"} } ), DATATABLE ( "Periodo", STRING, { {"Integral"}, {"2021"}, {"2022"}, {"2023"}, {"2023_JanMai"}, {"2023_JunDez"}, {"2023_Maio"}, {"2023_Junho"}, {"2023_JanMar"} } ), GENERATESERIES ( 1, 13 ) )
+EVALUATE ADDCOLUMNS ( GENERATE ( _Contextos,
+ VAR _Grupo=[Grupo] VAR _Periodo=[Periodo] VAR _Posicao=[Value]
+ RETURN CALCULATETABLE (
+ VAR _R=[DRE | Realizado Comparável] VAR _O=[DRE | Orçado Comparável] VAR _P=[DRE | Previsto Comparável]
+ RETURN UNION ( ROW ( "ID", "M40", "Medida", "DRE | Desvio Realizado x Orçado (R$)", "Unidade", "BRL",
+ "Valor", [DRE | Desvio Realizado x Orçado (R$)], "Esperado", IF ( ISBLANK ( _R ) || ISBLANK ( _O ), BLANK (), _R - _O ),
+ "RealizadoComparavel", _R, "ReferenciaComparavel", _O,
+ "Pares", [DRE | Pares Filial-Competência Comparáveis], "StatusCobertura", [DRE | Status Comparabilidade] ),
+ROW ( "ID", "M41", "Medida", "DRE | Desvio Realizado x Orçado (%)", "Unidade", "Razao",
+ "Valor", [DRE | Desvio Realizado x Orçado (%)], "Esperado", IF ( ISBLANK ( _R ) || ISBLANK ( _O ) || _O = 0, BLANK (), DIVIDE ( _R - _O, ABS ( _O ) ) ),
+ "RealizadoComparavel", _R, "ReferenciaComparavel", _O,
+ "Pares", [DRE | Pares Filial-Competência Comparáveis], "StatusCobertura", [DRE | Status Comparabilidade] ),
+ROW ( "ID", "M42", "Medida", "DRE | Desvio Realizado x Previsto (R$)", "Unidade", "BRL",
+ "Valor", [DRE | Desvio Realizado x Previsto (R$)], "Esperado", IF ( ISBLANK ( _R ) || ISBLANK ( _P ), BLANK (), _R - _P ),
+ "RealizadoComparavel", _R, "ReferenciaComparavel", _P,
+ "Pares", [DRE | Pares Filial-Competência Comparáveis], "StatusCobertura", [DRE | Status Comparabilidade] ),
+ROW ( "ID", "M43", "Medida", "DRE | Desvio Realizado x Previsto (%)", "Unidade", "Razao",
+ "Valor", [DRE | Desvio Realizado x Previsto (%)], "Esperado", IF ( ISBLANK ( _R ) || ISBLANK ( _P ) || _P = 0, BLANK (), DIVIDE ( _R - _P, ABS ( _P ) ) ),
+ "RealizadoComparavel", _R, "ReferenciaComparavel", _P,
+ "Pares", [DRE | Pares Filial-Competência Comparáveis], "StatusCobertura", [DRE | Status Comparabilidade] ) ),
+FILTER ( ALL ( 'dim_filial'[cod_filial] ), _Grupo = "Consolidado" || 'dim_filial'[cod_filial] = _Grupo || ( _Grupo = "01+02" && 'dim_filial'[cod_filial] IN { "01", "02" } ) ),
+FILTER ( ALL ( 'dim_calendario'[data] ),
+    SWITCH ( _Periodo,
+        "Integral", TRUE (), "2021", YEAR ( 'dim_calendario'[data] ) = 2021,
+        "2022", YEAR ( 'dim_calendario'[data] ) = 2022,
+        "2023", YEAR ( 'dim_calendario'[data] ) = 2023,
+        "2023_JanMai", YEAR ( 'dim_calendario'[data] ) = 2023 && MONTH ( 'dim_calendario'[data] ) <= 5,
+        "2023_JunDez", YEAR ( 'dim_calendario'[data] ) = 2023 && MONTH ( 'dim_calendario'[data] ) >= 6,
+        "2023_Maio", YEAR ( 'dim_calendario'[data] ) = 2023 && MONTH ( 'dim_calendario'[data] ) = 5,
+        "2023_Junho", YEAR ( 'dim_calendario'[data] ) = 2023 && MONTH ( 'dim_calendario'[data] ) = 6,
+        "2023_JanMar", YEAR ( 'dim_calendario'[data] ) = 2023 && MONTH ( 'dim_calendario'[data] ) IN { 1, 3 }, FALSE () ) ),
+ TREATAS ( { _Posicao }, 'vw_dre_comparativo'[ordem_dre] ) ) ),
+ "BlankDivergente", ISBLANK([Valor]) <> ISBLANK([Esperado]),
+ "Diferenca", IF ( NOT ISBLANK([Valor]) && NOT ISBLANK([Esperado]), [Valor]-[Esperado] ),
+ "Aprovado", IF ( ISBLANK([Valor]) || ISBLANK([Esperado]), ISBLANK([Valor]) && ISBLANK([Esperado]), ABS([Valor]-[Esperado]) <= IF([Unidade]="BRL",0.01,0.00000001) ) )
+ORDER BY [Grupo],[Periodo],[Value],[ID]

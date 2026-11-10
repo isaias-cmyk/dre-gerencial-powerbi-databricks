@@ -1,0 +1,62 @@
+[
+  {
+    "Arquivo": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\DRE Moderno - Databricks.SemanticModel\\definition\\model.tmdl",
+    "SHA256": "E4B24E13F362EEA539A9F417014A6455003A5435560B75C8CE94860A35E79898"
+  },
+  {
+    "Arquivo": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\DRE Moderno - Databricks.SemanticModel\\definition\\tables\\_ConfigCobertura.tmdl",
+    "SHA256": "C3F41ED71B162903792471B812279B157AD9F620A7A1E21D2AD460E2D08139E9"
+  },
+  {
+    "Arquivo": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\DRE Moderno - Databricks.SemanticModel\\definition\\tables\\_Medidas.tmdl",
+    "SHA256": "3C445F47324A00BD662820F4D55FDC5C8D7CDFF05E6E245B4494F8FD589575AF"
+  },
+  {
+    "Arquivo": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\docs\\testes\\lote2-3-1\\09-matriz-comparabilidade.dax",
+    "SHA256": "9190DDAA26A111BF24D82C4A47421DFCCBCA5BB6564FAE9EB8689770311C1AB9"
+  },
+  {
+    "Arquivo": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\docs\\testes\\lote2-3-1\\10-configuracao-materializacao.dax",
+    "SHA256": "DF0BC10F7B8AD6AA2ABF14DC03348C641DE855C735335949D969C743BF8E6F72"
+  },
+  {
+    "Arquivo": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\docs\\testes\\lote2-3-1\\11-guardas-contexto.dax",
+    "SHA256": "D7BBAD9A7CA5FCDE59A826BE96F7CC1D7A3E5B900BEA536CC66F78FE79929318"
+  },
+  {
+    "Arquivo": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\docs\\testes\\lote2-3-1\\12-sintetico-zero.dax",
+    "SHA256": "74FAFFF8E1601A67101C30873749F2B2D61BF8FA9BE90944123FA367D01FFFCE"
+  },
+  {
+    "Arquivo": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\docs\\testes\\lote2-3-1\\13-sintetico-blank.dax",
+    "SHA256": "5046F98516F506A7D09BB8361C5E17FDD742EA73CED70E89B1DC63788C25DE35"
+  },
+  {
+    "Arquivo": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\docs\\testes\\lote2-3-1\\14-regressao-36-medidas.dax",
+    "SHA256": "45E5B92DC10B69132B20772B2A47040A5F1F55BEFA7E3704C773495905E1F213"
+  },
+  {
+    "Arquivo": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\docs\\testes\\lote2-3-1\\15-conciliacao-databricks.sql",
+    "SHA256": "B7089B57C615F44682127DDDC25E3D4C4204F46BD935B0CA98762F2D6453C884"
+  },
+  {
+    "Arquivo": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\docs\\testes\\lote2-3-1\\16-estado-tabelas.dax",
+    "SHA256": "E8E235E2F7FBE8925519ABD2E969EC676AD34499C11E84ADE4293AB8D9FBBE8B"
+  },
+  {
+    "Arquivo": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\docs\\testes\\lote2-3-1\\17-estado-medidas.dax",
+    "SHA256": "87526BC58E5396ABBEDEB6B8297B2E6AF6AB739F96F3901F605AEAEDECFA8745"
+  },
+  {
+    "Arquivo": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\docs\\testes\\lote2-3-1\\18-estado-particoes.dax",
+    "SHA256": "0CA891861BB561D960C45FC09FAF9EBE32DD3A8C93977FA90085FC53B17A662C"
+  },
+  {
+    "Arquivo": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\docs\\testes\\lote2-3-1\\19-estado-relacionamentos.dax",
+    "SHA256": "A7D6A5F3C4DF5743D4B60109E957CD8A4E7259AABFE0423110D9859F2978E820"
+  },
+  {
+    "Arquivo": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\docs\\testes\\lote2-3-1\\comparar-conciliacao.py",
+    "SHA256": "6A4B358A496F1C452907C03CA64BB06E8D93ADA2669C0CC38BFDC56F46A523B4"
+  }
+]

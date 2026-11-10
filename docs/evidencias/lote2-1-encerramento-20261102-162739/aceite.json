@@ -1,0 +1,26 @@
+{
+  "Estado": "CONCLUIDO_TECNICAMENTE",
+  "ConsultasExecutadas": 11,
+  "FalhasExecucao": 0,
+  "CasosFilialPeriodo": 20,
+  "VerificacoesCenarioAprovadas": 60,
+  "Materializacao": {
+    "Linhas": 1,
+    "Organizacao": 0,
+    "Estado": "Ready",
+    "Erro": null,
+    "RefreshedTimeReportadoPeloMotor": "2026-11-02T19:18:44.82"
+  },
+  "Cartao": {
+    "Valor": "R$ 5,04M",
+    "Proveniencia": "Confirmacao expressa do usuario; sem captura pelo agente"
+  },
+  "SQL": "Sem nova execucao; conciliacao F1 mantida como referencia",
+  "ProducaoAlteradaNestaRodada": false,
+  "Lote22": "PLANEJADO_NAO_INICIADO",
+  "PendenciasContabeis": [
+    "EBITDA",
+    "EBIT",
+    "Resultado Liquido provisorio"
+  ]
+}

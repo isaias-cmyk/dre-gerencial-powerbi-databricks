@@ -1,0 +1,18 @@
+[
+  {
+    "File": "12-sintetico-zero.dax",
+    "State": "EXECUTADO",
+    "Rows": 1,
+    "Seconds": 0.2833463,
+    "Account": "",
+    "QuerySHA256": "74FAFFF8E1601A67101C30873749F2B2D61BF8FA9BE90944123FA367D01FFFCE"
+  },
+  {
+    "File": "13-sintetico-blank.dax",
+    "State": "EXECUTADO",
+    "Rows": 1,
+    "Seconds": 0.1764618,
+    "Account": "",
+    "QuerySHA256": "5046F98516F506A7D09BB8361C5E17FDD742EA73CED70E89B1DC63788C25DE35"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "documentLinksMissing": [],
+  "relationshipIdsAbsentFromReport": [],
+  "businessTablesDocumented": 8,
+  "evidenceJSONParse": "OK",
+  "FinancialControlsQueryExecuted": false,
+  "Phase2Started": false
+}

@@ -1,0 +1,1 @@
+EVALUATE ROW ( "Linhas", COUNTROWS ( '_Medidas' ), "Organizacao", MAX ( '_Medidas'[_Organizacao] ) )

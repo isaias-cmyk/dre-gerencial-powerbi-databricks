@@ -1,0 +1,49 @@
+{
+  "Tag": "lote2-3-1-investigacao-20261102-193557",
+  "Backup": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\backups\\lote2-3-1-investigacao-20261102-193557",
+  "Evidence": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\docs\\evidencias\\lote2-3-1-investigacao-20261102-193557",
+  "Included": 372,
+  "Excluded": [
+    "DRE Moderno - Databricks.Report/.pbi/localSettings.json",
+    "DRE Moderno - Databricks.SemanticModel/.pbi/cache.abf",
+    "DRE Moderno - Databricks.SemanticModel/.pbi/editorSettings.json",
+    "DRE Moderno - Databricks.SemanticModel/.pbi/localSettings.json",
+    "DRE Moderno - Databricks.SemanticModel/DAXQueries/.pbi/daxQueries.json"
+  ],
+  "ZIP_SHA256": "FEC746534CB5ECFBA315E2045C02866E732BD5850A02B8BD3982779CD5C20D25",
+  "RestoreVerified": true,
+  "Git": "Fora de repositório; status/rev-parse código 128",
+  "Desktop": "Aberto; snapshot apenas de leitura dos arquivos serializados, sem edição de produção; exigir novo fechamento e backup antes de edição futura",
+  "PreexistingDifferences": [
+    {
+      "Path": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\PLANS.md",
+      "Before": "E2FB40778FC90EE98BA6A886B9FBE820C69D818FED58F3D9CE5906E0A2C1C205",
+      "Now": "91F3793F3DF5C7D63A30A8EB0BBA419D6E4D277CF777858AE5234FC1EB3FE74C"
+    },
+    {
+      "Path": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\DRE Moderno - Databricks.Report\\.pbi\\localSettings.json",
+      "Before": "DA1D4C38A7060EF705B16575D054507A92DBF08F186AAF5DC0C45816DD51FE25",
+      "Now": "3395D84AEB5118353CB180222EC53183718E661E871297643049E65E910EE6F7"
+    },
+    {
+      "Path": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\DRE Moderno - Databricks.SemanticModel\\.pbi\\cache.abf",
+      "Before": "12EFBAF294524671A7B60D396A7B3DEF026DD2AACB1FDCA2C4A64942F8BC768E",
+      "Now": "56797D9F789D1D8976C366D078E83E7A38ED120D42D90E1D7F42B600E3B80460"
+    },
+    {
+      "Path": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\DRE Moderno - Databricks.SemanticModel\\.pbi\\localSettings.json",
+      "Before": "6334FDAC2EA2C784D59A7292E52C2E9F98E7A54AC54EEBA0E8D3D21E5193FCEA",
+      "Now": "23C0D40A9A8344D7F6C0BB25C9F9354FE75843E87BAFAB8AAA83AB46A9D848FE"
+    },
+    {
+      "Path": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\DRE Moderno - Databricks.SemanticModel\\definition\\model.tmdl",
+      "Before": "831559C92B75ECB38A6DB0891F0912F4B97CB24B008CEC96A8946374F2A86304",
+      "Now": "A48526636E280778D25F58165A3EB12CBCD95C4DB52E63090A86879BB5DC812F"
+    },
+    {
+      "Path": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\DRE Moderno - Databricks.SemanticModel\\definition\\tables\\_Medidas.tmdl",
+      "Before": "11DACD2C5264392790B11AA8265FA6BE0338B63D05658F3D0FFA27FFA25D82B3",
+      "Now": "8AB71BC20F97731C9718053DA6FA2A2FB616297EA9B0B31871B3742E1DB95A2D"
+    }
+  ]
+}

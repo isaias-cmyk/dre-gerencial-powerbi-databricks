@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "fil0nota00000000000g",
+  "position": {
+    "x": 24,
+    "y": 936,
+    "z": 7,
+    "height": 70,
+    "width": 1872,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Período comparável: meses com Realizado em todas as filiais (base didática DIDATICA-1.0, Realizado até 2023-05). A linha Total da matriz é o consolidado das filiais. Desvio % e barras coloridos pela classificação: verde = favorável, cinza = em linha (|impacto| ≤ R$ 0,01), vermelho = desfavorável. Cumprimento do orçamento = 100% + desvio da Receita (dica do gráfico).",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#605E5C"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Nota explicativa: Período comparável: meses com Realizado em todas as filiais (base didática DIDATICA-1.0, Realizado até 2023-05). A linha Total da matriz é o consolidado das filiais. Desvio % e barras coloridos pela classificação: verde = favoráv...'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

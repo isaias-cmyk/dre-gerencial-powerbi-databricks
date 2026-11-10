@@ -1,0 +1,1367 @@
+table _Medidas
+	lineageTag: e6ba04e3-b25a-41b0-81e4-6aab755fd0e2
+
+	/// Realizado ajustado da view para uma única posição DRE. Total entre posições e indicadores EBIT/EBITDA pendentes retornam BLANK.
+	measure 'DRE | Realizado' =
+			VAR _Descricao = SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] )
+			RETURN
+				IF (
+					HASONEVALUE ( 'vw_dre_comparativo'[ordem_dre] )
+						&& NOT ISBLANK ( _Descricao )
+						&& NOT CONTAINSSTRING ( _Descricao, "EBIT" ),
+					SUM ( 'vw_dre_comparativo'[realizado] ),
+					BLANK ()
+				)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Bases
+		lineageTag: 9afc2c72-5e4a-4be2-a6e9-6cd7ca93a820
+
+	/// Orçado ajustado da view para uma única posição DRE. Não soma analíticas com subtotais nem calcula EBIT/EBITDA pendentes.
+	measure 'DRE | Orçado' =
+			VAR _Descricao = SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] )
+			RETURN
+				IF (
+					HASONEVALUE ( 'vw_dre_comparativo'[ordem_dre] )
+						&& NOT ISBLANK ( _Descricao )
+						&& NOT CONTAINSSTRING ( _Descricao, "EBIT" ),
+					SUM ( 'vw_dre_comparativo'[orcado] ),
+					BLANK ()
+				)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Bases
+		lineageTag: d32fcf20-faa2-46d9-88e9-ce965ccf4df6
+
+	/// Previsto ajustado da view para uma única posição DRE. Não soma analíticas com subtotais nem calcula EBIT/EBITDA pendentes.
+	measure 'DRE | Previsto' =
+			VAR _Descricao = SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] )
+			RETURN
+				IF (
+					HASONEVALUE ( 'vw_dre_comparativo'[ordem_dre] )
+						&& NOT ISBLANK ( _Descricao )
+						&& NOT CONTAINSSTRING ( _Descricao, "EBIT" ),
+					SUM ( 'vw_dre_comparativo'[previsto] ),
+					BLANK ()
+				)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Bases
+		lineageTag: 502c8d18-7f72-4f1f-869c-ae5ef47e83cb
+
+	/// Realizado exclusivamente da posição 13. Aceito pelo usuário em 09/11/2026 após conciliação com o Databricks (base didática DIDATICA-1.0). Filtros de posição conflitantes retornam BLANK.
+	measure 'DRE | Resultado Líquido Realizado' =
+			CALCULATE (
+				[DRE | Realizado],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 13 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Resultado Líquido
+		lineageTag: ae9c3c48-fc4b-47d2-ae7a-4c4921a014ca
+
+	/// Orçado exclusivamente da posição 13. Aceito pelo usuário em 09/11/2026 após conciliação com o Databricks (base didática DIDATICA-1.0). Não reconstrói composição contábil.
+	measure 'DRE | Resultado Líquido Orçado' =
+			CALCULATE (
+				[DRE | Orçado],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 13 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Resultado Líquido
+		lineageTag: 09e3c983-c612-42ae-8445-52fd46b8c46d
+
+	/// Previsto exclusivamente da posição 13. Aceito pelo usuário em 09/11/2026 após conciliação com o Databricks (base didática DIDATICA-1.0). Não reconstrói composição contábil.
+	measure 'DRE | Resultado Líquido Previsto' =
+			CALCULATE (
+				[DRE | Previsto],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 13 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Resultado Líquido
+		lineageTag: dc7727c0-0985-4ba0-a03c-7ed1ec8c0d28
+
+	/// Receita Operacional Bruta Realizado: posição 1 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Receita Operacional Bruta Realizado' =
+			CALCULATE (
+				[DRE | Realizado],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 1 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Receita Operacional Bruta
+		lineageTag: 1b9b6aac-0a83-4973-9dad-07c4f900b28f
+
+	/// Receita Operacional Bruta Orçado: posição 1 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Receita Operacional Bruta Orçado' =
+			CALCULATE (
+				[DRE | Orçado],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 1 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Receita Operacional Bruta
+		lineageTag: 2f130159-8d55-4260-bd95-8e925ad93dde
+
+	/// Receita Operacional Bruta Previsto: posição 1 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Receita Operacional Bruta Previsto' =
+			CALCULATE (
+				[DRE | Previsto],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 1 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Receita Operacional Bruta
+		lineageTag: 0942855a-406b-40be-b697-ce73a0569249
+
+	/// Deduções da Receita Realizado: posição 2 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Deduções da Receita Realizado' =
+			CALCULATE (
+				[DRE | Realizado],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 2 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Deduções da Receita
+		lineageTag: 359d62bf-5f3f-42f4-b39f-863a5fc9d33d
+
+	/// Deduções da Receita Orçado: posição 2 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Deduções da Receita Orçado' =
+			CALCULATE (
+				[DRE | Orçado],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 2 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Deduções da Receita
+		lineageTag: 5d0a67bc-a357-4559-84c7-54308fcc4507
+
+	/// Deduções da Receita Previsto: posição 2 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Deduções da Receita Previsto' =
+			CALCULATE (
+				[DRE | Previsto],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 2 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Deduções da Receita
+		lineageTag: ea7866bf-681b-4042-9c67-8d7983db178a
+
+	/// Receita Operacional Líquida Realizado: posição 3 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Receita Operacional Líquida Realizado' =
+			CALCULATE (
+				[DRE | Realizado],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 3 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Receita Operacional Líquida
+		lineageTag: 0a03f396-fc0d-4187-9d98-bbffb44bf017
+
+	/// Receita Operacional Líquida Orçado: posição 3 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Receita Operacional Líquida Orçado' =
+			CALCULATE (
+				[DRE | Orçado],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 3 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Receita Operacional Líquida
+		lineageTag: f56993cd-5b30-42aa-a4f9-a7a3ab950560
+
+	/// Receita Operacional Líquida Previsto: posição 3 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Receita Operacional Líquida Previsto' =
+			CALCULATE (
+				[DRE | Previsto],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 3 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Receita Operacional Líquida
+		lineageTag: a2f6a279-b816-4755-9e11-f51dd1ad6455
+
+	/// Custos Realizado: posição 4 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Custos Realizado' =
+			CALCULATE (
+				[DRE | Realizado],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 4 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Custos
+		lineageTag: 2640608a-a3c8-4ef6-addf-99b8031c5b46
+
+	/// Custos Orçado: posição 4 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Custos Orçado' =
+			CALCULATE (
+				[DRE | Orçado],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 4 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Custos
+		lineageTag: 4df5c7ac-762e-4737-944e-a76304baf6b4
+
+	/// Custos Previsto: posição 4 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Custos Previsto' =
+			CALCULATE (
+				[DRE | Previsto],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 4 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Custos
+		lineageTag: 6ae1e85a-ebfe-44c8-b211-38b18399bc9a
+
+	/// Margem de Contribuição Realizado: posição 5 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Margem de Contribuição Realizado' =
+			CALCULATE (
+				[DRE | Realizado],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 5 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Margem de Contribuição
+		lineageTag: abc6b0db-7f47-495e-9aee-ce90829dd302
+
+	/// Margem de Contribuição Orçado: posição 5 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Margem de Contribuição Orçado' =
+			CALCULATE (
+				[DRE | Orçado],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 5 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Margem de Contribuição
+		lineageTag: 1ec65225-ac3e-4bb1-a3c4-d3e6d273c0be
+
+	/// Margem de Contribuição Previsto: posição 5 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Margem de Contribuição Previsto' =
+			CALCULATE (
+				[DRE | Previsto],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 5 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Margem de Contribuição
+		lineageTag: df6d4a06-767c-46da-913e-f4993b416eac
+
+	/// Despesas Operacionais Realizado: posição 6 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Despesas Operacionais Realizado' =
+			CALCULATE (
+				[DRE | Realizado],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 6 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Despesas Operacionais
+		lineageTag: 4c3b0267-71ff-42c6-88ed-75850b671700
+
+	/// Despesas Operacionais Orçado: posição 6 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Despesas Operacionais Orçado' =
+			CALCULATE (
+				[DRE | Orçado],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 6 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Despesas Operacionais
+		lineageTag: 5c7cfc61-0fed-47ce-87b7-a3ed144d49e2
+
+	/// Despesas Operacionais Previsto: posição 6 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Despesas Operacionais Previsto' =
+			CALCULATE (
+				[DRE | Previsto],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 6 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Despesas Operacionais
+		lineageTag: 0af43c21-34cd-48f4-9839-9254f48c397c
+
+	/// Resultado Financeiro Realizado: posição 7 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Resultado Financeiro Realizado' =
+			CALCULATE (
+				[DRE | Realizado],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 7 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Resultado Financeiro
+		lineageTag: 88085f8c-b62f-47ef-86ce-73b426ea10e2
+
+	/// Resultado Financeiro Orçado: posição 7 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Resultado Financeiro Orçado' =
+			CALCULATE (
+				[DRE | Orçado],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 7 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Resultado Financeiro
+		lineageTag: a09adc9f-16cb-4b25-9413-75989c3e9738
+
+	/// Resultado Financeiro Previsto: posição 7 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Resultado Financeiro Previsto' =
+			CALCULATE (
+				[DRE | Previsto],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 7 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Resultado Financeiro
+		lineageTag: 8ccd7114-7651-44b2-9784-bfd18c642ff5
+
+	/// Depreciação e Amortização Realizado: posição 9 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Depreciação e Amortização Realizado' =
+			CALCULATE (
+				[DRE | Realizado],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 9 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Depreciação e Amortização
+		lineageTag: dcbf1153-1120-40fd-9dfb-c8b04818f292
+
+	/// Depreciação e Amortização Orçado: posição 9 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Depreciação e Amortização Orçado' =
+			CALCULATE (
+				[DRE | Orçado],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 9 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Depreciação e Amortização
+		lineageTag: 49d95a10-e981-41f4-b2b7-387ce3a8553f
+
+	/// Depreciação e Amortização Previsto: posição 9 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Depreciação e Amortização Previsto' =
+			CALCULATE (
+				[DRE | Previsto],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 9 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Depreciação e Amortização
+		lineageTag: df334940-f5df-4cad-80a3-190fd8c7dea8
+
+	/// Outras Receitas e Despesas Realizado: posição 10 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Outras Receitas e Despesas Realizado' =
+			CALCULATE (
+				[DRE | Realizado],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 10 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Outras Receitas e Despesas
+		lineageTag: 67e2ce22-4beb-4269-8b8b-7f54e2e004cc
+
+	/// Outras Receitas e Despesas Orçado: posição 10 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Outras Receitas e Despesas Orçado' =
+			CALCULATE (
+				[DRE | Orçado],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 10 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Outras Receitas e Despesas
+		lineageTag: 5c845e08-45bf-4278-ab89-22d3f4917ee3
+
+	/// Outras Receitas e Despesas Previsto: posição 10 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Outras Receitas e Despesas Previsto' =
+			CALCULATE (
+				[DRE | Previsto],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 10 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Outras Receitas e Despesas
+		lineageTag: 579b8c13-a750-4856-ad30-7acf4a712436
+
+	/// Provisão para IR e CSLL Realizado: posição 12 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Provisão para IR e CSLL Realizado' =
+			CALCULATE (
+				[DRE | Realizado],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 12 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Provisão para IR e CSLL
+		lineageTag: 5862908a-4810-4c7d-8ee0-6a9d8b90e0f1
+
+	/// Provisão para IR e CSLL Orçado: posição 12 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Provisão para IR e CSLL Orçado' =
+			CALCULATE (
+				[DRE | Orçado],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 12 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Provisão para IR e CSLL
+		lineageTag: 30f7ad39-a2bb-4062-a032-63dd77f10901
+
+	/// Provisão para IR e CSLL Previsto: posição 12 da view ajustada; preserva Filial/Calendário, sinais e BLANK. Filtro conflitante retorna BLANK.
+	measure 'DRE | Provisão para IR e CSLL Previsto' =
+			CALCULATE (
+				[DRE | Previsto],
+				KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 12 )
+			)
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Provisão para IR e CSLL
+		lineageTag: ba9cbc2a-90c1-4b19-ae4c-34245a191aba
+
+	/// Cobertura DIDÁTICA configurável. Não certifica fechamento contábil; preserva BLANK, seleção e valores ajustados.
+	measure 'DRE | Realizado Comparável' =
+			VAR _Filiais = SELECTCOLUMNS ( VALUES ( 'dim_filial'[cod_filial] ), "__Filial", 'dim_filial'[cod_filial] )
+			VAR _Datas = VALUES ( 'dim_calendario'[data] )
+			VAR _Meses = SELECTCOLUMNS ( VALUES ( 'dim_calendario'[inicio_mes] ), "__Mes", 'dim_calendario'[inicio_mes] )
+			VAR _Cfg = ALL ( '_ConfigCobertura' )
+			VAR _Versao = CONCATENATEX ( DISTINCT ( '_ConfigCobertura'[versao_contrato] ), '_ConfigCobertura'[versao_contrato], ", " )
+			VAR _CfgInvalida =
+			    COUNTROWS ( _Cfg ) = 0
+			    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[versao_contrato] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1
+			    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[hash_base] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1
+			    || COUNTROWS ( FILTER ( _Cfg,
+			        ISBLANK ( '_ConfigCobertura'[inicio_competencia] ) || ISBLANK ( '_ConfigCobertura'[fim_competencia] )
+			        || '_ConfigCobertura'[inicio_competencia] > '_ConfigCobertura'[fim_competencia]
+			        || DAY ( '_ConfigCobertura'[inicio_competencia] ) <> 1 || DAY ( '_ConfigCobertura'[fim_competencia] ) <> 1
+			        || '_ConfigCobertura'[estado] <> "FORNECIDO_DIDATICO"
+			        || ISBLANK ( '_ConfigCobertura'[versao_contrato] ) || ISBLANK ( '_ConfigCobertura'[hash_base] ) ) ) > 0
+			VAR _MesParcial = COUNTROWS ( FILTER ( _Meses,
+			    VAR _M = [__Mes]
+			    RETURN COUNTROWS ( FILTER ( _Datas, 'dim_calendario'[data] >= _M && 'dim_calendario'[data] <= EOMONTH ( _M, 0 ) ) ) <> DAY ( EOMONTH ( _M, 0 ) ) ) ) > 0
+			VAR _SemConfiguracao = COUNTROWS ( FILTER ( _Filiais,
+			    VAR _F = [__Filial]
+			    RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Realizado" ) ) = 0 ) ) > 0
+			VAR _Grade = ADDCOLUMNS ( CROSSJOIN ( _Filiais, _Meses ),
+			    "__R", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Realizado"
+			            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),
+			    "__O", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Orcado"
+			            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),
+			    "__P", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Previsto"
+			            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ) )
+			VAR _Cortes = ADDCOLUMNS ( _Filiais, "__Corte",
+			    VAR _F = [__Filial] RETURN MAXX ( FILTER ( _Grade, [__Filial] = _F && [__R] = 1 ), [__Mes] ) )
+			VAR _SemCobertura = COUNTROWS ( FILTER ( _Cortes, ISBLANK ( [__Corte] ) ) ) > 0
+			VAR _Corte = MINX ( _Cortes, [__Corte] )
+			VAR _Pares = FILTER ( _Grade, NOT ISBLANK ( _Corte ) && [__Mes] <= _Corte )
+			VAR _Lacuna = COUNTROWS ( FILTER ( _Pares, [__R] <> 1 ) ) > 0
+			VAR _FaltaCfgO = COUNTROWS ( FILTER ( _Pares, [__O] <> 1 ) ) > 0
+			VAR _FaltaCfgP = COUNTROWS ( FILTER ( _Pares, [__P] <> 1 ) ) > 0
+			VAR _PosicaoValida = HASONEVALUE ( 'vw_dre_comparativo'[ordem_dre] )
+			    && NOT ISBLANK ( SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] ) )
+			    && NOT CONTAINSSTRING ( SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] ), "EBIT" )
+			VAR _ContextoInvalido = _CfgInvalida || _SemConfiguracao || _MesParcial || _Lacuna
+			    || COUNTROWS ( _Filiais ) = 0 || COUNTROWS ( _Meses ) = 0 || NOT _PosicaoValida
+			VAR _Mascara = SELECTCOLUMNS ( _Pares, "__F", [__Filial], "__M", [__Mes] )
+			VAR _Pres = CALCULATETABLE (
+			    ADDCOLUMNS ( SUMMARIZE ( 'vw_dre_comparativo', 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ),
+			    "__VR", [DRE | Realizado] ),
+			    KEEPFILTERS ( TREATAS ( _Mascara, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) )
+			VAR _NPares = COUNTROWS ( _Pares )
+			VAR _FaltaR = COUNTROWS ( FILTER ( _Pres, NOT ISBLANK ( [__VR] ) ) ) < _NPares
+			RETURN
+			    IF ( _ContextoInvalido || _SemCobertura || COUNTROWS ( _Pares ) = 0 || _FaltaR, BLANK (),
+			        CALCULATE ( [DRE | Realizado], KEEPFILTERS ( TREATAS ( _Mascara, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ) )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Comparabilidade
+		lineageTag: 4bd5b722-fd07-4752-8f80-f8d612d3d7aa
+
+	/// Cobertura DIDÁTICA configurável. Não certifica fechamento contábil; preserva BLANK, seleção e valores ajustados.
+	measure 'DRE | Orçado Comparável' =
+			VAR _Filiais = SELECTCOLUMNS ( VALUES ( 'dim_filial'[cod_filial] ), "__Filial", 'dim_filial'[cod_filial] )
+			VAR _Datas = VALUES ( 'dim_calendario'[data] )
+			VAR _Meses = SELECTCOLUMNS ( VALUES ( 'dim_calendario'[inicio_mes] ), "__Mes", 'dim_calendario'[inicio_mes] )
+			VAR _Cfg = ALL ( '_ConfigCobertura' )
+			VAR _Versao = CONCATENATEX ( DISTINCT ( '_ConfigCobertura'[versao_contrato] ), '_ConfigCobertura'[versao_contrato], ", " )
+			VAR _CfgInvalida =
+			    COUNTROWS ( _Cfg ) = 0
+			    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[versao_contrato] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1
+			    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[hash_base] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1
+			    || COUNTROWS ( FILTER ( _Cfg,
+			        ISBLANK ( '_ConfigCobertura'[inicio_competencia] ) || ISBLANK ( '_ConfigCobertura'[fim_competencia] )
+			        || '_ConfigCobertura'[inicio_competencia] > '_ConfigCobertura'[fim_competencia]
+			        || DAY ( '_ConfigCobertura'[inicio_competencia] ) <> 1 || DAY ( '_ConfigCobertura'[fim_competencia] ) <> 1
+			        || '_ConfigCobertura'[estado] <> "FORNECIDO_DIDATICO"
+			        || ISBLANK ( '_ConfigCobertura'[versao_contrato] ) || ISBLANK ( '_ConfigCobertura'[hash_base] ) ) ) > 0
+			VAR _MesParcial = COUNTROWS ( FILTER ( _Meses,
+			    VAR _M = [__Mes]
+			    RETURN COUNTROWS ( FILTER ( _Datas, 'dim_calendario'[data] >= _M && 'dim_calendario'[data] <= EOMONTH ( _M, 0 ) ) ) <> DAY ( EOMONTH ( _M, 0 ) ) ) ) > 0
+			VAR _SemConfiguracao = COUNTROWS ( FILTER ( _Filiais,
+			    VAR _F = [__Filial]
+			    RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Realizado" ) ) = 0 ) ) > 0
+			VAR _Grade = ADDCOLUMNS ( CROSSJOIN ( _Filiais, _Meses ),
+			    "__R", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Realizado"
+			            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),
+			    "__O", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Orcado"
+			            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),
+			    "__P", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Previsto"
+			            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ) )
+			VAR _Cortes = ADDCOLUMNS ( _Filiais, "__Corte",
+			    VAR _F = [__Filial] RETURN MAXX ( FILTER ( _Grade, [__Filial] = _F && [__R] = 1 ), [__Mes] ) )
+			VAR _SemCobertura = COUNTROWS ( FILTER ( _Cortes, ISBLANK ( [__Corte] ) ) ) > 0
+			VAR _Corte = MINX ( _Cortes, [__Corte] )
+			VAR _Pares = FILTER ( _Grade, NOT ISBLANK ( _Corte ) && [__Mes] <= _Corte )
+			VAR _Lacuna = COUNTROWS ( FILTER ( _Pares, [__R] <> 1 ) ) > 0
+			VAR _FaltaCfgO = COUNTROWS ( FILTER ( _Pares, [__O] <> 1 ) ) > 0
+			VAR _FaltaCfgP = COUNTROWS ( FILTER ( _Pares, [__P] <> 1 ) ) > 0
+			VAR _PosicaoValida = HASONEVALUE ( 'vw_dre_comparativo'[ordem_dre] )
+			    && NOT ISBLANK ( SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] ) )
+			    && NOT CONTAINSSTRING ( SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] ), "EBIT" )
+			VAR _ContextoInvalido = _CfgInvalida || _SemConfiguracao || _MesParcial || _Lacuna
+			    || COUNTROWS ( _Filiais ) = 0 || COUNTROWS ( _Meses ) = 0 || NOT _PosicaoValida
+			VAR _Mascara = SELECTCOLUMNS ( _Pares, "__F", [__Filial], "__M", [__Mes] )
+			VAR _Pres = CALCULATETABLE (
+			    ADDCOLUMNS ( SUMMARIZE ( 'vw_dre_comparativo', 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ),
+			    "__VR", [DRE | Realizado],
+			    "__VO", [DRE | Orçado] ),
+			    KEEPFILTERS ( TREATAS ( _Mascara, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) )
+			VAR _NPares = COUNTROWS ( _Pares )
+			VAR _FaltaR = COUNTROWS ( FILTER ( _Pres, NOT ISBLANK ( [__VR] ) ) ) < _NPares
+			VAR _FaltaO = _FaltaCfgO || COUNTROWS ( FILTER ( _Pres, NOT ISBLANK ( [__VO] ) ) ) < _NPares
+			RETURN
+			    IF ( _ContextoInvalido || _SemCobertura || COUNTROWS ( _Pares ) = 0 || _FaltaR || _FaltaO, BLANK (),
+			        CALCULATE ( [DRE | Orçado], KEEPFILTERS ( TREATAS ( _Mascara, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ) )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Comparabilidade
+		lineageTag: 8e82ef06-d597-4e34-804c-f04d20cf683c
+
+	/// Cobertura DIDÁTICA configurável. Não certifica fechamento contábil; preserva BLANK, seleção e valores ajustados.
+	measure 'DRE | Previsto Comparável' =
+			VAR _Filiais = SELECTCOLUMNS ( VALUES ( 'dim_filial'[cod_filial] ), "__Filial", 'dim_filial'[cod_filial] )
+			VAR _Datas = VALUES ( 'dim_calendario'[data] )
+			VAR _Meses = SELECTCOLUMNS ( VALUES ( 'dim_calendario'[inicio_mes] ), "__Mes", 'dim_calendario'[inicio_mes] )
+			VAR _Cfg = ALL ( '_ConfigCobertura' )
+			VAR _Versao = CONCATENATEX ( DISTINCT ( '_ConfigCobertura'[versao_contrato] ), '_ConfigCobertura'[versao_contrato], ", " )
+			VAR _CfgInvalida =
+			    COUNTROWS ( _Cfg ) = 0
+			    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[versao_contrato] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1
+			    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[hash_base] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1
+			    || COUNTROWS ( FILTER ( _Cfg,
+			        ISBLANK ( '_ConfigCobertura'[inicio_competencia] ) || ISBLANK ( '_ConfigCobertura'[fim_competencia] )
+			        || '_ConfigCobertura'[inicio_competencia] > '_ConfigCobertura'[fim_competencia]
+			        || DAY ( '_ConfigCobertura'[inicio_competencia] ) <> 1 || DAY ( '_ConfigCobertura'[fim_competencia] ) <> 1
+			        || '_ConfigCobertura'[estado] <> "FORNECIDO_DIDATICO"
+			        || ISBLANK ( '_ConfigCobertura'[versao_contrato] ) || ISBLANK ( '_ConfigCobertura'[hash_base] ) ) ) > 0
+			VAR _MesParcial = COUNTROWS ( FILTER ( _Meses,
+			    VAR _M = [__Mes]
+			    RETURN COUNTROWS ( FILTER ( _Datas, 'dim_calendario'[data] >= _M && 'dim_calendario'[data] <= EOMONTH ( _M, 0 ) ) ) <> DAY ( EOMONTH ( _M, 0 ) ) ) ) > 0
+			VAR _SemConfiguracao = COUNTROWS ( FILTER ( _Filiais,
+			    VAR _F = [__Filial]
+			    RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Realizado" ) ) = 0 ) ) > 0
+			VAR _Grade = ADDCOLUMNS ( CROSSJOIN ( _Filiais, _Meses ),
+			    "__R", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Realizado"
+			            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),
+			    "__O", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Orcado"
+			            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),
+			    "__P", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Previsto"
+			            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ) )
+			VAR _Cortes = ADDCOLUMNS ( _Filiais, "__Corte",
+			    VAR _F = [__Filial] RETURN MAXX ( FILTER ( _Grade, [__Filial] = _F && [__R] = 1 ), [__Mes] ) )
+			VAR _SemCobertura = COUNTROWS ( FILTER ( _Cortes, ISBLANK ( [__Corte] ) ) ) > 0
+			VAR _Corte = MINX ( _Cortes, [__Corte] )
+			VAR _Pares = FILTER ( _Grade, NOT ISBLANK ( _Corte ) && [__Mes] <= _Corte )
+			VAR _Lacuna = COUNTROWS ( FILTER ( _Pares, [__R] <> 1 ) ) > 0
+			VAR _FaltaCfgO = COUNTROWS ( FILTER ( _Pares, [__O] <> 1 ) ) > 0
+			VAR _FaltaCfgP = COUNTROWS ( FILTER ( _Pares, [__P] <> 1 ) ) > 0
+			VAR _PosicaoValida = HASONEVALUE ( 'vw_dre_comparativo'[ordem_dre] )
+			    && NOT ISBLANK ( SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] ) )
+			    && NOT CONTAINSSTRING ( SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] ), "EBIT" )
+			VAR _ContextoInvalido = _CfgInvalida || _SemConfiguracao || _MesParcial || _Lacuna
+			    || COUNTROWS ( _Filiais ) = 0 || COUNTROWS ( _Meses ) = 0 || NOT _PosicaoValida
+			VAR _Mascara = SELECTCOLUMNS ( _Pares, "__F", [__Filial], "__M", [__Mes] )
+			VAR _Pres = CALCULATETABLE (
+			    ADDCOLUMNS ( SUMMARIZE ( 'vw_dre_comparativo', 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ),
+			    "__VR", [DRE | Realizado],
+			    "__VP", [DRE | Previsto] ),
+			    KEEPFILTERS ( TREATAS ( _Mascara, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) )
+			VAR _NPares = COUNTROWS ( _Pares )
+			VAR _FaltaR = COUNTROWS ( FILTER ( _Pres, NOT ISBLANK ( [__VR] ) ) ) < _NPares
+			VAR _FaltaP = _FaltaCfgP || COUNTROWS ( FILTER ( _Pres, NOT ISBLANK ( [__VP] ) ) ) < _NPares
+			RETURN
+			    IF ( _ContextoInvalido || _SemCobertura || COUNTROWS ( _Pares ) = 0 || _FaltaR || _FaltaP, BLANK (),
+			        CALCULATE ( [DRE | Previsto], KEEPFILTERS ( TREATAS ( _Mascara, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ) )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Comparabilidade
+		lineageTag: c1f80ba0-bd91-4035-ba2a-a5eaf1e9fe79
+
+	/// Cobertura DIDÁTICA configurável. Não certifica fechamento contábil; preserva BLANK, seleção e valores ajustados.
+	measure 'DRE | Pares Filial-Competência Comparáveis' =
+			VAR _Filiais = SELECTCOLUMNS ( VALUES ( 'dim_filial'[cod_filial] ), "__Filial", 'dim_filial'[cod_filial] )
+			VAR _Datas = VALUES ( 'dim_calendario'[data] )
+			VAR _Meses = SELECTCOLUMNS ( VALUES ( 'dim_calendario'[inicio_mes] ), "__Mes", 'dim_calendario'[inicio_mes] )
+			VAR _Cfg = ALL ( '_ConfigCobertura' )
+			VAR _Versao = CONCATENATEX ( DISTINCT ( '_ConfigCobertura'[versao_contrato] ), '_ConfigCobertura'[versao_contrato], ", " )
+			VAR _CfgInvalida =
+			    COUNTROWS ( _Cfg ) = 0
+			    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[versao_contrato] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1
+			    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[hash_base] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1
+			    || COUNTROWS ( FILTER ( _Cfg,
+			        ISBLANK ( '_ConfigCobertura'[inicio_competencia] ) || ISBLANK ( '_ConfigCobertura'[fim_competencia] )
+			        || '_ConfigCobertura'[inicio_competencia] > '_ConfigCobertura'[fim_competencia]
+			        || DAY ( '_ConfigCobertura'[inicio_competencia] ) <> 1 || DAY ( '_ConfigCobertura'[fim_competencia] ) <> 1
+			        || '_ConfigCobertura'[estado] <> "FORNECIDO_DIDATICO"
+			        || ISBLANK ( '_ConfigCobertura'[versao_contrato] ) || ISBLANK ( '_ConfigCobertura'[hash_base] ) ) ) > 0
+			VAR _MesParcial = COUNTROWS ( FILTER ( _Meses,
+			    VAR _M = [__Mes]
+			    RETURN COUNTROWS ( FILTER ( _Datas, 'dim_calendario'[data] >= _M && 'dim_calendario'[data] <= EOMONTH ( _M, 0 ) ) ) <> DAY ( EOMONTH ( _M, 0 ) ) ) ) > 0
+			VAR _SemConfiguracao = COUNTROWS ( FILTER ( _Filiais,
+			    VAR _F = [__Filial]
+			    RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Realizado" ) ) = 0 ) ) > 0
+			VAR _Grade = ADDCOLUMNS ( CROSSJOIN ( _Filiais, _Meses ),
+			    "__R", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Realizado"
+			            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),
+			    "__O", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Orcado"
+			            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),
+			    "__P", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Previsto"
+			            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ) )
+			VAR _Cortes = ADDCOLUMNS ( _Filiais, "__Corte",
+			    VAR _F = [__Filial] RETURN MAXX ( FILTER ( _Grade, [__Filial] = _F && [__R] = 1 ), [__Mes] ) )
+			VAR _SemCobertura = COUNTROWS ( FILTER ( _Cortes, ISBLANK ( [__Corte] ) ) ) > 0
+			VAR _Corte = MINX ( _Cortes, [__Corte] )
+			VAR _Pares = FILTER ( _Grade, NOT ISBLANK ( _Corte ) && [__Mes] <= _Corte )
+			VAR _Lacuna = COUNTROWS ( FILTER ( _Pares, [__R] <> 1 ) ) > 0
+			VAR _FaltaCfgO = COUNTROWS ( FILTER ( _Pares, [__O] <> 1 ) ) > 0
+			VAR _FaltaCfgP = COUNTROWS ( FILTER ( _Pares, [__P] <> 1 ) ) > 0
+			VAR _PosicaoValida = HASONEVALUE ( 'vw_dre_comparativo'[ordem_dre] )
+			    && NOT ISBLANK ( SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] ) )
+			    && NOT CONTAINSSTRING ( SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] ), "EBIT" )
+			VAR _ContextoInvalido = _CfgInvalida || _SemConfiguracao || _MesParcial || _Lacuna
+			    || COUNTROWS ( _Filiais ) = 0 || COUNTROWS ( _Meses ) = 0 || NOT _PosicaoValida
+			VAR _Mascara = SELECTCOLUMNS ( _Pares, "__F", [__Filial], "__M", [__Mes] )
+			VAR _Dados = ADDCOLUMNS ( _Pares,
+			    "__VR", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN CALCULATE ( [DRE | Realizado], KEEPFILTERS ( TREATAS ( { ( _F, _M ) }, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ),
+			    "__VO", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN CALCULATE ( [DRE | Orçado], KEEPFILTERS ( TREATAS ( { ( _F, _M ) }, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ),
+			    "__VP", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN CALCULATE ( [DRE | Previsto], KEEPFILTERS ( TREATAS ( { ( _F, _M ) }, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ) )
+			VAR _FaltaR = COUNTROWS ( FILTER ( _Dados, ISBLANK ( [__VR] ) ) ) > 0
+			VAR _FaltaO = _FaltaCfgO || COUNTROWS ( FILTER ( _Dados, ISBLANK ( [__VO] ) ) ) > 0
+			VAR _FaltaP = _FaltaCfgP || COUNTROWS ( FILTER ( _Dados, ISBLANK ( [__VP] ) ) ) > 0
+			RETURN
+			    IF ( _ContextoInvalido, BLANK (), IF ( _SemCobertura, 0, COUNTROWS ( _Pares ) + 0 ) )
+		formatString: 0
+		displayFolder: DRE\Comparabilidade
+		lineageTag: cb68fc3f-efdf-4879-8baa-5e331c3ee37e
+
+	/// Cobertura DIDÁTICA configurável. Não certifica fechamento contábil; preserva BLANK, seleção e valores ajustados.
+	measure 'DRE | Status Comparabilidade' =
+			VAR _Filiais = SELECTCOLUMNS ( VALUES ( 'dim_filial'[cod_filial] ), "__Filial", 'dim_filial'[cod_filial] )
+			VAR _Datas = VALUES ( 'dim_calendario'[data] )
+			VAR _Meses = SELECTCOLUMNS ( VALUES ( 'dim_calendario'[inicio_mes] ), "__Mes", 'dim_calendario'[inicio_mes] )
+			VAR _Cfg = ALL ( '_ConfigCobertura' )
+			VAR _Versao = CONCATENATEX ( DISTINCT ( '_ConfigCobertura'[versao_contrato] ), '_ConfigCobertura'[versao_contrato], ", " )
+			VAR _CfgInvalida =
+			    COUNTROWS ( _Cfg ) = 0
+			    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[versao_contrato] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1
+			    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[hash_base] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1
+			    || COUNTROWS ( FILTER ( _Cfg,
+			        ISBLANK ( '_ConfigCobertura'[inicio_competencia] ) || ISBLANK ( '_ConfigCobertura'[fim_competencia] )
+			        || '_ConfigCobertura'[inicio_competencia] > '_ConfigCobertura'[fim_competencia]
+			        || DAY ( '_ConfigCobertura'[inicio_competencia] ) <> 1 || DAY ( '_ConfigCobertura'[fim_competencia] ) <> 1
+			        || '_ConfigCobertura'[estado] <> "FORNECIDO_DIDATICO"
+			        || ISBLANK ( '_ConfigCobertura'[versao_contrato] ) || ISBLANK ( '_ConfigCobertura'[hash_base] ) ) ) > 0
+			VAR _MesParcial = COUNTROWS ( FILTER ( _Meses,
+			    VAR _M = [__Mes]
+			    RETURN COUNTROWS ( FILTER ( _Datas, 'dim_calendario'[data] >= _M && 'dim_calendario'[data] <= EOMONTH ( _M, 0 ) ) ) <> DAY ( EOMONTH ( _M, 0 ) ) ) ) > 0
+			VAR _SemConfiguracao = COUNTROWS ( FILTER ( _Filiais,
+			    VAR _F = [__Filial]
+			    RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Realizado" ) ) = 0 ) ) > 0
+			VAR _Grade = ADDCOLUMNS ( CROSSJOIN ( _Filiais, _Meses ),
+			    "__R", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Realizado"
+			            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),
+			    "__O", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Orcado"
+			            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),
+			    "__P", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Previsto"
+			            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ) )
+			VAR _Cortes = ADDCOLUMNS ( _Filiais, "__Corte",
+			    VAR _F = [__Filial] RETURN MAXX ( FILTER ( _Grade, [__Filial] = _F && [__R] = 1 ), [__Mes] ) )
+			VAR _SemCobertura = COUNTROWS ( FILTER ( _Cortes, ISBLANK ( [__Corte] ) ) ) > 0
+			VAR _Corte = MINX ( _Cortes, [__Corte] )
+			VAR _Pares = FILTER ( _Grade, NOT ISBLANK ( _Corte ) && [__Mes] <= _Corte )
+			VAR _Lacuna = COUNTROWS ( FILTER ( _Pares, [__R] <> 1 ) ) > 0
+			VAR _FaltaCfgO = COUNTROWS ( FILTER ( _Pares, [__O] <> 1 ) ) > 0
+			VAR _FaltaCfgP = COUNTROWS ( FILTER ( _Pares, [__P] <> 1 ) ) > 0
+			VAR _PosicaoValida = HASONEVALUE ( 'vw_dre_comparativo'[ordem_dre] )
+			    && NOT ISBLANK ( SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] ) )
+			    && NOT CONTAINSSTRING ( SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] ), "EBIT" )
+			VAR _ContextoInvalido = _CfgInvalida || _SemConfiguracao || _MesParcial || _Lacuna
+			    || COUNTROWS ( _Filiais ) = 0 || COUNTROWS ( _Meses ) = 0 || NOT _PosicaoValida
+			VAR _Mascara = SELECTCOLUMNS ( _Pares, "__F", [__Filial], "__M", [__Mes] )
+			VAR _Dados = ADDCOLUMNS ( _Pares,
+			    "__VR", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN CALCULATE ( [DRE | Realizado], KEEPFILTERS ( TREATAS ( { ( _F, _M ) }, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ),
+			    "__VO", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN CALCULATE ( [DRE | Orçado], KEEPFILTERS ( TREATAS ( { ( _F, _M ) }, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ),
+			    "__VP", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN CALCULATE ( [DRE | Previsto], KEEPFILTERS ( TREATAS ( { ( _F, _M ) }, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ) )
+			VAR _FaltaR = COUNTROWS ( FILTER ( _Dados, ISBLANK ( [__VR] ) ) ) > 0
+			VAR _FaltaO = _FaltaCfgO || COUNTROWS ( FILTER ( _Dados, ISBLANK ( [__VO] ) ) ) > 0
+			VAR _FaltaP = _FaltaCfgP || COUNTROWS ( FILTER ( _Dados, ISBLANK ( [__VP] ) ) ) > 0
+			RETURN
+			    "Cobertura didática | " & _Versao & " | " &
+			    SWITCH ( TRUE (),
+			        _CfgInvalida, "Configuração inválida",
+			        _SemConfiguracao, "Filial sem configuração",
+			        COUNTROWS ( _Filiais ) = 0 || COUNTROWS ( _Meses ) = 0, "Seleção vazia",
+			        _MesParcial, "Selecione meses completos",
+			        NOT _PosicaoValida, "Selecione uma posição DRE elegível; EBITDA/EBIT sem cálculo",
+			        _Lacuna, "Lacuna ou conflito de cobertura",
+			        _SemCobertura || COUNTROWS ( _Pares ) = 0, "Sem Realizado fornecido no período selecionado",
+			        _FaltaR, "Realizado ausente/incompleto na posição; cobertura não é movimento",
+			        _FaltaO && _FaltaP, "Orçado e Previsto incompletos no recorte",
+			        _FaltaO, "Orçado incompleto no recorte",
+			        _FaltaP, "Previsto incompleto no recorte",
+			        COUNTROWS ( _Pares ) < COUNTROWS ( _Filiais ) * COUNTROWS ( _Meses ), "Recorte comparável parcial; corte comum " & FORMAT ( _Corte, "yyyy-MM" ),
+			        "Período integralmente comparável; corte comum " & FORMAT ( _Corte, "yyyy-MM" ) )
+		displayFolder: DRE\Comparabilidade
+		lineageTag: dbe58322-6816-4588-a861-73a37b0074a9
+
+	/// M40 (L2.3.2): Realizado Comparável menos Orçado Comparável no mesmo recorte. BLANK se algum operando ausente; referência zero é válida. Sem favorabilidade. Cobertura DIDÁTICA, não homologação contábil.
+	measure 'DRE | Desvio Realizado x Orçado (R$)' =
+			VAR _R = [DRE | Realizado Comparável]
+			VAR _O = [DRE | Orçado Comparável]
+			RETURN
+			    IF ( ISBLANK ( _R ) || ISBLANK ( _O ), BLANK (), _R - _O )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Desvios
+		lineageTag: 76cf3ead-5b44-4934-8772-975f871302d4
+
+	/// M42 (L2.3.2): Realizado Comparável menos Previsto Comparável no mesmo recorte. BLANK se algum operando ausente; referência zero é válida. Sem favorabilidade. Cobertura DIDÁTICA, não homologação contábil.
+	measure 'DRE | Desvio Realizado x Previsto (R$)' =
+			VAR _R = [DRE | Realizado Comparável]
+			VAR _P = [DRE | Previsto Comparável]
+			RETURN
+			    IF ( ISBLANK ( _R ) || ISBLANK ( _P ), BLANK (), _R - _P )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Desvios
+		lineageTag: 67f1b0f9-19fd-49aa-ac12-c363a18ab8b7
+
+	/// M41 (L2.3.2): (Realizado Comparável - Orçado Comparável) / ABS(Orçado Comparável), razão dos agregados. BLANK se operando ausente ou Orçado = 0. Sem favorabilidade ou cumprimento. Cobertura DIDÁTICA, não homologação contábil.
+	measure 'DRE | Desvio Realizado x Orçado (%)' =
+			VAR _R = [DRE | Realizado Comparável]
+			VAR _O = [DRE | Orçado Comparável]
+			RETURN
+			    IF (
+			        ISBLANK ( _R ) || ISBLANK ( _O ) || _O = 0,
+			        BLANK (),
+			        DIVIDE ( _R - _O, ABS ( _O ) )
+			    )
+		formatString: 0.00%;(0.00%);0.00%
+		displayFolder: DRE\Desvios
+		lineageTag: 5e1029bf-2eec-4450-abae-fa5e1b9a79f8
+
+	/// M43 (L2.3.2): (Realizado Comparável - Previsto Comparável) / ABS(Previsto Comparável), razão dos agregados. BLANK se operando ausente ou Previsto = 0. Sem favorabilidade ou cumprimento. Cobertura DIDÁTICA, não homologação contábil.
+	measure 'DRE | Desvio Realizado x Previsto (%)' =
+			VAR _R = [DRE | Realizado Comparável]
+			VAR _P = [DRE | Previsto Comparável]
+			RETURN
+			    IF (
+			        ISBLANK ( _R ) || ISBLANK ( _P ) || _P = 0,
+			        BLANK (),
+			        DIVIDE ( _R - _P, ABS ( _P ) )
+			    )
+		formatString: 0.00%;(0.00%);0.00%
+		displayFolder: DRE\Desvios
+		lineageTag: 76e2d4cd-0f18-4646-b205-2157bec64931
+
+	/// M44 (L2.3.3): impacto no resultado contra o Orçado = M40 nas posições 1-7, 9, 10, 12 e 13 (gastos gravados negativos; positivo = favorável). EBITDA/EBIT, total entre posições ou M40 ausente → BLANK. Cobertura DIDÁTICA; RL provisório.
+	measure 'DRE | Impacto Favorável x Orçado (R$)' =
+			VAR _Desvio = [DRE | Desvio Realizado x Orçado (R$)]
+			VAR _Posicao = SELECTEDVALUE ( 'vw_dre_comparativo'[ordem_dre] )
+			VAR _Elegivel = _Posicao IN { 1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 13 }
+			RETURN
+			    IF ( ISBLANK ( _Desvio ) || NOT _Elegivel, BLANK (), _Desvio )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Desempenho
+		lineageTag: cbe509ae-5427-43fd-9030-c804c4604819
+
+	/// M45 (L2.3.3): impacto no resultado contra o Previsto = M42 nas posições 1-7, 9, 10, 12 e 13 (gastos gravados negativos; positivo = favorável). EBITDA/EBIT, total entre posições ou M42 ausente → BLANK. Cobertura DIDÁTICA; RL provisório.
+	measure 'DRE | Impacto Favorável x Previsto (R$)' =
+			VAR _Desvio = [DRE | Desvio Realizado x Previsto (R$)]
+			VAR _Posicao = SELECTEDVALUE ( 'vw_dre_comparativo'[ordem_dre] )
+			VAR _Elegivel = _Posicao IN { 1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 13 }
+			RETURN
+			    IF ( ISBLANK ( _Desvio ) || NOT _Elegivel, BLANK (), _Desvio )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\Desempenho
+		lineageTag: 1db47715-4172-4828-bd35-ceec00ed6fc0
+
+	/// M46 (L2.3.3; Fase 5): Favorável / Em linha (|impacto| <= R$ 0,01) / Desfavorável a partir de M44. Sufixo ' (provisório)' da posição 13 removido em 09/11/2026 (Resultado Líquido aceito pelo usuário). Sem impacto → BLANK (motivo em DRE | Status Comparabilidade). Cobertura DIDÁTICA.
+	measure 'DRE | Classificação x Orçado' =
+			VAR _Impacto = [DRE | Impacto Favorável x Orçado (R$)]
+			VAR _Tolerancia = 0.01
+			VAR _Folga = 0.000000001
+			RETURN
+			    SWITCH (
+			        TRUE (),
+			        ISBLANK ( _Impacto ), BLANK (),
+			        ABS ( _Impacto ) <= _Tolerancia + _Folga, "Em linha",
+			        _Impacto > 0, "Favorável",
+			        "Desfavorável"
+			    )
+		displayFolder: DRE\Desempenho
+		lineageTag: 448718c6-dcbb-4442-b080-4d5d26a8ffa5
+
+	/// M47 (L2.3.3; Fase 5): Favorável / Em linha (|impacto| <= R$ 0,01) / Desfavorável a partir de M45. Sufixo ' (provisório)' da posição 13 removido em 09/11/2026 (Resultado Líquido aceito pelo usuário). Sem impacto → BLANK (motivo em DRE | Status Comparabilidade). Cobertura DIDÁTICA.
+	measure 'DRE | Classificação x Previsto' =
+			VAR _Impacto = [DRE | Impacto Favorável x Previsto (R$)]
+			VAR _Tolerancia = 0.01
+			VAR _Folga = 0.000000001
+			RETURN
+			    SWITCH (
+			        TRUE (),
+			        ISBLANK ( _Impacto ), BLANK (),
+			        ABS ( _Impacto ) <= _Tolerancia + _Folga, "Em linha",
+			        _Impacto > 0, "Favorável",
+			        "Desfavorável"
+			    )
+		displayFolder: DRE\Desempenho
+		lineageTag: e010eee9-9b0f-4fbe-b6b9-1d8c74cc0ab7
+
+	/// M48 (L2.3.3): Realizado Comparável / Orçado Comparável apenas nas posições 1 e 3, com Orçado > 0 e Realizado >= 0; demais casos BLANK. 100% = meta atingida. Razão dos agregados. Cobertura DIDÁTICA.
+	measure 'DRE | Cumprimento Orçamentário (%)' =
+			VAR _Posicao = SELECTEDVALUE ( 'vw_dre_comparativo'[ordem_dre] )
+			VAR _R = [DRE | Realizado Comparável]
+			VAR _O = [DRE | Orçado Comparável]
+			RETURN
+			    IF (
+			        NOT ( _Posicao IN { 1, 3 } ) || ISBLANK ( _R ) || ISBLANK ( _O ) || _O <= 0 || _R < 0,
+			        BLANK (),
+			        DIVIDE ( _R, _O )
+			    )
+		formatString: 0.00%;(0.00%);0.00%
+		displayFolder: DRE\Desempenho
+		lineageTag: f233856a-00dd-4c80-b544-f3caa3193249
+
+	/// Formatação (Fase 4): cor hexadecimal para DRE | Classificação x Orçado, pela mesma regra de M46 sobre M44: Favorável verde, Em linha cinza, Desfavorável vermelho; sem impacto → BLANK. Não é medida financeira.
+	measure 'DRE | Cor Classificação x Orçado' =
+			VAR _Impacto = [DRE | Impacto Favorável x Orçado (R$)]
+			RETURN
+			    SWITCH (
+			        TRUE (),
+			        ISBLANK ( _Impacto ), BLANK (),
+			        ABS ( _Impacto ) <= 0.01 + 0.000000001, "#605E5C",
+			        _Impacto > 0, "#107C10",
+			        "#C50F1F"
+			    )
+		isHidden
+		displayFolder: DRE\Formatação
+		lineageTag: 380b7af8-546d-4f0e-899d-d20bb054da5e
+
+	/// Formatação (Fase 4): cor hexadecimal para DRE | Classificação x Previsto, pela mesma regra de M47 sobre M45: Favorável verde, Em linha cinza, Desfavorável vermelho; sem impacto → BLANK. Não é medida financeira.
+	measure 'DRE | Cor Classificação x Previsto' =
+			VAR _Impacto = [DRE | Impacto Favorável x Previsto (R$)]
+			RETURN
+			    SWITCH (
+			        TRUE (),
+			        ISBLANK ( _Impacto ), BLANK (),
+			        ABS ( _Impacto ) <= 0.01 + 0.000000001, "#605E5C",
+			        _Impacto > 0, "#107C10",
+			        "#C50F1F"
+			    )
+		isHidden
+		displayFolder: DRE\Formatação
+		lineageTag: 9b9f46fa-5a27-428d-b8f4-93395f7cfec1
+
+	/// L4.1: Σ(valor × tipolancamento) de fato_lancamentos no período comparável (mesma máscara e guardas de cobertura de DRE | Realizado Comparável). Sinal da DRE. Soma por linha DRE = DRE | Realizado Comparável.
+	measure 'Conta | Realizado Comparável' =
+			VAR _Filiais = SELECTCOLUMNS ( VALUES ( 'dim_filial'[cod_filial] ), "__Filial", 'dim_filial'[cod_filial] )
+			VAR _Datas = VALUES ( 'dim_calendario'[data] )
+			VAR _Meses = SELECTCOLUMNS ( VALUES ( 'dim_calendario'[inicio_mes] ), "__Mes", 'dim_calendario'[inicio_mes] )
+			VAR _Cfg = ALL ( '_ConfigCobertura' )
+			VAR _CfgInvalida =
+			    COUNTROWS ( _Cfg ) = 0
+			    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[versao_contrato] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1
+			    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[hash_base] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1
+			    || COUNTROWS ( FILTER ( _Cfg,
+			        ISBLANK ( '_ConfigCobertura'[inicio_competencia] ) || ISBLANK ( '_ConfigCobertura'[fim_competencia] )
+			        || '_ConfigCobertura'[inicio_competencia] > '_ConfigCobertura'[fim_competencia]
+			        || DAY ( '_ConfigCobertura'[inicio_competencia] ) <> 1 || DAY ( '_ConfigCobertura'[fim_competencia] ) <> 1
+			        || '_ConfigCobertura'[estado] <> "FORNECIDO_DIDATICO"
+			        || ISBLANK ( '_ConfigCobertura'[versao_contrato] ) || ISBLANK ( '_ConfigCobertura'[hash_base] ) ) ) > 0
+			VAR _MesParcial = COUNTROWS ( FILTER ( _Meses,
+			    VAR _M = [__Mes]
+			    RETURN COUNTROWS ( FILTER ( _Datas, 'dim_calendario'[data] >= _M && 'dim_calendario'[data] <= EOMONTH ( _M, 0 ) ) ) <> DAY ( EOMONTH ( _M, 0 ) ) ) ) > 0
+			VAR _SemConfiguracao = COUNTROWS ( FILTER ( _Filiais,
+			    VAR _F = [__Filial]
+			    RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Realizado" ) ) = 0 ) ) > 0
+			VAR _Grade = ADDCOLUMNS ( CROSSJOIN ( _Filiais, _Meses ),
+			    "__R", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Realizado"
+			            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),
+			    "__O", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Orcado"
+			            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),
+			    "__P", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Previsto"
+			            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ) )
+			VAR _Cortes = ADDCOLUMNS ( _Filiais, "__Corte",
+			    VAR _F = [__Filial] RETURN MAXX ( FILTER ( _Grade, [__Filial] = _F && [__R] = 1 ), [__Mes] ) )
+			VAR _SemCobertura = COUNTROWS ( FILTER ( _Cortes, ISBLANK ( [__Corte] ) ) ) > 0
+			VAR _Corte = MINX ( _Cortes, [__Corte] )
+			VAR _Pares = FILTER ( _Grade, NOT ISBLANK ( _Corte ) && [__Mes] <= _Corte )
+			VAR _Lacuna = COUNTROWS ( FILTER ( _Pares, [__R] <> 1 ) ) > 0
+			VAR _FaltaCfgO = COUNTROWS ( FILTER ( _Pares, [__O] <> 1 ) ) > 0
+			VAR _FaltaCfgP = COUNTROWS ( FILTER ( _Pares, [__P] <> 1 ) ) > 0
+			VAR _ContextoInvalido = _CfgInvalida || _SemConfiguracao || _MesParcial || _Lacuna
+			    || COUNTROWS ( _Filiais ) = 0 || COUNTROWS ( _Meses ) = 0
+			VAR _Mascara = SELECTCOLUMNS ( _Pares, "__F", [__Filial], "__M", [__Mes] )
+			RETURN
+			    IF ( _ContextoInvalido || _SemCobertura || COUNTROWS ( _Pares ) = 0, BLANK (),
+			        CALCULATE (
+			            SUMX ( 'fato_lancamentos', 'fato_lancamentos'[valor] * RELATED ( 'dim_conta'[tipolancamento] ) ),
+			            KEEPFILTERS ( TREATAS ( _Mascara, 'fato_lancamentos'[cod_filial], 'fato_lancamentos'[competencia_data] ) )
+			        ) )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: Contas
+		lineageTag: bdf3fdaa-135a-487e-91db-05a6b4937459
+
+	/// L4.1: Σ(valor × tipolancamento) de fato_orcamento no período comparável; exige cobertura de Orçado em todos os pares. Soma por linha DRE = DRE | Orçado Comparável.
+	measure 'Conta | Orçado Comparável' =
+			VAR _Filiais = SELECTCOLUMNS ( VALUES ( 'dim_filial'[cod_filial] ), "__Filial", 'dim_filial'[cod_filial] )
+			VAR _Datas = VALUES ( 'dim_calendario'[data] )
+			VAR _Meses = SELECTCOLUMNS ( VALUES ( 'dim_calendario'[inicio_mes] ), "__Mes", 'dim_calendario'[inicio_mes] )
+			VAR _Cfg = ALL ( '_ConfigCobertura' )
+			VAR _CfgInvalida =
+			    COUNTROWS ( _Cfg ) = 0
+			    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[versao_contrato] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1
+			    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[hash_base] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1
+			    || COUNTROWS ( FILTER ( _Cfg,
+			        ISBLANK ( '_ConfigCobertura'[inicio_competencia] ) || ISBLANK ( '_ConfigCobertura'[fim_competencia] )
+			        || '_ConfigCobertura'[inicio_competencia] > '_ConfigCobertura'[fim_competencia]
+			        || DAY ( '_ConfigCobertura'[inicio_competencia] ) <> 1 || DAY ( '_ConfigCobertura'[fim_competencia] ) <> 1
+			        || '_ConfigCobertura'[estado] <> "FORNECIDO_DIDATICO"
+			        || ISBLANK ( '_ConfigCobertura'[versao_contrato] ) || ISBLANK ( '_ConfigCobertura'[hash_base] ) ) ) > 0
+			VAR _MesParcial = COUNTROWS ( FILTER ( _Meses,
+			    VAR _M = [__Mes]
+			    RETURN COUNTROWS ( FILTER ( _Datas, 'dim_calendario'[data] >= _M && 'dim_calendario'[data] <= EOMONTH ( _M, 0 ) ) ) <> DAY ( EOMONTH ( _M, 0 ) ) ) ) > 0
+			VAR _SemConfiguracao = COUNTROWS ( FILTER ( _Filiais,
+			    VAR _F = [__Filial]
+			    RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Realizado" ) ) = 0 ) ) > 0
+			VAR _Grade = ADDCOLUMNS ( CROSSJOIN ( _Filiais, _Meses ),
+			    "__R", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Realizado"
+			            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),
+			    "__O", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Orcado"
+			            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),
+			    "__P", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Previsto"
+			            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ) )
+			VAR _Cortes = ADDCOLUMNS ( _Filiais, "__Corte",
+			    VAR _F = [__Filial] RETURN MAXX ( FILTER ( _Grade, [__Filial] = _F && [__R] = 1 ), [__Mes] ) )
+			VAR _SemCobertura = COUNTROWS ( FILTER ( _Cortes, ISBLANK ( [__Corte] ) ) ) > 0
+			VAR _Corte = MINX ( _Cortes, [__Corte] )
+			VAR _Pares = FILTER ( _Grade, NOT ISBLANK ( _Corte ) && [__Mes] <= _Corte )
+			VAR _Lacuna = COUNTROWS ( FILTER ( _Pares, [__R] <> 1 ) ) > 0
+			VAR _FaltaCfgO = COUNTROWS ( FILTER ( _Pares, [__O] <> 1 ) ) > 0
+			VAR _FaltaCfgP = COUNTROWS ( FILTER ( _Pares, [__P] <> 1 ) ) > 0
+			VAR _ContextoInvalido = _CfgInvalida || _SemConfiguracao || _MesParcial || _Lacuna
+			    || COUNTROWS ( _Filiais ) = 0 || COUNTROWS ( _Meses ) = 0
+			VAR _Mascara = SELECTCOLUMNS ( _Pares, "__F", [__Filial], "__M", [__Mes] )
+			RETURN
+			    IF ( _ContextoInvalido || _SemCobertura || COUNTROWS ( _Pares ) = 0 || _FaltaCfgO, BLANK (),
+			        CALCULATE (
+			            SUMX ( 'fato_orcamento', 'fato_orcamento'[valor] * RELATED ( 'dim_conta'[tipolancamento] ) ),
+			            KEEPFILTERS ( TREATAS ( _Mascara, 'fato_orcamento'[cod_filial], 'fato_orcamento'[competencia_data] ) )
+			        ) )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: Contas
+		lineageTag: 7d833bab-dfe9-45e8-89f7-29d40fd9c993
+
+	/// L4.1: Σ(valor × tipolancamento) de fato_previsao no período comparável; exige cobertura de Previsto em todos os pares. Soma por linha DRE = DRE | Previsto Comparável.
+	measure 'Conta | Previsto Comparável' =
+			VAR _Filiais = SELECTCOLUMNS ( VALUES ( 'dim_filial'[cod_filial] ), "__Filial", 'dim_filial'[cod_filial] )
+			VAR _Datas = VALUES ( 'dim_calendario'[data] )
+			VAR _Meses = SELECTCOLUMNS ( VALUES ( 'dim_calendario'[inicio_mes] ), "__Mes", 'dim_calendario'[inicio_mes] )
+			VAR _Cfg = ALL ( '_ConfigCobertura' )
+			VAR _CfgInvalida =
+			    COUNTROWS ( _Cfg ) = 0
+			    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[versao_contrato] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1
+			    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[hash_base] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1
+			    || COUNTROWS ( FILTER ( _Cfg,
+			        ISBLANK ( '_ConfigCobertura'[inicio_competencia] ) || ISBLANK ( '_ConfigCobertura'[fim_competencia] )
+			        || '_ConfigCobertura'[inicio_competencia] > '_ConfigCobertura'[fim_competencia]
+			        || DAY ( '_ConfigCobertura'[inicio_competencia] ) <> 1 || DAY ( '_ConfigCobertura'[fim_competencia] ) <> 1
+			        || '_ConfigCobertura'[estado] <> "FORNECIDO_DIDATICO"
+			        || ISBLANK ( '_ConfigCobertura'[versao_contrato] ) || ISBLANK ( '_ConfigCobertura'[hash_base] ) ) ) > 0
+			VAR _MesParcial = COUNTROWS ( FILTER ( _Meses,
+			    VAR _M = [__Mes]
+			    RETURN COUNTROWS ( FILTER ( _Datas, 'dim_calendario'[data] >= _M && 'dim_calendario'[data] <= EOMONTH ( _M, 0 ) ) ) <> DAY ( EOMONTH ( _M, 0 ) ) ) ) > 0
+			VAR _SemConfiguracao = COUNTROWS ( FILTER ( _Filiais,
+			    VAR _F = [__Filial]
+			    RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Realizado" ) ) = 0 ) ) > 0
+			VAR _Grade = ADDCOLUMNS ( CROSSJOIN ( _Filiais, _Meses ),
+			    "__R", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Realizado"
+			            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),
+			    "__O", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Orcado"
+			            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),
+			    "__P", VAR _F = [__Filial] VAR _M = [__Mes]
+			        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = "Previsto"
+			            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ) )
+			VAR _Cortes = ADDCOLUMNS ( _Filiais, "__Corte",
+			    VAR _F = [__Filial] RETURN MAXX ( FILTER ( _Grade, [__Filial] = _F && [__R] = 1 ), [__Mes] ) )
+			VAR _SemCobertura = COUNTROWS ( FILTER ( _Cortes, ISBLANK ( [__Corte] ) ) ) > 0
+			VAR _Corte = MINX ( _Cortes, [__Corte] )
+			VAR _Pares = FILTER ( _Grade, NOT ISBLANK ( _Corte ) && [__Mes] <= _Corte )
+			VAR _Lacuna = COUNTROWS ( FILTER ( _Pares, [__R] <> 1 ) ) > 0
+			VAR _FaltaCfgO = COUNTROWS ( FILTER ( _Pares, [__O] <> 1 ) ) > 0
+			VAR _FaltaCfgP = COUNTROWS ( FILTER ( _Pares, [__P] <> 1 ) ) > 0
+			VAR _ContextoInvalido = _CfgInvalida || _SemConfiguracao || _MesParcial || _Lacuna
+			    || COUNTROWS ( _Filiais ) = 0 || COUNTROWS ( _Meses ) = 0
+			VAR _Mascara = SELECTCOLUMNS ( _Pares, "__F", [__Filial], "__M", [__Mes] )
+			RETURN
+			    IF ( _ContextoInvalido || _SemCobertura || COUNTROWS ( _Pares ) = 0 || _FaltaCfgP, BLANK (),
+			        CALCULATE (
+			            SUMX ( 'fato_previsao', 'fato_previsao'[valor] * RELATED ( 'dim_conta'[tipolancamento] ) ),
+			            KEEPFILTERS ( TREATAS ( _Mascara, 'fato_previsao'[cod_filial], 'fato_previsao'[competencia_data] ) )
+			        ) )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: Contas
+		lineageTag: 14987397-55c7-4ce8-a025-588586eadfbd
+
+	/// L4.1: Realizado − Orçado comparáveis da conta. Positivo = favorável ao resultado (sinal da DRE). BLANK se faltar um operando.
+	measure 'Conta | Desvio x Orçado (R$)' =
+			VAR _R = [Conta | Realizado Comparável]
+			VAR _O = [Conta | Orçado Comparável]
+			RETURN
+			    IF ( ISBLANK ( _R ) || ISBLANK ( _O ), BLANK (), _R - _O )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: Contas
+		lineageTag: f3454a96-2d06-483e-807a-93fcda0f46a1
+
+	/// L4.1: (Realizado − Orçado) ÷ |Orçado|. BLANK se faltar operando ou Orçado = 0.
+	measure 'Conta | Desvio x Orçado (%)' =
+			VAR _R = [Conta | Realizado Comparável]
+			VAR _O = [Conta | Orçado Comparável]
+			RETURN
+			    IF ( ISBLANK ( _R ) || ISBLANK ( _O ) || _O = 0, BLANK (), DIVIDE ( _R - _O, ABS ( _O ) ) )
+		formatString: 0.00%;(0.00%);0.00%
+		displayFolder: Contas
+		lineageTag: b0c6231b-57c4-463a-918f-1b914b48b181
+
+	/// L4.1: Realizado − Previsto comparáveis da conta. Positivo = favorável. BLANK se faltar um operando.
+	measure 'Conta | Desvio x Previsto (R$)' =
+			VAR _R = [Conta | Realizado Comparável]
+			VAR _P = [Conta | Previsto Comparável]
+			RETURN
+			    IF ( ISBLANK ( _R ) || ISBLANK ( _P ), BLANK (), _R - _P )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: Contas
+		lineageTag: d42d77c3-9f8c-46a3-92ba-f565b9aa036a
+
+	/// L4.1: (Realizado − Previsto) ÷ |Previsto|. BLANK se faltar operando ou Previsto = 0.
+	measure 'Conta | Desvio x Previsto (%)' =
+			VAR _R = [Conta | Realizado Comparável]
+			VAR _P = [Conta | Previsto Comparável]
+			RETURN
+			    IF ( ISBLANK ( _R ) || ISBLANK ( _P ) || _P = 0, BLANK (), DIVIDE ( _R - _P, ABS ( _P ) ) )
+		formatString: 0.00%;(0.00%);0.00%
+		displayFolder: Contas
+		lineageTag: d6ea5f84-7deb-451d-9134-cde9aa5f4a3a
+
+	/// L4.1: Favorável / Em linha (|desvio| ≤ R$ 0,01) / Desfavorável x Orçado. BLANK sem desvio.
+	measure 'Conta | Classificação x Orçado' =
+			VAR _Desvio = [Conta | Desvio x Orçado (R$)]
+			VAR _Tolerancia = 0.01
+			VAR _Folga = 0.000000001
+			RETURN
+			    SWITCH (
+			        TRUE (),
+			        ISBLANK ( _Desvio ), BLANK (),
+			        ABS ( _Desvio ) <= _Tolerancia + _Folga, "Em linha",
+			        _Desvio > 0, "Favorável",
+			        "Desfavorável"
+			    )
+		displayFolder: Contas
+		lineageTag: 9966df4c-5fc1-4a44-b2cc-5a00d0c8fe54
+
+	/// L4.1: cor da classificação x Orçado para formatação condicional (mesma paleta de DRE | Cor Classificação).
+	measure 'Conta | Cor x Orçado' =
+			SWITCH (
+			    [Conta | Classificação x Orçado],
+			    "Favorável", "#107C10",
+			    "Desfavorável", "#C50F1F",
+			    "Em linha", "#605E5C",
+			    BLANK ()
+			)
+		isHidden
+		displayFolder: Contas
+		lineageTag: 091ff092-5f16-47c3-99e1-fdb91aa5270a
+
+	/// Fase 5 (CVM): EBITDA Realizado = Margem de Contribuição + Despesas Operacionais + Outras Receitas e Despesas. Resultado Financeiro, Depreciação/Amortização e IR/CSLL ficam fora. BLANK se a Margem for BLANK.
+	measure 'EBITDA | Realizado' =
+			VAR _MC = [DRE | Margem de Contribuição Realizado]
+			RETURN
+			    IF ( ISBLANK ( _MC ), BLANK (), _MC + [DRE | Despesas Operacionais Realizado] + [DRE | Outras Receitas e Despesas Realizado] )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: e26889a7-b3ef-475a-b442-caa7bd4a122f
+
+	/// Fase 5 (CVM): EBIT Realizado = EBITDA + Depreciação e Amortização. Resultado Líquido = EBIT + Resultado Financeiro + IR/CSLL.
+	measure 'EBIT | Realizado' =
+			VAR _E = [EBITDA | Realizado]
+			RETURN
+			    IF ( ISBLANK ( _E ), BLANK (), _E + [DRE | Depreciação e Amortização Realizado] )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: 0930c2e6-41b0-4894-9503-72598fbb1fd7
+
+	/// Fase 5 (CVM): EBITDA Realizado no período comparável = soma de DRE | Realizado Comparável nas linhas 5, 6 e 10. BLANK se qualquer componente for BLANK (mesmas guardas de cobertura).
+	measure 'EBITDA | Realizado Comparável' =
+			VAR _MC = CALCULATE ( [DRE | Realizado Comparável], TREATAS ( { 5 }, 'vw_dre_comparativo'[ordem_dre] ) )
+			VAR _DO = CALCULATE ( [DRE | Realizado Comparável], TREATAS ( { 6 }, 'vw_dre_comparativo'[ordem_dre] ) )
+			VAR _OR = CALCULATE ( [DRE | Realizado Comparável], TREATAS ( { 10 }, 'vw_dre_comparativo'[ordem_dre] ) )
+			RETURN
+			    IF ( ISBLANK ( _MC ) || ISBLANK ( _DO ) || ISBLANK ( _OR ), BLANK (), _MC + _DO + _OR )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: 2c0017ee-e3f0-43a3-8182-08cb8e620d5a
+
+	/// Fase 5 (CVM): EBIT Realizado no período comparável = EBITDA comparável + DRE | Realizado Comparável da linha 9. BLANK se faltar componente.
+	measure 'EBIT | Realizado Comparável' =
+			VAR _E = [EBITDA | Realizado Comparável]
+			VAR _DA = CALCULATE ( [DRE | Realizado Comparável], TREATAS ( { 9 }, 'vw_dre_comparativo'[ordem_dre] ) )
+			RETURN
+			    IF ( ISBLANK ( _E ) || ISBLANK ( _DA ), BLANK (), _E + _DA )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: 2b44b7fa-3fc4-43fe-9a02-8c44b6d14371
+
+	/// Fase 5 (CVM): EBITDA Orçado = Margem de Contribuição + Despesas Operacionais + Outras Receitas e Despesas. Resultado Financeiro, Depreciação/Amortização e IR/CSLL ficam fora. BLANK se a Margem for BLANK.
+	measure 'EBITDA | Orçado' =
+			VAR _MC = [DRE | Margem de Contribuição Orçado]
+			RETURN
+			    IF ( ISBLANK ( _MC ), BLANK (), _MC + [DRE | Despesas Operacionais Orçado] + [DRE | Outras Receitas e Despesas Orçado] )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: 59568ba1-e69a-4c15-9e8c-23b5ad0cbad7
+
+	/// Fase 5 (CVM): EBIT Orçado = EBITDA + Depreciação e Amortização. Resultado Líquido = EBIT + Resultado Financeiro + IR/CSLL.
+	measure 'EBIT | Orçado' =
+			VAR _E = [EBITDA | Orçado]
+			RETURN
+			    IF ( ISBLANK ( _E ), BLANK (), _E + [DRE | Depreciação e Amortização Orçado] )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: 2ce5f973-a3ea-40db-9701-47b22b9ef855
+
+	/// Fase 5 (CVM): EBITDA Orçado no período comparável = soma de DRE | Orçado Comparável nas linhas 5, 6 e 10. BLANK se qualquer componente for BLANK (mesmas guardas de cobertura).
+	measure 'EBITDA | Orçado Comparável' =
+			VAR _MC = CALCULATE ( [DRE | Orçado Comparável], TREATAS ( { 5 }, 'vw_dre_comparativo'[ordem_dre] ) )
+			VAR _DO = CALCULATE ( [DRE | Orçado Comparável], TREATAS ( { 6 }, 'vw_dre_comparativo'[ordem_dre] ) )
+			VAR _OR = CALCULATE ( [DRE | Orçado Comparável], TREATAS ( { 10 }, 'vw_dre_comparativo'[ordem_dre] ) )
+			RETURN
+			    IF ( ISBLANK ( _MC ) || ISBLANK ( _DO ) || ISBLANK ( _OR ), BLANK (), _MC + _DO + _OR )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: 51ef2997-9f5e-458b-a393-fc97dfb7fd7a
+
+	/// Fase 5 (CVM): EBIT Orçado no período comparável = EBITDA comparável + DRE | Orçado Comparável da linha 9. BLANK se faltar componente.
+	measure 'EBIT | Orçado Comparável' =
+			VAR _E = [EBITDA | Orçado Comparável]
+			VAR _DA = CALCULATE ( [DRE | Orçado Comparável], TREATAS ( { 9 }, 'vw_dre_comparativo'[ordem_dre] ) )
+			RETURN
+			    IF ( ISBLANK ( _E ) || ISBLANK ( _DA ), BLANK (), _E + _DA )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: ba48621d-4f2e-410f-8026-8c66a362e86e
+
+	/// Fase 5 (CVM): EBITDA Previsto = Margem de Contribuição + Despesas Operacionais + Outras Receitas e Despesas. Resultado Financeiro, Depreciação/Amortização e IR/CSLL ficam fora. BLANK se a Margem for BLANK.
+	measure 'EBITDA | Previsto' =
+			VAR _MC = [DRE | Margem de Contribuição Previsto]
+			RETURN
+			    IF ( ISBLANK ( _MC ), BLANK (), _MC + [DRE | Despesas Operacionais Previsto] + [DRE | Outras Receitas e Despesas Previsto] )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: 7fbbcb5b-9193-4819-a101-18a367b785ce
+
+	/// Fase 5 (CVM): EBIT Previsto = EBITDA + Depreciação e Amortização. Resultado Líquido = EBIT + Resultado Financeiro + IR/CSLL.
+	measure 'EBIT | Previsto' =
+			VAR _E = [EBITDA | Previsto]
+			RETURN
+			    IF ( ISBLANK ( _E ), BLANK (), _E + [DRE | Depreciação e Amortização Previsto] )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: 334197a7-12ae-430f-824c-1ec48d385f6d
+
+	/// Fase 5 (CVM): EBITDA Previsto no período comparável = soma de DRE | Previsto Comparável nas linhas 5, 6 e 10. BLANK se qualquer componente for BLANK (mesmas guardas de cobertura).
+	measure 'EBITDA | Previsto Comparável' =
+			VAR _MC = CALCULATE ( [DRE | Previsto Comparável], TREATAS ( { 5 }, 'vw_dre_comparativo'[ordem_dre] ) )
+			VAR _DO = CALCULATE ( [DRE | Previsto Comparável], TREATAS ( { 6 }, 'vw_dre_comparativo'[ordem_dre] ) )
+			VAR _OR = CALCULATE ( [DRE | Previsto Comparável], TREATAS ( { 10 }, 'vw_dre_comparativo'[ordem_dre] ) )
+			RETURN
+			    IF ( ISBLANK ( _MC ) || ISBLANK ( _DO ) || ISBLANK ( _OR ), BLANK (), _MC + _DO + _OR )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: d1a3db7e-7da6-4492-be54-ba05284c3cd1
+
+	/// Fase 5 (CVM): EBIT Previsto no período comparável = EBITDA comparável + DRE | Previsto Comparável da linha 9. BLANK se faltar componente.
+	measure 'EBIT | Previsto Comparável' =
+			VAR _E = [EBITDA | Previsto Comparável]
+			VAR _DA = CALCULATE ( [DRE | Previsto Comparável], TREATAS ( { 9 }, 'vw_dre_comparativo'[ordem_dre] ) )
+			RETURN
+			    IF ( ISBLANK ( _E ) || ISBLANK ( _DA ), BLANK (), _E + _DA )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: e5e5a9cc-f328-4542-a830-55daedd1e82f
+
+	/// Fase 5: EBITDA Realizado − Orçado comparáveis. Positivo = favorável. BLANK se faltar operando.
+	measure 'EBITDA | Desvio x Orçado (R$)' =
+			VAR _R = [EBITDA | Realizado Comparável]
+			VAR _X = [EBITDA | Orçado Comparável]
+			RETURN
+			    IF ( ISBLANK ( _R ) || ISBLANK ( _X ), BLANK (), _R - _X )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: 9079d22d-409d-429d-ac1a-cef6787e3348
+
+	/// Fase 5: (EBITDA Realizado − Orçado) ÷ |Orçado| comparáveis. BLANK se faltar operando ou Orçado = 0.
+	measure 'EBITDA | Desvio x Orçado (%)' =
+			VAR _R = [EBITDA | Realizado Comparável]
+			VAR _X = [EBITDA | Orçado Comparável]
+			RETURN
+			    IF ( ISBLANK ( _R ) || ISBLANK ( _X ) || _X = 0, BLANK (), DIVIDE ( _R - _X, ABS ( _X ) ) )
+		formatString: 0.00%;(0.00%);0.00%
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: 8e94b6fd-a30a-41c3-9072-f42f1230d5b0
+
+	/// Fase 5: Favorável / Em linha (|desvio| ≤ R$ 0,01) / Desfavorável do EBITDA x Orçado. BLANK sem desvio.
+	measure 'EBITDA | Classificação x Orçado' =
+			VAR _D = [EBITDA | Desvio x Orçado (R$)]
+			RETURN
+			    SWITCH (
+			        TRUE (),
+			        ISBLANK ( _D ), BLANK (),
+			        ABS ( _D ) <= 0.01 + 0.000000001, "Em linha",
+			        _D > 0, "Favorável",
+			        "Desfavorável"
+			    )
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: 05d0a3ae-baba-4040-b782-729993bc6ca6
+
+	/// Fase 5: EBITDA Realizado − Previsto comparáveis. Positivo = favorável. BLANK se faltar operando.
+	measure 'EBITDA | Desvio x Previsto (R$)' =
+			VAR _R = [EBITDA | Realizado Comparável]
+			VAR _X = [EBITDA | Previsto Comparável]
+			RETURN
+			    IF ( ISBLANK ( _R ) || ISBLANK ( _X ), BLANK (), _R - _X )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: 6e1d9ad2-a8ce-4290-84aa-25ded7807a08
+
+	/// Fase 5: (EBITDA Realizado − Previsto) ÷ |Previsto| comparáveis. BLANK se faltar operando ou Previsto = 0.
+	measure 'EBITDA | Desvio x Previsto (%)' =
+			VAR _R = [EBITDA | Realizado Comparável]
+			VAR _X = [EBITDA | Previsto Comparável]
+			RETURN
+			    IF ( ISBLANK ( _R ) || ISBLANK ( _X ) || _X = 0, BLANK (), DIVIDE ( _R - _X, ABS ( _X ) ) )
+		formatString: 0.00%;(0.00%);0.00%
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: cf15f2b0-9c2f-4ba7-b07d-2e5106e2e97d
+
+	/// Fase 5: Favorável / Em linha (|desvio| ≤ R$ 0,01) / Desfavorável do EBITDA x Previsto. BLANK sem desvio.
+	measure 'EBITDA | Classificação x Previsto' =
+			VAR _D = [EBITDA | Desvio x Previsto (R$)]
+			RETURN
+			    SWITCH (
+			        TRUE (),
+			        ISBLANK ( _D ), BLANK (),
+			        ABS ( _D ) <= 0.01 + 0.000000001, "Em linha",
+			        _D > 0, "Favorável",
+			        "Desfavorável"
+			    )
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: 2ed7ea29-2fa2-4a84-99e6-ed5ba61053ae
+
+	/// Fase 5: cor da classificação do EBITDA x Orçado (formatação condicional).
+	measure 'EBITDA | Cor x Orçado' =
+			SWITCH (
+			    [EBITDA | Classificação x Orçado],
+			    "Favorável", "#107C10",
+			    "Desfavorável", "#C50F1F",
+			    "Em linha", "#605E5C",
+			    BLANK ()
+			)
+		isHidden
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: 5d75af4f-f52f-4591-8e41-220eab32d160
+
+	/// Fase 5: EBIT Realizado − Orçado comparáveis. Positivo = favorável. BLANK se faltar operando.
+	measure 'EBIT | Desvio x Orçado (R$)' =
+			VAR _R = [EBIT | Realizado Comparável]
+			VAR _X = [EBIT | Orçado Comparável]
+			RETURN
+			    IF ( ISBLANK ( _R ) || ISBLANK ( _X ), BLANK (), _R - _X )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: 5319ce35-7d5f-4501-8d3c-53edfcf0f8fc
+
+	/// Fase 5: (EBIT Realizado − Orçado) ÷ |Orçado| comparáveis. BLANK se faltar operando ou Orçado = 0.
+	measure 'EBIT | Desvio x Orçado (%)' =
+			VAR _R = [EBIT | Realizado Comparável]
+			VAR _X = [EBIT | Orçado Comparável]
+			RETURN
+			    IF ( ISBLANK ( _R ) || ISBLANK ( _X ) || _X = 0, BLANK (), DIVIDE ( _R - _X, ABS ( _X ) ) )
+		formatString: 0.00%;(0.00%);0.00%
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: f85ca9fd-bc60-43ed-a726-177c4a4bc8d0
+
+	/// Fase 5: Favorável / Em linha (|desvio| ≤ R$ 0,01) / Desfavorável do EBIT x Orçado. BLANK sem desvio.
+	measure 'EBIT | Classificação x Orçado' =
+			VAR _D = [EBIT | Desvio x Orçado (R$)]
+			RETURN
+			    SWITCH (
+			        TRUE (),
+			        ISBLANK ( _D ), BLANK (),
+			        ABS ( _D ) <= 0.01 + 0.000000001, "Em linha",
+			        _D > 0, "Favorável",
+			        "Desfavorável"
+			    )
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: eff906a4-7be3-46ae-8dd6-135a2f6cb10a
+
+	/// Fase 5: EBIT Realizado − Previsto comparáveis. Positivo = favorável. BLANK se faltar operando.
+	measure 'EBIT | Desvio x Previsto (R$)' =
+			VAR _R = [EBIT | Realizado Comparável]
+			VAR _X = [EBIT | Previsto Comparável]
+			RETURN
+			    IF ( ISBLANK ( _R ) || ISBLANK ( _X ), BLANK (), _R - _X )
+		formatString: R$ #,##0.00;(R$ #,##0.00);R$ 0.00
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: f78fb5a3-7eb2-42ca-a4f5-e75a506f8e2c
+
+	/// Fase 5: (EBIT Realizado − Previsto) ÷ |Previsto| comparáveis. BLANK se faltar operando ou Previsto = 0.
+	measure 'EBIT | Desvio x Previsto (%)' =
+			VAR _R = [EBIT | Realizado Comparável]
+			VAR _X = [EBIT | Previsto Comparável]
+			RETURN
+			    IF ( ISBLANK ( _R ) || ISBLANK ( _X ) || _X = 0, BLANK (), DIVIDE ( _R - _X, ABS ( _X ) ) )
+		formatString: 0.00%;(0.00%);0.00%
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: 7f1effc7-232f-44e2-bc78-7a3ef606f403
+
+	/// Fase 5: Favorável / Em linha (|desvio| ≤ R$ 0,01) / Desfavorável do EBIT x Previsto. BLANK sem desvio.
+	measure 'EBIT | Classificação x Previsto' =
+			VAR _D = [EBIT | Desvio x Previsto (R$)]
+			RETURN
+			    SWITCH (
+			        TRUE (),
+			        ISBLANK ( _D ), BLANK (),
+			        ABS ( _D ) <= 0.01 + 0.000000001, "Em linha",
+			        _D > 0, "Favorável",
+			        "Desfavorável"
+			    )
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: 85a20b13-328a-4db9-9449-ccaa5f237243
+
+	/// Fase 5: cor da classificação do EBIT x Orçado (formatação condicional).
+	measure 'EBIT | Cor x Orçado' =
+			SWITCH (
+			    [EBIT | Classificação x Orçado],
+			    "Favorável", "#107C10",
+			    "Desfavorável", "#C50F1F",
+			    "Em linha", "#605E5C",
+			    BLANK ()
+			)
+		isHidden
+		displayFolder: DRE\EBITDA e EBIT
+		lineageTag: 1ba47047-22d2-40ab-b0e4-da2d92c270ef
+
+	column _Organizacao
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 5fd6c340-935b-49e8-8bec-d981b27e327c
+		summarizeBy: none
+		sourceColumn: [_Organizacao]
+
+	partition _Medidas = calculated
+		mode: import
+		source = DATATABLE ( "_Organizacao", INTEGER, { { 0 } } )
+

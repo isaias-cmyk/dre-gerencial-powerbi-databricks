@@ -1,0 +1,24 @@
+// Somente leitura. NÃO EXECUTADO. Substituir pelo mesmo ID analítico do teste 11.
+EVALUATE
+VAR _Conta="__ID_CONTA_ANALITICA__"
+VAR _Valida=CONTAINS(ALLNOBLANKROW('dim_conta'),'dim_conta'[id_conta],_Conta)
+VAR _Periodos=DATATABLE("Periodo",STRING,"MesInicial",INTEGER,"MesFinal",INTEGER,
+ {{"2021",202101,202201},{"2022",202201,202301},{"2023_JanMai",202301,202306},{"2023_JunDez",202306,202401}})
+VAR _Filiais=SELECTCOLUMNS(ALLNOBLANKROW('dim_filial'),"Codigo",'dim_filial'[cod_filial],"Filial",'dim_filial'[filial])
+RETURN GENERATE(CROSSJOIN(_Filiais,_Periodos),
+ VAR _Cod=[Codigo]
+ VAR _MI=[MesInicial]
+ VAR _MF=[MesFinal]
+ VAR _Ini=DATE(INT(_MI/100),MOD(_MI,100),1)
+ VAR _Fim=DATE(INT(_MF/100),MOD(_MF,100),1)
+ VAR _Datas=FILTER(ALL('dim_calendario'),'dim_calendario'[data]>=_Ini && 'dim_calendario'[data]<_Fim)
+ VAR _A=CALCULATETABLE('fato_lancamentos',TREATAS({_Cod},'dim_filial'[cod_filial]),TREATAS({_Conta},'dim_conta'[id_conta]),_Datas)
+ VAR _B=FILTER(ALL('fato_lancamentos'),'fato_lancamentos'[cod_filial]=_Cod && 'fato_lancamentos'[planocontas_id]=_Conta && 'fato_lancamentos'[competencia_data]>=_Ini && 'fato_lancamentos'[competencia_data]<_Fim)
+ VAR _C=CALCULATETABLE('fato_orcamento',TREATAS({_Cod},'dim_filial'[cod_filial]),TREATAS({_Conta},'dim_conta'[id_conta]),_Datas)
+ VAR _D=FILTER(ALL('fato_orcamento'),'fato_orcamento'[cod_filial]=_Cod && 'fato_orcamento'[planocontas_id]=_Conta && 'fato_orcamento'[competencia_data]>=_Ini && 'fato_orcamento'[competencia_data]<_Fim)
+ VAR _E=CALCULATETABLE('fato_previsao',TREATAS({_Cod},'dim_filial'[cod_filial]),TREATAS({_Conta},'dim_conta'[id_conta]),_Datas)
+ VAR _F=FILTER(ALL('fato_previsao'),'fato_previsao'[cod_filial]=_Cod && 'fato_previsao'[planocontas_id]=_Conta && 'fato_previsao'[competencia_data]>=_Ini && 'fato_previsao'[competencia_data]<_Fim)
+ RETURN ROW("ParametroValido",_Valida,
+ "LancamentosVia",COUNTROWS(_A),"LancamentosDireto",COUNTROWS(_B),"LancamentosExtras",COUNTROWS(EXCEPT(_A,_B)),"LancamentosFaltantes",COUNTROWS(EXCEPT(_B,_A)),
+ "OrcamentoVia",COUNTROWS(_C),"OrcamentoDireto",COUNTROWS(_D),"OrcamentoExtras",COUNTROWS(EXCEPT(_C,_D)),"OrcamentoFaltantes",COUNTROWS(EXCEPT(_D,_C)),
+ "PrevisaoVia",COUNTROWS(_E),"PrevisaoDireto",COUNTROWS(_F),"PrevisaoExtras",COUNTROWS(EXCEPT(_E,_F)),"PrevisaoFaltantes",COUNTROWS(EXCEPT(_F,_E))))

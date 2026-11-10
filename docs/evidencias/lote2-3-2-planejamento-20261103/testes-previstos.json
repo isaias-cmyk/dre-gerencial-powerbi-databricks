@@ -1,0 +1,17 @@
+{
+  "estado": "PLANEJADO_NAO_EXECUTADO",
+  "contextos_agregados": 45,
+  "posicoes": 13,
+  "medidas_novas_previstas": 4,
+  "casos_agregados_previstos": 2340,
+  "contextos_mensais": 180,
+  "casos_mensais_previstos": 9360,
+  "casos_sinteticos": 15,
+  "guardas": 3,
+  "regressao": "Reutilizar scripts 09/14/16/17/18/19 do L2.3.1 e comparar a baseline aceita; 41 expressões devem ficar idênticas",
+  "origens_reutilizadas": [
+    "docs/evidencias/lote2-3-1-gerar-testes.py",
+    "docs/testes/lote2-3-1/15-conciliacao-databricks.sql"
+  ],
+  "consultas_executadas": 0
+}

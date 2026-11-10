@@ -1,0 +1,11 @@
+{
+  "arquivo": "B04_propriedades_gold.csv",
+  "sha256": "99E577A8716486CBCAC5E9961F21D1D9D0AE9B206A08AE05EA7D5DCCF745B385",
+  "propriedades": 20,
+  "chaves_duplicadas": 0,
+  "tableId": "544e577c-d871-46b2-8d08-5281ab2e7862",
+  "tableId_coincide_historico": true,
+  "B04": "Recebida e analisada",
+  "contrato_temporal": "Nao homologado",
+  "sql_remoto_executado_agente": 0
+}

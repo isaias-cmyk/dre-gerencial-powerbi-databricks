@@ -1,0 +1,30 @@
+Receita Operacional Bruta	1	1	Realizado	DRE | Receita Operacional Bruta Realizado	199326296.52000004	199326296.52000004	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Receita Operacional Bruta	1	2	Orçado	DRE | Receita Operacional Bruta Orçado	247514660.8499999	247514660.8499999	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Receita Operacional Bruta	1	3	Previsto	DRE | Receita Operacional Bruta Previsto	247322501.02999997	247322501.02999997	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Deduções da Receita	2	1	Realizado	DRE | Deduções da Receita Realizado	-52908485.35	-52908485.35	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Deduções da Receita	2	2	Orçado	DRE | Deduções da Receita Orçado	-65546706.95999997	-65546706.95999997	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Deduções da Receita	2	3	Previsto	DRE | Deduções da Receita Previsto	-65439748.31	-65439748.31	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Receita Operacional Líquida	3	1	Realizado	DRE | Receita Operacional Líquida Realizado	146417811.17	146417811.17	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Receita Operacional Líquida	3	2	Orçado	DRE | Receita Operacional Líquida Orçado	181967953.89000002	181967953.89000002	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Receita Operacional Líquida	3	3	Previsto	DRE | Receita Operacional Líquida Previsto	181882752.7199999	181882752.7199999	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Custos	4	1	Realizado	DRE | Custos Realizado	-93588816.06000002	-93588816.06000002	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Custos	4	2	Orçado	DRE | Custos Orçado	-116424340.03000005	-116424340.03000005	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Custos	4	3	Previsto	DRE | Custos Previsto	-116720083.27999994	-116720083.27999994	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Margem de Contribuição	5	1	Realizado	DRE | Margem de Contribuição Realizado	52828995.11000002	52828995.11000002	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Margem de Contribuição	5	2	Orçado	DRE | Margem de Contribuição Orçado	65543613.85999999	65543613.85999999	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Margem de Contribuição	5	3	Previsto	DRE | Margem de Contribuição Previsto	65162669.43999999	65162669.43999999	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Despesas Operacionais	6	1	Realizado	DRE | Despesas Operacionais Realizado	-46203238.52	-46203238.52	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Despesas Operacionais	6	2	Orçado	DRE | Despesas Operacionais Orçado	-56892053.86000002	-56892053.86000002	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Despesas Operacionais	6	3	Previsto	DRE | Despesas Operacionais Previsto	-56976331.95999997	-56976331.95999997	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Resultado Financeiro	7	1	Realizado	DRE | Resultado Financeiro Realizado	-468158.12999999983	-468158.12999999983	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Resultado Financeiro	7	2	Orçado	DRE | Resultado Financeiro Orçado	-581312.93	-581312.93	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Resultado Financeiro	7	3	Previsto	DRE | Resultado Financeiro Previsto	-581918.9000000007	-581918.9000000007	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Depreciação e Amortização	9	1	Realizado	DRE | Depreciação e Amortização Realizado	-287307.4699999999	-287307.4699999999	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Depreciação e Amortização	9	2	Orçado	DRE | Depreciação e Amortização Orçado	-360393.31000000006	-360393.31000000006	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Depreciação e Amortização	9	3	Previsto	DRE | Depreciação e Amortização Previsto	-360169.38999999984	-360169.38999999984	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Outras Receitas e Despesas	10	1	Realizado	DRE | Outras Receitas e Despesas Realizado	-150388.21	-150388.21	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Outras Receitas e Despesas	10	2	Orçado	DRE | Outras Receitas e Despesas Orçado	-190973.55999999997	-190973.55999999997	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Outras Receitas e Despesas	10	3	Previsto	DRE | Outras Receitas e Despesas Previsto	-191152.61000000013	-191152.61000000013	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Provisão para IR e CSLL	12	1	Realizado	DRE | Provisão para IR e CSLL Realizado	-681675.3899999994	-681675.3899999994	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Provisão para IR e CSLL	12	2	Orçado	DRE | Provisão para IR e CSLL Orçado	-896386.3799999997	-896386.3799999997	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK
+Provisão para IR e CSLL	12	3	Previsto	DRE | Provisão para IR e CSLL Previsto	-895165.3899999999	-895165.3899999999	Consolidado	Fri, 01 Jan 2021 00:00:00	Sun, 31 Dec 2023 00:00:00	0	false	false	true	OK

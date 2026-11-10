@@ -1,0 +1,1023 @@
+{
+  "assumptions": "Relações omitindo isActive tratadas ativas; direção única To -> From em todas. Sem runtime.",
+  "paths": [
+    {
+      "source": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "target": "dim_calendario",
+      "paths": []
+    },
+    {
+      "source": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "target": "dim_conta",
+      "paths": []
+    },
+    {
+      "source": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "target": "dim_dre",
+      "paths": []
+    },
+    {
+      "source": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "target": "dim_filial",
+      "paths": []
+    },
+    {
+      "source": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "target": "fato_lancamentos",
+      "paths": []
+    },
+    {
+      "source": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "target": "fato_orcamento",
+      "paths": []
+    },
+    {
+      "source": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "target": "fato_previsao",
+      "paths": []
+    },
+    {
+      "source": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "target": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "paths": []
+    },
+    {
+      "source": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "target": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "paths": []
+    },
+    {
+      "source": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "target": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "paths": []
+    },
+    {
+      "source": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "target": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "paths": []
+    },
+    {
+      "source": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "target": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "paths": []
+    },
+    {
+      "source": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "target": "vw_dre_comparativo",
+      "paths": []
+    },
+    {
+      "source": "dim_calendario",
+      "target": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "paths": []
+    },
+    {
+      "source": "dim_calendario",
+      "target": "dim_conta",
+      "paths": []
+    },
+    {
+      "source": "dim_calendario",
+      "target": "dim_dre",
+      "paths": []
+    },
+    {
+      "source": "dim_calendario",
+      "target": "dim_filial",
+      "paths": []
+    },
+    {
+      "source": "dim_calendario",
+      "target": "fato_lancamentos",
+      "paths": [
+        [
+          "13c78bc6-b976-df8e-f003-91414e803c01"
+        ]
+      ]
+    },
+    {
+      "source": "dim_calendario",
+      "target": "fato_orcamento",
+      "paths": [
+        [
+          "ddacb715-ec23-2d3c-a337-1083a97c680d"
+        ]
+      ]
+    },
+    {
+      "source": "dim_calendario",
+      "target": "fato_previsao",
+      "paths": [
+        [
+          "4f0276cf-4e80-7bc6-b833-a091883c1e68"
+        ]
+      ]
+    },
+    {
+      "source": "dim_calendario",
+      "target": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "paths": []
+    },
+    {
+      "source": "dim_calendario",
+      "target": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "paths": []
+    },
+    {
+      "source": "dim_calendario",
+      "target": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "paths": []
+    },
+    {
+      "source": "dim_calendario",
+      "target": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "paths": []
+    },
+    {
+      "source": "dim_calendario",
+      "target": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "paths": []
+    },
+    {
+      "source": "dim_calendario",
+      "target": "vw_dre_comparativo",
+      "paths": [
+        [
+          "eefc7d39-b405-b354-72e6-c555cb0036a4"
+        ]
+      ]
+    },
+    {
+      "source": "dim_conta",
+      "target": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "paths": []
+    },
+    {
+      "source": "dim_conta",
+      "target": "dim_calendario",
+      "paths": []
+    },
+    {
+      "source": "dim_conta",
+      "target": "dim_dre",
+      "paths": []
+    },
+    {
+      "source": "dim_conta",
+      "target": "dim_filial",
+      "paths": []
+    },
+    {
+      "source": "dim_conta",
+      "target": "fato_lancamentos",
+      "paths": [
+        [
+          "dd8569c8-c610-4c02-d15c-c2afbea55cd5"
+        ]
+      ]
+    },
+    {
+      "source": "dim_conta",
+      "target": "fato_orcamento",
+      "paths": [
+        [
+          "66e23276-0813-1463-b459-e591093be04e"
+        ]
+      ]
+    },
+    {
+      "source": "dim_conta",
+      "target": "fato_previsao",
+      "paths": [
+        [
+          "855510f8-a1e3-1f4c-4426-15e7304a95d0"
+        ]
+      ]
+    },
+    {
+      "source": "dim_conta",
+      "target": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "paths": []
+    },
+    {
+      "source": "dim_conta",
+      "target": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "paths": []
+    },
+    {
+      "source": "dim_conta",
+      "target": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "paths": []
+    },
+    {
+      "source": "dim_conta",
+      "target": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "paths": []
+    },
+    {
+      "source": "dim_conta",
+      "target": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "paths": []
+    },
+    {
+      "source": "dim_conta",
+      "target": "vw_dre_comparativo",
+      "paths": []
+    },
+    {
+      "source": "dim_dre",
+      "target": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "paths": []
+    },
+    {
+      "source": "dim_dre",
+      "target": "dim_calendario",
+      "paths": []
+    },
+    {
+      "source": "dim_dre",
+      "target": "dim_conta",
+      "paths": []
+    },
+    {
+      "source": "dim_dre",
+      "target": "dim_filial",
+      "paths": []
+    },
+    {
+      "source": "dim_dre",
+      "target": "fato_lancamentos",
+      "paths": []
+    },
+    {
+      "source": "dim_dre",
+      "target": "fato_orcamento",
+      "paths": []
+    },
+    {
+      "source": "dim_dre",
+      "target": "fato_previsao",
+      "paths": []
+    },
+    {
+      "source": "dim_dre",
+      "target": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "paths": []
+    },
+    {
+      "source": "dim_dre",
+      "target": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "paths": []
+    },
+    {
+      "source": "dim_dre",
+      "target": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "paths": []
+    },
+    {
+      "source": "dim_dre",
+      "target": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "paths": []
+    },
+    {
+      "source": "dim_dre",
+      "target": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "paths": []
+    },
+    {
+      "source": "dim_dre",
+      "target": "vw_dre_comparativo",
+      "paths": []
+    },
+    {
+      "source": "dim_filial",
+      "target": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "paths": []
+    },
+    {
+      "source": "dim_filial",
+      "target": "dim_calendario",
+      "paths": []
+    },
+    {
+      "source": "dim_filial",
+      "target": "dim_conta",
+      "paths": []
+    },
+    {
+      "source": "dim_filial",
+      "target": "dim_dre",
+      "paths": [
+        [
+          "AutoDetected_d9ec7926-13de-4e3a-beaf-9d5600fb340f"
+        ]
+      ]
+    },
+    {
+      "source": "dim_filial",
+      "target": "fato_lancamentos",
+      "paths": [
+        [
+          "AutoDetected_b9db6563-6b6a-4ed9-9873-033469b2f0ab"
+        ]
+      ]
+    },
+    {
+      "source": "dim_filial",
+      "target": "fato_orcamento",
+      "paths": [
+        [
+          "AutoDetected_cf6c4540-68ae-4da2-acca-5a3bf495a442"
+        ]
+      ]
+    },
+    {
+      "source": "dim_filial",
+      "target": "fato_previsao",
+      "paths": [
+        [
+          "AutoDetected_2a7e773f-8348-4485-ac6c-69dd9df5dab8"
+        ]
+      ]
+    },
+    {
+      "source": "dim_filial",
+      "target": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "paths": []
+    },
+    {
+      "source": "dim_filial",
+      "target": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "paths": []
+    },
+    {
+      "source": "dim_filial",
+      "target": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "paths": []
+    },
+    {
+      "source": "dim_filial",
+      "target": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "paths": []
+    },
+    {
+      "source": "dim_filial",
+      "target": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "paths": []
+    },
+    {
+      "source": "dim_filial",
+      "target": "vw_dre_comparativo",
+      "paths": [
+        [
+          "AutoDetected_2ce0342d-62e0-4df8-a023-363036b47efe"
+        ]
+      ]
+    },
+    {
+      "source": "fato_lancamentos",
+      "target": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "paths": []
+    },
+    {
+      "source": "fato_lancamentos",
+      "target": "dim_calendario",
+      "paths": []
+    },
+    {
+      "source": "fato_lancamentos",
+      "target": "dim_conta",
+      "paths": []
+    },
+    {
+      "source": "fato_lancamentos",
+      "target": "dim_dre",
+      "paths": []
+    },
+    {
+      "source": "fato_lancamentos",
+      "target": "dim_filial",
+      "paths": []
+    },
+    {
+      "source": "fato_lancamentos",
+      "target": "fato_orcamento",
+      "paths": []
+    },
+    {
+      "source": "fato_lancamentos",
+      "target": "fato_previsao",
+      "paths": []
+    },
+    {
+      "source": "fato_lancamentos",
+      "target": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "paths": []
+    },
+    {
+      "source": "fato_lancamentos",
+      "target": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "paths": []
+    },
+    {
+      "source": "fato_lancamentos",
+      "target": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "paths": []
+    },
+    {
+      "source": "fato_lancamentos",
+      "target": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "paths": []
+    },
+    {
+      "source": "fato_lancamentos",
+      "target": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "paths": []
+    },
+    {
+      "source": "fato_lancamentos",
+      "target": "vw_dre_comparativo",
+      "paths": []
+    },
+    {
+      "source": "fato_orcamento",
+      "target": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "paths": []
+    },
+    {
+      "source": "fato_orcamento",
+      "target": "dim_calendario",
+      "paths": []
+    },
+    {
+      "source": "fato_orcamento",
+      "target": "dim_conta",
+      "paths": []
+    },
+    {
+      "source": "fato_orcamento",
+      "target": "dim_dre",
+      "paths": []
+    },
+    {
+      "source": "fato_orcamento",
+      "target": "dim_filial",
+      "paths": []
+    },
+    {
+      "source": "fato_orcamento",
+      "target": "fato_lancamentos",
+      "paths": []
+    },
+    {
+      "source": "fato_orcamento",
+      "target": "fato_previsao",
+      "paths": []
+    },
+    {
+      "source": "fato_orcamento",
+      "target": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "paths": []
+    },
+    {
+      "source": "fato_orcamento",
+      "target": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "paths": []
+    },
+    {
+      "source": "fato_orcamento",
+      "target": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "paths": []
+    },
+    {
+      "source": "fato_orcamento",
+      "target": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "paths": []
+    },
+    {
+      "source": "fato_orcamento",
+      "target": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "paths": []
+    },
+    {
+      "source": "fato_orcamento",
+      "target": "vw_dre_comparativo",
+      "paths": []
+    },
+    {
+      "source": "fato_previsao",
+      "target": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "paths": []
+    },
+    {
+      "source": "fato_previsao",
+      "target": "dim_calendario",
+      "paths": []
+    },
+    {
+      "source": "fato_previsao",
+      "target": "dim_conta",
+      "paths": []
+    },
+    {
+      "source": "fato_previsao",
+      "target": "dim_dre",
+      "paths": []
+    },
+    {
+      "source": "fato_previsao",
+      "target": "dim_filial",
+      "paths": []
+    },
+    {
+      "source": "fato_previsao",
+      "target": "fato_lancamentos",
+      "paths": []
+    },
+    {
+      "source": "fato_previsao",
+      "target": "fato_orcamento",
+      "paths": []
+    },
+    {
+      "source": "fato_previsao",
+      "target": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "paths": []
+    },
+    {
+      "source": "fato_previsao",
+      "target": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "paths": []
+    },
+    {
+      "source": "fato_previsao",
+      "target": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "paths": []
+    },
+    {
+      "source": "fato_previsao",
+      "target": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "paths": []
+    },
+    {
+      "source": "fato_previsao",
+      "target": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "paths": []
+    },
+    {
+      "source": "fato_previsao",
+      "target": "vw_dre_comparativo",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "target": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "target": "dim_calendario",
+      "paths": [
+        [
+          "75b003b4-6187-4899-b2ad-e655b31b0fc9"
+        ]
+      ]
+    },
+    {
+      "source": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "target": "dim_conta",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "target": "dim_dre",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "target": "dim_filial",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "target": "fato_lancamentos",
+      "paths": [
+        [
+          "75b003b4-6187-4899-b2ad-e655b31b0fc9",
+          "13c78bc6-b976-df8e-f003-91414e803c01"
+        ]
+      ]
+    },
+    {
+      "source": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "target": "fato_orcamento",
+      "paths": [
+        [
+          "75b003b4-6187-4899-b2ad-e655b31b0fc9",
+          "ddacb715-ec23-2d3c-a337-1083a97c680d"
+        ]
+      ]
+    },
+    {
+      "source": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "target": "fato_previsao",
+      "paths": [
+        [
+          "75b003b4-6187-4899-b2ad-e655b31b0fc9",
+          "4f0276cf-4e80-7bc6-b833-a091883c1e68"
+        ]
+      ]
+    },
+    {
+      "source": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "target": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "target": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "target": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "target": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "target": "vw_dre_comparativo",
+      "paths": [
+        [
+          "75b003b4-6187-4899-b2ad-e655b31b0fc9",
+          "eefc7d39-b405-b354-72e6-c555cb0036a4"
+        ]
+      ]
+    },
+    {
+      "source": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "target": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "target": "dim_calendario",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "target": "dim_conta",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "target": "dim_dre",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "target": "dim_filial",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "target": "fato_lancamentos",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "target": "fato_orcamento",
+      "paths": [
+        [
+          "f3198452-0cec-4397-9362-2a2c270304a4"
+        ]
+      ]
+    },
+    {
+      "source": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "target": "fato_previsao",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "target": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "target": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "target": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "target": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "target": "vw_dre_comparativo",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "target": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "target": "dim_calendario",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "target": "dim_conta",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "target": "dim_dre",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "target": "dim_filial",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "target": "fato_lancamentos",
+      "paths": [
+        [
+          "6c4b7869-5380-4800-881d-7b8930dd3d29"
+        ]
+      ]
+    },
+    {
+      "source": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "target": "fato_orcamento",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "target": "fato_previsao",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "target": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "target": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "target": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "target": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "target": "vw_dre_comparativo",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "target": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "target": "dim_calendario",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "target": "dim_conta",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "target": "dim_dre",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "target": "dim_filial",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "target": "fato_lancamentos",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "target": "fato_orcamento",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "target": "fato_previsao",
+      "paths": [
+        [
+          "98d30182-d70a-4d7b-bde5-8ef769824638"
+        ]
+      ]
+    },
+    {
+      "source": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "target": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "target": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "target": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "target": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "target": "vw_dre_comparativo",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "target": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "target": "dim_calendario",
+      "paths": [
+        [
+          "dd5b6732-5fba-479d-b6f3-1936a8f1746b"
+        ]
+      ]
+    },
+    {
+      "source": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "target": "dim_conta",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "target": "dim_dre",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "target": "dim_filial",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "target": "fato_lancamentos",
+      "paths": [
+        [
+          "dd5b6732-5fba-479d-b6f3-1936a8f1746b",
+          "13c78bc6-b976-df8e-f003-91414e803c01"
+        ]
+      ]
+    },
+    {
+      "source": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "target": "fato_orcamento",
+      "paths": [
+        [
+          "dd5b6732-5fba-479d-b6f3-1936a8f1746b",
+          "ddacb715-ec23-2d3c-a337-1083a97c680d"
+        ]
+      ]
+    },
+    {
+      "source": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "target": "fato_previsao",
+      "paths": [
+        [
+          "dd5b6732-5fba-479d-b6f3-1936a8f1746b",
+          "4f0276cf-4e80-7bc6-b833-a091883c1e68"
+        ]
+      ]
+    },
+    {
+      "source": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "target": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "target": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "target": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "target": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "paths": []
+    },
+    {
+      "source": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "target": "vw_dre_comparativo",
+      "paths": [
+        [
+          "dd5b6732-5fba-479d-b6f3-1936a8f1746b",
+          "eefc7d39-b405-b354-72e6-c555cb0036a4"
+        ]
+      ]
+    },
+    {
+      "source": "vw_dre_comparativo",
+      "target": "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+      "paths": []
+    },
+    {
+      "source": "vw_dre_comparativo",
+      "target": "dim_calendario",
+      "paths": []
+    },
+    {
+      "source": "vw_dre_comparativo",
+      "target": "dim_conta",
+      "paths": []
+    },
+    {
+      "source": "vw_dre_comparativo",
+      "target": "dim_dre",
+      "paths": []
+    },
+    {
+      "source": "vw_dre_comparativo",
+      "target": "dim_filial",
+      "paths": []
+    },
+    {
+      "source": "vw_dre_comparativo",
+      "target": "fato_lancamentos",
+      "paths": []
+    },
+    {
+      "source": "vw_dre_comparativo",
+      "target": "fato_orcamento",
+      "paths": []
+    },
+    {
+      "source": "vw_dre_comparativo",
+      "target": "fato_previsao",
+      "paths": []
+    },
+    {
+      "source": "vw_dre_comparativo",
+      "target": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+      "paths": []
+    },
+    {
+      "source": "vw_dre_comparativo",
+      "target": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+      "paths": []
+    },
+    {
+      "source": "vw_dre_comparativo",
+      "target": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+      "paths": []
+    },
+    {
+      "source": "vw_dre_comparativo",
+      "target": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+      "paths": []
+    },
+    {
+      "source": "vw_dre_comparativo",
+      "target": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+      "paths": []
+    }
+  ]
+}

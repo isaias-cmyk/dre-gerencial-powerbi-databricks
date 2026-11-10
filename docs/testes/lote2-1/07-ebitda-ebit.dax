@@ -1,0 +1,13 @@
+// Lote 2.1: consulta de leitura. NÃO EXECUTADA nas medidas persistidas.
+// Executar após reabrir o PBIP atualizado; não criar medidas a partir destes testes.
+EVALUATE
+CALCULATETABLE(
+ SUMMARIZECOLUMNS('vw_dre_comparativo'[ordem_dre],'vw_dre_comparativo'[descricao_dre],
+ "LinhasFonte",COUNTROWS('vw_dre_comparativo'),
+ "RealizadoBlank",ISBLANK([DRE | Realizado]),"OrcadoBlank",ISBLANK([DRE | Orçado]),"PrevistoBlank",ISBLANK([DRE | Previsto]),
+ "RLRealizadoBlank",ISBLANK([DRE | Resultado Líquido Realizado]),
+ "RLOrcadoBlank",ISBLANK([DRE | Resultado Líquido Orçado]),
+ "RLPrevistoBlank",ISBLANK([DRE | Resultado Líquido Previsto])),
+ FILTER(ALL('vw_dre_comparativo'[descricao_dre]),CONTAINSSTRING('vw_dre_comparativo'[descricao_dre],"EBIT")))
+// Exigir as duas posições reais, EBITDA e EBIT, e todas as seis colunas Blank=TRUE.
+// Zero linhas ou um rótulo não reconhecido NÃO aprova o teste de identificação.

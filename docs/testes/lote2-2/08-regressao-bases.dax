@@ -1,0 +1,10 @@
+// Lote 2.1: consulta de leitura. NÃO EXECUTADA nas medidas persistidas.
+// Executar após reabrir o PBIP atualizado; não criar medidas a partir destes testes.
+EVALUATE
+UNION(
+ROW("Contexto","SemFiltro","BaseR",[DRE | Realizado],"BaseO",[DRE | Orçado],"BaseP",[DRE | Previsto],"RLR",[DRE | Resultado Líquido Realizado],"RLO",[DRE | Resultado Líquido Orçado],"RLP",[DRE | Resultado Líquido Previsto]),
+CALCULATETABLE(ROW("Contexto","Multiplas1e13","BaseR",[DRE | Realizado],"BaseO",[DRE | Orçado],"BaseP",[DRE | Previsto],"RLR",[DRE | Resultado Líquido Realizado],"RLO",[DRE | Resultado Líquido Orçado],"RLP",[DRE | Resultado Líquido Previsto]),TREATAS({1,13},'vw_dre_comparativo'[ordem_dre])),
+CALCULATETABLE(ROW("Contexto","Unica13","BaseR",[DRE | Realizado],"BaseO",[DRE | Orçado],"BaseP",[DRE | Previsto],"RLR",[DRE | Resultado Líquido Realizado],"RLO",[DRE | Resultado Líquido Orçado],"RLP",[DRE | Resultado Líquido Previsto]),TREATAS({13},'vw_dre_comparativo'[ordem_dre])),
+CALCULATETABLE(ROW("Contexto","Unica1","BaseR",[DRE | Realizado],"BaseO",[DRE | Orçado],"BaseP",[DRE | Previsto],"RLR",[DRE | Resultado Líquido Realizado],"RLO",[DRE | Resultado Líquido Orçado],"RLP",[DRE | Resultado Líquido Previsto]),TREATAS({1},'vw_dre_comparativo'[ordem_dre])),
+CALCULATETABLE(ROW("Contexto","SemDados","BaseR",[DRE | Realizado],"BaseO",[DRE | Orçado],"BaseP",[DRE | Previsto],"RLR",[DRE | Resultado Líquido Realizado],"RLO",[DRE | Resultado Líquido Orçado],"RLP",[DRE | Resultado Líquido Previsto]),TREATAS({999999},'vw_dre_comparativo'[ordem_dre]))
+)

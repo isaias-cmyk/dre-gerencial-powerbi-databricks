@@ -1,0 +1,26 @@
+[
+  {
+    "[Teste]": "Chave dim_filial.cod_filial",
+    "[Linhas]": 3,
+    "[ChavesDistintas]": 3,
+    "[ChavesAusentes]": null
+  },
+  {
+    "[Teste]": "Chave dim_conta.id_conta",
+    "[Linhas]": 129,
+    "[ChavesDistintas]": 129,
+    "[ChavesAusentes]": null
+  },
+  {
+    "[Teste]": "Chave dim_dre.id_dre",
+    "[Linhas]": 39,
+    "[ChavesDistintas]": 39,
+    "[ChavesAusentes]": null
+  },
+  {
+    "[Teste]": "Chave dim_calendario.data",
+    "[Linhas]": 1095,
+    "[ChavesDistintas]": 1095,
+    "[ChavesAusentes]": null
+  }
+]

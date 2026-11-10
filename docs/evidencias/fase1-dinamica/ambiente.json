@@ -1,0 +1,13 @@
+{
+  "Date": "2026-11-02T15:23:44.1801575-03:00",
+  "DocumentControlSessions": "list_document_sessions retornou No connected Codex document sessions were found",
+  "Processes": [],
+  "StandardAnalysisServicesWorkspaces": [],
+  "ToolsOnPath": [],
+  "PowerBIDesktopInstalled": true,
+  "AdomdLibraryInstalled": true,
+  "SQLQueriesExecuted": 0,
+  "DAXQueriesExecuted": 0,
+  "CredentialsReadOrChanged": false,
+  "ProductionOpenedOrRefreshed": false
+}

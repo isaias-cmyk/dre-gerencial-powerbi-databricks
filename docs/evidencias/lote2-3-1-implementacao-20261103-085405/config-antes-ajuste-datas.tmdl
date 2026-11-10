@@ -1,0 +1,78 @@
+table _ConfigCobertura
+	isHidden
+	lineageTag: 8f7223f7-a256-4d58-b793-7e6bf5f5a1e5
+
+	column cod_filial
+		dataType: string
+		isHidden
+		lineageTag: bf499477-6b42-4e21-92cd-22d066926b12
+		summarizeBy: none
+		sourceColumn: [cod_filial]
+
+	column cenario
+		dataType: string
+		isHidden
+		lineageTag: b050e134-df68-406f-a114-053025ad2b0c
+		summarizeBy: none
+		sourceColumn: [cenario]
+
+	column inicio_competencia
+		dataType: dateTime
+		isHidden
+		lineageTag: 7e347739-2b30-43fc-8c42-0769523f19dd
+		summarizeBy: none
+		sourceColumn: [inicio_competencia]
+		formatString: yyyy-MM-dd
+
+	column fim_competencia
+		dataType: dateTime
+		isHidden
+		lineageTag: 11e69232-34d4-4db7-8629-135e8579ab44
+		summarizeBy: none
+		sourceColumn: [fim_competencia]
+		formatString: yyyy-MM-dd
+
+	column versao_contrato
+		dataType: string
+		isHidden
+		lineageTag: b58494f4-be0e-4cd4-bfd2-e46cfa44c011
+		summarizeBy: none
+		sourceColumn: [versao_contrato]
+
+	column hash_base
+		dataType: string
+		isHidden
+		lineageTag: f749e365-fbca-47f8-a146-a50b7fd5c08a
+		summarizeBy: none
+		sourceColumn: [hash_base]
+
+	column estado
+		dataType: string
+		isHidden
+		lineageTag: c89411e4-0006-4244-ad50-b9ab45380c90
+		summarizeBy: none
+		sourceColumn: [estado]
+
+	partition _ConfigCobertura = calculated
+		mode: import
+		source =
+			DATATABLE (
+				"cod_filial", STRING,
+				"cenario", STRING,
+				"inicio_competencia", DATETIME,
+				"fim_competencia", DATETIME,
+				"versao_contrato", STRING,
+				"hash_base", STRING,
+				"estado", STRING,
+				{
+					{ "01", "Realizado", DATE ( 2021, 1, 1 ), DATE ( 2023, 5, 1 ), "DIDATICA-1.0-20261103", "27e02e7148984d74acdb5cf086a9ba637c55617152793f23509d3bad24bce04b", "FORNECIDO_DIDATICO" },
+					{ "01", "Orcado", DATE ( 2021, 1, 1 ), DATE ( 2023, 12, 1 ), "DIDATICA-1.0-20261103", "27e02e7148984d74acdb5cf086a9ba637c55617152793f23509d3bad24bce04b", "FORNECIDO_DIDATICO" },
+					{ "01", "Previsto", DATE ( 2021, 1, 1 ), DATE ( 2023, 12, 1 ), "DIDATICA-1.0-20261103", "27e02e7148984d74acdb5cf086a9ba637c55617152793f23509d3bad24bce04b", "FORNECIDO_DIDATICO" },
+					{ "02", "Realizado", DATE ( 2021, 1, 1 ), DATE ( 2023, 5, 1 ), "DIDATICA-1.0-20261103", "27e02e7148984d74acdb5cf086a9ba637c55617152793f23509d3bad24bce04b", "FORNECIDO_DIDATICO" },
+					{ "02", "Orcado", DATE ( 2021, 1, 1 ), DATE ( 2023, 12, 1 ), "DIDATICA-1.0-20261103", "27e02e7148984d74acdb5cf086a9ba637c55617152793f23509d3bad24bce04b", "FORNECIDO_DIDATICO" },
+					{ "02", "Previsto", DATE ( 2021, 1, 1 ), DATE ( 2023, 12, 1 ), "DIDATICA-1.0-20261103", "27e02e7148984d74acdb5cf086a9ba637c55617152793f23509d3bad24bce04b", "FORNECIDO_DIDATICO" },
+					{ "03", "Realizado", DATE ( 2021, 1, 1 ), DATE ( 2023, 5, 1 ), "DIDATICA-1.0-20261103", "27e02e7148984d74acdb5cf086a9ba637c55617152793f23509d3bad24bce04b", "FORNECIDO_DIDATICO" },
+					{ "03", "Orcado", DATE ( 2021, 1, 1 ), DATE ( 2023, 12, 1 ), "DIDATICA-1.0-20261103", "27e02e7148984d74acdb5cf086a9ba637c55617152793f23509d3bad24bce04b", "FORNECIDO_DIDATICO" },
+					{ "03", "Previsto", DATE ( 2021, 1, 1 ), DATE ( 2023, 12, 1 ), "DIDATICA-1.0-20261103", "27e02e7148984d74acdb5cf086a9ba637c55617152793f23509d3bad24bce04b", "FORNECIDO_DIDATICO" }
+				}
+			)

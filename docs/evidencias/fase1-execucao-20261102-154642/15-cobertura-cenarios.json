@@ -1,0 +1,41 @@
+[
+  {
+    "[Codigo]": "01",
+    "[Filial]": "São Paulo",
+    "[InicioRealizado]": "2021-01-01T00:00:00",
+    "[FimRealizado]": "2023-05-01T00:00:00",
+    "[InicioOrcado]": "2021-01-01T00:00:00",
+    "[FimOrcado]": "2023-12-01T00:00:00",
+    "[InicioPrevisto]": "2021-01-01T00:00:00",
+    "[FimPrevisto]": "2023-12-01T00:00:00",
+    "[CompetenciasRealizado]": 29,
+    "[CompetenciasOrcado]": 36,
+    "[CompetenciasPrevisto]": 36
+  },
+  {
+    "[Codigo]": "02",
+    "[Filial]": "Rio de Janeiro",
+    "[InicioRealizado]": "2021-01-01T00:00:00",
+    "[FimRealizado]": "2023-05-01T00:00:00",
+    "[InicioOrcado]": "2021-01-01T00:00:00",
+    "[FimOrcado]": "2023-12-01T00:00:00",
+    "[InicioPrevisto]": "2021-01-01T00:00:00",
+    "[FimPrevisto]": "2023-12-01T00:00:00",
+    "[CompetenciasRealizado]": 29,
+    "[CompetenciasOrcado]": 36,
+    "[CompetenciasPrevisto]": 36
+  },
+  {
+    "[Codigo]": "03",
+    "[Filial]": "Florianópolis",
+    "[InicioRealizado]": "2021-01-01T00:00:00",
+    "[FimRealizado]": "2023-05-01T00:00:00",
+    "[InicioOrcado]": "2021-01-01T00:00:00",
+    "[FimOrcado]": "2023-12-01T00:00:00",
+    "[InicioPrevisto]": "2021-01-01T00:00:00",
+    "[FimPrevisto]": "2023-12-01T00:00:00",
+    "[CompetenciasRealizado]": 29,
+    "[CompetenciasOrcado]": 36,
+    "[CompetenciasPrevisto]": 36
+  }
+]

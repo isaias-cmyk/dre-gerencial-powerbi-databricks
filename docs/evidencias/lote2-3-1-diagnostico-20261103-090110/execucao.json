@@ -1,0 +1,58 @@
+[
+  {
+    "File": "09-matriz-comparabilidade.dax",
+    "State": "EXECUTADO",
+    "Rows": 1755,
+    "Seconds": 35.0786337,
+    "Account": "",
+    "QuerySHA256": "9190DDAA26A111BF24D82C4A47421DFCCBCA5BB6564FAE9EB8689770311C1AB9"
+  },
+  {
+    "File": "10-configuracao-materializacao.dax",
+    "State": "EXECUTADO",
+    "Rows": 9,
+    "Seconds": 0.2009732,
+    "Account": "",
+    "QuerySHA256": "DF0BC10F7B8AD6AA2ABF14DC03348C641DE855C735335949D969C743BF8E6F72"
+  },
+  {
+    "File": "11-guardas-contexto.dax",
+    "State": "EXECUTADO",
+    "Rows": 3,
+    "Seconds": 0.9337284,
+    "Account": "",
+    "QuerySHA256": "D7BBAD9A7CA5FCDE59A826BE96F7CC1D7A3E5B900BEA536CC66F78FE79929318"
+  },
+  {
+    "File": "12-sintetico-zero.dax",
+    "State": "EXECUTADO",
+    "Rows": 1,
+    "Seconds": 0.5538527,
+    "Account": "",
+    "QuerySHA256": "C27B59D1078064B791DFC27A030D5553916E7CDD81A50FF656985EE8FAC573F4"
+  },
+  {
+    "File": "13-sintetico-blank.dax",
+    "State": "EXECUTADO",
+    "Rows": 1,
+    "Seconds": 0.3371933,
+    "Account": "",
+    "QuerySHA256": "33745A560FB167A636C154F704EA7F7117554B4BD77C33F493C5362C6D696D26"
+  },
+  {
+    "File": "16-estado-tabelas.dax",
+    "State": "EXECUTADO",
+    "Rows": 16,
+    "Seconds": 0.1235649,
+    "Account": "",
+    "QuerySHA256": "E8E235E2F7FBE8925519ABD2E969EC676AD34499C11E84ADE4293AB8D9FBBE8B"
+  },
+  {
+    "File": "17-estado-medidas.dax",
+    "State": "EXECUTADO",
+    "Rows": 41,
+    "Seconds": 0.0731443,
+    "Account": "",
+    "QuerySHA256": "87526BC58E5396ABBEDEB6B8297B2E6AF6AB739F96F3901F605AEAEDECFA8745"
+  }
+]

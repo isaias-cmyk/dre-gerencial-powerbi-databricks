@@ -1,0 +1,18 @@
+[
+  {
+    "path": "docs/evidencias/fase1-aceite-tecnico/aceite.json",
+    "sha256": "630B306E83CC747B360B952360D404BED27C19C968D547FBD08AD057E1EBDE58"
+  },
+  {
+    "path": "docs/evidencias/fase1-aceite-tecnico/baseline-protecao.json",
+    "sha256": "36CB521FFFA3017E0C3062631322C2F58335E924CA926A45D8BCC759CC86B6DE"
+  },
+  {
+    "path": "docs/evidencias/fase1-aceite-tecnico/integridade-final.json",
+    "sha256": "7F26778C037AE7D88F8EE640A4B0E78EF20BF54DA69233E0E4C81CBE92C51846"
+  },
+  {
+    "path": "docs/evidencias/fase1-aceite-tecnico/verificacao-documentacao.json",
+    "sha256": "51C23BD4F487D5AF254DA849722C44D64C1C9CF4C16F303ED14F472AA7ED4778"
+  }
+]

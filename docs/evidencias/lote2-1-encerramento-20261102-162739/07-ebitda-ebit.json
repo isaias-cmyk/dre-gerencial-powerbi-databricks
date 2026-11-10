@@ -1,0 +1,24 @@
+[
+  {
+    "vw_dre_comparativo[ordem_dre]": 11,
+    "vw_dre_comparativo[descricao_dre]": "= EBIT",
+    "[LinhasFonte]": 108,
+    "[RealizadoBlank]": true,
+    "[OrcadoBlank]": true,
+    "[PrevistoBlank]": true,
+    "[RLRealizadoBlank]": true,
+    "[RLOrcadoBlank]": true,
+    "[RLPrevistoBlank]": true
+  },
+  {
+    "vw_dre_comparativo[ordem_dre]": 8,
+    "vw_dre_comparativo[descricao_dre]": "= EBITDA",
+    "[LinhasFonte]": 108,
+    "[RealizadoBlank]": true,
+    "[OrcadoBlank]": true,
+    "[PrevistoBlank]": true,
+    "[RLRealizadoBlank]": true,
+    "[RLOrcadoBlank]": true,
+    "[RLPrevistoBlank]": true
+  }
+]

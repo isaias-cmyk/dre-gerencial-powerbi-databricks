@@ -1,0 +1,303 @@
+{
+  "origem": "DRE Moderno - Databricks.SemanticModel\\definition\\tables\\_Medidas.tmdl",
+  "sha256": "28c1ad7e8f0f90a9958647c6d1917b523f6ecbf8845a83d3e1d6b894411c30fa",
+  "medidas": [
+    {
+      "nome": "DRE | Realizado",
+      "expressao": "VAR _Descricao = SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] )\n\t\t\tRETURN\n\t\t\t\tIF (\n\t\t\t\t\tHASONEVALUE ( 'vw_dre_comparativo'[ordem_dre] )\n\t\t\t\t\t\t&& NOT ISBLANK ( _Descricao )\n\t\t\t\t\t\t&& NOT CONTAINSSTRING ( _Descricao, \"EBIT\" ),\n\t\t\t\t\tSUM ( 'vw_dre_comparativo'[realizado] ),\n\t\t\t\t\tBLANK ()\n\t\t\t\t)",
+      "dependencias": []
+    },
+    {
+      "nome": "DRE | Orçado",
+      "expressao": "VAR _Descricao = SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] )\n\t\t\tRETURN\n\t\t\t\tIF (\n\t\t\t\t\tHASONEVALUE ( 'vw_dre_comparativo'[ordem_dre] )\n\t\t\t\t\t\t&& NOT ISBLANK ( _Descricao )\n\t\t\t\t\t\t&& NOT CONTAINSSTRING ( _Descricao, \"EBIT\" ),\n\t\t\t\t\tSUM ( 'vw_dre_comparativo'[orcado] ),\n\t\t\t\t\tBLANK ()\n\t\t\t\t)",
+      "dependencias": []
+    },
+    {
+      "nome": "DRE | Previsto",
+      "expressao": "VAR _Descricao = SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] )\n\t\t\tRETURN\n\t\t\t\tIF (\n\t\t\t\t\tHASONEVALUE ( 'vw_dre_comparativo'[ordem_dre] )\n\t\t\t\t\t\t&& NOT ISBLANK ( _Descricao )\n\t\t\t\t\t\t&& NOT CONTAINSSTRING ( _Descricao, \"EBIT\" ),\n\t\t\t\t\tSUM ( 'vw_dre_comparativo'[previsto] ),\n\t\t\t\t\tBLANK ()\n\t\t\t\t)",
+      "dependencias": []
+    },
+    {
+      "nome": "DRE | Resultado Líquido Realizado",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Realizado],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 13 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Realizado"
+      ]
+    },
+    {
+      "nome": "DRE | Resultado Líquido Orçado",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Orçado],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 13 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Orçado"
+      ]
+    },
+    {
+      "nome": "DRE | Resultado Líquido Previsto",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Previsto],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 13 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Previsto"
+      ]
+    },
+    {
+      "nome": "DRE | Receita Operacional Bruta Realizado",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Realizado],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 1 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Realizado"
+      ]
+    },
+    {
+      "nome": "DRE | Receita Operacional Bruta Orçado",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Orçado],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 1 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Orçado"
+      ]
+    },
+    {
+      "nome": "DRE | Receita Operacional Bruta Previsto",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Previsto],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 1 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Previsto"
+      ]
+    },
+    {
+      "nome": "DRE | Deduções da Receita Realizado",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Realizado],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 2 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Realizado"
+      ]
+    },
+    {
+      "nome": "DRE | Deduções da Receita Orçado",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Orçado],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 2 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Orçado"
+      ]
+    },
+    {
+      "nome": "DRE | Deduções da Receita Previsto",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Previsto],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 2 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Previsto"
+      ]
+    },
+    {
+      "nome": "DRE | Receita Operacional Líquida Realizado",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Realizado],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 3 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Realizado"
+      ]
+    },
+    {
+      "nome": "DRE | Receita Operacional Líquida Orçado",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Orçado],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 3 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Orçado"
+      ]
+    },
+    {
+      "nome": "DRE | Receita Operacional Líquida Previsto",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Previsto],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 3 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Previsto"
+      ]
+    },
+    {
+      "nome": "DRE | Custos Realizado",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Realizado],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 4 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Realizado"
+      ]
+    },
+    {
+      "nome": "DRE | Custos Orçado",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Orçado],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 4 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Orçado"
+      ]
+    },
+    {
+      "nome": "DRE | Custos Previsto",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Previsto],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 4 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Previsto"
+      ]
+    },
+    {
+      "nome": "DRE | Margem de Contribuição Realizado",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Realizado],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 5 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Realizado"
+      ]
+    },
+    {
+      "nome": "DRE | Margem de Contribuição Orçado",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Orçado],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 5 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Orçado"
+      ]
+    },
+    {
+      "nome": "DRE | Margem de Contribuição Previsto",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Previsto],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 5 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Previsto"
+      ]
+    },
+    {
+      "nome": "DRE | Despesas Operacionais Realizado",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Realizado],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 6 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Realizado"
+      ]
+    },
+    {
+      "nome": "DRE | Despesas Operacionais Orçado",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Orçado],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 6 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Orçado"
+      ]
+    },
+    {
+      "nome": "DRE | Despesas Operacionais Previsto",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Previsto],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 6 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Previsto"
+      ]
+    },
+    {
+      "nome": "DRE | Resultado Financeiro Realizado",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Realizado],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 7 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Realizado"
+      ]
+    },
+    {
+      "nome": "DRE | Resultado Financeiro Orçado",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Orçado],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 7 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Orçado"
+      ]
+    },
+    {
+      "nome": "DRE | Resultado Financeiro Previsto",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Previsto],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 7 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Previsto"
+      ]
+    },
+    {
+      "nome": "DRE | Depreciação e Amortização Realizado",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Realizado],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 9 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Realizado"
+      ]
+    },
+    {
+      "nome": "DRE | Depreciação e Amortização Orçado",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Orçado],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 9 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Orçado"
+      ]
+    },
+    {
+      "nome": "DRE | Depreciação e Amortização Previsto",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Previsto],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 9 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Previsto"
+      ]
+    },
+    {
+      "nome": "DRE | Outras Receitas e Despesas Realizado",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Realizado],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 10 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Realizado"
+      ]
+    },
+    {
+      "nome": "DRE | Outras Receitas e Despesas Orçado",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Orçado],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 10 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Orçado"
+      ]
+    },
+    {
+      "nome": "DRE | Outras Receitas e Despesas Previsto",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Previsto],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 10 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Previsto"
+      ]
+    },
+    {
+      "nome": "DRE | Provisão para IR e CSLL Realizado",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Realizado],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 12 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Realizado"
+      ]
+    },
+    {
+      "nome": "DRE | Provisão para IR e CSLL Orçado",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Orçado],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 12 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Orçado"
+      ]
+    },
+    {
+      "nome": "DRE | Provisão para IR e CSLL Previsto",
+      "expressao": "CALCULATE (\n\t\t\t\t[DRE | Previsto],\n\t\t\t\tKEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 12 )\n\t\t\t)",
+      "dependencias": [
+        "DRE | Previsto"
+      ]
+    },
+    {
+      "nome": "DRE | Realizado Comparável",
+      "expressao": "VAR _Filiais = SELECTCOLUMNS ( VALUES ( 'dim_filial'[cod_filial] ), \"__Filial\", 'dim_filial'[cod_filial] )\n\t\t\tVAR _Datas = VALUES ( 'dim_calendario'[data] )\n\t\t\tVAR _Meses = SELECTCOLUMNS ( VALUES ( 'dim_calendario'[inicio_mes] ), \"__Mes\", 'dim_calendario'[inicio_mes] )\n\t\t\tVAR _Cfg = ALL ( '_ConfigCobertura' )\n\t\t\tVAR _Versao = CONCATENATEX ( DISTINCT ( '_ConfigCobertura'[versao_contrato] ), '_ConfigCobertura'[versao_contrato], \", \" )\n\t\t\tVAR _CfgInvalida =\n\t\t\t    COUNTROWS ( _Cfg ) = 0\n\t\t\t    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[versao_contrato] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1\n\t\t\t    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[hash_base] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1\n\t\t\t    || COUNTROWS ( FILTER ( _Cfg,\n\t\t\t        ISBLANK ( '_ConfigCobertura'[inicio_competencia] ) || ISBLANK ( '_ConfigCobertura'[fim_competencia] )\n\t\t\t        || '_ConfigCobertura'[inicio_competencia] > '_ConfigCobertura'[fim_competencia]\n\t\t\t        || DAY ( '_ConfigCobertura'[inicio_competencia] ) <> 1 || DAY ( '_ConfigCobertura'[fim_competencia] ) <> 1\n\t\t\t        || '_ConfigCobertura'[estado] <> \"FORNECIDO_DIDATICO\"\n\t\t\t        || ISBLANK ( '_ConfigCobertura'[versao_contrato] ) || ISBLANK ( '_ConfigCobertura'[hash_base] ) ) ) > 0\n\t\t\tVAR _MesParcial = COUNTROWS ( FILTER ( _Meses,\n\t\t\t    VAR _M = [__Mes]\n\t\t\t    RETURN COUNTROWS ( FILTER ( _Datas, 'dim_calendario'[data] >= _M && 'dim_calendario'[data] <= EOMONTH ( _M, 0 ) ) ) <> DAY ( EOMONTH ( _M, 0 ) ) ) ) > 0\n\t\t\tVAR _SemConfiguracao = COUNTROWS ( FILTER ( _Filiais,\n\t\t\t    VAR _F = [__Filial]\n\t\t\t    RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = \"Realizado\" ) ) = 0 ) ) > 0\n\t\t\tVAR _Grade = ADDCOLUMNS ( CROSSJOIN ( _Filiais, _Meses ),\n\t\t\t    \"__R\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = \"Realizado\"\n\t\t\t            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),\n\t\t\t    \"__O\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = \"Orcado\"\n\t\t\t            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),\n\t\t\t    \"__P\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = \"Previsto\"\n\t\t\t            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ) )\n\t\t\tVAR _Cortes = ADDCOLUMNS ( _Filiais, \"__Corte\",\n\t\t\t    VAR _F = [__Filial] RETURN MAXX ( FILTER ( _Grade, [__Filial] = _F && [__R] = 1 ), [__Mes] ) )\n\t\t\tVAR _SemCobertura = COUNTROWS ( FILTER ( _Cortes, ISBLANK ( [__Corte] ) ) ) > 0\n\t\t\tVAR _Corte = MINX ( _Cortes, [__Corte] )\n\t\t\tVAR _Pares = FILTER ( _Grade, NOT ISBLANK ( _Corte ) && [__Mes] <= _Corte )\n\t\t\tVAR _Lacuna = COUNTROWS ( FILTER ( _Pares, [__R] <> 1 ) ) > 0\n\t\t\tVAR _FaltaCfgO = COUNTROWS ( FILTER ( _Pares, [__O] <> 1 ) ) > 0\n\t\t\tVAR _FaltaCfgP = COUNTROWS ( FILTER ( _Pares, [__P] <> 1 ) ) > 0\n\t\t\tVAR _PosicaoValida = HASONEVALUE ( 'vw_dre_comparativo'[ordem_dre] )\n\t\t\t    && NOT ISBLANK ( SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] ) )\n\t\t\t    && NOT CONTAINSSTRING ( SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] ), \"EBIT\" )\n\t\t\tVAR _ContextoInvalido = _CfgInvalida || _SemConfiguracao || _MesParcial || _Lacuna\n\t\t\t    || COUNTROWS ( _Filiais ) = 0 || COUNTROWS ( _Meses ) = 0 || NOT _PosicaoValida\n\t\t\tVAR _Mascara = SELECTCOLUMNS ( _Pares, \"__F\", [__Filial], \"__M\", [__Mes] )\n\t\t\tVAR _Dados = ADDCOLUMNS ( _Pares,\n\t\t\t    \"__VR\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN CALCULATE ( [DRE | Realizado], KEEPFILTERS ( TREATAS ( { ( _F, _M ) }, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ),\n\t\t\t    \"__VO\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN CALCULATE ( [DRE | Orçado], KEEPFILTERS ( TREATAS ( { ( _F, _M ) }, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ),\n\t\t\t    \"__VP\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN CALCULATE ( [DRE | Previsto], KEEPFILTERS ( TREATAS ( { ( _F, _M ) }, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ) )\n\t\t\tVAR _FaltaR = COUNTROWS ( FILTER ( _Dados, ISBLANK ( [__VR] ) ) ) > 0\n\t\t\tVAR _FaltaO = _FaltaCfgO || COUNTROWS ( FILTER ( _Dados, ISBLANK ( [__VO] ) ) ) > 0\n\t\t\tVAR _FaltaP = _FaltaCfgP || COUNTROWS ( FILTER ( _Dados, ISBLANK ( [__VP] ) ) ) > 0\n\t\t\tRETURN\n\t\t\t    IF ( _ContextoInvalido || _SemCobertura || COUNTROWS ( _Pares ) = 0 || _FaltaR, BLANK (),\n\t\t\t        CALCULATE ( [DRE | Realizado], KEEPFILTERS ( TREATAS ( _Mascara, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ) )",
+      "dependencias": [
+        "DRE | Orçado",
+        "DRE | Previsto",
+        "DRE | Realizado"
+      ]
+    },
+    {
+      "nome": "DRE | Orçado Comparável",
+      "expressao": "VAR _Filiais = SELECTCOLUMNS ( VALUES ( 'dim_filial'[cod_filial] ), \"__Filial\", 'dim_filial'[cod_filial] )\n\t\t\tVAR _Datas = VALUES ( 'dim_calendario'[data] )\n\t\t\tVAR _Meses = SELECTCOLUMNS ( VALUES ( 'dim_calendario'[inicio_mes] ), \"__Mes\", 'dim_calendario'[inicio_mes] )\n\t\t\tVAR _Cfg = ALL ( '_ConfigCobertura' )\n\t\t\tVAR _Versao = CONCATENATEX ( DISTINCT ( '_ConfigCobertura'[versao_contrato] ), '_ConfigCobertura'[versao_contrato], \", \" )\n\t\t\tVAR _CfgInvalida =\n\t\t\t    COUNTROWS ( _Cfg ) = 0\n\t\t\t    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[versao_contrato] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1\n\t\t\t    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[hash_base] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1\n\t\t\t    || COUNTROWS ( FILTER ( _Cfg,\n\t\t\t        ISBLANK ( '_ConfigCobertura'[inicio_competencia] ) || ISBLANK ( '_ConfigCobertura'[fim_competencia] )\n\t\t\t        || '_ConfigCobertura'[inicio_competencia] > '_ConfigCobertura'[fim_competencia]\n\t\t\t        || DAY ( '_ConfigCobertura'[inicio_competencia] ) <> 1 || DAY ( '_ConfigCobertura'[fim_competencia] ) <> 1\n\t\t\t        || '_ConfigCobertura'[estado] <> \"FORNECIDO_DIDATICO\"\n\t\t\t        || ISBLANK ( '_ConfigCobertura'[versao_contrato] ) || ISBLANK ( '_ConfigCobertura'[hash_base] ) ) ) > 0\n\t\t\tVAR _MesParcial = COUNTROWS ( FILTER ( _Meses,\n\t\t\t    VAR _M = [__Mes]\n\t\t\t    RETURN COUNTROWS ( FILTER ( _Datas, 'dim_calendario'[data] >= _M && 'dim_calendario'[data] <= EOMONTH ( _M, 0 ) ) ) <> DAY ( EOMONTH ( _M, 0 ) ) ) ) > 0\n\t\t\tVAR _SemConfiguracao = COUNTROWS ( FILTER ( _Filiais,\n\t\t\t    VAR _F = [__Filial]\n\t\t\t    RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = \"Realizado\" ) ) = 0 ) ) > 0\n\t\t\tVAR _Grade = ADDCOLUMNS ( CROSSJOIN ( _Filiais, _Meses ),\n\t\t\t    \"__R\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = \"Realizado\"\n\t\t\t            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),\n\t\t\t    \"__O\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = \"Orcado\"\n\t\t\t            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),\n\t\t\t    \"__P\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = \"Previsto\"\n\t\t\t            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ) )\n\t\t\tVAR _Cortes = ADDCOLUMNS ( _Filiais, \"__Corte\",\n\t\t\t    VAR _F = [__Filial] RETURN MAXX ( FILTER ( _Grade, [__Filial] = _F && [__R] = 1 ), [__Mes] ) )\n\t\t\tVAR _SemCobertura = COUNTROWS ( FILTER ( _Cortes, ISBLANK ( [__Corte] ) ) ) > 0\n\t\t\tVAR _Corte = MINX ( _Cortes, [__Corte] )\n\t\t\tVAR _Pares = FILTER ( _Grade, NOT ISBLANK ( _Corte ) && [__Mes] <= _Corte )\n\t\t\tVAR _Lacuna = COUNTROWS ( FILTER ( _Pares, [__R] <> 1 ) ) > 0\n\t\t\tVAR _FaltaCfgO = COUNTROWS ( FILTER ( _Pares, [__O] <> 1 ) ) > 0\n\t\t\tVAR _FaltaCfgP = COUNTROWS ( FILTER ( _Pares, [__P] <> 1 ) ) > 0\n\t\t\tVAR _PosicaoValida = HASONEVALUE ( 'vw_dre_comparativo'[ordem_dre] )\n\t\t\t    && NOT ISBLANK ( SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] ) )\n\t\t\t    && NOT CONTAINSSTRING ( SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] ), \"EBIT\" )\n\t\t\tVAR _ContextoInvalido = _CfgInvalida || _SemConfiguracao || _MesParcial || _Lacuna\n\t\t\t    || COUNTROWS ( _Filiais ) = 0 || COUNTROWS ( _Meses ) = 0 || NOT _PosicaoValida\n\t\t\tVAR _Mascara = SELECTCOLUMNS ( _Pares, \"__F\", [__Filial], \"__M\", [__Mes] )\n\t\t\tVAR _Dados = ADDCOLUMNS ( _Pares,\n\t\t\t    \"__VR\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN CALCULATE ( [DRE | Realizado], KEEPFILTERS ( TREATAS ( { ( _F, _M ) }, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ),\n\t\t\t    \"__VO\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN CALCULATE ( [DRE | Orçado], KEEPFILTERS ( TREATAS ( { ( _F, _M ) }, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ),\n\t\t\t    \"__VP\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN CALCULATE ( [DRE | Previsto], KEEPFILTERS ( TREATAS ( { ( _F, _M ) }, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ) )\n\t\t\tVAR _FaltaR = COUNTROWS ( FILTER ( _Dados, ISBLANK ( [__VR] ) ) ) > 0\n\t\t\tVAR _FaltaO = _FaltaCfgO || COUNTROWS ( FILTER ( _Dados, ISBLANK ( [__VO] ) ) ) > 0\n\t\t\tVAR _FaltaP = _FaltaCfgP || COUNTROWS ( FILTER ( _Dados, ISBLANK ( [__VP] ) ) ) > 0\n\t\t\tRETURN\n\t\t\t    IF ( _ContextoInvalido || _SemCobertura || COUNTROWS ( _Pares ) = 0 || _FaltaR || _FaltaO, BLANK (),\n\t\t\t        CALCULATE ( [DRE | Orçado], KEEPFILTERS ( TREATAS ( _Mascara, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ) )",
+      "dependencias": [
+        "DRE | Orçado",
+        "DRE | Previsto",
+        "DRE | Realizado"
+      ]
+    },
+    {
+      "nome": "DRE | Previsto Comparável",
+      "expressao": "VAR _Filiais = SELECTCOLUMNS ( VALUES ( 'dim_filial'[cod_filial] ), \"__Filial\", 'dim_filial'[cod_filial] )\n\t\t\tVAR _Datas = VALUES ( 'dim_calendario'[data] )\n\t\t\tVAR _Meses = SELECTCOLUMNS ( VALUES ( 'dim_calendario'[inicio_mes] ), \"__Mes\", 'dim_calendario'[inicio_mes] )\n\t\t\tVAR _Cfg = ALL ( '_ConfigCobertura' )\n\t\t\tVAR _Versao = CONCATENATEX ( DISTINCT ( '_ConfigCobertura'[versao_contrato] ), '_ConfigCobertura'[versao_contrato], \", \" )\n\t\t\tVAR _CfgInvalida =\n\t\t\t    COUNTROWS ( _Cfg ) = 0\n\t\t\t    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[versao_contrato] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1\n\t\t\t    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[hash_base] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1\n\t\t\t    || COUNTROWS ( FILTER ( _Cfg,\n\t\t\t        ISBLANK ( '_ConfigCobertura'[inicio_competencia] ) || ISBLANK ( '_ConfigCobertura'[fim_competencia] )\n\t\t\t        || '_ConfigCobertura'[inicio_competencia] > '_ConfigCobertura'[fim_competencia]\n\t\t\t        || DAY ( '_ConfigCobertura'[inicio_competencia] ) <> 1 || DAY ( '_ConfigCobertura'[fim_competencia] ) <> 1\n\t\t\t        || '_ConfigCobertura'[estado] <> \"FORNECIDO_DIDATICO\"\n\t\t\t        || ISBLANK ( '_ConfigCobertura'[versao_contrato] ) || ISBLANK ( '_ConfigCobertura'[hash_base] ) ) ) > 0\n\t\t\tVAR _MesParcial = COUNTROWS ( FILTER ( _Meses,\n\t\t\t    VAR _M = [__Mes]\n\t\t\t    RETURN COUNTROWS ( FILTER ( _Datas, 'dim_calendario'[data] >= _M && 'dim_calendario'[data] <= EOMONTH ( _M, 0 ) ) ) <> DAY ( EOMONTH ( _M, 0 ) ) ) ) > 0\n\t\t\tVAR _SemConfiguracao = COUNTROWS ( FILTER ( _Filiais,\n\t\t\t    VAR _F = [__Filial]\n\t\t\t    RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = \"Realizado\" ) ) = 0 ) ) > 0\n\t\t\tVAR _Grade = ADDCOLUMNS ( CROSSJOIN ( _Filiais, _Meses ),\n\t\t\t    \"__R\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = \"Realizado\"\n\t\t\t            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),\n\t\t\t    \"__O\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = \"Orcado\"\n\t\t\t            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),\n\t\t\t    \"__P\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = \"Previsto\"\n\t\t\t            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ) )\n\t\t\tVAR _Cortes = ADDCOLUMNS ( _Filiais, \"__Corte\",\n\t\t\t    VAR _F = [__Filial] RETURN MAXX ( FILTER ( _Grade, [__Filial] = _F && [__R] = 1 ), [__Mes] ) )\n\t\t\tVAR _SemCobertura = COUNTROWS ( FILTER ( _Cortes, ISBLANK ( [__Corte] ) ) ) > 0\n\t\t\tVAR _Corte = MINX ( _Cortes, [__Corte] )\n\t\t\tVAR _Pares = FILTER ( _Grade, NOT ISBLANK ( _Corte ) && [__Mes] <= _Corte )\n\t\t\tVAR _Lacuna = COUNTROWS ( FILTER ( _Pares, [__R] <> 1 ) ) > 0\n\t\t\tVAR _FaltaCfgO = COUNTROWS ( FILTER ( _Pares, [__O] <> 1 ) ) > 0\n\t\t\tVAR _FaltaCfgP = COUNTROWS ( FILTER ( _Pares, [__P] <> 1 ) ) > 0\n\t\t\tVAR _PosicaoValida = HASONEVALUE ( 'vw_dre_comparativo'[ordem_dre] )\n\t\t\t    && NOT ISBLANK ( SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] ) )\n\t\t\t    && NOT CONTAINSSTRING ( SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] ), \"EBIT\" )\n\t\t\tVAR _ContextoInvalido = _CfgInvalida || _SemConfiguracao || _MesParcial || _Lacuna\n\t\t\t    || COUNTROWS ( _Filiais ) = 0 || COUNTROWS ( _Meses ) = 0 || NOT _PosicaoValida\n\t\t\tVAR _Mascara = SELECTCOLUMNS ( _Pares, \"__F\", [__Filial], \"__M\", [__Mes] )\n\t\t\tVAR _Dados = ADDCOLUMNS ( _Pares,\n\t\t\t    \"__VR\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN CALCULATE ( [DRE | Realizado], KEEPFILTERS ( TREATAS ( { ( _F, _M ) }, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ),\n\t\t\t    \"__VO\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN CALCULATE ( [DRE | Orçado], KEEPFILTERS ( TREATAS ( { ( _F, _M ) }, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ),\n\t\t\t    \"__VP\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN CALCULATE ( [DRE | Previsto], KEEPFILTERS ( TREATAS ( { ( _F, _M ) }, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ) )\n\t\t\tVAR _FaltaR = COUNTROWS ( FILTER ( _Dados, ISBLANK ( [__VR] ) ) ) > 0\n\t\t\tVAR _FaltaO = _FaltaCfgO || COUNTROWS ( FILTER ( _Dados, ISBLANK ( [__VO] ) ) ) > 0\n\t\t\tVAR _FaltaP = _FaltaCfgP || COUNTROWS ( FILTER ( _Dados, ISBLANK ( [__VP] ) ) ) > 0\n\t\t\tRETURN\n\t\t\t    IF ( _ContextoInvalido || _SemCobertura || COUNTROWS ( _Pares ) = 0 || _FaltaR || _FaltaP, BLANK (),\n\t\t\t        CALCULATE ( [DRE | Previsto], KEEPFILTERS ( TREATAS ( _Mascara, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ) )",
+      "dependencias": [
+        "DRE | Orçado",
+        "DRE | Previsto",
+        "DRE | Realizado"
+      ]
+    },
+    {
+      "nome": "DRE | Pares Filial-Competência Comparáveis",
+      "expressao": "VAR _Filiais = SELECTCOLUMNS ( VALUES ( 'dim_filial'[cod_filial] ), \"__Filial\", 'dim_filial'[cod_filial] )\n\t\t\tVAR _Datas = VALUES ( 'dim_calendario'[data] )\n\t\t\tVAR _Meses = SELECTCOLUMNS ( VALUES ( 'dim_calendario'[inicio_mes] ), \"__Mes\", 'dim_calendario'[inicio_mes] )\n\t\t\tVAR _Cfg = ALL ( '_ConfigCobertura' )\n\t\t\tVAR _Versao = CONCATENATEX ( DISTINCT ( '_ConfigCobertura'[versao_contrato] ), '_ConfigCobertura'[versao_contrato], \", \" )\n\t\t\tVAR _CfgInvalida =\n\t\t\t    COUNTROWS ( _Cfg ) = 0\n\t\t\t    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[versao_contrato] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1\n\t\t\t    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[hash_base] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1\n\t\t\t    || COUNTROWS ( FILTER ( _Cfg,\n\t\t\t        ISBLANK ( '_ConfigCobertura'[inicio_competencia] ) || ISBLANK ( '_ConfigCobertura'[fim_competencia] )\n\t\t\t        || '_ConfigCobertura'[inicio_competencia] > '_ConfigCobertura'[fim_competencia]\n\t\t\t        || DAY ( '_ConfigCobertura'[inicio_competencia] ) <> 1 || DAY ( '_ConfigCobertura'[fim_competencia] ) <> 1\n\t\t\t        || '_ConfigCobertura'[estado] <> \"FORNECIDO_DIDATICO\"\n\t\t\t        || ISBLANK ( '_ConfigCobertura'[versao_contrato] ) || ISBLANK ( '_ConfigCobertura'[hash_base] ) ) ) > 0\n\t\t\tVAR _MesParcial = COUNTROWS ( FILTER ( _Meses,\n\t\t\t    VAR _M = [__Mes]\n\t\t\t    RETURN COUNTROWS ( FILTER ( _Datas, 'dim_calendario'[data] >= _M && 'dim_calendario'[data] <= EOMONTH ( _M, 0 ) ) ) <> DAY ( EOMONTH ( _M, 0 ) ) ) ) > 0\n\t\t\tVAR _SemConfiguracao = COUNTROWS ( FILTER ( _Filiais,\n\t\t\t    VAR _F = [__Filial]\n\t\t\t    RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = \"Realizado\" ) ) = 0 ) ) > 0\n\t\t\tVAR _Grade = ADDCOLUMNS ( CROSSJOIN ( _Filiais, _Meses ),\n\t\t\t    \"__R\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = \"Realizado\"\n\t\t\t            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),\n\t\t\t    \"__O\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = \"Orcado\"\n\t\t\t            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),\n\t\t\t    \"__P\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = \"Previsto\"\n\t\t\t            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ) )\n\t\t\tVAR _Cortes = ADDCOLUMNS ( _Filiais, \"__Corte\",\n\t\t\t    VAR _F = [__Filial] RETURN MAXX ( FILTER ( _Grade, [__Filial] = _F && [__R] = 1 ), [__Mes] ) )\n\t\t\tVAR _SemCobertura = COUNTROWS ( FILTER ( _Cortes, ISBLANK ( [__Corte] ) ) ) > 0\n\t\t\tVAR _Corte = MINX ( _Cortes, [__Corte] )\n\t\t\tVAR _Pares = FILTER ( _Grade, NOT ISBLANK ( _Corte ) && [__Mes] <= _Corte )\n\t\t\tVAR _Lacuna = COUNTROWS ( FILTER ( _Pares, [__R] <> 1 ) ) > 0\n\t\t\tVAR _FaltaCfgO = COUNTROWS ( FILTER ( _Pares, [__O] <> 1 ) ) > 0\n\t\t\tVAR _FaltaCfgP = COUNTROWS ( FILTER ( _Pares, [__P] <> 1 ) ) > 0\n\t\t\tVAR _PosicaoValida = HASONEVALUE ( 'vw_dre_comparativo'[ordem_dre] )\n\t\t\t    && NOT ISBLANK ( SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] ) )\n\t\t\t    && NOT CONTAINSSTRING ( SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] ), \"EBIT\" )\n\t\t\tVAR _ContextoInvalido = _CfgInvalida || _SemConfiguracao || _MesParcial || _Lacuna\n\t\t\t    || COUNTROWS ( _Filiais ) = 0 || COUNTROWS ( _Meses ) = 0 || NOT _PosicaoValida\n\t\t\tVAR _Mascara = SELECTCOLUMNS ( _Pares, \"__F\", [__Filial], \"__M\", [__Mes] )\n\t\t\tVAR _Dados = ADDCOLUMNS ( _Pares,\n\t\t\t    \"__VR\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN CALCULATE ( [DRE | Realizado], KEEPFILTERS ( TREATAS ( { ( _F, _M ) }, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ),\n\t\t\t    \"__VO\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN CALCULATE ( [DRE | Orçado], KEEPFILTERS ( TREATAS ( { ( _F, _M ) }, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ),\n\t\t\t    \"__VP\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN CALCULATE ( [DRE | Previsto], KEEPFILTERS ( TREATAS ( { ( _F, _M ) }, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ) )\n\t\t\tVAR _FaltaR = COUNTROWS ( FILTER ( _Dados, ISBLANK ( [__VR] ) ) ) > 0\n\t\t\tVAR _FaltaO = _FaltaCfgO || COUNTROWS ( FILTER ( _Dados, ISBLANK ( [__VO] ) ) ) > 0\n\t\t\tVAR _FaltaP = _FaltaCfgP || COUNTROWS ( FILTER ( _Dados, ISBLANK ( [__VP] ) ) ) > 0\n\t\t\tRETURN\n\t\t\t    IF ( _ContextoInvalido, BLANK (), IF ( _SemCobertura, 0, COUNTROWS ( _Pares ) + 0 ) )",
+      "dependencias": [
+        "DRE | Orçado",
+        "DRE | Previsto",
+        "DRE | Realizado"
+      ]
+    },
+    {
+      "nome": "DRE | Status Comparabilidade",
+      "expressao": "VAR _Filiais = SELECTCOLUMNS ( VALUES ( 'dim_filial'[cod_filial] ), \"__Filial\", 'dim_filial'[cod_filial] )\n\t\t\tVAR _Datas = VALUES ( 'dim_calendario'[data] )\n\t\t\tVAR _Meses = SELECTCOLUMNS ( VALUES ( 'dim_calendario'[inicio_mes] ), \"__Mes\", 'dim_calendario'[inicio_mes] )\n\t\t\tVAR _Cfg = ALL ( '_ConfigCobertura' )\n\t\t\tVAR _Versao = CONCATENATEX ( DISTINCT ( '_ConfigCobertura'[versao_contrato] ), '_ConfigCobertura'[versao_contrato], \", \" )\n\t\t\tVAR _CfgInvalida =\n\t\t\t    COUNTROWS ( _Cfg ) = 0\n\t\t\t    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[versao_contrato] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1\n\t\t\t    || CALCULATE ( DISTINCTCOUNT ( '_ConfigCobertura'[hash_base] ), REMOVEFILTERS ( '_ConfigCobertura' ) ) <> 1\n\t\t\t    || COUNTROWS ( FILTER ( _Cfg,\n\t\t\t        ISBLANK ( '_ConfigCobertura'[inicio_competencia] ) || ISBLANK ( '_ConfigCobertura'[fim_competencia] )\n\t\t\t        || '_ConfigCobertura'[inicio_competencia] > '_ConfigCobertura'[fim_competencia]\n\t\t\t        || DAY ( '_ConfigCobertura'[inicio_competencia] ) <> 1 || DAY ( '_ConfigCobertura'[fim_competencia] ) <> 1\n\t\t\t        || '_ConfigCobertura'[estado] <> \"FORNECIDO_DIDATICO\"\n\t\t\t        || ISBLANK ( '_ConfigCobertura'[versao_contrato] ) || ISBLANK ( '_ConfigCobertura'[hash_base] ) ) ) > 0\n\t\t\tVAR _MesParcial = COUNTROWS ( FILTER ( _Meses,\n\t\t\t    VAR _M = [__Mes]\n\t\t\t    RETURN COUNTROWS ( FILTER ( _Datas, 'dim_calendario'[data] >= _M && 'dim_calendario'[data] <= EOMONTH ( _M, 0 ) ) ) <> DAY ( EOMONTH ( _M, 0 ) ) ) ) > 0\n\t\t\tVAR _SemConfiguracao = COUNTROWS ( FILTER ( _Filiais,\n\t\t\t    VAR _F = [__Filial]\n\t\t\t    RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = \"Realizado\" ) ) = 0 ) ) > 0\n\t\t\tVAR _Grade = ADDCOLUMNS ( CROSSJOIN ( _Filiais, _Meses ),\n\t\t\t    \"__R\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = \"Realizado\"\n\t\t\t            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),\n\t\t\t    \"__O\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = \"Orcado\"\n\t\t\t            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ),\n\t\t\t    \"__P\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN COUNTROWS ( FILTER ( _Cfg, '_ConfigCobertura'[cod_filial] = _F && '_ConfigCobertura'[cenario] = \"Previsto\"\n\t\t\t            && '_ConfigCobertura'[inicio_competencia] <= _M && '_ConfigCobertura'[fim_competencia] >= _M ) ) )\n\t\t\tVAR _Cortes = ADDCOLUMNS ( _Filiais, \"__Corte\",\n\t\t\t    VAR _F = [__Filial] RETURN MAXX ( FILTER ( _Grade, [__Filial] = _F && [__R] = 1 ), [__Mes] ) )\n\t\t\tVAR _SemCobertura = COUNTROWS ( FILTER ( _Cortes, ISBLANK ( [__Corte] ) ) ) > 0\n\t\t\tVAR _Corte = MINX ( _Cortes, [__Corte] )\n\t\t\tVAR _Pares = FILTER ( _Grade, NOT ISBLANK ( _Corte ) && [__Mes] <= _Corte )\n\t\t\tVAR _Lacuna = COUNTROWS ( FILTER ( _Pares, [__R] <> 1 ) ) > 0\n\t\t\tVAR _FaltaCfgO = COUNTROWS ( FILTER ( _Pares, [__O] <> 1 ) ) > 0\n\t\t\tVAR _FaltaCfgP = COUNTROWS ( FILTER ( _Pares, [__P] <> 1 ) ) > 0\n\t\t\tVAR _PosicaoValida = HASONEVALUE ( 'vw_dre_comparativo'[ordem_dre] )\n\t\t\t    && NOT ISBLANK ( SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] ) )\n\t\t\t    && NOT CONTAINSSTRING ( SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] ), \"EBIT\" )\n\t\t\tVAR _ContextoInvalido = _CfgInvalida || _SemConfiguracao || _MesParcial || _Lacuna\n\t\t\t    || COUNTROWS ( _Filiais ) = 0 || COUNTROWS ( _Meses ) = 0 || NOT _PosicaoValida\n\t\t\tVAR _Mascara = SELECTCOLUMNS ( _Pares, \"__F\", [__Filial], \"__M\", [__Mes] )\n\t\t\tVAR _Dados = ADDCOLUMNS ( _Pares,\n\t\t\t    \"__VR\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN CALCULATE ( [DRE | Realizado], KEEPFILTERS ( TREATAS ( { ( _F, _M ) }, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ),\n\t\t\t    \"__VO\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN CALCULATE ( [DRE | Orçado], KEEPFILTERS ( TREATAS ( { ( _F, _M ) }, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ),\n\t\t\t    \"__VP\", VAR _F = [__Filial] VAR _M = [__Mes]\n\t\t\t        RETURN CALCULATE ( [DRE | Previsto], KEEPFILTERS ( TREATAS ( { ( _F, _M ) }, 'vw_dre_comparativo'[cod_filial], 'vw_dre_comparativo'[competencia] ) ) ) )\n\t\t\tVAR _FaltaR = COUNTROWS ( FILTER ( _Dados, ISBLANK ( [__VR] ) ) ) > 0\n\t\t\tVAR _FaltaO = _FaltaCfgO || COUNTROWS ( FILTER ( _Dados, ISBLANK ( [__VO] ) ) ) > 0\n\t\t\tVAR _FaltaP = _FaltaCfgP || COUNTROWS ( FILTER ( _Dados, ISBLANK ( [__VP] ) ) ) > 0\n\t\t\tRETURN\n\t\t\t    \"Cobertura didática | \" & _Versao & \" | \" &\n\t\t\t    SWITCH ( TRUE (),\n\t\t\t        _CfgInvalida, \"Configuração inválida\",\n\t\t\t        _SemConfiguracao, \"Filial sem configuração\",\n\t\t\t        COUNTROWS ( _Filiais ) = 0 || COUNTROWS ( _Meses ) = 0, \"Seleção vazia\",\n\t\t\t        _MesParcial, \"Selecione meses completos\",\n\t\t\t        NOT _PosicaoValida, \"Selecione uma posição DRE elegível; EBITDA/EBIT sem cálculo\",\n\t\t\t        _Lacuna, \"Lacuna ou conflito de cobertura\",\n\t\t\t        _SemCobertura || COUNTROWS ( _Pares ) = 0, \"Sem Realizado fornecido no período selecionado\",\n\t\t\t        _FaltaR, \"Realizado ausente/incompleto na posição; cobertura não é movimento\",\n\t\t\t        _FaltaO && _FaltaP, \"Orçado e Previsto incompletos no recorte\",\n\t\t\t        _FaltaO, \"Orçado incompleto no recorte\",\n\t\t\t        _FaltaP, \"Previsto incompleto no recorte\",\n\t\t\t        COUNTROWS ( _Pares ) < COUNTROWS ( _Filiais ) * COUNTROWS ( _Meses ), \"Recorte comparável parcial; corte comum \" & FORMAT ( _Corte, \"yyyy-MM\" ),\n\t\t\t        \"Período integralmente comparável; corte comum \" & FORMAT ( _Corte, \"yyyy-MM\" ) )",
+      "dependencias": [
+        "DRE | Orçado",
+        "DRE | Previsto",
+        "DRE | Realizado"
+      ]
+    }
+  ],
+  "propostas_ainda_ausentes": [
+    "DRE | Desvio Realizado x Orçado (R$)",
+    "DRE | Desvio Realizado x Orçado (%)",
+    "DRE | Desvio Realizado x Previsto (R$)",
+    "DRE | Desvio Realizado x Previsto (%)"
+  ]
+}

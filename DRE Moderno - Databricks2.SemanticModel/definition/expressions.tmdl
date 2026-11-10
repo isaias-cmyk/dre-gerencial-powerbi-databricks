@@ -1,0 +1,12 @@
+/// Endereço do workspace Databricks (ex.: seu-workspace.cloud.databricks.com). Usado nas 8 tabelas importadas.
+expression DatabricksHost = "seu-workspace.cloud.databricks.com" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 73ad672a-9b3d-4c5d-99cf-47130b71f1b2
+
+	annotation PBI_ResultType = Text
+
+/// Caminho HTTP do SQL Warehouse Databricks (ex.: /sql/1.0/warehouses/<id>). Usado nas 8 tabelas importadas.
+expression DatabricksHttpPath = "/sql/1.0/warehouses/<warehouse-id>" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: a2515df3-5f84-4bce-95ba-a8fd222ad60b
+
+	annotation PBI_ResultType = Text
+

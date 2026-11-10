@@ -1,0 +1,38 @@
+[
+  {
+    "[Tabela]": "fato_lancamentos",
+    "[Total]": 3741,
+    "[ViaConta]": 29,
+    "[Direto]": 29,
+    "[Extras]": null,
+    "[Faltantes]": null,
+    "[ParametroValido]": true
+  },
+  {
+    "[Tabela]": "fato_orcamento",
+    "[Total]": 4644,
+    "[ViaConta]": 36,
+    "[Direto]": 36,
+    "[Extras]": null,
+    "[Faltantes]": null,
+    "[ParametroValido]": true
+  },
+  {
+    "[Tabela]": "fato_previsao",
+    "[Total]": 4644,
+    "[ViaConta]": 36,
+    "[Direto]": 36,
+    "[Extras]": null,
+    "[Faltantes]": null,
+    "[ParametroValido]": true
+  },
+  {
+    "[Tabela]": "vw_dre_comparativo",
+    "[Total]": 1404,
+    "[ViaConta]": 1404,
+    "[Direto]": 1404,
+    "[Extras]": null,
+    "[Faltantes]": null,
+    "[ParametroValido]": true
+  }
+]

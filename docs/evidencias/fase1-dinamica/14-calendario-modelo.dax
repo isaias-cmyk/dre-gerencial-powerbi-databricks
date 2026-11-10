@@ -1,0 +1,11 @@
+// Somente leitura. NÃO EXECUTADO. Não cria medidas nem marca tabela de datas.
+EVALUATE
+VAR _C = ALLNOBLANKROW('dim_calendario')
+VAR _Min = MINX(_C,'dim_calendario'[data])
+VAR _Max = MAXX(_C,'dim_calendario'[data])
+RETURN ROW("Dias",COUNTROWS(_C),"Inicio",_Min,"Fim",_Max,
+ "DiasEsperados",IF(NOT ISBLANK(_Min) && NOT ISBLANK(_Max),DATEDIFF(_Min,_Max,DAY)+1),
+ "ComHora",COUNTROWS(FILTER(_C,'dim_calendario'[data]<>INT('dim_calendario'[data]))),
+ "MetadadosIncoerentes",COUNTROWS(FILTER(_C,'dim_calendario'[ano]<>YEAR('dim_calendario'[data])
+ || 'dim_calendario'[mes]<>MONTH('dim_calendario'[data])
+ || 'dim_calendario'[inicio_mes]<>DATE(YEAR('dim_calendario'[data]),MONTH('dim_calendario'[data]),1))))

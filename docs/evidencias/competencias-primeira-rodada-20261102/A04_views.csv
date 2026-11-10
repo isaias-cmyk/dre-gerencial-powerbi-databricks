@@ -1,0 +1,271 @@
+table_catalog,table_schema,table_name,view_definition
+workspace,gold,vw_dre_provisoria,"WITH movimentos AS (
+    SELECT
+        f.cod_filial,
+        CAST(DATE_TRUNC('MONTH', f.competencia_data)
+             AS DATE) AS competencia,
+        d.ordem_dre,
+        SUM(f.valor * c.tipolancamento) AS valor
+    FROM workspace.gold.fato_lancamentos f
+    JOIN workspace.gold.dim_conta c
+        ON f.planocontas_id = c.id_conta
+    JOIN workspace.gold.dim_dre d
+        ON c.mascaradre_id = d.id_dre
+    WHERE d.subtotal = 0
+    GROUP BY
+        f.cod_filial,
+        CAST(DATE_TRUNC('MONTH', f.competencia_data)
+             AS DATE),
+        d.ordem_dre
+),
+resumo AS (
+    SELECT
+        cod_filial,
+        competencia,
+        SUM(CASE WHEN ordem_dre = 1 THEN valor ELSE 0 END) AS l1,
+        SUM(CASE WHEN ordem_dre = 2 THEN valor ELSE 0 END) AS l2,
+        SUM(CASE WHEN ordem_dre = 4 THEN valor ELSE 0 END) AS l4,
+        SUM(CASE WHEN ordem_dre = 6 THEN valor ELSE 0 END) AS l6,
+        SUM(CASE WHEN ordem_dre = 7 THEN valor ELSE 0 END) AS l7,
+        SUM(CASE WHEN ordem_dre = 9 THEN valor ELSE 0 END) AS l9,
+        SUM(CASE WHEN ordem_dre = 10 THEN valor ELSE 0 END) AS l10,
+        SUM(CASE WHEN ordem_dre = 12 THEN valor ELSE 0 END) AS l12
+    FROM movimentos
+    GROUP BY cod_filial, competencia
+),
+dre_calculada AS (
+    SELECT
+        r.cod_filial,
+        r.competencia,
+        d.ordem_dre,
+        d.descricao_dre,
+        d.subtotal,
+        CASE d.ordem_dre
+            WHEN 1 THEN r.l1
+            WHEN 2 THEN r.l2
+            WHEN 3 THEN r.l1 + r.l2
+            WHEN 4 THEN r.l4
+            WHEN 5 THEN r.l1 + r.l2 + r.l4
+            WHEN 6 THEN r.l6
+            WHEN 7 THEN r.l7
+            WHEN 8 THEN NULL
+            WHEN 9 THEN r.l9
+            WHEN 10 THEN r.l10
+            WHEN 11 THEN NULL
+            WHEN 12 THEN r.l12
+            WHEN 13 THEN
+                r.l1 + r.l2 + r.l4 + r.l6
+                + r.l7 + r.l9 + r.l10 + r.l12
+        END AS valor_dre
+    FROM resumo r
+    JOIN workspace.gold.dim_dre d
+        ON r.cod_filial = d.cod_filial
+)
+SELECT
+    f.filial,
+    d.competencia,
+    YEAR(d.competencia) AS ano,
+    d.ordem_dre,
+    d.descricao_dre,
+    d.subtotal,
+    ROUND(d.valor_dre, 2) AS valor_dre
+FROM dre_calculada d
+JOIN workspace.gold.dim_filial f
+    ON d.cod_filial = f.cod_filial"
+workspace,gold,vw_financeiro_comparativo,"WITH cenarios AS (
+    SELECT
+        'Realizado' AS cenario,
+        cod_filial,
+        competencia_data,
+        planocontas_id,
+        valor
+    FROM workspace.gold.fato_lancamentos
+
+    UNION ALL
+
+    SELECT
+        'Orçamento',
+        cod_filial,
+        competencia_data,
+        planocontas_id,
+        valor
+    FROM workspace.gold.fato_orcamento
+
+    UNION ALL
+
+    SELECT
+        'Previsão',
+        cod_filial,
+        competencia_data,
+        planocontas_id,
+        valor
+    FROM workspace.gold.fato_previsao
+),
+base AS (
+    SELECT
+        f.cenario,
+        f.cod_filial,
+        CAST(DATE_TRUNC('MONTH', f.competencia_data)
+             AS DATE) AS competencia,
+        f.planocontas_id,
+        c.mascaradre_id,
+        f.valor * c.tipolancamento AS valor_ajustado
+    FROM cenarios f
+    JOIN workspace.gold.dim_conta c
+        ON f.planocontas_id = c.id_conta
+),
+resumo AS (
+    SELECT
+        cod_filial,
+        competencia,
+        planocontas_id,
+        mascaradre_id,
+        SUM(CASE WHEN cenario = 'Realizado'
+                 THEN valor_ajustado END) AS realizado,
+        SUM(CASE WHEN cenario = 'Orçamento'
+                 THEN valor_ajustado END) AS orcado,
+        SUM(CASE WHEN cenario = 'Previsão'
+                 THEN valor_ajustado END) AS previsto
+    FROM base
+    GROUP BY
+        cod_filial,
+        competencia,
+        planocontas_id,
+        mascaradre_id
+)
+SELECT
+    r.*,
+    CASE
+        WHEN r.realizado IS NOT NULL AND r.orcado IS NOT NULL
+        THEN r.realizado - r.orcado
+    END AS desvio_orcamento,
+    CASE
+        WHEN r.realizado IS NOT NULL
+         AND r.orcado IS NOT NULL
+         AND r.orcado <> 0
+        THEN (r.realizado - r.orcado) / ABS(r.orcado)
+    END AS desvio_orcamento_pct
+FROM resumo r"
+workspace,gold,vw_dre_comparativo,"WITH fontes AS (
+    SELECT
+        'Realizado' AS cenario,
+        cod_filial,
+        competencia_data,
+        planocontas_id,
+        valor
+    FROM workspace.gold.fato_lancamentos
+
+    UNION ALL
+
+    SELECT
+        'Orcamento',
+        cod_filial,
+        competencia_data,
+        planocontas_id,
+        valor
+    FROM workspace.gold.fato_orcamento
+
+    UNION ALL
+
+    SELECT
+        'Previsao',
+        cod_filial,
+        competencia_data,
+        planocontas_id,
+        valor
+    FROM workspace.gold.fato_previsao
+),
+movimentos AS (
+    SELECT
+        f.cenario,
+        f.cod_filial,
+        CAST(DATE_TRUNC('MONTH', f.competencia_data) AS DATE)
+            AS competencia,
+        d.ordem_dre,
+        f.valor * c.tipolancamento AS valor_ajustado
+    FROM fontes f
+    JOIN workspace.gold.dim_conta c
+        ON f.planocontas_id = c.id_conta
+    JOIN workspace.gold.dim_dre d
+        ON c.mascaradre_id = d.id_dre
+    WHERE d.subtotal = 0
+),
+grupos AS (
+    SELECT
+        cenario,
+        cod_filial,
+        competencia,
+        ordem_dre,
+        SUM(valor_ajustado) AS valor
+    FROM movimentos
+    GROUP BY cenario, cod_filial, competencia, ordem_dre
+),
+resumo AS (
+    SELECT
+        cenario,
+        cod_filial,
+        competencia,
+        SUM(CASE WHEN ordem_dre = 1 THEN valor ELSE 0 END) AS l1,
+        SUM(CASE WHEN ordem_dre = 2 THEN valor ELSE 0 END) AS l2,
+        SUM(CASE WHEN ordem_dre = 4 THEN valor ELSE 0 END) AS l4,
+        SUM(CASE WHEN ordem_dre = 6 THEN valor ELSE 0 END) AS l6,
+        SUM(CASE WHEN ordem_dre = 7 THEN valor ELSE 0 END) AS l7,
+        SUM(CASE WHEN ordem_dre = 9 THEN valor ELSE 0 END) AS l9,
+        SUM(CASE WHEN ordem_dre = 10 THEN valor ELSE 0 END) AS l10,
+        SUM(CASE WHEN ordem_dre = 12 THEN valor ELSE 0 END) AS l12
+    FROM grupos
+    GROUP BY cenario, cod_filial, competencia
+),
+calculo AS (
+    SELECT
+        r.cenario,
+        r.cod_filial,
+        r.competencia,
+        d.ordem_dre,
+        d.descricao_dre,
+        d.subtotal,
+        CASE d.ordem_dre
+            WHEN 1 THEN r.l1
+            WHEN 2 THEN r.l2
+            WHEN 3 THEN r.l1 + r.l2
+            WHEN 4 THEN r.l4
+            WHEN 5 THEN r.l1 + r.l2 + r.l4
+            WHEN 6 THEN r.l6
+            WHEN 7 THEN r.l7
+            WHEN 8 THEN NULL
+            WHEN 9 THEN r.l9
+            WHEN 10 THEN r.l10
+            WHEN 11 THEN NULL
+            WHEN 12 THEN r.l12
+            WHEN 13 THEN r.l1 + r.l2 + r.l4 + r.l6
+                         + r.l7 + r.l9 + r.l10 + r.l12
+        END AS valor_dre
+    FROM resumo r
+    JOIN workspace.gold.dim_dre d
+        ON r.cod_filial = d.cod_filial
+)
+SELECT
+    d.cod_filial,
+    f.filial,
+    d.competencia,
+    YEAR(d.competencia) AS ano,
+    d.ordem_dre,
+    d.descricao_dre,
+    d.subtotal,
+    MAX(CASE WHEN cenario = 'Realizado'
+             THEN valor_dre END) AS realizado,
+    MAX(CASE WHEN cenario = 'Orcamento'
+             THEN valor_dre END) AS orcado,
+    MAX(CASE WHEN cenario = 'Previsao'
+             THEN valor_dre END) AS previsto
+FROM calculo d
+JOIN workspace.gold.dim_filial f
+    ON d.cod_filial = f.cod_filial
+GROUP BY
+    d.cod_filial,
+    f.filial,
+    d.competencia,
+    YEAR(d.competencia),
+    d.ordem_dre,
+    d.descricao_dre,
+    d.subtotal"

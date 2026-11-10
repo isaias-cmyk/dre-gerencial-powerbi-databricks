@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "des0nota00000000000g",
+  "position": {
+    "x": 24,
+    "y": 836,
+    "z": 7,
+    "height": 90,
+    "width": 1872,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Linhas 4 (Custos), 6 (Despesas Operacionais), 7 (Resultado Financeiro), 9 (Depreciação e Amortização), 10 (Outras Receitas e Despesas) e 12 (IR e CSLL). Sinal da DRE: gastos negativos; desvio positivo = gastou menos que o orçado (favorável). Valores comparáveis: somente meses com Realizado em todas as filiais selecionadas (Realizado até 2023-05). Em linha = |desvio| ≤ R$ 0,01.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#605E5C"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Nota explicativa: Linhas 4 (Custos), 6 (Despesas Operacionais), 7 (Resultado Financeiro), 9 (Depreciação e Amortização), 10 (Outras Receitas e Despesas) e 12 (IR e CSLL). Sinal da DRE: gastos negativos; desvio positivo = gastou menos que o orçado ...'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

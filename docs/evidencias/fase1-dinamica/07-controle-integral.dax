@@ -1,0 +1,10 @@
+// FASE 1. Consulta somente leitura, NÃO EXECUTADA neste ambiente. Não cria medidas.
+EVALUATE
+VAR _R = CALCULATE(SUM('vw_dre_comparativo'[realizado]), 'vw_dre_comparativo'[ordem_dre]=13)
+VAR _O = CALCULATE(SUM('vw_dre_comparativo'[orcado]), 'vw_dre_comparativo'[ordem_dre]=13)
+VAR _P = CALCULATE(SUM('vw_dre_comparativo'[previsto]), 'vw_dre_comparativo'[ordem_dre]=13)
+RETURN ROW("OrdemDRE",13,"Realizado",_R,"Orcado",_O,"Previsto",_P,
+ "DifRealizado",IF(NOT ISBLANK(_R),ROUND(_R,2)-5038227.39),
+ "DifOrcado",IF(NOT ISBLANK(_O),ROUND(_O,2)-6622493.82),
+ "DifPrevisto",IF(NOT ISBLANK(_P),ROUND(_P,2)-6157931.19),
+ "DadosPresentes",NOT ISBLANK(_R) && NOT ISBLANK(_O) && NOT ISBLANK(_P))

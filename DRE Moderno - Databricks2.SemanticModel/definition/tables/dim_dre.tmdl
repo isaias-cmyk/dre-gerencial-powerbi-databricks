@@ -1,0 +1,67 @@
+table dim_dre
+	isHidden
+	lineageTag: 49ab9dde-6ff7-466b-839c-c775272c46dd
+
+	column id_dre
+		dataType: string
+		lineageTag: 2135efe6-ec4f-4101-abf8-b0d0a121e83e
+		summarizeBy: none
+		sourceColumn: id_dre
+
+		annotation SummarizationSetBy = Automatic
+
+	column ordem_dre
+		dataType: int64
+		formatString: 0
+		lineageTag: ebae7f33-d068-4ded-9778-28575f2ae6a1
+		summarizeBy: none
+		sourceColumn: ordem_dre
+
+		annotation SummarizationSetBy = Automatic
+
+	column descricao_dre
+		dataType: string
+		lineageTag: ada1a8ca-36b6-4a1c-8837-ec14e158d134
+		summarizeBy: none
+		sourceColumn: descricao_dre
+
+		annotation SummarizationSetBy = Automatic
+
+	column subtotal
+		dataType: int64
+		formatString: 0
+		lineageTag: 9553fa55-afcc-4b10-a861-1e9ff64d2a13
+		summarizeBy: none
+		sourceColumn: subtotal
+
+		annotation SummarizationSetBy = Automatic
+
+	column filial
+		dataType: string
+		lineageTag: 9376ad36-290d-4f86-a900-b23d8a00cf5e
+		summarizeBy: none
+		sourceColumn: filial
+
+		annotation SummarizationSetBy = Automatic
+
+	column cod_filial
+		dataType: string
+		lineageTag: 98785d84-e0ba-4605-9b75-75d476ad5cbd
+		summarizeBy: none
+		sourceColumn: cod_filial
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_dre = m
+		mode: import
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs(DatabricksHost, DatabricksHttpPath, [Catalog=null, Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null, Protocol=null]),
+				    workspace_Database = Source{[Name="workspace",Kind="Database"]}[Data],
+				    gold_Schema = workspace_Database{[Name="gold",Kind="Schema"]}[Data],
+				    dim_dre_Table = gold_Schema{[Name="dim_dre",Kind="Table"]}[Data]
+				in
+				    dim_dre_Table
+
+	annotation PBI_ResultType = Table
+

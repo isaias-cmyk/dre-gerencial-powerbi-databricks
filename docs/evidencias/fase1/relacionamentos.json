@@ -1,0 +1,422 @@
+[
+  {
+    "id": "dd5b6732-5fba-479d-b6f3-1936a8f1746b",
+    "line": 1,
+    "from": "dim_calendario.data",
+    "to": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504.Date",
+    "technical": true,
+    "properties": {
+      "joinOnDateBehavior": "datePartOnly",
+      "fromColumn": "dim_calendario.data",
+      "toColumn": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504.Date"
+    },
+    "activeExplicit": null,
+    "activeAssumedForGraph": true,
+    "cardinalityDeclared": [
+      null,
+      null
+    ],
+    "directionDeclared": null,
+    "fromExists": true,
+    "toExists": true,
+    "fromType": "dateTime",
+    "toType": "dateTime",
+    "typesMatch": true
+  },
+  {
+    "id": "75b003b4-6187-4899-b2ad-e655b31b0fc9",
+    "line": 6,
+    "from": "dim_calendario.inicio_mes",
+    "to": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d.Date",
+    "technical": true,
+    "properties": {
+      "joinOnDateBehavior": "datePartOnly",
+      "fromColumn": "dim_calendario.inicio_mes",
+      "toColumn": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d.Date"
+    },
+    "activeExplicit": null,
+    "activeAssumedForGraph": true,
+    "cardinalityDeclared": [
+      null,
+      null
+    ],
+    "directionDeclared": null,
+    "fromExists": true,
+    "toExists": true,
+    "fromType": "dateTime",
+    "toType": "dateTime",
+    "typesMatch": true
+  },
+  {
+    "id": "6c4b7869-5380-4800-881d-7b8930dd3d29",
+    "line": 11,
+    "from": "fato_lancamentos._data_ingestao",
+    "to": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b.Date",
+    "technical": true,
+    "properties": {
+      "joinOnDateBehavior": "datePartOnly",
+      "fromColumn": "fato_lancamentos._data_ingestao",
+      "toColumn": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b.Date"
+    },
+    "activeExplicit": null,
+    "activeAssumedForGraph": true,
+    "cardinalityDeclared": [
+      null,
+      null
+    ],
+    "directionDeclared": null,
+    "fromExists": true,
+    "toExists": true,
+    "fromType": "dateTime",
+    "toType": "dateTime",
+    "typesMatch": true
+  },
+  {
+    "id": "f3198452-0cec-4397-9362-2a2c270304a4",
+    "line": 16,
+    "from": "fato_orcamento._data_ingestao",
+    "to": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531.Date",
+    "technical": true,
+    "properties": {
+      "joinOnDateBehavior": "datePartOnly",
+      "fromColumn": "fato_orcamento._data_ingestao",
+      "toColumn": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531.Date"
+    },
+    "activeExplicit": null,
+    "activeAssumedForGraph": true,
+    "cardinalityDeclared": [
+      null,
+      null
+    ],
+    "directionDeclared": null,
+    "fromExists": true,
+    "toExists": true,
+    "fromType": "dateTime",
+    "toType": "dateTime",
+    "typesMatch": true
+  },
+  {
+    "id": "98d30182-d70a-4d7b-bde5-8ef769824638",
+    "line": 21,
+    "from": "fato_previsao._data_ingestao",
+    "to": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3.Date",
+    "technical": true,
+    "properties": {
+      "joinOnDateBehavior": "datePartOnly",
+      "fromColumn": "fato_previsao._data_ingestao",
+      "toColumn": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3.Date"
+    },
+    "activeExplicit": null,
+    "activeAssumedForGraph": true,
+    "cardinalityDeclared": [
+      null,
+      null
+    ],
+    "directionDeclared": null,
+    "fromExists": true,
+    "toExists": true,
+    "fromType": "dateTime",
+    "toType": "dateTime",
+    "typesMatch": true
+  },
+  {
+    "id": "AutoDetected_b803a55e-b318-4f25-80e8-6068d5cedb12",
+    "line": 26,
+    "from": "dim_conta.cod_filial",
+    "to": "dim_filial.cod_filial",
+    "technical": false,
+    "properties": {
+      "isActive": "false",
+      "fromColumn": "dim_conta.cod_filial",
+      "toColumn": "dim_filial.cod_filial"
+    },
+    "activeExplicit": "false",
+    "activeAssumedForGraph": false,
+    "cardinalityDeclared": [
+      null,
+      null
+    ],
+    "directionDeclared": null,
+    "fromExists": true,
+    "toExists": true,
+    "fromType": "string",
+    "toType": "string",
+    "typesMatch": true
+  },
+  {
+    "id": "AutoDetected_d9ec7926-13de-4e3a-beaf-9d5600fb340f",
+    "line": 31,
+    "from": "dim_dre.cod_filial",
+    "to": "dim_filial.cod_filial",
+    "technical": false,
+    "properties": {
+      "fromColumn": "dim_dre.cod_filial",
+      "toColumn": "dim_filial.cod_filial"
+    },
+    "activeExplicit": null,
+    "activeAssumedForGraph": true,
+    "cardinalityDeclared": [
+      null,
+      null
+    ],
+    "directionDeclared": null,
+    "fromExists": true,
+    "toExists": true,
+    "fromType": "string",
+    "toType": "string",
+    "typesMatch": true
+  },
+  {
+    "id": "AutoDetected_b9db6563-6b6a-4ed9-9873-033469b2f0ab",
+    "line": 35,
+    "from": "fato_lancamentos.cod_filial",
+    "to": "dim_filial.cod_filial",
+    "technical": false,
+    "properties": {
+      "fromColumn": "fato_lancamentos.cod_filial",
+      "toColumn": "dim_filial.cod_filial"
+    },
+    "activeExplicit": null,
+    "activeAssumedForGraph": true,
+    "cardinalityDeclared": [
+      null,
+      null
+    ],
+    "directionDeclared": null,
+    "fromExists": true,
+    "toExists": true,
+    "fromType": "string",
+    "toType": "string",
+    "typesMatch": true
+  },
+  {
+    "id": "AutoDetected_cf6c4540-68ae-4da2-acca-5a3bf495a442",
+    "line": 39,
+    "from": "fato_orcamento.cod_filial",
+    "to": "dim_filial.cod_filial",
+    "technical": false,
+    "properties": {
+      "fromColumn": "fato_orcamento.cod_filial",
+      "toColumn": "dim_filial.cod_filial"
+    },
+    "activeExplicit": null,
+    "activeAssumedForGraph": true,
+    "cardinalityDeclared": [
+      null,
+      null
+    ],
+    "directionDeclared": null,
+    "fromExists": true,
+    "toExists": true,
+    "fromType": "string",
+    "toType": "string",
+    "typesMatch": true
+  },
+  {
+    "id": "AutoDetected_2a7e773f-8348-4485-ac6c-69dd9df5dab8",
+    "line": 43,
+    "from": "fato_previsao.cod_filial",
+    "to": "dim_filial.cod_filial",
+    "technical": false,
+    "properties": {
+      "fromColumn": "fato_previsao.cod_filial",
+      "toColumn": "dim_filial.cod_filial"
+    },
+    "activeExplicit": null,
+    "activeAssumedForGraph": true,
+    "cardinalityDeclared": [
+      null,
+      null
+    ],
+    "directionDeclared": null,
+    "fromExists": true,
+    "toExists": true,
+    "fromType": "string",
+    "toType": "string",
+    "typesMatch": true
+  },
+  {
+    "id": "AutoDetected_2ce0342d-62e0-4df8-a023-363036b47efe",
+    "line": 47,
+    "from": "vw_dre_comparativo.cod_filial",
+    "to": "dim_filial.cod_filial",
+    "technical": false,
+    "properties": {
+      "fromColumn": "vw_dre_comparativo.cod_filial",
+      "toColumn": "dim_filial.cod_filial"
+    },
+    "activeExplicit": null,
+    "activeAssumedForGraph": true,
+    "cardinalityDeclared": [
+      null,
+      null
+    ],
+    "directionDeclared": null,
+    "fromExists": true,
+    "toExists": true,
+    "fromType": "string",
+    "toType": "string",
+    "typesMatch": true
+  },
+  {
+    "id": "13c78bc6-b976-df8e-f003-91414e803c01",
+    "line": 51,
+    "from": "fato_lancamentos.competencia_data",
+    "to": "dim_calendario.data",
+    "technical": false,
+    "properties": {
+      "fromColumn": "fato_lancamentos.competencia_data",
+      "toColumn": "dim_calendario.data"
+    },
+    "activeExplicit": null,
+    "activeAssumedForGraph": true,
+    "cardinalityDeclared": [
+      null,
+      null
+    ],
+    "directionDeclared": null,
+    "fromExists": true,
+    "toExists": true,
+    "fromType": "dateTime",
+    "toType": "dateTime",
+    "typesMatch": true
+  },
+  {
+    "id": "ddacb715-ec23-2d3c-a337-1083a97c680d",
+    "line": 55,
+    "from": "fato_orcamento.competencia_data",
+    "to": "dim_calendario.data",
+    "technical": false,
+    "properties": {
+      "fromColumn": "fato_orcamento.competencia_data",
+      "toColumn": "dim_calendario.data"
+    },
+    "activeExplicit": null,
+    "activeAssumedForGraph": true,
+    "cardinalityDeclared": [
+      null,
+      null
+    ],
+    "directionDeclared": null,
+    "fromExists": true,
+    "toExists": true,
+    "fromType": "dateTime",
+    "toType": "dateTime",
+    "typesMatch": true
+  },
+  {
+    "id": "4f0276cf-4e80-7bc6-b833-a091883c1e68",
+    "line": 59,
+    "from": "fato_previsao.competencia_data",
+    "to": "dim_calendario.data",
+    "technical": false,
+    "properties": {
+      "fromColumn": "fato_previsao.competencia_data",
+      "toColumn": "dim_calendario.data"
+    },
+    "activeExplicit": null,
+    "activeAssumedForGraph": true,
+    "cardinalityDeclared": [
+      null,
+      null
+    ],
+    "directionDeclared": null,
+    "fromExists": true,
+    "toExists": true,
+    "fromType": "dateTime",
+    "toType": "dateTime",
+    "typesMatch": true
+  },
+  {
+    "id": "eefc7d39-b405-b354-72e6-c555cb0036a4",
+    "line": 63,
+    "from": "vw_dre_comparativo.competencia",
+    "to": "dim_calendario.data",
+    "technical": false,
+    "properties": {
+      "fromColumn": "vw_dre_comparativo.competencia",
+      "toColumn": "dim_calendario.data"
+    },
+    "activeExplicit": null,
+    "activeAssumedForGraph": true,
+    "cardinalityDeclared": [
+      null,
+      null
+    ],
+    "directionDeclared": null,
+    "fromExists": true,
+    "toExists": true,
+    "fromType": "dateTime",
+    "toType": "dateTime",
+    "typesMatch": true
+  },
+  {
+    "id": "dd8569c8-c610-4c02-d15c-c2afbea55cd5",
+    "line": 67,
+    "from": "fato_lancamentos.planocontas_id",
+    "to": "dim_conta.id_conta",
+    "technical": false,
+    "properties": {
+      "fromColumn": "fato_lancamentos.planocontas_id",
+      "toColumn": "dim_conta.id_conta"
+    },
+    "activeExplicit": null,
+    "activeAssumedForGraph": true,
+    "cardinalityDeclared": [
+      null,
+      null
+    ],
+    "directionDeclared": null,
+    "fromExists": true,
+    "toExists": true,
+    "fromType": "string",
+    "toType": "string",
+    "typesMatch": true
+  },
+  {
+    "id": "66e23276-0813-1463-b459-e591093be04e",
+    "line": 71,
+    "from": "fato_orcamento.planocontas_id",
+    "to": "dim_conta.id_conta",
+    "technical": false,
+    "properties": {
+      "fromColumn": "fato_orcamento.planocontas_id",
+      "toColumn": "dim_conta.id_conta"
+    },
+    "activeExplicit": null,
+    "activeAssumedForGraph": true,
+    "cardinalityDeclared": [
+      null,
+      null
+    ],
+    "directionDeclared": null,
+    "fromExists": true,
+    "toExists": true,
+    "fromType": "string",
+    "toType": "string",
+    "typesMatch": true
+  },
+  {
+    "id": "855510f8-a1e3-1f4c-4426-15e7304a95d0",
+    "line": 75,
+    "from": "fato_previsao.planocontas_id",
+    "to": "dim_conta.id_conta",
+    "technical": false,
+    "properties": {
+      "fromColumn": "fato_previsao.planocontas_id",
+      "toColumn": "dim_conta.id_conta"
+    },
+    "activeExplicit": null,
+    "activeAssumedForGraph": true,
+    "cardinalityDeclared": [
+      null,
+      null
+    ],
+    "directionDeclared": null,
+    "fromExists": true,
+    "toExists": true,
+    "fromType": "string",
+    "toType": "string",
+    "typesMatch": true
+  }
+]

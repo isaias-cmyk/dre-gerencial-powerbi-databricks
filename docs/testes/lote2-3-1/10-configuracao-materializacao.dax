@@ -1,0 +1,5 @@
+-- Consultas somente leitura; não atualizam nem salvam o modelo.
+EVALUATE '_ConfigCobertura'
+EVALUATE INFO.VIEW.MEASURES()
+EVALUATE INFO.VIEW.RELATIONSHIPS()
+EVALUATE INFO.VIEW.TABLES()

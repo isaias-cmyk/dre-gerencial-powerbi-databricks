@@ -1,0 +1,13 @@
+{
+  "pares": 108,
+  "com_lancamentos": 87,
+  "sem_lancamentos_observados": 21,
+  "certificacoes_completude_recebidas": 0,
+  "certificacoes_sem_movimento_recebidas": 0,
+  "declaracoes_nao_carregada_recebidas": 0,
+  "certificacoes_fechamento_recebidas": 0,
+  "copia_excel_preservada_sha256": "27e02e7148984d74acdb5cf086a9ba637c55617152793f23509d3bad24bce04b",
+  "xlsx_abas": 13,
+  "origem_csv_sha256": "9e5e2a3f191b59d8b66e7ee494899b4f97b37bc7abb6fd52f2d463a56b7c8a99",
+  "sql_remoto_executado": 0
+}

@@ -1,0 +1,15 @@
+{
+  "sql_chaves": 1755,
+  "dax_chaves": 1755,
+  "esperadas": 1755,
+  "duplicacoes_sql": [],
+  "duplicacoes_dax": [],
+  "ausentes_sql": [],
+  "extras_sql": [],
+  "divergencias": [],
+  "diferenca_maxima": "1E-7",
+  "null_blank_coincidentes": 600,
+  "tolerancia": "0.01",
+  "aprovado": true,
+  "limite": "Depende de preflight de grao sem duplicacoes e confirmacao do mesmo snapshot SQL/Power BI; nao certifica fechamento"
+}

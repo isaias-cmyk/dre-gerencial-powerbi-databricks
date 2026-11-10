@@ -1,0 +1,18 @@
+[
+  {
+    "File": "18-estado-particoes.dax",
+    "State": "EXECUTADO",
+    "Rows": 16,
+    "Seconds": 0.0531156,
+    "Account": "",
+    "QuerySHA256": "0CA891861BB561D960C45FC09FAF9EBE32DD3A8C93977FA90085FC53B17A662C"
+  },
+  {
+    "File": "19-estado-relacionamentos.dax",
+    "State": "EXECUTADO",
+    "Rows": 18,
+    "Seconds": 0.0230839,
+    "Account": "",
+    "QuerySHA256": "A7D6A5F3C4DF5743D4B60109E957CD8A4E7259AABFE0423110D9859F2978E820"
+  }
+]

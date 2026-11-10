@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "DRE Moderno - Databricks2"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f3b5de4a-9e3a-4231-8786-b1475494b6b9"
+  }
+}

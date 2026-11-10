@@ -1,0 +1,5 @@
+EVALUATE
+UNION (
+ CALCULATETABLE ( ROW ( "Caso", "Datas parciais", "Realizado", [DRE | Realizado Comparável], "Orcado", [DRE | Orçado Comparável], "Previsto", [DRE | Previsto Comparável], "Pares", [DRE | Pares Filial-Competência Comparáveis], "Status", [DRE | Status Comparabilidade] ), DATESBETWEEN ( 'dim_calendario'[data], DATE(2023,5,2), DATE(2023,5,31) ), TREATAS ( {13}, 'vw_dre_comparativo'[ordem_dre] ) ),
+ ROW ( "Caso", "Total entre posicoes", "Realizado", [DRE | Realizado Comparável], "Orcado", [DRE | Orçado Comparável], "Previsto", [DRE | Previsto Comparável], "Pares", [DRE | Pares Filial-Competência Comparáveis], "Status", [DRE | Status Comparabilidade] ),
+ CALCULATETABLE ( ROW ( "Caso", "Posicao descricao conflitantes", "Realizado", [DRE | Realizado Comparável], "Orcado", [DRE | Orçado Comparável], "Previsto", [DRE | Previsto Comparável], "Pares", [DRE | Pares Filial-Competência Comparáveis], "Status", [DRE | Status Comparabilidade] ), TREATAS({1}, 'vw_dre_comparativo'[ordem_dre]), TREATAS({"descricao_inexistente_teste"}, 'vw_dre_comparativo'[descricao_dre]) ) )

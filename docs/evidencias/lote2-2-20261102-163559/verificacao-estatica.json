@@ -1,0 +1,61 @@
+{
+  "TMDL": "APROVADO (ver validacao-tmdl.json)",
+  "ProtectedFiles": 39,
+  "ProtectedUnchanged": true,
+  "UniqueLineageTags": 180,
+  "JSONParsed": 124,
+  "DAXFiles": [
+    {
+      "Arquivo": "01-metadados.dax",
+      "Delimitadores": "OK",
+      "CompilacaoDAX": "NAO_EXECUTADA"
+    },
+    {
+      "Arquivo": "02-filiais-periodos-conciliacao.dax",
+      "Delimitadores": "OK",
+      "CompilacaoDAX": "NAO_EXECUTADA"
+    },
+    {
+      "Arquivo": "03-posicao-descricao-contextos.dax",
+      "Delimitadores": "OK",
+      "CompilacaoDAX": "NAO_EXECUTADA"
+    },
+    {
+      "Arquivo": "04-matriz-totais.dax",
+      "Delimitadores": "OK",
+      "CompilacaoDAX": "NAO_EXECUTADA"
+    },
+    {
+      "Arquivo": "05-aditividade-filiais.dax",
+      "Delimitadores": "OK",
+      "CompilacaoDAX": "NAO_EXECUTADA"
+    },
+    {
+      "Arquivo": "06-ebitda-ebit.dax",
+      "Delimitadores": "OK",
+      "CompilacaoDAX": "NAO_EXECUTADA"
+    },
+    {
+      "Arquivo": "07-regressao-controle.dax",
+      "Delimitadores": "OK",
+      "CompilacaoDAX": "NAO_EXECUTADA"
+    },
+    {
+      "Arquivo": "08-regressao-bases.dax",
+      "Delimitadores": "OK",
+      "CompilacaoDAX": "NAO_EXECUTADA"
+    },
+    {
+      "Arquivo": "09-materializacao.dax",
+      "Delimitadores": "OK",
+      "CompilacaoDAX": "NAO_EXECUTADA"
+    },
+    {
+      "Arquivo": "11-receita-liquida-margem.dax",
+      "Delimitadores": "OK",
+      "CompilacaoDAX": "NAO_EXECUTADA"
+    }
+  ],
+  "DynamicExecutions": 0,
+  "SQLExecutions": 0
+}

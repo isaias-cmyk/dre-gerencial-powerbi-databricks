@@ -1,0 +1,63 @@
+"[ID]","[TableID]","[Name]","[Description]","[DataSourceID]","[QueryDefinition]","[State]","[Type]","[PartitionStorageID]","[Mode]","[DataView]","[ModifiedTime]","[RefreshedTime]","[SystemFlags]","[ErrorMessage]","[RetainDataTillForceCalculate]","[RangeStart]","[RangeEnd]","[RangeGranularity]","[RefreshBookmark]","[QueryGroupID]","[ExpressionSourceID]","[MAttributes]","[DataCoverageDefinitionID]","[SchemaName]"
+"201","12","dim_calendario",,,"let
+    Source = DatabricksMultiCloud.Catalogs(""seu-workspace.cloud.databricks.com"", ""/sql/1.0/warehouses/<warehouse-id>"", [Catalog=null, Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null, Protocol=null]),
+    workspace_Database = Source{[Name=""workspace"",Kind=""Database""]}[Data],
+    gold_Schema = workspace_Database{[Name=""gold"",Kind=""Schema""]}[Data],
+    dim_calendario_Table = gold_Schema{[Name=""dim_calendario"",Kind=""Table""]}[Data]
+in
+    dim_calendario_Table","1","4","668","0","3","02/11/2026 17:15:59","02/11/2026 17:15:59","0",,"False",,,"-1",,,,,,
+"202","15","DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",,,"Calendar(Date(2015,1,1), Date(2015,1,1))","1","2","671","0","3","02/11/2026 17:16:02","02/11/2026 17:16:02","2",,"False",,,"-1",,,,,,
+"203","18","LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",,,"Calendar(Date(Year(MIN('dim_calendario'[data])), 1, 1), Date(Year(MAX('dim_calendario'[data])), 12, 31))","1","2","674","0","3","02/11/2026 17:16:02","02/11/2026 17:16:02","2",,"False",,,"-1",,,,,,
+"204","21","LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",,,"Calendar(Date(Year(MIN('dim_calendario'[inicio_mes])), 1, 1), Date(Year(MAX('dim_calendario'[inicio_mes])), 12, 31))","1","2","677","0","3","02/11/2026 17:16:02","02/11/2026 17:16:02","2",,"False",,,"-1",,,,,,
+"205","24","dim_filial",,,"let
+    Source = DatabricksMultiCloud.Catalogs(""seu-workspace.cloud.databricks.com"", ""/sql/1.0/warehouses/<warehouse-id>"", [Catalog=null, Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null, Protocol=null]),
+    workspace_Database = Source{[Name=""workspace"",Kind=""Database""]}[Data],
+    gold_Schema = workspace_Database{[Name=""gold"",Kind=""Schema""]}[Data],
+    dim_filial_Table = gold_Schema{[Name=""dim_filial"",Kind=""Table""]}[Data]
+in
+    dim_filial_Table","1","4","680","0","3","02/11/2026 17:16:00","02/11/2026 17:16:00","0",,"False",,,"-1",,,,,,
+"206","27","dim_conta",,,"let
+    Source = DatabricksMultiCloud.Catalogs(""seu-workspace.cloud.databricks.com"", ""/sql/1.0/warehouses/<warehouse-id>"", [Catalog=null, Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null, Protocol=null]),
+    workspace_Database = Source{[Name=""workspace"",Kind=""Database""]}[Data],
+    gold_Schema = workspace_Database{[Name=""gold"",Kind=""Schema""]}[Data],
+    dim_conta_Table = gold_Schema{[Name=""dim_conta"",Kind=""Table""]}[Data]
+in
+    dim_conta_Table","1","4","683","0","3","02/11/2026 17:16:00","02/11/2026 17:16:00","0",,"False",,,"-1",,,,,,
+"207","30","dim_dre",,,"let
+    Source = DatabricksMultiCloud.Catalogs(""seu-workspace.cloud.databricks.com"", ""/sql/1.0/warehouses/<warehouse-id>"", [Catalog=null, Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null, Protocol=null]),
+    workspace_Database = Source{[Name=""workspace"",Kind=""Database""]}[Data],
+    gold_Schema = workspace_Database{[Name=""gold"",Kind=""Schema""]}[Data],
+    dim_dre_Table = gold_Schema{[Name=""dim_dre"",Kind=""Table""]}[Data]
+in
+    dim_dre_Table","1","4","686","0","3","02/11/2026 17:16:01","02/11/2026 17:16:01","0",,"False",,,"-1",,,,,,
+"208","33","fato_lancamentos",,,"let
+    Source = DatabricksMultiCloud.Catalogs(""seu-workspace.cloud.databricks.com"", ""/sql/1.0/warehouses/<warehouse-id>"", [Catalog=null, Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null, Protocol=null]),
+    workspace_Database = Source{[Name=""workspace"",Kind=""Database""]}[Data],
+    gold_Schema = workspace_Database{[Name=""gold"",Kind=""Schema""]}[Data],
+    fato_lancamentos_Table = gold_Schema{[Name=""fato_lancamentos"",Kind=""Table""]}[Data]
+in
+    fato_lancamentos_Table","1","4","689","0","3","02/11/2026 17:16:01","02/11/2026 17:16:01","0",,"False",,,"-1",,,,,,
+"210","39","LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",,,"Calendar(Date(Year(MIN('fato_lancamentos'[_data_ingestao])), 1, 1), Date(Year(MAX('fato_lancamentos'[_data_ingestao])), 12, 31))","1","2","695","0","3","02/11/2026 17:16:02","02/11/2026 17:16:02","2",,"False",,,"-1",,,,,,
+"211","42","fato_orcamento",,,"let
+    Source = DatabricksMultiCloud.Catalogs(""seu-workspace.cloud.databricks.com"", ""/sql/1.0/warehouses/<warehouse-id>"", [Catalog=null, Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null, Protocol=null]),
+    workspace_Database = Source{[Name=""workspace"",Kind=""Database""]}[Data],
+    gold_Schema = workspace_Database{[Name=""gold"",Kind=""Schema""]}[Data],
+    fato_orcamento_Table = gold_Schema{[Name=""fato_orcamento"",Kind=""Table""]}[Data]
+in
+    fato_orcamento_Table","1","4","698","0","3","02/11/2026 17:16:00","02/11/2026 17:16:00","0",,"False",,,"-1",,,,,,
+"213","48","LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",,,"Calendar(Date(Year(MIN('fato_orcamento'[_data_ingestao])), 1, 1), Date(Year(MAX('fato_orcamento'[_data_ingestao])), 12, 31))","1","2","704","0","3","02/11/2026 17:16:02","02/11/2026 17:16:02","2",,"False",,,"-1",,,,,,
+"214","51","fato_previsao",,,"let
+    Source = DatabricksMultiCloud.Catalogs(""seu-workspace.cloud.databricks.com"", ""/sql/1.0/warehouses/<warehouse-id>"", [Catalog=null, Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null, Protocol=null]),
+    workspace_Database = Source{[Name=""workspace"",Kind=""Database""]}[Data],
+    gold_Schema = workspace_Database{[Name=""gold"",Kind=""Schema""]}[Data],
+    fato_previsao_Table = gold_Schema{[Name=""fato_previsao"",Kind=""Table""]}[Data]
+in
+    fato_previsao_Table","1","4","707","0","3","02/11/2026 17:15:59","02/11/2026 17:15:59","0",,"False",,,"-1",,,,,,
+"216","57","LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",,,"Calendar(Date(Year(MIN('fato_previsao'[_data_ingestao])), 1, 1), Date(Year(MAX('fato_previsao'[_data_ingestao])), 12, 31))","1","2","713","0","3","02/11/2026 17:16:02","02/11/2026 17:16:02","2",,"False",,,"-1",,,,,,
+"217","60","vw_dre_comparativo",,,"let
+    Source = DatabricksMultiCloud.Catalogs(""seu-workspace.cloud.databricks.com"", ""/sql/1.0/warehouses/<warehouse-id>"", [Catalog=null, Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null, Protocol=null]),
+    workspace_Database = Source{[Name=""workspace"",Kind=""Database""]}[Data],
+    gold_Schema = workspace_Database{[Name=""gold"",Kind=""Schema""]}[Data],
+    vw_dre_comparativo_View = gold_Schema{[Name=""vw_dre_comparativo"",Kind=""View""]}[Data]
+in
+    vw_dre_comparativo_View","1","4","716","0","3","02/11/2026 17:16:00","02/11/2026 17:16:00","0",,"False",,,"-1",,,,,,

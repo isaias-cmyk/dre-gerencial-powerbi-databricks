@@ -1,0 +1,38 @@
+// Somente leitura; NÃO EXECUTADO neste lote. Executar nas medidas persistidas após reabrir o PBIP.
+EVALUATE
+VAR _Periodos = DATATABLE("Periodo",STRING,"InicioNumero",INTEGER,"FimNumero",INTEGER,{{"Integral",20210101,20240101},{"2021",20210101,20220101},{"2022",20220101,20230101},{"2023",20230101,20240101},{"2023_JanMai",20230101,20230601},{"2023_JunDez",20230601,20240101},{"2023_Junho",20230601,20230701}})
+VAR _Filiais = DATATABLE("GrupoFilial",STRING,{{"Consolidado"},{"01"},{"02"},{"03"},{"01+02"}})
+RETURN GENERATE(CROSSJOIN(_Filiais,_Periodos),
+VAR _Grupo = [GrupoFilial]
+VAR _I = [InicioNumero]
+VAR _F = [FimNumero]
+VAR _Inicio = DATE(INT(_I/10000),MOD(INT(_I/100),100),MOD(_I,100))
+VAR _Fim = DATE(INT(_F/10000),MOD(INT(_F/100),100),MOD(_F,100))
+VAR _Datas = FILTER(ALL('dim_calendario'), 'dim_calendario'[data]>=_Inicio && 'dim_calendario'[data]<_Fim)
+VAR _FiltroFilial = FILTER(ALL('dim_filial'), _Grupo="Consolidado" || 'dim_filial'[cod_filial]=_Grupo || (_Grupo="01+02" && 'dim_filial'[cod_filial] IN {"01","02"}))
+RETURN UNION(
+VAR _RB=CALCULATE([DRE | Receita Operacional Bruta Realizado],_Datas,_FiltroFilial)
+VAR _D=CALCULATE([DRE | Deduções da Receita Realizado],_Datas,_FiltroFilial)
+VAR _RL=CALCULATE([DRE | Receita Operacional Líquida Realizado],_Datas,_FiltroFilial)
+VAR _C=CALCULATE([DRE | Custos Realizado],_Datas,_FiltroFilial)
+VAR _MC=CALCULATE([DRE | Margem de Contribuição Realizado],_Datas,_FiltroFilial)
+VAR _Ausencia=ISBLANK(_RB) && ISBLANK(_D) && ISBLANK(_RL) && ISBLANK(_C) && ISBLANK(_MC)
+VAR _Presentes=NOT ISBLANK(_RB) && NOT ISBLANK(_D) && NOT ISBLANK(_RL) && NOT ISBLANK(_C) && NOT ISBLANK(_MC)
+RETURN ROW("Cenario","Realizado","ReceitaBruta",_RB,"Deducoes",_D,"ReceitaLiquida",_RL,"Custos",_C,"MargemContribuicao",_MC,"IdentidadesCoerentes",_Ausencia || (_Presentes && ABS(_RL-(_RB+_D))<=0.01 && ABS(_MC-(_RL+_C))<=0.01)),
+VAR _RB=CALCULATE([DRE | Receita Operacional Bruta Orçado],_Datas,_FiltroFilial)
+VAR _D=CALCULATE([DRE | Deduções da Receita Orçado],_Datas,_FiltroFilial)
+VAR _RL=CALCULATE([DRE | Receita Operacional Líquida Orçado],_Datas,_FiltroFilial)
+VAR _C=CALCULATE([DRE | Custos Orçado],_Datas,_FiltroFilial)
+VAR _MC=CALCULATE([DRE | Margem de Contribuição Orçado],_Datas,_FiltroFilial)
+VAR _Ausencia=ISBLANK(_RB) && ISBLANK(_D) && ISBLANK(_RL) && ISBLANK(_C) && ISBLANK(_MC)
+VAR _Presentes=NOT ISBLANK(_RB) && NOT ISBLANK(_D) && NOT ISBLANK(_RL) && NOT ISBLANK(_C) && NOT ISBLANK(_MC)
+RETURN ROW("Cenario","Orçado","ReceitaBruta",_RB,"Deducoes",_D,"ReceitaLiquida",_RL,"Custos",_C,"MargemContribuicao",_MC,"IdentidadesCoerentes",_Ausencia || (_Presentes && ABS(_RL-(_RB+_D))<=0.01 && ABS(_MC-(_RL+_C))<=0.01)),
+VAR _RB=CALCULATE([DRE | Receita Operacional Bruta Previsto],_Datas,_FiltroFilial)
+VAR _D=CALCULATE([DRE | Deduções da Receita Previsto],_Datas,_FiltroFilial)
+VAR _RL=CALCULATE([DRE | Receita Operacional Líquida Previsto],_Datas,_FiltroFilial)
+VAR _C=CALCULATE([DRE | Custos Previsto],_Datas,_FiltroFilial)
+VAR _MC=CALCULATE([DRE | Margem de Contribuição Previsto],_Datas,_FiltroFilial)
+VAR _Ausencia=ISBLANK(_RB) && ISBLANK(_D) && ISBLANK(_RL) && ISBLANK(_C) && ISBLANK(_MC)
+VAR _Presentes=NOT ISBLANK(_RB) && NOT ISBLANK(_D) && NOT ISBLANK(_RL) && NOT ISBLANK(_C) && NOT ISBLANK(_MC)
+RETURN ROW("Cenario","Previsto","ReceitaBruta",_RB,"Deducoes",_D,"ReceitaLiquida",_RL,"Custos",_C,"MargemContribuicao",_MC,"IdentidadesCoerentes",_Ausencia || (_Presentes && ABS(_RL-(_RB+_D))<=0.01 && ABS(_MC-(_RL+_C))<=0.01))))
+ORDER BY [GrupoFilial],[Periodo],[Cenario]

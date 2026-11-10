@@ -1,0 +1,16 @@
+{
+  "esperadas": 2340,
+  "sql_linhas": 2340,
+  "dax_linhas": 2340,
+  "duplicadas_sql": 0,
+  "duplicadas_dax": 0,
+  "ausentes_no_sql": 0,
+  "extras_no_sql": 0,
+  "aprovadas": 2340,
+  "reprovadas": 0,
+  "nulos_blank_coincidentes": 800,
+  "max_dif_brl": 1.466250978410244e-07,
+  "max_dif_razao": 2.220446049250313e-15,
+  "primeiras_falhas": [],
+  "aceite": true
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "File": "12-regressao-ampliada.dax",
+    "State": "EXECUTADO",
+    "Rows": 210,
+    "Seconds": 0.2330123,
+    "Account": "",
+    "QuerySHA256": "5F8ABDB08131920AFEB06617ECF81D80C5A2C297ED7BEC3330D429EEFD5FD221"
+  },
+  {
+    "File": "13-seis-cenarios-consolidado.dax",
+    "State": "EXECUTADO",
+    "Rows": 180,
+    "Seconds": 1.6113233,
+    "Account": "",
+    "QuerySHA256": "A958CF4864B0B207B0AA703209D481327DAF69DC8184C9685D977B6D925C29F2"
+  },
+  {
+    "File": "14-ebitda-ebit-ampliado.dax",
+    "State": "EXECUTADO",
+    "Rows": 70,
+    "Seconds": 0.4584891,
+    "Account": "",
+    "QuerySHA256": "0CB84DD10DB9F16CB04FB616A132F68B8DDB4A866A81EE5668E5B0169BCD4517"
+  },
+  {
+    "File": "15-estado-particoes.dax",
+    "State": "EXECUTADO",
+    "Rows": 15,
+    "Seconds": 0.0211646,
+    "Account": "",
+    "QuerySHA256": "16505DD24A46D4AB374AC48B20E0805614940B48739211618493F8C7FD46B8AC"
+  }
+]

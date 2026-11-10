@@ -1,0 +1,2 @@
+// Somente leitura; NÃO EXECUTADO neste lote. Executar nas medidas persistidas após reabrir o PBIP.
+EVALUATE FILTER(INFO.VIEW.MEASURES(), [Table] = "_Medidas")

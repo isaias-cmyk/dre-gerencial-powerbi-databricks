@@ -1,0 +1,77 @@
+{
+  "MatrizPrincipal": {
+    "Combinacoes": 35,
+    "MedidasLote22": 30,
+    "Executados": 1050,
+    "Aprovados": 1050,
+    "Reprovados": 0,
+    "DivergenciaMaxima": "0E-8",
+    "CasosBlank": 100,
+    "ZerosLegitimosEncontrados": 0
+  },
+  "ResultadoLiquidoAdicional": {
+    "Casos": 105,
+    "Aprovados": 105
+  },
+  "SeisCenariosConfirmados": {
+    "Casos": 180,
+    "Aprovados": 180,
+    "RealizadoJunDezBlank": 10
+  },
+  "ContextosPosicaoDescricao": {
+    "Casos": 240,
+    "Aprovados": 240
+  },
+  "TotaisMatriz": {
+    "CelulasVerificadas": 420
+  },
+  "Aditividade": {
+    "Casos": 462,
+    "Aprovados": 462,
+    "MaxDiferenca": "8.9E-8"
+  },
+  "Regressao": {
+    "Medidas": 6,
+    "Combinacoes": 35,
+    "Casos": 210,
+    "Aprovados": 210,
+    "ContextosComparadosComLote21": 5,
+    "ControlesIntegrais": 6,
+    "ContextosAmpliados": 175,
+    "ValoresVerificadosContextosAmpliados": 1050
+  },
+  "EBITDA_EBIT": {
+    "Contextos": 70,
+    "CelulasBlank": 2520,
+    "Estado": "SEM_VALORES"
+  },
+  "IdentidadesReceitaMargem": {
+    "Casos": 105,
+    "Aprovados": 105
+  },
+  "Metadados": {
+    "MedidasValidas": 36,
+    "ParticoesReady": 15,
+    "MedidasMaterializada": true
+  },
+  "ErrosExecucao": {
+    "Tentativas": 16,
+    "ExecucoesSucesso": 15,
+    "FalhasHistoricasScriptTeste": 1,
+    "FalhaCorrigida": "UNION com número de colunas desigual no roteiro 02; coluna de ausência uniformizada e reexecutada com sucesso"
+  },
+  "FalhasValidacaoAtuais": 0,
+  "SQL": {
+    "OrigemExecutadaPeloUsuario": true,
+    "ComparadorExecutado": true,
+    "CasosConciliados": 1155,
+    "Divergencias": 0,
+    "BLANK_NULL": 110,
+    "DiferencaMaxima": "0.00000010",
+    "Estado": "APROVADO_NO_GRAO_AGREGADO",
+    "Evidencia": "../lote2-2-sql-completo-20261102/aceite.json"
+  },
+  "ProducaoAlterada": false,
+  "AceiteLote22": "CONCLUIDO_TECNICAMENTE",
+  "Lote23": "LIBERADO_SOMENTE_PLANEJAMENTO_NAO_INICIADO"
+}

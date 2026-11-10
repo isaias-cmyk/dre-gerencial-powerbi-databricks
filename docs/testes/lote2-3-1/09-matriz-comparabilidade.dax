@@ -1,0 +1,33 @@
+-- Teste somente leitura; datas constantes aqui representam o contrato de teste independente.
+DEFINE
+ VAR _Contextos = CROSSJOIN ( DATATABLE ( "Grupo", STRING, { {"01"}, {"02"}, {"03"}, {"Consolidado"}, {"01+02"} } ), DATATABLE ( "Periodo", STRING, { {"Integral"}, {"2021"}, {"2022"}, {"2023"}, {"2023_JanMai"}, {"2023_JunDez"}, {"2023_Maio"}, {"2023_Junho"}, {"2023_JanMar"} } ), GENERATESERIES ( 1, 13 ) )
+EVALUATE
+ADDCOLUMNS ( GENERATE ( _Contextos,
+ VAR _Grupo = [Grupo] VAR _Periodo = [Periodo] VAR _Posicao = [Value]
+ RETURN CALCULATETABLE (
+ UNION ( ROW ( "Cenario", "Realizado", "Valor", [DRE | Realizado Comparável],
+    "Esperado", IF ( NOT ( _Posicao IN { 8, 11 } ), CALCULATE ( SUM ( 'vw_dre_comparativo'[realizado] ), KEEPFILTERS ( 'vw_dre_comparativo'[competencia] <= DATE ( 2023, 5, 1 ) ) ) ),
+    "Pares", [DRE | Pares Filial-Competência Comparáveis], "Status", [DRE | Status Comparabilidade] ),
+ROW ( "Cenario", "Orçado", "Valor", [DRE | Orçado Comparável],
+    "Esperado", IF ( NOT ( _Posicao IN { 8, 11 } ), CALCULATE ( SUM ( 'vw_dre_comparativo'[orcado] ), KEEPFILTERS ( 'vw_dre_comparativo'[competencia] <= DATE ( 2023, 5, 1 ) ) ) ),
+    "Pares", [DRE | Pares Filial-Competência Comparáveis], "Status", [DRE | Status Comparabilidade] ),
+ROW ( "Cenario", "Previsto", "Valor", [DRE | Previsto Comparável],
+    "Esperado", IF ( NOT ( _Posicao IN { 8, 11 } ), CALCULATE ( SUM ( 'vw_dre_comparativo'[previsto] ), KEEPFILTERS ( 'vw_dre_comparativo'[competencia] <= DATE ( 2023, 5, 1 ) ) ) ),
+    "Pares", [DRE | Pares Filial-Competência Comparáveis], "Status", [DRE | Status Comparabilidade] ) ),
+FILTER ( ALL ( 'dim_filial'[cod_filial] ), _Grupo = "Consolidado" || 'dim_filial'[cod_filial] = _Grupo || ( _Grupo = "01+02" && 'dim_filial'[cod_filial] IN { "01", "02" } ) ),
+FILTER ( ALL ( 'dim_calendario'[data] ),
+    SWITCH ( _Periodo,
+        "Integral", TRUE (), "2021", YEAR ( 'dim_calendario'[data] ) = 2021,
+        "2022", YEAR ( 'dim_calendario'[data] ) = 2022,
+        "2023", YEAR ( 'dim_calendario'[data] ) = 2023,
+        "2023_JanMai", YEAR ( 'dim_calendario'[data] ) = 2023 && MONTH ( 'dim_calendario'[data] ) <= 5,
+        "2023_JunDez", YEAR ( 'dim_calendario'[data] ) = 2023 && MONTH ( 'dim_calendario'[data] ) >= 6,
+        "2023_Maio", YEAR ( 'dim_calendario'[data] ) = 2023 && MONTH ( 'dim_calendario'[data] ) = 5,
+        "2023_Junho", YEAR ( 'dim_calendario'[data] ) = 2023 && MONTH ( 'dim_calendario'[data] ) = 6,
+        "2023_JanMar", YEAR ( 'dim_calendario'[data] ) = 2023 && MONTH ( 'dim_calendario'[data] ) IN { 1, 3 }, FALSE () ) ),
+TREATAS ( { _Posicao }, 'vw_dre_comparativo'[ordem_dre] ) ) )
+, "AmbosBlank", ISBLANK ( [Valor] ) && ISBLANK ( [Esperado] ),
+ "BlankDivergente", ISBLANK ( [Valor] ) <> ISBLANK ( [Esperado] ),
+ "Diferenca", IF ( NOT ISBLANK ( [Valor] ) && NOT ISBLANK ( [Esperado] ), [Valor] - [Esperado] ),
+ "Aprovado", IF ( ISBLANK ( [Valor] ) || ISBLANK ( [Esperado] ), ISBLANK ( [Valor] ) && ISBLANK ( [Esperado] ), ABS ( [Valor] - [Esperado] ) <= 0.01 ) )
+ORDER BY [Grupo], [Periodo], [Value], [Cenario]

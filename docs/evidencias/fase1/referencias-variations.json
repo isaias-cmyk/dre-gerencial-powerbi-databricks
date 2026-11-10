@@ -1,0 +1,27 @@
+[
+  {
+    "table": "dim_calendario",
+    "relationship": "dd5b6732-5fba-479d-b6f3-1936a8f1746b",
+    "exists": true
+  },
+  {
+    "table": "dim_calendario",
+    "relationship": "75b003b4-6187-4899-b2ad-e655b31b0fc9",
+    "exists": true
+  },
+  {
+    "table": "fato_lancamentos",
+    "relationship": "6c4b7869-5380-4800-881d-7b8930dd3d29",
+    "exists": true
+  },
+  {
+    "table": "fato_orcamento",
+    "relationship": "f3198452-0cec-4397-9362-2a2c270304a4",
+    "exists": true
+  },
+  {
+    "table": "fato_previsao",
+    "relationship": "98d30182-d70a-4d7b-bde5-8ef769824638",
+    "exists": true
+  }
+]

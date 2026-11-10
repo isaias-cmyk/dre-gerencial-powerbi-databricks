@@ -1,0 +1,11 @@
+{
+  "tag": "lote2-3-1-implementacao-20261103-085405",
+  "backup": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\backups\\lote2-3-1-implementacao-20261103-085405",
+  "evidence": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\docs\\evidencias\\lote2-3-1-implementacao-20261103-085405",
+  "files": 412,
+  "restauracao_sha256": true,
+  "zip_sha256": "f9743c8019f62695617c4b30302267ac6fb755566df4b1fadc9c0f7d7743c117",
+  "desktop": "Fechado; verificado no host",
+  "git": "Fora de repositorio; status/rev-parse 128",
+  "exclusoes": "backups, .git e .pbi"
+}

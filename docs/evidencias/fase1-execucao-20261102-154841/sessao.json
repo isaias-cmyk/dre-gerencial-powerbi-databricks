@@ -1,0 +1,23 @@
+{
+  "Time": "2026-11-02T15:48:41.7685708-03:00",
+  "Port": "57446",
+  "Catalog": "a46c4f87-54c4-4283-8269-dcf609511152",
+  "Tables": [
+    "dim_calendario",
+    "DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395",
+    "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504",
+    "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d",
+    "dim_filial",
+    "dim_conta",
+    "dim_dre",
+    "fato_lancamentos",
+    "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b",
+    "fato_orcamento",
+    "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531",
+    "fato_previsao",
+    "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3",
+    "vw_dre_comparativo"
+  ],
+  "Connection": "ADOMD local somente leitura",
+  "QuerySource": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\docs\\evidencias\\fase1-dinamica"
+}

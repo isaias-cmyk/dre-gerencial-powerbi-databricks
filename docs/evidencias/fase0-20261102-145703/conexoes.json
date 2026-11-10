@@ -1,0 +1,170 @@
+[
+  {
+    "Table": "dim_calendario",
+    "Connector": "DatabricksMultiCloud.Catalogs",
+    "Host": "seu-workspace.cloud.databricks.com",
+    "HttpPath": "/sql/1.0/warehouses/<warehouse-id>",
+    "Navigation": [
+      {
+        "Name": "workspace",
+        "Kind": "Database"
+      },
+      {
+        "Name": "gold",
+        "Kind": "Schema"
+      },
+      {
+        "Name": "dim_calendario",
+        "Kind": "Table"
+      }
+    ],
+    "Connectivity": "Não testada; inspeção estática"
+  },
+  {
+    "Table": "dim_conta",
+    "Connector": "DatabricksMultiCloud.Catalogs",
+    "Host": "seu-workspace.cloud.databricks.com",
+    "HttpPath": "/sql/1.0/warehouses/<warehouse-id>",
+    "Navigation": [
+      {
+        "Name": "workspace",
+        "Kind": "Database"
+      },
+      {
+        "Name": "gold",
+        "Kind": "Schema"
+      },
+      {
+        "Name": "dim_conta",
+        "Kind": "Table"
+      }
+    ],
+    "Connectivity": "Não testada; inspeção estática"
+  },
+  {
+    "Table": "dim_dre",
+    "Connector": "DatabricksMultiCloud.Catalogs",
+    "Host": "seu-workspace.cloud.databricks.com",
+    "HttpPath": "/sql/1.0/warehouses/<warehouse-id>",
+    "Navigation": [
+      {
+        "Name": "workspace",
+        "Kind": "Database"
+      },
+      {
+        "Name": "gold",
+        "Kind": "Schema"
+      },
+      {
+        "Name": "dim_dre",
+        "Kind": "Table"
+      }
+    ],
+    "Connectivity": "Não testada; inspeção estática"
+  },
+  {
+    "Table": "dim_filial",
+    "Connector": "DatabricksMultiCloud.Catalogs",
+    "Host": "seu-workspace.cloud.databricks.com",
+    "HttpPath": "/sql/1.0/warehouses/<warehouse-id>",
+    "Navigation": [
+      {
+        "Name": "workspace",
+        "Kind": "Database"
+      },
+      {
+        "Name": "gold",
+        "Kind": "Schema"
+      },
+      {
+        "Name": "dim_filial",
+        "Kind": "Table"
+      }
+    ],
+    "Connectivity": "Não testada; inspeção estática"
+  },
+  {
+    "Table": "fato_lancamentos",
+    "Connector": "DatabricksMultiCloud.Catalogs",
+    "Host": "seu-workspace.cloud.databricks.com",
+    "HttpPath": "/sql/1.0/warehouses/<warehouse-id>",
+    "Navigation": [
+      {
+        "Name": "workspace",
+        "Kind": "Database"
+      },
+      {
+        "Name": "gold",
+        "Kind": "Schema"
+      },
+      {
+        "Name": "fato_lancamentos",
+        "Kind": "Table"
+      }
+    ],
+    "Connectivity": "Não testada; inspeção estática"
+  },
+  {
+    "Table": "fato_orcamento",
+    "Connector": "DatabricksMultiCloud.Catalogs",
+    "Host": "seu-workspace.cloud.databricks.com",
+    "HttpPath": "/sql/1.0/warehouses/<warehouse-id>",
+    "Navigation": [
+      {
+        "Name": "workspace",
+        "Kind": "Database"
+      },
+      {
+        "Name": "gold",
+        "Kind": "Schema"
+      },
+      {
+        "Name": "fato_orcamento",
+        "Kind": "Table"
+      }
+    ],
+    "Connectivity": "Não testada; inspeção estática"
+  },
+  {
+    "Table": "fato_previsao",
+    "Connector": "DatabricksMultiCloud.Catalogs",
+    "Host": "seu-workspace.cloud.databricks.com",
+    "HttpPath": "/sql/1.0/warehouses/<warehouse-id>",
+    "Navigation": [
+      {
+        "Name": "workspace",
+        "Kind": "Database"
+      },
+      {
+        "Name": "gold",
+        "Kind": "Schema"
+      },
+      {
+        "Name": "fato_previsao",
+        "Kind": "Table"
+      }
+    ],
+    "Connectivity": "Não testada; inspeção estática"
+  },
+  {
+    "Table": "vw_dre_comparativo",
+    "Connector": "DatabricksMultiCloud.Catalogs",
+    "Host": "seu-workspace.cloud.databricks.com",
+    "HttpPath": "/sql/1.0/warehouses/<warehouse-id>",
+    "Navigation": [
+      {
+        "Name": "workspace",
+        "Kind": "Database"
+      },
+      {
+        "Name": "gold",
+        "Kind": "Schema"
+      },
+      {
+        "Name": "vw_dre_comparativo",
+        "Kind": "View"
+      }
+    ],
+    "Connectivity": "Não testada; inspeção estática"
+  }
+]

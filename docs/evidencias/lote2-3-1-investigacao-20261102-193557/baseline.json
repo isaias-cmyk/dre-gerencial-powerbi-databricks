@@ -1,0 +1,1887 @@
+[
+  {
+    "Path": ".gitignore",
+    "SHA256": "12A24DE62907FD6C81FFF066D7DB4D98180F6C35056461F110A03D0023D396B8",
+    "Included": true
+  },
+  {
+    "Path": "AGENTS.md",
+    "SHA256": "DC018011F3C9C321C2976B6B6D2866FCEBC6D60894F73827000935904BB450E6",
+    "Included": true
+  },
+  {
+    "Path": "BaseDados.xlsx",
+    "SHA256": "27E02E7148984D74ACDB5CF086A9BA637C55617152793F23509D3BAD24BCE04B",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.pbip",
+    "SHA256": "781349C0267DF147687C9940FF32AADB5ED7A0DF2AD4B77080CFEB240B788238",
+    "Included": true
+  },
+  {
+    "Path": "PLANS.md",
+    "SHA256": "91F3793F3DF5C7D63A30A8EB0BBA419D6E4D277CF777858AE5234FC1EB3FE74C",
+    "Included": true
+  },
+  {
+    "Path": "docs/alteracoes.md",
+    "SHA256": "439B1D7E6DF376EA014A0B5029C73715E34555C4D7C05240C77CFD6E0A0F9A95",
+    "Included": true
+  },
+  {
+    "Path": "docs/arquitetura.md",
+    "SHA256": "54FB3F0206B14E3CAE2510C172C6DD27E9A372832DDCB71EF2F71E97ED8D20AF",
+    "Included": true
+  },
+  {
+    "Path": "docs/auditoria-modelo-semantico.md",
+    "SHA256": "9E08044B53F5B1CB312E9BF8B30986D2F69BC2E4686007F0E906297011C81E23",
+    "Included": true
+  },
+  {
+    "Path": "docs/contratos-medidas-dax.md",
+    "SHA256": "3E1EBB09A15F7245407CE8EC928E03B5D19126AE1FC8A8681085D498D177AD49",
+    "Included": true
+  },
+  {
+    "Path": "docs/execucao-final-lote2-2.md",
+    "SHA256": "E6733A0A5590CD30AEC71568D725AD055135F4CAA0EF61BF05CE29E8A2CCA518",
+    "Included": true
+  },
+  {
+    "Path": "docs/execucao-testes-fase1.md",
+    "SHA256": "36180048E3E462BBDF05DA53E3F8776EC818FD7672149C4AA404831B19D484B7",
+    "Included": true
+  },
+  {
+    "Path": "docs/plano-lote2-2.md",
+    "SHA256": "62E283573A82D7AA2A4CCB6EC5776FA211C6B9B64BC24C7FEE832302470B3A84",
+    "Included": true
+  },
+  {
+    "Path": "docs/plano-lote2-3.md",
+    "SHA256": "7BB25FA334F4CA6E133C286DA8BA4D5A27DA66863BB16F422C0BDB5C5DF6B136",
+    "Included": true
+  },
+  {
+    "Path": "docs/teste-consolidado-lote2-2.dax",
+    "SHA256": "0EC54368EE6507769A4D614F819934DC63F5D8C64AC7FA1DFA3033CA447C519F",
+    "Included": true
+  },
+  {
+    "Path": "docs/validacao-lote2-1.md",
+    "SHA256": "0056A64AB027370126E3DFF74B88A459B831232FC708376769144501C59A8F93",
+    "Included": true
+  },
+  {
+    "Path": "docs/validacao-lote2-2.md",
+    "SHA256": "0C497F3354F99BBB6F84F5F6296B85F23B211356F0689FCD07F4357F847DDBE0",
+    "Included": true
+  },
+  {
+    "Path": "docs/validacoes.md",
+    "SHA256": "87F102E5DEE621BA172B9E282B8B1A21E8195131A271FBB5D811E775E358778C",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase0-executar.ps1",
+    "SHA256": "3CA548CF5DFB4ACFBAB492EBD773D1EC15545F215C867CFE018B9F44D9506D7C",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-auditar.py",
+    "SHA256": "D44CBCAF21A783682C4B50F9DD0320BB88ABADE650CCEC15A33B182579FE96CE",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-completar-testes.py",
+    "SHA256": "E8A4684484AEFE5BBD2531A9A6AEAC8BBE74DDA0ACC1BC43C9A3207BD2188C85",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-consolidar-execucao.py",
+    "SHA256": "14530F0E1DA6993B822DF06018D5DCC5ACC66A4A967D71F201C265CF4B9FA502",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-executar-local.ps1",
+    "SHA256": "FC3E827CA87675C2C153479709052EDB1B9B9A9946CE98DE17942062D7A5024C",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerrar.py",
+    "SHA256": "F33BCA36C1F244671C05775F81D8300E1BBD8C1EA88EDBBEBA18CAB77ECF3E1A",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-executar-local.ps1",
+    "SHA256": "2B8EB7DD41533A87742D82683C318DC831B6E39F3D82EF4D7CB9C0AEC4DF3135",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-validar.ps1",
+    "SHA256": "F4BC23BF142B9B04ED855CDC25EB56B6AF90D427C935D6FBDF3C4542437041D9",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-analisar-consolidado.py",
+    "SHA256": "A1FBD222CDE562078DE25FEB2A9BC99F2F8B7385CFBB112B7FF935098DCDB11F",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-atual.json",
+    "SHA256": "0F1718B401CEB09F7D224A8741310152ABC421FD6B740433EDFF7CE779668DE9",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-conciliar-sql-parcial.py",
+    "SHA256": "A8A5922BAA68CBCE5AD79047D9325C64614758BEC68A3F4555AB3C977B43B5E8",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-consolidar-dinamica.py",
+    "SHA256": "8768281B9C45E32E2F653A05CD30EAF6A88614A6037222E20D1679EC29961D78",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-executar-local.ps1",
+    "SHA256": "1CEC37C710805C7EB4C7A467DDD21A762FF0592D2073854B49649EB5279AA33F",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-finalizar.py",
+    "SHA256": "0280E247609EC5AE42F82CD66BEDFF2424F022D685021D7FA125C68B0044CAB4",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-gerar.py",
+    "SHA256": "8BA3C6F6FC61347770A78807359F3EBC2ABB442BBA5695274ABA69EE72AA3F47",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-homologar-sql.py",
+    "SHA256": "FA259C700384968568E59889F2F2E1F998853BF4DB63D9798C28AD027C49B3BA",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-preparar.py",
+    "SHA256": "F38FA23F0EEA91D6B63F93E9F2969EB9446D0397028988AAC127DC2249F03B5C",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-validar.ps1",
+    "SHA256": "5989A4112588FAB13E0D0A3D0C1B63996A0FFB57F1FD86ECFF343A2245EA65B5",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-3-1-executar-local.ps1",
+    "SHA256": "48194DEDA0A0755C54C00ACEB23D0AA9F38C5949EE47755C5B140846E5BC2D36",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-3-1-preparar-snapshot.py",
+    "SHA256": "42C32952B0072871D3059C603B9928E4AC97F1700A6332E69244570E9068D964",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase0-20261102-145703/ambiente.json",
+    "SHA256": "C83A16275B6E6D746E0350E3F6BC462638BBE0EA5856450D8E79807834BFDFDA",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase0-20261102-145703/conexoes.json",
+    "SHA256": "23F39525BDA642FB67698897E4ADC14DF4CCC2155432E7C8920715D7B1528436",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase0-20261102-145703/exclusoes-backup.json",
+    "SHA256": "F80BE48D3F24881DE5356500180FB7ECA62C5E9DB21743136A18ADEFB1165E4A",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase0-20261102-145703/git.json",
+    "SHA256": "6427852B3A9E64FEB5AD6882E1F945C6ED5E3AF7590D156A610EEE13ED6AAE31",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase0-20261102-145703/integridade-final.json",
+    "SHA256": "89352E43079D33F280274AA8B8171851413103CAC0377233274A9074F6574B2C",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase0-20261102-145703/integridade-original-antes-documentacao.json",
+    "SHA256": "776045CFF5C2E34BA0C139D0FA4F92AB9A4416020A2FC2AA8291CA5E47608DFF",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase0-20261102-145703/inventario-arquivos.csv",
+    "SHA256": "91E5190A7F4C85EB39793D701756428AC4C821EBC4D24C0A16B2040D2B3359FC",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase0-20261102-145703/inventario-arquivos.json",
+    "SHA256": "FE297BF982B28401E910A3B1CC757B36565FDE45D20C92AE33A35797391A13BA",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase0-20261102-145703/json-sintaxe.json",
+    "SHA256": "3059CFAFA6D525962D291F72944F79CBA03D0E20F76CB29C528D2C596F5FA343",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase0-20261102-145703/medidas.json",
+    "SHA256": "A5338D955B09046EC0B16F3A9625B7955C763AAE07DC722E474E6078745F932F",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase0-20261102-145703/paginas.json",
+    "SHA256": "302FEF3E1BD25F6AF4E44AACFC189FCAB30228692A65D7C709D2DE46AE5EE5CE",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase0-20261102-145703/relacionamentos.json",
+    "SHA256": "E8E71662959314DB19AB64CC5DFDFECEC66334D61A80B8E919AFC31648DA3297",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase0-20261102-145703/restauracao-hashes.json",
+    "SHA256": "FA9CA1730A8ABB1139BF0FF2A89D5D003E25546B037073B8C16BB083084A400B",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase0-20261102-145703/resultado.json",
+    "SHA256": "3624110F13CF98569C621CE9D66BEEE179C348E3DBBC85EE297D0C03A40FC55A",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase0-20261102-145703/tabelas.json",
+    "SHA256": "43BC06BBFEFF968A9006BAF31035C86940D9F0926BA8105CE2B0D48DEE3E3E5E",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase0-20261102-145703/temas.json",
+    "SHA256": "FFEF0AED8E77775F9CB315FCD3B8B2665FCCBFB34B6AC922F8F97B97022AE356",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase0-20261102-145703/visuais.json",
+    "SHA256": "A5338D955B09046EC0B16F3A9625B7955C763AAE07DC722E474E6078745F932F",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1/ambiente.json",
+    "SHA256": "E4E6C59BAB421C44093743595BBCC35FF2C837BD4B732D3FCC79AA264F0463DC",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1/baseline-entrada.json",
+    "SHA256": "376903D9E9A2E87A5724563F23D2509798F04A0329A05CCD2EAAEA158108C034",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1/caminhos-condicionais.json",
+    "SHA256": "988C3D009C70848B597B5393F71AC0EE55C453AE8AAED5090E90BDDF208F5623",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1/comparacao-fase0.json",
+    "SHA256": "6250F529899B8A4DFFFEF63EEC5960B4881984A29D5BF85FC839A73AD6FD99EB",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1/integridade-final.json",
+    "SHA256": "3856003DF6CFD207FFBF16D5D6B735D6CD875C2F690F9FAA6C48A0BF74D8828B",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1/json-sintaxe.json",
+    "SHA256": "3727FD99E3845F060ACD51C8E68566259AF418BF5EBC2222C68EB52B4B1A58A6",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1/referencias-variations.json",
+    "SHA256": "9B5E2D544598FDF845A5C22114369980140999EB79942F8595AC823E54F6B2D6",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1/relacionamentos.json",
+    "SHA256": "866EB1AF879E06A7B42EFEDDDE7F61B82BED6FDE2C29B5845F0B355D2F5128FB",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1/resultado.json",
+    "SHA256": "EFBD48CA0DEBC9F6A134F90F5059AAE4F0107CC7ED2A8A87C92EC001F5A1006E",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1/roteiro-testes-nao-executados.dax",
+    "SHA256": "CA845F26E41BE389650E19BEB7F49111B32C75D9639F7462A47F05F21FBCF532",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1/roteiro-testes-nao-executados.sql",
+    "SHA256": "EAACC2DB934E6F68FC024C7698714C9F6129652C4F80465B21A652304813A031",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1/tabelas-colunas.json",
+    "SHA256": "0AD9787A43FBDDBAA145FC6F67BD8401E14FD6715A14D1EB66511C38750A6AB5",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1/verificacao-documentacao.json",
+    "SHA256": "9856A3D310A6E04B7D5024DAFA7687195A5F6F826F14DD1CD628C4B971D04694",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-aceite-tecnico/aceite.json",
+    "SHA256": "630B306E83CC747B360B952360D404BED27C19C968D547FBD08AD057E1EBDE58",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-aceite-tecnico/baseline-protecao.json",
+    "SHA256": "36CB521FFFA3017E0C3062631322C2F58335E924CA926A45D8BCC759CC86B6DE",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-aceite-tecnico/integridade-final.json",
+    "SHA256": "7F26778C037AE7D88F8EE640A4B0E78EF20BF54DA69233E0E4C81CBE92C51846",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-aceite-tecnico/manifesto.json",
+    "SHA256": "956E419C588467FC3CC80A23B5312962B723ACBA9C2DCCD100C9E8A9B62B376B",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-aceite-tecnico/verificacao-documentacao.json",
+    "SHA256": "51C23BD4F487D5AF254DA849722C44D64C1C9CF4C16F303ED14F472AA7ED4778",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/01-descoberta.dax",
+    "SHA256": "349956944890FB485A5C0AF5E112E2EDCD096BC411FB48ED2E21BD1235F812E1",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/02-relacionamentos.dax",
+    "SHA256": "E25C37581591AABDFBACB08D6E846EC73D1C6AF2F88527F28EEBEEE805C543E9",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/02b-metadados-fallback.dmv",
+    "SHA256": "EBF28A726D04B36F31771D8E0FA12257CD2FF58F67FD67C08629A0AF96F8F866",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/03-colunas.dax",
+    "SHA256": "8369335DBEC4C8F00D40B539A8BE2ADF34C0CC2F8181C90E3FAAC6F372BAE2B2",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/04-chaves-modelo.dax",
+    "SHA256": "1D61C61F2A691AD2C1A1406B5C25D5A349C48BC9529E1690E8CB35EEEA65703A",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/05-integridade-modelo.dax",
+    "SHA256": "9903F4AC0BE06FC13141ADE6F95EB4002B94DDB27B85F692D8C1BB5B62B96FBB",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/06-filtros-fato_lancamentos.dax",
+    "SHA256": "932BDDFA56605D90E46E9190959C41410E4A642CBCB17E5153D43687081F5D93",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/06-filtros-fato_orcamento.dax",
+    "SHA256": "2C224A5A4208F04D9C36367E1FC0DAFE119A0B89F93FE58A29ADD8C585C680B7",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/06-filtros-fato_previsao.dax",
+    "SHA256": "B92AC6086DF51E35E96686ED64C09490D55426E933D541CFD3ECDE6A1DC17B25",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/06-filtros-vw_dre_comparativo.dax",
+    "SHA256": "1ECC6DCD106A663F081493B3663F433BEC105C62878F98EB1B65DF28B85C66B5",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/07-controle-integral.dax",
+    "SHA256": "0149892E996E4ACEAC49D168CCA4E87E6B828B8FF377CE0D43435C19A9614B62",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/08-linha13-filial-periodo.dax",
+    "SHA256": "08C0304B753FEA65B2C7C55546C281C082E57B7C44B465B745FDFF11858C7E60",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/09-linha13-filial-ano.dax",
+    "SHA256": "D168ABAE38BFCDF79FFBA9902637CE561208C50D857DFD86442CB115E7063576",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/10-descobrir-conta.dax",
+    "SHA256": "F6BF54D991A42E14D9C0AC91EEA028737FE527FA9233352C88A1207F60B43EEF",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/11-filtro-conta.dax",
+    "SHA256": "5CD6535A8BD3C32F9BDCF73D0871CCA1F206D1076A00323FAA311F9684F24DAC",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/12-filtro-dre.dax",
+    "SHA256": "B6F2203EB26615F1E3908420B789AFC9F78E7AD1E337AB7573C263DFDD17471D",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/13-relacao-inativa.dax",
+    "SHA256": "5548F90E44FBE2A4476F075C9B0AB82C5352477A185CCF0C5DF993F81C08BEBE",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/14-calendario-modelo.dax",
+    "SHA256": "A7389180DBD288C00B7A872EB919D467AE6E932222BE5F67432063718556A01A",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/15-cobertura-cenarios.dax",
+    "SHA256": "04FAB2D7348DF2ED36D4CDD602408CE72228F462536049F67859FAE58DBD8920",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/16-grao-view.dax",
+    "SHA256": "7D88B2BEBD36A3B4A6C65360485565C71D92A2841446665142D3D746EA79EF10",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/17-intersecao-conta-filial-periodo.dax",
+    "SHA256": "CA7FC2EB8AB50ABF2CB22971F25A55836641670F977C3206C4AF25E98DD94958",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/18-contrato-dre.dax",
+    "SHA256": "2D64258420823E64829CD51B569BB1182F4EDF2AB4513F545495341FC5CD2BED",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/19-particoes-carregadas.dax",
+    "SHA256": "6189F7004FB9763FDDABDDF421C3042E0D138185C56053D1D7DB8C2D6DCF4AB0",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/20-mes-multisselecao.dax",
+    "SHA256": "751C55AAD74B8DBEA31CAD1B708498844551F4E0C1B9B8499F5227E0FC693A85",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/ambiente.json",
+    "SHA256": "4EE7685D7AE3BB509D5A248F4B9755FCB4891AF00F096165852D57775DE2E557",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/baseline-protecao.json",
+    "SHA256": "4685B7C1E255918CAE1B0F060FAF58B6BA3CB3E55E510FF6A4194A376987648E",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/complemento-databricks.sql",
+    "SHA256": "57D06281F95D14D095C52EF0A1FB7E11C23E09099341FF99B4E75F9C926B0CE5",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/estado-execucao.json",
+    "SHA256": "5773B24BA6EA60AEB9E408E1CE24A779D4DF72BFBAEEBD82ECCD2012648EFDE0",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/integridade-final.json",
+    "SHA256": "2F75437FBCD0A50CCF1DF01E5D997298ADEEE2400749842581BA93EE1CB961D5",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/manifesto-artefatos.json",
+    "SHA256": "7BFA80195B81298E33B84DE47E6FDEFCA44C9F7C09D50478CD3652C05C52DE52",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/registro-testes.csv",
+    "SHA256": "A2793B8019DF7FC1F22DD106BF6BBF382982A0B688F38C29B2B5A9AD171B02FA",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/reuso.json",
+    "SHA256": "D39D61553BAEC77EA9B5B6AD77A878258818ECFD1D329110043607EA3605A146",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-dinamica/verificacao-local.json",
+    "SHA256": "63D7932F5AB87ED446C21D4E38D36EB3CAE20455CCD6E21616D00F11DA91AF3B",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/01-descoberta.csv",
+    "SHA256": "D71FF64387470C5C3D147FD6835AFCE4BFEAEF663AFCA6BFCCD13EB12B885F69",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/01-descoberta.json",
+    "SHA256": "2DA8146F8EEE98B0F5B670CA38B19EF39F4435408A36ADD216B9CA5F0C0DD769",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/02-relacionamentos.csv",
+    "SHA256": "6A90857E7D35B7EA97E2C23D60D90DD8C0161CD461A5BBB177AE3B27A9A3B12B",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/02-relacionamentos.json",
+    "SHA256": "632142A4A38B07EBFA64B9E75D59D1E4BE48F9A5A40FEED677C62D942F24A526",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/03-colunas.csv",
+    "SHA256": "51A40A17D5E45898EEA40B794329E5FA22BE5B2582A2DFD9FAF65439DE38E190",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/03-colunas.json",
+    "SHA256": "0B8015708A4A9BF5CBD8E6211BF03DD90F8EF0C5A6E74D32AB329E887EE7141B",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/04-chaves-modelo.csv",
+    "SHA256": "8E8D37812C2447E573436614E45E63DA318A4A248FB842E150F1641434D6B4E2",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/04-chaves-modelo.json",
+    "SHA256": "C2B2B300CF11E5F7F23A6762C7D93FFA464CC9FC5B027885C55911665197067A",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/05-integridade-modelo.csv",
+    "SHA256": "40D15D34466A17767D422371169BFCAD9E64F8A0F9DC0D48428C9968366318CA",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/05-integridade-modelo.json",
+    "SHA256": "3777EC2511B89A00AAE493C8C934F6864080BAD7B25165A36050B31FF8C9E6B9",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/06-filtros-fato_lancamentos.csv",
+    "SHA256": "8084A13351E8AD0B490E6C3717A094DD78C40BED702DDD1F16F5C58024909027",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/06-filtros-fato_lancamentos.json",
+    "SHA256": "8410ADF90A7C2CAAF2202BF9AC912A95EDA4A3CC08190870D7CF95BB0C87EF08",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/06-filtros-fato_orcamento.csv",
+    "SHA256": "1537C2D15FBA0DED88CF6878CCC1861963F8EB88A17685D2367746A8056F619D",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/06-filtros-fato_orcamento.json",
+    "SHA256": "44161233BE2AFF71555B5A8EC9C15E3D5605D5ED47ED2D7B5A433D35F80DC9D2",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/06-filtros-fato_previsao.csv",
+    "SHA256": "0676510A2D0B4B26A3C48950584C634D4F83E06779B013142FFC5B2046A9C6B0",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/06-filtros-fato_previsao.json",
+    "SHA256": "4A9F690C8072A1A8DDF180EA3F044F78A21609FA77258146BFF28215868C1409",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/06-filtros-vw_dre_comparativo.csv",
+    "SHA256": "75665E3F1D05D9FF2ADAABD8E6EEFD4419E7792E6E40B2D09B4DFAF4A58100C1",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/06-filtros-vw_dre_comparativo.json",
+    "SHA256": "89C9BFC04D0CE5D5D3BFDD1CF561E4CA4EA6F406BFB271D0EE9FA2D97CEF1671",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/07-controle-integral.csv",
+    "SHA256": "D39A7C01896954CC0D8A4C52DB98BF7787C1C9F28D0F7D60AB20DAFF0499CE5C",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/07-controle-integral.json",
+    "SHA256": "D982043DBFA78DA0F0E874F8376F1DB644E5D9946B1DC74C3A1A37E2DB3639BB",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/08-linha13-filial-periodo.csv",
+    "SHA256": "A92FABD274105DE95E505A2C1626DBB8BDE544AF61FA9D8E2A8352FE34C7A333",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/08-linha13-filial-periodo.json",
+    "SHA256": "E5DE6940B447D47255A046FA1089B302FBE41EECAC4C1085B697EF0D7BB3636A",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/09-linha13-filial-ano.csv",
+    "SHA256": "FE2D2751D8C89A855557FC9B0E994238605F3D896659F36D56F832F09F45C7EC",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/09-linha13-filial-ano.json",
+    "SHA256": "CE25A47B48C88956C33B20C4AAFC15B8D63D408ACAE2631F49E2584EC0450386",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/10-descobrir-conta.csv",
+    "SHA256": "9C1D63D8BCC5DA302CA8AE40A99E6B76D8450BC90CD8BFC7A00B3DE541ED6686",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/10-descobrir-conta.json",
+    "SHA256": "8A91FA18C7475FD55275E1629BA030D73F1D71CBC9B5FB0705D630E67F5E428D",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/12-filtro-dre.csv",
+    "SHA256": "5430BB9F61DA7BBDA85315C4E8A16F6020F1391F85756079892EFDDA3FE80B53",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/12-filtro-dre.json",
+    "SHA256": "869FB1FD9C6ECD9E4204CA37F7B11E70BE70821257A850BAD7BA2D89BD34704A",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/13-relacao-inativa.csv",
+    "SHA256": "210730CAE00D3B16E9D87F83523C03981D0DD149EB8733DBA025DBCFB1C393EC",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/13-relacao-inativa.json",
+    "SHA256": "E21296E989A262E02E2033404FE6D3D046E17D44DBB9AD26843C874720CD74A4",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/14-calendario-modelo.csv",
+    "SHA256": "6C6D8FEF128E3AA1CB04A06217BAB00A469ED839F422733BBA0601A89CBF293D",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/14-calendario-modelo.json",
+    "SHA256": "F9FA770DADB674ABCE23F8E6F92DFFB55E975B53BC5954E8EC1A3B0427CB098A",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/15-cobertura-cenarios.csv",
+    "SHA256": "3363D5E19CEEDDF29AB71468B8104C950F8938DEE7B858758B9816A454E5565A",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/15-cobertura-cenarios.json",
+    "SHA256": "CB0B5136BE1E53FD48C887366B38EFF84CD467ABD7CA7D41F5A894C6CE9E4412",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/16-grao-view.json",
+    "SHA256": "A5338D955B09046EC0B16F3A9625B7955C763AAE07DC722E474E6078745F932F",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/baseline.json",
+    "SHA256": "9B877AD50F649B4A8444977AFAD936CCE4E058A2D48F73421C40DD5EB2C911CC",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/consolidacao.json",
+    "SHA256": "5B02CCBF6E7B30F847F32667171C72B8DE5C9952BF1DAED8E82DB71918208680",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/execucao.json",
+    "SHA256": "63D58D2BF3AFB80288EB4A2D658E85A8063EE7EC21014186809F0246C239B5AE",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/integridade-final-documentacao.json",
+    "SHA256": "24902DB695CA2A6C6E9C32F0094944D0E3ABC9CB59681E8DEDE3D7185A9DD28E",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/integridade.json",
+    "SHA256": "31BD7B50FF665AE4B60997088C5245CB5A36117C73C7B4224A4A36A4D24DD316",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/manifesto-evidencias.json",
+    "SHA256": "37874F887E0320DE68A5AFE1188F8AC38EFA6C6E87F3103BB2E8317613EFD4F2",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/registro-testes-executados.csv",
+    "SHA256": "55E358AA4A900EBF1B8DF2941F4FA9147835352EE2B3776AE87B79CCB3DA8FC9",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154642/sessao.json",
+    "SHA256": "86BBFAFF9E47B41E5CC109974BCD1C7897314DCDB6DC9B0314523406D337472F",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154704/11-filtro-conta.csv",
+    "SHA256": "2ECAD1965066BCF3556CB90205C0911BCA62BE717F889194C96B15C9FBCDA0C9",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154704/11-filtro-conta.json",
+    "SHA256": "DB5EAC0B7CB03AD282B54482DA8BFAD270D891FCE5710175DC6FBBE5F95DBB08",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154704/17-intersecao-conta-filial-periodo.csv",
+    "SHA256": "0CC5D6324B8F99EE6F48E863BBFD9432264EE1E6C96B99489CDF88B39B3AF469",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154704/17-intersecao-conta-filial-periodo.json",
+    "SHA256": "81364FCE22B68DF614CF0B33B53FFF5A15049A96BC9CB08CD7E5E88774ED8D20",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154704/baseline.json",
+    "SHA256": "9B877AD50F649B4A8444977AFAD936CCE4E058A2D48F73421C40DD5EB2C911CC",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154704/execucao.json",
+    "SHA256": "AC288D6D20D4790DB1C0005366C1AFA652FAFA01D0E0280D3666348E2FD128FE",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154704/integridade.json",
+    "SHA256": "31BD7B50FF665AE4B60997088C5245CB5A36117C73C7B4224A4A36A4D24DD316",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154704/sessao.json",
+    "SHA256": "D24683FE97D5C634B0E265E7E1351145DA92A97E1037AFF546BE54A1219C7856",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154749/18-contrato-dre.csv",
+    "SHA256": "11AEAB346EBF65CD2A59189F192C547387B73EA609728B29A6982DF7D3383D26",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154749/18-contrato-dre.json",
+    "SHA256": "B0646426087260ED106B4152B3854F119E11DDEAC66C027FEC4478CF93EF1377",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154749/19-particoes-carregadas.csv",
+    "SHA256": "1905874DF6D9A1CC39F83672BCBD65B98A038A782F47A5E40CB8590521D731B7",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154749/19-particoes-carregadas.json",
+    "SHA256": "105D6C514F60BB6E56419750D1DA7298197201C514D78502D2B2B8E452C1A6D2",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154749/baseline.json",
+    "SHA256": "9B877AD50F649B4A8444977AFAD936CCE4E058A2D48F73421C40DD5EB2C911CC",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154749/execucao.json",
+    "SHA256": "BD37F6B0EB8233116D3BEB78B8EF8DA9C26610CA0614F3A44C9F6F745E7257FC",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154749/integridade.json",
+    "SHA256": "31BD7B50FF665AE4B60997088C5245CB5A36117C73C7B4224A4A36A4D24DD316",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154749/sessao.json",
+    "SHA256": "C6EDA9C19019C1364FF06892E1DB10C146DBFA0B26B25857C18DE28FB6D4A8E3",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154841/20-mes-multisselecao.csv",
+    "SHA256": "2845127331DA0BEF8512799F92B986DF00A23E086C0A4F629EBB220E99712388",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154841/20-mes-multisselecao.json",
+    "SHA256": "3B541E14CBDF902203578FF3E4EE387AD6FE86685C52958474DDAFEB7AD9EAA6",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154841/baseline.json",
+    "SHA256": "9B877AD50F649B4A8444977AFAD936CCE4E058A2D48F73421C40DD5EB2C911CC",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154841/execucao.json",
+    "SHA256": "25FF3D45B63FA323C290683B684420B05DF9C35A700206300D10B733D3F764BC",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154841/integridade.json",
+    "SHA256": "31BD7B50FF665AE4B60997088C5245CB5A36117C73C7B4224A4A36A4D24DD316",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/fase1-execucao-20261102-154841/sessao.json",
+    "SHA256": "B6E7377A0B199BFB475BC3C60CC3B238586B9A01FC5F9B98C526D79C7EB634DC",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-20261102-160536/arquivos-alterados.json",
+    "SHA256": "CEB13B9F3989C2F8C3ED649316A5F3AAB76308D3139F0B9CE3ACBA3E2DE66205",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-20261102-160536/baseline.json",
+    "SHA256": "FCC96AC038D3C0D3B4248974BCC0C7573843E395DB3CFC1FC061FDE73AF5BF87",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-20261102-160536/comparacao-entrada-anterior.json",
+    "SHA256": "93028B2147FE45431BCD36FFA249C958FE27D231A99ECF547266EA8E23CCD3CE",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-20261102-160536/desktop-antes-edicao.json",
+    "SHA256": "BEEB379F4112F2A71ED925FAE480C025B82774BFEC9BB8036EBC62A7236E9496",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-20261102-160536/estado-lote.json",
+    "SHA256": "605D704317895208342DD2FBA3C824E711309D85D898BB053FF55277153F7B3B",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-20261102-160536/git.json",
+    "SHA256": "F09A162F247B736CA8EA2CE6D58C00521BDD3572CF906D9D7B8B97C5D3A36A44",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-20261102-160536/integridade-final.json",
+    "SHA256": "B03BDB7863C912370DF1FB206DCFBFA9931B53700EFFC466CD0D1678693B4B6D",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-20261102-160536/manifesto-entrega.json",
+    "SHA256": "D144A7299BAB7CCCD41E7C4764FADB39FB09ACB0363D5863FC42DB8C8D4F931A",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-20261102-160536/preparacao.json",
+    "SHA256": "6933AB171CED8F5DACAFFE2A609BA918393F6D2BE09920C09404FB398E76A9F2",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-20261102-160536/tmdl-parser.json",
+    "SHA256": "90205D0201226CD2A2B78A44D2B9D6D2DE8EDFA61D0B43D6A29D2126BCBE8876",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-20261102-160536/validacao-tmdl.json",
+    "SHA256": "686A5689AA0664BF7A2260388DEA13C319652DF20A7AEB625FAF73099F4EF3CD",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-20261102-160536/verificacao-estatica.json",
+    "SHA256": "09CCC37B962BBC2FF36172AE233B4F662C5C5B329E40FC018247DABEEE59082B",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/01-metadados.csv",
+    "SHA256": "A92D946FB5A55DA281F71ED83DFDC4ADF209A78A4CDE911EAA9CD123E8E640EF",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/01-metadados.json",
+    "SHA256": "4271F89BFAA3E73EBEE33DA443CD85522B3F9C9382FDEAD57D3A76A2501139AF",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/02-controle-integral.csv",
+    "SHA256": "46C94E33D17BCE50996BBFD33C3D4F81C2EAA1F2D57464852C1BEAD6D745A49B",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/02-controle-integral.json",
+    "SHA256": "615687C49B1C69134972EE346B23BB0CC979000831308B55FA911D65A521698C",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/03-filial-periodo.csv",
+    "SHA256": "74767044DE81C5FB56CFED426D82BEB18D6D1D6FFEEFA7E1D3C37DE40AED9072",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/03-filial-periodo.json",
+    "SHA256": "35F8C031DB6AC55A3BE7755C955B49A57C53335C7CC0A9F52374A959CF6CD23D",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/04-posicoes.csv",
+    "SHA256": "0F75C0C0AB20166A67BEC5CD5BAF7BE5E56B12ECA1C08ECE8259B8FEAB514B4D",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/04-posicoes.json",
+    "SHA256": "215766C5CA563674C21C79E17CEB8F25710F2F49E049F0FBC42C6FF9D73B8501",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/05-contextos-e-totais.csv",
+    "SHA256": "5298DF5DF6471B0A6D609179F5616C56FEA6EA5325EAC50639B2A2EF77387289",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/05-contextos-e-totais.json",
+    "SHA256": "EE15B05738C424F4559795175DB996D7BB03FD18FC64887329A5BA3F99291577",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/06-total-matriz.csv",
+    "SHA256": "8B25C248A499B576523582ADB34CC898E05D5AC020AAF01F3862A1817057163B",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/06-total-matriz.json",
+    "SHA256": "4CB23894DB7C558BACC76C1F714539B3E511A5719C210C113C9A2450F77A45EF",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/07-ebitda-ebit.csv",
+    "SHA256": "1833CAF600C774585BCF967FAD0906BE6EB0AF82E088780D9C99D878CF572A07",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/07-ebitda-ebit.json",
+    "SHA256": "16CC08D2D385850D9BFDF82854D90381DD9CD67D3B617015C54C0012820FCDFB",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/08-ausencia-realizado.csv",
+    "SHA256": "DC1F050010A7FEA1D915916D75C1D37B546055DF1A4FA1A6A0BD17AD7944F3B9",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/08-ausencia-realizado.json",
+    "SHA256": "8EA8ED6C556C3F1576375F52F1FBE682941F97C0BB9E2865E671FCC213F6F654",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/09-limites-conta-dre.csv",
+    "SHA256": "D380D94FFC8FA1F1009820E2A3E72B05E0D2D4B6AC6C1531B5318D8418A93C43",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/09-limites-conta-dre.json",
+    "SHA256": "B16E9BB85EF698067615A617ED6D1510601C79E6A003F6045D2DABBA3FDC6378",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/10-materializacao.csv",
+    "SHA256": "4A650FDF7EC5A1C30674B1E6D75250AD3D83FA68D18716573C06C3373469D45B",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/10-materializacao.json",
+    "SHA256": "2EB96E8ED6ED2E769F980ED31F50F8551A1E86A158E02CAD136767E7BCDA773C",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/11-particoes.csv",
+    "SHA256": "0C9DD6B4CD0C12019A8B452AF0BD427F93382AE9677C5565BB974B51A24CE240",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/11-particoes.json",
+    "SHA256": "6584A9E2815E0C26462FED7E7455CA707CD33F30F3F3A2650F6AC75F99FBD994",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/aceite.json",
+    "SHA256": "43CD1FE28BF32DE57DB3F7D44C099EEED455D9C3C2431AF6F4A116A0FD1E165E",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/baseline.json",
+    "SHA256": "9A2E15F592E089BE44E45993C2707797D5533088AF9C01A0113EFADD8589B61A",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/execucao.json",
+    "SHA256": "A2F894B22735BDBA3099072E4C0A97050D12989E9651F3099BAF1E9E7BDDEECE",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/integridade-entrega.json",
+    "SHA256": "9F06D9BDC4FF1F7115701A0109AF8DADD40E36E96E2F6D217F40E685CEE978E6",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/integridade.json",
+    "SHA256": "376163C42CAABFDD0A4B37C5B4A6F836E26B733BB22B1DB235386EF92F189FCC",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-1-encerramento-20261102-162739/sessao.json",
+    "SHA256": "3545EF6581940CDF3BC70DFF0263D61BC5F975E1396A91B883987138FAD69033",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-20261102-163559/arquivos-alterados.json",
+    "SHA256": "5DB608B7412C4C80D8BE4B23B12A2F3FB06D7F165474314702E0722CEBA30943",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-20261102-163559/baseline.json",
+    "SHA256": "396857FBCD9AC4CFFE2DFCC924D5C3174473D30FEF0DB58E5FEDBAE3CA7EC4C8",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-20261102-163559/catalogo-novas-medidas.json",
+    "SHA256": "3693B3BA8CD546A8187CEDC8087CC1B418A0CADCE5C8F063916E5788D8D3C3FC",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-20261102-163559/desktop-antes-edicao.json",
+    "SHA256": "D9F7EB926441EC6E8427CF56EC6FDD62E484702665EC68B12879B37DF73115D4",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-20261102-163559/integridade-final.json",
+    "SHA256": "BF1CFFFEDFDCF8797CA35D65ED58BEF1D831D7E19000FFB8D189EB4F576EC514",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-20261102-163559/preparacao.json",
+    "SHA256": "0F1718B401CEB09F7D224A8741310152ABC421FD6B740433EDFF7CE779668DE9",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-20261102-163559/preservacao-seis-medidas.json",
+    "SHA256": "058F01BF5EBD329C08738E13C4E7E1E846EFBDA15BBC41AD31128BC48B593038",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-20261102-163559/validacao-tmdl.json",
+    "SHA256": "AE79A1EC6690AF7EF9C7A88B635A425B4E42B22CC41FC27EBCB459E478CFE704",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-20261102-163559/verificacao-estatica.json",
+    "SHA256": "87C87F97E1145188BA684E16036A73D6B73F123D2FBF91211BF65EB23E4E88EA",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-consolidado-recebido-20261102/analise.json",
+    "SHA256": "77F9E8699BD839E8CA08B9AD32C835116E2654A8BE38A41CAC3CA2ED7E1D15CF",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-consolidado-recebido-20261102/resultado-com-cabecalho.csv",
+    "SHA256": "985FD2A31F9411A4A503C74843EF1556AA1159C233DA93BA90CC15AA59EDA2C3",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-consolidado-recebido-20261102/resultado-original.tsv",
+    "SHA256": "CE81651927461474B5E7BAE73F3456EFB5713E8464A79D9E0849286D628C5456",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185937/01-metadados.csv",
+    "SHA256": "E4B29C8F45E2392123124C999372A721938C25C57645DB9365218D4229948CC9",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185937/01-metadados.json",
+    "SHA256": "5C203AA61E2B33A22C00A6F0FB3D5CE032F4AB63A9B2585BD1548AD6B4E260A2",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185937/02-filiais-periodos-conciliacao.erro.txt",
+    "SHA256": "B29EEC9CBF108866C39566C6F9A07EFD1C3747EC1E03F160EE8017FF2652E60E",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185937/03-posicao-descricao-contextos.csv",
+    "SHA256": "929C7BC996E4A55F2896E005971F2A073F7F00D72D6DFD07D123CD5CA1FB6A79",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185937/03-posicao-descricao-contextos.json",
+    "SHA256": "7B48F8D08E9634A507E299582EC06A996B1E9E906428BF277150C3B197CB03CD",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185937/04-matriz-totais.csv",
+    "SHA256": "A56F0CFA3E800A340402374D5A2CB14DAE6B1996F041B5520B5126D1DB6E0324",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185937/04-matriz-totais.json",
+    "SHA256": "596497CB3CE3B43921F89E826FF5A17B0F4B4D954D311828C6637A2C9B2CC09C",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185937/05-aditividade-filiais.csv",
+    "SHA256": "0094C61F3DF0E8057BED0D29EDFD713D11364ED168E4FF526CB2BAF995177625",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185937/05-aditividade-filiais.json",
+    "SHA256": "64AAEB3ABF29BB3C1E14A67598B01EB4F065C20D14F590E0703DD7F01156F33E",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185937/06-ebitda-ebit.csv",
+    "SHA256": "97918A43D0CADF37001C462D26AE82027F91BD19D083E952E5C1EAA3A21726AE",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185937/06-ebitda-ebit.json",
+    "SHA256": "E1F25A65580FC851FBBC175F844821C076760CDAF88C132E805C5576C464B356",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185937/07-regressao-controle.csv",
+    "SHA256": "46C94E33D17BCE50996BBFD33C3D4F81C2EAA1F2D57464852C1BEAD6D745A49B",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185937/07-regressao-controle.json",
+    "SHA256": "615687C49B1C69134972EE346B23BB0CC979000831308B55FA911D65A521698C",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185937/08-regressao-bases.csv",
+    "SHA256": "5298DF5DF6471B0A6D609179F5616C56FEA6EA5325EAC50639B2A2EF77387289",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185937/08-regressao-bases.json",
+    "SHA256": "EE15B05738C424F4559795175DB996D7BB03FD18FC64887329A5BA3F99291577",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185937/09-materializacao.csv",
+    "SHA256": "4A650FDF7EC5A1C30674B1E6D75250AD3D83FA68D18716573C06C3373469D45B",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185937/09-materializacao.json",
+    "SHA256": "2EB96E8ED6ED2E769F980ED31F50F8551A1E86A158E02CAD136767E7BCDA773C",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185937/11-receita-liquida-margem.csv",
+    "SHA256": "9688910CF35C2599642ADE53ADC95E49C58F2EA0FACA88EBBB845882F95B1BE9",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185937/11-receita-liquida-margem.json",
+    "SHA256": "488ADC938326D9B7CCC553D62CAE8D6F737C907D9C05361B183D076BDD7B718A",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185937/baseline.json",
+    "SHA256": "F04EB75276AB5DABC6D244EA6746027DC1CAD655A38CCE74E6922450933777AA",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185937/execucao.json",
+    "SHA256": "2F3D1E6B2AF8EF8EADE9DAF234E1AEB83AA2EBB94AF1C8735F266D37815FD154",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185937/integridade.json",
+    "SHA256": "78E11A39A64FC5E7F11B635BC37B75CE7F840FE6D69734E0AE5CF26E3E003D7C",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185937/sessao.json",
+    "SHA256": "4BA3431E482D6F0F03954714505268EE094117D2E1634102AECA29E72E270089",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185954/02-filiais-periodos-conciliacao.csv",
+    "SHA256": "76FDCE78656C174C97BAAAD5CE8DB4D3B720F19B7E23F602CBFA4770672AB4D7",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185954/02-filiais-periodos-conciliacao.json",
+    "SHA256": "7E2E8E70557C7425D0ED34930C450D7BA5DCA74AAB4A53870A415BC9BD4171B8",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185954/baseline.json",
+    "SHA256": "F04EB75276AB5DABC6D244EA6746027DC1CAD655A38CCE74E6922450933777AA",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185954/execucao.json",
+    "SHA256": "BEE2B64823E18984605AD84BAB9E681DB9DB2BDE2075071636C09A2F0FBECF1B",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185954/integridade.json",
+    "SHA256": "78E11A39A64FC5E7F11B635BC37B75CE7F840FE6D69734E0AE5CF26E3E003D7C",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-185954/sessao.json",
+    "SHA256": "5D625BF490AEC0B4F13F78CD4195391BC117C5994ECBF2A4696D871FC427C168",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-190116/12-regressao-ampliada.csv",
+    "SHA256": "F65ABEB760EDFFF4654EE9108BCEAC3196BC1C1F9343D5D630BE4764AC4B3B28",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-190116/12-regressao-ampliada.json",
+    "SHA256": "434E2FF9B0925E33E766C470D620A73C4FCC93CED4017091197BDE2373A16EF3",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-190116/13-seis-cenarios-consolidado.csv",
+    "SHA256": "2A7434DBB2BF20D82D805C966FC0E54D4EABA0352BBDF3816B0A4B44AF335EF6",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-190116/13-seis-cenarios-consolidado.json",
+    "SHA256": "5152412DEE956F592BB87CF24DCC8D188B0D37EF0BB0FE2B2E7B3984CB7D049E",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-190116/14-ebitda-ebit-ampliado.csv",
+    "SHA256": "C576FCDD5177C33A5134E190A9560679ABAF3969A0D3A9D5175C8C14E76E7BA4",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-190116/14-ebitda-ebit-ampliado.json",
+    "SHA256": "215B500DB775DFA1842BB0A8466C9C410E3BFD83C8F8A409B66261BEE5C5E141",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-190116/15-estado-particoes.csv",
+    "SHA256": "2774107C221357B9EE364163EF47E93549D8D2DCE5BC808BC7C50CF4E7EEDF40",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-190116/15-estado-particoes.json",
+    "SHA256": "6BE54C0D76B7B0F0B5D85B309C0767C97562BC57C1C7FD1A5DA013A10903484F",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-190116/baseline.json",
+    "SHA256": "F04EB75276AB5DABC6D244EA6746027DC1CAD655A38CCE74E6922450933777AA",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-190116/execucao.json",
+    "SHA256": "EA200EF7ADFF26DF55572E8B1E4EBB3690840B150A9CDC73E683990EBD91D019",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-190116/integridade.json",
+    "SHA256": "78E11A39A64FC5E7F11B635BC37B75CE7F840FE6D69734E0AE5CF26E3E003D7C",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-190116/sessao.json",
+    "SHA256": "E86B13FF3A15B2956016595E3E3EE1588CEAB05A7E50B0AC67956E4789CC45BD",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-190257/16-regressao-contextos-ampliada.csv",
+    "SHA256": "F153DFFE8B1A30DBA716D3EA464F4CE914DA6AB2919EE040635F65C0F0083A62",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-190257/16-regressao-contextos-ampliada.json",
+    "SHA256": "A4D8BB990647F99996D5A14439BE561F9235F8C621458C3B881A426F8FB9A734",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-190257/baseline.json",
+    "SHA256": "F04EB75276AB5DABC6D244EA6746027DC1CAD655A38CCE74E6922450933777AA",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-190257/execucao.json",
+    "SHA256": "0421771C6873F0F7CC3F02ECF5D174D91BDBCF98F43D75D00C076306188BAD62",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-190257/integridade.json",
+    "SHA256": "78E11A39A64FC5E7F11B635BC37B75CE7F840FE6D69734E0AE5CF26E3E003D7C",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-execucao-20261102-190257/sessao.json",
+    "SHA256": "CC12B9D38C03731D19747D886C61241288763C27957D72EA522464BFF1501158",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-sql-completo-20261102/aceite.json",
+    "SHA256": "A8BF6649E6B13CC0ABFE27190B1DBF8956B7FEA2A1603E7BBBC6F45CC27E8D72",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-sql-completo-20261102/comparacao-completa.csv",
+    "SHA256": "2563EDFDE94A990934126F58ED19EBC17AFB8E9CF1D2B6672377796E86643F78",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-sql-completo-20261102/integridade-producao.json",
+    "SHA256": "51C272CCDB5FFDA7137E3D92B236EC704EDAB49B1E42F90756BE93C87DC64D6A",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-sql-completo-20261102/New_Query_2026_11_02_15_53_51.csv",
+    "SHA256": "109CD5AEDA3CD5C651F87887E01327550A5462DD4CD5A4BF164EEF49A4F0D81E",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-sql-recebido-20261102/chaves-ausentes.csv",
+    "SHA256": "1429B2B3FE2844671625D5EE399E4CBC1DE8DFCA6DFD82FAC2B8C549BE6C3B38",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-sql-recebido-20261102/chaves-ausentes.json",
+    "SHA256": "0465F3AB8A7B26099F1F0535715BFF52FD18E71851B96ABF26FC35EDDDE169B4",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-sql-recebido-20261102/comparacao-parcial.csv",
+    "SHA256": "0C2035373296DBE85809D65D24AB7739DC4E4412E475AB66FA8E56485E5251AF",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-sql-recebido-20261102/comparacao-parcial.json",
+    "SHA256": "AF7087DC2D8F5846B4A1EBBAFFDA85BABB864CA42BA8A4AC86CBF87EAA01D208",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-sql-recebido-20261102/comparador-original-status.json",
+    "SHA256": "553EEF25DF778C48FD825B13F658A57CCAAF3DA7915C0B5B4987089C9CFB580B",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-sql-recebido-20261102/divergencias.json",
+    "SHA256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-sql-recebido-20261102/resultado-original.tsv",
+    "SHA256": "46729C5C6E095744CA304285F26FD8FC69A5BD1CD8411462E47B200A5A6812AC",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-sql-recebido-20261102/resultado-sql.csv",
+    "SHA256": "E921EF4AEFD1221FE6147575724B060C2DB60DD1C4C7F5066EED56770F0BDC1E",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-sql-recebido-20261102/resumo.json",
+    "SHA256": "696A3432080E1FF17F8C01D95AC482DFA73FF16DA2D778CB04B4D87BE2FF854F",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-validacao-final-20261102/aditividade.csv",
+    "SHA256": "DCB448EAC799B9C91C9CBDF7A34EFBB32B3F1BA7DD781DF81BCA184CF30F7137",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-validacao-final-20261102/aditividade.json",
+    "SHA256": "1C371143515890D6A6BF947616F60D8A5731B94E699754854D136E7ADF78C225",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-validacao-final-20261102/conciliacao-sql-completa.json",
+    "SHA256": "1F4B622979EBBF058D2C70DDC404A00B96AADF86D9231ED299DC326DAB14EEB0",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-validacao-final-20261102/divergencias.json",
+    "SHA256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-validacao-final-20261102/formatos-metadados.json",
+    "SHA256": "D27C3AA65CD8066D50EE08AF7DB59B23369FF2D86FA042D2480DD5EF12F47B50",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-validacao-final-20261102/grupos-filtros.csv",
+    "SHA256": "D795B14184BD6480FCAE9F2E54D974035C0997873CE39A921E268204CF446924",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-validacao-final-20261102/grupos-filtros.json",
+    "SHA256": "71510B4249DF8E4D33FF36B35FA715D346D2F4F3FDD83120A3D274EBE6740568",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-validacao-final-20261102/integridade-entrega.json",
+    "SHA256": "5ABA6F8DE8E12667CFD86327D1DBD77DF65582B1C8F9EDA5398E3F6F7331F0DB",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-2-validacao-final-20261102/resumo.json",
+    "SHA256": "3C4C576B5A37313D9E907A98CB0BED7C24F22E03841AA36AA087CDDAD69D3C93",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-3-1-diagnostico-20261102-193245/01-diagnostico-cobertura.csv",
+    "SHA256": "0E7ACE81DF5500B8F79CFC55E2DA9F8A163CFBCF9B9310975EBA285B8B0E5AC4",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-3-1-diagnostico-20261102-193245/01-diagnostico-cobertura.json",
+    "SHA256": "ADBB2A544429BFF5D05428C726299270F2D8338C988825967A6143D4F05BB6CC",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-3-1-diagnostico-20261102-193245/02-colunas-modelo.csv",
+    "SHA256": "90C151B7ED80867196348EFA64BFF55AFDC3D10778C79C918A1FD6A48FE2357E",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-3-1-diagnostico-20261102-193245/02-colunas-modelo.json",
+    "SHA256": "A13DA7A29A43D0404D7FDF13A9297EC0B8A1822FED8E767FBF12C7362C2A7355",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-3-1-diagnostico-20261102-193245/03-medidas-existentes.csv",
+    "SHA256": "E4B29C8F45E2392123124C999372A721938C25C57645DB9365218D4229948CC9",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-3-1-diagnostico-20261102-193245/03-medidas-existentes.json",
+    "SHA256": "5C203AA61E2B33A22C00A6F0FB3D5CE032F4AB63A9B2585BD1548AD6B4E260A2",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-3-1-diagnostico-20261102-193245/baseline.json",
+    "SHA256": "38FC801C5A8A119BEDE27473C25F29532C7A31B9A0A8AF002BC50F3102F25A74",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-3-1-diagnostico-20261102-193245/execucao.json",
+    "SHA256": "1AB706284D4D1AC440A9B5666257875F9817679BA58B5A13615695439F51AC66",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-3-1-diagnostico-20261102-193245/integridade.json",
+    "SHA256": "900C189DC4577D1B3889E18BFC4B2F44D6A2E9A1DBCB981BF619F44229809893",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-3-1-diagnostico-20261102-193245/sessao.json",
+    "SHA256": "ADA6911EC33B7725DE84B8E5A1DCBD3533449FA0A754C4BF89092DAFB7E31474",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-3-1-diagnostico-20261102-193347/04-rastreabilidade.csv",
+    "SHA256": "CF6BDBB5583C0E769669E8609603B6A271528DB364006EA8912A97E3617C75BC",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-3-1-diagnostico-20261102-193347/04-rastreabilidade.json",
+    "SHA256": "250E7065ABA258C68118D51A5FE1F404A02851BF4D2DB06030DC0DBE3065C062",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-3-1-diagnostico-20261102-193347/baseline.json",
+    "SHA256": "38FC801C5A8A119BEDE27473C25F29532C7A31B9A0A8AF002BC50F3102F25A74",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-3-1-diagnostico-20261102-193347/execucao.json",
+    "SHA256": "26E6E7A03D5D28BA9008BAD37A13D9DF4018946ACCD454E5F1340BB0C54E782F",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-3-1-diagnostico-20261102-193347/integridade.json",
+    "SHA256": "900C189DC4577D1B3889E18BFC4B2F44D6A2E9A1DBCB981BF619F44229809893",
+    "Included": true
+  },
+  {
+    "Path": "docs/evidencias/lote2-3-1-diagnostico-20261102-193347/sessao.json",
+    "SHA256": "B9204E7A2C746F8B6B10F0EF62C8EDBD11DFD794B39245B424E882345D092C09",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-1/01-metadados.dax",
+    "SHA256": "3D30132F3AA1F5D029FB6DF0437F628C8D5ACAC908166B06A1554CFBF17A2E65",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-1/02-controle-integral.dax",
+    "SHA256": "4F1E29B805C972D8B9ECF3BD3D1EAC233ABF638DA64A308A163EADCE6F51411B",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-1/03-filial-periodo.dax",
+    "SHA256": "676AE08A63C56252D90471276C8794848E3E109A0DB5675A12758E4CA60A2FC1",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-1/04-posicoes.dax",
+    "SHA256": "783B642201C038442CECA244D0DFAD340F92C2DEBE70A23FC3A5AC8EADE0E8A0",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-1/05-contextos-e-totais.dax",
+    "SHA256": "48828BFD15BA0600D56898D49CF390D50453281392BA43A35FB03E47FB5E0615",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-1/06-total-matriz.dax",
+    "SHA256": "581A25D0E59E606913E1E15B02C0DC8A26BFE1255A2C082FDDC0227A6C6FCB1C",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-1/07-ebitda-ebit.dax",
+    "SHA256": "CF103525B509C885CC165D90677BF64F39A28083ADFD6767285C913F21B86598",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-1/08-ausencia-realizado.dax",
+    "SHA256": "631CE93D753D08535B79031CFEA2FFC4A26A26759F077277CF4A1FE3B59BF7EF",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-1/09-limites-conta-dre.dax",
+    "SHA256": "01FDBDA504F05837E6D1F96E36432FFDE1665B1F62A72D3CEDAE34D00FC342FD",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-1/10-materializacao.dax",
+    "SHA256": "56B1078B7AEC506C0E997B134A2D9A5B3F418493EAF8CE3B3334AC1124748A6B",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-1/11-particoes.dax",
+    "SHA256": "5C00AA6647B05F5D1C66A112D50E88A9D9D6F61BF533A2965D97400DEE749270",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-2/01-metadados.dax",
+    "SHA256": "11CEDEACCFF14FF347ACCC3379421353D3BB277D2934E4CB713538FA81682CFD",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-2/02-filiais-periodos-conciliacao.dax",
+    "SHA256": "BE69DA47C79F7A537A868B6AE614E203A99051CB818B795E68E6D749495AB213",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-2/03-posicao-descricao-contextos.dax",
+    "SHA256": "A82E5C645DEEEA57A8E0D51403F3E7A7604F6FF457982E3A8CCBBF642CB544C0",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-2/04-matriz-totais.dax",
+    "SHA256": "C4ABAE7CD4B7EA78136F6C2193B5E1093A1FB73B0942D3396B4D86C8E844AD2F",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-2/05-aditividade-filiais.dax",
+    "SHA256": "F2F491DA56D0A48953644CF7F54C10A5F47E2D4FADA45358271611B4688FCEFA",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-2/06-ebitda-ebit.dax",
+    "SHA256": "1A189E7BF27C0D001A084ED1F668D6AC7DF26D662B1F9DB3E27D68065C947DD7",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-2/07-regressao-controle.dax",
+    "SHA256": "4F1E29B805C972D8B9ECF3BD3D1EAC233ABF638DA64A308A163EADCE6F51411B",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-2/08-regressao-bases.dax",
+    "SHA256": "48828BFD15BA0600D56898D49CF390D50453281392BA43A35FB03E47FB5E0615",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-2/09-materializacao.dax",
+    "SHA256": "56B1078B7AEC506C0E997B134A2D9A5B3F418493EAF8CE3B3334AC1124748A6B",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-2/10-referencia-databricks.sql",
+    "SHA256": "4E2EBBAC149FBDB4D1C6332E8FF953588101CEDFC1CB953855EBA2D865C3DD60",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-2/11-receita-liquida-margem.dax",
+    "SHA256": "DC74A0F685F150DF4148EF5ACEAAA89307B32B5469EED9325F174C56F0CF3BA0",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-2/12-regressao-ampliada.dax",
+    "SHA256": "5F8ABDB08131920AFEB06617ECF81D80C5A2C297ED7BEC3330D429EEFD5FD221",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-2/13-seis-cenarios-consolidado.dax",
+    "SHA256": "A958CF4864B0B207B0AA703209D481327DAF69DC8184C9685D977B6D925C29F2",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-2/14-ebitda-ebit-ampliado.dax",
+    "SHA256": "0CB84DD10DB9F16CB04FB616A132F68B8DDB4A866A81EE5668E5B0169BCD4517",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-2/15-estado-particoes.dax",
+    "SHA256": "16505DD24A46D4AB374AC48B20E0805614940B48739211618493F8C7FD46B8AC",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-2/16-regressao-contextos-ampliada.dax",
+    "SHA256": "0944AA3D57260110F1F9E1D102EB90085BCF71AA44472050C59C74F58CF58C14",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-2/comparar-exportacoes.py",
+    "SHA256": "850EB64A8F15A22CC5946CD42E65B8F3C7A43EC6F2F8FA0782FB1F8ECF3A3D7E",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-3-1/01-diagnostico-cobertura.dax",
+    "SHA256": "C1AB3BDE89D9A7FDB229F823E0E388A92420414091C9FC8CA59C94D020DA614F",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-3-1/02-colunas-modelo.dax",
+    "SHA256": "4863B2BBC127CCB878E63C2790FD10AFA1D735B345BBE1F983C8B6DFAD12BD11",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-3-1/03-medidas-existentes.dax",
+    "SHA256": "4810F74F32EEF98E6B678A7D59066152D5620CC7B3F6324F1D4855F523BB3FCD",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-3-1/04-rastreabilidade.dax",
+    "SHA256": "DE2B8611A37E50F1BBFEA1EDB296F63934D5171C89BEF670F48973DADD74E3D4",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-3-1/05-investigar-metadados-databricks.sql",
+    "SHA256": "D6881AEB5FCF2A43AFE13B34FAAA097FCE90F33D20854F75EF2347BE8E57433C",
+    "Included": true
+  },
+  {
+    "Path": "docs/testes/lote2-3-1/06-diagnostico-mensal-databricks.sql",
+    "SHA256": "2B8614FD290B27557CDED4E4B34EB824480AB3F3CCBE0C2CD595BCF367C2FD81",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.Report/.platform",
+    "SHA256": "E0EDA8F6C598E79FB766AB28710E7DB81AE084F04E65ED6FB86D099AAB1A9A02",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.Report/definition.pbir",
+    "SHA256": "2847A1FCB67216D855B1CDF3444961A289D852B8FA2BCE6C6EAEB77FF144DB93",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.Report/.pbi/localSettings.json",
+    "SHA256": "3395D84AEB5118353CB180222EC53183718E661E871297643049E65E910EE6F7",
+    "Included": false
+  },
+  {
+    "Path": "DRE Moderno - Databricks.Report/definition/report.json",
+    "SHA256": "1B1F2D76CFB9DE0901315D2F12FAFACADFB8D5C7EDDD24D17AAE9918BB48CEFE",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.Report/definition/version.json",
+    "SHA256": "C8BDD966A85F1EAAB4312D2096B6D7B508243E4D7BC5A4D25AF3CFCB1056A4E7",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.Report/definition/pages/pages.json",
+    "SHA256": "6AC06D2B3E79B466231EBB066EAD229C916FD516363503DE4AD04D03FADDBB11",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.Report/definition/pages/18fcfac0c5446040d274/page.json",
+    "SHA256": "EE220417602A260FEFEBAEAD969A79C2E04EE69A730C1B8B1073B2AF4E3F4A44",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.Report/definition/pages/18fcfac0c5446040d274/visuals/edef2415c70ad843b680/visual.json",
+    "SHA256": "1D4246B4704AEF2077605DE4721482338FE4300A749778E349AC3902F9307B85",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.Report/StaticResources/SharedResources/BaseThemes/Fluent2-CY26SU08.json",
+    "SHA256": "5095B493358F0307E2F0A690A48C78EE93886BB70B578E3BFC48186CFC0319AF",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/.platform",
+    "SHA256": "844775E9EF4F76AC0E6D261FAC15D0AEC6F6E48ABB682D2C2550952E0288FE7E",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/definition.pbism",
+    "SHA256": "73A1AE4C89D7488F553788ADC772A04C805D1C9E0D7333E2B2B5476AAD8E5A5F",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/diagramLayout.json",
+    "SHA256": "14FF845CE12F6CB5CA088416C26B6B422D1DCB2580F0FB1BD316DC9295887E8E",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/.pbi/cache.abf",
+    "SHA256": "56797D9F789D1D8976C366D078E83E7A38ED120D42D90E1D7F42B600E3B80460",
+    "Included": false
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/.pbi/editorSettings.json",
+    "SHA256": "993662478760E2BCBC0184D6260711AE0B7CDB3867354581E7FD56609CA6EC97",
+    "Included": false
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/.pbi/localSettings.json",
+    "SHA256": "23C0D40A9A8344D7F6C0BB25C9F9354FE75843E87BAFAB8AAA83AB46A9D848FE",
+    "Included": false
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/DAXQueries/Query 1.dax",
+    "SHA256": "9B73FBDB2F0763CA4B9918590CE8A162CE5EC08A344D211A34B4AE8A553E962C",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/DAXQueries/.pbi/daxQueries.json",
+    "SHA256": "73BA88958F001DCB3D2B111CD3C1953AD1419CAD4B582B5E197790501957AB83",
+    "Included": false
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/definition/database.tmdl",
+    "SHA256": "822C914B643BCA32BB20ABD8A762DF8204A1B9EF02ACC2BC7348727F6699CB96",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/definition/model.tmdl",
+    "SHA256": "A48526636E280778D25F58165A3EB12CBCD95C4DB52E63090A86879BB5DC812F",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/definition/relationships.tmdl",
+    "SHA256": "1C10429B6615E4538B8AB05300E64946D2536E4F2A7DC9238D47D6A695D3BBCF",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/definition/cultures/en-US.tmdl",
+    "SHA256": "1109E38EBC2A662C6AC3926717B17F040C1EE6812D0A3DE88D781CDFAC626D19",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/definition/tables/DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395.tmdl",
+    "SHA256": "31AA4493A4D85BBA369000F540BCCBA0E8AAFAA9F2D42E132BB666D4D865CA50",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/definition/tables/dim_calendario.tmdl",
+    "SHA256": "F80B522519CF29FACDFE279C886CABCBA5B676D96FB3C6009AC39C68D3FE7CAF",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/definition/tables/dim_conta.tmdl",
+    "SHA256": "4CA184AC013F2E0E0B798C500B0ECCF510A25E719531F90F8D96609A268FF3EB",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/definition/tables/dim_dre.tmdl",
+    "SHA256": "0D944CEA3E9F33E847A849FD58423CDC06F4C999C54F75B6D2910DF6623CE049",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/definition/tables/dim_filial.tmdl",
+    "SHA256": "D8A642C5E740C79640D78AA113F248AC96BC83EFB4F624CA6DD04C7A86775C6D",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/definition/tables/fato_lancamentos.tmdl",
+    "SHA256": "B7684B53EB61B4E5D6B80F47010C79EEEE55492CC9B29D20B9BC756A71AA4769",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/definition/tables/fato_orcamento.tmdl",
+    "SHA256": "66183B5FFB9DCFE6B3432FE498C1C0316853AC52E92929D019FEC47418471765",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/definition/tables/fato_previsao.tmdl",
+    "SHA256": "378381E70ED4F1B0ED6B18E9956D42F785107F463FCB4DB7B97DC8154A8ACADF",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/definition/tables/LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d.tmdl",
+    "SHA256": "D3A28A5111143CFE49CADE3DC787BED5333500C66364016DDA7B5CD431132688",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/definition/tables/LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531.tmdl",
+    "SHA256": "8F502CFB6A2FA456CF70DBD1C0DADE75253076112B20A8C281716F74FD6CA408",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/definition/tables/LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b.tmdl",
+    "SHA256": "B41AE8C6029B2A89FF79EA0557BAED8BFEDD7F2EC49A411244C2BAF5127BF997",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/definition/tables/LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3.tmdl",
+    "SHA256": "80A3CE4F460BC4222F1D4B6B01BB365EDE3ED0CA7C05FA9F0459144FB80EB9B9",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/definition/tables/LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504.tmdl",
+    "SHA256": "2D8ADC18133849E035F2C7E907293081BF3DA79B4DD168BDDEFA7905C4D84AC4",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/definition/tables/vw_dre_comparativo.tmdl",
+    "SHA256": "B307EE6D1B0A297AC559BD7287A7F22C4433A2299D66916E47365AD5ADD7EF4C",
+    "Included": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel/definition/tables/_Medidas.tmdl",
+    "SHA256": "8AB71BC20F97731C9718053DA6FA2A2FB616297EA9B0B31871B3742E1DB95A2D",
+    "Included": true
+  }
+]

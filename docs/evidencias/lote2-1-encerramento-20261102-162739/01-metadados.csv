@@ -1,0 +1,40 @@
+"[ID]","[Name]","[Table]","[Description]","[DataType]","[Expression]","[FormatString]","[IsHidden]","[State]","[KPIID]","[IsSimpleMeasure]","[DisplayFolder]","[DetailRowsDefinition]","[DataCategory]","[FormatStringDefinition]","[LineageTag]"
+"5114","DRE | Realizado","_Medidas","Realizado ajustado da view para uma única posição DRE. Total entre posições e indicadores EBIT/EBITDA pendentes retornam BLANK.","Number","VAR _Descricao = SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] )
+RETURN
+	IF (
+		HASONEVALUE ( 'vw_dre_comparativo'[ordem_dre] )
+			&& NOT ISBLANK ( _Descricao )
+			&& NOT CONTAINSSTRING ( _Descricao, ""EBIT"" ),
+		SUM ( 'vw_dre_comparativo'[realizado] ),
+		BLANK ()
+	)",,"False","Valid",,"False","DRE\Bases",,,"""R$ #,##0.00;(R$ #,##0.00);R$ 0.00""","9afc2c72-5e4a-4be2-a6e9-6cd7ca93a820"
+"5115","DRE | Orçado","_Medidas","Orçado ajustado da view para uma única posição DRE. Não soma analíticas com subtotais nem calcula EBIT/EBITDA pendentes.","Number","VAR _Descricao = SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] )
+RETURN
+	IF (
+		HASONEVALUE ( 'vw_dre_comparativo'[ordem_dre] )
+			&& NOT ISBLANK ( _Descricao )
+			&& NOT CONTAINSSTRING ( _Descricao, ""EBIT"" ),
+		SUM ( 'vw_dre_comparativo'[orcado] ),
+		BLANK ()
+	)",,"False","Valid",,"False","DRE\Bases",,,"""R$ #,##0.00;(R$ #,##0.00);R$ 0.00""","d32fcf20-faa2-46d9-88e9-ce965ccf4df6"
+"5116","DRE | Previsto","_Medidas","Previsto ajustado da view para uma única posição DRE. Não soma analíticas com subtotais nem calcula EBIT/EBITDA pendentes.","Number","VAR _Descricao = SELECTEDVALUE ( 'vw_dre_comparativo'[descricao_dre] )
+RETURN
+	IF (
+		HASONEVALUE ( 'vw_dre_comparativo'[ordem_dre] )
+			&& NOT ISBLANK ( _Descricao )
+			&& NOT CONTAINSSTRING ( _Descricao, ""EBIT"" ),
+		SUM ( 'vw_dre_comparativo'[previsto] ),
+		BLANK ()
+	)",,"False","Valid",,"False","DRE\Bases",,,"""R$ #,##0.00;(R$ #,##0.00);R$ 0.00""","502c8d18-7f72-4f1f-869c-ae5ef47e83cb"
+"5117","DRE | Resultado Líquido Realizado","_Medidas","PROVISÓRIO: realizado exclusivamente da posição 13. Resultado Líquido depende de homologação contábil. Filtros de posição conflitantes retornam BLANK.","Number","CALCULATE (
+	[DRE | Realizado],
+	KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 13 )
+)",,"False","Valid",,"False","DRE\Resultado Líquido (provisório)",,,"""R$ #,##0.00;(R$ #,##0.00);R$ 0.00""","ae9c3c48-fc4b-47d2-ae7a-4c4921a014ca"
+"5118","DRE | Resultado Líquido Orçado","_Medidas","PROVISÓRIO: orçado exclusivamente da posição 13. Resultado Líquido depende de homologação contábil. Não reconstrói composição contábil.","Number","CALCULATE (
+	[DRE | Orçado],
+	KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 13 )
+)",,"False","Valid",,"False","DRE\Resultado Líquido (provisório)",,,"""R$ #,##0.00;(R$ #,##0.00);R$ 0.00""","09e3c983-c612-42ae-8445-52fd46b8c46d"
+"5119","DRE | Resultado Líquido Previsto","_Medidas","PROVISÓRIO: previsto exclusivamente da posição 13. Resultado Líquido depende de homologação contábil. Não reconstrói composição contábil.","Number","CALCULATE (
+	[DRE | Previsto],
+	KEEPFILTERS ( 'vw_dre_comparativo'[ordem_dre] = 13 )
+)",,"False","Valid",,"False","DRE\Resultado Líquido (provisório)",,,"""R$ #,##0.00;(R$ #,##0.00);R$ 0.00""","dc7727c0-0985-4ba0-a03c-7ed1ec8c0d28"

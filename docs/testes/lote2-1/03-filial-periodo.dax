@@ -1,0 +1,45 @@
+// Lote 2.1: consulta de leitura. NÃO EXECUTADA nas medidas persistidas.
+// Executar após reabrir o PBIP atualizado; não criar medidas a partir destes testes.
+EVALUATE
+VAR _Periodos = DATATABLE("Periodo", STRING, "InicioNumero", INTEGER, "FimNumero", INTEGER,
+ { {"Integral",20210101,20240101}, {"2021",20210101,20220101},
+   {"2022",20220101,20230101}, {"2023_JanMai",20230101,20230601}, {"2023_JunDez",20230601,20240101} })
+VAR _Filiais = UNION(
+ SELECTCOLUMNS(FILTER(ALLNOBLANKROW('dim_filial'), NOT ISBLANK('dim_filial'[cod_filial])),
+ "Codigo",'dim_filial'[cod_filial],"Filial",'dim_filial'[filial],"Consolidado",FALSE()),
+ ROW("Codigo",BLANK(),"Filial","Consolidado","Consolidado",TRUE()))
+VAR _Casos = CROSSJOIN(_Filiais,_Periodos)
+RETURN GENERATE(_Casos,
+VAR _Cod = [Codigo]
+VAR _Todos = [Consolidado]
+VAR _IniNum = [InicioNumero]
+VAR _FimNum = [FimNumero]
+VAR _Ini = DATE(INT(_IniNum/10000), MOD(INT(_IniNum/100),100), MOD(_IniNum,100))
+VAR _Fim = DATE(INT(_FimNum/10000), MOD(INT(_FimNum/100),100), MOD(_FimNum,100))
+VAR _Datas = FILTER(ALL('dim_calendario'), 'dim_calendario'[data]>=_Ini && 'dim_calendario'[data]<_Fim)
+VAR _Filial = FILTER(ALL('dim_filial'), _Todos || 'dim_filial'[cod_filial]=_Cod)
+ VAR _Direto=FILTER(ALL('vw_dre_comparativo'),
+ (_Todos || 'vw_dre_comparativo'[cod_filial]=_Cod) && 'vw_dre_comparativo'[competencia]>=_Ini
+ && 'vw_dre_comparativo'[competencia]<_Fim && 'vw_dre_comparativo'[ordem_dre]=13)
+VAR _R=CALCULATE([DRE | Resultado Líquido Realizado],_Datas,_Filial)
+VAR _BR=CALCULATE([DRE | Realizado],_Datas,_Filial,'vw_dre_comparativo'[ordem_dre]=13)
+VAR _ER=SUMX(_Direto,'vw_dre_comparativo'[realizado])
+VAR _O=CALCULATE([DRE | Resultado Líquido Orçado],_Datas,_Filial)
+VAR _BO=CALCULATE([DRE | Orçado],_Datas,_Filial,'vw_dre_comparativo'[ordem_dre]=13)
+VAR _EO=SUMX(_Direto,'vw_dre_comparativo'[orcado])
+VAR _P=CALCULATE([DRE | Resultado Líquido Previsto],_Datas,_Filial)
+VAR _BP=CALCULATE([DRE | Previsto],_Datas,_Filial,'vw_dre_comparativo'[ordem_dre]=13)
+VAR _EP=SUMX(_Direto,'vw_dre_comparativo'[previsto])
+RETURN ROW("RLR",_R,
+"BaseR",_BR,
+"EsperadoR",_ER,
+"AprovadoR",IF(ISBLANK(_ER),ISBLANK(_R) && ISBLANK(_BR),NOT ISBLANK(_R) && NOT ISBLANK(_BR) && ABS(_R-_ER)<=0.01 && ABS(_BR-_ER)<=0.01),
+"RLO",_O,
+"BaseO",_BO,
+"EsperadoO",_EO,
+"AprovadoO",IF(ISBLANK(_EO),ISBLANK(_O) && ISBLANK(_BO),NOT ISBLANK(_O) && NOT ISBLANK(_BO) && ABS(_O-_EO)<=0.01 && ABS(_BO-_EO)<=0.01),
+"RLP",_P,
+"BaseP",_BP,
+"EsperadoP",_EP,
+"AprovadoP",IF(ISBLANK(_EP),ISBLANK(_P) && ISBLANK(_BP),NOT ISBLANK(_P) && NOT ISBLANK(_BP) && ABS(_P-_EP)<=0.01 && ABS(_BP-_EP)<=0.01)))
+ORDER BY [Filial],[Periodo]

@@ -1,0 +1,29 @@
+{
+  "Estado": "CONCLUIDO_TECNICAMENTE",
+  "SQLProveniencia": "Exportação Databricks fornecida pelo usuário; sem nova execução SQL pelo agente",
+  "OrigemCSV": "C:\\Users\\<usuario>\\Downloads\\New_Query_2026_11_02_15_53_51.csv",
+  "ArquivoPreservado": "C:\\Projetos\\PowerBI\\DRE Moderno - Databricks\\docs\\evidencias\\lote2-2-sql-completo-20261102\\New_Query_2026_11_02_15_53_51.csv",
+  "SHA256": "109cd5aeda3cd5c651f87887e01327550a5462dd4cd5a4bf164eef49a4f0d81e",
+  "CasosEsperados": 1155,
+  "CasosRecebidos": 1155,
+  "Aprovados": 1155,
+  "Reprovados": 0,
+  "Ausentes": 0,
+  "Duplicados": 0,
+  "DiferencaMaxima": "1E-7",
+  "Tolerancia": "0.01",
+  "NULL_BLANK_Coincidentes": 110,
+  "SinaisPreservados": true,
+  "ContagensFonteEPresencaConformes": true,
+  "Primeiras1000CoincidemComAnexoAnterior": true,
+  "Grao": "grupo_filial × periodo (recorte agregado) × posicao × cenario",
+  "CompetenciasMensaisIndividuais": "Não conciliadas individualmente; contagens de competências presentes conferidas por recorte",
+  "DataHoraExecucaoSQL": "Não comprovada pelo conteúdo; nome do arquivo não é prova de horário",
+  "Lote23": "LIBERADO_SOMENTE_PLANEJAMENTO_NAO_INICIADO",
+  "PendenciasContabeis": [
+    "Resultado Líquido provisório",
+    "EBITDA",
+    "EBIT"
+  ],
+  "ProducaoAlterada": false
+}

@@ -1,0 +1,31 @@
+-- Roteiro somente leitura, NÃO EXECUTADO. Não cria medidas nem inicia a Fase 2.
+-- Executar no modelo carregado no Power BI; SUM é delimitada à linha 13 somente neste teste.
+EVALUATE
+CALCULATETABLE(
+ ROW("Realizado", SUM('vw_dre_comparativo'[realizado]),
+     "Orcado", SUM('vw_dre_comparativo'[orcado]),
+     "Previsto", SUM('vw_dre_comparativo'[previsto])),
+ 'vw_dre_comparativo'[ordem_dre] = 13)
+
+-- Executar cada EVALUATE separadamente quando necessário.
+EVALUATE
+SUMMARIZECOLUMNS('dim_calendario'[ano], 'dim_calendario'[mes], 'dim_filial'[cod_filial],
+ "Linhas realizado", COUNTROWS('fato_lancamentos'),
+ "Linhas orcamento", COUNTROWS('fato_orcamento'),
+ "Linhas previsao", COUNTROWS('fato_previsao'),
+ "Linhas view", COUNTROWS('vw_dre_comparativo'))
+
+-- Conta deve ter caminho para as três fatos; não há caminho ativo previsto para a view.
+-- Contagens iguais por acaso NÃO comprovam ausência/presença de filtro: comparar a SQL por IDs conhecidos.
+EVALUATE
+SUMMARIZECOLUMNS('dim_conta'[id_conta],
+ "Linhas realizado", COUNTROWS('fato_lancamentos'),
+ "Linhas orcamento", COUNTROWS('fato_orcamento'),
+ "Linhas previsao", COUNTROWS('fato_previsao'),
+ "Linhas view", COUNTROWS('vw_dre_comparativo'))
+
+-- DMV somente leitura, executar separadamente em sessão tabular compatível:
+-- SELECT * FROM $SYSTEM.TMSCHEMA_RELATIONSHIPS
+-- SELECT * FROM $SYSTEM.TMSCHEMA_TABLES
+-- SELECT * FROM $SYSTEM.TMSCHEMA_COLUMNS
+

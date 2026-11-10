@@ -1,0 +1,20 @@
+// FASE 1. Consulta somente leitura, NÃO EXECUTADA neste ambiente. Não cria medidas.
+EVALUATE
+UNION(
+ROW("Teste", "Chave dim_filial.cod_filial",
+ "Linhas", COUNTROWS(ALLNOBLANKROW('dim_filial')),
+ "ChavesDistintas", COUNTROWS(DISTINCT(SELECTCOLUMNS(ALLNOBLANKROW('dim_filial'), "K", 'dim_filial'[cod_filial]))),
+ "ChavesAusentes", COUNTROWS(FILTER(ALLNOBLANKROW('dim_filial'), ISBLANK('dim_filial'[cod_filial]) || LEN(TRIM('dim_filial'[cod_filial])) = 0))),
+ROW("Teste", "Chave dim_conta.id_conta",
+ "Linhas", COUNTROWS(ALLNOBLANKROW('dim_conta')),
+ "ChavesDistintas", COUNTROWS(DISTINCT(SELECTCOLUMNS(ALLNOBLANKROW('dim_conta'), "K", 'dim_conta'[id_conta]))),
+ "ChavesAusentes", COUNTROWS(FILTER(ALLNOBLANKROW('dim_conta'), ISBLANK('dim_conta'[id_conta]) || LEN(TRIM('dim_conta'[id_conta])) = 0))),
+ROW("Teste", "Chave dim_dre.id_dre",
+ "Linhas", COUNTROWS(ALLNOBLANKROW('dim_dre')),
+ "ChavesDistintas", COUNTROWS(DISTINCT(SELECTCOLUMNS(ALLNOBLANKROW('dim_dre'), "K", 'dim_dre'[id_dre]))),
+ "ChavesAusentes", COUNTROWS(FILTER(ALLNOBLANKROW('dim_dre'), ISBLANK('dim_dre'[id_dre]) || LEN(TRIM('dim_dre'[id_dre])) = 0))),
+ROW("Teste", "Chave dim_calendario.data",
+ "Linhas", COUNTROWS(ALLNOBLANKROW('dim_calendario')),
+ "ChavesDistintas", COUNTROWS(DISTINCT(SELECTCOLUMNS(ALLNOBLANKROW('dim_calendario'), "K", 'dim_calendario'[data]))),
+ "ChavesAusentes", COUNTROWS(FILTER(ALLNOBLANKROW('dim_calendario'), ISBLANK('dim_calendario'[data]))))
+)

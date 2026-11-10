@@ -1,0 +1,4 @@
+// Lote 2.1: consulta de leitura. NÃO EXECUTADA nas medidas persistidas.
+// Executar após reabrir o PBIP atualizado; não criar medidas a partir destes testes.
+EVALUATE
+FILTER(INFO.VIEW.MEASURES(), [Table] = "_Medidas")

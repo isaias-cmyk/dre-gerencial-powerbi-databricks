@@ -1,0 +1,164 @@
+[
+  {
+    "ID": "dd5b6732-5fba-479d-b6f3-1936a8f1746b",
+    "From": "dim_calendario.data",
+    "To": "LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504.Date",
+    "ActiveDeclaration": "Omitida; ativo padrão a confirmar no mecanismo",
+    "Technical": true,
+    "Properties": "joinOnDateBehavior: datePartOnly\r\n\tfromColumn: dim_calendario.data\r\n\ttoColumn: LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504.Date",
+    "EffectiveCardinalityAndDirection": "Não verificadas; Fase 1"
+  },
+  {
+    "ID": "75b003b4-6187-4899-b2ad-e655b31b0fc9",
+    "From": "dim_calendario.inicio_mes",
+    "To": "LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d.Date",
+    "ActiveDeclaration": "Omitida; ativo padrão a confirmar no mecanismo",
+    "Technical": true,
+    "Properties": "joinOnDateBehavior: datePartOnly\r\n\tfromColumn: dim_calendario.inicio_mes\r\n\ttoColumn: LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d.Date",
+    "EffectiveCardinalityAndDirection": "Não verificadas; Fase 1"
+  },
+  {
+    "ID": "6c4b7869-5380-4800-881d-7b8930dd3d29",
+    "From": "fato_lancamentos._data_ingestao",
+    "To": "LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b.Date",
+    "ActiveDeclaration": "Omitida; ativo padrão a confirmar no mecanismo",
+    "Technical": true,
+    "Properties": "joinOnDateBehavior: datePartOnly\r\n\tfromColumn: fato_lancamentos._data_ingestao\r\n\ttoColumn: LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b.Date",
+    "EffectiveCardinalityAndDirection": "Não verificadas; Fase 1"
+  },
+  {
+    "ID": "f3198452-0cec-4397-9362-2a2c270304a4",
+    "From": "fato_orcamento._data_ingestao",
+    "To": "LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531.Date",
+    "ActiveDeclaration": "Omitida; ativo padrão a confirmar no mecanismo",
+    "Technical": true,
+    "Properties": "joinOnDateBehavior: datePartOnly\r\n\tfromColumn: fato_orcamento._data_ingestao\r\n\ttoColumn: LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531.Date",
+    "EffectiveCardinalityAndDirection": "Não verificadas; Fase 1"
+  },
+  {
+    "ID": "98d30182-d70a-4d7b-bde5-8ef769824638",
+    "From": "fato_previsao._data_ingestao",
+    "To": "LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3.Date",
+    "ActiveDeclaration": "Omitida; ativo padrão a confirmar no mecanismo",
+    "Technical": true,
+    "Properties": "joinOnDateBehavior: datePartOnly\r\n\tfromColumn: fato_previsao._data_ingestao\r\n\ttoColumn: LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3.Date",
+    "EffectiveCardinalityAndDirection": "Não verificadas; Fase 1"
+  },
+  {
+    "ID": "AutoDetected_b803a55e-b318-4f25-80e8-6068d5cedb12",
+    "From": "dim_conta.cod_filial",
+    "To": "dim_filial.cod_filial",
+    "ActiveDeclaration": "false explícito",
+    "Technical": false,
+    "Properties": "isActive: false\r\n\tfromColumn: dim_conta.cod_filial\r\n\ttoColumn: dim_filial.cod_filial",
+    "EffectiveCardinalityAndDirection": "Não verificadas; Fase 1"
+  },
+  {
+    "ID": "AutoDetected_d9ec7926-13de-4e3a-beaf-9d5600fb340f",
+    "From": "dim_dre.cod_filial",
+    "To": "dim_filial.cod_filial",
+    "ActiveDeclaration": "Omitida; ativo padrão a confirmar no mecanismo",
+    "Technical": false,
+    "Properties": "fromColumn: dim_dre.cod_filial\r\n\ttoColumn: dim_filial.cod_filial",
+    "EffectiveCardinalityAndDirection": "Não verificadas; Fase 1"
+  },
+  {
+    "ID": "AutoDetected_b9db6563-6b6a-4ed9-9873-033469b2f0ab",
+    "From": "fato_lancamentos.cod_filial",
+    "To": "dim_filial.cod_filial",
+    "ActiveDeclaration": "Omitida; ativo padrão a confirmar no mecanismo",
+    "Technical": false,
+    "Properties": "fromColumn: fato_lancamentos.cod_filial\r\n\ttoColumn: dim_filial.cod_filial",
+    "EffectiveCardinalityAndDirection": "Não verificadas; Fase 1"
+  },
+  {
+    "ID": "AutoDetected_cf6c4540-68ae-4da2-acca-5a3bf495a442",
+    "From": "fato_orcamento.cod_filial",
+    "To": "dim_filial.cod_filial",
+    "ActiveDeclaration": "Omitida; ativo padrão a confirmar no mecanismo",
+    "Technical": false,
+    "Properties": "fromColumn: fato_orcamento.cod_filial\r\n\ttoColumn: dim_filial.cod_filial",
+    "EffectiveCardinalityAndDirection": "Não verificadas; Fase 1"
+  },
+  {
+    "ID": "AutoDetected_2a7e773f-8348-4485-ac6c-69dd9df5dab8",
+    "From": "fato_previsao.cod_filial",
+    "To": "dim_filial.cod_filial",
+    "ActiveDeclaration": "Omitida; ativo padrão a confirmar no mecanismo",
+    "Technical": false,
+    "Properties": "fromColumn: fato_previsao.cod_filial\r\n\ttoColumn: dim_filial.cod_filial",
+    "EffectiveCardinalityAndDirection": "Não verificadas; Fase 1"
+  },
+  {
+    "ID": "AutoDetected_2ce0342d-62e0-4df8-a023-363036b47efe",
+    "From": "vw_dre_comparativo.cod_filial",
+    "To": "dim_filial.cod_filial",
+    "ActiveDeclaration": "Omitida; ativo padrão a confirmar no mecanismo",
+    "Technical": false,
+    "Properties": "fromColumn: vw_dre_comparativo.cod_filial\r\n\ttoColumn: dim_filial.cod_filial",
+    "EffectiveCardinalityAndDirection": "Não verificadas; Fase 1"
+  },
+  {
+    "ID": "13c78bc6-b976-df8e-f003-91414e803c01",
+    "From": "fato_lancamentos.competencia_data",
+    "To": "dim_calendario.data",
+    "ActiveDeclaration": "Omitida; ativo padrão a confirmar no mecanismo",
+    "Technical": false,
+    "Properties": "fromColumn: fato_lancamentos.competencia_data\r\n\ttoColumn: dim_calendario.data",
+    "EffectiveCardinalityAndDirection": "Não verificadas; Fase 1"
+  },
+  {
+    "ID": "ddacb715-ec23-2d3c-a337-1083a97c680d",
+    "From": "fato_orcamento.competencia_data",
+    "To": "dim_calendario.data",
+    "ActiveDeclaration": "Omitida; ativo padrão a confirmar no mecanismo",
+    "Technical": false,
+    "Properties": "fromColumn: fato_orcamento.competencia_data\r\n\ttoColumn: dim_calendario.data",
+    "EffectiveCardinalityAndDirection": "Não verificadas; Fase 1"
+  },
+  {
+    "ID": "4f0276cf-4e80-7bc6-b833-a091883c1e68",
+    "From": "fato_previsao.competencia_data",
+    "To": "dim_calendario.data",
+    "ActiveDeclaration": "Omitida; ativo padrão a confirmar no mecanismo",
+    "Technical": false,
+    "Properties": "fromColumn: fato_previsao.competencia_data\r\n\ttoColumn: dim_calendario.data",
+    "EffectiveCardinalityAndDirection": "Não verificadas; Fase 1"
+  },
+  {
+    "ID": "eefc7d39-b405-b354-72e6-c555cb0036a4",
+    "From": "vw_dre_comparativo.competencia",
+    "To": "dim_calendario.data",
+    "ActiveDeclaration": "Omitida; ativo padrão a confirmar no mecanismo",
+    "Technical": false,
+    "Properties": "fromColumn: vw_dre_comparativo.competencia\r\n\ttoColumn: dim_calendario.data",
+    "EffectiveCardinalityAndDirection": "Não verificadas; Fase 1"
+  },
+  {
+    "ID": "dd8569c8-c610-4c02-d15c-c2afbea55cd5",
+    "From": "fato_lancamentos.planocontas_id",
+    "To": "dim_conta.id_conta",
+    "ActiveDeclaration": "Omitida; ativo padrão a confirmar no mecanismo",
+    "Technical": false,
+    "Properties": "fromColumn: fato_lancamentos.planocontas_id\r\n\ttoColumn: dim_conta.id_conta",
+    "EffectiveCardinalityAndDirection": "Não verificadas; Fase 1"
+  },
+  {
+    "ID": "66e23276-0813-1463-b459-e591093be04e",
+    "From": "fato_orcamento.planocontas_id",
+    "To": "dim_conta.id_conta",
+    "ActiveDeclaration": "Omitida; ativo padrão a confirmar no mecanismo",
+    "Technical": false,
+    "Properties": "fromColumn: fato_orcamento.planocontas_id\r\n\ttoColumn: dim_conta.id_conta",
+    "EffectiveCardinalityAndDirection": "Não verificadas; Fase 1"
+  },
+  {
+    "ID": "855510f8-a1e3-1f4c-4426-15e7304a95d0",
+    "From": "fato_previsao.planocontas_id",
+    "To": "dim_conta.id_conta",
+    "ActiveDeclaration": "Omitida; ativo padrão a confirmar no mecanismo",
+    "Technical": false,
+    "Properties": "fromColumn: fato_previsao.planocontas_id\r\n\ttoColumn: dim_conta.id_conta",
+    "EffectiveCardinalityAndDirection": "Não verificadas; Fase 1"
+  }
+]

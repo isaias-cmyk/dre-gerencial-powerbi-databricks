@@ -1,0 +1,1 @@
+SELECT [Name], [State], [ErrorMessage] FROM $SYSTEM.TMSCHEMA_PARTITIONS

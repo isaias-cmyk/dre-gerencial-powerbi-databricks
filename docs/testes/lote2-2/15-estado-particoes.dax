@@ -1,0 +1,1 @@
+EVALUATE SELECTCOLUMNS(INFO.PARTITIONS(), "Nome",[Name],"Estado",[State],"Erro",[ErrorMessage],"AtualizadoEm",[RefreshedTime])

@@ -1,0 +1,27 @@
+// FASE 1. Consulta somente leitura, NÃO EXECUTADA neste ambiente. Não cria medidas.
+EVALUATE
+VAR _Periodos = DATATABLE("Periodo", STRING, "InicioNumero", INTEGER, "FimNumero", INTEGER,
+ { {"Integral",20210101,20240101}, {"2021",20210101,20220101},
+   {"2022",20220101,20230101}, {"2023_JanMai",20230101,20230601}, {"2023_JunDez",20230601,20240101} })
+VAR _Filiais = UNION(
+ SELECTCOLUMNS(FILTER(ALLNOBLANKROW('dim_filial'), NOT ISBLANK('dim_filial'[cod_filial])),
+ "Codigo",'dim_filial'[cod_filial],"Filial",'dim_filial'[filial],"Consolidado",FALSE()),
+ ROW("Codigo",BLANK(),"Filial","Consolidado","Consolidado",TRUE()))
+VAR _Casos = CROSSJOIN(_Filiais,_Periodos)
+RETURN GENERATE(_Casos,
+ VAR _Cod = [Codigo]
+VAR _Todos = [Consolidado]
+VAR _IniNum = [InicioNumero]
+VAR _FimNum = [FimNumero]
+VAR _Ini = DATE(INT(_IniNum/10000), MOD(INT(_IniNum/100),100), MOD(_IniNum,100))
+VAR _Fim = DATE(INT(_FimNum/10000), MOD(INT(_FimNum/100),100), MOD(_FimNum,100))
+VAR _Datas = FILTER(ALL('dim_calendario'), 'dim_calendario'[data]>=_Ini && 'dim_calendario'[data]<_Fim)
+VAR _Filial = FILTER(ALL('dim_filial'), _Todos || 'dim_filial'[cod_filial]=_Cod)
+ VAR _ViaDimensoes = CALCULATETABLE('fato_previsao', _Datas, _Filial)
+ VAR _Direto = FILTER(ALL('fato_previsao'), (_Todos || 'fato_previsao'[cod_filial]=_Cod)
+    && 'fato_previsao'[competencia_data]>=_Ini && 'fato_previsao'[competencia_data]<_Fim)
+ RETURN ROW("Tabela","fato_previsao","LinhasViaDimensoes",COUNTROWS(_ViaDimensoes),
+ "LinhasDiretas",COUNTROWS(_Direto),
+ "Extras",COUNTROWS(EXCEPT(_ViaDimensoes,_Direto)),
+ "Faltantes",COUNTROWS(EXCEPT(_Direto,_ViaDimensoes))))
+ORDER BY [Filial],[Periodo]

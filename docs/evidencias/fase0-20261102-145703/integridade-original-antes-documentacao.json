@@ -1,0 +1,150 @@
+[
+  {
+    "Path": ".gitignore",
+    "Match": true
+  },
+  {
+    "Path": "AGENTS.md",
+    "Match": true
+  },
+  {
+    "Path": "BaseDados.xlsx",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.pbip",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.Report\\.pbi\\localSettings.json",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.Report\\.platform",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.Report\\definition.pbir",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.Report\\definition\\pages\\18fcfac0c5446040d274\\page.json",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.Report\\definition\\pages\\pages.json",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.Report\\definition\\report.json",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.Report\\definition\\version.json",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.Report\\StaticResources\\SharedResources\\BaseThemes\\Fluent2-CY26SU08.json",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\.pbi\\cache.abf",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\.pbi\\editorSettings.json",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\.pbi\\localSettings.json",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\.platform",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\definition.pbism",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\definition\\cultures\\en-US.tmdl",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\definition\\database.tmdl",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\definition\\model.tmdl",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\definition\\relationships.tmdl",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\definition\\tables\\DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395.tmdl",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\definition\\tables\\dim_calendario.tmdl",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\definition\\tables\\dim_conta.tmdl",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\definition\\tables\\dim_dre.tmdl",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\definition\\tables\\dim_filial.tmdl",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\definition\\tables\\fato_lancamentos.tmdl",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\definition\\tables\\fato_orcamento.tmdl",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\definition\\tables\\fato_previsao.tmdl",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\definition\\tables\\LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d.tmdl",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\definition\\tables\\LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531.tmdl",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\definition\\tables\\LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b.tmdl",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\definition\\tables\\LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3.tmdl",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\definition\\tables\\LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504.tmdl",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\definition\\tables\\vw_dre_comparativo.tmdl",
+    "Match": true
+  },
+  {
+    "Path": "DRE Moderno - Databricks.SemanticModel\\diagramLayout.json",
+    "Match": true
+  },
+  {
+    "Path": "PLANS.md",
+    "Match": true
+  }
+]

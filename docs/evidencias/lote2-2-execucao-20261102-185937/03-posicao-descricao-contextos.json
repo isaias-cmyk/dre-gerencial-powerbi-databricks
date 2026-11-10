@@ -1,0 +1,1682 @@
+[
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Realizado",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": 199326296.52000004,
+    "[Esperado]": 199326296.52000004,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Realizado",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": 199326296.52000004,
+    "[Esperado]": 199326296.52000004,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Realizado",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Realizado",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": 199326296.52000004,
+    "[Esperado]": 199326296.52000004,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Realizado",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Realizado",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": 199326296.52000004,
+    "[Esperado]": 199326296.52000004,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Realizado",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Realizado",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Orçado",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": 247514660.8499999,
+    "[Esperado]": 247514660.8499999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Orçado",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": 247514660.8499999,
+    "[Esperado]": 247514660.8499999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Orçado",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Orçado",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": 247514660.8499999,
+    "[Esperado]": 247514660.8499999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Orçado",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Orçado",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": 247514660.8499999,
+    "[Esperado]": 247514660.8499999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Orçado",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Orçado",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Previsto",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": 247322501.02999997,
+    "[Esperado]": 247322501.02999997,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Previsto",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": 247322501.02999997,
+    "[Esperado]": 247322501.02999997,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Previsto",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Previsto",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": 247322501.02999997,
+    "[Esperado]": 247322501.02999997,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Previsto",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Previsto",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": 247322501.02999997,
+    "[Esperado]": 247322501.02999997,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Previsto",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Bruta Previsto",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Realizado",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": -52908485.35,
+    "[Esperado]": -52908485.35,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Realizado",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": -52908485.35,
+    "[Esperado]": -52908485.35,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Realizado",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Realizado",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": -52908485.35,
+    "[Esperado]": -52908485.35,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Realizado",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Realizado",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": -52908485.35,
+    "[Esperado]": -52908485.35,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Realizado",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Realizado",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Orçado",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": -65546706.95999997,
+    "[Esperado]": -65546706.95999997,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Orçado",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": -65546706.95999997,
+    "[Esperado]": -65546706.95999997,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Orçado",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Orçado",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": -65546706.95999997,
+    "[Esperado]": -65546706.95999997,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Orçado",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Orçado",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": -65546706.95999997,
+    "[Esperado]": -65546706.95999997,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Orçado",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Orçado",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Previsto",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": -65439748.31,
+    "[Esperado]": -65439748.31,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Previsto",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": -65439748.31,
+    "[Esperado]": -65439748.31,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Previsto",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Previsto",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": -65439748.31,
+    "[Esperado]": -65439748.31,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Previsto",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Previsto",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": -65439748.31,
+    "[Esperado]": -65439748.31,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Previsto",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Deduções da Receita Previsto",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Realizado",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": 146417811.17,
+    "[Esperado]": 146417811.17,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Realizado",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": 146417811.17,
+    "[Esperado]": 146417811.17,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Realizado",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Realizado",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": 146417811.17,
+    "[Esperado]": 146417811.17,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Realizado",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Realizado",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": 146417811.17,
+    "[Esperado]": 146417811.17,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Realizado",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Realizado",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Orçado",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": 181967953.89000002,
+    "[Esperado]": 181967953.89000002,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Orçado",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": 181967953.89000002,
+    "[Esperado]": 181967953.89000002,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Orçado",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Orçado",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": 181967953.89000002,
+    "[Esperado]": 181967953.89000002,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Orçado",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Orçado",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": 181967953.89000002,
+    "[Esperado]": 181967953.89000002,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Orçado",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Orçado",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Previsto",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": 181882752.7199999,
+    "[Esperado]": 181882752.7199999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Previsto",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": 181882752.7199999,
+    "[Esperado]": 181882752.7199999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Previsto",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Previsto",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": 181882752.7199999,
+    "[Esperado]": 181882752.7199999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Previsto",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Previsto",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": 181882752.7199999,
+    "[Esperado]": 181882752.7199999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Previsto",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Receita Operacional Líquida Previsto",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Realizado",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": -93588816.06000002,
+    "[Esperado]": -93588816.06000002,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Realizado",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": -93588816.06000002,
+    "[Esperado]": -93588816.06000002,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Realizado",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Realizado",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": -93588816.06000002,
+    "[Esperado]": -93588816.06000002,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Realizado",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Realizado",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": -93588816.06000002,
+    "[Esperado]": -93588816.06000002,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Realizado",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Realizado",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Orçado",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": -116424340.03000005,
+    "[Esperado]": -116424340.03000005,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Orçado",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": -116424340.03000005,
+    "[Esperado]": -116424340.03000005,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Orçado",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Orçado",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": -116424340.03000005,
+    "[Esperado]": -116424340.03000005,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Orçado",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Orçado",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": -116424340.03000005,
+    "[Esperado]": -116424340.03000005,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Orçado",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Orçado",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Previsto",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": -116720083.27999994,
+    "[Esperado]": -116720083.27999994,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Previsto",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": -116720083.27999994,
+    "[Esperado]": -116720083.27999994,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Previsto",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Previsto",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": -116720083.27999994,
+    "[Esperado]": -116720083.27999994,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Previsto",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Previsto",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": -116720083.27999994,
+    "[Esperado]": -116720083.27999994,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Previsto",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Custos Previsto",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Realizado",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": 52828995.11000002,
+    "[Esperado]": 52828995.11000002,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Realizado",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": 52828995.11000002,
+    "[Esperado]": 52828995.11000002,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Realizado",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Realizado",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": 52828995.11000002,
+    "[Esperado]": 52828995.11000002,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Realizado",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Realizado",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": 52828995.11000002,
+    "[Esperado]": 52828995.11000002,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Realizado",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Realizado",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Orçado",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": 65543613.85999999,
+    "[Esperado]": 65543613.85999999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Orçado",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": 65543613.85999999,
+    "[Esperado]": 65543613.85999999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Orçado",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Orçado",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": 65543613.85999999,
+    "[Esperado]": 65543613.85999999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Orçado",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Orçado",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": 65543613.85999999,
+    "[Esperado]": 65543613.85999999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Orçado",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Orçado",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Previsto",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": 65162669.43999999,
+    "[Esperado]": 65162669.43999999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Previsto",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": 65162669.43999999,
+    "[Esperado]": 65162669.43999999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Previsto",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Previsto",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": 65162669.43999999,
+    "[Esperado]": 65162669.43999999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Previsto",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Previsto",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": 65162669.43999999,
+    "[Esperado]": 65162669.43999999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Previsto",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Margem de Contribuição Previsto",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Realizado",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": -46203238.52,
+    "[Esperado]": -46203238.52,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Realizado",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": -46203238.52,
+    "[Esperado]": -46203238.52,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Realizado",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Realizado",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": -46203238.52,
+    "[Esperado]": -46203238.52,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Realizado",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Realizado",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": -46203238.52,
+    "[Esperado]": -46203238.52,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Realizado",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Realizado",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Orçado",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": -56892053.86000002,
+    "[Esperado]": -56892053.86000002,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Orçado",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": -56892053.86000002,
+    "[Esperado]": -56892053.86000002,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Orçado",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Orçado",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": -56892053.86000002,
+    "[Esperado]": -56892053.86000002,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Orçado",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Orçado",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": -56892053.86000002,
+    "[Esperado]": -56892053.86000002,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Orçado",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Orçado",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Previsto",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": -56976331.95999997,
+    "[Esperado]": -56976331.95999997,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Previsto",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": -56976331.95999997,
+    "[Esperado]": -56976331.95999997,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Previsto",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Previsto",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": -56976331.95999997,
+    "[Esperado]": -56976331.95999997,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Previsto",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Previsto",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": -56976331.95999997,
+    "[Esperado]": -56976331.95999997,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Previsto",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Despesas Operacionais Previsto",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Realizado",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": -468158.12999999983,
+    "[Esperado]": -468158.12999999983,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Realizado",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": -468158.12999999983,
+    "[Esperado]": -468158.12999999983,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Realizado",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Realizado",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": -468158.12999999983,
+    "[Esperado]": -468158.12999999983,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Realizado",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Realizado",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": -468158.12999999983,
+    "[Esperado]": -468158.12999999983,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Realizado",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Realizado",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Orçado",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": -581312.93,
+    "[Esperado]": -581312.93,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Orçado",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": -581312.93,
+    "[Esperado]": -581312.93,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Orçado",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Orçado",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": -581312.93,
+    "[Esperado]": -581312.93,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Orçado",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Orçado",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": -581312.93,
+    "[Esperado]": -581312.93,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Orçado",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Orçado",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Previsto",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": -581918.9000000007,
+    "[Esperado]": -581918.9000000007,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Previsto",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": -581918.9000000007,
+    "[Esperado]": -581918.9000000007,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Previsto",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Previsto",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": -581918.9000000007,
+    "[Esperado]": -581918.9000000007,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Previsto",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Previsto",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": -581918.9000000007,
+    "[Esperado]": -581918.9000000007,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Previsto",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Resultado Financeiro Previsto",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Realizado",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": -287307.4699999999,
+    "[Esperado]": -287307.4699999999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Realizado",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": -287307.4699999999,
+    "[Esperado]": -287307.4699999999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Realizado",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Realizado",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": -287307.4699999999,
+    "[Esperado]": -287307.4699999999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Realizado",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Realizado",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": -287307.4699999999,
+    "[Esperado]": -287307.4699999999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Realizado",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Realizado",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Orçado",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": -360393.31000000006,
+    "[Esperado]": -360393.31000000006,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Orçado",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": -360393.31000000006,
+    "[Esperado]": -360393.31000000006,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Orçado",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Orçado",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": -360393.31000000006,
+    "[Esperado]": -360393.31000000006,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Orçado",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Orçado",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": -360393.31000000006,
+    "[Esperado]": -360393.31000000006,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Orçado",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Orçado",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Previsto",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": -360169.38999999984,
+    "[Esperado]": -360169.38999999984,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Previsto",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": -360169.38999999984,
+    "[Esperado]": -360169.38999999984,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Previsto",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Previsto",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": -360169.38999999984,
+    "[Esperado]": -360169.38999999984,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Previsto",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Previsto",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": -360169.38999999984,
+    "[Esperado]": -360169.38999999984,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Previsto",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Depreciação e Amortização Previsto",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Realizado",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": -150388.21,
+    "[Esperado]": -150388.21,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Realizado",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": -150388.21,
+    "[Esperado]": -150388.21,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Realizado",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Realizado",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": -150388.21,
+    "[Esperado]": -150388.21,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Realizado",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Realizado",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": -150388.21,
+    "[Esperado]": -150388.21,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Realizado",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Realizado",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Orçado",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": -190973.55999999997,
+    "[Esperado]": -190973.55999999997,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Orçado",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": -190973.55999999997,
+    "[Esperado]": -190973.55999999997,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Orçado",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Orçado",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": -190973.55999999997,
+    "[Esperado]": -190973.55999999997,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Orçado",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Orçado",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": -190973.55999999997,
+    "[Esperado]": -190973.55999999997,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Orçado",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Orçado",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Previsto",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": -191152.61000000013,
+    "[Esperado]": -191152.61000000013,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Previsto",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": -191152.61000000013,
+    "[Esperado]": -191152.61000000013,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Previsto",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Previsto",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": -191152.61000000013,
+    "[Esperado]": -191152.61000000013,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Previsto",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Previsto",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": -191152.61000000013,
+    "[Esperado]": -191152.61000000013,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Previsto",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Outras Receitas e Despesas Previsto",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Realizado",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": -681675.3899999994,
+    "[Esperado]": -681675.3899999994,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Realizado",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": -681675.3899999994,
+    "[Esperado]": -681675.3899999994,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Realizado",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Realizado",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": -681675.3899999994,
+    "[Esperado]": -681675.3899999994,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Realizado",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Realizado",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": -681675.3899999994,
+    "[Esperado]": -681675.3899999994,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Realizado",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Realizado",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Orçado",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": -896386.3799999997,
+    "[Esperado]": -896386.3799999997,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Orçado",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": -896386.3799999997,
+    "[Esperado]": -896386.3799999997,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Orçado",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Orçado",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": -896386.3799999997,
+    "[Esperado]": -896386.3799999997,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Orçado",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Orçado",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": -896386.3799999997,
+    "[Esperado]": -896386.3799999997,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Orçado",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Orçado",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Previsto",
+    "[Contexto]": "SemFiltro",
+    "[Obtido]": -895165.3899999999,
+    "[Esperado]": -895165.3899999999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Previsto",
+    "[Contexto]": "UnicaAlvo",
+    "[Obtido]": -895165.3899999999,
+    "[Esperado]": -895165.3899999999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Previsto",
+    "[Contexto]": "UnicaConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Previsto",
+    "[Contexto]": "MultiplasInclui",
+    "[Obtido]": -895165.3899999999,
+    "[Esperado]": -895165.3899999999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Previsto",
+    "[Contexto]": "MultiplasExclui",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Previsto",
+    "[Contexto]": "DescricaoAlvo",
+    "[Obtido]": -895165.3899999999,
+    "[Esperado]": -895165.3899999999,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Previsto",
+    "[Contexto]": "DescricaoConflitante",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  },
+  {
+    "[Medida]": "DRE | Provisão para IR e CSLL Previsto",
+    "[Contexto]": "SemDados",
+    "[Obtido]": null,
+    "[Esperado]": null,
+    "[Aprovado]": true
+  }
+]

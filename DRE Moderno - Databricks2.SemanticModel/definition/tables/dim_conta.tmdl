@@ -1,0 +1,130 @@
+table dim_conta
+	lineageTag: e844c91d-1181-40a0-8043-8737dab64670
+
+	column id_conta
+		dataType: string
+		isHidden
+		lineageTag: 1db80c95-694f-40a7-a11f-6915a5f63502
+		summarizeBy: none
+		sourceColumn: id_conta
+
+		annotation SummarizationSetBy = Automatic
+
+	column ordem_conta
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: fd4d3d88-c9f1-41dd-b4e5-ba433394f3af
+		summarizeBy: none
+		sourceColumn: ordem_conta
+
+		annotation SummarizationSetBy = Automatic
+
+	column descricaon1
+		dataType: string
+		isHidden
+		lineageTag: 1415b662-00da-4fcb-b1ba-91cd2ccb56dc
+		summarizeBy: none
+		sourceColumn: descricaon1
+
+		annotation SummarizationSetBy = Automatic
+
+	column descricaon2
+		dataType: string
+		isHidden
+		lineageTag: 9b679b90-8f48-4a97-ae08-fe11ebd5494a
+		summarizeBy: none
+		sourceColumn: descricaon2
+
+		annotation SummarizationSetBy = Automatic
+
+	column detalharn2
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: b226821e-5215-44d6-bfa2-859a84ca336a
+		summarizeBy: none
+		sourceColumn: detalharn2
+
+		annotation SummarizationSetBy = Automatic
+
+	column mascaradre_id
+		dataType: string
+		isHidden
+		lineageTag: b6c1e865-07ae-4561-af4a-ffdec35fadec
+		summarizeBy: none
+		sourceColumn: mascaradre_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipolancamento
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 439acba2-52e7-48dd-a4ff-2c77fd22ea71
+		summarizeBy: none
+		sourceColumn: tipolancamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column cod_filial
+		dataType: string
+		isHidden
+		lineageTag: 530515a5-2b60-41b3-8afc-51d4660ea873
+		summarizeBy: none
+		sourceColumn: cod_filial
+
+		annotation SummarizationSetBy = Automatic
+
+	/// L4.1: posição da linha DRE da conta (via mascaradre_id → dim_dre).
+	column ordem_dre = LOOKUPVALUE ( dim_dre[ordem_dre], dim_dre[id_dre], dim_conta[mascaradre_id] )
+		dataType: int64
+		isHidden
+		lineageTag: 3b78fa02-fe3d-4a56-907b-c9f49d23f846
+		summarizeBy: none
+
+	/// L4.1: linha da DRE da conta (via mascaradre_id → dim_dre). Ordenada por ordem_dre.
+	column linha_dre = LOOKUPVALUE ( dim_dre[descricao_dre], dim_dre[id_dre], dim_conta[mascaradre_id] )
+		dataType: string
+		lineageTag: 2bd8cdb5-e662-403e-9f5d-b49c940784a1
+		sortByColumn: ordem_dre
+
+	/// L4.1: ordem de exibição do grupo (descricaon1) = menor ordem_conta do grupo.
+	column ordem_grupo = VAR _g = dim_conta[descricaon1] RETURN MINX ( FILTER ( ALLNOBLANKROW ( dim_conta[descricaon1], dim_conta[ordem_conta] ), dim_conta[descricaon1] = _g ), dim_conta[ordem_conta] )
+		dataType: int64
+		isHidden
+		lineageTag: 96250265-7f29-4675-ac47-f280d46c4902
+		summarizeBy: none
+
+	/// L4.1: ordem de exibição da conta (descricaon2) = menor ordem_conta.
+	column ordem_subconta = VAR _c = dim_conta[descricaon2] RETURN MINX ( FILTER ( ALLNOBLANKROW ( dim_conta[descricaon2], dim_conta[ordem_conta] ), dim_conta[descricaon2] = _c ), dim_conta[ordem_conta] )
+		dataType: int64
+		isHidden
+		lineageTag: ff227fb9-01ec-4be0-b05b-e84be2d80a2f
+		summarizeBy: none
+
+	/// L4.1: grupo da conta (cópia de descricaon1 para exibição), ordenado por ordem_grupo.
+	column grupo_conta = dim_conta[descricaon1]
+		dataType: string
+		lineageTag: 681ef56a-54d8-4f10-838a-9dc2ac1cf050
+		sortByColumn: ordem_grupo
+
+	/// L4.1: conta (cópia de descricaon2 para exibição), ordenada por ordem_subconta.
+	column conta = dim_conta[descricaon2]
+		dataType: string
+		lineageTag: b5179bd0-88dc-4054-8eae-29a10356ba2d
+		sortByColumn: ordem_subconta
+
+	partition dim_conta = m
+		mode: import
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs(DatabricksHost, DatabricksHttpPath, [Catalog=null, Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null, Protocol=null]),
+				    workspace_Database = Source{[Name="workspace",Kind="Database"]}[Data],
+				    gold_Schema = workspace_Database{[Name="gold",Kind="Schema"]}[Data],
+				    dim_conta_Table = gold_Schema{[Name="dim_conta",Kind="Table"]}[Data]
+				in
+				    dim_conta_Table
+
+	annotation PBI_ResultType = Table
+

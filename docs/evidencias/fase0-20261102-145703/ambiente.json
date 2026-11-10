@@ -1,0 +1,6 @@
+{
+  "Date": "2026-11-02T14:57:04.7788483-03:00",
+  "PBIDesktopCount": 0,
+  "Check": "Get-Process -Name PBIDesktop",
+  "Scope": "Processos visíveis nesta sessão; sem abertura visual do Desktop."
+}

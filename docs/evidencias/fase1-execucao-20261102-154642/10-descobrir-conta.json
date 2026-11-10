@@ -1,0 +1,1163 @@
+[
+  {
+    "[Conta]": "01.01.01",
+    "[DescricaoN1]": "Vendas de produtos",
+    "[DescricaoN2]": "Vendas de produtos",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.01.02",
+    "[DescricaoN1]": "Vendas de serviços",
+    "[DescricaoN2]": "Vendas de serviços",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.02.01",
+    "[DescricaoN1]": "Vendas canceladas ou devoluções de vendas",
+    "[DescricaoN2]": "Vendas canceladas ou devoluções de vendas",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.02.02",
+    "[DescricaoN1]": "Descontos Incondicionais",
+    "[DescricaoN2]": "Descontos Incondicionais",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.02.03",
+    "[DescricaoN1]": "Abatimentos",
+    "[DescricaoN2]": "Abatimentos",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.02.04",
+    "[DescricaoN1]": "Impostos s/ vendas",
+    "[DescricaoN2]": "ICMS",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.02.05",
+    "[DescricaoN1]": "Impostos s/ vendas",
+    "[DescricaoN2]": "PIS",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.02.06",
+    "[DescricaoN1]": "Impostos s/ vendas",
+    "[DescricaoN2]": "COFINS",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.02.07",
+    "[DescricaoN1]": "Impostos s/ vendas",
+    "[DescricaoN2]": "IPI",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.04.01",
+    "[DescricaoN1]": "Custo das mercadorias vendidas",
+    "[DescricaoN2]": "Custo das mercadorias vendidas",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.04.02",
+    "[DescricaoN1]": "Custo dos serviços prestados",
+    "[DescricaoN2]": "Custo dos serviços prestados",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.06.01",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Folha de pagamento",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.06.02",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Horas extras",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.06.03",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Férias",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.06.04",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "13º Salário",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.06.05",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Assistencia social",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.06.06",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Plano dentário",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.06.07",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Plano de saúde",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.06.08",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Ajuda de custo",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.06.09",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Treinamentos",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.06.10",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Outros benefícios do colaborador",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.06.11",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Recrutamento e seleção",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.06.12",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Despesas com viagens",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.06.13",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Licenças de software",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.06.14",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Material de escritório",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.06.15",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Manutenção e reparos",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.06.16",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Conservação e limpeza",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.06.17",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Aluguel",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.06.18",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Água",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.06.19",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Energia",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.06.20",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Telefone",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.06.21",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Internet",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.06.22",
+    "[DescricaoN1]": "Despesas Comerciais",
+    "[DescricaoN2]": "Publicidade",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.06.23",
+    "[DescricaoN1]": "Despesas Comerciais",
+    "[DescricaoN2]": "Propaganda",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.06.24",
+    "[DescricaoN1]": "Despesas Comerciais",
+    "[DescricaoN2]": "Eventos",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.07.01",
+    "[DescricaoN1]": "Despesa Financeira",
+    "[DescricaoN2]": "Juros de mora",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.07.02",
+    "[DescricaoN1]": "Despesa Financeira",
+    "[DescricaoN2]": "IOF - Imposto s/ operações financeiras",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.09.01",
+    "[DescricaoN1]": "Depreciação",
+    "[DescricaoN2]": "Depreciação",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.09.02",
+    "[DescricaoN1]": "Amortização",
+    "[DescricaoN2]": "Amortização",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.10.01",
+    "[DescricaoN1]": "Outras Despesas",
+    "[DescricaoN2]": "Outras Despesas",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.10.02",
+    "[DescricaoN1]": "Outras Receitas",
+    "[DescricaoN2]": "Outras Receitas",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.12.01",
+    "[DescricaoN1]": "IRPJ",
+    "[DescricaoN2]": "IRPJ",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "01.12.02",
+    "[DescricaoN1]": "CSLL",
+    "[DescricaoN2]": "CSLL",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.01.01",
+    "[DescricaoN1]": "Vendas de produtos",
+    "[DescricaoN2]": "Vendas de produtos",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.01.02",
+    "[DescricaoN1]": "Vendas de serviços",
+    "[DescricaoN2]": "Vendas de serviços",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.02.01",
+    "[DescricaoN1]": "Vendas canceladas ou devoluções de vendas",
+    "[DescricaoN2]": "Vendas canceladas ou devoluções de vendas",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.02.02",
+    "[DescricaoN1]": "Descontos Incondicionais",
+    "[DescricaoN2]": "Descontos Incondicionais",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.02.03",
+    "[DescricaoN1]": "Abatimentos",
+    "[DescricaoN2]": "Abatimentos",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.02.04",
+    "[DescricaoN1]": "Impostos s/ vendas",
+    "[DescricaoN2]": "ICMS",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.02.05",
+    "[DescricaoN1]": "Impostos s/ vendas",
+    "[DescricaoN2]": "PIS",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.02.06",
+    "[DescricaoN1]": "Impostos s/ vendas",
+    "[DescricaoN2]": "COFINS",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.02.07",
+    "[DescricaoN1]": "Impostos s/ vendas",
+    "[DescricaoN2]": "IPI",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.04.01",
+    "[DescricaoN1]": "Custo das mercadorias vendidas",
+    "[DescricaoN2]": "Custo das mercadorias vendidas",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.04.02",
+    "[DescricaoN1]": "Custo dos serviços prestados",
+    "[DescricaoN2]": "Custo dos serviços prestados",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.06.01",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Folha de pagamento",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.06.02",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Horas extras",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.06.03",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Férias",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.06.04",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "13º Salário",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.06.05",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Assistencia social",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.06.06",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Plano dentário",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.06.07",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Plano de saúde",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.06.08",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Ajuda de custo",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.06.09",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Treinamentos",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.06.10",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Outros benefícios do colaborador",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.06.11",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Recrutamento e seleção",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.06.12",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Despesas com viagens",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.06.13",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Licenças de software",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.06.14",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Material de escritório",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.06.15",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Manutenção e reparos",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.06.16",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Conservação e limpeza",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.06.17",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Aluguel",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.06.18",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Água",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.06.19",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Energia",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.06.20",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Telefone",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.06.21",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Internet",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.06.22",
+    "[DescricaoN1]": "Despesas Comerciais",
+    "[DescricaoN2]": "Publicidade",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.06.23",
+    "[DescricaoN1]": "Despesas Comerciais",
+    "[DescricaoN2]": "Propaganda",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.06.24",
+    "[DescricaoN1]": "Despesas Comerciais",
+    "[DescricaoN2]": "Eventos",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.07.01",
+    "[DescricaoN1]": "Despesa Financeira",
+    "[DescricaoN2]": "Juros de mora",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.07.02",
+    "[DescricaoN1]": "Despesa Financeira",
+    "[DescricaoN2]": "IOF - Imposto s/ operações financeiras",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.09.01",
+    "[DescricaoN1]": "Depreciação",
+    "[DescricaoN2]": "Depreciação",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.09.02",
+    "[DescricaoN1]": "Amortização",
+    "[DescricaoN2]": "Amortização",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.10.01",
+    "[DescricaoN1]": "Outras Despesas",
+    "[DescricaoN2]": "Outras Despesas",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.10.02",
+    "[DescricaoN1]": "Outras Receitas",
+    "[DescricaoN2]": "Outras Receitas",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.12.01",
+    "[DescricaoN1]": "IRPJ",
+    "[DescricaoN2]": "IRPJ",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "02.12.02",
+    "[DescricaoN1]": "CSLL",
+    "[DescricaoN2]": "CSLL",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.01.01",
+    "[DescricaoN1]": "Vendas de produtos",
+    "[DescricaoN2]": "Vendas de produtos",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.01.02",
+    "[DescricaoN1]": "Vendas de serviços",
+    "[DescricaoN2]": "Vendas de serviços",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.02.01",
+    "[DescricaoN1]": "Vendas canceladas ou devoluções de vendas",
+    "[DescricaoN2]": "Vendas canceladas ou devoluções de vendas",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.02.02",
+    "[DescricaoN1]": "Descontos Incondicionais",
+    "[DescricaoN2]": "Descontos Incondicionais",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.02.03",
+    "[DescricaoN1]": "Abatimentos",
+    "[DescricaoN2]": "Abatimentos",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.02.04",
+    "[DescricaoN1]": "Impostos s/ vendas",
+    "[DescricaoN2]": "ICMS",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.02.05",
+    "[DescricaoN1]": "Impostos s/ vendas",
+    "[DescricaoN2]": "PIS",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.02.06",
+    "[DescricaoN1]": "Impostos s/ vendas",
+    "[DescricaoN2]": "COFINS",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.02.07",
+    "[DescricaoN1]": "Impostos s/ vendas",
+    "[DescricaoN2]": "IPI",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.04.01",
+    "[DescricaoN1]": "Custo das mercadorias vendidas",
+    "[DescricaoN2]": "Custo das mercadorias vendidas",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.04.02",
+    "[DescricaoN1]": "Custo dos serviços prestados",
+    "[DescricaoN2]": "Custo dos serviços prestados",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.06.01",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Folha de pagamento",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.06.02",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Horas extras",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.06.03",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Férias",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.06.04",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "13º Salário",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.06.05",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Assistencia social",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.06.06",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Plano dentário",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.06.07",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Plano de saúde",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.06.08",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Ajuda de custo",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.06.09",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Treinamentos",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.06.10",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Outros benefícios do colaborador",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.06.11",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Recrutamento e seleção",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.06.12",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Despesas com viagens",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.06.13",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Licenças de software",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.06.14",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Material de escritório",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.06.15",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Manutenção e reparos",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.06.16",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Conservação e limpeza",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.06.17",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Aluguel",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.06.18",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Água",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.06.19",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Energia",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.06.20",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Telefone",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.06.21",
+    "[DescricaoN1]": "Despesas Administrativas",
+    "[DescricaoN2]": "Internet",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.06.22",
+    "[DescricaoN1]": "Despesas Comerciais",
+    "[DescricaoN2]": "Publicidade",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.06.23",
+    "[DescricaoN1]": "Despesas Comerciais",
+    "[DescricaoN2]": "Propaganda",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.06.24",
+    "[DescricaoN1]": "Despesas Comerciais",
+    "[DescricaoN2]": "Eventos",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.07.01",
+    "[DescricaoN1]": "Despesa Financeira",
+    "[DescricaoN2]": "Juros de mora",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.07.02",
+    "[DescricaoN1]": "Despesa Financeira",
+    "[DescricaoN2]": "IOF - Imposto s/ operações financeiras",
+    "[DetalharN2]": 1,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.09.01",
+    "[DescricaoN1]": "Depreciação",
+    "[DescricaoN2]": "Depreciação",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.09.02",
+    "[DescricaoN1]": "Amortização",
+    "[DescricaoN2]": "Amortização",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.10.01",
+    "[DescricaoN1]": "Outras Despesas",
+    "[DescricaoN2]": "Outras Despesas",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.10.02",
+    "[DescricaoN1]": "Outras Receitas",
+    "[DescricaoN2]": "Outras Receitas",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.12.01",
+    "[DescricaoN1]": "IRPJ",
+    "[DescricaoN2]": "IRPJ",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  },
+  {
+    "[Conta]": "03.12.02",
+    "[DescricaoN1]": "CSLL",
+    "[DescricaoN2]": "CSLL",
+    "[DetalharN2]": 0,
+    "[Lancamentos]": 29,
+    "[Orcamento]": 36,
+    "[Previsao]": 36
+  }
+]

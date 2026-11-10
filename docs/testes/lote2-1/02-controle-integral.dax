@@ -1,0 +1,14 @@
+// Lote 2.1: consulta de leitura. NÃO EXECUTADA nas medidas persistidas.
+// Executar após reabrir o PBIP atualizado; não criar medidas a partir destes testes.
+EVALUATE
+VAR _R=CALCULATE([DRE | Realizado], 'vw_dre_comparativo'[ordem_dre]=13)
+VAR _O=CALCULATE([DRE | Orçado], 'vw_dre_comparativo'[ordem_dre]=13)
+VAR _P=CALCULATE([DRE | Previsto], 'vw_dre_comparativo'[ordem_dre]=13)
+VAR _LR=[DRE | Resultado Líquido Realizado]
+VAR _LO=[DRE | Resultado Líquido Orçado]
+VAR _LP=[DRE | Resultado Líquido Previsto]
+RETURN ROW("BaseRealizado",_R,"BaseOrcado",_O,"BasePrevisto",_P,
+ "RLRealizadoProvisorio",_LR,"RLOrcadoProvisorio",_LO,"RLPrevistoProvisorio",_LP,
+ "AprovadoR",NOT ISBLANK(_R) && NOT ISBLANK(_LR) && ROUND(_R,2)=5038227.39 && ROUND(_LR,2)=5038227.39,
+ "AprovadoO",NOT ISBLANK(_O) && NOT ISBLANK(_LO) && ROUND(_O,2)=6622493.82 && ROUND(_LO,2)=6622493.82,
+ "AprovadoP",NOT ISBLANK(_P) && NOT ISBLANK(_LP) && ROUND(_P,2)=6157931.19 && ROUND(_LP,2)=6157931.19)

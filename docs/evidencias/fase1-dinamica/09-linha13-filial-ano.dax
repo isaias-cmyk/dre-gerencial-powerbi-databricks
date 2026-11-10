@@ -1,0 +1,9 @@
+// FASE 1. Consulta somente leitura, NÃO EXECUTADA neste ambiente. Não cria medidas.
+EVALUATE
+CALCULATETABLE(
+ SUMMARIZECOLUMNS('dim_filial'[cod_filial],'dim_filial'[filial],'dim_calendario'[ano],
+ "Realizado",SUM('vw_dre_comparativo'[realizado]),
+ "Orcado",SUM('vw_dre_comparativo'[orcado]),"Previsto",SUM('vw_dre_comparativo'[previsto]),
+ "Linhas",COUNTROWS('vw_dre_comparativo')),
+ 'vw_dre_comparativo'[ordem_dre]=13)
+ORDER BY 'dim_filial'[filial],'dim_calendario'[ano]

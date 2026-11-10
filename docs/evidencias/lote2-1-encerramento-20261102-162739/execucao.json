@@ -1,0 +1,90 @@
+[
+  {
+    "File": "01-metadados.dax",
+    "State": "EXECUTADO",
+    "Rows": 6,
+    "Seconds": 0.0488798,
+    "Account": "",
+    "QuerySHA256": "3D30132F3AA1F5D029FB6DF0437F628C8D5ACAC908166B06A1554CFBF17A2E65"
+  },
+  {
+    "File": "02-controle-integral.dax",
+    "State": "EXECUTADO",
+    "Rows": 1,
+    "Seconds": 0.0313428,
+    "Account": "",
+    "QuerySHA256": "4F1E29B805C972D8B9ECF3BD3D1EAC233ABF638DA64A308A163EADCE6F51411B"
+  },
+  {
+    "File": "03-filial-periodo.dax",
+    "State": "EXECUTADO",
+    "Rows": 20,
+    "Seconds": 0.1915862,
+    "Account": "",
+    "QuerySHA256": "676AE08A63C56252D90471276C8794848E3E109A0DB5675A12758E4CA60A2FC1"
+  },
+  {
+    "File": "04-posicoes.dax",
+    "State": "EXECUTADO",
+    "Rows": 13,
+    "Seconds": 0.0318161,
+    "Account": "",
+    "QuerySHA256": "783B642201C038442CECA244D0DFAD340F92C2DEBE70A23FC3A5AC8EADE0E8A0"
+  },
+  {
+    "File": "05-contextos-e-totais.dax",
+    "State": "EXECUTADO",
+    "Rows": 5,
+    "Seconds": 0.0649018,
+    "Account": "",
+    "QuerySHA256": "48828BFD15BA0600D56898D49CF390D50453281392BA43A35FB03E47FB5E0615"
+  },
+  {
+    "File": "06-total-matriz.dax",
+    "State": "EXECUTADO",
+    "Rows": 14,
+    "Seconds": 0.0449926,
+    "Account": "",
+    "QuerySHA256": "581A25D0E59E606913E1E15B02C0DC8A26BFE1255A2C082FDDC0227A6C6FCB1C"
+  },
+  {
+    "File": "07-ebitda-ebit.dax",
+    "State": "EXECUTADO",
+    "Rows": 2,
+    "Seconds": 0.0338831,
+    "Account": "",
+    "QuerySHA256": "CF103525B509C885CC165D90677BF64F39A28083ADFD6767285C913F21B86598"
+  },
+  {
+    "File": "08-ausencia-realizado.dax",
+    "State": "EXECUTADO",
+    "Rows": 1,
+    "Seconds": 0.0289951,
+    "Account": "",
+    "QuerySHA256": "631CE93D753D08535B79031CFEA2FFC4A26A26759F077277CF4A1FE3B59BF7EF"
+  },
+  {
+    "File": "09-limites-conta-dre.dax",
+    "State": "EXECUTADO",
+    "Rows": 1,
+    "Seconds": 0.0196243,
+    "Account": "",
+    "QuerySHA256": "01FDBDA504F05837E6D1F96E36432FFDE1665B1F62A72D3CEDAE34D00FC342FD"
+  },
+  {
+    "File": "10-materializacao.dax",
+    "State": "EXECUTADO",
+    "Rows": 1,
+    "Seconds": 0.0089239,
+    "Account": "",
+    "QuerySHA256": "56B1078B7AEC506C0E997B134A2D9A5B3F418493EAF8CE3B3334AC1124748A6B"
+  },
+  {
+    "File": "11-particoes.dax",
+    "State": "EXECUTADO",
+    "Rows": 15,
+    "Seconds": 0.0315356,
+    "Account": "",
+    "QuerySHA256": "5C00AA6647B05F5D1C66A112D50E88A9D9D6F61BF533A2965D97400DEE749270"
+  }
+]

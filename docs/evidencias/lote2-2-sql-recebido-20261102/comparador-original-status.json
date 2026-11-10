@@ -1,0 +1,7 @@
+{
+  "Executado": true,
+  "ExitCode": 1,
+  "Motivo": "ValueError: Esperadas 1155 chaves, obtidas 1000",
+  "ResultadoCompletoProduzido": false,
+  "ComparacaoParcial": "resumo.json; não substitui aprovação integral"
+}

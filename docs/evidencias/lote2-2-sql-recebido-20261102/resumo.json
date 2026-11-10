@@ -1,0 +1,24 @@
+{
+  "Esperados": 1155,
+  "Recebidos": 1000,
+  "Conciliados": 1000,
+  "Divergencias": 0,
+  "Ausentes": 155,
+  "DiferencaMaxima": "8E-8",
+  "BlankCoincidentes": 88,
+  "AusentesPorGrupoPeriodo": {
+    "consolidado/2023": 23,
+    "consolidado/2023_janmai": 33,
+    "consolidado/2023_jundez": 33,
+    "consolidado/2023_junho": 33,
+    "consolidado/integral": 33
+  },
+  "ComparadorOriginal": "Executado; rejeitou cobertura 1000/1155",
+  "Proveniencia": "SQL fornecido pelo usuário, comparado com DAX previamente executado; nenhuma nova execução SQL pelo agente",
+  "OriginalSHA256": "46729c5c6e095744ca304285f26fd8fc69a5bd1cd8411462e47b200a5a6812ac",
+  "AceiteCompleto": false,
+  "Status": "BLOQUEADO_EXPORTACAO_SQL_INCOMPLETA",
+  "CompetenciaMensal": "Não comprovada individualmente; exportação agrupada por período",
+  "DataExecucaoSQL": "Não informada no anexo",
+  "ProducaoAlterada": false
+}

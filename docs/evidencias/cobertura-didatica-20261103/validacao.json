@@ -1,0 +1,72 @@
+{
+  "manifesto": "docs\\cobertura-temporal-didatica.json",
+  "sha256_manifesto": "449ae31a2cd55e209cef576ea27a0b6d01d9ddd36f7ba10166f699bb22eb58d4",
+  "hash_excel_confere": true,
+  "intervalos": 9,
+  "pares_realizado": 87,
+  "pares_nao_fornecidos": 21,
+  "pares_orcado": 108,
+  "pares_previsto": 108,
+  "validacoes_conjuntos": [
+    {
+      "caso": "integral",
+      "pares_esperados": 87,
+      "pares_obtidos": 87,
+      "aprovado": true
+    },
+    {
+      "caso": "2021",
+      "pares_esperados": 36,
+      "pares_obtidos": 36,
+      "aprovado": true
+    },
+    {
+      "caso": "2022",
+      "pares_esperados": 36,
+      "pares_obtidos": 36,
+      "aprovado": true
+    },
+    {
+      "caso": "2023",
+      "pares_esperados": 15,
+      "pares_obtidos": 15,
+      "aprovado": true
+    },
+    {
+      "caso": "jun_dez_2023",
+      "pares_esperados": 0,
+      "pares_obtidos": 0,
+      "aprovado": true
+    },
+    {
+      "caso": "filial_01",
+      "pares_esperados": 29,
+      "pares_obtidos": 29,
+      "aprovado": true
+    },
+    {
+      "caso": "filiais_01_02",
+      "pares_esperados": 58,
+      "pares_obtidos": 58,
+      "aprovado": true
+    },
+    {
+      "caso": "descontinuo_jan_mar_2023",
+      "pares_esperados": 6,
+      "pares_obtidos": 6,
+      "aprovado": true
+    },
+    {
+      "caso": "filial_nao_configurada",
+      "pares_esperados": 0,
+      "pares_obtidos": 0,
+      "aprovado": true
+    }
+  ],
+  "escopo": "Validacao documental/local de conjuntos; nao executa DAX, SQL, TMDL ou materializacao",
+  "producao_arquivos_conferidos": 34,
+  "producao_arquivos_alterados": [],
+  "medidas_existentes": 36,
+  "medidas_novas": 0,
+  "tabela_configuracao_criada_no_modelo": false
+}

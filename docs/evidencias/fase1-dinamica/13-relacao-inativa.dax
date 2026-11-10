@@ -1,0 +1,10 @@
+// FASE 1. Consulta somente leitura, NÃO EXECUTADA neste ambiente. Não cria medidas.
+EVALUATE
+GENERATE(SELECTCOLUMNS(ALLNOBLANKROW('dim_filial'),"Codigo",'dim_filial'[cod_filial],"Filial",'dim_filial'[filial]),
+ VAR _Cod=[Codigo]
+ VAR _ViaFilial=CALCULATETABLE('dim_conta',TREATAS({_Cod},'dim_filial'[cod_filial]))
+ VAR _Todas=ALL('dim_conta')
+ RETURN ROW("ContasTotal",COUNTROWS(_Todas),"ContasViaFilial",COUNTROWS(_ViaFilial),
+ "ContasDaFilialDiretas",COUNTROWS(FILTER(_Todas,'dim_conta'[cod_filial]=_Cod)),
+ "Extras",COUNTROWS(EXCEPT(_ViaFilial,_Todas)),"Faltantes",COUNTROWS(EXCEPT(_Todas,_ViaFilial))))
+// Relação deve permanecer inativa em 02-relacionamentos. Nenhum USERELATIONSHIP é aplicado.

@@ -1,0 +1,13 @@
+// Auditoria somente leitura: grão, metadados e coerência de filial no modelo carregado.
+EVALUATE
+UNION(
+ ROW("Teste","DRE_chave_filial_ordem_duplicada","Divergencias",COUNTROWS(FILTER(GROUPBY('dim_dre','dim_dre'[cod_filial],'dim_dre'[ordem_dre],"N",COUNTX(CURRENTGROUP(),1)),[N]>1))),
+ ROW("Teste","View_grupo_sem_13_posicoes","Divergencias",COUNTROWS(FILTER(SUMMARIZE('vw_dre_comparativo','vw_dre_comparativo'[cod_filial],'vw_dre_comparativo'[competencia],"N",DISTINCTCOUNT('vw_dre_comparativo'[ordem_dre])),[N]<>13))),
+ ROW("Teste","View_descricao_inconsistente_por_ordem","Divergencias",COUNTROWS(FILTER(SUMMARIZE('vw_dre_comparativo','vw_dre_comparativo'[ordem_dre],"N",DISTINCTCOUNT('vw_dre_comparativo'[descricao_dre])),[N]<>1))),
+ ROW("Teste","View_ordem_inconsistente_por_descricao","Divergencias",COUNTROWS(FILTER(SUMMARIZE('vw_dre_comparativo','vw_dre_comparativo'[descricao_dre],"N",DISTINCTCOUNT('vw_dre_comparativo'[ordem_dre])),[N]<>1))),
+ ROW("Teste","View_flag_inconsistente_por_ordem","Divergencias",COUNTROWS(FILTER(SUMMARIZE('vw_dre_comparativo','vw_dre_comparativo'[ordem_dre],"N",DISTINCTCOUNT('vw_dre_comparativo'[subtotal])),[N]<>1))),
+ ROW("Teste","View_ordem_nula","Divergencias",COUNTROWS(FILTER('vw_dre_comparativo',ISBLANK('vw_dre_comparativo'[ordem_dre])))),
+ ROW("Teste","View_posicao_sem_dimensao","Divergencias",COUNTROWS(EXCEPT(SUMMARIZE('vw_dre_comparativo','vw_dre_comparativo'[cod_filial],'vw_dre_comparativo'[ordem_dre]),SUMMARIZE('dim_dre','dim_dre'[cod_filial],'dim_dre'[ordem_dre])))),
+ ROW("Teste","Lancamentos_filial_conta_incoerente","Divergencias",COUNTROWS(FILTER('fato_lancamentos','fato_lancamentos'[cod_filial]<>RELATED('dim_conta'[cod_filial])))),
+ ROW("Teste","Orcamento_filial_conta_incoerente","Divergencias",COUNTROWS(FILTER('fato_orcamento','fato_orcamento'[cod_filial]<>RELATED('dim_conta'[cod_filial])))),
+ ROW("Teste","Previsao_filial_conta_incoerente","Divergencias",COUNTROWS(FILTER('fato_previsao','fato_previsao'[cod_filial]<>RELATED('dim_conta'[cod_filial])))))

@@ -1,0 +1,18 @@
+[
+  {
+    "File": "11-filtro-conta.dax",
+    "State": "EXECUTADO",
+    "Rows": 4,
+    "Seconds": 0.1512092,
+    "Account": "01.02.04",
+    "QuerySHA256": "5CD6535A8BD3C32F9BDCF73D0871CCA1F206D1076A00323FAA311F9684F24DAC"
+  },
+  {
+    "File": "17-intersecao-conta-filial-periodo.dax",
+    "State": "EXECUTADO",
+    "Rows": 12,
+    "Seconds": 0.1073713,
+    "Account": "01.02.04",
+    "QuerySHA256": "CA7FC2EB8AB50ABF2CB22971F25A55836641670F977C3206C4AF25E98DD94958"
+  }
+]

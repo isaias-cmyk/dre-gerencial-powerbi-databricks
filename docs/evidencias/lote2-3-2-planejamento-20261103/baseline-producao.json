@@ -1,0 +1,146 @@
+[
+  {
+    "arquivo": "DRE Moderno - Databricks.SemanticModel/.platform",
+    "sha256": "844775e9ef4f76ac0e6d261fac15d0aec6f6e48abb682d2c2550952e0288fe7e"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.SemanticModel/definition.pbism",
+    "sha256": "73a1ae4c89d7488f553788adc772a04c805d1c9e0d7333e2b2b5476aad8e5a5f"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.SemanticModel/diagramLayout.json",
+    "sha256": "14ff845ce12f6cb5ca088416c26b6b422d1dcb2580f0fb1bd316dc9295887e8e"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.SemanticModel/DAXQueries/Query 1.dax",
+    "sha256": "bc19986b3c4cb9ee8bdc668c5fc16cbae581b763071c7d84b66fee7ef3cf73a8"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.SemanticModel/definition/database.tmdl",
+    "sha256": "822c914b643bca32bb20abd8a762df8204a1b9ef02acc2bc7348727f6699cb96"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.SemanticModel/definition/model.tmdl",
+    "sha256": "c8da15dc56caaf9f4439d2fe3d0149e9a6be8d5942d75620e49f051a01f6bb4b"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.SemanticModel/definition/relationships.tmdl",
+    "sha256": "1c10429b6615e4538b8ab05300e64946d2536e4f2a7dc9238d47d6a695d3bbcf"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.SemanticModel/definition/cultures/en-US.tmdl",
+    "sha256": "1109e38ebc2a662c6ac3926717b17f040c1ee6812d0a3de88d781cdfac626d19"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.SemanticModel/definition/tables/DateTableTemplate_accc5392-c07a-42c1-95c8-edb7723fc395.tmdl",
+    "sha256": "31aa4493a4d85bba369000f540bccba0e8aafaa9f2d42e132bb666d4d865ca50"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.SemanticModel/definition/tables/dim_calendario.tmdl",
+    "sha256": "f80b522519cf29facdfe279c886cabcba5b676d96fb3c6009ac39c68d3fe7caf"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.SemanticModel/definition/tables/dim_conta.tmdl",
+    "sha256": "4ca184ac013f2e0e0b798c500b0eccf510a25e719531f90f8d96609a268ff3eb"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.SemanticModel/definition/tables/dim_dre.tmdl",
+    "sha256": "0d944cea3e9f33e847a849fd58423cdc06f4c999c54f75b6d2910df6623ce049"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.SemanticModel/definition/tables/dim_filial.tmdl",
+    "sha256": "d8a642c5e740c79640d78aa113f248ac96bc83efb4f624ca6dd04c7a86775c6d"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.SemanticModel/definition/tables/fato_lancamentos.tmdl",
+    "sha256": "b7684b53eb61b4e5d6b80f47010c79eeee55492cc9b29d20b9bc756a71aa4769"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.SemanticModel/definition/tables/fato_orcamento.tmdl",
+    "sha256": "66183b5ffb9dcfe6b3432fe498c1c0316853ac52e92929d019fec47418471765"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.SemanticModel/definition/tables/fato_previsao.tmdl",
+    "sha256": "378381e70ed4f1b0ed6b18e9956d42f785107f463fcb4db7b97dc8154a8acadf"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.SemanticModel/definition/tables/LocalDateTable_34e06e8e-8415-4982-a1d6-5bcb8aaf396d.tmdl",
+    "sha256": "d3a28a5111143cfe49cade3dc787bed5333500c66364016dda7b5cd431132688"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.SemanticModel/definition/tables/LocalDateTable_48e7e8a8-fb4a-47d3-a465-3cfdcdc24531.tmdl",
+    "sha256": "8f502cfb6a2fa456cf70dbd1c0dade75253076112b20a8c281716f74fd6ca408"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.SemanticModel/definition/tables/LocalDateTable_9a63cac9-7363-4efb-a94e-52482a9f2a3b.tmdl",
+    "sha256": "b41ae8c6029b2a89ff79ea0557baed8bfedd7f2ec49a411244c2baf5127bf997"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.SemanticModel/definition/tables/LocalDateTable_c5792a6d-2512-4297-9fab-d41d92d805c3.tmdl",
+    "sha256": "80a3ce4f460bc4222f1d4b6b01bb365ede3ed0ca7c05fa9f0459144fb80eb9b9"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.SemanticModel/definition/tables/LocalDateTable_e416fc4a-500e-46eb-9219-3a8485e17504.tmdl",
+    "sha256": "2d8adc18133849e035f2c7e907293081bf3da79b4dd168bddefa7905c4d84ac4"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.SemanticModel/definition/tables/vw_dre_comparativo.tmdl",
+    "sha256": "b307ee6d1b0a297ac559bd7287a7f22c4433a2299d66916e47365ad5add7ef4c"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.SemanticModel/definition/tables/_ConfigCobertura.tmdl",
+    "sha256": "28c40b430b1b83ab512421f36eaae4c56f20bde7810fc4dc9cea8f05b6df57b9"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.SemanticModel/definition/tables/_Medidas.tmdl",
+    "sha256": "28c1ad7e8f0f90a9958647c6d1917b523f6ecbf8845a83d3e1d6b894411c30fa"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.Report/.platform",
+    "sha256": "e0eda8f6c598e79fb766ab28710e7db81ae084f04e65ed6fb86d099aab1a9a02"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.Report/definition.pbir",
+    "sha256": "2847a1fcb67216d855b1cdf3444961a289d852b8fa2bce6c6eaeb77ff144db93"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.Report/definition/report.json",
+    "sha256": "1b1f2d76cfb9de0901315d2f12fafacadfb8d5c7eddd24d17aae9918bb48cefe"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.Report/definition/version.json",
+    "sha256": "c8bdd966a85f1eaab4312d2096b6d7b508243e4d7bc5a4d25af3cfcb1056a4e7"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.Report/definition/pages/pages.json",
+    "sha256": "6ac06d2b3e79b466231ebb066ead229c916fd516363503de4ad04d03faddbb11"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.Report/definition/pages/18fcfac0c5446040d274/page.json",
+    "sha256": "ee220417602a260fefebaead969a79c2e04ee69a730c1b8b1073b2af4e3f4a44"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.Report/definition/pages/18fcfac0c5446040d274/visuals/edef2415c70ad843b680/visual.json",
+    "sha256": "1d4246b4704aef2077605de4721482338fe4300a749778e349ac3902f9307b85"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.Report/StaticResources/SharedResources/BaseThemes/Fluent2-CY26SU08.json",
+    "sha256": "5095b493358f0307e2f0a690a48c78ee93886bb70b578e3bfc48186cfc0319af"
+  },
+  {
+    "arquivo": "DRE Moderno - Databricks.pbip",
+    "sha256": "781349c0267df147687c9940ff32aadb5ed7a0df2ad4b77080cfeb240b788238"
+  },
+  {
+    "arquivo": "AGENTS.md",
+    "sha256": "dc018011f3c9c321c2976b6b6d2866fcebc6d60894f73827000935904bb450e6"
+  },
+  {
+    "arquivo": "BaseDados.xlsx",
+    "sha256": "27e02e7148984d74acdb5cf086a9ba637c55617152793f23509d3bad24bce04b"
+  },
+  {
+    "arquivo": "docs/cobertura-temporal-didatica.json",
+    "sha256": "449ae31a2cd55e209cef576ea27a0b6d01d9ddd36f7ba10166f699bb22eb58d4"
+  }
+]

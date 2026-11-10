@@ -1,0 +1,32 @@
+table dim_filial
+	lineageTag: 0c55b738-dccf-4135-80db-bcf23fa9518b
+
+	column cod_filial
+		dataType: string
+		lineageTag: 19e5039f-3e72-48d1-983d-601157ce59cf
+		summarizeBy: none
+		sourceColumn: cod_filial
+
+		annotation SummarizationSetBy = Automatic
+
+	column filial
+		dataType: string
+		lineageTag: edafa189-9e5b-426b-be42-3360a1b695ed
+		summarizeBy: none
+		sourceColumn: filial
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_filial = m
+		mode: import
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs(DatabricksHost, DatabricksHttpPath, [Catalog=null, Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null, Protocol=null]),
+				    workspace_Database = Source{[Name="workspace",Kind="Database"]}[Data],
+				    gold_Schema = workspace_Database{[Name="gold",Kind="Schema"]}[Data],
+				    dim_filial_Table = gold_Schema{[Name="dim_filial",Kind="Table"]}[Data]
+				in
+				    dim_filial_Table
+
+	annotation PBI_ResultType = Table
+

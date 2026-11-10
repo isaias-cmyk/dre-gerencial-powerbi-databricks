@@ -1,0 +1,14 @@
+// Agrupa somente metadados já existentes dos lançamentos. Ingestão não equivale a fechamento.
+EVALUATE
+SUMMARIZE (
+    'fato_lancamentos',
+    'fato_lancamentos'[cod_filial],
+    'fato_lancamentos'[_arquivo_origem],
+    'fato_lancamentos'[_aba_origem],
+    'fato_lancamentos'[_tabela_origem],
+    'fato_lancamentos'[_data_ingestao],
+    "PrimeiraCompetenciaComLinha", MIN ( 'fato_lancamentos'[competencia_data] ),
+    "UltimaCompetenciaComLinha", MAX ( 'fato_lancamentos'[competencia_data] ),
+    "CompetenciasComLinha", DISTINCTCOUNT ( 'fato_lancamentos'[competencia_data] ),
+    "Linhas", COUNTROWS ( 'fato_lancamentos' )
+)

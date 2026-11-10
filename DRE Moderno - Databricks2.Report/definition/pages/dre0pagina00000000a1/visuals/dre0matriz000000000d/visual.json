@@ -1,0 +1,360 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "dre0matriz000000000d",
+  "position": {
+    "x": 24,
+    "y": 180,
+    "z": 5,
+    "height": 520,
+    "width": 1872,
+    "tabOrder": 5
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_dre_comparativo"
+                    }
+                  },
+                  "Property": "descricao_dre"
+                }
+              },
+              "queryRef": "vw_dre_comparativo.descricao_dre",
+              "nativeQueryRef": "descricao_dre",
+              "active": true,
+              "displayName": "Linha da DRE"
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "DRE | Realizado Comparável"
+                }
+              },
+              "queryRef": "_Medidas.DRE | Realizado Comparável",
+              "nativeQueryRef": "DRE | Realizado Comparável",
+              "displayName": "Realizado"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "DRE | Orçado Comparável"
+                }
+              },
+              "queryRef": "_Medidas.DRE | Orçado Comparável",
+              "nativeQueryRef": "DRE | Orçado Comparável",
+              "displayName": "Orçado"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "DRE | Desvio Realizado x Orçado (R$)"
+                }
+              },
+              "queryRef": "_Medidas.DRE | Desvio Realizado x Orçado (R$)",
+              "nativeQueryRef": "DRE | Desvio Realizado x Orçado (R$)",
+              "displayName": "Desvio x Orç. (R$)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "DRE | Desvio Realizado x Orçado (%)"
+                }
+              },
+              "queryRef": "_Medidas.DRE | Desvio Realizado x Orçado (%)",
+              "nativeQueryRef": "DRE | Desvio Realizado x Orçado (%)",
+              "displayName": "Desvio x Orç. (%)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "DRE | Classificação x Orçado"
+                }
+              },
+              "queryRef": "_Medidas.DRE | Classificação x Orçado",
+              "nativeQueryRef": "DRE | Classificação x Orçado",
+              "displayName": "Classificação x Orç."
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "DRE | Previsto Comparável"
+                }
+              },
+              "queryRef": "_Medidas.DRE | Previsto Comparável",
+              "nativeQueryRef": "DRE | Previsto Comparável",
+              "displayName": "Previsto"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "DRE | Desvio Realizado x Previsto (R$)"
+                }
+              },
+              "queryRef": "_Medidas.DRE | Desvio Realizado x Previsto (R$)",
+              "nativeQueryRef": "DRE | Desvio Realizado x Previsto (R$)",
+              "displayName": "Desvio x Prev. (R$)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "DRE | Desvio Realizado x Previsto (%)"
+                }
+              },
+              "queryRef": "_Medidas.DRE | Desvio Realizado x Previsto (%)",
+              "nativeQueryRef": "DRE | Desvio Realizado x Previsto (%)",
+              "displayName": "Desvio x Prev. (%)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "DRE | Classificação x Previsto"
+                }
+              },
+              "queryRef": "_Medidas.DRE | Classificação x Previsto",
+              "nativeQueryRef": "DRE | Classificação x Previsto",
+              "displayName": "Classificação x Prev."
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "vw_dre_comparativo"
+                  }
+                },
+                "Property": "descricao_dre"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "subTotals": [
+        {
+          "properties": {
+            "rowSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "DRE | Cor Classificação x Orçado"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "_Medidas.DRE | Classificação x Orçado"
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "DRE | Cor Classificação x Previsto"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "_Medidas.DRE | Classificação x Previsto"
+          }
+        }
+      ],
+      "rowHeaders": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "rowPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "6D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Matriz: DRE por linha, período comparável. Valores: Realizado, Orçado, Desvio x Orç. (R$), Desvio x Orç. (%), Classificação x Orç., Previsto, Desvio x Prev. (R$), Desvio x Prev. (%), Classificação x Prev.. Desvios coloridos: verde favorável, verme...'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

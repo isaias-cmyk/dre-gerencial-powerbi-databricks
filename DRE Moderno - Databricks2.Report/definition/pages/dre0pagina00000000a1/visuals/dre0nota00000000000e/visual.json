@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "dre0nota00000000000e",
+  "position": {
+    "x": 24,
+    "y": 866,
+    "z": 6,
+    "height": 80,
+    "width": 1872,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Valores comparáveis: somente meses com Realizado em todas as filiais selecionadas (base didática DIDATICA-1.0, Realizado até 2023-05). Positivo = aumenta o resultado. Em linha = |impacto| ≤ R$ 0,01. EBITDA e EBIT pelo padrão de mercado (CVM): EBITDA = Margem + Despesas Operacionais + Outras Receitas e Despesas; EBIT = EBITDA + Depreciação e Amortização (cartões abaixo da matriz).",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#605E5C"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Nota explicativa: Valores comparáveis: somente meses com Realizado em todas as filiais selecionadas (base didática DIDATICA-1.0, Realizado até 2023-05). Positivo = aumenta o resultado. Em linha = |impacto| ≤ R$ 0,01. EBITDA e EBIT pelo padrão de mercado (CVM): EBITDA = Margem + Despesas Operacionais + Outras Receitas e Despesas; EBIT = EBITDA + Depreciação e Amortização (cartões abaixo da matriz); ...'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

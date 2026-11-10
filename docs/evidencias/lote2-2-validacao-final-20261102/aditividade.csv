@@ -1,0 +1,463 @@
+﻿GrupoFilial,Periodo,Medida,Total,SomaFiliais,Diferenca,Aprovado
+Consolidado,2021,DRE | Custos Orçado,-37182953.11,-37182953.109999995,-5E-9,True
+01+02,2021,DRE | Custos Orçado,-30506108.599999994,-30506108.599999995,1E-9,True
+Consolidado,2021,DRE | Custos Previsto,-37265003.93,-37265003.930000001,1E-9,True
+01+02,2021,DRE | Custos Previsto,-30583419.150000002,-30583419.150000002,0E-9,True
+Consolidado,2021,DRE | Custos Realizado,-37122394.87000001,-37122394.870000002,-8E-9,True
+01+02,2021,DRE | Custos Realizado,-30495330.670000006,-30495330.670000003,-3E-9,True
+Consolidado,2021,DRE | Deduções da Receita Orçado,-20702603.55,-20702603.55,0.00,True
+01+02,2021,DRE | Deduções da Receita Orçado,-17199815.77,-17199815.77,0.00,True
+Consolidado,2021,DRE | Deduções da Receita Previsto,-20638098.689999998,-20638098.689999998,0E-9,True
+01+02,2021,DRE | Deduções da Receita Previsto,-17155265.580000002,-17155265.579999998,-4E-9,True
+Consolidado,2021,DRE | Deduções da Receita Realizado,-20996553.439999998,-20996553.44,2E-9,True
+01+02,2021,DRE | Deduções da Receita Realizado,-17441384.229999997,-17441384.23,3E-9,True
+Consolidado,2021,DRE | Depreciação e Amortização Orçado,-114882.73000000004,-114882.729999999998,-4.2E-11,True
+01+02,2021,DRE | Depreciação e Amortização Orçado,-94263.33000000003,-94263.33,-3E-11,True
+Consolidado,2021,DRE | Depreciação e Amortização Previsto,-114857.0,-114857.000000000005,5E-12,True
+01+02,2021,DRE | Depreciação e Amortização Previsto,-94273.7,-94273.700000000002,2E-12,True
+Consolidado,2021,DRE | Depreciação e Amortização Realizado,-114129.62000000001,-114129.620000000008,-2E-12,True
+01+02,2021,DRE | Depreciação e Amortização Realizado,-93721.48000000003,-93721.480000000005,-2.5E-11,True
+Consolidado,2021,DRE | Despesas Operacionais Orçado,-18273831.259999994,-18273831.2599999984,4.4E-9,True
+01+02,2021,DRE | Despesas Operacionais Orçado,-15009672.629999995,-15009672.629999999,4E-9,True
+Consolidado,2021,DRE | Despesas Operacionais Previsto,-18265383.619999997,-18265383.619999999,2E-9,True
+01+02,2021,DRE | Despesas Operacionais Previsto,-14998857.249999998,-14998857.249999999,1E-9,True
+Consolidado,2021,DRE | Despesas Operacionais Realizado,-18249245.380000006,-18249245.380000001,-5E-9,True
+01+02,2021,DRE | Despesas Operacionais Realizado,-14964495.150000004,-14964495.150000001,-3E-9,True
+Consolidado,2021,DRE | Margem de Contribuição Orçado,21164129.249999996,21164129.2500000003,-4.3E-9,True
+01+02,2021,DRE | Margem de Contribuição Orçado,17149208.45,17149208.45,0.00,True
+Consolidado,2021,DRE | Margem de Contribuição Previsto,21007096.08,21007096.080000001,-1E-9,True
+01+02,2021,DRE | Margem de Contribuição Previsto,17082646.14,17082646.140000001,-1E-9,True
+Consolidado,2021,DRE | Margem de Contribuição Realizado,21032726.700000003,21032726.699999999,4E-9,True
+01+02,2021,DRE | Margem de Contribuição Realizado,17078355.840000004,17078355.839999999,5E-9,True
+Consolidado,2021,DRE | Outras Receitas e Despesas Orçado,-61416.490000000005,-61416.490000000007,2E-12,True
+01+02,2021,DRE | Outras Receitas e Despesas Orçado,-50140.000000000015,-50140.000000000005,-1.0E-11,True
+Consolidado,2021,DRE | Outras Receitas e Despesas Previsto,-61450.90000000001,-61450.900000000006,-4E-12,True
+01+02,2021,DRE | Outras Receitas e Despesas Previsto,-50141.58000000001,-50141.580000000006,-4E-12,True
+Consolidado,2021,DRE | Outras Receitas e Despesas Realizado,-59341.27,-59341.269999999997,-3E-12,True
+01+02,2021,DRE | Outras Receitas e Despesas Realizado,-48738.840000000004,-48738.839999999999,-5E-12,True
+Consolidado,2021,DRE | Provisão para IR e CSLL Orçado,-303916.93,-303916.93000000003,3E-11,True
+01+02,2021,DRE | Provisão para IR e CSLL Orçado,-252264.71,-252264.71000000002,2E-11,True
+Consolidado,2021,DRE | Provisão para IR e CSLL Previsto,-303175.88,-303175.88000000001,1E-11,True
+01+02,2021,DRE | Provisão para IR e CSLL Previsto,-251627.44999999998,-251627.45,2E-11,True
+Consolidado,2021,DRE | Provisão para IR e CSLL Realizado,-306008.3799999999,-306008.37999999999,9E-11,True
+01+02,2021,DRE | Provisão para IR e CSLL Realizado,-253380.67999999996,-253380.68,4E-11,True
+Consolidado,2021,DRE | Receita Operacional Bruta Orçado,79049685.91000001,79049685.910000012,-2E-9,True
+01+02,2021,DRE | Receita Operacional Bruta Orçado,64855132.820000015,64855132.82000001,5E-9,True
+Consolidado,2021,DRE | Receita Operacional Bruta Previsto,78910198.70000002,78910198.70,2E-8,True
+01+02,2021,DRE | Receita Operacional Bruta Previsto,64821330.870000005,64821330.87,5E-9,True
+Consolidado,2021,DRE | Receita Operacional Bruta Realizado,79151675.01000004,79151675.01,4E-8,True
+01+02,2021,DRE | Receita Operacional Bruta Realizado,65015070.74,65015070.74,0.00,True
+Consolidado,2021,DRE | Receita Operacional Líquida Orçado,58347082.36,58347082.360000001,-1E-9,True
+01+02,2021,DRE | Receita Operacional Líquida Orçado,47655317.04999998,47655317.050000001,-2.1E-8,True
+Consolidado,2021,DRE | Receita Operacional Líquida Previsto,58272100.01000001,58272100.01,1E-8,True
+01+02,2021,DRE | Receita Operacional Líquida Previsto,47666065.29000001,47666065.29,1E-8,True
+Consolidado,2021,DRE | Receita Operacional Líquida Realizado,58155121.569999985,58155121.569999997,-1.2E-8,True
+01+02,2021,DRE | Receita Operacional Líquida Realizado,47573686.50999998,47573686.509999998,-1.8E-8,True
+Consolidado,2021,DRE | Resultado Financeiro Orçado,-185888.37999999992,-185888.379999999981,6.1E-11,True
+01+02,2021,DRE | Resultado Financeiro Orçado,-152385.82999999996,-152385.829999999985,2.5E-11,True
+Consolidado,2021,DRE | Resultado Financeiro Previsto,-185963.33999999994,-185963.33999999999,5E-11,True
+01+02,2021,DRE | Resultado Financeiro Previsto,-152354.44999999998,-152354.44999999999,1E-11,True
+Consolidado,2021,DRE | Resultado Financeiro Realizado,-185935.96000000005,-185935.96,-5E-11,True
+01+02,2021,DRE | Resultado Financeiro Realizado,-152714.93000000002,-152714.93,-2E-11,True
+Consolidado,2021,DRE | Resultado Líquido Orçado,2224193.4600000004,2224193.4600000000,4E-10,True
+01+02,2021,DRE | Resultado Líquido Orçado,1590481.9500000002,1590481.9500000001,1E-10,True
+Consolidado,2021,DRE | Resultado Líquido Previsto,2076265.3399999999,2076265.3400000001,-2E-10,True
+01+02,2021,DRE | Resultado Líquido Previsto,1535391.71,1535391.71,0.00,True
+Consolidado,2021,DRE | Resultado Líquido Realizado,2118066.09,2118066.09,0.00,True
+01+02,2021,DRE | Resultado Líquido Realizado,1565304.7600000002,1565304.76,2E-10,True
+Consolidado,2022,DRE | Custos Orçado,-40495281.62,-40495281.620000000,0E-9,True
+01+02,2022,DRE | Custos Orçado,-33569761.660000004,-33569761.660000000,-4E-9,True
+Consolidado,2022,DRE | Custos Previsto,-40629547.180000015,-40629547.179999999,-1.6E-8,True
+01+02,2022,DRE | Custos Previsto,-33715376.57,-33715376.57,0.00,True
+Consolidado,2022,DRE | Custos Realizado,-40210600.68000001,-40210600.68,-1E-8,True
+01+02,2022,DRE | Custos Realizado,-33420982.939999998,-33420982.94,2E-9,True
+Consolidado,2022,DRE | Deduções da Receita Orçado,-22894288.86,-22894288.8599999992,-8E-10,True
+01+02,2022,DRE | Deduções da Receita Orçado,-19191541.099999998,-19191541.099999999,1E-9,True
+Consolidado,2022,DRE | Deduções da Receita Previsto,-22896678.830000006,-22896678.8300000038,-2.2E-9,True
+01+02,2022,DRE | Deduções da Receita Previsto,-19192076.090000004,-19192076.090000004,0E-9,True
+Consolidado,2022,DRE | Deduções da Receita Realizado,-22691365.900000002,-22691365.900000002,0E-9,True
+01+02,2022,DRE | Deduções da Receita Realizado,-19043821.23,-19043821.230000002,2E-9,True
+Consolidado,2022,DRE | Depreciação e Amortização Orçado,-125253.06999999999,-125253.070000000005,1.5E-11,True
+01+02,2022,DRE | Depreciação e Amortização Orçado,-104306.74,-104306.740000000005,5E-12,True
+Consolidado,2022,DRE | Depreciação e Amortização Previsto,-125193.19000000003,-125193.19000000001,-2E-11,True
+01+02,2022,DRE | Depreciação e Amortização Previsto,-104245.62000000002,-104245.62000000001,-1E-11,True
+Consolidado,2022,DRE | Depreciação e Amortização Realizado,-123209.98999999998,-123209.99,2E-11,True
+01+02,2022,DRE | Depreciação e Amortização Realizado,-102390.42,-102390.42,0.00,True
+Consolidado,2022,DRE | Despesas Operacionais Orçado,-19706530.589999996,-19706530.5899999987,2.7E-9,True
+01+02,2022,DRE | Despesas Operacionais Orçado,-16346494.93,-16346494.929999999,-1E-9,True
+Consolidado,2022,DRE | Despesas Operacionais Previsto,-19773299.490000002,-19773299.4900000027,7E-10,True
+01+02,2022,DRE | Despesas Operacionais Previsto,-16408436.27,-16408436.270000002,2E-9,True
+Consolidado,2022,DRE | Despesas Operacionais Realizado,-19821859.85,-19821859.8499999985,-1.5E-9,True
+01+02,2022,DRE | Despesas Operacionais Realizado,-16454908.42,-16454908.4199999985,-1.5E-9,True
+Consolidado,2022,DRE | Margem de Contribuição Orçado,22610041.570000008,22610041.569999999,9E-9,True
+01+02,2022,DRE | Margem de Contribuição Orçado,18568998.86,18568998.859999999,1E-9,True
+Consolidado,2022,DRE | Margem de Contribuição Previsto,22509797.490000002,22509797.4900000006,1.4E-9,True
+01+02,2022,DRE | Margem de Contribuição Previsto,18501278.970000003,18501278.970000001,2E-9,True
+Consolidado,2022,DRE | Margem de Contribuição Realizado,22608685.979999997,22608685.979999998,-1E-9,True
+01+02,2022,DRE | Margem de Contribuição Realizado,18593773.860000003,18593773.859999998,5E-9,True
+Consolidado,2022,DRE | Outras Receitas e Despesas Orçado,-65163.920000000006,-65163.919999999999,-7E-12,True
+01+02,2022,DRE | Outras Receitas e Despesas Orçado,-54963.05000000001,-54963.05,-1E-11,True
+Consolidado,2022,DRE | Outras Receitas e Despesas Previsto,-65668.47,-65668.470000000015,1.5E-11,True
+01+02,2022,DRE | Outras Receitas e Despesas Previsto,-55450.340000000004,-55450.340000000014,1.0E-11,True
+Consolidado,2022,DRE | Outras Receitas e Despesas Realizado,-65063.969999999994,-65063.97,6E-12,True
+01+02,2022,DRE | Outras Receitas e Despesas Realizado,-54224.950000000004,-54224.95,-4E-12,True
+Consolidado,2022,DRE | Provisão para IR e CSLL Orçado,-299740.83999999997,-299740.839999999996,2.6E-11,True
+01+02,2022,DRE | Provisão para IR e CSLL Orçado,-258131.78,-258131.779999999996,-4E-12,True
+Consolidado,2022,DRE | Provisão para IR e CSLL Previsto,-299372.00000000006,-299372.000000000026,-3.4E-11,True
+01+02,2022,DRE | Provisão para IR e CSLL Previsto,-257673.93000000005,-257673.930000000026,-2.4E-11,True
+Consolidado,2022,DRE | Provisão para IR e CSLL Realizado,-297539.24999999994,-297539.25000000001,7E-11,True
+01+02,2022,DRE | Provisão para IR e CSLL Realizado,-257634.28999999998,-257634.29,2E-11,True
+Consolidado,2022,DRE | Receita Operacional Bruta Orçado,85999612.05,85999612.050000002,-2E-9,True
+01+02,2022,DRE | Receita Operacional Bruta Orçado,71330301.62,71330301.62,0.00,True
+Consolidado,2022,DRE | Receita Operacional Bruta Previsto,86036023.5,86036023.499999993,7E-9,True
+01+02,2022,DRE | Receita Operacional Bruta Previsto,71408731.62999998,71408731.629999992,-1.2E-8,True
+Consolidado,2022,DRE | Receita Operacional Bruta Realizado,85510652.56000003,85510652.560000001,2.9E-8,True
+01+02,2022,DRE | Receita Operacional Bruta Realizado,71058578.03,71058578.03,0.00,True
+Consolidado,2022,DRE | Receita Operacional Líquida Orçado,63105323.19,63105323.190000004,-4E-9,True
+01+02,2022,DRE | Receita Operacional Líquida Orçado,52138760.52,52138760.520000004,-4E-9,True
+Consolidado,2022,DRE | Receita Operacional Líquida Previsto,63139344.67,63139344.669999995,5E-9,True
+01+02,2022,DRE | Receita Operacional Líquida Previsto,52216655.540000014,52216655.539999995,1.9E-8,True
+Consolidado,2022,DRE | Receita Operacional Líquida Realizado,62819286.65999999,62819286.660000004,-1.4E-8,True
+01+02,2022,DRE | Receita Operacional Líquida Realizado,52014756.79999999,52014756.800000004,-1.4E-8,True
+Consolidado,2022,DRE | Resultado Financeiro Orçado,-201630.69999999998,-201630.70,2E-11,True
+01+02,2022,DRE | Resultado Financeiro Orçado,-168651.55,-168651.55,0.00,True
+Consolidado,2022,DRE | Resultado Financeiro Previsto,-201742.52000000005,-201742.519999999986,-6.4E-11,True
+01+02,2022,DRE | Resultado Financeiro Previsto,-168748.29000000004,-168748.28999999999,-5E-11,True
+Consolidado,2022,DRE | Resultado Financeiro Realizado,-200808.85999999996,-200808.860000000000,4.0E-11,True
+01+02,2022,DRE | Resultado Financeiro Realizado,-166846.47999999998,-166846.479999999995,1.5E-11,True
+Consolidado,2022,DRE | Resultado Líquido Orçado,2211722.4500000007,2211722.4500000001,6E-10,True
+01+02,2022,DRE | Resultado Líquido Orçado,1636450.81,1636450.8100000001,-1E-10,True
+Consolidado,2022,DRE | Resultado Líquido Previsto,2044521.82,2044521.8199999999,1E-10,True
+01+02,2022,DRE | Resultado Líquido Previsto,1506724.52,1506724.5199999999,1E-10,True
+Consolidado,2022,DRE | Resultado Líquido Realizado,2100204.0599999996,2100204.0600000002,-6E-10,True
+01+02,2022,DRE | Resultado Líquido Realizado,1557769.2999999998,1557769.3000000002,-4E-10,True
+Consolidado,2023,DRE | Custos Orçado,-38746105.30000001,-38746105.299999995,-1.5E-8,True
+01+02,2023,DRE | Custos Orçado,-31915646.560000002,-31915646.559999994,-8E-9,True
+Consolidado,2023,DRE | Custos Previsto,-38825532.17,-38825532.169999997,-3E-9,True
+01+02,2023,DRE | Custos Previsto,-31998812.639999997,-31998812.639999997,0E-9,True
+Consolidado,2023,DRE | Custos Realizado,-16255820.51,-16255820.5100000009,9E-10,True
+01+02,2023,DRE | Custos Realizado,-13501401.280000001,-13501401.2800000005,-5E-10,True
+Consolidado,2023,DRE | Deduções da Receita Orçado,-21949814.549999997,-21949814.550000002,5E-9,True
+01+02,2023,DRE | Deduções da Receita Orçado,-18333494.08,-18333494.080000002,2E-9,True
+Consolidado,2023,DRE | Deduções da Receita Previsto,-21904970.790000003,-21904970.7899999994,-3.6E-9,True
+01+02,2023,DRE | Deduções da Receita Previsto,-18291235.369999997,-18291235.369999999,2E-9,True
+Consolidado,2023,DRE | Deduções da Receita Realizado,-9220566.010000002,-9220566.01,-2E-9,True
+01+02,2023,DRE | Deduções da Receita Realizado,-7732951.46,-7732951.46,0.00,True
+Consolidado,2023,DRE | Depreciação e Amortização Orçado,-120257.51000000002,-120257.51,-2E-11,True
+01+02,2023,DRE | Depreciação e Amortização Orçado,-99506.4,-99506.40,0.00,True
+Consolidado,2023,DRE | Depreciação e Amortização Previsto,-120119.19999999997,-120119.20,3E-11,True
+01+02,2023,DRE | Depreciação e Amortização Previsto,-99370.04999999999,-99370.05,1E-11,True
+Consolidado,2023,DRE | Depreciação e Amortização Realizado,-49967.86,-49967.859999999999,-1E-12,True
+01+02,2023,DRE | Depreciação e Amortização Realizado,-41304.74,-41304.74,0.00,True
+Consolidado,2023,DRE | Despesas Operacionais Orçado,-18911692.009999998,-18911692.0100000012,3.2E-9,True
+01+02,2023,DRE | Despesas Operacionais Orçado,-15522578.750000002,-15522578.750000001,-1E-9,True
+Consolidado,2023,DRE | Despesas Operacionais Previsto,-18937648.849999998,-18937648.8500000012,3.2E-9,True
+01+02,2023,DRE | Despesas Operacionais Previsto,-15542035.339999998,-15542035.340000001,3E-9,True
+Consolidado,2023,DRE | Despesas Operacionais Realizado,-8132133.290000001,-8132133.29,-1E-9,True
+01+02,2023,DRE | Despesas Operacionais Realizado,-6654082.930000001,-6654082.93,-1E-9,True
+Consolidado,2023,DRE | Margem de Contribuição Orçado,21769443.04,21769443.0400000013,-1.3E-9,True
+01+02,2023,DRE | Margem de Contribuição Orçado,17676312.97,17676312.970000001,-1E-9,True
+Consolidado,2023,DRE | Margem de Contribuição Previsto,21645775.87,21645775.87,0.00,True
+01+02,2023,DRE | Margem de Contribuição Previsto,17609233.28,17609233.28,0.00,True
+Consolidado,2023,DRE | Margem de Contribuição Realizado,9187582.43,9187582.43,0.00,True
+01+02,2023,DRE | Margem de Contribuição Realizado,7470532.5,7470532.50,0.00,True
+Consolidado,2023,DRE | Outras Receitas e Despesas Orçado,-64393.149999999994,-64393.149999999999,5E-12,True
+01+02,2023,DRE | Outras Receitas e Despesas Orçado,-53213.450000000004,-53213.450000000002,-2E-12,True
+Consolidado,2023,DRE | Outras Receitas e Despesas Previsto,-64033.23999999999,-64033.239999999998,8E-12,True
+01+02,2023,DRE | Outras Receitas e Despesas Previsto,-52829.70999999999,-52829.709999999998,8E-12,True
+Consolidado,2023,DRE | Outras Receitas e Despesas Realizado,-25982.969999999998,-25982.9699999999995,1.5E-12,True
+01+02,2023,DRE | Outras Receitas e Despesas Realizado,-21528.66,-21528.66,0.00,True
+Consolidado,2023,DRE | Provisão para IR e CSLL Orçado,-292728.61000000004,-292728.60999999999,-5E-11,True
+01+02,2023,DRE | Provisão para IR e CSLL Orçado,-250721.50999999998,-250721.50999999999,1E-11,True
+Consolidado,2023,DRE | Provisão para IR e CSLL Previsto,-292617.51,-292617.50999999998,-2E-11,True
+01+02,2023,DRE | Provisão para IR e CSLL Previsto,-250570.86999999997,-250570.86999999998,1E-11,True
+Consolidado,2023,DRE | Provisão para IR e CSLL Realizado,-78127.76,-78127.7599999999972,-2.8E-12,True
+01+02,2023,DRE | Provisão para IR e CSLL Realizado,-78827.48,-78827.479999999997,-3E-12,True
+Consolidado,2023,DRE | Receita Operacional Bruta Orçado,82465362.89,82465362.890000001,-1E-9,True
+01+02,2023,DRE | Receita Operacional Bruta Orçado,67925453.61000001,67925453.61,1E-8,True
+Consolidado,2023,DRE | Receita Operacional Bruta Previsto,82376278.83000001,82376278.830000001,9E-9,True
+01+02,2023,DRE | Receita Operacional Bruta Previsto,67899281.29,67899281.29,0.00,True
+Consolidado,2023,DRE | Receita Operacional Bruta Realizado,34663968.949999996,34663968.95,-4E-9,True
+01+02,2023,DRE | Receita Operacional Bruta Realizado,28704885.24,28704885.24,0.00,True
+Consolidado,2023,DRE | Receita Operacional Líquida Orçado,60515548.33999999,60515548.339999999,-9E-9,True
+01+02,2023,DRE | Receita Operacional Líquida Orçado,49591959.52999999,49591959.53,-1E-8,True
+Consolidado,2023,DRE | Receita Operacional Líquida Previsto,60471308.040000014,60471308.039999997,1.7E-8,True
+01+02,2023,DRE | Receita Operacional Líquida Previsto,49608045.92,49608045.919999997,3E-9,True
+Consolidado,2023,DRE | Receita Operacional Líquida Realizado,25443402.94,25443402.94,0.00,True
+01+02,2023,DRE | Receita Operacional Líquida Realizado,20971933.78,20971933.78,0.00,True
+Consolidado,2023,DRE | Resultado Financeiro Orçado,-193793.84999999998,-193793.849999999985,5E-12,True
+01+02,2023,DRE | Resultado Financeiro Orçado,-160759.7,-160759.699999999985,-1.5E-11,True
+Consolidado,2023,DRE | Resultado Financeiro Previsto,-194213.04,-194213.039999999986,-1.4E-11,True
+01+02,2023,DRE | Resultado Financeiro Previsto,-161008.99,-161008.98999999999,-1E-11,True
+Consolidado,2023,DRE | Resultado Financeiro Realizado,-81413.31,-81413.31,0.00,True
+01+02,2023,DRE | Resultado Financeiro Realizado,-67456.45999999999,-67456.46,1E-11,True
+Consolidado,2023,DRE | Resultado Líquido Orçado,2186577.91,2186577.9099999999,1E-10,True
+01+02,2023,DRE | Resultado Líquido Orçado,1589533.16,1589533.1599999999,1E-10,True
+Consolidado,2023,DRE | Resultado Líquido Previsto,2037144.0299999993,2037144.0300000001,-8E-10,True
+01+02,2023,DRE | Resultado Líquido Previsto,1503418.3199999998,1503418.3200000000,-2E-10,True
+Consolidado,2023,DRE | Resultado Líquido Realizado,819957.2399999999,819957.24000000002,-1.2E-10,True
+01+02,2023,DRE | Resultado Líquido Realizado,607332.2299999999,607332.23000000002,-1.2E-10,True
+Consolidado,2023_JanMai,DRE | Custos Orçado,-16144876.07,-16144876.070000001,1E-9,True
+01+02,2023_JanMai,DRE | Custos Orçado,-13414291.27,-13414291.270000001,1E-9,True
+Consolidado,2023_JanMai,DRE | Custos Previsto,-16147912.7,-16147912.7000000003,3E-10,True
+01+02,2023_JanMai,DRE | Custos Previsto,-13418378.36,-13418378.36,0.00,True
+Consolidado,2023_JanMai,DRE | Custos Realizado,-16255820.51,-16255820.5100000009,9E-10,True
+01+02,2023_JanMai,DRE | Custos Realizado,-13501401.280000001,-13501401.2800000005,-5E-10,True
+Consolidado,2023_JanMai,DRE | Deduções da Receita Orçado,-9193292.850000001,-9193292.85,-1E-9,True
+01+02,2023_JanMai,DRE | Deduções da Receita Orçado,-7726790.800000001,-7726790.8,-1E-9,True
+Consolidado,2023_JanMai,DRE | Deduções da Receita Previsto,-9173545.930000002,-9173545.93,-2E-9,True
+01+02,2023_JanMai,DRE | Deduções da Receita Previsto,-7699491.960000001,-7699491.96,-1E-9,True
+Consolidado,2023_JanMai,DRE | Deduções da Receita Realizado,-9220566.010000002,-9220566.01,-2E-9,True
+01+02,2023_JanMai,DRE | Deduções da Receita Realizado,-7732951.46,-7732951.46,0.00,True
+Consolidado,2023_JanMai,DRE | Depreciação e Amortização Orçado,-50014.49,-50014.49,0.00,True
+01+02,2023_JanMai,DRE | Depreciação e Amortização Orçado,-41356.799999999996,-41356.80,4E-12,True
+Consolidado,2023_JanMai,DRE | Depreciação e Amortização Previsto,-49822.259999999995,-49822.259999999995,0E-12,True
+01+02,2023_JanMai,DRE | Depreciação e Amortização Previsto,-41196.899999999994,-41196.899999999995,1E-12,True
+Consolidado,2023_JanMai,DRE | Depreciação e Amortização Realizado,-49967.86,-49967.859999999999,-1E-12,True
+01+02,2023_JanMai,DRE | Depreciação e Amortização Realizado,-41304.74,-41304.74,0.00,True
+Consolidado,2023_JanMai,DRE | Despesas Operacionais Orçado,-8042215.320000001,-8042215.32,-1E-9,True
+01+02,2023_JanMai,DRE | Despesas Operacionais Orçado,-6568827.84,-6568827.84,0.00,True
+Consolidado,2023_JanMai,DRE | Despesas Operacionais Previsto,-8048533.600000001,-8048533.6000000002,-8E-10,True
+01+02,2023_JanMai,DRE | Despesas Operacionais Previsto,-6573374.91,-6573374.91,0.00,True
+Consolidado,2023_JanMai,DRE | Despesas Operacionais Realizado,-8132133.290000001,-8132133.29,-1E-9,True
+01+02,2023_JanMai,DRE | Despesas Operacionais Realizado,-6654082.930000001,-6654082.93,-1E-9,True
+Consolidado,2023_JanMai,DRE | Margem de Contribuição Orçado,9091425.7,9091425.7000000015,-1.5E-9,True
+01+02,2023_JanMai,DRE | Margem de Contribuição Orçado,7383604.23,7383604.2300000013,-1.3E-9,True
+Consolidado,2023_JanMai,DRE | Margem de Contribuição Previsto,9067759.18,9067759.18,0.00,True
+01+02,2023_JanMai,DRE | Margem de Contribuição Previsto,7365063.34,7365063.34,0.00,True
+Consolidado,2023_JanMai,DRE | Margem de Contribuição Realizado,9187582.43,9187582.43,0.00,True
+01+02,2023_JanMai,DRE | Margem de Contribuição Realizado,7470532.5,7470532.50,0.00,True
+Consolidado,2023_JanMai,DRE | Outras Receitas e Despesas Orçado,-27101.440000000002,-27101.439999999999,-3E-12,True
+01+02,2023_JanMai,DRE | Outras Receitas e Despesas Orçado,-22152.460000000003,-22152.459999999999,-4E-12,True
+Consolidado,2023_JanMai,DRE | Outras Receitas e Despesas Previsto,-26802.360000000004,-26802.36,-4E-12,True
+01+02,2023_JanMai,DRE | Outras Receitas e Despesas Previsto,-21775.54,-21775.54,0.00,True
+Consolidado,2023_JanMai,DRE | Outras Receitas e Despesas Realizado,-25982.969999999998,-25982.9699999999995,1.5E-12,True
+01+02,2023_JanMai,DRE | Outras Receitas e Despesas Realizado,-21528.66,-21528.66,0.00,True
+Consolidado,2023_JanMai,DRE | Provisão para IR e CSLL Orçado,-77241.99999999999,-77241.9999999999898,-2E-13,True
+01+02,2023_JanMai,DRE | Provisão para IR e CSLL Orçado,-78070.23,-78070.2299999999904,-9.6E-12,True
+Consolidado,2023_JanMai,DRE | Provisão para IR e CSLL Previsto,-77446.13,-77446.1300000000026,2.6E-12,True
+01+02,2023_JanMai,DRE | Provisão para IR e CSLL Previsto,-78270.69000000002,-78270.6900000000026,-1.74E-11,True
+Consolidado,2023_JanMai,DRE | Provisão para IR e CSLL Realizado,-78127.76,-78127.7599999999972,-2.8E-12,True
+01+02,2023_JanMai,DRE | Provisão para IR e CSLL Realizado,-78827.48,-78827.479999999997,-3E-12,True
+Consolidado,2023_JanMai,DRE | Receita Operacional Bruta Orçado,34429594.620000005,34429594.619999999,6E-9,True
+01+02,2023_JanMai,DRE | Receita Operacional Bruta Orçado,28524686.3,28524686.30,0.00,True
+Consolidado,2023_JanMai,DRE | Receita Operacional Bruta Previsto,34389217.81,34389217.809999999,1E-9,True
+01+02,2023_JanMai,DRE | Receita Operacional Bruta Previsto,28482933.660000004,28482933.66,4E-9,True
+Consolidado,2023_JanMai,DRE | Receita Operacional Bruta Realizado,34663968.949999996,34663968.95,-4E-9,True
+01+02,2023_JanMai,DRE | Receita Operacional Bruta Realizado,28704885.24,28704885.24,0.00,True
+Consolidado,2023_JanMai,DRE | Receita Operacional Líquida Orçado,25236301.77,25236301.770000001,-1E-9,True
+01+02,2023_JanMai,DRE | Receita Operacional Líquida Orçado,20797895.5,20797895.500000001,-1E-9,True
+Consolidado,2023_JanMai,DRE | Receita Operacional Líquida Previsto,25215671.88,25215671.8800000005,-5E-10,True
+01+02,2023_JanMai,DRE | Receita Operacional Líquida Previsto,20783441.7,20783441.7000000005,-5E-10,True
+Consolidado,2023_JanMai,DRE | Receita Operacional Líquida Realizado,25443402.94,25443402.94,0.00,True
+01+02,2023_JanMai,DRE | Receita Operacional Líquida Realizado,20971933.78,20971933.78,0.00,True
+Consolidado,2023_JanMai,DRE | Resultado Financeiro Orçado,-81176.34,-81176.340000000001,1E-12,True
+01+02,2023_JanMai,DRE | Resultado Financeiro Orçado,-67390.12,-67390.12,0.00,True
+Consolidado,2023_JanMai,DRE | Resultado Financeiro Previsto,-81180.97,-81180.969999999999,-1E-12,True
+01+02,2023_JanMai,DRE | Resultado Financeiro Previsto,-67298.70000000001,-67298.7,-1E-11,True
+Consolidado,2023_JanMai,DRE | Resultado Financeiro Realizado,-81413.31,-81413.31,0.00,True
+01+02,2023_JanMai,DRE | Resultado Financeiro Realizado,-67456.45999999999,-67456.46,1E-11,True
+Consolidado,2023_JanMai,DRE | Resultado Líquido Orçado,813676.11,813676.10999999999,1E-11,True
+01+02,2023_JanMai,DRE | Resultado Líquido Orçado,605806.78,605806.77999999997,3E-11,True
+Consolidado,2023_JanMai,DRE | Resultado Líquido Previsto,783973.8600000001,783973.85999999996,1.4E-10,True
+01+02,2023_JanMai,DRE | Resultado Líquido Previsto,583146.6,583146.59999999998,2E-11,True
+Consolidado,2023_JanMai,DRE | Resultado Líquido Realizado,819957.2399999999,819957.24000000002,-1.2E-10,True
+01+02,2023_JanMai,DRE | Resultado Líquido Realizado,607332.2299999999,607332.23000000002,-1.2E-10,True
+Consolidado,2023_JunDez,DRE | Custos Orçado,-22601229.230000004,-22601229.2300000004,-3.6E-9,True
+01+02,2023_JunDez,DRE | Custos Orçado,-18501355.290000003,-18501355.29,-3E-9,True
+Consolidado,2023_JunDez,DRE | Custos Previsto,-22677619.469999995,-22677619.4700000004,5.4E-9,True
+01+02,2023_JunDez,DRE | Custos Previsto,-18580434.279999997,-18580434.28,3E-9,True
+Consolidado,2023_JunDez,DRE | Custos Realizado,,,,True
+01+02,2023_JunDez,DRE | Custos Realizado,,,,True
+Consolidado,2023_JunDez,DRE | Deduções da Receita Orçado,-12756521.7,-12756521.700000001,1E-9,True
+01+02,2023_JunDez,DRE | Deduções da Receita Orçado,-10606703.280000001,-10606703.280000001,0E-9,True
+Consolidado,2023_JunDez,DRE | Deduções da Receita Previsto,-12731424.86,-12731424.86,0.00,True
+01+02,2023_JunDez,DRE | Deduções da Receita Previsto,-10591743.409999998,-10591743.41,2E-9,True
+Consolidado,2023_JunDez,DRE | Deduções da Receita Realizado,,,,True
+01+02,2023_JunDez,DRE | Deduções da Receita Realizado,,,,True
+Consolidado,2023_JunDez,DRE | Depreciação e Amortização Orçado,-70243.02000000002,-70243.02,-2E-11,True
+01+02,2023_JunDez,DRE | Depreciação e Amortização Orçado,-58149.6,-58149.60,0.00,True
+Consolidado,2023_JunDez,DRE | Depreciação e Amortização Previsto,-70296.94,-70296.939999999998,-2E-12,True
+01+02,2023_JunDez,DRE | Depreciação e Amortização Previsto,-58173.15,-58173.149999999998,-2E-12,True
+Consolidado,2023_JunDez,DRE | Depreciação e Amortização Realizado,,,,True
+01+02,2023_JunDez,DRE | Depreciação e Amortização Realizado,,,,True
+Consolidado,2023_JunDez,DRE | Despesas Operacionais Orçado,-10869476.690000003,-10869476.6900000007,-2.3E-9,True
+01+02,2023_JunDez,DRE | Despesas Operacionais Orçado,-8953750.910000002,-8953750.9100000004,-1.6E-9,True
+Consolidado,2023_JunDez,DRE | Despesas Operacionais Previsto,-10889115.25,-10889115.2500000014,1.4E-9,True
+01+02,2023_JunDez,DRE | Despesas Operacionais Previsto,-8968660.43,-8968660.4300000014,1.4E-9,True
+Consolidado,2023_JunDez,DRE | Despesas Operacionais Realizado,,,,True
+01+02,2023_JunDez,DRE | Despesas Operacionais Realizado,,,,True
+Consolidado,2023_JunDez,DRE | Margem de Contribuição Orçado,12678017.34,12678017.34,0.00,True
+01+02,2023_JunDez,DRE | Margem de Contribuição Orçado,10292708.740000002,10292708.74,2E-9,True
+Consolidado,2023_JunDez,DRE | Margem de Contribuição Previsto,12578016.690000001,12578016.6899999986,2.4E-9,True
+01+02,2023_JunDez,DRE | Margem de Contribuição Previsto,10244169.940000001,10244169.9399999986,2.4E-9,True
+Consolidado,2023_JunDez,DRE | Margem de Contribuição Realizado,,,,True
+01+02,2023_JunDez,DRE | Margem de Contribuição Realizado,,,,True
+Consolidado,2023_JunDez,DRE | Outras Receitas e Despesas Orçado,-37291.70999999999,-37291.709999999999,9E-12,True
+01+02,2023_JunDez,DRE | Outras Receitas e Despesas Orçado,-31060.989999999998,-31060.99,2E-12,True
+Consolidado,2023_JunDez,DRE | Outras Receitas e Despesas Previsto,-37230.88,-37230.879999999998,-2E-12,True
+01+02,2023_JunDez,DRE | Outras Receitas e Despesas Previsto,-31054.170000000002,-31054.169999999998,-4E-12,True
+Consolidado,2023_JunDez,DRE | Outras Receitas e Despesas Realizado,,,,True
+01+02,2023_JunDez,DRE | Outras Receitas e Despesas Realizado,,,,True
+Consolidado,2023_JunDez,DRE | Provisão para IR e CSLL Orçado,-215486.61000000002,-215486.61,-2E-11,True
+01+02,2023_JunDez,DRE | Provisão para IR e CSLL Orçado,-172651.27999999997,-172651.28,3E-11,True
+Consolidado,2023_JunDez,DRE | Provisão para IR e CSLL Previsto,-215171.38000000003,-215171.38,-3E-11,True
+01+02,2023_JunDez,DRE | Provisão para IR e CSLL Previsto,-172300.18,-172300.18,0.00,True
+Consolidado,2023_JunDez,DRE | Provisão para IR e CSLL Realizado,,,,True
+01+02,2023_JunDez,DRE | Provisão para IR e CSLL Realizado,,,,True
+Consolidado,2023_JunDez,DRE | Receita Operacional Bruta Orçado,48035768.27,48035768.269999997,3E-9,True
+01+02,2023_JunDez,DRE | Receita Operacional Bruta Orçado,39400767.31000001,39400767.309999997,1.3E-8,True
+Consolidado,2023_JunDez,DRE | Receita Operacional Bruta Previsto,47987061.02000001,47987061.02,1E-8,True
+01+02,2023_JunDez,DRE | Receita Operacional Bruta Previsto,39416347.63,39416347.63,0.00,True
+Consolidado,2023_JunDez,DRE | Receita Operacional Bruta Realizado,,,,True
+01+02,2023_JunDez,DRE | Receita Operacional Bruta Realizado,,,,True
+Consolidado,2023_JunDez,DRE | Receita Operacional Líquida Orçado,35279246.57,35279246.569999999,1E-9,True
+01+02,2023_JunDez,DRE | Receita Operacional Líquida Orçado,28794064.029999997,28794064.03,-3E-9,True
+Consolidado,2023_JunDez,DRE | Receita Operacional Líquida Previsto,35255636.160000004,35255636.1599999965,7.5E-9,True
+01+02,2023_JunDez,DRE | Receita Operacional Líquida Previsto,28824604.22,28824604.219999997,3E-9,True
+Consolidado,2023_JunDez,DRE | Receita Operacional Líquida Realizado,,,,True
+01+02,2023_JunDez,DRE | Receita Operacional Líquida Realizado,,,,True
+Consolidado,2023_JunDez,DRE | Resultado Financeiro Orçado,-112617.51,-112617.51,0.00,True
+01+02,2023_JunDez,DRE | Resultado Financeiro Orçado,-93369.58,-93369.58,0.00,True
+Consolidado,2023_JunDez,DRE | Resultado Financeiro Previsto,-113032.06999999999,-113032.07,1E-11,True
+01+02,2023_JunDez,DRE | Resultado Financeiro Previsto,-93710.29,-93710.29,0.00,True
+Consolidado,2023_JunDez,DRE | Resultado Financeiro Realizado,,,,True
+01+02,2023_JunDez,DRE | Resultado Financeiro Realizado,,,,True
+Consolidado,2023_JunDez,DRE | Resultado Líquido Orçado,1372901.8,1372901.80000000003,-3E-11,True
+01+02,2023_JunDez,DRE | Resultado Líquido Orçado,983726.3799999999,983726.38000000003,-1.3E-10,True
+Consolidado,2023_JunDez,DRE | Resultado Líquido Previsto,1253170.17,1253170.17000000007,-7E-11,True
+01+02,2023_JunDez,DRE | Resultado Líquido Previsto,920271.72,920271.72,0.00,True
+Consolidado,2023_JunDez,DRE | Resultado Líquido Realizado,,,,True
+01+02,2023_JunDez,DRE | Resultado Líquido Realizado,,,,True
+Consolidado,2023_Junho,DRE | Custos Orçado,-3429647.66,-3429647.66,0.00,True
+01+02,2023_Junho,DRE | Custos Orçado,-2846903.91,-2846903.91,0.00,True
+Consolidado,2023_Junho,DRE | Custos Previsto,-3431345.41,-3431345.41,0.00,True
+01+02,2023_Junho,DRE | Custos Previsto,-2845659.6,-2845659.60,0.00,True
+Consolidado,2023_Junho,DRE | Custos Realizado,,,,True
+01+02,2023_Junho,DRE | Custos Realizado,,,,True
+Consolidado,2023_Junho,DRE | Deduções da Receita Orçado,-1897297.79,-1897297.79,0.00,True
+01+02,2023_Junho,DRE | Deduções da Receita Orçado,-1610195.98,-1610195.98,0.00,True
+Consolidado,2023_Junho,DRE | Deduções da Receita Previsto,-1887466.1099999999,-1887466.11,1E-10,True
+01+02,2023_Junho,DRE | Deduções da Receita Previsto,-1601597.99,-1601597.99,0.00,True
+Consolidado,2023_Junho,DRE | Deduções da Receita Realizado,,,,True
+01+02,2023_Junho,DRE | Deduções da Receita Realizado,,,,True
+Consolidado,2023_Junho,DRE | Depreciação e Amortização Orçado,-11004.56,-11004.56,0.00,True
+01+02,2023_Junho,DRE | Depreciação e Amortização Orçado,-9263.17,-9263.17,0.00,True
+Consolidado,2023_Junho,DRE | Depreciação e Amortização Previsto,-10954.55,-10954.55,0.00,True
+01+02,2023_Junho,DRE | Depreciação e Amortização Previsto,-9213.55,-9213.55,0.00,True
+Consolidado,2023_Junho,DRE | Depreciação e Amortização Realizado,,,,True
+01+02,2023_Junho,DRE | Depreciação e Amortização Realizado,,,,True
+Consolidado,2023_Junho,DRE | Despesas Operacionais Orçado,-1729944.9000000001,-1729944.90,-1E-10,True
+01+02,2023_Junho,DRE | Despesas Operacionais Orçado,-1450088.08,-1450088.08,0.00,True
+Consolidado,2023_Junho,DRE | Despesas Operacionais Previsto,-1734882.6,-1734882.6,0.0,True
+01+02,2023_Junho,DRE | Despesas Operacionais Previsto,-1453363.3,-1453363.3,0.0,True
+Consolidado,2023_Junho,DRE | Despesas Operacionais Realizado,,,,True
+01+02,2023_Junho,DRE | Despesas Operacionais Realizado,,,,True
+Consolidado,2023_Junho,DRE | Margem de Contribuição Orçado,1978129.88,1978129.88,0.00,True
+01+02,2023_Junho,DRE | Margem de Contribuição Orçado,1643174.73,1643174.73,0.00,True
+Consolidado,2023_Junho,DRE | Margem de Contribuição Previsto,1977446.4400000002,1977446.44,2E-10,True
+01+02,2023_Junho,DRE | Margem de Contribuição Previsto,1646033.87,1646033.87,0.00,True
+Consolidado,2023_Junho,DRE | Margem de Contribuição Realizado,,,,True
+01+02,2023_Junho,DRE | Margem de Contribuição Realizado,,,,True
+Consolidado,2023_Junho,DRE | Outras Receitas e Despesas Orçado,-5553.91,-5553.91,0.00,True
+01+02,2023_Junho,DRE | Outras Receitas e Despesas Orçado,-4757.65,-4757.65,0.00,True
+Consolidado,2023_Junho,DRE | Outras Receitas e Despesas Previsto,-5596.1,-5596.10,0.00,True
+01+02,2023_Junho,DRE | Outras Receitas e Despesas Previsto,-4832.05,-4832.05,0.00,True
+Consolidado,2023_Junho,DRE | Outras Receitas e Despesas Realizado,,,,True
+01+02,2023_Junho,DRE | Outras Receitas e Despesas Realizado,,,,True
+Consolidado,2023_Junho,DRE | Provisão para IR e CSLL Orçado,-25462.73,-25462.73,0.00,True
+01+02,2023_Junho,DRE | Provisão para IR e CSLL Orçado,-23681.079999999998,-23681.08,2E-12,True
+Consolidado,2023_Junho,DRE | Provisão para IR e CSLL Previsto,-25370.72,-25370.72,0.00,True
+01+02,2023_Junho,DRE | Provisão para IR e CSLL Previsto,-23575.63,-23575.63,0.00,True
+Consolidado,2023_Junho,DRE | Provisão para IR e CSLL Realizado,,,,True
+01+02,2023_Junho,DRE | Provisão para IR e CSLL Realizado,,,,True
+Consolidado,2023_Junho,DRE | Receita Operacional Bruta Orçado,7305075.33,7305075.33,0.00,True
+01+02,2023_Junho,DRE | Receita Operacional Bruta Orçado,6100274.62,6100274.62,0.00,True
+Consolidado,2023_Junho,DRE | Receita Operacional Bruta Previsto,7296257.96,7296257.96,0.00,True
+01+02,2023_Junho,DRE | Receita Operacional Bruta Previsto,6093291.46,6093291.46,0.00,True
+Consolidado,2023_Junho,DRE | Receita Operacional Bruta Realizado,,,,True
+01+02,2023_Junho,DRE | Receita Operacional Bruta Realizado,,,,True
+Consolidado,2023_Junho,DRE | Receita Operacional Líquida Orçado,5407777.540000001,5407777.54,1E-9,True
+01+02,2023_Junho,DRE | Receita Operacional Líquida Orçado,4490078.640000001,4490078.64,1E-9,True
+Consolidado,2023_Junho,DRE | Receita Operacional Líquida Previsto,5408791.85,5408791.85,0.00,True
+01+02,2023_Junho,DRE | Receita Operacional Líquida Previsto,4491693.47,4491693.47,0.00,True
+Consolidado,2023_Junho,DRE | Receita Operacional Líquida Realizado,,,,True
+01+02,2023_Junho,DRE | Receita Operacional Líquida Realizado,,,,True
+Consolidado,2023_Junho,DRE | Resultado Financeiro Orçado,-16808.64,-16808.64,0.00,True
+01+02,2023_Junho,DRE | Resultado Financeiro Orçado,-14077.1,-14077.10,0.00,True
+Consolidado,2023_Junho,DRE | Resultado Financeiro Previsto,-16850.07,-16850.07,0.00,True
+01+02,2023_Junho,DRE | Resultado Financeiro Previsto,-14136.07,-14136.07,0.00,True
+Consolidado,2023_Junho,DRE | Resultado Financeiro Realizado,,,,True
+01+02,2023_Junho,DRE | Resultado Financeiro Realizado,,,,True
+Consolidado,2023_Junho,DRE | Resultado Líquido Orçado,189355.13999999998,189355.14,-2E-11,True
+01+02,2023_Junho,DRE | Resultado Líquido Orçado,141307.65,141307.65,0.00,True
+Consolidado,2023_Junho,DRE | Resultado Líquido Previsto,183792.40000000002,183792.40,2E-11,True
+01+02,2023_Junho,DRE | Resultado Líquido Previsto,140913.27000000002,140913.27,2E-11,True
+Consolidado,2023_Junho,DRE | Resultado Líquido Realizado,,,,True
+01+02,2023_Junho,DRE | Resultado Líquido Realizado,,,,True
+Consolidado,Integral,DRE | Custos Orçado,-116424340.03000005,-116424340.029999993,-5.7E-8,True
+01+02,Integral,DRE | Custos Orçado,-95991516.82,-95991516.819999993,-7E-9,True
+Consolidado,Integral,DRE | Custos Previsto,-116720083.27999994,-116720083.279999974,3.4E-8,True
+01+02,Integral,DRE | Custos Previsto,-96297608.35999997,-96297608.35999998,1E-8,True
+Consolidado,Integral,DRE | Custos Realizado,-93588816.06000002,-93588816.060000002,-1.8E-8,True
+01+02,Integral,DRE | Custos Realizado,-77417714.89000002,-77417714.89,-2E-8,True
+Consolidado,Integral,DRE | Deduções da Receita Orçado,-65546706.95999997,-65546706.959999996,2.6E-8,True
+01+02,Integral,DRE | Deduções da Receita Orçado,-54724850.94999999,-54724850.949999994,4E-9,True
+Consolidado,Integral,DRE | Deduções da Receita Previsto,-65439748.31,-65439748.31,0.00,True
+01+02,Integral,DRE | Deduções da Receita Previsto,-54638577.04000001,-54638577.04,-1E-8,True
+Consolidado,Integral,DRE | Deduções da Receita Realizado,-52908485.35,-52908485.350000003,3E-9,True
+01+02,Integral,DRE | Deduções da Receita Realizado,-44218156.919999994,-44218156.920000003,9E-9,True
+Consolidado,Integral,DRE | Depreciação e Amortização Orçado,-360393.31000000006,-360393.31000000006,0E-11,True
+01+02,Integral,DRE | Depreciação e Amortização Orçado,-298076.47000000003,-298076.47000000005,2E-11,True
+Consolidado,Integral,DRE | Depreciação e Amortização Previsto,-360169.38999999984,-360169.39000000002,1.8E-10,True
+01+02,Integral,DRE | Depreciação e Amortização Previsto,-297889.37,-297889.37000000002,2E-11,True
+Consolidado,Integral,DRE | Depreciação e Amortização Realizado,-287307.4699999999,-287307.46999999998,8E-11,True
+01+02,Integral,DRE | Depreciação e Amortização Realizado,-237416.63999999998,-237416.63999999998,0E-11,True
+Consolidado,Integral,DRE | Despesas Operacionais Orçado,-56892053.86000002,-56892053.860000005,-1.5E-8,True
+01+02,Integral,DRE | Despesas Operacionais Orçado,-46878746.31000001,-46878746.310000001,-9E-9,True
+Consolidado,Integral,DRE | Despesas Operacionais Previsto,-56976331.95999997,-56976331.96,3E-8,True
+01+02,Integral,DRE | Despesas Operacionais Previsto,-46949328.859999985,-46949328.86,1.5E-8,True
+Consolidado,Integral,DRE | Despesas Operacionais Realizado,-46203238.52,-46203238.520000008,8E-9,True
+01+02,Integral,DRE | Despesas Operacionais Realizado,-38073486.5,-38073486.500000005,5E-9,True
+Consolidado,Integral,DRE | Margem de Contribuição Orçado,65543613.85999999,65543613.860000005,-1.5E-8,True
+01+02,Integral,DRE | Margem de Contribuição Orçado,53394520.279999994,53394520.280000005,-1.1E-8,True
+Consolidado,Integral,DRE | Margem de Contribuição Previsto,65162669.43999999,65162669.440000001,-1.1E-8,True
+01+02,Integral,DRE | Margem de Contribuição Previsto,53193158.39000001,53193158.390000002,8E-9,True
+Consolidado,Integral,DRE | Margem de Contribuição Realizado,52828995.11000002,52828995.109999996,2.4E-8,True
+01+02,Integral,DRE | Margem de Contribuição Realizado,43142662.20000001,43142662.199999996,1.4E-8,True
+Consolidado,Integral,DRE | Outras Receitas e Despesas Orçado,-190973.55999999997,-190973.559999999988,1.8E-11,True
+01+02,Integral,DRE | Outras Receitas e Despesas Orçado,-158316.49999999997,-158316.49999999999,2E-11,True
+Consolidado,Integral,DRE | Outras Receitas e Despesas Previsto,-191152.61000000013,-191152.609999999977,-1.53E-10,True
+01+02,Integral,DRE | Outras Receitas e Despesas Previsto,-158421.63,-158421.629999999974,-2.6E-11,True
+Consolidado,Integral,DRE | Outras Receitas e Despesas Realizado,-150388.21,-150388.21000000002,2E-11,True
+01+02,Integral,DRE | Outras Receitas e Despesas Realizado,-124492.44999999998,-124492.45000000002,4E-11,True
+Consolidado,Integral,DRE | Provisão para IR e CSLL Orçado,-896386.3799999997,-896386.38000000005,3.5E-10,True
+01+02,Integral,DRE | Provisão para IR e CSLL Orçado,-761117.9999999999,-761118.00000000007,1.7E-10,True
+Consolidado,Integral,DRE | Provisão para IR e CSLL Previsto,-895165.3899999999,-895165.38999999987,-3E-11,True
+01+02,Integral,DRE | Provisão para IR e CSLL Previsto,-759872.2499999998,-759872.24999999989,9E-11,True
+Consolidado,Integral,DRE | Provisão para IR e CSLL Realizado,-681675.3899999994,-681675.38999999994,5.4E-10,True
+01+02,Integral,DRE | Provisão para IR e CSLL Realizado,-589842.4499999996,-589842.44999999995,3.5E-10,True
+Consolidado,Integral,DRE | Receita Operacional Bruta Orçado,247514660.8499999,247514660.84999998,-8E-8,True
+01+02,Integral,DRE | Receita Operacional Bruta Orçado,204110888.04999992,204110888.04999998,-6E-8,True
+Consolidado,Integral,DRE | Receita Operacional Bruta Previsto,247322501.02999997,247322501.02999999,-2E-8,True
+01+02,Integral,DRE | Receita Operacional Bruta Previsto,204129343.78999996,204129343.79,-4E-8,True
+Consolidado,Integral,DRE | Receita Operacional Bruta Realizado,199326296.52000004,199326296.520000005,3.5E-8,True
+01+02,Integral,DRE | Receita Operacional Bruta Realizado,164778534.01000002,164778534.01000000,2E-8,True
+Consolidado,Integral,DRE | Receita Operacional Líquida Orçado,181967953.89000002,181967953.889999955,6.5E-8,True
+01+02,Integral,DRE | Receita Operacional Líquida Orçado,149386037.1,149386037.09999996,4E-8,True
+Consolidado,Integral,DRE | Receita Operacional Líquida Previsto,181882752.7199999,181882752.719999989,-8.9E-8,True
+01+02,Integral,DRE | Receita Operacional Líquida Previsto,149490766.74999994,149490766.749999994,-5.4E-8,True
+Consolidado,Integral,DRE | Receita Operacional Líquida Realizado,146417811.17,146417811.170000006,-6E-9,True
+01+02,Integral,DRE | Receita Operacional Líquida Realizado,120560377.09,120560377.09,0.00,True
+Consolidado,Integral,DRE | Resultado Financeiro Orçado,-581312.93,-581312.92999999988,-1.2E-10,True
+01+02,Integral,DRE | Resultado Financeiro Orçado,-481797.0800000001,-481797.07999999988,-2.2E-10,True
+Consolidado,Integral,DRE | Resultado Financeiro Previsto,-581918.9000000007,-581918.90000000010,-6.0E-10,True
+01+02,Integral,DRE | Resultado Financeiro Previsto,-482111.7300000002,-482111.73000000013,-7E-11,True
+Consolidado,Integral,DRE | Resultado Financeiro Realizado,-468158.12999999983,-468158.12999999992,9E-11,True
+01+02,Integral,DRE | Resultado Financeiro Realizado,-387017.8699999999,-387017.86999999992,2E-11,True
+Consolidado,Integral,DRE | Resultado Líquido Orçado,6622493.820000001,6622493.8200000005,5E-10,True
+01+02,Integral,DRE | Resultado Líquido Orçado,4816465.919999999,4816465.9200000005,-1.5E-9,True
+Consolidado,Integral,DRE | Resultado Líquido Previsto,6157931.189999999,6157931.1900000001,-1.1E-9,True
+01+02,Integral,DRE | Resultado Líquido Previsto,4545534.550000002,4545534.5500000001,1.9E-9,True
+Consolidado,Integral,DRE | Resultado Líquido Realizado,5038227.389999997,5038227.3899999997,-2.7E-9,True
+01+02,Integral,DRE | Resultado Líquido Realizado,3730406.2899999996,3730406.2899999998,-2E-10,True

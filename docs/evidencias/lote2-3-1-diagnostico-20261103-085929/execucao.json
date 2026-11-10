@@ -1,0 +1,18 @@
+[
+  {
+    "File": "16-estado-tabelas.dax",
+    "State": "EXECUTADO",
+    "Rows": 16,
+    "Seconds": 0.0661958,
+    "Account": "",
+    "QuerySHA256": "E8E235E2F7FBE8925519ABD2E969EC676AD34499C11E84ADE4293AB8D9FBBE8B"
+  },
+  {
+    "File": "17-estado-medidas.dax",
+    "State": "EXECUTADO",
+    "Rows": 41,
+    "Seconds": 0.0427946,
+    "Account": "",
+    "QuerySHA256": "87526BC58E5396ABBEDEB6B8297B2E6AF6AB739F96F3901F605AEAEDECFA8745"
+  }
+]

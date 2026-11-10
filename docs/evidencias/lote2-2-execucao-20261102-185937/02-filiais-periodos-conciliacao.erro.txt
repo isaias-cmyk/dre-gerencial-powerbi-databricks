@@ -1,0 +1,14 @@
+System.Management.Automation.MethodInvocationException: Exception calling "ExecuteReader" with "0" argument(s): "Query (13, 8) Todos os argumento de tabela de 'UNION' deve ter o mesmo número de colunas."
+ ---> Microsoft.AnalysisServices.AdomdClient.AdomdErrorResponseException: Query (13, 8) Todos os argumento de tabela de 'UNION' deve ter o mesmo número de colunas.
+   at Microsoft.AnalysisServices.AdomdClient.XmlaClient.CheckForSoapFault(XmlReader reader, XmlaResult xmlaResult, Boolean throwIfError)
+   at Microsoft.AnalysisServices.AdomdClient.XmlaClient.CheckForError(XmlReader reader, XmlaResult xmlaResult, Boolean throwIfError)
+   at Microsoft.AnalysisServices.AdomdClient.XmlaClient.SendMessage(Boolean endReceivalIfException, Boolean readSession, Boolean readNamespaceCompatibility)
+   at Microsoft.AnalysisServices.AdomdClient.XmlaClient.ExecuteStatement(String statement, IDictionary connectionProperties, IDictionary commandProperties, IDataParameterCollection parameters, Boolean isMdx)
+   at Microsoft.AnalysisServices.AdomdClient.AdomdConnection.XmlaClientProvider.Microsoft.AnalysisServices.AdomdClient.IExecuteProvider.ExecuteTabular(CommandBehavior behavior, ICommandContentProvider contentProvider, AdomdPropertyCollection commandProperties, IDataParameterCollection parameters)
+   at Microsoft.AnalysisServices.AdomdClient.AdomdCommand.ExecuteReader(CommandBehavior behavior)
+   at CallSite.Target(Closure, CallSite, Object)
+   --- End of inner exception stack trace ---
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at System.Management.Automation.Interpreter.ActionCallInstruction`2.Run(InterpretedFrame frame)
+   at System.Management.Automation.Interpreter.EnterTryCatchFinallyInstruction.Run(InterpretedFrame frame)
+   at System.Management.Automation.Interpreter.EnterTryCatchFinallyInstruction.Run(InterpretedFrame frame)

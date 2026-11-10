@@ -1,0 +1,39 @@
+{
+  "modifiedExisting": [
+    "PLANS.md",
+    "docs/alteracoes.md",
+    "docs/validacoes.md",
+    "DRE Moderno - Databricks.SemanticModel/definition/model.tmdl"
+  ],
+  "newFilesExcludingBackupCopies": [
+    "docs/contratos-medidas-dax.md",
+    "docs/validacao-lote2-1.md",
+    "docs/evidencias/lote2-1-validar.ps1",
+    "docs/evidencias/lote2-1-20261102-160536/baseline.json",
+    "docs/evidencias/lote2-1-20261102-160536/comparacao-entrada-anterior.json",
+    "docs/evidencias/lote2-1-20261102-160536/desktop-antes-edicao.json",
+    "docs/evidencias/lote2-1-20261102-160536/git.json",
+    "docs/evidencias/lote2-1-20261102-160536/preparacao.json",
+    "docs/evidencias/lote2-1-20261102-160536/tmdl-parser.json",
+    "docs/evidencias/lote2-1-20261102-160536/validacao-tmdl.json",
+    "docs/evidencias/lote2-1-20261102-160536/verificacao-estatica.json",
+    "docs/testes/lote2-1/01-metadados.dax",
+    "docs/testes/lote2-1/02-controle-integral.dax",
+    "docs/testes/lote2-1/03-filial-periodo.dax",
+    "docs/testes/lote2-1/04-posicoes.dax",
+    "docs/testes/lote2-1/05-contextos-e-totais.dax",
+    "docs/testes/lote2-1/06-total-matriz.dax",
+    "docs/testes/lote2-1/07-ebitda-ebit.dax",
+    "docs/testes/lote2-1/08-ausencia-realizado.dax",
+    "docs/testes/lote2-1/09-limites-conta-dre.dax",
+    "DRE Moderno - Databricks.SemanticModel/definition/tables/_Medidas.tmdl"
+  ],
+  "backup": "backups/lote2-1-20261102-160536",
+  "backupIncludedFiles": 176,
+  "backupExcludedPBI": 4,
+  "sourcesChanged": [
+    "DRE Moderno - Databricks.SemanticModel/definition/model.tmdl",
+    "DRE Moderno - Databricks.SemanticModel/definition/tables/_Medidas.tmdl"
+  ],
+  "unchangedQueriesRelationshipsReportCredentialsAGENTS": true
+}

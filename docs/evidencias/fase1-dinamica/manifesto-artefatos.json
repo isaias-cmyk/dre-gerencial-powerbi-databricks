@@ -1,0 +1,118 @@
+[
+  {
+    "path": "docs/evidencias/fase1-dinamica/01-descoberta.dax",
+    "sha256": "349956944890FB485A5C0AF5E112E2EDCD096BC411FB48ED2E21BD1235F812E1"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/02-relacionamentos.dax",
+    "sha256": "E25C37581591AABDFBACB08D6E846EC73D1C6AF2F88527F28EEBEEE805C543E9"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/02b-metadados-fallback.dmv",
+    "sha256": "EBF28A726D04B36F31771D8E0FA12257CD2FF58F67FD67C08629A0AF96F8F866"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/03-colunas.dax",
+    "sha256": "8369335DBEC4C8F00D40B539A8BE2ADF34C0CC2F8181C90E3FAAC6F372BAE2B2"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/04-chaves-modelo.dax",
+    "sha256": "1D61C61F2A691AD2C1A1406B5C25D5A349C48BC9529E1690E8CB35EEEA65703A"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/05-integridade-modelo.dax",
+    "sha256": "9903F4AC0BE06FC13141ADE6F95EB4002B94DDB27B85F692D8C1BB5B62B96FBB"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/06-filtros-fato_lancamentos.dax",
+    "sha256": "932BDDFA56605D90E46E9190959C41410E4A642CBCB17E5153D43687081F5D93"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/06-filtros-fato_orcamento.dax",
+    "sha256": "2C224A5A4208F04D9C36367E1FC0DAFE119A0B89F93FE58A29ADD8C585C680B7"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/06-filtros-fato_previsao.dax",
+    "sha256": "B92AC6086DF51E35E96686ED64C09490D55426E933D541CFD3ECDE6A1DC17B25"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/06-filtros-vw_dre_comparativo.dax",
+    "sha256": "1ECC6DCD106A663F081493B3663F433BEC105C62878F98EB1B65DF28B85C66B5"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/07-controle-integral.dax",
+    "sha256": "0149892E996E4ACEAC49D168CCA4E87E6B828B8FF377CE0D43435C19A9614B62"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/08-linha13-filial-periodo.dax",
+    "sha256": "08C0304B753FEA65B2C7C55546C281C082E57B7C44B465B745FDFF11858C7E60"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/09-linha13-filial-ano.dax",
+    "sha256": "D168ABAE38BFCDF79FFBA9902637CE561208C50D857DFD86442CB115E7063576"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/10-descobrir-conta.dax",
+    "sha256": "F6BF54D991A42E14D9C0AC91EEA028737FE527FA9233352C88A1207F60B43EEF"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/11-filtro-conta.dax",
+    "sha256": "5CD6535A8BD3C32F9BDCF73D0871CCA1F206D1076A00323FAA311F9684F24DAC"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/12-filtro-dre.dax",
+    "sha256": "B6F2203EB26615F1E3908420B789AFC9F78E7AD1E337AB7573C263DFDD17471D"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/13-relacao-inativa.dax",
+    "sha256": "5548F90E44FBE2A4476F075C9B0AB82C5352477A185CCF0C5DF993F81C08BEBE"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/14-calendario-modelo.dax",
+    "sha256": "A7389180DBD288C00B7A872EB919D467AE6E932222BE5F67432063718556A01A"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/15-cobertura-cenarios.dax",
+    "sha256": "04FAB2D7348DF2ED36D4CDD602408CE72228F462536049F67859FAE58DBD8920"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/16-grao-view.dax",
+    "sha256": "7D88B2BEBD36A3B4A6C65360485565C71D92A2841446665142D3D746EA79EF10"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/17-intersecao-conta-filial-periodo.dax",
+    "sha256": "CA7FC2EB8AB50ABF2CB22971F25A55836641670F977C3206C4AF25E98DD94958"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/ambiente.json",
+    "sha256": "4EE7685D7AE3BB509D5A248F4B9755FCB4891AF00F096165852D57775DE2E557"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/baseline-protecao.json",
+    "sha256": "4685B7C1E255918CAE1B0F060FAF58B6BA3CB3E55E510FF6A4194A376987648E"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/complemento-databricks.sql",
+    "sha256": "57D06281F95D14D095C52EF0A1FB7E11C23E09099341FF99B4E75F9C926B0CE5"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/estado-execucao.json",
+    "sha256": "5773B24BA6EA60AEB9E408E1CE24A779D4DF72BFBAEEBD82ECCD2012648EFDE0"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/integridade-final.json",
+    "sha256": "2F75437FBCD0A50CCF1DF01E5D997298ADEEE2400749842581BA93EE1CB961D5"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/registro-testes.csv",
+    "sha256": "A2793B8019DF7FC1F22DD106BF6BBF382982A0B688F38C29B2B5A9AD171B02FA"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/reuso.json",
+    "sha256": "D39D61553BAEC77EA9B5B6AD77A878258818ECFD1D329110043607EA3605A146"
+  },
+  {
+    "path": "docs/evidencias/fase1-dinamica/verificacao-local.json",
+    "sha256": "63D7932F5AB87ED446C21D4E38D36EB3CAE20455CCD6E21616D00F11DA91AF3B"
+  }
+]

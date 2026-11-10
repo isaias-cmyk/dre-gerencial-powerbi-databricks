@@ -1,0 +1,60 @@
+{
+  "modelChange": "Somente ref table _Medidas",
+  "existingTMDLFilesOtherThanModel": "Hashes preservados",
+  "queriesAndRelationships": "Hashes preservados",
+  "productionReferences": "OK",
+  "lineageTagsUnique": true,
+  "daxTestFiles": [
+    {
+      "file": "docs/testes/lote2-1/01-metadados.dax",
+      "delimiters": "OK",
+      "dynamicExecution": "Pendente"
+    },
+    {
+      "file": "docs/testes/lote2-1/02-controle-integral.dax",
+      "delimiters": "OK",
+      "dynamicExecution": "Pendente"
+    },
+    {
+      "file": "docs/testes/lote2-1/03-filial-periodo.dax",
+      "delimiters": "OK",
+      "dynamicExecution": "Pendente"
+    },
+    {
+      "file": "docs/testes/lote2-1/04-posicoes.dax",
+      "delimiters": "OK",
+      "dynamicExecution": "Pendente"
+    },
+    {
+      "file": "docs/testes/lote2-1/05-contextos-e-totais.dax",
+      "delimiters": "OK",
+      "dynamicExecution": "Pendente"
+    },
+    {
+      "file": "docs/testes/lote2-1/06-total-matriz.dax",
+      "delimiters": "OK",
+      "dynamicExecution": "Pendente"
+    },
+    {
+      "file": "docs/testes/lote2-1/07-ebitda-ebit.dax",
+      "delimiters": "OK",
+      "dynamicExecution": "Pendente"
+    },
+    {
+      "file": "docs/testes/lote2-1/08-ausencia-realizado.dax",
+      "delimiters": "OK",
+      "dynamicExecution": "Pendente"
+    },
+    {
+      "file": "docs/testes/lote2-1/09-limites-conta-dre.dax",
+      "delimiters": "OK",
+      "dynamicExecution": "Pendente"
+    }
+  ],
+  "DAXCompilationExecuted": false,
+  "DynamicTestsExecuted": false,
+  "backupRestore": "Hashes OK",
+  "ChangedEntryFiles": [
+    "DRE Moderno - Databricks.SemanticModel/definition/model.tmdl"
+  ]
+}

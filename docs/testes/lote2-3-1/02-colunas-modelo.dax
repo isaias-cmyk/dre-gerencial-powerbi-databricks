@@ -1,0 +1,2 @@
+// Metadados de colunas; não modifica o modelo.
+EVALUATE INFO.VIEW.COLUMNS()

@@ -1,0 +1,21 @@
+{
+  "esperadas": 14625,
+  "dax_linhas": 14625,
+  "duplicadas_dax": 0,
+  "ausentes_no_dax": 0,
+  "extras_no_dax": 0,
+  "aprovadas": 14625,
+  "reprovadas": 0,
+  "nulos_blank_coincidentes": 6345,
+  "max_dif_brl": 1.4901161193847656e-07,
+  "max_dif_razao": 8.881784197001252e-16,
+  "classificacoes_dax": {
+    "Desfavorável": 1713,
+    "Desfavorável (provisório)": 147,
+    "Em linha": 3,
+    "Favorável": 1884,
+    "Favorável (provisório)": 213
+  },
+  "primeiras_falhas": [],
+  "aceite": true
+}

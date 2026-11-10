@@ -1,0 +1,53 @@
+relationship AutoDetected_b803a55e-b318-4f25-80e8-6068d5cedb12
+	isActive: false
+	fromColumn: dim_conta.cod_filial
+	toColumn: dim_filial.cod_filial
+
+relationship AutoDetected_d9ec7926-13de-4e3a-beaf-9d5600fb340f
+	fromColumn: dim_dre.cod_filial
+	toColumn: dim_filial.cod_filial
+
+relationship AutoDetected_b9db6563-6b6a-4ed9-9873-033469b2f0ab
+	fromColumn: fato_lancamentos.cod_filial
+	toColumn: dim_filial.cod_filial
+
+relationship AutoDetected_cf6c4540-68ae-4da2-acca-5a3bf495a442
+	fromColumn: fato_orcamento.cod_filial
+	toColumn: dim_filial.cod_filial
+
+relationship AutoDetected_2a7e773f-8348-4485-ac6c-69dd9df5dab8
+	fromColumn: fato_previsao.cod_filial
+	toColumn: dim_filial.cod_filial
+
+relationship AutoDetected_2ce0342d-62e0-4df8-a023-363036b47efe
+	fromColumn: vw_dre_comparativo.cod_filial
+	toColumn: dim_filial.cod_filial
+
+relationship 13c78bc6-b976-df8e-f003-91414e803c01
+	fromColumn: fato_lancamentos.competencia_data
+	toColumn: dim_calendario.data
+
+relationship ddacb715-ec23-2d3c-a337-1083a97c680d
+	fromColumn: fato_orcamento.competencia_data
+	toColumn: dim_calendario.data
+
+relationship 4f0276cf-4e80-7bc6-b833-a091883c1e68
+	fromColumn: fato_previsao.competencia_data
+	toColumn: dim_calendario.data
+
+relationship eefc7d39-b405-b354-72e6-c555cb0036a4
+	fromColumn: vw_dre_comparativo.competencia
+	toColumn: dim_calendario.data
+
+relationship dd8569c8-c610-4c02-d15c-c2afbea55cd5
+	fromColumn: fato_lancamentos.planocontas_id
+	toColumn: dim_conta.id_conta
+
+relationship 66e23276-0813-1463-b459-e591093be04e
+	fromColumn: fato_orcamento.planocontas_id
+	toColumn: dim_conta.id_conta
+
+relationship 855510f8-a1e3-1f4c-4426-15e7304a95d0
+	fromColumn: fato_previsao.planocontas_id
+	toColumn: dim_conta.id_conta
+

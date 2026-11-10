@@ -1,0 +1,4160 @@
+[
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Custos Orçado",
+    "Total": "-37182953.11",
+    "SomaFiliais": "-37182953.109999995",
+    "Diferenca": "-5E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Custos Orçado",
+    "Total": "-30506108.599999994",
+    "SomaFiliais": "-30506108.599999995",
+    "Diferenca": "1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Custos Previsto",
+    "Total": "-37265003.93",
+    "SomaFiliais": "-37265003.930000001",
+    "Diferenca": "1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Custos Previsto",
+    "Total": "-30583419.150000002",
+    "SomaFiliais": "-30583419.150000002",
+    "Diferenca": "0E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Custos Realizado",
+    "Total": "-37122394.87000001",
+    "SomaFiliais": "-37122394.870000002",
+    "Diferenca": "-8E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Custos Realizado",
+    "Total": "-30495330.670000006",
+    "SomaFiliais": "-30495330.670000003",
+    "Diferenca": "-3E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Deduções da Receita Orçado",
+    "Total": "-20702603.55",
+    "SomaFiliais": "-20702603.55",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Deduções da Receita Orçado",
+    "Total": "-17199815.77",
+    "SomaFiliais": "-17199815.77",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Deduções da Receita Previsto",
+    "Total": "-20638098.689999998",
+    "SomaFiliais": "-20638098.689999998",
+    "Diferenca": "0E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Deduções da Receita Previsto",
+    "Total": "-17155265.580000002",
+    "SomaFiliais": "-17155265.579999998",
+    "Diferenca": "-4E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Deduções da Receita Realizado",
+    "Total": "-20996553.439999998",
+    "SomaFiliais": "-20996553.44",
+    "Diferenca": "2E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Deduções da Receita Realizado",
+    "Total": "-17441384.229999997",
+    "SomaFiliais": "-17441384.23",
+    "Diferenca": "3E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Depreciação e Amortização Orçado",
+    "Total": "-114882.73000000004",
+    "SomaFiliais": "-114882.729999999998",
+    "Diferenca": "-4.2E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Depreciação e Amortização Orçado",
+    "Total": "-94263.33000000003",
+    "SomaFiliais": "-94263.33",
+    "Diferenca": "-3E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Depreciação e Amortização Previsto",
+    "Total": "-114857.0",
+    "SomaFiliais": "-114857.000000000005",
+    "Diferenca": "5E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Depreciação e Amortização Previsto",
+    "Total": "-94273.7",
+    "SomaFiliais": "-94273.700000000002",
+    "Diferenca": "2E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Depreciação e Amortização Realizado",
+    "Total": "-114129.62000000001",
+    "SomaFiliais": "-114129.620000000008",
+    "Diferenca": "-2E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Depreciação e Amortização Realizado",
+    "Total": "-93721.48000000003",
+    "SomaFiliais": "-93721.480000000005",
+    "Diferenca": "-2.5E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Despesas Operacionais Orçado",
+    "Total": "-18273831.259999994",
+    "SomaFiliais": "-18273831.2599999984",
+    "Diferenca": "4.4E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Despesas Operacionais Orçado",
+    "Total": "-15009672.629999995",
+    "SomaFiliais": "-15009672.629999999",
+    "Diferenca": "4E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Despesas Operacionais Previsto",
+    "Total": "-18265383.619999997",
+    "SomaFiliais": "-18265383.619999999",
+    "Diferenca": "2E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Despesas Operacionais Previsto",
+    "Total": "-14998857.249999998",
+    "SomaFiliais": "-14998857.249999999",
+    "Diferenca": "1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Despesas Operacionais Realizado",
+    "Total": "-18249245.380000006",
+    "SomaFiliais": "-18249245.380000001",
+    "Diferenca": "-5E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Despesas Operacionais Realizado",
+    "Total": "-14964495.150000004",
+    "SomaFiliais": "-14964495.150000001",
+    "Diferenca": "-3E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Margem de Contribuição Orçado",
+    "Total": "21164129.249999996",
+    "SomaFiliais": "21164129.2500000003",
+    "Diferenca": "-4.3E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Margem de Contribuição Orçado",
+    "Total": "17149208.45",
+    "SomaFiliais": "17149208.45",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Margem de Contribuição Previsto",
+    "Total": "21007096.08",
+    "SomaFiliais": "21007096.080000001",
+    "Diferenca": "-1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Margem de Contribuição Previsto",
+    "Total": "17082646.14",
+    "SomaFiliais": "17082646.140000001",
+    "Diferenca": "-1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Margem de Contribuição Realizado",
+    "Total": "21032726.700000003",
+    "SomaFiliais": "21032726.699999999",
+    "Diferenca": "4E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Margem de Contribuição Realizado",
+    "Total": "17078355.840000004",
+    "SomaFiliais": "17078355.839999999",
+    "Diferenca": "5E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Outras Receitas e Despesas Orçado",
+    "Total": "-61416.490000000005",
+    "SomaFiliais": "-61416.490000000007",
+    "Diferenca": "2E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Outras Receitas e Despesas Orçado",
+    "Total": "-50140.000000000015",
+    "SomaFiliais": "-50140.000000000005",
+    "Diferenca": "-1.0E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Outras Receitas e Despesas Previsto",
+    "Total": "-61450.90000000001",
+    "SomaFiliais": "-61450.900000000006",
+    "Diferenca": "-4E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Outras Receitas e Despesas Previsto",
+    "Total": "-50141.58000000001",
+    "SomaFiliais": "-50141.580000000006",
+    "Diferenca": "-4E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Outras Receitas e Despesas Realizado",
+    "Total": "-59341.27",
+    "SomaFiliais": "-59341.269999999997",
+    "Diferenca": "-3E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Outras Receitas e Despesas Realizado",
+    "Total": "-48738.840000000004",
+    "SomaFiliais": "-48738.839999999999",
+    "Diferenca": "-5E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Provisão para IR e CSLL Orçado",
+    "Total": "-303916.93",
+    "SomaFiliais": "-303916.93000000003",
+    "Diferenca": "3E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Provisão para IR e CSLL Orçado",
+    "Total": "-252264.71",
+    "SomaFiliais": "-252264.71000000002",
+    "Diferenca": "2E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Provisão para IR e CSLL Previsto",
+    "Total": "-303175.88",
+    "SomaFiliais": "-303175.88000000001",
+    "Diferenca": "1E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Provisão para IR e CSLL Previsto",
+    "Total": "-251627.44999999998",
+    "SomaFiliais": "-251627.45",
+    "Diferenca": "2E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Provisão para IR e CSLL Realizado",
+    "Total": "-306008.3799999999",
+    "SomaFiliais": "-306008.37999999999",
+    "Diferenca": "9E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Provisão para IR e CSLL Realizado",
+    "Total": "-253380.67999999996",
+    "SomaFiliais": "-253380.68",
+    "Diferenca": "4E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Receita Operacional Bruta Orçado",
+    "Total": "79049685.91000001",
+    "SomaFiliais": "79049685.910000012",
+    "Diferenca": "-2E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Receita Operacional Bruta Orçado",
+    "Total": "64855132.820000015",
+    "SomaFiliais": "64855132.82000001",
+    "Diferenca": "5E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Receita Operacional Bruta Previsto",
+    "Total": "78910198.70000002",
+    "SomaFiliais": "78910198.70",
+    "Diferenca": "2E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Receita Operacional Bruta Previsto",
+    "Total": "64821330.870000005",
+    "SomaFiliais": "64821330.87",
+    "Diferenca": "5E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Receita Operacional Bruta Realizado",
+    "Total": "79151675.01000004",
+    "SomaFiliais": "79151675.01",
+    "Diferenca": "4E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Receita Operacional Bruta Realizado",
+    "Total": "65015070.74",
+    "SomaFiliais": "65015070.74",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Receita Operacional Líquida Orçado",
+    "Total": "58347082.36",
+    "SomaFiliais": "58347082.360000001",
+    "Diferenca": "-1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Receita Operacional Líquida Orçado",
+    "Total": "47655317.04999998",
+    "SomaFiliais": "47655317.050000001",
+    "Diferenca": "-2.1E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Receita Operacional Líquida Previsto",
+    "Total": "58272100.01000001",
+    "SomaFiliais": "58272100.01",
+    "Diferenca": "1E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Receita Operacional Líquida Previsto",
+    "Total": "47666065.29000001",
+    "SomaFiliais": "47666065.29",
+    "Diferenca": "1E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Receita Operacional Líquida Realizado",
+    "Total": "58155121.569999985",
+    "SomaFiliais": "58155121.569999997",
+    "Diferenca": "-1.2E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Receita Operacional Líquida Realizado",
+    "Total": "47573686.50999998",
+    "SomaFiliais": "47573686.509999998",
+    "Diferenca": "-1.8E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Resultado Financeiro Orçado",
+    "Total": "-185888.37999999992",
+    "SomaFiliais": "-185888.379999999981",
+    "Diferenca": "6.1E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Resultado Financeiro Orçado",
+    "Total": "-152385.82999999996",
+    "SomaFiliais": "-152385.829999999985",
+    "Diferenca": "2.5E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Resultado Financeiro Previsto",
+    "Total": "-185963.33999999994",
+    "SomaFiliais": "-185963.33999999999",
+    "Diferenca": "5E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Resultado Financeiro Previsto",
+    "Total": "-152354.44999999998",
+    "SomaFiliais": "-152354.44999999999",
+    "Diferenca": "1E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Resultado Financeiro Realizado",
+    "Total": "-185935.96000000005",
+    "SomaFiliais": "-185935.96",
+    "Diferenca": "-5E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Resultado Financeiro Realizado",
+    "Total": "-152714.93000000002",
+    "SomaFiliais": "-152714.93",
+    "Diferenca": "-2E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Resultado Líquido Orçado",
+    "Total": "2224193.4600000004",
+    "SomaFiliais": "2224193.4600000000",
+    "Diferenca": "4E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Resultado Líquido Orçado",
+    "Total": "1590481.9500000002",
+    "SomaFiliais": "1590481.9500000001",
+    "Diferenca": "1E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Resultado Líquido Previsto",
+    "Total": "2076265.3399999999",
+    "SomaFiliais": "2076265.3400000001",
+    "Diferenca": "-2E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Resultado Líquido Previsto",
+    "Total": "1535391.71",
+    "SomaFiliais": "1535391.71",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2021",
+    "Medida": "DRE | Resultado Líquido Realizado",
+    "Total": "2118066.09",
+    "SomaFiliais": "2118066.09",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2021",
+    "Medida": "DRE | Resultado Líquido Realizado",
+    "Total": "1565304.7600000002",
+    "SomaFiliais": "1565304.76",
+    "Diferenca": "2E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Custos Orçado",
+    "Total": "-40495281.62",
+    "SomaFiliais": "-40495281.620000000",
+    "Diferenca": "0E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Custos Orçado",
+    "Total": "-33569761.660000004",
+    "SomaFiliais": "-33569761.660000000",
+    "Diferenca": "-4E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Custos Previsto",
+    "Total": "-40629547.180000015",
+    "SomaFiliais": "-40629547.179999999",
+    "Diferenca": "-1.6E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Custos Previsto",
+    "Total": "-33715376.57",
+    "SomaFiliais": "-33715376.57",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Custos Realizado",
+    "Total": "-40210600.68000001",
+    "SomaFiliais": "-40210600.68",
+    "Diferenca": "-1E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Custos Realizado",
+    "Total": "-33420982.939999998",
+    "SomaFiliais": "-33420982.94",
+    "Diferenca": "2E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Deduções da Receita Orçado",
+    "Total": "-22894288.86",
+    "SomaFiliais": "-22894288.8599999992",
+    "Diferenca": "-8E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Deduções da Receita Orçado",
+    "Total": "-19191541.099999998",
+    "SomaFiliais": "-19191541.099999999",
+    "Diferenca": "1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Deduções da Receita Previsto",
+    "Total": "-22896678.830000006",
+    "SomaFiliais": "-22896678.8300000038",
+    "Diferenca": "-2.2E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Deduções da Receita Previsto",
+    "Total": "-19192076.090000004",
+    "SomaFiliais": "-19192076.090000004",
+    "Diferenca": "0E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Deduções da Receita Realizado",
+    "Total": "-22691365.900000002",
+    "SomaFiliais": "-22691365.900000002",
+    "Diferenca": "0E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Deduções da Receita Realizado",
+    "Total": "-19043821.23",
+    "SomaFiliais": "-19043821.230000002",
+    "Diferenca": "2E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Depreciação e Amortização Orçado",
+    "Total": "-125253.06999999999",
+    "SomaFiliais": "-125253.070000000005",
+    "Diferenca": "1.5E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Depreciação e Amortização Orçado",
+    "Total": "-104306.74",
+    "SomaFiliais": "-104306.740000000005",
+    "Diferenca": "5E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Depreciação e Amortização Previsto",
+    "Total": "-125193.19000000003",
+    "SomaFiliais": "-125193.19000000001",
+    "Diferenca": "-2E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Depreciação e Amortização Previsto",
+    "Total": "-104245.62000000002",
+    "SomaFiliais": "-104245.62000000001",
+    "Diferenca": "-1E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Depreciação e Amortização Realizado",
+    "Total": "-123209.98999999998",
+    "SomaFiliais": "-123209.99",
+    "Diferenca": "2E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Depreciação e Amortização Realizado",
+    "Total": "-102390.42",
+    "SomaFiliais": "-102390.42",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Despesas Operacionais Orçado",
+    "Total": "-19706530.589999996",
+    "SomaFiliais": "-19706530.5899999987",
+    "Diferenca": "2.7E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Despesas Operacionais Orçado",
+    "Total": "-16346494.93",
+    "SomaFiliais": "-16346494.929999999",
+    "Diferenca": "-1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Despesas Operacionais Previsto",
+    "Total": "-19773299.490000002",
+    "SomaFiliais": "-19773299.4900000027",
+    "Diferenca": "7E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Despesas Operacionais Previsto",
+    "Total": "-16408436.27",
+    "SomaFiliais": "-16408436.270000002",
+    "Diferenca": "2E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Despesas Operacionais Realizado",
+    "Total": "-19821859.85",
+    "SomaFiliais": "-19821859.8499999985",
+    "Diferenca": "-1.5E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Despesas Operacionais Realizado",
+    "Total": "-16454908.42",
+    "SomaFiliais": "-16454908.4199999985",
+    "Diferenca": "-1.5E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Margem de Contribuição Orçado",
+    "Total": "22610041.570000008",
+    "SomaFiliais": "22610041.569999999",
+    "Diferenca": "9E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Margem de Contribuição Orçado",
+    "Total": "18568998.86",
+    "SomaFiliais": "18568998.859999999",
+    "Diferenca": "1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Margem de Contribuição Previsto",
+    "Total": "22509797.490000002",
+    "SomaFiliais": "22509797.4900000006",
+    "Diferenca": "1.4E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Margem de Contribuição Previsto",
+    "Total": "18501278.970000003",
+    "SomaFiliais": "18501278.970000001",
+    "Diferenca": "2E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Margem de Contribuição Realizado",
+    "Total": "22608685.979999997",
+    "SomaFiliais": "22608685.979999998",
+    "Diferenca": "-1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Margem de Contribuição Realizado",
+    "Total": "18593773.860000003",
+    "SomaFiliais": "18593773.859999998",
+    "Diferenca": "5E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Outras Receitas e Despesas Orçado",
+    "Total": "-65163.920000000006",
+    "SomaFiliais": "-65163.919999999999",
+    "Diferenca": "-7E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Outras Receitas e Despesas Orçado",
+    "Total": "-54963.05000000001",
+    "SomaFiliais": "-54963.05",
+    "Diferenca": "-1E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Outras Receitas e Despesas Previsto",
+    "Total": "-65668.47",
+    "SomaFiliais": "-65668.470000000015",
+    "Diferenca": "1.5E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Outras Receitas e Despesas Previsto",
+    "Total": "-55450.340000000004",
+    "SomaFiliais": "-55450.340000000014",
+    "Diferenca": "1.0E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Outras Receitas e Despesas Realizado",
+    "Total": "-65063.969999999994",
+    "SomaFiliais": "-65063.97",
+    "Diferenca": "6E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Outras Receitas e Despesas Realizado",
+    "Total": "-54224.950000000004",
+    "SomaFiliais": "-54224.95",
+    "Diferenca": "-4E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Provisão para IR e CSLL Orçado",
+    "Total": "-299740.83999999997",
+    "SomaFiliais": "-299740.839999999996",
+    "Diferenca": "2.6E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Provisão para IR e CSLL Orçado",
+    "Total": "-258131.78",
+    "SomaFiliais": "-258131.779999999996",
+    "Diferenca": "-4E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Provisão para IR e CSLL Previsto",
+    "Total": "-299372.00000000006",
+    "SomaFiliais": "-299372.000000000026",
+    "Diferenca": "-3.4E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Provisão para IR e CSLL Previsto",
+    "Total": "-257673.93000000005",
+    "SomaFiliais": "-257673.930000000026",
+    "Diferenca": "-2.4E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Provisão para IR e CSLL Realizado",
+    "Total": "-297539.24999999994",
+    "SomaFiliais": "-297539.25000000001",
+    "Diferenca": "7E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Provisão para IR e CSLL Realizado",
+    "Total": "-257634.28999999998",
+    "SomaFiliais": "-257634.29",
+    "Diferenca": "2E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Receita Operacional Bruta Orçado",
+    "Total": "85999612.05",
+    "SomaFiliais": "85999612.050000002",
+    "Diferenca": "-2E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Receita Operacional Bruta Orçado",
+    "Total": "71330301.62",
+    "SomaFiliais": "71330301.62",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Receita Operacional Bruta Previsto",
+    "Total": "86036023.5",
+    "SomaFiliais": "86036023.499999993",
+    "Diferenca": "7E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Receita Operacional Bruta Previsto",
+    "Total": "71408731.62999998",
+    "SomaFiliais": "71408731.629999992",
+    "Diferenca": "-1.2E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Receita Operacional Bruta Realizado",
+    "Total": "85510652.56000003",
+    "SomaFiliais": "85510652.560000001",
+    "Diferenca": "2.9E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Receita Operacional Bruta Realizado",
+    "Total": "71058578.03",
+    "SomaFiliais": "71058578.03",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Receita Operacional Líquida Orçado",
+    "Total": "63105323.19",
+    "SomaFiliais": "63105323.190000004",
+    "Diferenca": "-4E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Receita Operacional Líquida Orçado",
+    "Total": "52138760.52",
+    "SomaFiliais": "52138760.520000004",
+    "Diferenca": "-4E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Receita Operacional Líquida Previsto",
+    "Total": "63139344.67",
+    "SomaFiliais": "63139344.669999995",
+    "Diferenca": "5E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Receita Operacional Líquida Previsto",
+    "Total": "52216655.540000014",
+    "SomaFiliais": "52216655.539999995",
+    "Diferenca": "1.9E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Receita Operacional Líquida Realizado",
+    "Total": "62819286.65999999",
+    "SomaFiliais": "62819286.660000004",
+    "Diferenca": "-1.4E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Receita Operacional Líquida Realizado",
+    "Total": "52014756.79999999",
+    "SomaFiliais": "52014756.800000004",
+    "Diferenca": "-1.4E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Resultado Financeiro Orçado",
+    "Total": "-201630.69999999998",
+    "SomaFiliais": "-201630.70",
+    "Diferenca": "2E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Resultado Financeiro Orçado",
+    "Total": "-168651.55",
+    "SomaFiliais": "-168651.55",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Resultado Financeiro Previsto",
+    "Total": "-201742.52000000005",
+    "SomaFiliais": "-201742.519999999986",
+    "Diferenca": "-6.4E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Resultado Financeiro Previsto",
+    "Total": "-168748.29000000004",
+    "SomaFiliais": "-168748.28999999999",
+    "Diferenca": "-5E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Resultado Financeiro Realizado",
+    "Total": "-200808.85999999996",
+    "SomaFiliais": "-200808.860000000000",
+    "Diferenca": "4.0E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Resultado Financeiro Realizado",
+    "Total": "-166846.47999999998",
+    "SomaFiliais": "-166846.479999999995",
+    "Diferenca": "1.5E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Resultado Líquido Orçado",
+    "Total": "2211722.4500000007",
+    "SomaFiliais": "2211722.4500000001",
+    "Diferenca": "6E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Resultado Líquido Orçado",
+    "Total": "1636450.81",
+    "SomaFiliais": "1636450.8100000001",
+    "Diferenca": "-1E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Resultado Líquido Previsto",
+    "Total": "2044521.82",
+    "SomaFiliais": "2044521.8199999999",
+    "Diferenca": "1E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Resultado Líquido Previsto",
+    "Total": "1506724.52",
+    "SomaFiliais": "1506724.5199999999",
+    "Diferenca": "1E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2022",
+    "Medida": "DRE | Resultado Líquido Realizado",
+    "Total": "2100204.0599999996",
+    "SomaFiliais": "2100204.0600000002",
+    "Diferenca": "-6E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2022",
+    "Medida": "DRE | Resultado Líquido Realizado",
+    "Total": "1557769.2999999998",
+    "SomaFiliais": "1557769.3000000002",
+    "Diferenca": "-4E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Custos Orçado",
+    "Total": "-38746105.30000001",
+    "SomaFiliais": "-38746105.299999995",
+    "Diferenca": "-1.5E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Custos Orçado",
+    "Total": "-31915646.560000002",
+    "SomaFiliais": "-31915646.559999994",
+    "Diferenca": "-8E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Custos Previsto",
+    "Total": "-38825532.17",
+    "SomaFiliais": "-38825532.169999997",
+    "Diferenca": "-3E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Custos Previsto",
+    "Total": "-31998812.639999997",
+    "SomaFiliais": "-31998812.639999997",
+    "Diferenca": "0E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Custos Realizado",
+    "Total": "-16255820.51",
+    "SomaFiliais": "-16255820.5100000009",
+    "Diferenca": "9E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Custos Realizado",
+    "Total": "-13501401.280000001",
+    "SomaFiliais": "-13501401.2800000005",
+    "Diferenca": "-5E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Deduções da Receita Orçado",
+    "Total": "-21949814.549999997",
+    "SomaFiliais": "-21949814.550000002",
+    "Diferenca": "5E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Deduções da Receita Orçado",
+    "Total": "-18333494.08",
+    "SomaFiliais": "-18333494.080000002",
+    "Diferenca": "2E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Deduções da Receita Previsto",
+    "Total": "-21904970.790000003",
+    "SomaFiliais": "-21904970.7899999994",
+    "Diferenca": "-3.6E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Deduções da Receita Previsto",
+    "Total": "-18291235.369999997",
+    "SomaFiliais": "-18291235.369999999",
+    "Diferenca": "2E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Deduções da Receita Realizado",
+    "Total": "-9220566.010000002",
+    "SomaFiliais": "-9220566.01",
+    "Diferenca": "-2E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Deduções da Receita Realizado",
+    "Total": "-7732951.46",
+    "SomaFiliais": "-7732951.46",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Depreciação e Amortização Orçado",
+    "Total": "-120257.51000000002",
+    "SomaFiliais": "-120257.51",
+    "Diferenca": "-2E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Depreciação e Amortização Orçado",
+    "Total": "-99506.4",
+    "SomaFiliais": "-99506.40",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Depreciação e Amortização Previsto",
+    "Total": "-120119.19999999997",
+    "SomaFiliais": "-120119.20",
+    "Diferenca": "3E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Depreciação e Amortização Previsto",
+    "Total": "-99370.04999999999",
+    "SomaFiliais": "-99370.05",
+    "Diferenca": "1E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Depreciação e Amortização Realizado",
+    "Total": "-49967.86",
+    "SomaFiliais": "-49967.859999999999",
+    "Diferenca": "-1E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Depreciação e Amortização Realizado",
+    "Total": "-41304.74",
+    "SomaFiliais": "-41304.74",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Despesas Operacionais Orçado",
+    "Total": "-18911692.009999998",
+    "SomaFiliais": "-18911692.0100000012",
+    "Diferenca": "3.2E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Despesas Operacionais Orçado",
+    "Total": "-15522578.750000002",
+    "SomaFiliais": "-15522578.750000001",
+    "Diferenca": "-1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Despesas Operacionais Previsto",
+    "Total": "-18937648.849999998",
+    "SomaFiliais": "-18937648.8500000012",
+    "Diferenca": "3.2E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Despesas Operacionais Previsto",
+    "Total": "-15542035.339999998",
+    "SomaFiliais": "-15542035.340000001",
+    "Diferenca": "3E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Despesas Operacionais Realizado",
+    "Total": "-8132133.290000001",
+    "SomaFiliais": "-8132133.29",
+    "Diferenca": "-1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Despesas Operacionais Realizado",
+    "Total": "-6654082.930000001",
+    "SomaFiliais": "-6654082.93",
+    "Diferenca": "-1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Margem de Contribuição Orçado",
+    "Total": "21769443.04",
+    "SomaFiliais": "21769443.0400000013",
+    "Diferenca": "-1.3E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Margem de Contribuição Orçado",
+    "Total": "17676312.97",
+    "SomaFiliais": "17676312.970000001",
+    "Diferenca": "-1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Margem de Contribuição Previsto",
+    "Total": "21645775.87",
+    "SomaFiliais": "21645775.87",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Margem de Contribuição Previsto",
+    "Total": "17609233.28",
+    "SomaFiliais": "17609233.28",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Margem de Contribuição Realizado",
+    "Total": "9187582.43",
+    "SomaFiliais": "9187582.43",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Margem de Contribuição Realizado",
+    "Total": "7470532.5",
+    "SomaFiliais": "7470532.50",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Outras Receitas e Despesas Orçado",
+    "Total": "-64393.149999999994",
+    "SomaFiliais": "-64393.149999999999",
+    "Diferenca": "5E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Outras Receitas e Despesas Orçado",
+    "Total": "-53213.450000000004",
+    "SomaFiliais": "-53213.450000000002",
+    "Diferenca": "-2E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Outras Receitas e Despesas Previsto",
+    "Total": "-64033.23999999999",
+    "SomaFiliais": "-64033.239999999998",
+    "Diferenca": "8E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Outras Receitas e Despesas Previsto",
+    "Total": "-52829.70999999999",
+    "SomaFiliais": "-52829.709999999998",
+    "Diferenca": "8E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Outras Receitas e Despesas Realizado",
+    "Total": "-25982.969999999998",
+    "SomaFiliais": "-25982.9699999999995",
+    "Diferenca": "1.5E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Outras Receitas e Despesas Realizado",
+    "Total": "-21528.66",
+    "SomaFiliais": "-21528.66",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Provisão para IR e CSLL Orçado",
+    "Total": "-292728.61000000004",
+    "SomaFiliais": "-292728.60999999999",
+    "Diferenca": "-5E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Provisão para IR e CSLL Orçado",
+    "Total": "-250721.50999999998",
+    "SomaFiliais": "-250721.50999999999",
+    "Diferenca": "1E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Provisão para IR e CSLL Previsto",
+    "Total": "-292617.51",
+    "SomaFiliais": "-292617.50999999998",
+    "Diferenca": "-2E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Provisão para IR e CSLL Previsto",
+    "Total": "-250570.86999999997",
+    "SomaFiliais": "-250570.86999999998",
+    "Diferenca": "1E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Provisão para IR e CSLL Realizado",
+    "Total": "-78127.76",
+    "SomaFiliais": "-78127.7599999999972",
+    "Diferenca": "-2.8E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Provisão para IR e CSLL Realizado",
+    "Total": "-78827.48",
+    "SomaFiliais": "-78827.479999999997",
+    "Diferenca": "-3E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Receita Operacional Bruta Orçado",
+    "Total": "82465362.89",
+    "SomaFiliais": "82465362.890000001",
+    "Diferenca": "-1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Receita Operacional Bruta Orçado",
+    "Total": "67925453.61000001",
+    "SomaFiliais": "67925453.61",
+    "Diferenca": "1E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Receita Operacional Bruta Previsto",
+    "Total": "82376278.83000001",
+    "SomaFiliais": "82376278.830000001",
+    "Diferenca": "9E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Receita Operacional Bruta Previsto",
+    "Total": "67899281.29",
+    "SomaFiliais": "67899281.29",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Receita Operacional Bruta Realizado",
+    "Total": "34663968.949999996",
+    "SomaFiliais": "34663968.95",
+    "Diferenca": "-4E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Receita Operacional Bruta Realizado",
+    "Total": "28704885.24",
+    "SomaFiliais": "28704885.24",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Receita Operacional Líquida Orçado",
+    "Total": "60515548.33999999",
+    "SomaFiliais": "60515548.339999999",
+    "Diferenca": "-9E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Receita Operacional Líquida Orçado",
+    "Total": "49591959.52999999",
+    "SomaFiliais": "49591959.53",
+    "Diferenca": "-1E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Receita Operacional Líquida Previsto",
+    "Total": "60471308.040000014",
+    "SomaFiliais": "60471308.039999997",
+    "Diferenca": "1.7E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Receita Operacional Líquida Previsto",
+    "Total": "49608045.92",
+    "SomaFiliais": "49608045.919999997",
+    "Diferenca": "3E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Receita Operacional Líquida Realizado",
+    "Total": "25443402.94",
+    "SomaFiliais": "25443402.94",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Receita Operacional Líquida Realizado",
+    "Total": "20971933.78",
+    "SomaFiliais": "20971933.78",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Resultado Financeiro Orçado",
+    "Total": "-193793.84999999998",
+    "SomaFiliais": "-193793.849999999985",
+    "Diferenca": "5E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Resultado Financeiro Orçado",
+    "Total": "-160759.7",
+    "SomaFiliais": "-160759.699999999985",
+    "Diferenca": "-1.5E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Resultado Financeiro Previsto",
+    "Total": "-194213.04",
+    "SomaFiliais": "-194213.039999999986",
+    "Diferenca": "-1.4E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Resultado Financeiro Previsto",
+    "Total": "-161008.99",
+    "SomaFiliais": "-161008.98999999999",
+    "Diferenca": "-1E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Resultado Financeiro Realizado",
+    "Total": "-81413.31",
+    "SomaFiliais": "-81413.31",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Resultado Financeiro Realizado",
+    "Total": "-67456.45999999999",
+    "SomaFiliais": "-67456.46",
+    "Diferenca": "1E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Resultado Líquido Orçado",
+    "Total": "2186577.91",
+    "SomaFiliais": "2186577.9099999999",
+    "Diferenca": "1E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Resultado Líquido Orçado",
+    "Total": "1589533.16",
+    "SomaFiliais": "1589533.1599999999",
+    "Diferenca": "1E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Resultado Líquido Previsto",
+    "Total": "2037144.0299999993",
+    "SomaFiliais": "2037144.0300000001",
+    "Diferenca": "-8E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Resultado Líquido Previsto",
+    "Total": "1503418.3199999998",
+    "SomaFiliais": "1503418.3200000000",
+    "Diferenca": "-2E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023",
+    "Medida": "DRE | Resultado Líquido Realizado",
+    "Total": "819957.2399999999",
+    "SomaFiliais": "819957.24000000002",
+    "Diferenca": "-1.2E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023",
+    "Medida": "DRE | Resultado Líquido Realizado",
+    "Total": "607332.2299999999",
+    "SomaFiliais": "607332.23000000002",
+    "Diferenca": "-1.2E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Custos Orçado",
+    "Total": "-16144876.07",
+    "SomaFiliais": "-16144876.070000001",
+    "Diferenca": "1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Custos Orçado",
+    "Total": "-13414291.27",
+    "SomaFiliais": "-13414291.270000001",
+    "Diferenca": "1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Custos Previsto",
+    "Total": "-16147912.7",
+    "SomaFiliais": "-16147912.7000000003",
+    "Diferenca": "3E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Custos Previsto",
+    "Total": "-13418378.36",
+    "SomaFiliais": "-13418378.36",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Custos Realizado",
+    "Total": "-16255820.51",
+    "SomaFiliais": "-16255820.5100000009",
+    "Diferenca": "9E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Custos Realizado",
+    "Total": "-13501401.280000001",
+    "SomaFiliais": "-13501401.2800000005",
+    "Diferenca": "-5E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Deduções da Receita Orçado",
+    "Total": "-9193292.850000001",
+    "SomaFiliais": "-9193292.85",
+    "Diferenca": "-1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Deduções da Receita Orçado",
+    "Total": "-7726790.800000001",
+    "SomaFiliais": "-7726790.8",
+    "Diferenca": "-1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Deduções da Receita Previsto",
+    "Total": "-9173545.930000002",
+    "SomaFiliais": "-9173545.93",
+    "Diferenca": "-2E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Deduções da Receita Previsto",
+    "Total": "-7699491.960000001",
+    "SomaFiliais": "-7699491.96",
+    "Diferenca": "-1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Deduções da Receita Realizado",
+    "Total": "-9220566.010000002",
+    "SomaFiliais": "-9220566.01",
+    "Diferenca": "-2E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Deduções da Receita Realizado",
+    "Total": "-7732951.46",
+    "SomaFiliais": "-7732951.46",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Depreciação e Amortização Orçado",
+    "Total": "-50014.49",
+    "SomaFiliais": "-50014.49",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Depreciação e Amortização Orçado",
+    "Total": "-41356.799999999996",
+    "SomaFiliais": "-41356.80",
+    "Diferenca": "4E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Depreciação e Amortização Previsto",
+    "Total": "-49822.259999999995",
+    "SomaFiliais": "-49822.259999999995",
+    "Diferenca": "0E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Depreciação e Amortização Previsto",
+    "Total": "-41196.899999999994",
+    "SomaFiliais": "-41196.899999999995",
+    "Diferenca": "1E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Depreciação e Amortização Realizado",
+    "Total": "-49967.86",
+    "SomaFiliais": "-49967.859999999999",
+    "Diferenca": "-1E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Depreciação e Amortização Realizado",
+    "Total": "-41304.74",
+    "SomaFiliais": "-41304.74",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Despesas Operacionais Orçado",
+    "Total": "-8042215.320000001",
+    "SomaFiliais": "-8042215.32",
+    "Diferenca": "-1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Despesas Operacionais Orçado",
+    "Total": "-6568827.84",
+    "SomaFiliais": "-6568827.84",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Despesas Operacionais Previsto",
+    "Total": "-8048533.600000001",
+    "SomaFiliais": "-8048533.6000000002",
+    "Diferenca": "-8E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Despesas Operacionais Previsto",
+    "Total": "-6573374.91",
+    "SomaFiliais": "-6573374.91",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Despesas Operacionais Realizado",
+    "Total": "-8132133.290000001",
+    "SomaFiliais": "-8132133.29",
+    "Diferenca": "-1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Despesas Operacionais Realizado",
+    "Total": "-6654082.930000001",
+    "SomaFiliais": "-6654082.93",
+    "Diferenca": "-1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Margem de Contribuição Orçado",
+    "Total": "9091425.7",
+    "SomaFiliais": "9091425.7000000015",
+    "Diferenca": "-1.5E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Margem de Contribuição Orçado",
+    "Total": "7383604.23",
+    "SomaFiliais": "7383604.2300000013",
+    "Diferenca": "-1.3E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Margem de Contribuição Previsto",
+    "Total": "9067759.18",
+    "SomaFiliais": "9067759.18",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Margem de Contribuição Previsto",
+    "Total": "7365063.34",
+    "SomaFiliais": "7365063.34",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Margem de Contribuição Realizado",
+    "Total": "9187582.43",
+    "SomaFiliais": "9187582.43",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Margem de Contribuição Realizado",
+    "Total": "7470532.5",
+    "SomaFiliais": "7470532.50",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Outras Receitas e Despesas Orçado",
+    "Total": "-27101.440000000002",
+    "SomaFiliais": "-27101.439999999999",
+    "Diferenca": "-3E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Outras Receitas e Despesas Orçado",
+    "Total": "-22152.460000000003",
+    "SomaFiliais": "-22152.459999999999",
+    "Diferenca": "-4E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Outras Receitas e Despesas Previsto",
+    "Total": "-26802.360000000004",
+    "SomaFiliais": "-26802.36",
+    "Diferenca": "-4E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Outras Receitas e Despesas Previsto",
+    "Total": "-21775.54",
+    "SomaFiliais": "-21775.54",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Outras Receitas e Despesas Realizado",
+    "Total": "-25982.969999999998",
+    "SomaFiliais": "-25982.9699999999995",
+    "Diferenca": "1.5E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Outras Receitas e Despesas Realizado",
+    "Total": "-21528.66",
+    "SomaFiliais": "-21528.66",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Provisão para IR e CSLL Orçado",
+    "Total": "-77241.99999999999",
+    "SomaFiliais": "-77241.9999999999898",
+    "Diferenca": "-2E-13",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Provisão para IR e CSLL Orçado",
+    "Total": "-78070.23",
+    "SomaFiliais": "-78070.2299999999904",
+    "Diferenca": "-9.6E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Provisão para IR e CSLL Previsto",
+    "Total": "-77446.13",
+    "SomaFiliais": "-77446.1300000000026",
+    "Diferenca": "2.6E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Provisão para IR e CSLL Previsto",
+    "Total": "-78270.69000000002",
+    "SomaFiliais": "-78270.6900000000026",
+    "Diferenca": "-1.74E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Provisão para IR e CSLL Realizado",
+    "Total": "-78127.76",
+    "SomaFiliais": "-78127.7599999999972",
+    "Diferenca": "-2.8E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Provisão para IR e CSLL Realizado",
+    "Total": "-78827.48",
+    "SomaFiliais": "-78827.479999999997",
+    "Diferenca": "-3E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Receita Operacional Bruta Orçado",
+    "Total": "34429594.620000005",
+    "SomaFiliais": "34429594.619999999",
+    "Diferenca": "6E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Receita Operacional Bruta Orçado",
+    "Total": "28524686.3",
+    "SomaFiliais": "28524686.30",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Receita Operacional Bruta Previsto",
+    "Total": "34389217.81",
+    "SomaFiliais": "34389217.809999999",
+    "Diferenca": "1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Receita Operacional Bruta Previsto",
+    "Total": "28482933.660000004",
+    "SomaFiliais": "28482933.66",
+    "Diferenca": "4E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Receita Operacional Bruta Realizado",
+    "Total": "34663968.949999996",
+    "SomaFiliais": "34663968.95",
+    "Diferenca": "-4E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Receita Operacional Bruta Realizado",
+    "Total": "28704885.24",
+    "SomaFiliais": "28704885.24",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Receita Operacional Líquida Orçado",
+    "Total": "25236301.77",
+    "SomaFiliais": "25236301.770000001",
+    "Diferenca": "-1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Receita Operacional Líquida Orçado",
+    "Total": "20797895.5",
+    "SomaFiliais": "20797895.500000001",
+    "Diferenca": "-1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Receita Operacional Líquida Previsto",
+    "Total": "25215671.88",
+    "SomaFiliais": "25215671.8800000005",
+    "Diferenca": "-5E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Receita Operacional Líquida Previsto",
+    "Total": "20783441.7",
+    "SomaFiliais": "20783441.7000000005",
+    "Diferenca": "-5E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Receita Operacional Líquida Realizado",
+    "Total": "25443402.94",
+    "SomaFiliais": "25443402.94",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Receita Operacional Líquida Realizado",
+    "Total": "20971933.78",
+    "SomaFiliais": "20971933.78",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Resultado Financeiro Orçado",
+    "Total": "-81176.34",
+    "SomaFiliais": "-81176.340000000001",
+    "Diferenca": "1E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Resultado Financeiro Orçado",
+    "Total": "-67390.12",
+    "SomaFiliais": "-67390.12",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Resultado Financeiro Previsto",
+    "Total": "-81180.97",
+    "SomaFiliais": "-81180.969999999999",
+    "Diferenca": "-1E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Resultado Financeiro Previsto",
+    "Total": "-67298.70000000001",
+    "SomaFiliais": "-67298.7",
+    "Diferenca": "-1E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Resultado Financeiro Realizado",
+    "Total": "-81413.31",
+    "SomaFiliais": "-81413.31",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Resultado Financeiro Realizado",
+    "Total": "-67456.45999999999",
+    "SomaFiliais": "-67456.46",
+    "Diferenca": "1E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Resultado Líquido Orçado",
+    "Total": "813676.11",
+    "SomaFiliais": "813676.10999999999",
+    "Diferenca": "1E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Resultado Líquido Orçado",
+    "Total": "605806.78",
+    "SomaFiliais": "605806.77999999997",
+    "Diferenca": "3E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Resultado Líquido Previsto",
+    "Total": "783973.8600000001",
+    "SomaFiliais": "783973.85999999996",
+    "Diferenca": "1.4E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Resultado Líquido Previsto",
+    "Total": "583146.6",
+    "SomaFiliais": "583146.59999999998",
+    "Diferenca": "2E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Resultado Líquido Realizado",
+    "Total": "819957.2399999999",
+    "SomaFiliais": "819957.24000000002",
+    "Diferenca": "-1.2E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JanMai",
+    "Medida": "DRE | Resultado Líquido Realizado",
+    "Total": "607332.2299999999",
+    "SomaFiliais": "607332.23000000002",
+    "Diferenca": "-1.2E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Custos Orçado",
+    "Total": "-22601229.230000004",
+    "SomaFiliais": "-22601229.2300000004",
+    "Diferenca": "-3.6E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Custos Orçado",
+    "Total": "-18501355.290000003",
+    "SomaFiliais": "-18501355.29",
+    "Diferenca": "-3E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Custos Previsto",
+    "Total": "-22677619.469999995",
+    "SomaFiliais": "-22677619.4700000004",
+    "Diferenca": "5.4E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Custos Previsto",
+    "Total": "-18580434.279999997",
+    "SomaFiliais": "-18580434.28",
+    "Diferenca": "3E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Custos Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Custos Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Deduções da Receita Orçado",
+    "Total": "-12756521.7",
+    "SomaFiliais": "-12756521.700000001",
+    "Diferenca": "1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Deduções da Receita Orçado",
+    "Total": "-10606703.280000001",
+    "SomaFiliais": "-10606703.280000001",
+    "Diferenca": "0E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Deduções da Receita Previsto",
+    "Total": "-12731424.86",
+    "SomaFiliais": "-12731424.86",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Deduções da Receita Previsto",
+    "Total": "-10591743.409999998",
+    "SomaFiliais": "-10591743.41",
+    "Diferenca": "2E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Deduções da Receita Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Deduções da Receita Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Depreciação e Amortização Orçado",
+    "Total": "-70243.02000000002",
+    "SomaFiliais": "-70243.02",
+    "Diferenca": "-2E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Depreciação e Amortização Orçado",
+    "Total": "-58149.6",
+    "SomaFiliais": "-58149.60",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Depreciação e Amortização Previsto",
+    "Total": "-70296.94",
+    "SomaFiliais": "-70296.939999999998",
+    "Diferenca": "-2E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Depreciação e Amortização Previsto",
+    "Total": "-58173.15",
+    "SomaFiliais": "-58173.149999999998",
+    "Diferenca": "-2E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Depreciação e Amortização Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Depreciação e Amortização Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Despesas Operacionais Orçado",
+    "Total": "-10869476.690000003",
+    "SomaFiliais": "-10869476.6900000007",
+    "Diferenca": "-2.3E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Despesas Operacionais Orçado",
+    "Total": "-8953750.910000002",
+    "SomaFiliais": "-8953750.9100000004",
+    "Diferenca": "-1.6E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Despesas Operacionais Previsto",
+    "Total": "-10889115.25",
+    "SomaFiliais": "-10889115.2500000014",
+    "Diferenca": "1.4E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Despesas Operacionais Previsto",
+    "Total": "-8968660.43",
+    "SomaFiliais": "-8968660.4300000014",
+    "Diferenca": "1.4E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Despesas Operacionais Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Despesas Operacionais Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Margem de Contribuição Orçado",
+    "Total": "12678017.34",
+    "SomaFiliais": "12678017.34",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Margem de Contribuição Orçado",
+    "Total": "10292708.740000002",
+    "SomaFiliais": "10292708.74",
+    "Diferenca": "2E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Margem de Contribuição Previsto",
+    "Total": "12578016.690000001",
+    "SomaFiliais": "12578016.6899999986",
+    "Diferenca": "2.4E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Margem de Contribuição Previsto",
+    "Total": "10244169.940000001",
+    "SomaFiliais": "10244169.9399999986",
+    "Diferenca": "2.4E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Margem de Contribuição Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Margem de Contribuição Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Outras Receitas e Despesas Orçado",
+    "Total": "-37291.70999999999",
+    "SomaFiliais": "-37291.709999999999",
+    "Diferenca": "9E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Outras Receitas e Despesas Orçado",
+    "Total": "-31060.989999999998",
+    "SomaFiliais": "-31060.99",
+    "Diferenca": "2E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Outras Receitas e Despesas Previsto",
+    "Total": "-37230.88",
+    "SomaFiliais": "-37230.879999999998",
+    "Diferenca": "-2E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Outras Receitas e Despesas Previsto",
+    "Total": "-31054.170000000002",
+    "SomaFiliais": "-31054.169999999998",
+    "Diferenca": "-4E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Outras Receitas e Despesas Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Outras Receitas e Despesas Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Provisão para IR e CSLL Orçado",
+    "Total": "-215486.61000000002",
+    "SomaFiliais": "-215486.61",
+    "Diferenca": "-2E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Provisão para IR e CSLL Orçado",
+    "Total": "-172651.27999999997",
+    "SomaFiliais": "-172651.28",
+    "Diferenca": "3E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Provisão para IR e CSLL Previsto",
+    "Total": "-215171.38000000003",
+    "SomaFiliais": "-215171.38",
+    "Diferenca": "-3E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Provisão para IR e CSLL Previsto",
+    "Total": "-172300.18",
+    "SomaFiliais": "-172300.18",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Provisão para IR e CSLL Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Provisão para IR e CSLL Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Receita Operacional Bruta Orçado",
+    "Total": "48035768.27",
+    "SomaFiliais": "48035768.269999997",
+    "Diferenca": "3E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Receita Operacional Bruta Orçado",
+    "Total": "39400767.31000001",
+    "SomaFiliais": "39400767.309999997",
+    "Diferenca": "1.3E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Receita Operacional Bruta Previsto",
+    "Total": "47987061.02000001",
+    "SomaFiliais": "47987061.02",
+    "Diferenca": "1E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Receita Operacional Bruta Previsto",
+    "Total": "39416347.63",
+    "SomaFiliais": "39416347.63",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Receita Operacional Bruta Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Receita Operacional Bruta Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Receita Operacional Líquida Orçado",
+    "Total": "35279246.57",
+    "SomaFiliais": "35279246.569999999",
+    "Diferenca": "1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Receita Operacional Líquida Orçado",
+    "Total": "28794064.029999997",
+    "SomaFiliais": "28794064.03",
+    "Diferenca": "-3E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Receita Operacional Líquida Previsto",
+    "Total": "35255636.160000004",
+    "SomaFiliais": "35255636.1599999965",
+    "Diferenca": "7.5E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Receita Operacional Líquida Previsto",
+    "Total": "28824604.22",
+    "SomaFiliais": "28824604.219999997",
+    "Diferenca": "3E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Receita Operacional Líquida Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Receita Operacional Líquida Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Resultado Financeiro Orçado",
+    "Total": "-112617.51",
+    "SomaFiliais": "-112617.51",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Resultado Financeiro Orçado",
+    "Total": "-93369.58",
+    "SomaFiliais": "-93369.58",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Resultado Financeiro Previsto",
+    "Total": "-113032.06999999999",
+    "SomaFiliais": "-113032.07",
+    "Diferenca": "1E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Resultado Financeiro Previsto",
+    "Total": "-93710.29",
+    "SomaFiliais": "-93710.29",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Resultado Financeiro Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Resultado Financeiro Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Resultado Líquido Orçado",
+    "Total": "1372901.8",
+    "SomaFiliais": "1372901.80000000003",
+    "Diferenca": "-3E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Resultado Líquido Orçado",
+    "Total": "983726.3799999999",
+    "SomaFiliais": "983726.38000000003",
+    "Diferenca": "-1.3E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Resultado Líquido Previsto",
+    "Total": "1253170.17",
+    "SomaFiliais": "1253170.17000000007",
+    "Diferenca": "-7E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Resultado Líquido Previsto",
+    "Total": "920271.72",
+    "SomaFiliais": "920271.72",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Resultado Líquido Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_JunDez",
+    "Medida": "DRE | Resultado Líquido Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Custos Orçado",
+    "Total": "-3429647.66",
+    "SomaFiliais": "-3429647.66",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Custos Orçado",
+    "Total": "-2846903.91",
+    "SomaFiliais": "-2846903.91",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Custos Previsto",
+    "Total": "-3431345.41",
+    "SomaFiliais": "-3431345.41",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Custos Previsto",
+    "Total": "-2845659.6",
+    "SomaFiliais": "-2845659.60",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Custos Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Custos Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Deduções da Receita Orçado",
+    "Total": "-1897297.79",
+    "SomaFiliais": "-1897297.79",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Deduções da Receita Orçado",
+    "Total": "-1610195.98",
+    "SomaFiliais": "-1610195.98",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Deduções da Receita Previsto",
+    "Total": "-1887466.1099999999",
+    "SomaFiliais": "-1887466.11",
+    "Diferenca": "1E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Deduções da Receita Previsto",
+    "Total": "-1601597.99",
+    "SomaFiliais": "-1601597.99",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Deduções da Receita Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Deduções da Receita Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Depreciação e Amortização Orçado",
+    "Total": "-11004.56",
+    "SomaFiliais": "-11004.56",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Depreciação e Amortização Orçado",
+    "Total": "-9263.17",
+    "SomaFiliais": "-9263.17",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Depreciação e Amortização Previsto",
+    "Total": "-10954.55",
+    "SomaFiliais": "-10954.55",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Depreciação e Amortização Previsto",
+    "Total": "-9213.55",
+    "SomaFiliais": "-9213.55",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Depreciação e Amortização Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Depreciação e Amortização Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Despesas Operacionais Orçado",
+    "Total": "-1729944.9000000001",
+    "SomaFiliais": "-1729944.90",
+    "Diferenca": "-1E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Despesas Operacionais Orçado",
+    "Total": "-1450088.08",
+    "SomaFiliais": "-1450088.08",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Despesas Operacionais Previsto",
+    "Total": "-1734882.6",
+    "SomaFiliais": "-1734882.6",
+    "Diferenca": "0.0",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Despesas Operacionais Previsto",
+    "Total": "-1453363.3",
+    "SomaFiliais": "-1453363.3",
+    "Diferenca": "0.0",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Despesas Operacionais Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Despesas Operacionais Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Margem de Contribuição Orçado",
+    "Total": "1978129.88",
+    "SomaFiliais": "1978129.88",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Margem de Contribuição Orçado",
+    "Total": "1643174.73",
+    "SomaFiliais": "1643174.73",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Margem de Contribuição Previsto",
+    "Total": "1977446.4400000002",
+    "SomaFiliais": "1977446.44",
+    "Diferenca": "2E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Margem de Contribuição Previsto",
+    "Total": "1646033.87",
+    "SomaFiliais": "1646033.87",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Margem de Contribuição Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Margem de Contribuição Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Outras Receitas e Despesas Orçado",
+    "Total": "-5553.91",
+    "SomaFiliais": "-5553.91",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Outras Receitas e Despesas Orçado",
+    "Total": "-4757.65",
+    "SomaFiliais": "-4757.65",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Outras Receitas e Despesas Previsto",
+    "Total": "-5596.1",
+    "SomaFiliais": "-5596.10",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Outras Receitas e Despesas Previsto",
+    "Total": "-4832.05",
+    "SomaFiliais": "-4832.05",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Outras Receitas e Despesas Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Outras Receitas e Despesas Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Provisão para IR e CSLL Orçado",
+    "Total": "-25462.73",
+    "SomaFiliais": "-25462.73",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Provisão para IR e CSLL Orçado",
+    "Total": "-23681.079999999998",
+    "SomaFiliais": "-23681.08",
+    "Diferenca": "2E-12",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Provisão para IR e CSLL Previsto",
+    "Total": "-25370.72",
+    "SomaFiliais": "-25370.72",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Provisão para IR e CSLL Previsto",
+    "Total": "-23575.63",
+    "SomaFiliais": "-23575.63",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Provisão para IR e CSLL Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Provisão para IR e CSLL Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Receita Operacional Bruta Orçado",
+    "Total": "7305075.33",
+    "SomaFiliais": "7305075.33",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Receita Operacional Bruta Orçado",
+    "Total": "6100274.62",
+    "SomaFiliais": "6100274.62",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Receita Operacional Bruta Previsto",
+    "Total": "7296257.96",
+    "SomaFiliais": "7296257.96",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Receita Operacional Bruta Previsto",
+    "Total": "6093291.46",
+    "SomaFiliais": "6093291.46",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Receita Operacional Bruta Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Receita Operacional Bruta Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Receita Operacional Líquida Orçado",
+    "Total": "5407777.540000001",
+    "SomaFiliais": "5407777.54",
+    "Diferenca": "1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Receita Operacional Líquida Orçado",
+    "Total": "4490078.640000001",
+    "SomaFiliais": "4490078.64",
+    "Diferenca": "1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Receita Operacional Líquida Previsto",
+    "Total": "5408791.85",
+    "SomaFiliais": "5408791.85",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Receita Operacional Líquida Previsto",
+    "Total": "4491693.47",
+    "SomaFiliais": "4491693.47",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Receita Operacional Líquida Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Receita Operacional Líquida Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Resultado Financeiro Orçado",
+    "Total": "-16808.64",
+    "SomaFiliais": "-16808.64",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Resultado Financeiro Orçado",
+    "Total": "-14077.1",
+    "SomaFiliais": "-14077.10",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Resultado Financeiro Previsto",
+    "Total": "-16850.07",
+    "SomaFiliais": "-16850.07",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Resultado Financeiro Previsto",
+    "Total": "-14136.07",
+    "SomaFiliais": "-14136.07",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Resultado Financeiro Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Resultado Financeiro Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Resultado Líquido Orçado",
+    "Total": "189355.13999999998",
+    "SomaFiliais": "189355.14",
+    "Diferenca": "-2E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Resultado Líquido Orçado",
+    "Total": "141307.65",
+    "SomaFiliais": "141307.65",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Resultado Líquido Previsto",
+    "Total": "183792.40000000002",
+    "SomaFiliais": "183792.40",
+    "Diferenca": "2E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Resultado Líquido Previsto",
+    "Total": "140913.27000000002",
+    "SomaFiliais": "140913.27",
+    "Diferenca": "2E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Resultado Líquido Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "2023_Junho",
+    "Medida": "DRE | Resultado Líquido Realizado",
+    "Total": null,
+    "SomaFiliais": null,
+    "Diferenca": null,
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Custos Orçado",
+    "Total": "-116424340.03000005",
+    "SomaFiliais": "-116424340.029999993",
+    "Diferenca": "-5.7E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Custos Orçado",
+    "Total": "-95991516.82",
+    "SomaFiliais": "-95991516.819999993",
+    "Diferenca": "-7E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Custos Previsto",
+    "Total": "-116720083.27999994",
+    "SomaFiliais": "-116720083.279999974",
+    "Diferenca": "3.4E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Custos Previsto",
+    "Total": "-96297608.35999997",
+    "SomaFiliais": "-96297608.35999998",
+    "Diferenca": "1E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Custos Realizado",
+    "Total": "-93588816.06000002",
+    "SomaFiliais": "-93588816.060000002",
+    "Diferenca": "-1.8E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Custos Realizado",
+    "Total": "-77417714.89000002",
+    "SomaFiliais": "-77417714.89",
+    "Diferenca": "-2E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Deduções da Receita Orçado",
+    "Total": "-65546706.95999997",
+    "SomaFiliais": "-65546706.959999996",
+    "Diferenca": "2.6E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Deduções da Receita Orçado",
+    "Total": "-54724850.94999999",
+    "SomaFiliais": "-54724850.949999994",
+    "Diferenca": "4E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Deduções da Receita Previsto",
+    "Total": "-65439748.31",
+    "SomaFiliais": "-65439748.31",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Deduções da Receita Previsto",
+    "Total": "-54638577.04000001",
+    "SomaFiliais": "-54638577.04",
+    "Diferenca": "-1E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Deduções da Receita Realizado",
+    "Total": "-52908485.35",
+    "SomaFiliais": "-52908485.350000003",
+    "Diferenca": "3E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Deduções da Receita Realizado",
+    "Total": "-44218156.919999994",
+    "SomaFiliais": "-44218156.920000003",
+    "Diferenca": "9E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Depreciação e Amortização Orçado",
+    "Total": "-360393.31000000006",
+    "SomaFiliais": "-360393.31000000006",
+    "Diferenca": "0E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Depreciação e Amortização Orçado",
+    "Total": "-298076.47000000003",
+    "SomaFiliais": "-298076.47000000005",
+    "Diferenca": "2E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Depreciação e Amortização Previsto",
+    "Total": "-360169.38999999984",
+    "SomaFiliais": "-360169.39000000002",
+    "Diferenca": "1.8E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Depreciação e Amortização Previsto",
+    "Total": "-297889.37",
+    "SomaFiliais": "-297889.37000000002",
+    "Diferenca": "2E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Depreciação e Amortização Realizado",
+    "Total": "-287307.4699999999",
+    "SomaFiliais": "-287307.46999999998",
+    "Diferenca": "8E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Depreciação e Amortização Realizado",
+    "Total": "-237416.63999999998",
+    "SomaFiliais": "-237416.63999999998",
+    "Diferenca": "0E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Despesas Operacionais Orçado",
+    "Total": "-56892053.86000002",
+    "SomaFiliais": "-56892053.860000005",
+    "Diferenca": "-1.5E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Despesas Operacionais Orçado",
+    "Total": "-46878746.31000001",
+    "SomaFiliais": "-46878746.310000001",
+    "Diferenca": "-9E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Despesas Operacionais Previsto",
+    "Total": "-56976331.95999997",
+    "SomaFiliais": "-56976331.96",
+    "Diferenca": "3E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Despesas Operacionais Previsto",
+    "Total": "-46949328.859999985",
+    "SomaFiliais": "-46949328.86",
+    "Diferenca": "1.5E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Despesas Operacionais Realizado",
+    "Total": "-46203238.52",
+    "SomaFiliais": "-46203238.520000008",
+    "Diferenca": "8E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Despesas Operacionais Realizado",
+    "Total": "-38073486.5",
+    "SomaFiliais": "-38073486.500000005",
+    "Diferenca": "5E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Margem de Contribuição Orçado",
+    "Total": "65543613.85999999",
+    "SomaFiliais": "65543613.860000005",
+    "Diferenca": "-1.5E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Margem de Contribuição Orçado",
+    "Total": "53394520.279999994",
+    "SomaFiliais": "53394520.280000005",
+    "Diferenca": "-1.1E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Margem de Contribuição Previsto",
+    "Total": "65162669.43999999",
+    "SomaFiliais": "65162669.440000001",
+    "Diferenca": "-1.1E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Margem de Contribuição Previsto",
+    "Total": "53193158.39000001",
+    "SomaFiliais": "53193158.390000002",
+    "Diferenca": "8E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Margem de Contribuição Realizado",
+    "Total": "52828995.11000002",
+    "SomaFiliais": "52828995.109999996",
+    "Diferenca": "2.4E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Margem de Contribuição Realizado",
+    "Total": "43142662.20000001",
+    "SomaFiliais": "43142662.199999996",
+    "Diferenca": "1.4E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Outras Receitas e Despesas Orçado",
+    "Total": "-190973.55999999997",
+    "SomaFiliais": "-190973.559999999988",
+    "Diferenca": "1.8E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Outras Receitas e Despesas Orçado",
+    "Total": "-158316.49999999997",
+    "SomaFiliais": "-158316.49999999999",
+    "Diferenca": "2E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Outras Receitas e Despesas Previsto",
+    "Total": "-191152.61000000013",
+    "SomaFiliais": "-191152.609999999977",
+    "Diferenca": "-1.53E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Outras Receitas e Despesas Previsto",
+    "Total": "-158421.63",
+    "SomaFiliais": "-158421.629999999974",
+    "Diferenca": "-2.6E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Outras Receitas e Despesas Realizado",
+    "Total": "-150388.21",
+    "SomaFiliais": "-150388.21000000002",
+    "Diferenca": "2E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Outras Receitas e Despesas Realizado",
+    "Total": "-124492.44999999998",
+    "SomaFiliais": "-124492.45000000002",
+    "Diferenca": "4E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Provisão para IR e CSLL Orçado",
+    "Total": "-896386.3799999997",
+    "SomaFiliais": "-896386.38000000005",
+    "Diferenca": "3.5E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Provisão para IR e CSLL Orçado",
+    "Total": "-761117.9999999999",
+    "SomaFiliais": "-761118.00000000007",
+    "Diferenca": "1.7E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Provisão para IR e CSLL Previsto",
+    "Total": "-895165.3899999999",
+    "SomaFiliais": "-895165.38999999987",
+    "Diferenca": "-3E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Provisão para IR e CSLL Previsto",
+    "Total": "-759872.2499999998",
+    "SomaFiliais": "-759872.24999999989",
+    "Diferenca": "9E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Provisão para IR e CSLL Realizado",
+    "Total": "-681675.3899999994",
+    "SomaFiliais": "-681675.38999999994",
+    "Diferenca": "5.4E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Provisão para IR e CSLL Realizado",
+    "Total": "-589842.4499999996",
+    "SomaFiliais": "-589842.44999999995",
+    "Diferenca": "3.5E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Receita Operacional Bruta Orçado",
+    "Total": "247514660.8499999",
+    "SomaFiliais": "247514660.84999998",
+    "Diferenca": "-8E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Receita Operacional Bruta Orçado",
+    "Total": "204110888.04999992",
+    "SomaFiliais": "204110888.04999998",
+    "Diferenca": "-6E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Receita Operacional Bruta Previsto",
+    "Total": "247322501.02999997",
+    "SomaFiliais": "247322501.02999999",
+    "Diferenca": "-2E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Receita Operacional Bruta Previsto",
+    "Total": "204129343.78999996",
+    "SomaFiliais": "204129343.79",
+    "Diferenca": "-4E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Receita Operacional Bruta Realizado",
+    "Total": "199326296.52000004",
+    "SomaFiliais": "199326296.520000005",
+    "Diferenca": "3.5E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Receita Operacional Bruta Realizado",
+    "Total": "164778534.01000002",
+    "SomaFiliais": "164778534.01000000",
+    "Diferenca": "2E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Receita Operacional Líquida Orçado",
+    "Total": "181967953.89000002",
+    "SomaFiliais": "181967953.889999955",
+    "Diferenca": "6.5E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Receita Operacional Líquida Orçado",
+    "Total": "149386037.1",
+    "SomaFiliais": "149386037.09999996",
+    "Diferenca": "4E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Receita Operacional Líquida Previsto",
+    "Total": "181882752.7199999",
+    "SomaFiliais": "181882752.719999989",
+    "Diferenca": "-8.9E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Receita Operacional Líquida Previsto",
+    "Total": "149490766.74999994",
+    "SomaFiliais": "149490766.749999994",
+    "Diferenca": "-5.4E-8",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Receita Operacional Líquida Realizado",
+    "Total": "146417811.17",
+    "SomaFiliais": "146417811.170000006",
+    "Diferenca": "-6E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Receita Operacional Líquida Realizado",
+    "Total": "120560377.09",
+    "SomaFiliais": "120560377.09",
+    "Diferenca": "0.00",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Resultado Financeiro Orçado",
+    "Total": "-581312.93",
+    "SomaFiliais": "-581312.92999999988",
+    "Diferenca": "-1.2E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Resultado Financeiro Orçado",
+    "Total": "-481797.0800000001",
+    "SomaFiliais": "-481797.07999999988",
+    "Diferenca": "-2.2E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Resultado Financeiro Previsto",
+    "Total": "-581918.9000000007",
+    "SomaFiliais": "-581918.90000000010",
+    "Diferenca": "-6.0E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Resultado Financeiro Previsto",
+    "Total": "-482111.7300000002",
+    "SomaFiliais": "-482111.73000000013",
+    "Diferenca": "-7E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Resultado Financeiro Realizado",
+    "Total": "-468158.12999999983",
+    "SomaFiliais": "-468158.12999999992",
+    "Diferenca": "9E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Resultado Financeiro Realizado",
+    "Total": "-387017.8699999999",
+    "SomaFiliais": "-387017.86999999992",
+    "Diferenca": "2E-11",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Resultado Líquido Orçado",
+    "Total": "6622493.820000001",
+    "SomaFiliais": "6622493.8200000005",
+    "Diferenca": "5E-10",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Resultado Líquido Orçado",
+    "Total": "4816465.919999999",
+    "SomaFiliais": "4816465.9200000005",
+    "Diferenca": "-1.5E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Resultado Líquido Previsto",
+    "Total": "6157931.189999999",
+    "SomaFiliais": "6157931.1900000001",
+    "Diferenca": "-1.1E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Resultado Líquido Previsto",
+    "Total": "4545534.550000002",
+    "SomaFiliais": "4545534.5500000001",
+    "Diferenca": "1.9E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "Consolidado",
+    "Periodo": "Integral",
+    "Medida": "DRE | Resultado Líquido Realizado",
+    "Total": "5038227.389999997",
+    "SomaFiliais": "5038227.3899999997",
+    "Diferenca": "-2.7E-9",
+    "Aprovado": true
+  },
+  {
+    "GrupoFilial": "01+02",
+    "Periodo": "Integral",
+    "Medida": "DRE | Resultado Líquido Realizado",
+    "Total": "3730406.2899999996",
+    "SomaFiliais": "3730406.2899999998",
+    "Diferenca": "-2E-10",
+    "Aprovado": true
+  }
+]

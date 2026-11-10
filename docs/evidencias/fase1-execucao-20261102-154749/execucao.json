@@ -1,0 +1,18 @@
+[
+  {
+    "File": "18-contrato-dre.dax",
+    "State": "EXECUTADO",
+    "Rows": 10,
+    "Seconds": 0.1275842,
+    "Account": "",
+    "QuerySHA256": "2D64258420823E64829CD51B569BB1182F4EDF2AB4513F545495341FC5CD2BED"
+  },
+  {
+    "File": "19-particoes-carregadas.dax",
+    "State": "EXECUTADO",
+    "Rows": 14,
+    "Seconds": 0.0364538,
+    "Account": "",
+    "QuerySHA256": "6189F7004FB9763FDDABDDF421C3042E0D138185C56053D1D7DB8C2D6DCF4AB0"
+  }
+]

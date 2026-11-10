@@ -1,0 +1,10 @@
+[
+  {
+    "Path": "DRE Moderno - Databricks.Report\\definition\\pages\\18fcfac0c5446040d274\\page.json",
+    "ID": "18fcfac0c5446040d274",
+    "DisplayName": "Page 1",
+    "Width": 1920,
+    "Height": 1080,
+    "Schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json"
+  }
+]
